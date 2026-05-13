@@ -1,0 +1,101 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { questions, siteMeta } from "../lib/dataset.js";
+
+const totalAll = questions.filter((q) => q.bank === "all").length;
+const totalExpertise = questions.filter((q) => q.bank === "expertise").length;
+---
+
+<BaseLayout title="Progress — Elite IGCSE Mathematics">
+  <div class="container section">
+    <header class="page-header">
+      <span class="meta eyebrow">My Practice Dashboard</span>
+      <h1>Progress</h1>
+      <p class="page-sub">
+        Everything tracked from this browser. Sign in with Google to sync across devices.
+      </p>
+    </header>
+
+    <div class="progress-grid">
+      <div class="card stat-card">
+        <span class="meta">Solved</span>
+        <strong data-stat-solved>0</strong>
+        <span class="meta" data-stat-solved-pct>0% of {siteMeta.questionCount}</span>
+      </div>
+      <div class="card stat-card">
+        <span class="meta">In my set</span>
+        <strong data-stat-selected>0</strong>
+        <span class="meta">questions queued</span>
+      </div>
+      <div class="card stat-card">
+        <span class="meta">Mistake Box</span>
+        <strong data-stat-mistakes>0</strong>
+        <span class="meta">flagged for review</span>
+      </div>
+      <div class="card stat-card stat-card-wide">
+        <span class="meta">Total bank</span>
+        <strong>{siteMeta.questionCount}</strong>
+        <span class="meta">{totalAll} classified + {totalExpertise} Q20+ expertise</span>
+      </div>
+    </div>
+
+    <section class="progress-actions card">
+      <h2>Continue practising</h2>
+      <p class="meta">Pick up where you left off, or browse the past papers catalogue.</p>
+      <div class="actions-row">
+        <a class="btn btn-primary" href="/practice">Open practice bank</a>
+        <a class="btn btn-ghost btn-sm" href="/pastpapers/">Browse past papers</a>
+      </div>
+    </section>
+  </div>
+
+  <script is:inline>
+    (function () {
+      function getSet(key) {
+        try { return new Set(JSON.parse(localStorage.getItem(key) || "[]")); } catch (_) { return new Set(); }
+      }
+      const solved = getSet("elitePracticeSolved");
+      const selected = getSet("elitePracticeSelected");
+      const mistakes = getSet("elitePracticeMistakes");
+      const total = {totalQuestions};
+      document.querySelector("[data-stat-solved]").textContent = solved.size;
+      document.querySelector("[data-stat-selected]").textContent = selected.size;
+      document.querySelector("[data-stat-mistakes]").textContent = mistakes.size;
+      const pct = total ? Math.round((solved.size / total) * 100) : 0;
+      document.querySelector("[data-stat-solved-pct]").textContent = `${pct}% of ${total}`;
+    })();
+  </script>
+</BaseLayout>
+
+<style define:vars={{ totalQuestions: siteMeta.questionCount }}>
+  .page-header { margin-bottom: var(--space-5); }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; display: block; margin-bottom: var(--space-1); }
+  .page-sub { color: var(--muted); margin-top: var(--space-2); max-width: 60ch; }
+
+  .progress-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+  }
+  .stat-card {
+    display: grid;
+    gap: 4px;
+    padding: var(--space-3);
+  }
+  .stat-card strong {
+    font-size: 40px;
+    font-weight: var(--weight-bold);
+    color: var(--navy);
+    line-height: 1;
+  }
+  .stat-card-wide { grid-column: span 2; }
+  @media (max-width: 720px) { .stat-card-wide { grid-column: span 1; } }
+
+  .progress-actions {
+    display: grid;
+    gap: var(--space-2);
+  }
+  .progress-actions h2 { font-size: var(--type-h2); }
+  .actions-row { display: flex; gap: var(--space-1); flex-wrap: wrap; margin-top: var(--space-1); }
+</style>

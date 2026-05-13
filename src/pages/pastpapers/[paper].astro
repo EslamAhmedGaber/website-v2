@@ -1,0 +1,142 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+// Build-time: enumerate every per-paper JSON and emit one page per slug.
+const paperFiles = import.meta.glob("../../data/questions/*.json", { eager: true });
+const solutionFiles = import.meta.glob("../../data/solutions/*.json", { eager: true });
+
+export async function getStaticPaths() {
+  const files = import.meta.glob("../../data/questions/*.json", { eager: true });
+  return Object.entries(files).map(([path, mod]) => {
+    const data = mod.default || mod;
+    return {
+      params: { paper: data.paperSlug },
+      props: { paper: data, hasSolutions: false }, // hasSolutions filled below
+    };
+  });
+}
+
+const { paper } = Astro.props;
+
+// Match solutions for this paper.
+const solKey = `../../data/solutions/${paper.paperSlug}.json`;
+const solMod = solutionFiles[solKey];
+const solutions = solMod ? (solMod.default || solMod).solutions || {} : {};
+
+const totalMarks = paper.questions.reduce((s, q) => s + (q.marks || 0), 0);
+const pdfHref = null; // PDF download not wired here yet — Phase 4
+---
+
+<BaseLayout title={`${paper.paper} — Elite IGCSE Mathematics`}>
+  <div class="container-wide section">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/pastpapers/">All past papers</a>
+      <span aria-hidden="true">›</span>
+      <span>{paper.paper}</span>
+    </nav>
+
+    <header class="paper-header card royale-frame">
+      <div>
+        <span class="meta eyebrow">{paper.session} · {paper.isModular ? "Modular" : "Linear"}</span>
+        <h1>{paper.paper}</h1>
+        <p class="paper-meta">
+          {paper.questionCount} questions · {totalMarks} marks ·
+          {paper.isModular ? <strong>{paper.modularUnit}</strong> : "All chapters"}
+        </p>
+      </div>
+      <div class="paper-cta">
+        <a class="btn btn-primary" href={`/practice?paper=${encodeURIComponent(paper.paper)}`}>
+          Practice this paper
+        </a>
+        {pdfHref && (
+          <a class="btn btn-ghost btn-sm" href={pdfHref} target="_blank" rel="noreferrer">
+            Download PDF
+          </a>
+        )}
+      </div>
+    </header>
+
+    <div class="paper-grid">
+      {paper.questions.map((qq) => {
+        const hasSol = Boolean(solutions[qq.id]?.source);
+        return (
+          <article class="paper-q card">
+            <div class="paper-q-head">
+              <strong>Q{qq.q}</strong>
+              <span class="badge">{qq.marks}m</span>
+            </div>
+            <img loading="lazy" src={qq.image} alt={`${paper.paper} Q${qq.q}`} class="paper-q-img" />
+            <div class="paper-q-body">
+              <span class="meta">{qq.topic}</span>
+              <div class="paper-q-actions">
+                <a class="btn btn-ghost btn-sm" href={`/practice?paper=${encodeURIComponent(paper.paper)}&q=${qq.q}`}>
+                  Open
+                </a>
+                {hasSol && <span class="meta paper-sol">✓ Solution</span>}
+              </div>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--type-meta);
+    color: var(--muted);
+    margin-bottom: var(--space-3);
+  }
+  .breadcrumb a { color: var(--navy); }
+  .breadcrumb a:hover { color: var(--gold-deep); }
+
+  .paper-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-4);
+  }
+  .paper-header h1 { font-size: var(--type-h1); margin-top: 6px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; }
+  .paper-meta { color: var(--muted); margin-top: var(--space-1); }
+  .paper-meta strong { color: var(--navy); }
+  .paper-cta { display: flex; gap: var(--space-1); flex-wrap: wrap; }
+
+  .paper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+  }
+  .paper-q {
+    padding: var(--space-2);
+    display: grid;
+    gap: var(--space-1);
+  }
+  .paper-q-head { display: flex; justify-content: space-between; align-items: center; }
+  .paper-q-head strong { font-size: 17px; }
+  .paper-q-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background: var(--ivory);
+    border-radius: var(--radius);
+  }
+  .paper-q-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+  .paper-q-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .paper-sol { color: var(--success); font-weight: var(--weight-bold); }
+</style>

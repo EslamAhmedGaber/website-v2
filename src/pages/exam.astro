@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Mock Exam — Elite IGCSE Mathematics">
+  <div class="container section">
+    <header class="page-header">
+      <span class="meta eyebrow">Timed Practice</span>
+      <h1>Mock Exam</h1>
+      <p class="page-sub">
+        Start a 25-question mock from your active pathway. Once you've built the set, work through
+        it in the practice bank with the study timer running.
+      </p>
+    </header>
+
+    <div class="exam-card card royale-frame">
+      <p>The mock dialog now lives inside the practice page itself — open the practice bank and tap
+      <strong>Start mock</strong> from the sidebar to choose a Unit or Chapter and build your set.</p>
+      <div class="actions-row">
+        <a class="btn btn-primary" href="/practice">Open practice bank</a>
+        <a class="btn btn-ghost btn-sm" href="/">Change pathway</a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header { margin-bottom: var(--space-4); }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; display: block; margin-bottom: var(--space-1); }
+  .page-sub { color: var(--muted); margin-top: var(--space-2); max-width: 60ch; }
+  .exam-card { padding: var(--space-4); display: grid; gap: var(--space-2); }
+  .actions-row { display: flex; gap: var(--space-1); flex-wrap: wrap; margin-top: var(--space-1); }
+</style>

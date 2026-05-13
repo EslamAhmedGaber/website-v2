@@ -1,0 +1,178 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// Curated download catalogue. Once Phase 4 wires the book builder
+// directly into this page, this list will be generated. For now it's
+// hand-edited and matches what's in public/downloads/.
+const books = {
+  "Linear (4MA1) — Full Classified Bank": [
+    {
+      file: "/downloads/classified_problems.pdf",
+      title: "Classified Problems",
+      subtitle: "All 974 classified questions, one per page, grouped by topic.",
+      size: "Large PDF",
+      public: true,
+    },
+    {
+      file: "/downloads/Classified_Expertise.pdf",
+      title: "Classified Expertise (Q20+)",
+      subtitle: "Harder questions starting from question 20 — 214 problems.",
+      size: "Medium PDF",
+      public: true,
+    },
+  ],
+  "Modular (4WM1H / 4WM2H)": [
+    {
+      file: "/downloads/Classified_4WM1.pdf",
+      title: "Modular Unit 1 — Classified",
+      subtitle: "Number, algebra basics, geometry, probability questions only.",
+      size: "Large PDF",
+      public: true,
+    },
+    {
+      file: "/downloads/Classified_4WM2.pdf",
+      title: "Modular Unit 2 — Classified",
+      subtitle: "Percentages, equations, advanced geometry, statistics.",
+      size: "Large PDF",
+      public: true,
+    },
+  ],
+  "With Answers — Private (sign-in required)": [
+    {
+      file: null,
+      title: "Classified with Answers",
+      subtitle: "Same as the full classified book, with every worked solution attached.",
+      size: "Sign-in required",
+      public: false,
+    },
+    {
+      file: null,
+      title: "Classified Expertise with Answers",
+      subtitle: "Q20+ with worked solutions.",
+      size: "Sign-in required",
+      public: false,
+    },
+  ],
+};
+---
+
+<BaseLayout title="Books & Downloads — Elite IGCSE Mathematics">
+  <div class="container section">
+    <header class="page-header">
+      <span class="meta eyebrow">PDF Library</span>
+      <h1>Books & Downloads</h1>
+      <p class="page-sub">
+        Six classified-question books drawn from the same data that powers the practice page.
+        Public books are free; the with-answers variants stay private until you sign in.
+      </p>
+    </header>
+
+    {Object.entries(books).map(([group, list]) => (
+      <section class="book-group">
+        <h2 class="group-title">{group}</h2>
+        <div class="book-grid">
+          {list.map((b) => (
+            <article class={`book-card ${b.public ? "is-public" : "is-locked"}`}>
+              <div class="book-thumb" aria-hidden="true">
+                <span class="book-spine"></span>
+                <span class="book-letter">{b.title.charAt(0)}</span>
+              </div>
+              <div class="book-body">
+                <strong class="book-title">{b.title}</strong>
+                <p class="meta">{b.subtitle}</p>
+                <div class="book-foot">
+                  <span class="meta">{b.size}</span>
+                  {b.public && b.file ? (
+                    <a class="btn btn-primary btn-sm" href={b.file} download>
+                      Download
+                    </a>
+                  ) : (
+                    <button class="btn btn-ghost btn-sm" type="button" disabled>
+                      🔒 Sign in
+                    </button>
+                  )}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header { margin-bottom: var(--space-5); }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; display: block; margin-bottom: var(--space-1); }
+  .page-sub { color: var(--muted); margin-top: var(--space-2); max-width: 64ch; }
+
+  .book-group + .book-group { margin-top: var(--space-5); }
+  .group-title {
+    font-size: var(--type-h2);
+    margin-bottom: var(--space-3);
+    padding-bottom: var(--space-1);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-3);
+  }
+  .book-card {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: var(--space-2);
+    padding: var(--space-2);
+    background: var(--paper);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-fast);
+  }
+  .book-card:hover { border-color: var(--gold); box-shadow: var(--shadow); }
+  .book-card.is-locked { opacity: 0.75; }
+
+  .book-thumb {
+    position: relative;
+    height: 130px;
+    border-radius: var(--radius-sm);
+    background: linear-gradient(135deg, var(--navy), var(--navy-soft));
+    color: var(--gold);
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+  }
+  .book-card.is-locked .book-thumb {
+    background: linear-gradient(135deg, #4a4a4a, #2c2c2c);
+  }
+  .book-spine {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background: var(--gold);
+  }
+  .book-card.is-locked .book-spine { background: var(--muted); }
+  .book-letter {
+    font-family: var(--font-mono);
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .book-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+  .book-title { font-size: 16px; font-weight: var(--weight-bold); color: var(--navy); line-height: 1.25; }
+  .book-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: var(--space-1);
+  }
+</style>

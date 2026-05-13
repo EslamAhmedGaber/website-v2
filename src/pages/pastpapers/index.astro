@@ -1,0 +1,130 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import papers from "../../data/papers.json";
+
+// Group papers by code family for the catalogue view.
+const groups = {
+  "Linear (4MA1)": papers.filter((p) => !p.isModular),
+  "Modular Unit 1 (4WM1H)": papers.filter((p) => p.isModular && p.modularUnit === "Unit 1"),
+  "Modular Unit 2 (4WM2H)": papers.filter((p) => p.isModular && p.modularUnit === "Unit 2"),
+};
+
+// Sort each group: newest session first.
+function sortKey(p) {
+  const m = p.session.match(/(\w+)\s+(\d{4})/);
+  if (!m) return p.session;
+  const year = parseInt(m[2], 10);
+  const monthOrder = { Jan: 1, Feb: 2, Mar: 3, May: 5, Jun: 6, Nov: 11 };
+  return -(year * 100 + (monthOrder[m[1]] || 0));
+}
+for (const key of Object.keys(groups)) {
+  groups[key].sort((a, b) => sortKey(a) - sortKey(b));
+}
+
+const totalQuestions = papers.reduce((sum, p) => sum + p.questionCount, 0);
+---
+
+<BaseLayout title="Past Papers — Elite IGCSE Mathematics">
+  <div class="container section">
+    <header class="page-header">
+      <span class="meta eyebrow">Edexcel IGCSE Mathematics A · Higher Tier</span>
+      <h1>Past Papers</h1>
+      <p class="page-sub">
+        {papers.length} classified papers · {totalQuestions} questions · 2020–2025 sessions.
+        Each paper opens its own page with questions, marks, and solutions where available.
+      </p>
+    </header>
+
+    {Object.entries(groups).map(([groupName, list]) => list.length > 0 && (
+      <section class="paper-group">
+        <h2 class="group-title">{groupName} <span class="meta">· {list.length} papers</span></h2>
+        <div class="paper-grid">
+          {list.map((p) => (
+            <a class="paper-card" href={`/pastpapers/${p.paperSlug}/`}>
+              <div class="paper-card-head">
+                <strong class="paper-name">{p.paper}</strong>
+                {p.isModular && (
+                  <span class="badge badge-gold">{p.modularUnit}</span>
+                )}
+              </div>
+              <div class="paper-card-body">
+                <div><strong>{p.questionCount}</strong> <span class="meta">questions</span></div>
+                <div class={p.hasSolutions ? "meta paper-sol-yes" : "meta"}>
+                  {p.hasSolutions ? "✓ Solutions available" : "Solutions coming soon"}
+                </div>
+              </div>
+              <span class="paper-card-arrow" aria-hidden="true">→</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header { margin-bottom: var(--space-5); }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; display: block; margin-bottom: var(--space-1); }
+  .page-sub { color: var(--muted); margin-top: var(--space-2); max-width: 60ch; }
+
+  .paper-group + .paper-group { margin-top: var(--space-5); }
+  .group-title {
+    font-size: var(--type-h2);
+    margin-bottom: var(--space-3);
+    padding-bottom: var(--space-1);
+    border-bottom: 1px solid var(--line);
+  }
+  .group-title .meta { font-weight: var(--weight-regular); }
+
+  .paper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--space-2);
+  }
+  .paper-card {
+    position: relative;
+    display: grid;
+    gap: var(--space-1);
+    padding: var(--space-3);
+    background: var(--paper);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-lg);
+    color: var(--navy);
+    transition: all var(--transition-fast);
+  }
+  .paper-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    color: var(--navy);
+  }
+  .paper-card:hover .paper-card-arrow { color: var(--gold-deep); transform: translateX(4px); }
+
+  .paper-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-1);
+  }
+  .paper-name {
+    font-size: 17px;
+    font-weight: var(--weight-bold);
+    line-height: 1.2;
+  }
+  .paper-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 13px;
+  }
+  .paper-card-body strong { font-size: 22px; font-weight: var(--weight-bold); color: var(--navy); }
+  .paper-sol-yes { color: var(--success); }
+  .paper-card-arrow {
+    position: absolute;
+    right: var(--space-3);
+    bottom: var(--space-3);
+    font-size: 18px;
+    color: var(--muted);
+    transition: transform var(--transition-fast), color var(--transition-fast);
+  }
+</style>
