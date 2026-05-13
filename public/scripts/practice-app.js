@@ -76,7 +76,72 @@
     solutionMeta: q("#solutionMeta"),
     solutionBody: q("#solutionBody"),
     solutionClose: q("[data-solution-close]"),
+    // Sidebar tools
+    timerDisplay: q("[data-timer-display]"),
+    timerStartBtn: q("[data-timer-start]"),
+    timerResetBtn: q("[data-timer-reset]"),
+    timerPresetButtons: qa("[data-timer-preset]"),
+    masteryList: q("[data-mastery-list]"),
+    mistakeSummary: q("[data-mistake-summary]"),
+    mistakeReviewBtn: q("[data-mistake-review]"),
+    mockOpenBtn: q("[data-mock-open]"),
+    mockDialog: q("#mockDialog"),
+    mockUnitButtons: qa("[data-mock-unit]"),
+    mockClose: q("[data-mock-close]"),
   };
+
+  // ---- TIMER --------------------------------------------------------
+  const timer = {
+    duration: 25 * 60,
+    remaining: 25 * 60,
+    interval: null,
+    running: false,
+  };
+
+  function fmtTime(s) {
+    const m = Math.floor(s / 60);
+    const sec = s % 60;
+    return `${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
+  }
+
+  function updateTimerDisplay() {
+    if (els.timerDisplay) els.timerDisplay.textContent = fmtTime(timer.remaining);
+    if (els.timerStartBtn) els.timerStartBtn.textContent = timer.running ? "Pause" : "Start";
+  }
+
+  function startTimer() {
+    if (timer.running) {
+      pauseTimer();
+      return;
+    }
+    timer.running = true;
+    timer.interval = setInterval(() => {
+      timer.remaining -= 1;
+      if (timer.remaining <= 0) {
+        timer.remaining = 0;
+        pauseTimer();
+      }
+      updateTimerDisplay();
+    }, 1000);
+    updateTimerDisplay();
+  }
+  function pauseTimer() {
+    timer.running = false;
+    if (timer.interval) clearInterval(timer.interval);
+    timer.interval = null;
+    updateTimerDisplay();
+  }
+  function resetTimer() {
+    pauseTimer();
+    timer.remaining = timer.duration;
+    updateTimerDisplay();
+  }
+  function setTimerMinutes(mins) {
+    pauseTimer();
+    timer.duration = Math.max(1, Number(mins) || 25) * 60;
+    timer.remaining = timer.duration;
+    updateTimerDisplay();
+  }
 
   function q(s) { return document.querySelector(s); }
   function qa(s) { return Array.from(document.querySelectorAll(s)); }
@@ -214,6 +279,10 @@
 
     // resume banner
     renderResumeBanner();
+    // sidebar tools
+    renderMastery(pool);
+    renderMistakeSummary(pool);
+    updateTimerDisplay();
   }
 
   function countIn(pool, set) {
@@ -235,6 +304,57 @@
       els.paperSelect.innerHTML = `<option value="">All papers</option>` +
         papers.map((p) => `<option value="${escapeHtml(p)}"${p === cur ? " selected" : ""}>${escapeHtml(p)}</option>`).join("");
     }
+  }
+
+  function renderMastery(pool) {
+    if (!els.masteryList) return;
+    const byTopic = new Map();
+    for (const qq of pool) {
+      const entry = byTopic.get(qq.topic) || { total: 0, solved: 0 };
+      entry.total += 1;
+      if (state.solved.has(qq.id)) entry.solved += 1;
+      byTopic.set(qq.topic, entry);
+    }
+    const rows = [...byTopic.entries()]
+      .sort((a, b) => b[1].total - a[1].total || a[0].localeCompare(b[0]))
+      .slice(0, 8);
+    if (rows.length === 0) {
+      els.masteryList.innerHTML = '<p class="meta">No topics in this view yet.</p>';
+      return;
+    }
+    els.masteryList.innerHTML = rows.map(([topic, c]) => {
+      const pct = c.total ? Math.round((c.solved / c.total) * 100) : 0;
+      return `<div class="mastery-row">
+        <div class="mastery-head"><strong>${escapeHtml(topic)}</strong><span class="meta">${c.solved}/${c.total}</span></div>
+        <div class="mastery-bar"><i style="width:${pct}%"></i></div>
+      </div>`;
+    }).join("");
+  }
+
+  function renderMistakeSummary(pool) {
+    if (!els.mistakeSummary) return;
+    const poolIds = new Set(pool.map((qq) => qq.id));
+    const mine = [...state.mistakes].filter((id) => poolIds.has(id));
+    if (mine.length === 0) {
+      els.mistakeSummary.innerHTML = '<p class="meta">No mistakes saved yet. Use the kebab menu on a question to add it.</p>';
+      if (els.mistakeReviewBtn) els.mistakeReviewBtn.disabled = true;
+      return;
+    }
+    if (els.mistakeReviewBtn) els.mistakeReviewBtn.disabled = false;
+    const byTopic = new Map();
+    for (const id of mine) {
+      const qq = allQuestions.find((x) => x.id === id);
+      if (!qq) continue;
+      byTopic.set(qq.topic, (byTopic.get(qq.topic) || 0) + 1);
+    }
+    const rows = [...byTopic.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5);
+    els.mistakeSummary.innerHTML = `
+      <p class="meta">${mine.length} question${mine.length === 1 ? "" : "s"} in this view.</p>
+      <ul class="mistake-list">
+        ${rows.map(([t, n]) => `<li><span>${escapeHtml(t)}</span><span class="badge badge-muted">${n}</span></li>`).join("")}
+      </ul>`;
   }
 
   function renderResumeBanner() {
@@ -302,6 +422,58 @@
       localStorage.removeItem(STORAGE_UNIT);
       window.location.href = "/";
     });
+
+    // Timer
+    els.timerStartBtn?.addEventListener("click", startTimer);
+    els.timerResetBtn?.addEventListener("click", resetTimer);
+    els.timerPresetButtons.forEach((b) => b.addEventListener("click", () => setTimerMinutes(b.dataset.timerPreset)));
+
+    // Mistake review
+    els.mistakeReviewBtn?.addEventListener("click", () => {
+      state.viewFilter = "mistakes";
+      if (els.viewSelect) els.viewSelect.value = "mistakes";
+      render();
+    });
+
+    // Mock exam
+    els.mockOpenBtn?.addEventListener("click", openMockDialog);
+    els.mockUnitButtons.forEach((b) => b.addEventListener("click", () => buildMock(b.dataset.mockUnit)));
+    els.mockClose?.addEventListener("click", () => els.mockDialog?.close());
+  }
+
+  function openMockDialog() {
+    if (!els.mockDialog) return;
+    // Refresh counts inside the dialog from current pool
+    const pool = scopedQuestions();
+    const units = state.pathway === "modular"
+      ? ["Unit 1", "Unit 2"]
+      : ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6"];
+    els.mockUnitButtons = qa("[data-mock-unit]");
+    els.mockUnitButtons.forEach((b) => {
+      const label = b.dataset.mockUnit;
+      const count = pool.filter((qq) => qq.unit === label).length;
+      const countEl = b.querySelector(".mock-count");
+      if (countEl) countEl.textContent = `${count} questions`;
+      b.hidden = !units.includes(label);
+    });
+    els.mockDialog.showModal();
+  }
+
+  function buildMock(unitLabel) {
+    const pool = scopedQuestions().filter((qq) => qq.unit === unitLabel);
+    if (pool.length === 0) {
+      els.mockDialog?.close();
+      return;
+    }
+    const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, Math.min(25, pool.length));
+    // Clear set in scope, add new mock
+    for (const qq of pool) state.selected.delete(qq.id);
+    for (const qq of shuffled) state.selected.add(qq.id);
+    state.viewFilter = "selected";
+    if (els.viewSelect) els.viewSelect.value = "selected";
+    saveSets();
+    els.mockDialog?.close();
+    render();
   }
 
   function toggleSelected(id) {

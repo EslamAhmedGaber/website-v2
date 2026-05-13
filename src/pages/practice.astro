@@ -91,21 +91,41 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
         <details class="side-section">
           <summary>Study timer</summary>
           <div class="side-body">
-            <p class="meta">Coming with the rest of the sidebar tools in the next pass.</p>
+            <div class="timer-card">
+              <strong class="timer-display" data-timer-display>25:00</strong>
+              <div class="timer-controls">
+                <button class="btn btn-primary btn-sm" type="button" data-timer-start>Start</button>
+                <button class="btn btn-ghost btn-sm" type="button" data-timer-reset>Reset</button>
+              </div>
+              <div class="timer-presets">
+                <button class="pill" type="button" data-timer-preset="25">25 min</button>
+                <button class="pill" type="button" data-timer-preset="15">15 min</button>
+                <button class="pill" type="button" data-timer-preset="5">5 min</button>
+              </div>
+            </div>
           </div>
         </details>
 
         <details class="side-section">
           <summary>Topic mastery</summary>
           <div class="side-body">
-            <p class="meta">Coming with the rest of the sidebar tools in the next pass.</p>
+            <div data-mastery-list></div>
           </div>
         </details>
 
         <details class="side-section">
           <summary>Mistake Box</summary>
-          <div class="side-body">
-            <p class="meta">Coming with the rest of the sidebar tools in the next pass.</p>
+          <div class="side-body stack">
+            <div data-mistake-summary></div>
+            <button class="btn btn-ghost btn-sm" type="button" data-mistake-review>Review my mistakes</button>
+          </div>
+        </details>
+
+        <details class="side-section">
+          <summary>Mock exam</summary>
+          <div class="side-body stack">
+            <p class="meta">Build a 25-question worksheet from the current pathway / unit.</p>
+            <button class="btn btn-primary btn-sm" type="button" data-mock-open>Start mock</button>
           </div>
         </details>
       </aside>
@@ -137,6 +157,48 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     </header>
     <p class="meta" id="solutionMeta"></p>
     <div id="solutionBody" class="q-dialog-body"></div>
+  </dialog>
+
+  <dialog id="mockDialog" class="q-dialog">
+    <header class="q-dialog-head">
+      <h2>Start a mock exam</h2>
+      <button class="btn btn-ghost btn-sm" type="button" data-mock-close>Close ✕</button>
+    </header>
+    <p class="meta">Pick a unit to draw 25 random questions from. They'll land in your "My set" filter.</p>
+    <div class="mock-grid">
+      <button class="mock-card pill" type="button" data-mock-unit="Unit 1">
+        <strong>Unit 1</strong>
+        <span class="meta mock-count">0 questions</span>
+      </button>
+      <button class="mock-card pill" type="button" data-mock-unit="Unit 2">
+        <strong>Unit 2</strong>
+        <span class="meta mock-count">0 questions</span>
+      </button>
+      <button class="mock-card pill" type="button" data-mock-unit="Chapter 1" hidden>
+        <strong>Chapter 1</strong>
+        <span class="meta mock-count">0 questions</span>
+      </button>
+      <button class="mock-card pill" type="button" data-mock-unit="Chapter 2" hidden>
+        <strong>Chapter 2</strong>
+        <span class="meta mock-count">0 questions</span>
+      </button>
+      <button class="mock-card pill" type="button" data-mock-unit="Chapter 3" hidden>
+        <strong>Chapter 3</strong>
+        <span class="meta mock-count">0 questions</span>
+      </button>
+      <button class="mock-card pill" type="button" data-mock-unit="Chapter 4" hidden>
+        <strong>Chapter 4</strong>
+        <span class="meta mock-count">0 questions</span>
+      </button>
+      <button class="mock-card pill" type="button" data-mock-unit="Chapter 5" hidden>
+        <strong>Chapter 5</strong>
+        <span class="meta mock-count">0 questions</span>
+      </button>
+      <button class="mock-card pill" type="button" data-mock-unit="Chapter 6" hidden>
+        <strong>Chapter 6</strong>
+        <span class="meta mock-count">0 questions</span>
+      </button>
+    </div>
   </dialog>
 
   <!-- MathJax (lazy) -->
@@ -459,6 +521,91 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     background: var(--gold-soft);
     padding: 0 4px;
     border-radius: 3px;
+  }
+
+  /* ============ Timer ============ */
+  .timer-card {
+    display: grid;
+    gap: var(--space-1);
+    text-align: center;
+  }
+  .timer-display {
+    font-family: var(--font-mono);
+    font-size: 36px;
+    font-weight: var(--weight-bold);
+    color: var(--navy);
+    letter-spacing: 0.02em;
+  }
+  .timer-controls {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+  }
+  .timer-presets {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    margin-top: 4px;
+  }
+  .timer-presets .pill { padding: 4px 10px; font-size: 12px; }
+
+  /* ============ Mastery bars ============ */
+  .mastery-row { margin-bottom: 10px; }
+  .mastery-row:last-child { margin-bottom: 0; }
+  .mastery-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    font-size: 13px;
+  }
+  .mastery-head strong { font-weight: var(--weight-bold); color: var(--navy); }
+  .mastery-bar {
+    height: 6px;
+    background: var(--line);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+  }
+  .mastery-bar i {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold), var(--gold-deep));
+    transition: width var(--transition);
+  }
+
+  /* ============ Mistake list ============ */
+  .mistake-list {
+    display: grid;
+    gap: 4px;
+  }
+  .mistake-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    background: var(--ivory);
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+  }
+
+  /* ============ Mock dialog ============ */
+  .mock-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--space-1);
+    margin-top: var(--space-2);
+  }
+  .mock-card {
+    display: grid;
+    place-items: center;
+    gap: 4px;
+    padding: var(--space-3) var(--space-2);
+    min-height: 100px;
+    text-align: center;
+  }
+  .mock-card strong {
+    font-size: 18px;
+    color: var(--navy);
   }
 
   /* ============ Mobile ============ */
