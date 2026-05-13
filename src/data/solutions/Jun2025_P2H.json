@@ -1,0 +1,203 @@
+{
+  "paperSlug": "Jun2025_P2H",
+  "solutions": {
+    "all::Jun2025_P2H__Q07__p08-08__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Compound Interest and Depreciation. This is repeated percentage growth for 3 years.\n\n**Method**\n\nThe multiplier for a \\(7\\%\\) increase is\n\n\\[\n1.07\n\\]\n\nAfter 3 years,\n\n\\[\n4000(1.07)^3=4900.172\n\\]\n\nCorrect to the nearest Swiss franc,\n\n\\[\n4900.172\\approx 4900\n\\]\n\n**Answer:** \\(4900\\) Swiss francs",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q22__p20-20__m04__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\nThe shaded area is\n\n\\[\nX=\\text{area of rectangle}-\\text{area of square}\n\\]\n\nBounds:\n\n\\[\n11.25\\le AB<11.75\n\\]\n\n\\[\n9.15\\le BC<9.25\n\\]\n\n\\[\n4.05\\le \\text{square side}<4.15\n\\]\n\nLower bound:\n\n\\[\n11.25(9.15)-4.15^2=85.715\n\\]\n\nUpper bound:\n\n\\[\n11.75(9.25)-4.05^2=92.285\n\\]\n\nSo\n\n\\[\n85.715<X<92.285\n\\]\n\nBoth bounds round to \\(90\\) to the nearest \\(10\\).\n\n**Answer:** \\(X=90\\text{ cm}^2\\) to a suitable degree of accuracy",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q06__p07-07__m04__Ratio-Problem-Solving": {
+      "status": "checked",
+      "source": "**Topic check:** Ratio Problem Solving. The tag is correct.\n\n**Method**\n\nThe original ratio is\n\n\\[\n\\text{Pau} : \\text{Sam} : \\text{Tia} = 3:4:5\n\\]\n\nThere are\n\n\\[\n3+4+5=12 \\text{ parts}\n\\]\n\nEach part is\n\n\\[\n240 \\div 12=20\n\\]\n\nSo the original amounts are\n\n\\[\n60,\\ 80,\\ 100\n\\]\n\nSam gives 10 to Pau and Tia gives 10 to Pau, so the new amounts are\n\n\\[\n80,\\ 70,\\ 90\n\\]\n\nDivide by 10:\n\n\\[\n80:70:90=8:7:9\n\\]\n\n**Answer:** The new ratio is \\(8:7:9\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q15__p15-15__m03__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic Roots and Indices. The tag is correct.\n\n**Method**\n\n\\[\n\\left(\\frac{2a^3}{10a^7c^2}\\right)^{-3}\n\\]\n\nFirst simplify inside the bracket:\n\n\\[\n\\frac{2a^3}{10a^7c^2}=\\frac{1}{5a^4c^2}\n\\]\n\nA negative power means take the reciprocal:\n\n\\[\n\\left(\\frac{1}{5a^4c^2}\\right)^{-3}=(5a^4c^2)^3\n\\]\n\n\\[\n=125a^{12}c^6\n\\]\n\n**Answer:** \\(125a^{12}c^6\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q12__p11-11__m03__Expanding-Brackets": {
+      "status": "checked",
+      "source": "**Topic check:** Expanding brackets. The tag is correct.\n\n**Solution**\n\n\\[\n3x(2x+5)(7x-4)=3x(14x^2+27x-20)\n\\]\n\n\\[\n=42x^3+81x^2-60x\n\\]\n\n**Answer:** \\(42x^3+81x^2-60x\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q25__p24-25__m06__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n(a)\n\n\\[\n28+24x-6x^2=-6x^2+24x+28\n\\]\n\n\\[\n=-6(x^2-4x)+28\n\\]\n\n\\[\n=-6\\left((x-2)^2-4\\right)+28\n\\]\n\n\\[\n=52-6(x-2)^2\n\\]\n\n(b)\n\n\\[\ny=52-6(x-2)^2\n\\]\n\nThe graph is a downward-opening parabola.\n\nThe turning point is\n\n\\[\n(2,52)\n\\]\n\nThe point of intersection with the \\(y\\)-axis is found by putting \\(x=0\\):\n\n\\[\ny=28\n\\]\n\nSo the \\(y\\)-intercept is\n\n\\[\n(0,28)\n\\]\n\n**Answer:** (a) \\(52-6(x-2)^2\\). For the sketch, show a downward parabola with turning point \\((2,52)\\) and \\(y\\)-intercept \\((0,28)\\).",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q23__p21-21__m04__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Ratio Toolkit to Algebraic Fractions.\n\n**Method**\n\n\\[\n\\frac{4x^2-4x-120}{5x^2-180}\\div \\frac{x^2+5x}{10x^2+60x}\n\\]\n\nFactorise:\n\n\\[\n4x^2-4x-120=4(x-6)(x+5)\n\\]\n\n\\[\n5x^2-180=5(x-6)(x+6)\n\\]\n\n\\[\nx^2+5x=x(x+5)\n\\]\n\n\\[\n10x^2+60x=10x(x+6)\n\\]\n\nSo\n\n\\[\n\\frac{4(x-6)(x+5)}{5(x-6)(x+6)}\n\\div\n\\frac{x(x+5)}{10x(x+6)}\n\\]\n\n\\[\n=\\frac{4(x+5)}{5(x+6)}\\times \\frac{10(x+6)}{x+5}=8\n\\]\n\n**Answer:** \\(p=8\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q16__p15-15__m04__Rearranging-Formulas": {
+      "status": "checked",
+      "source": "**Topic check:** Rearranging formulas. The tag is correct.\n\n**Solution**\n\n\\[\nc=\\frac{t^2+3}{7-8t^2}\n\\]\n\n\\[\nc(7-8t^2)=t^2+3\n\\]\n\n\\[\n7c-3=t^2(8c+1)\n\\]\n\n\\[\nt^2=\\frac{7c-3}{8c+1}\n\\]\n\n**Answer:** \\(t=\\pm\\sqrt{\\frac{7c-3}{8c+1}}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q03__p05-05__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks to show the exact result.\n\n**Solution**\n\n\\[\n7\\frac13=\\frac{22}{3},\\qquad 5\\frac47=\\frac{39}{7}\n\\]\n\n\\[\n7\\frac13-5\\frac47=\\frac{22}{3}-\\frac{39}{7}\n\\]\n\n\\[\n=\\frac{154}{21}-\\frac{117}{21}=\\frac{37}{21}\n\\]\n\n\\[\n\\frac{37}{21}=1\\frac{16}{21}\n\\]\n\n**Answer:** \\(1\\frac{16}{21}\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q18__p17-17__m02__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\nLet\n\\[\nx=0.\\dot7\\dot0\\dot2\n\\]\n\nThen\n\\[\n1000x=702.\\dot7\\dot0\\dot2\n\\]\n\nSubtract:\n\\[\n999x=702\n\\]\n\n\\[\nx=\\frac{702}{999}=\\frac{26}{37}\n\\]\n\n**Answer:** \\(0.\\dot7\\dot0\\dot2=\\dfrac{26}{37}\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q19__p17-17__m03__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Solving inequalities. The tag is correct.\n\n**Solution**\n\n\\[\n4x^2+4x-15<0\n\\]\n\nFactorise:\n\\[\n(2x+5)(2x-3)<0\n\\]\n\nThe roots are\n\\[\nx=-\\frac52,\\qquad x=\\frac32\n\\]\n\nThe quadratic is negative between the roots.\n\n**Answer:** \\(-\\frac52<x<\\frac32\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q08__p08-08__m03__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\n\\[\n3x+5y=8\n\\]\n\n\\[\n4x+y=-3.5\n\\]\n\nFrom the second equation,\n\\[\ny=-3.5-4x\n\\]\n\nSubstitute into the first equation:\n\\[\n3x+5(-3.5-4x)=8\n\\]\n\n\\[\n3x-17.5-20x=8\n\\]\n\n\\[\n-17x=25.5\n\\]\n\n\\[\nx=-1.5\n\\]\n\nThen\n\\[\ny=-3.5-4(-1.5)=2.5\n\\]\n\n**Answer:** \\(x=-1.5\\), \\(y=2.5\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q14__p14-14__m02__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to graphs of functions. The question asks students to match equations to graph shapes.\n\n**Solution**\n\n(a)\n\\[\ny=5-x^2\n\\]\n\nThis is a quadratic graph with a negative coefficient of \\(x^2\\), so it is a downward-opening parabola.\n\nThat is graph **B**.\n\n(b)\n\\[\ny=2x^3\n\\]\n\nThis is an increasing cubic graph passing through the origin.\n\nThat is graph **C**.\n\n**Answer:** (a) B, (b) C.",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q09__p09-09__m05__Graphing-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This combines solving and identifying inequalities.\n\n**Solution**\n\nFor part (a),\n\\[\n7-3x<2x+15\n\\]\n\n\\[\n-8<5x\n\\]\n\n\\[\nx>-\\frac85\n\\]\n\nFor part (b), the boundaries are \\(x=2\\), \\(y=3\\), and \\(x+y=9\\).\n\nThe shaded region is\n\\[\nx\\geq2\n\\]\n\n\\[\ny\\geq3\n\\]\n\n\\[\nx+y\\leq9\n\\]\n\n**Answer:** (a) \\(x>-\\frac85\\). (b) \\(x\\geq2\\), \\(y\\geq3\\), \\(x+y\\leq9\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q17__p16-16__m06__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to differentiation. The question asks for a derivative and turning points.\n\n**Solution**\n\n\\[\ny=4x^3+5x^2+2x\n\\]\n\n\\[\n\\frac{dy}{dx}=12x^2+10x+2\n\\]\n\nAt a turning point,\n\\[\n12x^2+10x+2=0\n\\]\n\n\\[\n2(6x^2+5x+1)=0\n\\]\n\n\\[\n(3x+1)(2x+1)=0\n\\]\n\n\\[\nx=-\\frac13 \\quad \\text{or} \\quad x=-\\frac12\n\\]\n\nWhen \\(x=-\\frac13\\),\n\\[\ny=-\\frac7{27}\n\\]\n\nWhen \\(x=-\\frac12\\),\n\\[\ny=-\\frac14\n\\]\n\n**Answer:** \\(\\left(-\\frac12,-\\frac14\\right)\\) and \\(\\left(-\\frac13,-\\frac7{27}\\right)\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q04__p05-05__m02__Bearings-Scale-Drawing-and-Constructions": {
+      "status": "checked",
+      "source": "**Topic check:** Bearings, Scale Drawing & Constructions. The tag is correct.\n\n**Construction answer**\n\nTo construct the perpendicular bisector of \\(AB\\):\n\n1. Open the compass to more than half the length of \\(AB\\).\n2. Draw equal arcs from \\(A\\) above and below \\(AB\\).\n3. Without changing the compass width, draw equal arcs from \\(B\\).\n4. Join the two arc intersections with a ruler.\n\n**Answer:** The joined line is the perpendicular bisector of \\(AB\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q21__p19-19__m03__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe cuboid has dimensions\n\n\\[\n3x,\\qquad 2x,\\qquad y\n\\]\n\nIts volume is \\(1014\\text{ cm}^3\\), so\n\n\\[\n(3x)(2x)(y)=1014\n\\]\n\n\\[\n6x^2y=1014\n\\]\n\n\\[\ny=\\frac{1014}{6x^2}\n\\]\n\n\\[\ny=\\frac{169}{x^2}\n\\]\n\nThe total surface area is\n\n\\[\nA=2(3x\\cdot 2x+3x\\cdot y+2x\\cdot y)\n\\]\n\n\\[\nA=2(6x^2+5xy)\n\\]\n\n\\[\nA=12x^2+10xy\n\\]\n\nSubstitute \\(y=\\frac{169}{x^2}\\):\n\n\\[\nA=12x^2+10x\\left(\\frac{169}{x^2}\\right)\n\\]\n\n\\[\nA=12x^2+\\frac{1690}{x}\n\\]\n\n**Answer:** \\(\\boxed{A=12x^2+\\frac{1690}{x}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q05__p06-06__m04__Congruence-Similarity-and-Geometrical-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Congruence, Similarity & Geometrical Proof. The tag is correct.\n\n**Solution**\n\nThe scale factor from \\(ABCD\\) to \\(EFGH\\) is\n\\[\n\\frac{FG}{BC}=\\frac{10}{4}=2.5\n\\]\n\nSince \\(AB\\) corresponds to \\(EF\\),\n\\[\nx=EF=5\\times 2.5=12.5\n\\]\n\nSince \\(CD\\) corresponds to \\(GH\\),\n\\[\n2.5y=24\n\\]\n\n\\[\ny=9.6\n\\]\n\n**Answer:** \\(x=12.5\\), \\(y=9.6\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q26__p26-26__m04__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe heights of solids A and B are \\(31\\) cm and \\(18.6\\) cm.\n\n\\[\n31:18.6=5:3\n\\]\n\nSo the volumes are in the ratio\n\n\\[\n5^3:3^3=125:27\n\\]\n\nThe difference in volume is\n\n\\[\n125-27=98\n\\]\n\nparts.\n\nThis difference is \\(735\\text{ cm}^3\\), so one part is\n\n\\[\n\\frac{735}{98}=7.5\n\\]\n\nVolume of solid A:\n\n\\[\n125\\times 7.5=937.5\n\\]\n\n**Answer:** \\(\\boxed{937.5\\text{ cm}^3}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q10__p10-10__m05__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Right-Angled Triangles - Pythagoras & Trigonometry.\n\n**Solution**\n\nIn triangle \\(ABC\\),\n\\[\nAC^2=16^2+12^2=400\n\\]\n\n\\[\nAC=20\n\\]\n\nGiven \\(AD=1.5AC\\),\n\\[\nAD=30\n\\]\n\nIn triangle \\(ABD\\),\n\\[\nBD^2=30^2-16^2=644\n\\]\n\n\\[\nBD=25.377\\ldots\n\\]\n\nSo\n\\[\nCD=BD-BC=25.377\\ldots-12=13.377\\ldots\n\\]\n\n**Answer:** \\(13.4\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q24__p22-23__m04__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to 3D Pythagoras & Trigonometry.\n\n**Method**\n\nLet\n\n\\[\nAB=s\n\\]\n\nSince \\(M\\) is the centre of the square base and \\(Q\\) is the midpoint of \\(AB\\),\n\n\\[\nQM=\\frac{s}{2}\n\\]\n\nSince \\(EA=EB=EC=ED\\), the point \\(E\\) is vertically above \\(M\\).\n\nIn right triangle \\(EQM\\),\n\n\\[\n\\tan80^\\circ=\\frac{EM}{QM}\n\\]\n\n\\[\nEM=\\frac{s}{2}\\tan80^\\circ\n\\]\n\nThe distance from the centre of a square to a vertex is half the diagonal:\n\n\\[\nAM=\\frac{s\\sqrt2}{2}\n\\]\n\nIn right triangle \\(EMA\\),\n\n\\[\nEA^2=EM^2+AM^2\n\\]\n\n\\[\nEA^2=\\left(\\frac{s}{2}\\tan80^\\circ\\right)^2+\\left(\\frac{s\\sqrt2}{2}\\right)^2\n\\]\n\n\\[\nEA=s\\sqrt{\\frac{\\tan^2 80^\\circ}{4}+\\frac12}\n\\]\n\nSo\n\n\\[\n\\frac{EA}{AB}=\\sqrt{\\frac{\\tan^2 80^\\circ}{4}+\\frac12}\n\\]\n\n\\[\nn=2.92\n\\]\n\n**Answer:** \\(n=2.92\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q02__p04-04__m05__Transformations": {
+      "status": "checked",
+      "source": "**Topic check:** Transformations. The tag is correct.\n\n**Solution**\n\n(a) Enlarge from centre \\((0,1)\\) with scale factor \\(3\\).\n\nThe vertices become\n\n\\[\n(3,1),\\ (9,1),\\ (9,10),\\ (6,10),\\ (6,4),\\ (3,4)\n\\]\n\n(b) Triangle \\(P\\) is mapped to triangle \\(Q\\) by a \\(180^\\circ\\) rotation about \\((5,5)\\).\n\n**Answer:** (a) vertices \\((3,1),(9,1),(9,10),(6,10),(6,4),(3,4)\\); (b) rotation \\(180^\\circ\\) about \\((5,5)\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q01__p03-03__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe range is \\(10\\), and the greatest card is \\(14\\):\n\n\\[\n14-\\text{smallest}=10\n\\]\n\nSo the smallest card is \\(4\\).\n\nThe median is \\(7.5\\). For 6 cards, the median is the mean of the 3rd and 4th cards:\n\n\\[\n\\frac{6+x}{2}=7.5\n\\]\n\n\\[\nx=9\n\\]\n\nThe mode is \\(6\\), so the other missing card must be \\(6\\).\n\n**Answers:** \\(4,\\ 6,\\ 9\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2H__Q13__p12-13__m06__Cumulative-Frequency-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nThe cumulative frequencies are\n\n\\[\n8,\\ 21,\\ 33,\\ 50,\\ 57,\\ 60\n\\]\n\nPlot\n\n\\[\n(0,0),(10,8),(20,21),(30,33),(40,50),(50,57),(60,60)\n\\]\n\nThe median is the \\(30\\)th value.\n\n\\[\n20+\\frac{30-21}{33-21}\\times 10=27.5\n\\]\n\nAt \\(45\\) minutes,\n\n\\[\nF(45)\\approx 50+\\frac{5}{10}(57-50)=53.5\n\\]\n\nSo the number taking more than \\(45\\) minutes is\n\n\\[\n60-53.5=6.5\n\\]\n\n**Answers:** median about \\(27.5\\) minutes, and about \\(7\\) people.",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Jun2025_P2H__Q11__p11-11__m03__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nThere are \\(17+28=45\\) counters that are not orange.\n\n\\[\nP(\\text{orange})=\\frac49\n\\]\n\nSo\n\n\\[\nP(\\text{not orange})=\\frac59\n\\]\n\nLet the total number of counters be \\(T\\).\n\n\\[\n\\frac{45}{T}=\\frac59\n\\]\n\n\\[\nT=81\n\\]\n\nNumber of orange counters:\n\n\\[\n81-45=36\n\\]\n\n**Answer:** \\(36\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Jun2025_P2H__Q20__p18-18__m06__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThere are 120 gardeners in total and 29 are outside all three sets, so\n\n\\[\nn(C\\cup P\\cup T)=120-29=91\n\\]\n\nThe triple intersection is\n\n\\[\nn(C\\cap P\\cap T)=12\n\\]\n\nSo the pair-only regions are:\n\n\\[\nC\\cap P\\text{ only}=18-12=6\n\\]\n\n\\[\nC\\cap T\\text{ only}=27-12=15\n\\]\n\n\\[\nP\\cap T\\text{ only}=32-12=20\n\\]\n\nSince 43 grow carrots,\n\n\\[\nC\\text{ only}=43-6-15-12=10\n\\]\n\nLet the number who grow only potatoes be \\(y\\). The number who grow only tomatoes is also \\(y\\).\n\nNow add the regions in the union:\n\n\\[\n10+y+y+6+15+20+12=91\n\\]\n\n\\[\n63+2y=91\n\\]\n\n\\[\n2y=28\n\\]\n\n\\[\ny=14\n\\]\n\nSo the Venn regions are:\n\n\\[\nC\\text{ only}=10,\\quad P\\text{ only}=14,\\quad T\\text{ only}=14\n\\]\n\n\\[\nC\\cap P\\text{ only}=6,\\quad C\\cap T\\text{ only}=15,\\quad P\\cap T\\text{ only}=20\n\\]\n\n\\[\nC\\cap P\\cap T=12,\\quad \\text{outside}=29\n\\]\n\nFor part (b),\n\n\\[\nn(T'\\cap C)=C\\text{ only}+C\\cap P\\text{ only}\n\\]\n\n\\[\n=10+6=16\n\\]\n\nFor part (c), one gardener who grows carrots is chosen.\n\n\\[\nP(\\text{also grows potatoes})=\\frac{n(C\\cap P)}{n(C)}\n\\]\n\n\\[\n=\\frac{18}{43}\n\\]\n\n**Answer:** (b) \\(16\\), (c) \\(\\frac{18}{43}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P2H__Q22__p20-20__m04__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation & Bounds is correct.\n\n**Method**\n\nThe shaded area is\n\n\\(X=\\text{area of rectangle}-\\text{area of square}\\)\n\nBounds:\n\n\\(11.25 \\leq AB < 11.75\\)\n\n\\(9.15 \\leq BC < 9.25\\)\n\n\\(4.05 \\leq \\text{side of square} < 4.15\\)\n\nLower bound for \\(X\\):\n\n\\(11.25(9.15)-4.15^2=85.715\\)\n\nUpper bound for \\(X\\):\n\n\\(11.75(9.25)-4.05^2=92.285\\)\n\nSo \\(85.715 \\leq X < 92.285\\). Both bounds round to \\(90\\) to the nearest 10.\n\n**Answer:** \\(X=90\\text{ cm}^2\\) to a suitable degree of accuracy.",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P2H__Q25__p24-25__m06__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n(a)\n\n\\[\n28+24x-6x^2=-6x^2+24x+28\n\\]\n\n\\[\n=-6(x^2-4x)+28\n\\]\n\n\\[\n=-6\\left((x-2)^2-4\\right)+28\n\\]\n\n\\[\n=52-6(x-2)^2\n\\]\n\n(b)\n\n\\[\ny=52-6(x-2)^2\n\\]\n\nThe graph is a downward-opening parabola.\n\nThe turning point is\n\n\\[\n(2,52)\n\\]\n\nThe point of intersection with the \\(y\\)-axis is found by putting \\(x=0\\):\n\n\\[\ny=28\n\\]\n\nSo the \\(y\\)-intercept is\n\n\\[\n(0,28)\n\\]\n\n**Answer:** (a) \\(52-6(x-2)^2\\). For the sketch, show a downward parabola with turning point \\((2,52)\\) and \\(y\\)-intercept \\((0,28)\\).",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P2H__Q23__p21-21__m04__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Ratio Toolkit to Algebraic Fractions.\n\n**Method**\n\n\\[\n\\frac{4x^2-4x-120}{5x^2-180}\\div \\frac{x^2+5x}{10x^2+60x}\n\\]\n\nFactorise:\n\n\\[\n4x^2-4x-120=4(x-6)(x+5)\n\\]\n\n\\[\n5x^2-180=5(x-6)(x+6)\n\\]\n\n\\[\nx^2+5x=x(x+5)\n\\]\n\n\\[\n10x^2+60x=10x(x+6)\n\\]\n\nSo\n\n\\[\n\\frac{4(x-6)(x+5)}{5(x-6)(x+6)}\n\\div\n\\frac{x(x+5)}{10x(x+6)}\n\\]\n\n\\[\n=\\frac{4(x+5)}{5(x+6)}\\times \\frac{10(x+6)}{x+5}=8\n\\]\n\n**Answer:** \\(p=8\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P2H__Q21__p19-19__m03__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe cuboid has dimensions\n\n\\[\n3x,\\qquad 2x,\\qquad y\n\\]\n\nIts volume is \\(1014\\text{ cm}^3\\), so\n\n\\[\n(3x)(2x)(y)=1014\n\\]\n\n\\[\n6x^2y=1014\n\\]\n\n\\[\ny=\\frac{1014}{6x^2}\n\\]\n\n\\[\ny=\\frac{169}{x^2}\n\\]\n\nThe total surface area is\n\n\\[\nA=2(3x\\cdot 2x+3x\\cdot y+2x\\cdot y)\n\\]\n\n\\[\nA=2(6x^2+5xy)\n\\]\n\n\\[\nA=12x^2+10xy\n\\]\n\nSubstitute \\(y=\\frac{169}{x^2}\\):\n\n\\[\nA=12x^2+10x\\left(\\frac{169}{x^2}\\right)\n\\]\n\n\\[\nA=12x^2+\\frac{1690}{x}\n\\]\n\n**Answer:** \\(\\boxed{A=12x^2+\\frac{1690}{x}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P2H__Q26__p26-26__m04__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe heights of solids A and B are \\(31\\) cm and \\(18.6\\) cm.\n\n\\[\n31:18.6=5:3\n\\]\n\nSo the volumes are in the ratio\n\n\\[\n5^3:3^3=125:27\n\\]\n\nThe difference in volume is\n\n\\[\n125-27=98\n\\]\n\nparts.\n\nThis difference is \\(735\\text{ cm}^3\\), so one part is\n\n\\[\n\\frac{735}{98}=7.5\n\\]\n\nVolume of solid A:\n\n\\[\n125\\times 7.5=937.5\n\\]\n\n**Answer:** \\(\\boxed{937.5\\text{ cm}^3}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P2H__Q24__p22-23__m04__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to 3D Pythagoras & Trigonometry.\n\n**Method**\n\nLet\n\n\\[\nAB=s\n\\]\n\nSince \\(M\\) is the centre of the square base and \\(Q\\) is the midpoint of \\(AB\\),\n\n\\[\nQM=\\frac{s}{2}\n\\]\n\nSince \\(EA=EB=EC=ED\\), the point \\(E\\) is vertically above \\(M\\).\n\nIn right triangle \\(EQM\\),\n\n\\[\n\\tan80^\\circ=\\frac{EM}{QM}\n\\]\n\n\\[\nEM=\\frac{s}{2}\\tan80^\\circ\n\\]\n\nThe distance from the centre of a square to a vertex is half the diagonal:\n\n\\[\nAM=\\frac{s\\sqrt2}{2}\n\\]\n\nIn right triangle \\(EMA\\),\n\n\\[\nEA^2=EM^2+AM^2\n\\]\n\n\\[\nEA^2=\\left(\\frac{s}{2}\\tan80^\\circ\\right)^2+\\left(\\frac{s\\sqrt2}{2}\\right)^2\n\\]\n\n\\[\nEA=s\\sqrt{\\frac{\\tan^2 80^\\circ}{4}+\\frac12}\n\\]\n\nSo\n\n\\[\n\\frac{EA}{AB}=\\sqrt{\\frac{\\tan^2 80^\\circ}{4}+\\frac12}\n\\]\n\n\\[\nn=2.92\n\\]\n\n**Answer:** \\(n=2.92\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P2H__Q20__p18-18__m06__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThere are 120 gardeners in total and 29 are outside all three sets, so\n\n\\[\nn(C\\cup P\\cup T)=120-29=91\n\\]\n\nThe triple intersection is\n\n\\[\nn(C\\cap P\\cap T)=12\n\\]\n\nSo the pair-only regions are:\n\n\\[\nC\\cap P\\text{ only}=18-12=6\n\\]\n\n\\[\nC\\cap T\\text{ only}=27-12=15\n\\]\n\n\\[\nP\\cap T\\text{ only}=32-12=20\n\\]\n\nSince 43 grow carrots,\n\n\\[\nC\\text{ only}=43-6-15-12=10\n\\]\n\nLet the number who grow only potatoes be \\(y\\). The number who grow only tomatoes is also \\(y\\).\n\nNow add the regions in the union:\n\n\\[\n10+y+y+6+15+20+12=91\n\\]\n\n\\[\n63+2y=91\n\\]\n\n\\[\n2y=28\n\\]\n\n\\[\ny=14\n\\]\n\nSo the Venn regions are:\n\n\\[\nC\\text{ only}=10,\\quad P\\text{ only}=14,\\quad T\\text{ only}=14\n\\]\n\n\\[\nC\\cap P\\text{ only}=6,\\quad C\\cap T\\text{ only}=15,\\quad P\\cap T\\text{ only}=20\n\\]\n\n\\[\nC\\cap P\\cap T=12,\\quad \\text{outside}=29\n\\]\n\nFor part (b),\n\n\\[\nn(T'\\cap C)=C\\text{ only}+C\\cap P\\text{ only}\n\\]\n\n\\[\n=10+6=16\n\\]\n\nFor part (c), one gardener who grows carrots is chosen.\n\n\\[\nP(\\text{also grows potatoes})=\\frac{n(C\\cap P)}{n(C)}\n\\]\n\n\\[\n=\\frac{18}{43}\n\\]\n\n**Answer:** (b) \\(16\\), (c) \\(\\frac{18}{43}\\)",
+      "updated": "2026-05-05T20:41:15",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

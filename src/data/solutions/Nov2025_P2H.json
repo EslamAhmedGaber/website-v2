@@ -1,0 +1,203 @@
+{
+  "paperSlug": "Nov2025_P2H",
+  "solutions": {
+    "all::Nov2025_P2H__Q08__p08-08__m03__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n5.76\\times 10^4=57600\n\\]\n\nFor part (b), simplify the numerator:\n\n\\[\n3\\times 10^5+8\\times 10^3=300000+8000=308000\n\\]\n\nThen\n\n\\[\n\\frac{308000}{4\\times 10^{-2}}=\\frac{308000}{0.04}=7700000\n\\]\n\nIn standard form:\n\n\\[\n7700000=7.7\\times 10^6\n\\]\n\n**Answer:** (a) \\(57600\\), (b) \\(7.7\\times 10^6\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q03__p04-04__m04__Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Fractions. The tag is correct.\n\n**Method**\n\nThere are \\(9+43=52\\) red and blue bricks.\n\nLet the total number of bricks be \\(T\\).\n\nSince \\(\\frac7{20}\\) of the bricks are yellow, the remaining fraction is\n\n\\[\n1-\\frac7{20}=\\frac{13}{20}\n\\]\n\nSo\n\n\\[\n\\frac{13}{20}T=52\n\\]\n\n\\[\nT=52\\times \\frac{20}{13}=80\n\\]\n\nYellow bricks:\n\n\\[\n\\frac7{20}\\times 80=28\n\\]\n\nEach brick weighs \\(35\\) grams, so total yellow-brick weight is\n\n\\[\n28\\times 35=980\n\\]\n\n**Answer:** \\(980\\) grams",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q05__p06-06__m06__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct because part (b) is depreciation.\n\n**Method**\n\nFor part (a), the increase is\n\n\\[\n87-75=12\n\\]\n\nPercentage increase:\n\n\\[\n\\frac{12}{75}\\times 100=16\n\\]\n\nFor part (b), a depreciation of \\(20\\%\\) gives multiplier\n\n\\[\n0.80\n\\]\n\nAfter 3 years,\n\n\\[\n960(0.80)^3=491.52\n\\]\n\n**Answer:** (a) \\(16\\%\\), (b) \\(491.52\\) Swiss francs",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q24__p24-24__m05__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\n\\[\nD=\\frac{n}{p-q}\n\\]\n\nBounds:\n\n\\[\n10.25\\le n<10.35\n\\]\n\n\\[\n7.235\\le p<7.245\n\\]\n\n\\[\n4.385\\le q<4.395\n\\]\n\nLower bound:\n\n\\[\nD_{\\text{lower}}=\\frac{10.25}{7.245-4.385}=3.5839\\ldots\n\\]\n\nUpper bound:\n\n\\[\nD_{\\text{upper}}=\\frac{10.35}{7.235-4.395}=3.6443\\ldots\n\\]\n\nSo\n\n\\[\n3.5839\\ldots < D < 3.6443\\ldots\n\\]\n\nBoth bounds round to \\(3.6\\) to 1 decimal place.\n\n**Answer:** \\(D=3.6\\) to a suitable degree of accuracy",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q17__p17-17__m03__Direct-and-Inverse-Proportion": {
+      "status": "checked",
+      "source": "**Topic check:** Direct and Inverse Proportion. The tag is correct.\n\n**Method**\n\n\\(T\\) is inversely proportional to \\(m\\), so\n\n\\[\nT=\\frac{k}{m}\n\\]\n\nUse \\(T=15\\) when \\(m=36\\):\n\n\\[\n15=\\frac{k}{36}\n\\]\n\n\\[\nk=540\n\\]\n\nTherefore\n\n\\[\nT=\\frac{540}{m}\n\\]\n\n**Answer:** \\(T=\\frac{540}{m}\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q13__p13-13__m04__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic roots and indices. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n\\left(\\frac{125x^6}{y^{15}}\\right)^{1/3}\n=\\frac{5x^2}{y^5}\n\\]\n\n(b)\n\\[\n64^p=(4^3)^p=4^{3p}\n\\]\n\n\\[\n4^n=\\frac{4^m}{64^p}=\\frac{4^m}{4^{3p}}=4^{m-3p}\n\\]\n\n**Answer:** (a) \\(\\frac{5x^2}{y^5}\\), (b) \\(n=m-3p\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q07__p08-08__m03__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is correct.\n\n**Solution**\n\n\\[\nx^2+2x-48=(x+8)(x-6)\n\\]\n\nSo\n\\[\n(x+8)(x-6)=0\n\\]\n\n**Answer:** \\(x=-8\\) or \\(x=6\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q16__p17-17__m02__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\nLet\n\\[\nx=0.3787878\\ldots\n\\]\n\nThen\n\\[\n10x=3.787878\\ldots\n\\]\n\nand\n\\[\n1000x=378.787878\\ldots\n\\]\n\nSubtract:\n\\[\n990x=375\n\\]\n\n\\[\nx=\\frac{375}{990}=\\frac{25}{66}\n\\]\n\n**Answer:** \\(0.3787878\\ldots=\\dfrac{25}{66}\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q02__p03-03__m03__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\n\\[\n5x+y=11\n\\]\n\n\\[\n3x-y=9\n\\]\n\nAdd the equations:\n\\[\n8x=20\n\\]\n\n\\[\nx=2.5\n\\]\n\nSubstitute into \\(5x+y=11\\):\n\\[\n5(2.5)+y=11\n\\]\n\n\\[\ny=-1.5\n\\]\n\n**Answer:** \\(x=2.5\\), \\(y=-1.5\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q20__p20-20__m03__Forming-and-Solving-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor\n\n\\[\nax^2+4x+c=0\n\\]\n\nthe quadratic formula gives\n\n\\[\nx=\\frac{-4\\pm \\sqrt{4^2-4ac}}{2a}\n\\]\n\nThe given solutions are\n\n\\[\nx=\\frac{-4\\pm 2\\sqrt{39}}{10}\n\\]\n\nCompare denominators:\n\n\\[\n2a=10\n\\]\n\n\\[\na=5\n\\]\n\nCompare the square root parts:\n\n\\[\n\\sqrt{16-4ac}=2\\sqrt{39}\n\\]\n\nSquare both sides:\n\n\\[\n16-4ac=156\n\\]\n\nUse \\(a=5\\):\n\n\\[\n16-20c=156\n\\]\n\n\\[\n-20c=140\n\\]\n\n\\[\nc=-7\n\\]\n\n**Answer:** \\(a=5,\\ c=-7\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q25__p25-25__m05__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\na=10\n\\]\n\n\\[\nu_{20}=86\n\\]\n\n\\[\n10+19d=86\n\\]\n\n\\[\nd=4\n\\]\n\nUse\n\n\\[\nS_N=\\frac N2(2a+(N-1)d)\n\\]\n\n\\[\n5194=\\frac N2(20+4(N-1))\n\\]\n\n\\[\n5194=\\frac N2(4N+16)\n\\]\n\n\\[\n5194=2N(N+4)\n\\]\n\n\\[\nN^2+4N-2597=0\n\\]\n\n\\[\nN=\\frac{-4+102}{2}=49\n\\]\n\n**Answer:** \\(N=49\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q19__p19-19__m03__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Functions. The tag is correct.\n\n**Solution**\n\n\\[\nf(x)=3x-2,\\qquad g(x)=\\frac{x}{x-1}\n\\]\n\n(a)\n\\[\ng(3)=\\frac{3}{3-1}=\\frac32\n\\]\n\n(b)\n\\[\ngf(x)=g(f(x))\n\\]\n\n\\[\ngf(x)=\\frac{3x-2}{(3x-2)-1}\n\\]\n\n\\[\ngf(x)=\\frac{3x-2}{3x-3}\n\\]\n\n**Answer:** \\(g(3)=\\frac32\\), and \\(gf(x)=\\dfrac{3x-2}{3x-3}\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q01__p03-03__m02__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Coordinate geometry. The tag is correct.\n\n**Solution**\n\n\\[\nP=(-3,0),\\qquad Q=(9,16)\n\\]\n\nThe midpoint is\n\\[\n\\left(\\frac{-3+9}{2},\\frac{0+16}{2}\\right)\n\\]\n\n\\[\n=(3,8)\n\\]\n\n**Answer:** \\((3,8)\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q12__p12-13__m05__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is a reciprocal-curve graph and estimate question.\n\n**Solution**\n\n\\[\ny=\\frac12\\left(x+\\frac4x\\right)\n\\]\n\nThe completed table is:\n\n\\[\n\\begin{array}{c|rrrrrrr}\nx&0.5&1&2&3&4&5&6\\\\\n\\hline\ny&4.25&2.5&2&2.17&2.5&2.9&3.33\n\\end{array}\n\\]\n\nFor\n\\[\nx+\\frac4x=6\n\\]\nwe need\n\\[\n\\frac12\\left(x+\\frac4x\\right)=3\n\\]\n\nSo draw the horizontal line \\(y=3\\) on the graph.\n\nThe intersections give approximately\n\\[\nx=0.8 \\quad \\text{and} \\quad x=5.2\n\\]\n\n**Answer:** Table missing values \\(2.5,2\\). Estimates \\(0.8\\) and \\(5.2\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q10__p10-10__m04__Graphing-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This combines a number line and graph inequalities.\n\n**Solution**\n\nFor part (a), \\(w<1\\) is shown with an open circle at 1 and an arrow to the left.\n\nFor part (b), the region is right of \\(x=-3\\), below \\(y=4\\), and above \\(y=x\\):\n\\[\nx\\geq-3\n\\]\n\n\\[\ny\\leq4\n\\]\n\n\\[\ny\\geq x\n\\]\n\n**Answer:** (a) Open circle at 1, shade left. (b) \\(x\\geq-3\\), \\(y\\leq4\\), \\(y\\geq x\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q22__p22-22__m06__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Differentiation.\n\n**Method**\n\n\\[\ny=x^3-16x+7\n\\]\n\nDifferentiate:\n\n\\[\n\\frac{dy}{dx}=3x^2-16\n\\]\n\nThe gradient of the tangent is \\(11\\), so\n\n\\[\n3x^2-16=11\n\\]\n\n\\[\n3x^2=27\n\\]\n\n\\[\nx^2=9\n\\]\n\n\\[\nx=3 \\quad \\text{or} \\quad x=-3\n\\]\n\nWhen \\(x=3\\):\n\n\\[\ny=3^3-16(3)+7=27-48+7=-14\n\\]\n\nThe tangent has equation \\(y=11x+b\\), so\n\n\\[\n-14=11(3)+b\n\\]\n\n\\[\nb=-47\n\\]\n\nWhen \\(x=-3\\):\n\n\\[\ny=(-3)^3-16(-3)+7=-27+48+7=28\n\\]\n\n\\[\n28=11(-3)+b\n\\]\n\n\\[\nb=61\n\\]\n\n**Answer:** \\(\\boxed{b=-47 \\text{ or } b=61}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q26__p26-27__m06__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nVolume of cone:\n\n\\[\n\\frac13\\pi x^2(5x)=\\frac53\\pi x^3\n\\]\n\nVolume of hemisphere:\n\n\\[\n\\frac23\\pi x^3\n\\]\n\nTotal volume:\n\n\\[\n\\frac53\\pi x^3+\\frac23\\pi x^3=504\\pi\n\\]\n\n\\[\n\\frac73\\pi x^3=504\\pi\n\\]\n\n\\[\nx^3=216\n\\]\n\n\\[\nx=6\n\\]\n\nCone volume:\n\n\\[\n\\frac53\\pi(6)^3=360\\pi\n\\]\n\nMass of copper cone:\n\n\\[\n360\\pi\\times 9=3240\\pi\n\\]\n\nMass of hemisphere:\n\n\\[\n4752\\pi-3240\\pi=1512\\pi\n\\]\n\nHemisphere volume:\n\n\\[\n\\frac23\\pi(6)^3=144\\pi\n\\]\n\nDensity of the hemisphere:\n\n\\[\n\\frac{1512\\pi}{144\\pi}=10.5\n\\]\n\n**Answer:** \\(10.5\\text{ g/cm}^3\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q15__p16-16__m04__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Circle Theorems. The tag is correct.\n\n**Solution**\n\n(a) The angle at the centre is twice the angle at the circumference standing on chord \\(DB\\):\n\\[\n\\angle DOB=2\\times 48^\\circ=96^\\circ\n\\]\n\n(b) Opposite angles in cyclic quadrilateral \\(ABCD\\) add to \\(180^\\circ\\):\n\\[\n\\angle BCD=180^\\circ-48^\\circ=132^\\circ\n\\]\n\n**Answer:** \\(\\angle DOB=96^\\circ\\), and \\(\\angle BCD=132^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q06__p07-07__m05__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to circles, arcs and sectors.\n\n**Solution**\n\nThe circumference of the large circle is \\(160\\text{ cm}\\), so\n\\[\n2\\pi R=160\n\\]\n\n\\[\nR=\\frac{80}{\\pi}\n\\]\n\nThe three equal small circles fit along the diameter of the large circle, so\n\\[\n2R=6r\n\\]\n\n\\[\nr=\\frac{R}{3}=\\frac{80}{3\\pi}\n\\]\n\nArea of one small circle is\n\\[\n\\pi r^2=\\pi\\left(\\frac{80}{3\\pi}\\right)^2\n\\]\n\n\\[\n=226.35\\ldots\n\\]\n\n**Answer:** \\(226\\text{ cm}^2\\) to 3 significant figures.",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q04__p05-05__m03__Congruence-Similarity-and-Geometrical-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Congruence, Similarity & Geometrical Proof. The tag is correct.\n\n**Solution**\n\nThe scale factor from the largest quadrilateral to the middle quadrilateral is\n\\[\n\\frac{7}{28}=\\frac14\n\\]\n\nSo the side corresponding to \\(60\\text{ cm}\\) in the middle shape is\n\\[\n60\\times \\frac14=15\n\\]\n\nThe scale factor from the middle quadrilateral to the smallest quadrilateral is\n\\[\n\\frac{6}{18}=\\frac13\n\\]\n\n\\[\nJK=15\\times \\frac13=5\n\\]\n\n**Answer:** \\(5\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q23__p23-23__m03__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nSurface area ratio Q:P:\n\n\\[\n450:200=9:4\n\\]\n\nSo the linear ratio Q:P is\n\n\\[\n3:2\n\\]\n\nTherefore the volume ratio Q:P is\n\n\\[\n3^3:2^3=27:8\n\\]\n\nShape P has volume \\(672\\text{ cm}^3\\).\n\nVolume of Q:\n\n\\[\n672\\times \\frac{27}{8}=2268\n\\]\n\n**Answer:** \\(\\boxed{2268\\text{ cm}^3}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q11__p11-11__m04__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Right-Angled Triangles - Pythagoras & Trigonometry. The tag is correct.\n\n**Solution**\n\nUse the area to find \\(AC\\):\n\n\\[\n\\frac12\\times 30\\times AC=240\n\\]\n\n\\[\n15AC=240\n\\]\n\n\\[\nAC=16\n\\]\n\nThen\n\n\\[\nBC^2=30^2+16^2=1156\n\\]\n\n\\[\nBC=34\n\\]\n\nPerimeter:\n\n\\[\n30+16+34=80\n\\]\n\n**Answer:** \\(80\\text{ cm}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q21__p21-21__m03__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor a histogram,\n\n\\[\n\\text{frequency}=\\text{class width}\\times \\text{frequency density}\n\\]\n\nFor \\(10<t\\leq15\\), the frequency is 20 and the class width is 5, so\n\n\\[\n\\text{frequency density}=\\frac{20}{5}=4\n\\]\n\nUsing this scale from the histogram:\n\n\\[\n15<t\\leq30 \\quad \\text{has frequency density } 3\n\\]\n\n\\[\n30<t\\leq40 \\quad \\text{has frequency density } 1\n\\]\n\n\\[\n40<t\\leq60 \\quad \\text{has frequency density } 0.7\n\\]\n\nFor trains at least 25 minutes late:\n\n\\[\n(5)(3)+(10)(1)+(20)(0.7)\n\\]\n\n\\[\n=15+10+14\n\\]\n\n\\[\n=39\n\\]\n\n**Answer:** \\(39\\) trains",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P2H__Q14__p14-15__m05__Cumulative-Frequency-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nThere are \\(40\\) plants.\n\nFrom the graph,\n\n\\[\n\\text{median}\\approx 26\\text{ cm}\n\\]\n\n\\[\nQ_1\\approx 19\\text{ cm},\\qquad Q_3\\approx 35\\text{ cm}\n\\]\n\n\\[\n\\text{IQR}\\approx 35-19=16\\text{ cm}\n\\]\n\nFor premium plants, use height \\(>40\\) cm.\n\n\\[\nF(40)\\approx 34\n\\]\n\n\\[\n40-34=6\n\\]\n\n\\[\n6\\times 30=180\n\\]\n\n**Answers:** median about \\(26\\) cm, IQR about \\(16\\) cm, and \\(180\\) euros.",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Nov2025_P2H__Q09__p09-09__m03__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nBag A has\n\n\\[\n120\\times 0.45=54\n\\]\n\nred counters.\n\nBag B has\n\n\\[\n80\\times 0.30=24\n\\]\n\nred counters.\n\nAfter combining the bags, the total number of red counters is\n\n\\[\n54+24=78\n\\]\n\nThe total number of counters is\n\n\\[\n120+80=200\n\\]\n\n\\[\nP(\\text{red})=\\frac{78}{200}=0.39\n\\]\n\n**Answer:** \\(0.39\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Nov2025_P2H__Q18__p18-18__m03__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nThe total is \\(40\\).\n\nThe regions shown add to\n\n\\[\n5+x+7+2x+4x+14\n\\]\n\nSo\n\n\\[\n26+7x=40\n\\]\n\n\\[\n7x=14\n\\]\n\n\\[\nx=2\n\\]\n\nLatin or Sanskrit:\n\n\\[\n5+x+2x+4x=5+2+4+8=19\n\\]\n\n\\[\nP(L\\cup S)=\\frac{19}{40}\n\\]\n\n**Answer:** \\(\\frac{19}{40}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Nov2025_P2H__Q24__p24-24__m05__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation & Bounds is correct.\n\n**Method**\n\n\\[\nD=\\frac{n}{p-q}\n\\]\n\nBounds:\n\n\\(10.25 \\leq n < 10.35\\)\n\n\\(7.235 \\leq p < 7.245\\)\n\n\\(4.385 \\leq q < 4.395\\)\n\nLower bound:\n\n\\[\n\\frac{10.25}{7.245-4.385}=3.5839...\n\\]\n\nUpper bound:\n\n\\[\n\\frac{10.35}{7.235-4.395}=3.6443...\n\\]\n\nSo \\(3.5839... \\leq D < 3.6443...\\). Both bounds round to \\(3.6\\) to 1 decimal place.\n\n**Answer:** \\(D=3.6\\) to a suitable degree of accuracy.",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P2H__Q20__p20-20__m03__Forming-and-Solving-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor\n\n\\[\nax^2+4x+c=0\n\\]\n\nthe quadratic formula gives\n\n\\[\nx=\\frac{-4\\pm \\sqrt{4^2-4ac}}{2a}\n\\]\n\nThe given solutions are\n\n\\[\nx=\\frac{-4\\pm 2\\sqrt{39}}{10}\n\\]\n\nCompare denominators:\n\n\\[\n2a=10\n\\]\n\n\\[\na=5\n\\]\n\nCompare the square root parts:\n\n\\[\n\\sqrt{16-4ac}=2\\sqrt{39}\n\\]\n\nSquare both sides:\n\n\\[\n16-4ac=156\n\\]\n\nUse \\(a=5\\):\n\n\\[\n16-20c=156\n\\]\n\n\\[\n-20c=140\n\\]\n\n\\[\nc=-7\n\\]\n\n**Answer:** \\(a=5,\\ c=-7\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P2H__Q25__p25-25__m05__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\na=10\n\\]\n\n\\[\nu_{20}=86\n\\]\n\n\\[\n10+19d=86\n\\]\n\n\\[\nd=4\n\\]\n\nUse\n\n\\[\nS_N=\\frac N2(2a+(N-1)d)\n\\]\n\n\\[\n5194=\\frac N2(20+4(N-1))\n\\]\n\n\\[\n5194=\\frac N2(4N+16)\n\\]\n\n\\[\n5194=2N(N+4)\n\\]\n\n\\[\nN^2+4N-2597=0\n\\]\n\n\\[\nN=\\frac{-4+102}{2}=49\n\\]\n\n**Answer:** \\(N=49\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P2H__Q22__p22-22__m06__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Differentiation.\n\n**Method**\n\n\\[\ny=x^3-16x+7\n\\]\n\nDifferentiate:\n\n\\[\n\\frac{dy}{dx}=3x^2-16\n\\]\n\nThe gradient of the tangent is \\(11\\), so\n\n\\[\n3x^2-16=11\n\\]\n\n\\[\n3x^2=27\n\\]\n\n\\[\nx^2=9\n\\]\n\n\\[\nx=3 \\quad \\text{or} \\quad x=-3\n\\]\n\nWhen \\(x=3\\):\n\n\\[\ny=3^3-16(3)+7=27-48+7=-14\n\\]\n\nThe tangent has equation \\(y=11x+b\\), so\n\n\\[\n-14=11(3)+b\n\\]\n\n\\[\nb=-47\n\\]\n\nWhen \\(x=-3\\):\n\n\\[\ny=(-3)^3-16(-3)+7=-27+48+7=28\n\\]\n\n\\[\n28=11(-3)+b\n\\]\n\n\\[\nb=61\n\\]\n\n**Answer:** \\(\\boxed{b=-47 \\text{ or } b=61}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P2H__Q26__p26-27__m06__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nVolume of cone:\n\n\\[\n\\frac13\\pi x^2(5x)=\\frac53\\pi x^3\n\\]\n\nVolume of hemisphere:\n\n\\[\n\\frac23\\pi x^3\n\\]\n\nTotal volume:\n\n\\[\n\\frac53\\pi x^3+\\frac23\\pi x^3=504\\pi\n\\]\n\n\\[\n\\frac73\\pi x^3=504\\pi\n\\]\n\n\\[\nx^3=216\n\\]\n\n\\[\nx=6\n\\]\n\nCone volume:\n\n\\[\n\\frac53\\pi(6)^3=360\\pi\n\\]\n\nMass of copper cone:\n\n\\[\n360\\pi\\times 9=3240\\pi\n\\]\n\nMass of hemisphere:\n\n\\[\n4752\\pi-3240\\pi=1512\\pi\n\\]\n\nHemisphere volume:\n\n\\[\n\\frac23\\pi(6)^3=144\\pi\n\\]\n\nDensity of the hemisphere:\n\n\\[\n\\frac{1512\\pi}{144\\pi}=10.5\n\\]\n\n**Answer:** \\(10.5\\text{ g/cm}^3\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P2H__Q23__p23-23__m03__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nSurface area ratio Q:P:\n\n\\[\n450:200=9:4\n\\]\n\nSo the linear ratio Q:P is\n\n\\[\n3:2\n\\]\n\nTherefore the volume ratio Q:P is\n\n\\[\n3^3:2^3=27:8\n\\]\n\nShape P has volume \\(672\\text{ cm}^3\\).\n\nVolume of Q:\n\n\\[\n672\\times \\frac{27}{8}=2268\n\\]\n\n**Answer:** \\(\\boxed{2268\\text{ cm}^3}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P2H__Q21__p21-21__m03__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor a histogram,\n\n\\[\n\\text{frequency}=\\text{class width}\\times \\text{frequency density}\n\\]\n\nFor \\(10<t\\leq15\\), the frequency is 20 and the class width is 5, so\n\n\\[\n\\text{frequency density}=\\frac{20}{5}=4\n\\]\n\nUsing this scale from the histogram:\n\n\\[\n15<t\\leq30 \\quad \\text{has frequency density } 3\n\\]\n\n\\[\n30<t\\leq40 \\quad \\text{has frequency density } 1\n\\]\n\n\\[\n40<t\\leq60 \\quad \\text{has frequency density } 0.7\n\\]\n\nFor trains at least 25 minutes late:\n\n\\[\n(5)(3)+(10)(1)+(20)(0.7)\n\\]\n\n\\[\n=15+10+14\n\\]\n\n\\[\n=39\n\\]\n\n**Answer:** \\(39\\) trains",
+      "updated": "2026-05-05T16:25:30",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

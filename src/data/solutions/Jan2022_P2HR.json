@@ -1,0 +1,167 @@
+{
+  "paperSlug": "Jan2022_P2HR",
+  "solutions": {
+    "all::Jan2022_P2HR__Q10__p14-14__m03__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\nAustria spending per person:\n\n\\[\n\\frac{4.2\\times 10^{10}}{8.7\\times 10^6}\n=4827.586\\ldots\n\\]\n\nLuxembourg spending per person:\n\n\\[\n\\frac{3.7\\times 10^9}{6.3\\times 10^5}\n=5873.015\\ldots\n\\]\n\nDifference:\n\n\\[\n5873.015\\ldots-4827.586\\ldots=1045.429\\ldots\n\\]\n\nTo the nearest whole number, this is\n\n\\[\n1045\n\\]\n\n**Answer:** \\(1045\\) dollars",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q02__p04-05__m07__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nMary saved in 2021:\n\n\\[\n78\\times 12=936\n\\]\n\nIncrease from 2020:\n\n\\[\n936-720=216\n\\]\n\nPercentage increase:\n\n\\[\n\\frac{216}{720}\\times 100=30\n\\]\n\nSo \\(P=30\\).\n\nCoupon A saves\n\n\\[\n18\\%\\times 1600=0.18\\times 1600=288\n\\]\n\nCoupon B saves \\(12.5\\%\\) of the accommodation and flights together:\n\n\\[\n1600+800=2400\n\\]\n\n\\[\n12.5\\%\\times 2400=0.125\\times 2400=300\n\\]\n\nCoupon B saves more money.\n\n**Answer:** (a) \\(P=30\\), (b) Coupon B",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q05__p08-08__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nThe multiplier for \\(2.5\\%\\) compound interest is\n\n\\[\n1.025\n\\]\n\nAfter 3 years,\n\n\\[\n7200(1.025)^3=7753.6125\n\\]\n\nCorrect to the nearest dollar,\n\n\\[\n7753.6125\\approx 7754\n\\]\n\n**Answer:** \\(7754\\) dollars",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q20__p25-25__m04__Direct-and-Inverse-Proportion": {
+      "status": "checked",
+      "source": "**Topic check:** Direct and Inverse Proportion. The tag is correct.\n\n**Method**\n\n\\(y\\) is inversely proportional to \\(\\sqrt{x}\\), so\n\n\\[\ny\\propto \\frac{1}{\\sqrt{x}}\n\\]\n\n\\(x\\) is directly proportional to \\(T^3\\), so \\(\\sqrt{x}\\propto T^{3/2}\\).\n\nTherefore\n\n\\[\ny\\propto \\frac{1}{T^{3/2}}\n\\]\n\nSo\n\n\\[\nyT^{3/2}=k\n\\]\n\nUse \\(y=8\\) when \\(T=25\\):\n\n\\[\nk=8\\times 25^{3/2}=8\\times 125=1000\n\\]\n\nWhen \\(y=27\\),\n\n\\[\n27T^{3/2}=1000\n\\]\n\n\\[\nT^{3/2}=\\frac{1000}{27}=\\left(\\frac{10}{3}\\right)^3\n\\]\n\nRaise both sides to the power \\(\\frac{2}{3}\\):\n\n\\[\nT=\\left(\\frac{10}{3}\\right)^2=\\frac{100}{9}\n\\]\n\n**Answer:** \\(T=\\frac{100}{9}\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q06__p09-09__m04__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic Roots and Indices. The tag is correct.\n\n**Method**\n\n\\[\nx^0=1\n\\]\n\nFor part (b),\n\n\\[\n2^{-3}\\times 2^9=2^{-3+9}=2^6\n\\]\n\nSo\n\n\\[\nn=6\n\\]\n\nFor part (c),\n\n\\[\n\\frac{7^{206}\\times 7^m}{7^{214}}=7^{206+m-214}\n\\]\n\nThis equals \\(7^{-3}\\), so\n\n\\[\n206+m-214=-3\n\\]\n\n\\[\nm=5\n\\]\n\n**Answer:** (a) \\(1\\), (b) \\(n=6\\), (c) \\(m=5\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q15__p20-20__m04__Rearranging-Formulas": {
+      "status": "checked",
+      "source": "**Topic check:** Rearranging formulas. The tag is correct.\n\n**Solution**\n\n\\[\nn^2=\\frac{4d+t^3}{t^3}\n\\]\n\n\\[\nn^2t^3=4d+t^3\n\\]\n\n\\[\nt^3(n^2-1)=4d\n\\]\n\n\\[\nt^3=\\frac{4d}{n^2-1}\n\\]\n\n**Answer:** \\(t=\\sqrt[3]{\\frac{4d}{n^2-1}}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q13__p17-17__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks for exact algebraic working.\n\n**Solution**\n\n\\[\na=\\sqrt8+4,\\qquad b=\\sqrt8-4\n\\]\n\n\\[\na-b=(\\sqrt8+4)-(\\sqrt8-4)=8\n\\]\n\n\\[\na+b=(\\sqrt8+4)+(\\sqrt8-4)=2\\sqrt8=4\\sqrt2\n\\]\n\nSo\n\\[\n(a-b)(a+b)=8\\times4\\sqrt2=32\\sqrt2\n\\]\n\nThe question says this equals \\(y\\sqrt{4y}\\). Try \\(y=8\\):\n\\[\n8\\sqrt{32}=8\\times4\\sqrt2=32\\sqrt2\n\\]\n\n**Answer:** \\(y=8\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q03__p06-06__m05__Solving-Linear-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to solving linear equations. The linear equation is the larger part of the question.\n\n**Solution**\n\n(a)\n\\[\n4y+5>12\n\\]\n\n\\[\n4y>7\n\\]\n\n\\[\ny>\\frac74\n\\]\n\n(b)\n\\[\n6x-5=\\frac{4x-7}{2}\n\\]\n\nMultiply by 2:\n\\[\n12x-10=4x-7\n\\]\n\n\\[\n8x=3\n\\]\n\n\\[\nx=\\frac38\n\\]\n\n**Answer:** \\(y>\\frac74\\), and \\(x=\\frac38\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q23__p30-30__m04__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nf(x)=x+25\n\\]\n\n\\[\ng(x)=x^2-12x\n\\]\n\n\\[\nh(x)=fg(x)=f(g(x))\n\\]\n\n\\[\nh(x)=x^2-12x+25\n\\]\n\n\\[\nh(x)=(x-6)^2-11\n\\]\n\nLet\n\n\\[\ny=(x-6)^2-11\n\\]\n\n\\[\ny+11=(x-6)^2\n\\]\n\nSince the domain of \\(h\\) is \\(x<6\\), take the negative square root:\n\n\\[\nx-6=-\\sqrt{y+11}\n\\]\n\n\\[\nx=6-\\sqrt{y+11}\n\\]\n\n**Answer:** \\(h^{-1}(x)=6-\\sqrt{x+11}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q18__p23-23__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Coordinate geometry. The tag is correct.\n\n**Solution**\n\nThe line is\n\\[\n2y=x+1\n\\]\n\nSo\n\\[\nx=2y-1\n\\]\n\nSubstitute into the curve\n\\[\n3y^2+7y+16=x^2-x\n\\]\n\n\\[\n3y^2+7y+16=(2y-1)^2-(2y-1)\n\\]\n\n\\[\n3y^2+7y+16=4y^2-6y+2\n\\]\n\n\\[\ny^2-13y-14=0\n\\]\n\n\\[\n(y-14)(y+1)=0\n\\]\n\nSo\n\\[\ny=14 \\quad \\text{or} \\quad y=-1\n\\]\n\nIf \\(y=14\\), then \\(x=27\\).\n\nIf \\(y=-1\\), then \\(x=-3\\).\n\n**Answer:** \\((27,14)\\) and \\((-3,-1)\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q22__p28-29__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe gradient of \\(AC\\) is \\(-\\frac67\\).\n\n\\[\n\\frac{q-10}{8-p}=-\\frac67\n\\]\n\n\\[\n7(q-10)=-6(8-p)\n\\]\n\n\\[\n7q-70=-48+6p\n\\]\n\n\\[\n6p-7q=-22\n\\]\n\nSince \\(\\angle ABC=90^\\circ\\), lines \\(AB\\) and \\(BC\\) are perpendicular.\n\n\\[\n\\text{gradient of }AB=\\frac{10-(-5)}{p-(-1)}=\\frac{15}{p+1}\n\\]\n\n\\[\n\\text{gradient of }BC=\\frac{q-(-5)}{8-(-1)}=\\frac{q+5}{9}\n\\]\n\nThe product of perpendicular gradients is \\(-1\\):\n\n\\[\n\\frac{15}{p+1}\\times \\frac{q+5}{9}=-1\n\\]\n\n\\[\n15(q+5)=-9(p+1)\n\\]\n\n\\[\n5(q+5)=-3(p+1)\n\\]\n\n\\[\n3p+5q=-28\n\\]\n\nNow solve\n\n\\[\n6p-7q=-22\n\\]\n\n\\[\n3p+5q=-28\n\\]\n\nDouble the second equation:\n\n\\[\n6p+10q=-56\n\\]\n\nSubtract:\n\n\\[\n17q=-34\n\\]\n\n\\[\nq=-2\n\\]\n\nThen\n\n\\[\n3p+5(-2)=-28\n\\]\n\n\\[\n3p=-18\n\\]\n\n\\[\np=-6\n\\]\n\n**Answer:** \\(p=-6,\\ q=-2\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q11__p15-15__m04__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is drawing a reciprocal graph.\n\n**Solution**\n\n\\[\ny=\\frac6x\n\\]\n\nThe completed table is:\n\n\\[\n\\begin{array}{c|rrrrrrr}\nx&0.5&1&2&3&4&5&6\\\\\n\\hline\ny&12&6&3&2&1.5&1.2&1\n\\end{array}\n\\]\n\nPlot the points and join them with a smooth decreasing reciprocal curve.\n\n**Answer:** Missing values are \\(12,3,1.5,1.2\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q17__p22-22__m03__Estimating-Gradients": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to estimating gradients. The question asks for an estimated gradient from a curve.\n\n**Solution**\n\nDraw a tangent to the curve at the point where\n\\[\nx=2\n\\]\n\nUsing two clear points on the tangent, for example approximately \\((1.5,0.6)\\) and \\((2.3,2.2)\\),\n\\[\n\\text{gradient}\\approx\\frac{2.2-0.6}{2.3-1.5}\n\\]\n\n\\[\n\\text{gradient}\\approx2.0\n\\]\n\n**Answer:** The gradient is approximately \\(2\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q07__p10-10__m05__Graphing-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is drawing and shading inequalities.\n\n**Solution**\n\nA straight line with gradient \\(-3\\) passing through \\((0,5)\\) has equation\n\\[\ny=-3x+5\n\\]\n\nFor the region, use the inequalities:\n\\[\nx<6\n\\]\n\n\\[\ny>2\n\\]\n\n\\[\ny\\leq x+1\n\\]\n\n**Answer:** (a) \\(y=-3x+5\\). (b) Shade \\(x<6\\), \\(y>2\\), \\(y\\leq x+1\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q21__p26-27__m06__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe outside surface area is:\n\ncurved surface area of cylinder:\n\n\\[\n2\\pi x(3x)=6\\pi x^2\n\\]\n\nbottom of cylinder:\n\n\\[\n\\pi x^2\n\\]\n\ncurved surface area of hemisphere:\n\n\\[\n2\\pi x^2\n\\]\n\nSo\n\n\\[\n6\\pi x^2+\\pi x^2+2\\pi x^2=81\\pi\n\\]\n\n\\[\n9\\pi x^2=81\\pi\n\\]\n\n\\[\nx^2=9\n\\]\n\n\\[\nx=3\n\\]\n\nVolume of the cylinder:\n\n\\[\n\\pi x^2(3x)=3\\pi x^3\n\\]\n\nVolume of the hemisphere:\n\n\\[\n\\frac23\\pi x^3\n\\]\n\nTotal volume:\n\n\\[\n3\\pi(3)^3+\\frac23\\pi(3)^3\n\\]\n\n\\[\n=81\\pi+18\\pi=99\\pi\n\\]\n\nDensity:\n\n\\[\n\\frac{840}{99\\pi}=2.70\\ldots\n\\]\n\nThis matches aluminium, whose density is \\(2.7\\text{ g/cm}^3\\).\n\n**Answer:** Aluminium",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q04__p07-07__m04__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Angles in Polygons & Parallel Lines. The tag is correct.\n\n**Solution**\n\nThe interior angle of a regular octagon is\n\\[\n\\frac{(8-2)\\times 180}{8}=135^\\circ\n\\]\n\nThe interior angle of a regular pentagon is\n\\[\n\\frac{(5-2)\\times 180}{5}=108^\\circ\n\\]\n\nAt \\(B\\),\n\\[\n\\angle IBC=135^\\circ-108^\\circ=27^\\circ\n\\]\n\nSince both polygons share side \\(AB\\),\n\\[\nBI=BC\n\\]\n\nSo triangle \\(BIC\\) is isosceles.\n\n\\[\nx=\\frac{180^\\circ-27^\\circ}{2}=76.5^\\circ\n\\]\n\n**Answer:** \\(76.5^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q09__p12-13__m05__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Circles, Arcs & Sectors.\n\n**Solution**\n\nIn triangle \\(ABC\\),\n\\[\n\\cos 30^\\circ=\\frac{24}{AC}\n\\]\n\n\\[\nAC=\\frac{24}{\\cos 30^\\circ}=27.712\\ldots\n\\]\n\nThe semicircle has radius \\(3\\text{ cm}\\), so its diameter is \\(6\\text{ cm}\\).\n\n\\[\nAF+DC=AC-DF=27.712\\ldots-6\n\\]\n\nArc \\(FED\\) is a semicircle:\n\\[\n\\text{arc length}=3\\pi\n\\]\n\nTherefore\n\\[\nAFEDC=27.712\\ldots-6+3\\pi=31.137\\ldots\n\\]\n\n**Answer:** \\(31\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q12__p16-16__m03__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Right-Angled Triangles - Pythagoras & Trigonometry. The tag is correct.\n\n**Solution**\n\nThe vertical difference between the tops of the masts is\n\\[\n30.7-6.2=24.5\\text{ m}\n\\]\n\nThe horizontal distance is \\(244\\text{ m}\\).\n\n\\[\n\\tan \\theta=\\frac{24.5}{244}\n\\]\n\n\\[\n\\theta=5.733\\ldots^\\circ\n\\]\n\n**Answer:** \\(5.7^\\circ\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q16__p21-21__m05__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Sine, Cosine Rule & Area of Triangles. The tag is correct.\n\n**Solution**\n\nFor triangle \\(BCD\\),\n\n\\[\n405=\\frac12(36)(45)\\sin BCD\n\\]\n\n\\[\n\\sin BCD=0.5\n\\]\n\nThe angle \\(BCD\\) is acute, so\n\n\\[\nBCD=30^\\circ\n\\]\n\nFind \\(BD\\):\n\n\\[\nBD^2=36^2+45^2-2(36)(45)\\cos30^\\circ\n\\]\n\n\\[\nBD=22.695\\ldots\n\\]\n\nNow use cosine rule in triangle \\(ABD\\):\n\n\\[\n\\cos ABD=\\frac{19^2+BD^2-28^2}{2(19)(BD)}\n\\]\n\n\\[\nABD=83.871\\ldots^\\circ\n\\]\n\n**Answer:** \\(83.9^\\circ\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q19__p24-24__m03__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** 3D Pythagoras & Trigonometry. The tag is correct.\n\n**Solution**\n\nThe projection of \\(EC\\) onto the field is \\(AC\\).\n\n\\[\nAC=\\sqrt{18^2+8^2}=\\sqrt{388}\n\\]\n\nThe vertical height is \\(AE=12\\text{ m}\\), so\n\n\\[\n\\tan\\theta=\\frac{12}{\\sqrt{388}}\n\\]\n\n\\[\n\\theta=31.350\\ldots^\\circ\n\\]\n\n**Answer:** \\(31.4^\\circ\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q08__p11-11__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nTotal mass of all 50 tigers:\n\n\\[\n50 \\times 218=10900\n\\]\n\nTotal mass of the 22 Siberian tigers:\n\n\\[\n22 \\times 260=5720\n\\]\n\nTotal mass of the 28 Bengal tigers:\n\n\\[\n10900-5720=5180\n\\]\n\nMean mass of the Bengal tigers:\n\n\\[\n\\frac{5180}{28}=185\n\\]\n\n**Answer:** \\(185\\text{ kg}\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q14__p18-19__m08__Cumulative-Frequency-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nThere are \\(60\\) students.\n\nThe median is at cumulative frequency \\(30\\). From the graph,\n\n\\[\n\\text{median}\\approx 49\n\\]\n\nAt \\(58\\) marks, the cumulative frequency is about \\(45\\), so about \\(45\\) students gained \\(58\\) marks or less.\n\nFor the interquartile range:\n\n\\[\nQ_1 \\text{ is at }15,\\qquad Q_3 \\text{ is at }45\n\\]\n\nFrom the graph,\n\n\\[\nQ_1\\approx 40,\\qquad Q_3\\approx 57\n\\]\n\n\\[\n\\text{IQR}\\approx 57-40=17\n\\]\n\nThe geometry IQR is \\(9\\), so Luis is correct because the algebra IQR is larger.\n\nFor grade A, use mark \\(64\\). From the graph, about \\(50\\) students gained \\(64\\) or less, so about\n\n\\[\n60-50=10\n\\]\n\nstudents gained more than \\(64\\).\n\nProbability both selected students were grade A:\n\n\\[\n\\frac{10}{60}\\times \\frac{9}{59}=0.0254\\ldots\n\\]\n\n**Answers:** median about \\(49\\), about \\(45\\) students, IQR about \\(17\\), Luis is correct, probability about \\(0.025\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2HR__Q01__p03-03__m04__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nThe missing probability is\n\n\\[\n1-0.38-0.24-0.16=0.22\n\\]\n\nSo\n\n\\[\nP(\\text{Darjeeling or Rize})=0.24+0.16=0.40\n\\]\n\n**Answers:** Nilgiri \\(0.22\\), Darjeeling or Rize \\(0.40\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jan2022_P2HR__Q20__p25-25__m04__Direct-and-Inverse-Proportion": {
+      "status": "checked",
+      "source": "**Topic check:** Direct & Inverse Proportion is correct.\n\n**Method**\n\n\\[\ny \\propto \\frac{1}{\\sqrt{x}}\n\\]\n\nand\n\n\\[\nx \\propto T^3\n\\]\n\nSo\n\n\\[\n\\sqrt{x}\\propto T^{3/2}\n\\]\n\nTherefore\n\n\\[\ny\\propto \\frac{1}{T^{3/2}}\n\\]\n\nSo \\(yT^{3/2}\\) is constant.\n\nWhen \\(y=8\\) and \\(T=25\\),\n\n\\[\n8(25)^{3/2}=8(125)=1000\n\\]\n\nWhen \\(y=27\\),\n\n\\[\n27T^{3/2}=1000\n\\]\n\n\\[\nT^{3/2}=\\frac{1000}{27}=\\left(\\frac{10}{3}\\right)^3\n\\]\n\n\\[\nT=\\left(\\frac{10}{3}\\right)^2=\\frac{100}{9}\n\\]\n\n**Answer:** \\(\\dfrac{100}{9}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P2HR__Q23__p30-30__m04__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nf(x)=x+25\n\\]\n\n\\[\ng(x)=x^2-12x\n\\]\n\n\\[\nh(x)=fg(x)=f(g(x))\n\\]\n\n\\[\nh(x)=x^2-12x+25\n\\]\n\n\\[\nh(x)=(x-6)^2-11\n\\]\n\nLet\n\n\\[\ny=(x-6)^2-11\n\\]\n\n\\[\ny+11=(x-6)^2\n\\]\n\nSince the domain of \\(h\\) is \\(x<6\\), take the negative square root:\n\n\\[\nx-6=-\\sqrt{y+11}\n\\]\n\n\\[\nx=6-\\sqrt{y+11}\n\\]\n\n**Answer:** \\(h^{-1}(x)=6-\\sqrt{x+11}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P2HR__Q22__p28-29__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe gradient of \\(AC\\) is \\(-\\frac67\\).\n\n\\[\n\\frac{q-10}{8-p}=-\\frac67\n\\]\n\n\\[\n7(q-10)=-6(8-p)\n\\]\n\n\\[\n7q-70=-48+6p\n\\]\n\n\\[\n6p-7q=-22\n\\]\n\nSince \\(\\angle ABC=90^\\circ\\), lines \\(AB\\) and \\(BC\\) are perpendicular.\n\n\\[\n\\text{gradient of }AB=\\frac{10-(-5)}{p-(-1)}=\\frac{15}{p+1}\n\\]\n\n\\[\n\\text{gradient of }BC=\\frac{q-(-5)}{8-(-1)}=\\frac{q+5}{9}\n\\]\n\nThe product of perpendicular gradients is \\(-1\\):\n\n\\[\n\\frac{15}{p+1}\\times \\frac{q+5}{9}=-1\n\\]\n\n\\[\n15(q+5)=-9(p+1)\n\\]\n\n\\[\n5(q+5)=-3(p+1)\n\\]\n\n\\[\n3p+5q=-28\n\\]\n\nNow solve\n\n\\[\n6p-7q=-22\n\\]\n\n\\[\n3p+5q=-28\n\\]\n\nDouble the second equation:\n\n\\[\n6p+10q=-56\n\\]\n\nSubtract:\n\n\\[\n17q=-34\n\\]\n\n\\[\nq=-2\n\\]\n\nThen\n\n\\[\n3p+5(-2)=-28\n\\]\n\n\\[\n3p=-18\n\\]\n\n\\[\np=-6\n\\]\n\n**Answer:** \\(p=-6,\\ q=-2\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P2HR__Q21__p26-27__m06__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe outside surface area is:\n\ncurved surface area of cylinder:\n\n\\[\n2\\pi x(3x)=6\\pi x^2\n\\]\n\nbottom of cylinder:\n\n\\[\n\\pi x^2\n\\]\n\ncurved surface area of hemisphere:\n\n\\[\n2\\pi x^2\n\\]\n\nSo\n\n\\[\n6\\pi x^2+\\pi x^2+2\\pi x^2=81\\pi\n\\]\n\n\\[\n9\\pi x^2=81\\pi\n\\]\n\n\\[\nx^2=9\n\\]\n\n\\[\nx=3\n\\]\n\nVolume of the cylinder:\n\n\\[\n\\pi x^2(3x)=3\\pi x^3\n\\]\n\nVolume of the hemisphere:\n\n\\[\n\\frac23\\pi x^3\n\\]\n\nTotal volume:\n\n\\[\n3\\pi(3)^3+\\frac23\\pi(3)^3\n\\]\n\n\\[\n=81\\pi+18\\pi=99\\pi\n\\]\n\nDensity:\n\n\\[\n\\frac{840}{99\\pi}=2.70\\ldots\n\\]\n\nThis matches aluminium, whose density is \\(2.7\\text{ g/cm}^3\\).\n\n**Answer:** Aluminium",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

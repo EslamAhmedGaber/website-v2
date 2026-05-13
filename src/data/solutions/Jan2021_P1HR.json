@@ -1,0 +1,155 @@
+{
+  "paperSlug": "Jan2021_P1HR",
+  "solutions": {
+    "all::Jan2021_P1HR__Q09__p10-10__m04__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\nA=2^8\\times 3^5\\times 11^4\n\\]\n\n\\[\nB=2^6\\times 3\\times 11^8\n\\]\n\nFor the HCF, take the smaller power of each common prime:\n\n\\[\n\\text{HCF}=2^6\\times 3\\times 11^4\n\\]\n\nNow\n\n\\[\n2A=2^9\\times 3^5\\times 11^4\n\\]\n\nand\n\n\\[\n3B=2^6\\times 3^2\\times 11^8\n\\]\n\nFor the LCM of \\(2A\\) and \\(3B\\), take the larger power of each prime:\n\n\\[\n\\text{LCM}=2^9\\times 3^5\\times 11^8\n\\]\n\n**Answer:** (a) \\(2^6\\times 3\\times 11^4\\), (b) \\(2^9\\times 3^5\\times 11^8\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q01__p03-03__m03__Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Fractions. The tag is correct.\n\n**Method**\n\nConvert the mixed numbers to improper fractions:\n\n\\[\n3\\frac15=\\frac{16}{5}\n\\]\n\n\\[\n1\\frac56=\\frac{11}{6}\n\\]\n\nNow multiply:\n\n\\[\n\\frac{16}{5}\\times \\frac{11}{6}\n=\\frac{176}{30}\n\\]\n\n\\[\n=\\frac{88}{15}=5\\frac{13}{15}\n\\]\n\n**Answer:** \\(5\\frac{13}{15}\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q07__p08-08__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nThe multiplier for a \\(2.4\\%\\) increase is\n\n\\[\n1.024\n\\]\n\nAfter 3 years,\n\n\\[\n50000(1.024)^3=53687.0912\n\\]\n\nCorrect to the nearest yen,\n\n\\[\n53687.0912\\approx 53687\n\\]\n\n**Answer:** \\(53687\\) yen",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q19__p22-22__m03__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\n\\[\nk=\\frac{t}{a-h}\n\\]\n\nFor the lower bound of \\(k\\), use the lower bound of \\(t\\) and make the denominator as large as possible.\n\n\\[\nt\\ge 13.5\n\\]\n\n\\[\na<7.85,\\quad h\\ge 3.35\n\\]\n\n\\[\n(a-h)_{\\text{upper}}=7.85-3.35=4.5\n\\]\n\n\\[\nk_{\\text{lower}}=\\frac{13.5}{4.5}=3\n\\]\n\n**Answer:** \\(3\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q12__p14-14__m09__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Algebraic Roots & Indices.\n\n**Solution**\n\n(a)\n\\[\n(16e^{10}f^6)^{\\frac12}\n=4e^5f^3\n\\]\n\n(b)\n\\[\n\\frac{2x+1}{4}+\\frac{x-2}{3}\n=\\frac{3(2x+1)+4(x-2)}{12}\n\\]\n\n\\[\n=\\frac{6x+3+4x-8}{12}\n=\\frac{10x-5}{12}\n=\\frac{5(2x-1)}{12}\n\\]\n\n(c)\n\\[\n4^{k+3}=16\\times 2^k\n\\]\n\n\\[\n(2^2)^{k+3}=2^4\\times 2^k\n\\]\n\n\\[\n2^{2k+6}=2^{k+4}\n\\]\n\n\\[\n2k+6=k+4\n\\]\n\n\\[\nk=-2\n\\]\n\n**Answer:** (a) \\(4e^5f^3\\), (b) \\(\\frac{5(2x-1)}{12}\\), (c) \\(k=-2\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q16__p18-18__m05__Expanding-Brackets": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to expanding brackets. The expansion is the largest part of the question.\n\n**Solution**\n\n(a)\n\\[\n(x+4)(x-2)(x+1)\n\\]\n\n\\[\n(x-2)(x+1)=x^2-x-2\n\\]\n\n\\[\n(x+4)(x^2-x-2)=x^3+3x^2-6x-8\n\\]\n\n(b)\n\\[\nx^2-10x+40=(x-5)^2+15\n\\]\n\n**Answer:** (a) \\(x^3+3x^2-6x-8\\), (b) \\((x-5)^2+15\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q06__p07-07__m05__Rearranging-Formulas": {
+      "status": "checked",
+      "source": "**Topic check:** Rearranging formulas. The tag is acceptable.\n\n**Solution**\n\n(a)\n\\[\nA=\\frac{c}{y}-5z\n\\]\n\n\\[\nA+5z=\\frac{c}{y}\n\\]\n\n\\[\nc=y(A+5z)\n\\]\n\n(b) \\(g^0=1\\).\n\n(c)\n\\[\nx^2-11x+24=(x-3)(x-8)\n\\]\n\n**Answer:** \\(c=y(A+5z)\\), \\(1\\), \\((x-3)(x-8)\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q15__p17-17__m05__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\n(a) Let\n\\[\nx=4.\\dot5\\dot7\n\\]\n\nThen\n\\[\n100x=457.\\dot5\\dot7\n\\]\n\nSubtract:\n\\[\n100x-x=457.\\dot5\\dot7-4.\\dot5\\dot7\n\\]\n\n\\[\n99x=453\n\\]\n\n\\[\nx=\\frac{453}{99}=\\frac{151}{33}=4\\frac{19}{33}\n\\]\n\n(b)\n\\[\n\\frac{2}{6-3\\sqrt2}\\times \\frac{6+3\\sqrt2}{6+3\\sqrt2}\n=\\frac{12+6\\sqrt2}{36-18}\n\\]\n\n\\[\n=\\frac{12+6\\sqrt2}{18}=\\frac{2+\\sqrt2}{3}\n\\]\n\nSo this is in the form \\(\\dfrac{a+\\sqrt a}{b}\\), with \\(a=2\\) and \\(b=3\\).\n\n**Answer:** \\(4.\\dot5\\dot7=4\\frac{19}{33}\\) and \\(\\dfrac{2}{6-3\\sqrt2}=\\dfrac{2+\\sqrt2}{3}\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q03__p04-04__m04__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Solving inequalities. The tag is correct.\n\n**Solution**\n\n(a) For\n\\[\n-2\\le y<1\n\\]\n\nuse a closed circle at \\(-2\\), an open circle at \\(1\\), and shade the line between them.\n\n(b)\n\\[\n-3.4<n\\le2\n\\]\n\nThe integer values are\n\\[\n-3,\\ -2,\\ -1,\\ 0,\\ 1,\\ 2\n\\]\n\n**Answer:** Closed at \\(-2\\), open at \\(1\\); integers \\(-3,-2,-1,0,1,2\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q17__p19-19__m05__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\n\\[\nx-6y=5\n\\]\n\n\\[\nxy-2y^2=6\n\\]\n\nFrom the first equation:\n\\[\nx=6y+5\n\\]\n\nSubstitute into the second equation:\n\\[\ny(6y+5)-2y^2=6\n\\]\n\n\\[\n4y^2+5y-6=0\n\\]\n\nFactorise:\n\\[\n(4y-3)(y+2)=0\n\\]\n\nSo\n\\[\ny=\\frac34 \\quad \\text{or} \\quad y=-2\n\\]\n\nIf \\(y=\\frac34\\):\n\\[\nx=6\\left(\\frac34\\right)+5=\\frac{19}{2}\n\\]\n\nIf \\(y=-2\\):\n\\[\nx=6(-2)+5=-7\n\\]\n\n**Answer:** \\((x,y)=\\left(\\frac{19}{2},\\frac34\\right)\\) or \\((-7,-2)\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q21__p24-25__m06__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nLet \\(u_6=v\\).\n\nFor an arithmetic series,\n\n\\[\nS_{11}=\\frac{11}{2}(u_1+u_{11})\n\\]\n\nThe average of \\(u_1\\) and \\(u_{11}\\) is \\(u_6\\), so\n\n\\[\nS_{11}=11u_6=11v\n\\]\n\nGiven\n\n\\[\nS_{11}=(u_6)^2+18\n\\]\n\n\\[\n11v=v^2+18\n\\]\n\n\\[\nv^2-11v+18=0\n\\]\n\n\\[\n(v-2)(v-9)=0\n\\]\n\nSo\n\n\\[\nu_6=2 \\quad \\text{or} \\quad u_6=9\n\\]\n\nBut \\(u_4=6\\). If \\(u_6=2\\), then the common difference is negative and later terms would not all be positive. Therefore,\n\n\\[\nu_6=9\n\\]\n\n\\[\nd=\\frac{u_6-u_4}{2}=\\frac{9-6}{2}=\\frac32\n\\]\n\n\\[\nu_{20}=u_6+14d\n\\]\n\n\\[\nu_{20}=9+14\\left(\\frac32\\right)=30\n\\]\n\n**Answer:** \\(u_{20}=30\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q22__p26-27__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nSince \\(AB=AC\\), point \\(A\\) lies on the perpendicular bisector of \\(BC\\).\n\nThe midpoint of \\(BC\\) is\n\n\\[\nM=\\left(\\frac{-1+2}{2},\\frac{5+10}{2}\\right)\n\\]\n\n\\[\nM=\\left(\\frac12,\\frac{15}{2}\\right)\n\\]\n\nThe gradient of \\(BC\\) is\n\n\\[\n\\frac{10-5}{2-(-1)}=\\frac53\n\\]\n\nSo the gradient of the perpendicular bisector is\n\n\\[\n-\\frac35\n\\]\n\nUse the line through \\(M\\):\n\n\\[\ny-\\frac{15}{2}=-\\frac35\\left(x-\\frac12\\right)\n\\]\n\nMultiply by 10:\n\n\\[\n10y-75=-6x+3\n\\]\n\n\\[\n10y+6x=78\n\\]\n\nDivide by 2:\n\n\\[\n5y+3x=39\n\\]\n\n**Answer:** \\(5y+3x=39\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q20__p23-23__m05__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Differentiation.\n\n**Method**\n\n\\[\ns=t^3-9t^2+33t-6\n\\]\n\nVelocity is the rate of change of displacement:\n\n\\[\nv=\\frac{ds}{dt}\n\\]\n\n\\[\nv=3t^2-18t+33\n\\]\n\nComplete the square:\n\n\\[\nv=3(t^2-6t+11)\n\\]\n\n\\[\nv=3[(t-3)^2+2]\n\\]\n\n\\[\nv=3(t-3)^2+6\n\\]\n\nSince \\((t-3)^2\\ge 0\\), the minimum value of \\(v\\) is\n\n\\[\n6\n\\]\n\nThe velocity is always positive, so the minimum speed is also \\(6\\).\n\n**Answer:** \\(6\\text{ m/s}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q04__p05-05__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Standard & Compound Units.\n\n**Solution**\n\nThe time is\n\\[\n3\\text{ h }24\\text{ min}=3.4\\text{ h}\n\\]\n\nAverage speed:\n\\[\n433.5\\div 3.4=127.5\n\\]\n\n**Answer:** \\(127.5\\text{ km/h}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q08__p09-09__m05__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to angles in polygons and parallel lines. The question uses regular polygon angles.\n\n**Solution**\n\nA regular pentagon has interior angle\n\\[\n\\frac{(5-2)180}{5}=108^\\circ\n\\]\n\nA regular hexagon has interior angle\n\\[\n\\frac{(6-2)180}{6}=120^\\circ\n\\]\n\nAt \\(E\\), since \\(AEJ\\) is a straight line,\n\\[\n\\angle DEJ=180-108=72^\\circ\n\\]\n\nAt \\(D\\), the angles around the point include the pentagon angle \\(108^\\circ\\) and the hexagon angle \\(120^\\circ\\), so\n\\[\n\\angle EDI=360-108-120=132^\\circ\n\\]\n\nAt \\(I\\), since \\(HIJ\\) is a straight line,\n\\[\n\\angle DIJ=180-120=60^\\circ\n\\]\n\nIn quadrilateral \\(EDIJ\\), angles sum to \\(360^\\circ\\):\n\\[\nx=360-72-132-60=96\n\\]\n\n**Answer:** \\(96^\\circ\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q14__p16-16__m04__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Circle Theorems. The tag is correct.\n\n**Solution**\n\nBy the alternate segment theorem, the angle between the tangent and chord \\(BD\\) is equal to the angle in the opposite segment:\n\\[\n\\angle BFD=39^\\circ\n\\]\n\nGiven\n\\[\n\\angle EFD=18^\\circ\n\\]\n\nSo\n\\[\n\\angle BFE=39^\\circ+18^\\circ=57^\\circ\n\\]\n\nOpposite angles in cyclic quadrilateral \\(BDEF\\) add to \\(180^\\circ\\):\n\\[\n\\angle BDE=180^\\circ-57^\\circ=123^\\circ\n\\]\n\n**Answer:** \\(123^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q10__p11-11__m05__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Area & Perimeter.\n\n**Solution**\n\nThe wall is a rectangle plus an isosceles triangle.\n\nRectangle area:\n\n\\[\n10\\times 6=60\n\\]\n\nFor the triangle, half the base is \\(5\\) m.\n\n\\[\nh^2=7^2-5^2=24\n\\]\n\n\\[\nh=\\sqrt{24}\n\\]\n\nTriangle area:\n\n\\[\n\\frac12\\times 10\\times \\sqrt{24}=24.494\\ldots\n\\]\n\nTotal area:\n\n\\[\n60+24.494\\ldots=84.494\\ldots\n\\]\n\nEach tin covers \\(16\\text{ m}^2\\):\n\n\\[\n\\frac{84.494\\ldots}{16}=5.28\\ldots\n\\]\n\nOmondi must buy whole tins, so he needs 6 tins.\n\n**Answer:** \\(6\\) tins.",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q05__p06-06__m04__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Volume & Surface Area. The tag is correct.\n\n**Solution**\n\nFor the cuboid,\n\\[\n12\\times 5\\times x=270\n\\]\n\n\\[\n60x=270\n\\]\n\n\\[\nx=4.5\n\\]\n\nThe cylinder has radius \\(4.5\\text{ cm}\\) and height \\(9\\text{ cm}\\).\n\n\\[\nV=\\pi r^2h=\\pi(4.5)^2(9)=572.555\\ldots\n\\]\n\nAlso,\n\\[\n1\\text{ m}^3=100^3=1000000\\text{ cm}^3\n\\]\n\n**Answer:** \\(573\\text{ cm}^3\\), and \\(1\\text{ m}^3=1000000\\text{ cm}^3\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q13__p15-15__m02__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Vectors. The tag is correct.\n\n**Solution**\n\n\\[\n\\overrightarrow{AB}=\\begin{pmatrix}5\\\\3\\end{pmatrix}\n\\]\n\nand\n\n\\[\n\\overrightarrow{CB}=\\begin{pmatrix}-2\\\\4\\end{pmatrix}\n\\]\n\nSo\n\n\\[\n\\overrightarrow{BC}=-\\overrightarrow{CB}\n=\\begin{pmatrix}2\\\\-4\\end{pmatrix}\n\\]\n\n\\[\n\\overrightarrow{AC}\n=\\overrightarrow{AB}+\\overrightarrow{BC}\n=\\begin{pmatrix}5\\\\3\\end{pmatrix}\n+\\begin{pmatrix}2\\\\-4\\end{pmatrix}\n=\\begin{pmatrix}7\\\\-1\\end{pmatrix}\n\\]\n\n**Answer:** \\(\\begin{pmatrix}7\\\\-1\\end{pmatrix}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q02__p04-04__m04__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe mode is \\(7\\), and the numbers are \\(a,a,b,c\\), so\n\n\\[\na=7\n\\]\n\nThe median of four numbers is\n\n\\[\n\\frac{a+b}{2}\n\\]\n\nSo\n\n\\[\n\\frac{7+b}{2}=8.5\n\\]\n\n\\[\n7+b=17\n\\]\n\n\\[\nb=10\n\\]\n\nThe mean is \\(9\\), so the total is\n\n\\[\n4\\times 9=36\n\\]\n\n\\[\n7+7+10+c=36\n\\]\n\n\\[\nc=12\n\\]\n\n**Answer:** \\(a=7,\\ b=10,\\ c=12\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q18__p20-21__m05__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Histograms. The tag is correct.\n\n**Solution**\n\nThe \\(0<t\\le 2\\) class has frequency \\(28\\). From the histogram, the relative heights are\n\n\\[\n1,\\ 4,\\ 9,\\ 6,\\ 1\n\\]\n\nSo the frequencies are\n\n\\[\n28,\\ 112,\\ 126,\\ 84,\\ 42\n\\]\n\nUse midpoints \\(1,3,4.5,5.5,7.5\\).\n\n\\[\n\\text{total frequency}=28+112+126+84+42=392\n\\]\n\n\\[\n\\text{estimated total}=1(28)+3(112)+4.5(126)+5.5(84)+7.5(42)=1708\n\\]\n\n\\[\n\\text{mean}=\\frac{1708}{392}=4.357\\ldots\n\\]\n\n**Answer:** \\(4.36\\) hours.",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2021_P1HR__Q11__p12-13__m06__Cumulative-Frequency-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nComplete the cumulative frequencies:\n\n\\[\n8,\\ 23,\\ 40,\\ 68,\\ 101,\\ 120\n\\]\n\nPlot the points\n\n\\[\n(0,0),(5,8),(10,23),(15,40),(20,68),(25,101),(30,120)\n\\]\n\nThe median is at cumulative frequency \\(60\\).\n\nThis lies between \\((15,40)\\) and \\((20,68)\\):\n\n\\[\n15+\\frac{60-40}{68-40}\\times 5=18.57\\ldots\n\\]\n\nSo the median is about \\(18.6\\) minutes.\n\nAt \\(23\\) minutes:\n\n\\[\n68+\\frac{3}{5}(101-68)=87.8\n\\]\n\nNumber who waited longer than \\(23\\) minutes:\n\n\\[\n120-87.8=32.2\n\\]\n\n\\[\n\\frac{32.2}{120}\\times 100=26.8\\%\n\\]\n\n**Answers:** cumulative frequencies \\(8,23,40,68,101,120\\), median about \\(18.6\\) minutes, percentage about \\(27\\%\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2021_P1HR__Q21__p24-25__m06__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nLet \\(u_6=v\\).\n\nFor an arithmetic series,\n\n\\[\nS_{11}=\\frac{11}{2}(u_1+u_{11})\n\\]\n\nThe average of \\(u_1\\) and \\(u_{11}\\) is \\(u_6\\), so\n\n\\[\nS_{11}=11u_6=11v\n\\]\n\nGiven\n\n\\[\nS_{11}=(u_6)^2+18\n\\]\n\n\\[\n11v=v^2+18\n\\]\n\n\\[\nv^2-11v+18=0\n\\]\n\n\\[\n(v-2)(v-9)=0\n\\]\n\nSo\n\n\\[\nu_6=2 \\quad \\text{or} \\quad u_6=9\n\\]\n\nBut \\(u_4=6\\). If \\(u_6=2\\), then the common difference is negative and later terms would not all be positive. Therefore,\n\n\\[\nu_6=9\n\\]\n\n\\[\nd=\\frac{u_6-u_4}{2}=\\frac{9-6}{2}=\\frac32\n\\]\n\n\\[\nu_{20}=u_6+14d\n\\]\n\n\\[\nu_{20}=9+14\\left(\\frac32\\right)=30\n\\]\n\n**Answer:** \\(u_{20}=30\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2021_P1HR__Q22__p26-27__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nSince \\(AB=AC\\), point \\(A\\) lies on the perpendicular bisector of \\(BC\\).\n\nThe midpoint of \\(BC\\) is\n\n\\[\nM=\\left(\\frac{-1+2}{2},\\frac{5+10}{2}\\right)\n\\]\n\n\\[\nM=\\left(\\frac12,\\frac{15}{2}\\right)\n\\]\n\nThe gradient of \\(BC\\) is\n\n\\[\n\\frac{10-5}{2-(-1)}=\\frac53\n\\]\n\nSo the gradient of the perpendicular bisector is\n\n\\[\n-\\frac35\n\\]\n\nUse the line through \\(M\\):\n\n\\[\ny-\\frac{15}{2}=-\\frac35\\left(x-\\frac12\\right)\n\\]\n\nMultiply by 10:\n\n\\[\n10y-75=-6x+3\n\\]\n\n\\[\n10y+6x=78\n\\]\n\nDivide by 2:\n\n\\[\n5y+3x=39\n\\]\n\n**Answer:** \\(5y+3x=39\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2021_P1HR__Q20__p23-23__m05__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Differentiation.\n\n**Method**\n\n\\[\ns=t^3-9t^2+33t-6\n\\]\n\nVelocity is the rate of change of displacement:\n\n\\[\nv=\\frac{ds}{dt}\n\\]\n\n\\[\nv=3t^2-18t+33\n\\]\n\nComplete the square:\n\n\\[\nv=3(t^2-6t+11)\n\\]\n\n\\[\nv=3[(t-3)^2+2]\n\\]\n\n\\[\nv=3(t-3)^2+6\n\\]\n\nSince \\((t-3)^2\\ge 0\\), the minimum value of \\(v\\) is\n\n\\[\n6\n\\]\n\nThe velocity is always positive, so the minimum speed is also \\(6\\).\n\n**Answer:** \\(6\\text{ m/s}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "paperSlug": "Jun2022_P1H",
+  "solutions": {
+    "all::Jun2022_P1H__Q03__p05-05__m04__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\nFor the HCF of \\(56\\) and \\(84\\):\n\n\\[\n56=2^3\\times 7\n\\]\n\n\\[\n84=2^2\\times 3\\times 7\n\\]\n\nTake the smaller powers:\n\n\\[\n\\text{HCF}=2^2\\times 7=28\n\\]\n\nFor the LCM of \\(60\\) and \\(72\\):\n\n\\[\n60=2^2\\times 3\\times 5\n\\]\n\n\\[\n72=2^3\\times 3^2\n\\]\n\nTake the larger powers:\n\n\\[\n\\text{LCM}=2^3\\times 3^2\\times 5=360\n\\]\n\n**Answer:** (a) \\(28\\), (b) \\(360\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q08__p10-10__m02__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n0.000089=8.9\\times 10^{-5}\n\\]\n\n\\[\n8.34\\times 10^4=83400\n\\]\n\n**Answer:** (a) \\(8.9\\times 10^{-5}\\), (b) \\(83400\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q13__p14-14__m05__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nPayment 1 is\n\n\\[\n\\frac38\n\\]\n\nPayment 2 is\n\n\\[\n45\\%=\\frac{45}{100}=\\frac9{20}\n\\]\n\nTogether:\n\n\\[\n\\frac38+\\frac9{20}\n=\\frac{15}{40}+\\frac{18}{40}\n=\\frac{33}{40}\n\\]\n\nSo Payment 3 is\n\n\\[\n1-\\frac{33}{40}=\\frac7{40}\n\\]\n\nPayment 3 is \\(\\$406\\), so\n\n\\[\n\\frac7{40}\\times \\text{total}=406\n\\]\n\n\\[\n\\text{total}=406\\times \\frac{40}{7}=2320\n\\]\n\nPayment 2 is\n\n\\[\n45\\%\\times 2320=1044\n\\]\n\n**Answer:** \\(\\$1044\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q06__p08-08__m06__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nFor part (a), the value in 2021 was \\(4\\%\\) more than in 2020.\n\n\\[\n\\text{2020 value}=\\frac{634400}{1.04}=610000\n\\]\n\nIn 2020, \\(600000<x<700000\\), so the service charge band was B.\n\nIn 2021, \\(634400\\) is also between \\(600000\\) and \\(700000\\), so the band was still B.\n\nFor part (b), a depreciation of \\(15\\%\\) has multiplier \\(0.85\\).\n\nAfter 2 years, the multiplier is\n\n\\[\n0.85^2=0.7225\n\\]\n\nSo the value left is \\(72.25\\%\\), meaning the total depreciation is\n\n\\[\n100\\%-72.25\\%=27.75\\%\n\\]\n\n**Answer:** (a) No, it stayed in band B. (b) \\(27.75\\%\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q16__p17-17__m03__Surds": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Surds.\n\n**Proof**\n\nRationalise the denominator:\n\\[\n\\frac{12}{\\sqrt2-1}\n=\\frac{12(\\sqrt2+1)}{(\\sqrt2-1)(\\sqrt2+1)}\n\\]\n\n\\[\n=12(\\sqrt2+1)=12\\sqrt2+12\n\\]\n\nAlso,\n\\[\n(\\sqrt2)^5=(\\sqrt2)^4\\sqrt2=4\\sqrt2\n\\]\n\nSo the left side is\n\\[\n12\\sqrt2+12-4\\sqrt2=8\\sqrt2+12\n\\]\n\nAnd\n\\[\n2\\sqrt{32}+12=2(4\\sqrt2)+12=8\\sqrt2+12\n\\]\n\nSo both sides are equal.\n\n**Answer:** Shown.",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q09__p10-10__m04__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic Roots and Indices. The tag is correct.\n\n**Method**\n\n\\[\n8\\times (4t)^0=8\\times 1=8\n\\]\n\nFor part (b),\n\n\\[\nx^6\\div x^{-5}=x^{6-(-5)}=x^{11}\n\\]\n\nSo\n\n\\[\np=11\n\\]\n\nFor part (c),\n\n\\[\n(2k^2m^4)^3=2^3k^{2\\times 3}m^{4\\times 3}\n\\]\n\n\\[\n=8k^6m^{12}\n\\]\n\n**Answer:** (a) \\(8\\), (b) \\(p=11\\), (c) \\(8k^6m^{12}\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q11__p12-12__m05__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n9x^2-4y^2=(3x)^2-(2y)^2=(3x-2y)(3x+2y)\n\\]\n\n(b)\n\\[\n\\frac78-\\frac{x+3}{4x}\n=\\frac{7x}{8x}-\\frac{2(x+3)}{8x}\n\\]\n\n\\[\n=\\frac{7x-2x-6}{8x}=\\frac{5x-6}{8x}\n\\]\n\n**Answer:** (a) \\((3x-2y)(3x+2y)\\), (b) \\(\\frac{5x-6}{8x}\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q24__p26-26__m04__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nq+12x-qx^2=-q\\left(x^2-\\frac{12}{q}x\\right)+q\n\\]\n\nComplete the square:\n\n\\[\nx^2-\\frac{12}{q}x=\\left(x-\\frac6q\\right)^2-\\frac{36}{q^2}\n\\]\n\nSo\n\n\\[\nq+12x-qx^2\n=-q\\left[\\left(x-\\frac6q\\right)^2-\\frac{36}{q^2}\\right]+q\n\\]\n\n\\[\n=q+\\frac{36}{q}-q\\left(x-\\frac6q\\right)^2\n\\]\n\nCompare with\n\n\\[\na-b(x-c)^2\n\\]\n\n**Answer:** \\(a=q+\\dfrac{36}{q}\\), \\(b=q\\), \\(c=\\dfrac6q\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q05__p07-07__m05__Solving-Linear-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to solving linear equations. The original tag was expanding brackets, but the equation is the larger part.\n\n**Solution**\n\n(a)\n\\[\n(n-6)(n+4)=n^2-2n-24\n\\]\n\n(b)\n\\[\n2x-3=\\frac{3x-5}{4}\n\\]\n\n\\[\n8x-12=3x-5\n\\]\n\n\\[\n5x=7\n\\]\n\n**Answer:** (a) \\(n^2-2n-24\\), (b) \\(x=\\frac75\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q01__p03-03__m03__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Sequences. The tag is correct.\n\n**Solution**\n\nThe sequence is\n\\[\n1,\\ 5,\\ 9,\\ 13,\\ 17\n\\]\n\nThe common difference is \\(4\\), so the nth term is\n\\[\n4n-3\n\\]\n\nFor the second sequence, the nth term is \\(3n+5\\).\n\nThe \\((2m)\\)th term is\n\\[\n3(2m)+5=6m+5\n\\]\n\n**Answer:** \\(4n-3\\), and \\(6m+5\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q14__p15-15__m04__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Functions. The tag is correct.\n\n**Solution**\n\n\\[\nf(x)=\\frac{2x}{x-6}\n\\]\n\n(a)\n\\[\nf(10)=\\frac{2(10)}{10-6}=\\frac{20}{4}=5\n\\]\n\n(b) Let\n\\[\ny=\\frac{2x}{x-6}\n\\]\n\n\\[\ny(x-6)=2x\n\\]\n\n\\[\nyx-6y=2x\n\\]\n\n\\[\nx(y-2)=6y\n\\]\n\n\\[\nx=\\frac{6y}{y-2}\n\\]\n\nSo\n\\[\nf^{-1}(x)=\\frac{6x}{x-2}\n\\]\n\n**Answer:** \\(f(10)=5\\), and \\(f^{-1}(x)=\\dfrac{6x}{x-2}\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q10__p11-11__m04__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Coordinate geometry. The tag is correct.\n\n**Solution**\n\nThe centres are\n\\[\nC_1=(-1,3),\\qquad C_2=(7,18)\n\\]\n\nThe distance between the centres is\n\\[\n\\sqrt{(7-(-1))^2+(18-3)^2}\n\\]\n\n\\[\n=\\sqrt{8^2+15^2}=\\sqrt{289}=17\n\\]\n\nThe radii are \\(3\\) cm and \\(15\\) cm.\n\n\\[\n3+15=18\n\\]\n\nSince the distance between the centres is \\(17\\) cm, which is less than the sum of the radii, the circles intersect.\n\n**Answer:** \\(17\\text{ cm}\\), and the circles intersect because \\(17<18\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q20__p21-21__m02__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe maximum point of \\(y=f(x)\\) is \\((s,t)\\).\n\nFor\n\n\\[\ny=f(x-2)\n\\]\n\nthe graph moves 2 units right:\n\n\\[\n(s,t)\\to(s+2,t)\n\\]\n\nFor\n\n\\[\ny=3f(x)\n\\]\n\nthe \\(y\\)-coordinate is multiplied by 3:\n\n\\[\n(s,t)\\to(s,3t)\n\\]\n\n**Answer:** \\((s+2,t)\\) and \\((s,3t)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q17__p18-18__m05__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is differentiation applied to motion.\n\n**Solution**\n\n\\[\ns=4t^2+\\frac{125}{t}\n\\]\n\nVelocity is\n\\[\nv=\\frac{ds}{dt}=8t-\\frac{125}{t^2}\n\\]\n\nWhen \\(v=0\\),\n\\[\n8t-\\frac{125}{t^2}=0\n\\]\n\n\\[\n8t^3=125\n\\]\n\n\\[\nt^3=15.625\n\\]\n\n\\[\nt=2.5\n\\]\n\nNow find \\(s\\):\n\\[\ns=4(2.5)^2+\\frac{125}{2.5}\n\\]\n\n\\[\ns=25+50=75\n\\]\n\n**Answer:** \\(75\\text{ m}\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q07__p09-09__m04__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is a pressure and cylinder volume question.\n\n**Solution**\n\n\\[\n\\text{pressure}=\\frac{\\text{force}}{\\text{area}}\n\\]\n\n\\[\n1.4=\\frac{72}{\\text{area}}\n\\]\n\n\\[\n\\text{area}=\\frac{72}{1.4}=51.428\\ldots\\text{ cm}^2\n\\]\n\nThe base area of the cylinder is \\(51.428\\ldots\\text{ cm}^2\\).\n\nVolume is\n\\[\n51.428\\ldots\\times18=925.714\\ldots\n\\]\n\n**Answer:** \\(926\\text{ cm}^3\\) to 3 significant figures.",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q04__p06-06__m04__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Angles in Polygons & Parallel Lines. The tag is correct.\n\n**Solution**\n\nThe angles around the point add to \\(360^\\circ\\):\n\\[\n7x+3x+8x=360\n\\]\n\n\\[\n18x=360\n\\]\n\n\\[\nx=20\n\\]\n\nThe interior angle of polygon \\(B\\) is\n\\[\n7x=7\\times 20=140^\\circ\n\\]\n\nSo the exterior angle is\n\\[\n180^\\circ-140^\\circ=40^\\circ\n\\]\n\nFor a regular polygon,\n\\[\nn=\\frac{360}{40}=9\n\\]\n\n**Answer:** \\(n=9\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q23__p24-25__m06__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe interior angles form an arithmetic sequence:\n\n\\[\n177,\\ 175,\\ 173,\\ 171,\\ 169,\\ldots\n\\]\n\nSo\n\n\\[\na=177,\\quad d=-2\n\\]\n\nFor an \\(n\\)-sided polygon, the sum of the interior angles is\n\n\\[\n180(n-2)\n\\]\n\nThe sum of the arithmetic sequence is\n\n\\[\n\\frac{n}{2}\\left(2(177)+(n-1)(-2)\\right)\n\\]\n\n\\[\n=\\frac{n}{2}(354-2n+2)\n\\]\n\n\\[\n=\\frac{n}{2}(356-2n)\n\\]\n\n\\[\n=n(178-n)\n\\]\n\nSet this equal to the polygon angle sum:\n\n\\[\nn(178-n)=180(n-2)\n\\]\n\n\\[\n178n-n^2=180n-360\n\\]\n\n\\[\nn^2+2n-360=0\n\\]\n\nFactorise:\n\n\\[\n(n+20)(n-18)=0\n\\]\n\nSince \\(n>5\\),\n\n\\[\nn=18\n\\]\n\n**Answer:** \\(n=18\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q19__p20-21__m05__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Circles, Arcs & Sectors. The tag is correct.\n\n**Solution**\n\nArea of sector \\(S\\):\n\\[\n\\frac{45}{360}\\pi(r+7)^2=\\frac18\\pi(r+7)^2\n\\]\n\nArea of circle \\(C\\):\n\\[\n\\pi(r-2)^2\n\\]\n\nThe sector area is twice the circle area:\n\\[\n\\frac18\\pi(r+7)^2=2\\pi(r-2)^2\n\\]\n\n\\[\n(r+7)^2=16(r-2)^2\n\\]\n\nSince \\(r>2\\),\n\\[\nr+7=4(r-2)\n\\]\n\n\\[\nr+7=4r-8\n\\]\n\n\\[\nr=5\n\\]\n\n**Answer:** \\(r=5\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q22__p23-23__m05__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe cone has radius \\(20\\) cm.\n\nThe curved surface area of the cone is\n\n\\[\n\\pi rl\n\\]\n\nSo\n\n\\[\n\\pi(20)l=580\\pi\n\\]\n\n\\[\nl=29\n\\]\n\nUse Pythagoras to find the height of the cone:\n\n\\[\nh^2+20^2=29^2\n\\]\n\n\\[\nh^2=841-400=441\n\\]\n\n\\[\nh=21\n\\]\n\nVolume of the cone:\n\n\\[\n\\frac{1}{3}\\pi r^2h\n=\\frac{1}{3}\\pi(20)^2(21)\n=2800\\pi\n\\]\n\nVolume of the hemisphere:\n\n\\[\n\\frac{2}{3}\\pi r^3\n=\\frac{2}{3}\\pi(20)^3\n=\\frac{16000}{3}\\pi\n\\]\n\nTotal volume:\n\n\\[\n2800\\pi+\\frac{16000}{3}\\pi\n=\\frac{24400}{3}\\pi\n\\]\n\nThe volume is \\(k\\pi\\), so\n\n\\[\nk=\\frac{24400}{3}\n\\]\n\n**Answer:** \\(\\boxed{\\frac{24400}{3}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q18__p19-19__m05__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Sine, Cosine Rule & Area of Triangles. The question needs the cosine rule and sine rule.\n\n**Solution**\n\nFirst use the cosine rule to find \\(AC\\):\n\\[\nAC^2=9.7^2+12.3^2-2(9.7)(12.3)\\cos 115^\\circ\n\\]\n\n\\[\nAC=18.607\\ldots\n\\]\n\nNow use the sine rule:\n\\[\n\\frac{\\sin x}{9.7}=\\frac{\\sin 115^\\circ}{18.607\\ldots}\n\\]\n\n\\[\n\\sin x=\\frac{9.7\\sin 115^\\circ}{18.607\\ldots}\n\\]\n\n\\[\nx=28.194\\ldots^\\circ\n\\]\n\n**Answer:** \\(28.2^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q21__p22-22__m03__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor a histogram,\n\n\\[\n\\text{frequency}=\\text{class width}\\times \\text{frequency density}\n\\]\n\nFor \\(m\\leq20\\), the frequency is 10 and the class width is 20, so\n\n\\[\n\\text{frequency density}=\\frac{10}{20}=0.5\n\\]\n\nUsing this scale from the histogram:\n\n\\[\n40<m\\leq60 \\quad \\text{has frequency density } 2.9\n\\]\n\n\\[\n60<m\\leq75 \\quad \\text{has frequency density } 3.2\n\\]\n\n\\[\n75<m\\leq100 \\quad \\text{has frequency density } 2.0\n\\]\n\nFor \\(50<m\\leq80\\), use part of each relevant bar:\n\n\\[\n(10)(2.9)+(15)(3.2)+(5)(2.0)\n\\]\n\n\\[\n=29+48+10\n\\]\n\n\\[\n=87\n\\]\n\n**Answer:** \\(87\\) children",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1H__Q02__p04-04__m04__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nThe known probabilities are\n\n\\[\n0.26+0.18=0.44\n\\]\n\nSo the probabilities for numbers \\(2\\) and \\(4\\) add to\n\n\\[\n1-0.44=0.56\n\\]\n\nThey are equal, so each is\n\n\\[\n0.56\\div 2=0.28\n\\]\n\nIf the expected frequency for number \\(3\\) is \\(45\\),\n\n\\[\n0.18n=45\n\\]\n\n\\[\nn=250\n\\]\n\nExpected frequency for number \\(4\\):\n\n\\[\n250\\times 0.28=70\n\\]\n\n**Answers:** \\(0.28\\), \\(250\\) spins, \\(70\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Jun2022_P1H__Q15__p16-16__m04__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nTo have a total score of \\(0\\) after three games:\n\n- all three games are draws, or\n- one game is won and two games are lost.\n\n\\[\nP(\\text{DDD})=0.5^3=0.125\n\\]\n\n\\[\nP(\\text{one win and two losses})=3(0.3)(0.2)^2=0.036\n\\]\n\n\\[\n0.125+0.036=0.161\n\\]\n\n**Answer:** \\(0.161\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Jun2022_P1H__Q12__p13-13__m04__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nThe probability Rudolph uses both machines is\n\n\\[\n0.8\\times 0.3=0.24\n\\]\n\n**Answer:** \\(0.24\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jun2022_P1H__Q24__p26-26__m04__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nq+12x-qx^2=-q\\left(x^2-\\frac{12}{q}x\\right)+q\n\\]\n\nComplete the square:\n\n\\[\nx^2-\\frac{12}{q}x=\\left(x-\\frac6q\\right)^2-\\frac{36}{q^2}\n\\]\n\nSo\n\n\\[\nq+12x-qx^2\n=-q\\left[\\left(x-\\frac6q\\right)^2-\\frac{36}{q^2}\\right]+q\n\\]\n\n\\[\n=q+\\frac{36}{q}-q\\left(x-\\frac6q\\right)^2\n\\]\n\nCompare with\n\n\\[\na-b(x-c)^2\n\\]\n\n**Answer:** \\(a=q+\\dfrac{36}{q}\\), \\(b=q\\), \\(c=\\dfrac6q\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P1H__Q20__p21-21__m02__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe maximum point of \\(y=f(x)\\) is \\((s,t)\\).\n\nFor\n\n\\[\ny=f(x-2)\n\\]\n\nthe graph moves 2 units right:\n\n\\[\n(s,t)\\to(s+2,t)\n\\]\n\nFor\n\n\\[\ny=3f(x)\n\\]\n\nthe \\(y\\)-coordinate is multiplied by 3:\n\n\\[\n(s,t)\\to(s,3t)\n\\]\n\n**Answer:** \\((s+2,t)\\) and \\((s,3t)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P1H__Q23__p24-25__m06__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe interior angles form an arithmetic sequence:\n\n\\[\n177,\\ 175,\\ 173,\\ 171,\\ 169,\\ldots\n\\]\n\nSo\n\n\\[\na=177,\\quad d=-2\n\\]\n\nFor an \\(n\\)-sided polygon, the sum of the interior angles is\n\n\\[\n180(n-2)\n\\]\n\nThe sum of the arithmetic sequence is\n\n\\[\n\\frac{n}{2}\\left(2(177)+(n-1)(-2)\\right)\n\\]\n\n\\[\n=\\frac{n}{2}(354-2n+2)\n\\]\n\n\\[\n=\\frac{n}{2}(356-2n)\n\\]\n\n\\[\n=n(178-n)\n\\]\n\nSet this equal to the polygon angle sum:\n\n\\[\nn(178-n)=180(n-2)\n\\]\n\n\\[\n178n-n^2=180n-360\n\\]\n\n\\[\nn^2+2n-360=0\n\\]\n\nFactorise:\n\n\\[\n(n+20)(n-18)=0\n\\]\n\nSince \\(n>5\\),\n\n\\[\nn=18\n\\]\n\n**Answer:** \\(n=18\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P1H__Q22__p23-23__m05__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe cone has radius \\(20\\) cm.\n\nThe curved surface area of the cone is\n\n\\[\n\\pi rl\n\\]\n\nSo\n\n\\[\n\\pi(20)l=580\\pi\n\\]\n\n\\[\nl=29\n\\]\n\nUse Pythagoras to find the height of the cone:\n\n\\[\nh^2+20^2=29^2\n\\]\n\n\\[\nh^2=841-400=441\n\\]\n\n\\[\nh=21\n\\]\n\nVolume of the cone:\n\n\\[\n\\frac{1}{3}\\pi r^2h\n=\\frac{1}{3}\\pi(20)^2(21)\n=2800\\pi\n\\]\n\nVolume of the hemisphere:\n\n\\[\n\\frac{2}{3}\\pi r^3\n=\\frac{2}{3}\\pi(20)^3\n=\\frac{16000}{3}\\pi\n\\]\n\nTotal volume:\n\n\\[\n2800\\pi+\\frac{16000}{3}\\pi\n=\\frac{24400}{3}\\pi\n\\]\n\nThe volume is \\(k\\pi\\), so\n\n\\[\nk=\\frac{24400}{3}\n\\]\n\n**Answer:** \\(\\boxed{\\frac{24400}{3}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P1H__Q21__p22-22__m03__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor a histogram,\n\n\\[\n\\text{frequency}=\\text{class width}\\times \\text{frequency density}\n\\]\n\nFor \\(m\\leq20\\), the frequency is 10 and the class width is 20, so\n\n\\[\n\\text{frequency density}=\\frac{10}{20}=0.5\n\\]\n\nUsing this scale from the histogram:\n\n\\[\n40<m\\leq60 \\quad \\text{has frequency density } 2.9\n\\]\n\n\\[\n60<m\\leq75 \\quad \\text{has frequency density } 3.2\n\\]\n\n\\[\n75<m\\leq100 \\quad \\text{has frequency density } 2.0\n\\]\n\nFor \\(50<m\\leq80\\), use part of each relevant bar:\n\n\\[\n(10)(2.9)+(15)(3.2)+(5)(2.0)\n\\]\n\n\\[\n=29+48+10\n\\]\n\n\\[\n=87\n\\]\n\n**Answer:** \\(87\\) children",
+      "updated": "2026-05-05T16:25:30",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "paperSlug": "May2024_P1HR",
+  "solutions": {
+    "all::May2024_P1HR__Q11__p11-11__m04__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\nA=2^5\\times 5\\times 7^2\n\\]\n\n\\[\nB=2^3\\times 5^3\\times 7^4\n\\]\n\nFor part (a),\n\n\\[\n5A=2^5\\times 5^2\\times 7^2\n\\]\n\n\\[\n2B=2^4\\times 5^3\\times 7^4\n\\]\n\nThe HCF takes the smaller powers:\n\n\\[\n\\text{HCF}=2^4\\times 5^2\\times 7^2\n\\]\n\nFor part (b),\n\n\\[\nAB=2^{5+3}\\times 5^{1+3}\\times 7^{2+4}\n\\]\n\n\\[\nAB=2^8\\times 5^4\\times 7^6\n\\]\n\nTherefore\n\n\\[\n(AB)^2=2^{16}\\times 5^8\\times 7^{12}\n\\]\n\n**Answer:** (a) \\(2^4\\times 5^2\\times 7^2\\), (b) \\(2^{16}\\times 5^8\\times 7^{12}\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q03__p05-05__m05__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct, with ratio used to split the loaves.\n\n**Method**\n\nThe ratio parts are\n\n\\[\n3+2=5\n\\]\n\nWhite loaves:\n\n\\[\n200\\times \\frac{3}{5}=120\n\\]\n\nBrown loaves:\n\n\\[\n200\\times \\frac{2}{5}=80\n\\]\n\nProfit on each white loaf:\n\n\\[\n40\\%\\times 1.50=0.60\n\\]\n\nProfit on each brown loaf:\n\n\\[\n60\\%\\times 1.75=1.05\n\\]\n\nTotal profit:\n\n\\[\n120\\times 0.60+80\\times 1.05=72+84=156\n\\]\n\n**Answer:** \\(156\\) pounds",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q05__p06-06__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nThe multiplier for \\(2.5\\%\\) compound interest is\n\n\\[\n1.025\n\\]\n\nAfter 4 years,\n\n\\[\n5200(1.025)^4=5739.827\\ldots\n\\]\n\nCorrect to the nearest euro,\n\n\\[\n5739.827\\ldots\\approx 5740\n\\]\n\n**Answer:** \\(5740\\) euros",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q17__p17-17__m04__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic roots and indices. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n\\left(\\sqrt[4]{k^{12}}\\right)^5=(k^3)^5=k^{15}\n\\]\nso \\(n=15\\).\n\n(b)\n\\[\n\\frac{7}{2-\\sqrt3}\\times\\frac{2+\\sqrt3}{2+\\sqrt3}\n=\\frac{7(2+\\sqrt3)}{4-3}=14+7\\sqrt3\n\\]\n\n\\[\n7\\sqrt3=\\sqrt{49\\times3}=\\sqrt{147}\n\\]\n\n**Answer:** (a) \\(15\\), (b) \\(\\sqrt{147}+14\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q14__p14-14__m06__Expanding-Brackets": {
+      "status": "checked",
+      "source": "**Topic check:** Expanding brackets. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n(2-x)(4+x)=8-2x-x^2\n\\]\n\n\\[\n(3x+1)(8-2x-x^2)=-3x^3-7x^2+22x+8\n\\]\n\n(b)\n\\[\n\\left(\\frac{a^3b}{a^9b^5}\\right)^{-1/2}\n=\\left(\\frac1{a^6b^4}\\right)^{-1/2}=a^3b^2\n\\]\n\n**Answer:** (a) \\(-3x^3-7x^2+22x+8\\), (b) \\(a^3b^2\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q07__p08-08__m09__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to factorising. The original tag was expanding brackets, but the quadratic factorising section is the strongest classification in this mixed algebra question.\n\n**Solution**\n\n(a) \\(g^9\\div g^2=g^7\\).\n\n(b) \\(5k^2(k^3+4)=5k^5+20k^2\\).\n\n(c)(i)\n\\[\nx^2-2x-63=(x-9)(x+7)\n\\]\n\n(c)(ii) \\(x=9\\) or \\(x=-7\\).\n\n(d)\n\\[\n7-2y<3y-12\n\\]\n\n\\[\n19<5y\n\\]\n\n**Answer:** (a) \\(g^7\\), (b) \\(5k^5+20k^2\\), (c) \\((x-9)(x+7)\\), \\(x=9\\) or \\(x=-7\\), (d) \\(y>\\frac{19}{5}\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q20__p20-20__m05__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Completing the Square.\n\n**Method**\n\nFor part (a),\n\n\\[\n2x^2-11x+9\n\\]\n\nFactor out 2 from the quadratic terms:\n\n\\[\n2\\left(x^2-\\frac{11}{2}x\\right)+9\n\\]\n\nComplete the square:\n\n\\[\n2\\left[\\left(x-\\frac{11}{4}\\right)^2-\\frac{121}{16}\\right]+9\n\\]\n\n\\[\n2\\left(x-\\frac{11}{4}\\right)^2-\\frac{121}{8}+9\n\\]\n\n\\[\n2\\left(x-\\frac{11}{4}\\right)^2-\\frac{121}{8}+\\frac{72}{8}\n\\]\n\n\\[\n2\\left(x-\\frac{11}{4}\\right)^2-\\frac{49}{8}\n\\]\n\nSo\n\n\\[\n2x^2-11x+9=2\\left(x-\\frac{11}{4}\\right)^2-\\frac{49}{8}\n\\]\n\nFor part (b),\n\n\\[\ny=2(x-3)^2-11(x-3)+9\n\\]\n\nLet\n\n\\[\nu=x-3\n\\]\n\nFrom part (a), the minimum occurs when\n\n\\[\nu=\\frac{11}{4}\n\\]\n\nSo\n\n\\[\nx-3=\\frac{11}{4}\n\\]\n\n\\[\nx=\\frac{23}{4}\n\\]\n\nThe minimum value of \\(y\\) is\n\n\\[\n-\\frac{49}{8}\n\\]\n\n**Answer:** \\(\\displaystyle 2\\left(x-\\frac{11}{4}\\right)^2-\\frac{49}{8}\\), \\(\\displaystyle P=\\left(\\frac{23}{4},-\\frac{49}{8}\\right)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q04__p06-06__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks to show the exact result.\n\n**Solution**\n\n\\[\n2\\frac13=\\frac73,\\qquad 5\\frac14=\\frac{21}{4}\n\\]\n\n\\[\n2\\frac13\\div5\\frac14=\\frac73\\div\\frac{21}{4}\n\\]\n\n\\[\n=\\frac73\\times\\frac4{21}=\\frac{28}{63}=\\frac49\n\\]\n\n**Answer:** \\(\\frac49\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q12__p12-12__m04__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\n\\[\n4x+3y=9.6\n\\]\n\n\\[\n6x+5y=16.8\n\\]\n\nMultiply the first equation by 5:\n\\[\n20x+15y=48\n\\]\n\nMultiply the second equation by 3:\n\\[\n18x+15y=50.4\n\\]\n\nSubtract:\n\\[\n2x=-2.4\n\\]\n\n\\[\nx=-1.2\n\\]\n\nSubstitute into \\(4x+3y=9.6\\):\n\\[\n4(-1.2)+3y=9.6\n\\]\n\n\\[\n3y=14.4\n\\]\n\n\\[\ny=4.8\n\\]\n\n**Answer:** \\(x=-1.2\\), \\(y=4.8\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q23__p24-24__m04__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe first three terms are\n\n\\[\n4x-14,\\quad x+2,\\quad 7x-9\n\\]\n\nEqual differences give\n\n\\[\n(x+2)-(4x-14)=(7x-9)-(x+2)\n\\]\n\n\\[\n-3x+16=6x-11\n\\]\n\n\\[\n9x=27\n\\]\n\n\\[\nx=3\n\\]\n\nSo the sequence is\n\n\\[\n-2,\\ 5,\\ 12,\\ldots\n\\]\n\nwith common difference \\(7\\).\n\n\\[\nS_{40}=\\frac{40}{2}(2(-2)+39(7))\n\\]\n\n\\[\nS_{40}=20(-4+273)=5380\n\\]\n\n**Answer:** \\(5380\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q09__p10-10__m03__Linear-Graphs-y-mx-c": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to linear graphs. The question asks for an equation of a drawn line.\n\n**Solution**\n\nFrom the graph, the line crosses the y-axis at \\(1\\), so\n\\[\nc=1\n\\]\n\nIt also crosses the x-axis at \\(2\\), so using \\((0,1)\\) and \\((2,0)\\),\n\\[\nm=\\frac{0-1}{2-0}=-\\frac12\n\\]\n\nTherefore\n\\[\ny=-\\frac12x+1\n\\]\n\n**Answer:** \\(y=-\\frac12x+1\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q19__p19-19__m05__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is finding stationary points using differentiation.\n\n**Solution**\n\n\\[\ny=x^3-8x^2-12x+5\n\\]\n\n\\[\n\\frac{dy}{dx}=3x^2-16x-12\n\\]\n\nStationary points have\n\\[\n3x^2-16x-12=0\n\\]\n\n\\[\nx=\\frac{16\\pm\\sqrt{(-16)^2-4(3)(-12)}}{6}\n\\]\n\n\\[\nx=\\frac{16\\pm20}{6}\n\\]\n\n\\[\nx=6 \\quad \\text{or} \\quad x=-\\frac23\n\\]\n\nPoint \\(A\\) has the greater \\(x\\)-coordinate, so \\(x=6\\).\n\n\\[\ny=6^3-8(6^2)-12(6)+5\n\\]\n\n\\[\ny=216-288-72+5=-139\n\\]\n\n**Answer:** \\(A=(6,-139)\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q06__p07-07__m04__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Standard & Compound Units. The tag is correct.\n\n**Solution**\n\nFor the cylinder,\n\\[\nV=\\pi r^2h\n\\]\n\n\\[\n1208=\\pi(8)^2h\n\\]\n\n\\[\nh=\\frac{1208}{64\\pi}=6.006\\ldots\n\\]\n\nSo, to the nearest whole number,\n\\[\nh=6\n\\]\n\nFor the mass, use the given volume:\n\\[\n\\text{mass}=\\text{density}\\times \\text{volume}\n\\]\n\n\\[\n1.25\\times 1208=1510\\text{ g}\n\\]\n\n\\[\n1510\\text{ g}=1.51\\text{ kg}\n\\]\n\n**Answer:** \\(h=6\\text{ cm}\\), and the mass is \\(1.51\\text{ kg}\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q13__p13-13__m05__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Circle Theorems. The tag is correct.\n\n**Solution**\n\nOpposite angles in cyclic quadrilateral \\(ABCD\\) add to \\(180^\\circ\\):\n\\[\n\\angle BAD=180^\\circ-128^\\circ=52^\\circ\n\\]\n\nThe angle at the centre is twice the angle at the circumference standing on the same arc \\(BD\\):\n\\[\n\\angle BOD=2\\times 52^\\circ=104^\\circ\n\\]\n\nSince \\(OB=OD\\), triangle \\(OBD\\) is isosceles:\n\\[\n\\angle OBD=\\frac{180^\\circ-104^\\circ}{2}=38^\\circ\n\\]\n\n**Answer:** \\(38^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q08__p09-09__m06__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Perimeter. The tag is correct.\n\n**Solution**\n\nUse the trapezium area formula:\n\\[\n360=\\frac12(AB+14)(15)\n\\]\n\n\\[\nAB+14=48\n\\]\n\n\\[\nAB=34\n\\]\n\nTriangle \\(ABC\\) is right-angled with horizontal length\n\\[\n34-14=20\n\\]\n\nSo\n\\[\nBC=\\sqrt{20^2+15^2}=25\n\\]\n\nPerimeter:\n\\[\n15+14+25+34=88\n\\]\n\n**Answer:** \\(88\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q18__p18-18__m04__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Volume of Similar Shapes. The tag is correct.\n\n**Solution**\n\nThe linear scale factor from vase \\(B\\) to vase \\(A\\) is\n\\[\n\\frac{30}{12}=2.5\n\\]\n\nSo the surface area scale factor is\n\\[\n2.5^2=6.25\n\\]\n\nLet the surface area of vase \\(B\\) be \\(S\\).\n\n\\[\n6.25S-S=178.5\n\\]\n\n\\[\n5.25S=178.5\n\\]\n\n\\[\nS=34\n\\]\n\nTherefore the surface area of vase \\(A\\) is\n\\[\n6.25\\times 34=212.5\n\\]\n\n**Answer:** \\(212.5\\text{ cm}^2\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q15__p15-15__m03__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Sine, Cosine Rule & Area of Triangles. The tag is correct.\n\n**Solution**\n\nLet\n\n\\[\nEF=FG=x\n\\]\n\nUse the area formula:\n\n\\[\n74=\\frac12x^2\\sin130^\\circ\n\\]\n\n\\[\nx^2=\\frac{148}{\\sin130^\\circ}\n\\]\n\n\\[\nx=13.899\\ldots\n\\]\n\n**Answer:** \\(13.9\\text{ cm}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q22__p22-23__m06__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to 3D Pythagoras & Trigonometry.\n\n**Method**\n\nUse coordinates with\n\n\\[\nA=(0,0,0)\n\\]\n\nSince\n\n\\[\nAD=12,\\qquad DE=20,\\qquad AB=8\n\\]\n\ntake\n\n\\[\nB=(0,0,8)\n\\]\n\nThe centre of the rectangular base \\(ADEH\\) is\n\n\\[\nM=(6,10,0)\n\\]\n\nPoint \\(P\\) is the midpoint of \\(CF\\).\n\n\\[\nC=(12,0,8),\\qquad F=(12,20,8)\n\\]\n\n\\[\nP=(12,10,8)\n\\]\n\nNow\n\n\\[\n\\vec{MB}=B-M=(-6,-10,8)\n\\]\n\n\\[\n\\vec{MP}=P-M=(6,0,8)\n\\]\n\nUse the scalar product formula:\n\n\\[\n\\vec{MB}\\cdot\\vec{MP}=(-6)(6)+(-10)(0)+(8)(8)\n\\]\n\n\\[\n\\vec{MB}\\cdot\\vec{MP}=28\n\\]\n\n\\[\n|\\vec{MB}|=\\sqrt{(-6)^2+(-10)^2+8^2}=\\sqrt{200}\n\\]\n\n\\[\n|\\vec{MP}|=\\sqrt{6^2+0^2+8^2}=10\n\\]\n\n\\[\n\\cos \\angle BMP=\\frac{28}{10\\sqrt{200}}\n\\]\n\n\\[\n\\angle BMP=78.6^\\circ\n\\]\n\n**Answer:** \\(78.6^\\circ\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q01__p03-03__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe total of the 6 cards is\n\n\\[\n6 \\times 11=66\n\\]\n\nThe known total is\n\n\\[\n16+15+3+2+9=45\n\\]\n\n\\[\nx=66-45=21\n\\]\n\n**Answer:** \\(x=21\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q10__p10-10__m02__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe goals in order are\n\n\\[\n0,\\ 1,\\ 2,\\ 2,\\ 3,\\ 4,\\ 4,\\ 6,\\ 7,\\ 9,\\ 11\n\\]\n\n\\[\nQ_1=2,\\qquad Q_3=7\n\\]\n\n\\[\n\\text{IQR}=7-2=5\n\\]\n\n**Answer:** \\(5\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q16__p16-16__m03__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Histograms. The tag is correct.\n\n**Solution**\n\nFor a histogram,\n\n\\[\n\\text{frequency density}=\\frac{\\text{frequency}}{\\text{class width}}\n\\]\n\nThe bar heights are:\n\n\\[\n0<h\\le 2:\\frac52=2.5\n\\]\n\n\\[\n2<h\\le 5:\\frac{12}{3}=4\n\\]\n\n\\[\n5<h\\le 10:\\frac{18}{5}=3.6\n\\]\n\n\\[\n10<h\\le 20:\\frac{14}{10}=1.4\n\\]\n\n\\[\n20<h\\le 35:\\frac{9}{15}=0.6\n\\]\n\n**Answer:** draw bars with heights \\(2.5,4,3.6,1.4,0.6\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1HR__Q02__p04-04__m04__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nLet the probability of landing on \\(4\\) be \\(x\\). Then the probability of landing on \\(1\\) is \\(2x\\).\n\n\\[\n2x+0.27+0.04+x+0.12=1\n\\]\n\n\\[\n3x=0.57\n\\]\n\n\\[\nx=0.19\n\\]\n\n\\[\nP(\\text{odd})=0.38+0.04+0.12=0.54\n\\]\n\nExpected odd numbers:\n\n\\[\n400\\times 0.54=216\n\\]\n\n**Answers:** \\(0.19\\), \\(0.54\\), \\(216\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::May2024_P1HR__Q21__p21-21__m05__Probability-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThere are 25 counters.\n\nBlue counters:\n\n\\[\n6\n\\]\n\nOrange counters:\n\n\\[\nx\n\\]\n\nPink counters:\n\n\\[\n25-6-x=19-x\n\\]\n\nThe probability of taking one orange and one pink in either order is\n\n\\[\n\\frac{x}{25}\\cdot\\frac{19-x}{24}\n+\\frac{19-x}{25}\\cdot\\frac{x}{24}\n\\]\n\n\\[\n=\\frac{2x(19-x)}{25\\cdot24}\n\\]\n\nThis is equal to \\(\\frac{22}{75}\\), so\n\n\\[\n\\frac{2x(19-x)}{600}=\\frac{22}{75}\n\\]\n\n\\[\n\\frac{x(19-x)}{300}=\\frac{22}{75}\n\\]\n\n\\[\nx(19-x)=88\n\\]\n\n\\[\n19x-x^2=88\n\\]\n\n\\[\nx^2-19x+88=0\n\\]\n\n\\[\n(x-8)(x-11)=0\n\\]\n\nSince \\(x>9\\),\n\n\\[\nx=11\n\\]\n\nSo the number of pink counters is\n\n\\[\n19-11=8\n\\]\n\nThe probability of taking 2 pink counters is\n\n\\[\n\\frac{8}{25}\\cdot\\frac{7}{24}=\\frac{56}{600}\n\\]\n\n\\[\n=\\frac{7}{75}\n\\]\n\n**Answer:** \\(\\frac{7}{75}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2024_P1HR__Q20__p20-20__m05__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Completing the Square.\n\n**Method**\n\nFor part (a),\n\n\\[\n2x^2-11x+9\n\\]\n\nFactor out 2 from the quadratic terms:\n\n\\[\n2\\left(x^2-\\frac{11}{2}x\\right)+9\n\\]\n\nComplete the square:\n\n\\[\n2\\left[\\left(x-\\frac{11}{4}\\right)^2-\\frac{121}{16}\\right]+9\n\\]\n\n\\[\n2\\left(x-\\frac{11}{4}\\right)^2-\\frac{121}{8}+9\n\\]\n\n\\[\n2\\left(x-\\frac{11}{4}\\right)^2-\\frac{121}{8}+\\frac{72}{8}\n\\]\n\n\\[\n2\\left(x-\\frac{11}{4}\\right)^2-\\frac{49}{8}\n\\]\n\nSo\n\n\\[\n2x^2-11x+9=2\\left(x-\\frac{11}{4}\\right)^2-\\frac{49}{8}\n\\]\n\nFor part (b),\n\n\\[\ny=2(x-3)^2-11(x-3)+9\n\\]\n\nLet\n\n\\[\nu=x-3\n\\]\n\nFrom part (a), the minimum occurs when\n\n\\[\nu=\\frac{11}{4}\n\\]\n\nSo\n\n\\[\nx-3=\\frac{11}{4}\n\\]\n\n\\[\nx=\\frac{23}{4}\n\\]\n\nThe minimum value of \\(y\\) is\n\n\\[\n-\\frac{49}{8}\n\\]\n\n**Answer:** \\(\\displaystyle 2\\left(x-\\frac{11}{4}\\right)^2-\\frac{49}{8}\\), \\(\\displaystyle P=\\left(\\frac{23}{4},-\\frac{49}{8}\\right)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2024_P1HR__Q23__p24-24__m04__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe first three terms are\n\n\\[\n4x-14,\\quad x+2,\\quad 7x-9\n\\]\n\nEqual differences give\n\n\\[\n(x+2)-(4x-14)=(7x-9)-(x+2)\n\\]\n\n\\[\n-3x+16=6x-11\n\\]\n\n\\[\n9x=27\n\\]\n\n\\[\nx=3\n\\]\n\nSo the sequence is\n\n\\[\n-2,\\ 5,\\ 12,\\ldots\n\\]\n\nwith common difference \\(7\\).\n\n\\[\nS_{40}=\\frac{40}{2}(2(-2)+39(7))\n\\]\n\n\\[\nS_{40}=20(-4+273)=5380\n\\]\n\n**Answer:** \\(5380\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2024_P1HR__Q22__p22-23__m06__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to 3D Pythagoras & Trigonometry.\n\n**Method**\n\nUse coordinates with\n\n\\[\nA=(0,0,0)\n\\]\n\nSince\n\n\\[\nAD=12,\\qquad DE=20,\\qquad AB=8\n\\]\n\ntake\n\n\\[\nB=(0,0,8)\n\\]\n\nThe centre of the rectangular base \\(ADEH\\) is\n\n\\[\nM=(6,10,0)\n\\]\n\nPoint \\(P\\) is the midpoint of \\(CF\\).\n\n\\[\nC=(12,0,8),\\qquad F=(12,20,8)\n\\]\n\n\\[\nP=(12,10,8)\n\\]\n\nNow\n\n\\[\n\\vec{MB}=B-M=(-6,-10,8)\n\\]\n\n\\[\n\\vec{MP}=P-M=(6,0,8)\n\\]\n\nUse the scalar product formula:\n\n\\[\n\\vec{MB}\\cdot\\vec{MP}=(-6)(6)+(-10)(0)+(8)(8)\n\\]\n\n\\[\n\\vec{MB}\\cdot\\vec{MP}=28\n\\]\n\n\\[\n|\\vec{MB}|=\\sqrt{(-6)^2+(-10)^2+8^2}=\\sqrt{200}\n\\]\n\n\\[\n|\\vec{MP}|=\\sqrt{6^2+0^2+8^2}=10\n\\]\n\n\\[\n\\cos \\angle BMP=\\frac{28}{10\\sqrt{200}}\n\\]\n\n\\[\n\\angle BMP=78.6^\\circ\n\\]\n\n**Answer:** \\(78.6^\\circ\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2024_P1HR__Q21__p21-21__m05__Probability-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThere are 25 counters.\n\nBlue counters:\n\n\\[\n6\n\\]\n\nOrange counters:\n\n\\[\nx\n\\]\n\nPink counters:\n\n\\[\n25-6-x=19-x\n\\]\n\nThe probability of taking one orange and one pink in either order is\n\n\\[\n\\frac{x}{25}\\cdot\\frac{19-x}{24}\n+\\frac{19-x}{25}\\cdot\\frac{x}{24}\n\\]\n\n\\[\n=\\frac{2x(19-x)}{25\\cdot24}\n\\]\n\nThis is equal to \\(\\frac{22}{75}\\), so\n\n\\[\n\\frac{2x(19-x)}{600}=\\frac{22}{75}\n\\]\n\n\\[\n\\frac{x(19-x)}{300}=\\frac{22}{75}\n\\]\n\n\\[\nx(19-x)=88\n\\]\n\n\\[\n19x-x^2=88\n\\]\n\n\\[\nx^2-19x+88=0\n\\]\n\n\\[\n(x-8)(x-11)=0\n\\]\n\nSince \\(x>9\\),\n\n\\[\nx=11\n\\]\n\nSo the number of pink counters is\n\n\\[\n19-11=8\n\\]\n\nThe probability of taking 2 pink counters is\n\n\\[\n\\frac{8}{25}\\cdot\\frac{7}{24}=\\frac{56}{600}\n\\]\n\n\\[\n=\\frac{7}{75}\n\\]\n\n**Answer:** \\(\\frac{7}{75}\\)",
+      "updated": "2026-05-05T20:41:15",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

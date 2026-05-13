@@ -1,0 +1,227 @@
+{
+  "paperSlug": "Nov2025_P1H",
+  "solutions": {
+    "all::Nov2025_P1H__Q09__p07-07__m03__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nTuesday's score was \\(12\\%\\) more than Monday's score, so Tuesday was \\(112\\%\\) of Monday.\n\n\\[\n1.12\\times \\text{Monday}=140\n\\]\n\n\\[\n\\text{Monday}=\\frac{140}{1.12}=125\n\\]\n\n**Answer:** \\(125\\) points",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q02__p04-04__m02__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\nRound each number to one significant figure:\n\n\\[\n2.11\\approx 2,\\quad 58.9\\approx 60,\\quad 8.859\\approx 9\n\\]\n\n\\[\n\\frac{2.11^2\\times 58.9}{\\sqrt{8.859}}\n\\approx\n\\frac{2^2\\times 60}{\\sqrt 9}\n\\]\n\n\\[\n=\\frac{4\\times 60}{3}=80\n\\]\n\n**Answer:** \\(80\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q07__p06-06__m02__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\nThe weight \\(475\\) g correct to the nearest g has lower bound\n\n\\[\n475-0.5=474.5\n\\]\n\nThe height \\(120\\) cm correct to the nearest \\(10\\) cm has upper bound\n\n\\[\n120+5=125\n\\]\n\n**Answer:** (a) \\(474.5\\) g, (b) \\(125\\) cm",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q06__p06-06__m04__Ratio-Problem-Solving": {
+      "status": "checked",
+      "source": "**Topic check:** Ratio Problem Solving. The tag is correct.\n\n**Method**\n\nThe ratio is\n\n\\[\n\\text{Eli} : \\text{Peta} = 2:3\n\\]\n\nThere are 5 parts, so one part is\n\n\\[\n275 \\div 5=55\n\\]\n\nEli gets\n\n\\[\n2 \\times 55=110\n\\]\n\nPeta gets\n\n\\[\n3 \\times 55=165\n\\]\n\nEli gives\n\n\\[\n\\frac{3}{11}\\times 110=30\n\\]\n\nPeta gives\n\n\\[\n0.32\\times 165=52.8\n\\]\n\nTotal given to charity:\n\n\\[\n30+52.8=82.8\n\\]\n\n**Answer:** \\(82.8\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q08__p07-07__m02__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic roots and indices. The tag is correct.\n\n**Solution**\n\n\\[\n\\frac{8^{-2}\\times8^9}{8^{10}}=8^{-2+9-10}=8^{-3}\n\\]\n\n**Answer:** \\(n=-3\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q14__p12-12__m06__Expanding-Brackets": {
+      "status": "checked",
+      "source": "**Topic check:** Expanding brackets. The tag is acceptable.\n\n**Solution**\n\n(a)\n\\[\n7x(3x+2)(2x-5)=7x(6x^2-11x-10)\n\\]\n\n\\[\n=42x^3-77x^2-70x\n\\]\n\n(b)\n\\[\n\\frac9{2y}+\\frac57=5\n\\]\n\n\\[\n\\frac9{2y}=\\frac{30}{7}\n\\]\n\n\\[\n63=60y\n\\]\n\n**Answer:** (a) \\(42x^3-77x^2-70x\\), (b) \\(y=\\frac{21}{20}\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q10__p08-08__m07__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is acceptable for this mixed algebra question.\n\n**Solution**\n\n(a) \\((6m)^0=1\\).\n\n(b)\n\\[\n5y+20<7y+1\n\\]\n\n\\[\n19<2y\n\\]\n\n\\[\ny>\\frac{19}{2}\n\\]\n\n(c)\n\\[\n15w^2x^5+25w^3x^2=5w^2x^2(3x^3+5w)\n\\]\n\n(d)\n\\[\n\\frac{36a^5c^7}{12a^2c^3}=3a^3c^4\n\\]\n\n**Answer:** \\(1\\), \\(y>\\frac{19}{2}\\), \\(5w^2x^2(3x^3+5w)\\), \\(3a^3c^4\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q21__p17-17__m03__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n5x^2-20x+23=5(x^2-4x)+23\n\\]\n\n\\[\n=5\\left((x-2)^2-4\\right)+23\n\\]\n\n\\[\n=5(x-2)^2-20+23\n\\]\n\n\\[\n=5(x-2)^2+3\n\\]\n\n**Answer:** \\(5(x-2)^2+3\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q23__p19-19__m03__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Ratio Toolkit to Algebraic Fractions.\n\n**Method**\n\n\\[\na=\\frac{2x+5}{1-x},\\quad x=\\frac{5-2y}{3y}\n\\]\n\nSubstitute for \\(x\\).\n\nNumerator:\n\n\\[\n2x+5=2\\left(\\frac{5-2y}{3y}\\right)+5\n\\]\n\n\\[\n=\\frac{10-4y+15y}{3y}\n=\\frac{10+11y}{3y}\n\\]\n\nDenominator:\n\n\\[\n1-x=1-\\frac{5-2y}{3y}\n\\]\n\n\\[\n=\\frac{3y-5+2y}{3y}\n=\\frac{5y-5}{3y}\n=\\frac{5(y-1)}{3y}\n\\]\n\nTherefore\n\n\\[\na=\\frac{\\frac{10+11y}{3y}}{\\frac{5(y-1)}{3y}}\n=\\frac{10+11y}{5(y-1)}\n\\]\n\n**Answer:** \\(\\dfrac{10+11y}{5(y-1)}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q18__p14-14__m04__Rearranging-Formulas": {
+      "status": "checked",
+      "source": "**Topic check:** Rearranging formulas. The tag is correct.\n\n**Solution**\n\n\\[\np=\\sqrt{\\frac{y+w}{3y-t}}\n\\]\n\n\\[\np^2=\\frac{y+w}{3y-t}\n\\]\n\n\\[\np^2(3y-t)=y+w\n\\]\n\n\\[\n3p^2y-p^2t=y+w\n\\]\n\n\\[\ny(3p^2-1)=w+p^2t\n\\]\n\n**Answer:** \\(y=\\frac{w+p^2t}{3p^2-1}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q05__p05-05__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks to show the exact result.\n\n**Solution**\n\n\\[\n\\frac37+\\frac13\n\\]\n\nUse denominator 21:\n\\[\n\\frac37=\\frac9{21},\\qquad \\frac13=\\frac7{21}\n\\]\n\n\\[\n\\frac9{21}+\\frac7{21}=\\frac{16}{21}\n\\]\n\n**Answer:** \\(\\frac{16}{21}\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q17__p14-14__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks for exact-form proof.\n\n**Solution**\n\n\\[\n\\frac{2\\sqrt7+2}{\\sqrt7-3}\\times\\frac{\\sqrt7+3}{\\sqrt7+3}\n=\\frac{(2\\sqrt7+2)(\\sqrt7+3)}{7-9}\n\\]\n\n\\[\n=\\frac{14+6\\sqrt7+2\\sqrt7+6}{-2}\n\\]\n\n\\[\n=\\frac{20+8\\sqrt7}{-2}=-10-4\\sqrt7\n\\]\n\nSince \\(4\\sqrt7=\\sqrt{112}\\),\n\\[\n-10-4\\sqrt7=-10-\\sqrt{112}\n\\]\n\n**Answer:** \\(-10-\\sqrt{112}\\), so \\(a=-10\\) and \\(b=112\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q25__p21-21__m03__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n2x^2+x-28>0\n\\]\n\nFactorise:\n\n\\[\n2x^2+x-28=(2x-7)(x+4)\n\\]\n\nThe critical values are\n\n\\[\nx=\\frac72 \\quad \\text{and} \\quad x=-4\n\\]\n\nThe quadratic is greater than 0 outside the roots.\n\n**Answer:** \\(x<-4\\) or \\(x>\\dfrac72\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q20__p16-16__m03__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nLine \\(L\\) has equation\n\n\\[\ny=4x+7\n\\]\n\nSo its gradient is\n\n\\[\n4\n\\]\n\nLine \\(M\\) is perpendicular to \\(L\\), so its gradient is\n\n\\[\n-\\frac14\n\\]\n\nLine \\(M\\) passes through \\((8,1)\\).\n\n\\[\ny-1=-\\frac14(x-8)\n\\]\n\n\\[\ny-1=-\\frac14x+2\n\\]\n\n\\[\ny=-\\frac14x+3\n\\]\n\n**Answer:** \\(\\displaystyle y=-\\frac14x+3\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q28__p26-27__m06__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe line is\n\n\\[\ny=3x+e\n\\]\n\nPoint \\(A=(0.2,2.6)\\) lies on the line.\n\n\\[\n2.6=3(0.2)+e\n\\]\n\n\\[\n2.6=0.6+e\n\\]\n\n\\[\ne=2\n\\]\n\nSo\n\n\\[\ny=3x+2\n\\]\n\nThe curve is\n\n\\[\nx^2+y^2=d-11x\n\\]\n\nUse point \\(A=(0.2,2.6)\\):\n\n\\[\n0.2^2+2.6^2=d-11(0.2)\n\\]\n\n\\[\n0.04+6.76=d-2.2\n\\]\n\n\\[\nd=9\n\\]\n\nNow substitute \\(y=3x+2\\) into the curve:\n\n\\[\nx^2+(3x+2)^2=9-11x\n\\]\n\n\\[\nx^2+9x^2+12x+4=9-11x\n\\]\n\n\\[\n10x^2+23x-5=0\n\\]\n\nOne root is \\(0.2=\\frac15\\).\n\nThe product of the roots is\n\n\\[\n\\frac{-5}{10}=-\\frac12\n\\]\n\nSo the other root is\n\n\\[\n\\frac{-\\frac12}{\\frac15}=-\\frac52\n\\]\n\nThen\n\n\\[\ny=3\\left(-\\frac52\\right)+2\n\\]\n\n\\[\ny=-\\frac{11}{2}\n\\]\n\n**Answer:** \\(\\displaystyle B=\\left(-\\frac52,-\\frac{11}{2}\\right)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q24__p20-20__m03__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe turning point of \\(y=f(x)\\) is \\((4,3)\\).\n\nFor\n\n\\[\ny=f(x+5)\n\\]\n\nthe graph moves 5 units left:\n\n\\[\n(4,3)\\to(-1,3)\n\\]\n\nFor\n\n\\[\ny=f(x)+7\n\\]\n\nthe graph moves 7 units up:\n\n\\[\n(4,3)\\to(4,10)\n\\]\n\nFor\n\n\\[\ny=f(2x)\n\\]\n\nthe \\(x\\)-coordinate is divided by 2:\n\n\\[\n(4,3)\\to(2,3)\n\\]\n\n**Answer:** \\((-1,3)\\), \\((4,10)\\), and \\((2,3)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q12__p10-10__m04__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Angles in Polygons & Parallel Lines. The tag is correct.\n\n**Solution**\n\nThe interior angle and exterior angle of a regular polygon add to \\(180^\\circ\\):\n\\[\n(9x+27)+(2x-23)=180\n\\]\n\n\\[\n11x+4=180\n\\]\n\n\\[\nx=16\n\\]\n\nThe exterior angle is\n\\[\n2x-23=2(16)-23=9^\\circ\n\\]\n\nFor a regular polygon,\n\\[\nn=\\frac{360}{9}=40\n\\]\n\n**Answer:** \\(n=40\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q03__p04-04__m02__Bearings-Scale-Drawing-and-Constructions": {
+      "status": "checked",
+      "source": "**Topic check:** Bearings, Scale Drawing & Constructions. The tag is correct.\n\n**Construction answer**\n\nTo construct the bisector of angle \\(ABC\\):\n\n1. Use centre \\(B\\) to draw an arc crossing \\(BA\\) and \\(BC\\).\n2. Use the same compass width from the two crossing points to make two arcs inside the angle.\n3. Join \\(B\\) to the point where these two arcs meet.\n\n**Answer:** That line is the required angle bisector.",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q15__p13-13__m02__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Circles, Arcs & Sectors. The tag is correct.\n\n**Solution**\n\n\\[\n\\text{area}=\\frac{75}{360}\\times \\pi(12)^2\n\\]\n\n\\[\n=94.247\\ldots\n\\]\n\n**Answer:** \\(94.2\\text{ cm}^2\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q11__p09-09__m04__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Right-Angled Triangles - Pythagoras & Trigonometry. The tag is correct.\n\n**Solution**\n\nFirst find \\(AB\\):\n\n\\[\nAB^2=21^2-15^2=216\n\\]\n\n\\[\nAB=14.696\\ldots\n\\]\n\n\\[\nAD=AB-DB=14.696\\ldots-9=5.696\\ldots\n\\]\n\nAngle \\(ACB\\):\n\n\\[\n\\cos ACB=\\frac{15}{21}\n\\]\n\n\\[\nACB=44.415\\ldots^\\circ\n\\]\n\nAngle \\(DCB\\):\n\n\\[\n\\tan DCB=\\frac{9}{15}\n\\]\n\n\\[\nDCB=30.963\\ldots^\\circ\n\\]\n\n\\[\nACD=44.415\\ldots-30.963\\ldots=13.451\\ldots^\\circ\n\\]\n\n**Answer:** \\(13.5^\\circ\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q19__p15-15__m03__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Sine, Cosine Rule & Area of Triangles.\n\n**Solution**\n\nUse the cosine rule for angle \\(BAC\\):\n\\[\n\\cos A=\\frac{8^2+9^2-10^2}{2(8)(9)}\n\\]\n\n\\[\n\\cos A=\\frac{45}{144}\n\\]\n\n\\[\nA=71.790\\ldots^\\circ\n\\]\n\n**Answer:** \\(71.8^\\circ\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q26__p22-23__m05__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Right-Angled Triangles to 3D Pythagoras & Trigonometry.\n\n**Method**\n\nThe horizontal base \\(ABGF\\) is a rectangle.\n\n\\[\nAB=10,\\qquad BG=14\n\\]\n\nSo the horizontal distance from \\(B\\) to \\(F\\) is\n\n\\[\nBF=\\sqrt{10^2+14^2}=\\sqrt{296}\n\\]\n\nThe angle of elevation of \\(E\\) from \\(B\\) is \\(50^\\circ\\).\n\nSince \\(E\\) is vertically above \\(F\\),\n\n\\[\n\\tan 50^\\circ=\\frac{FE}{BF}\n\\]\n\n\\[\nFE=\\sqrt{296}\\tan50^\\circ\n\\]\n\nThe prism has the same cross section throughout, so\n\n\\[\nAD=FE=\\sqrt{296}\\tan50^\\circ\n\\]\n\nAlso\n\n\\[\nBC=\\frac15AD\n\\]\n\nArea of the trapezium cross section \\(ABCD\\):\n\n\\[\n\\frac12(AD+BC)\\times AB\n\\]\n\n\\[\n=\\frac12\\left(AD+\\frac15AD\\right)\\times 10\n\\]\n\n\\[\n=6AD\n\\]\n\nVolume of the prism:\n\n\\[\n6AD\\times 14=84AD\n\\]\n\n\\[\n=84\\sqrt{296}\\tan50^\\circ\n\\]\n\n\\[\n=1722.311\\ldots\n\\]\n\nCorrect to 3 significant figures:\n\n\\[\n1720\n\\]\n\n**Answer:** \\(\\boxed{1720\\text{ cm}^3}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q27__p24-25__m06__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Vectors.\n\n**Method**\n\n\\[\n\\vec{OA}=2\\mathbf a,\\qquad \\vec{AB}=4\\mathbf b-\\mathbf a,\\qquad \\vec{OC}=5\\mathbf b-3\\mathbf a\n\\]\n\nFirst find \\(\\vec{OB}\\):\n\n\\[\n\\vec{OB}=\\vec{OA}+\\vec{AB}\n\\]\n\n\\[\n\\vec{OB}=2\\mathbf a+4\\mathbf b-\\mathbf a\n\\]\n\n\\[\n\\vec{OB}=\\mathbf a+4\\mathbf b\n\\]\n\nFor part (a),\n\n\\[\n\\vec{BC}=\\vec{OC}-\\vec{OB}\n\\]\n\n\\[\n\\vec{BC}=(5\\mathbf b-3\\mathbf a)-(\\mathbf a+4\\mathbf b)\n\\]\n\n\\[\n\\vec{BC}=\\mathbf b-4\\mathbf a\n\\]\n\nFor part (b), \\(BD:DC=1:3\\), so\n\n\\[\n\\vec{OD}=\\vec{OB}+\\frac14\\vec{BC}\n\\]\n\n\\[\n\\vec{OD}=\\mathbf a+4\\mathbf b+\\frac14(\\mathbf b-4\\mathbf a)\n\\]\n\n\\[\n\\vec{OD}=\\frac{17}{4}\\mathbf b\n\\]\n\nSince \\(A,B,P\\) are collinear, let\n\n\\[\n\\vec{OP}=\\vec{OA}+s\\vec{AB}\n\\]\n\n\\[\n\\vec{OP}=2\\mathbf a+s(4\\mathbf b-\\mathbf a)\n\\]\n\n\\[\n\\vec{OP}=(2-s)\\mathbf a+4s\\mathbf b\n\\]\n\nBut \\(O,D,P\\) are collinear, and \\(\\vec{OD}\\) has only a \\(\\mathbf b\\) component.\n\nSo\n\n\\[\n2-s=0\n\\]\n\n\\[\ns=2\n\\]\n\nThen\n\n\\[\n\\vec{OP}=8\\mathbf b\n\\]\n\nGiven\n\n\\[\n\\vec{OP}=n\\vec{OD}\n\\]\n\n\\[\n8\\mathbf b=n\\left(\\frac{17}{4}\\mathbf b\\right)\n\\]\n\n\\[\nn=\\frac{32}{17}\n\\]\n\n**Answer:** \\(\\vec{BC}=\\mathbf b-4\\mathbf a,\\quad \\displaystyle n=\\frac{32}{17}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q01__p03-03__m04__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nUse midpoints \\(2.5,7.5,12.5,17.5,22.5\\).\n\n\\[\n2.5(8)+7.5(7)+12.5(3)+17.5(10)+22.5(2)=330\n\\]\n\n\\[\n\\text{estimated mean}=\\frac{330}{30}=11\n\\]\n\n**Answer:** \\(11\\text{ km}\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q04__p05-05__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe range is \\(15\\):\n\n\\[\n17-e=15\n\\]\n\n\\[\ne=2\n\\]\n\nThe mean is \\(9\\), so the total is\n\n\\[\n6 \\times 9=54\n\\]\n\n\\[\n2+f+7+g+12+17=54\n\\]\n\n\\[\nf+g=16\n\\]\n\nThe median is \\(8.5\\):\n\n\\[\n\\frac{7+g}{2}=8.5\n\\]\n\n\\[\ng=10\n\\]\n\n\\[\nf=16-10=6\n\\]\n\n**Answers:** \\(e=2,\\ f=6,\\ g=10\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q16__p13-13__m02__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe data are already in order:\n\n\\[\n1,\\ 1,\\ 3,\\ 4,\\ 6,\\ 7,\\ 8,\\ 9,\\ 10,\\ 12,\\ 15,\\ 25,\\ 30,\\ 37,\\ 50\n\\]\n\nThere are 15 values.\n\n\\[\nQ_1=4,\\qquad Q_3=25\n\\]\n\n\\[\n\\text{IQR}=25-4=21\n\\]\n\n**Answer:** \\(21\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2025_P1H__Q13__p11-11__m05__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nBag 1:\n\n\\[\nP(Y)=\\frac25,\\qquad P(O)=\\frac35\n\\]\n\nBag 2:\n\n\\[\nP(Y)=\\frac38,\\qquad P(G)=\\frac58\n\\]\n\nThe only way to get the same colour is yellow then yellow.\n\n\\[\nP(\\text{different})=1-\\frac25\\times\\frac38\n\\]\n\n\\[\n=1-\\frac{3}{20}=\\frac{17}{20}\n\\]\n\n**Answer:** \\(\\frac{17}{20}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Nov2025_P1H__Q22__p18-18__m03__Combined-and-Conditional-Probability": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThere are 2 pink buttons.\n\nAt least one pink button is still in the box unless both pink buttons are taken.\n\nSo use the complement.\n\nThe probability that both pink buttons are taken is\n\n\\[\n\\frac{\\binom{2}{2}\\binom{13}{1}}{\\binom{15}{3}}\n\\]\n\n\\[\n=\\frac{13}{455}\n\\]\n\n\\[\n=\\frac{1}{35}\n\\]\n\nTherefore,\n\n\\[\nP(\\text{at least one pink is still in the box})\n=1-\\frac{1}{35}\n\\]\n\n\\[\n=\\frac{34}{35}\n\\]\n\n**Answer:** \\(\\frac{34}{35}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P1H__Q21__p17-17__m03__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n5x^2-20x+23=5(x^2-4x)+23\n\\]\n\n\\[\n=5\\left((x-2)^2-4\\right)+23\n\\]\n\n\\[\n=5(x-2)^2-20+23\n\\]\n\n\\[\n=5(x-2)^2+3\n\\]\n\n**Answer:** \\(5(x-2)^2+3\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P1H__Q23__p19-19__m03__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Ratio Toolkit to Algebraic Fractions.\n\n**Method**\n\n\\[\na=\\frac{2x+5}{1-x},\\quad x=\\frac{5-2y}{3y}\n\\]\n\nSubstitute for \\(x\\).\n\nNumerator:\n\n\\[\n2x+5=2\\left(\\frac{5-2y}{3y}\\right)+5\n\\]\n\n\\[\n=\\frac{10-4y+15y}{3y}\n=\\frac{10+11y}{3y}\n\\]\n\nDenominator:\n\n\\[\n1-x=1-\\frac{5-2y}{3y}\n\\]\n\n\\[\n=\\frac{3y-5+2y}{3y}\n=\\frac{5y-5}{3y}\n=\\frac{5(y-1)}{3y}\n\\]\n\nTherefore\n\n\\[\na=\\frac{\\frac{10+11y}{3y}}{\\frac{5(y-1)}{3y}}\n=\\frac{10+11y}{5(y-1)}\n\\]\n\n**Answer:** \\(\\dfrac{10+11y}{5(y-1)}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P1H__Q25__p21-21__m03__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n2x^2+x-28>0\n\\]\n\nFactorise:\n\n\\[\n2x^2+x-28=(2x-7)(x+4)\n\\]\n\nThe critical values are\n\n\\[\nx=\\frac72 \\quad \\text{and} \\quad x=-4\n\\]\n\nThe quadratic is greater than 0 outside the roots.\n\n**Answer:** \\(x<-4\\) or \\(x>\\dfrac72\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P1H__Q20__p16-16__m03__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nLine \\(L\\) has equation\n\n\\[\ny=4x+7\n\\]\n\nSo its gradient is\n\n\\[\n4\n\\]\n\nLine \\(M\\) is perpendicular to \\(L\\), so its gradient is\n\n\\[\n-\\frac14\n\\]\n\nLine \\(M\\) passes through \\((8,1)\\).\n\n\\[\ny-1=-\\frac14(x-8)\n\\]\n\n\\[\ny-1=-\\frac14x+2\n\\]\n\n\\[\ny=-\\frac14x+3\n\\]\n\n**Answer:** \\(\\displaystyle y=-\\frac14x+3\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P1H__Q28__p26-27__m06__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe line is\n\n\\[\ny=3x+e\n\\]\n\nPoint \\(A=(0.2,2.6)\\) lies on the line.\n\n\\[\n2.6=3(0.2)+e\n\\]\n\n\\[\n2.6=0.6+e\n\\]\n\n\\[\ne=2\n\\]\n\nSo\n\n\\[\ny=3x+2\n\\]\n\nThe curve is\n\n\\[\nx^2+y^2=d-11x\n\\]\n\nUse point \\(A=(0.2,2.6)\\):\n\n\\[\n0.2^2+2.6^2=d-11(0.2)\n\\]\n\n\\[\n0.04+6.76=d-2.2\n\\]\n\n\\[\nd=9\n\\]\n\nNow substitute \\(y=3x+2\\) into the curve:\n\n\\[\nx^2+(3x+2)^2=9-11x\n\\]\n\n\\[\nx^2+9x^2+12x+4=9-11x\n\\]\n\n\\[\n10x^2+23x-5=0\n\\]\n\nOne root is \\(0.2=\\frac15\\).\n\nThe product of the roots is\n\n\\[\n\\frac{-5}{10}=-\\frac12\n\\]\n\nSo the other root is\n\n\\[\n\\frac{-\\frac12}{\\frac15}=-\\frac52\n\\]\n\nThen\n\n\\[\ny=3\\left(-\\frac52\\right)+2\n\\]\n\n\\[\ny=-\\frac{11}{2}\n\\]\n\n**Answer:** \\(\\displaystyle B=\\left(-\\frac52,-\\frac{11}{2}\\right)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P1H__Q24__p20-20__m03__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe turning point of \\(y=f(x)\\) is \\((4,3)\\).\n\nFor\n\n\\[\ny=f(x+5)\n\\]\n\nthe graph moves 5 units left:\n\n\\[\n(4,3)\\to(-1,3)\n\\]\n\nFor\n\n\\[\ny=f(x)+7\n\\]\n\nthe graph moves 7 units up:\n\n\\[\n(4,3)\\to(4,10)\n\\]\n\nFor\n\n\\[\ny=f(2x)\n\\]\n\nthe \\(x\\)-coordinate is divided by 2:\n\n\\[\n(4,3)\\to(2,3)\n\\]\n\n**Answer:** \\((-1,3)\\), \\((4,10)\\), and \\((2,3)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P1H__Q26__p22-23__m05__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Right-Angled Triangles to 3D Pythagoras & Trigonometry.\n\n**Method**\n\nThe horizontal base \\(ABGF\\) is a rectangle.\n\n\\[\nAB=10,\\qquad BG=14\n\\]\n\nSo the horizontal distance from \\(B\\) to \\(F\\) is\n\n\\[\nBF=\\sqrt{10^2+14^2}=\\sqrt{296}\n\\]\n\nThe angle of elevation of \\(E\\) from \\(B\\) is \\(50^\\circ\\).\n\nSince \\(E\\) is vertically above \\(F\\),\n\n\\[\n\\tan 50^\\circ=\\frac{FE}{BF}\n\\]\n\n\\[\nFE=\\sqrt{296}\\tan50^\\circ\n\\]\n\nThe prism has the same cross section throughout, so\n\n\\[\nAD=FE=\\sqrt{296}\\tan50^\\circ\n\\]\n\nAlso\n\n\\[\nBC=\\frac15AD\n\\]\n\nArea of the trapezium cross section \\(ABCD\\):\n\n\\[\n\\frac12(AD+BC)\\times AB\n\\]\n\n\\[\n=\\frac12\\left(AD+\\frac15AD\\right)\\times 10\n\\]\n\n\\[\n=6AD\n\\]\n\nVolume of the prism:\n\n\\[\n6AD\\times 14=84AD\n\\]\n\n\\[\n=84\\sqrt{296}\\tan50^\\circ\n\\]\n\n\\[\n=1722.311\\ldots\n\\]\n\nCorrect to 3 significant figures:\n\n\\[\n1720\n\\]\n\n**Answer:** \\(\\boxed{1720\\text{ cm}^3}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P1H__Q27__p24-25__m06__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Vectors.\n\n**Method**\n\n\\[\n\\vec{OA}=2\\mathbf a,\\qquad \\vec{AB}=4\\mathbf b-\\mathbf a,\\qquad \\vec{OC}=5\\mathbf b-3\\mathbf a\n\\]\n\nFirst find \\(\\vec{OB}\\):\n\n\\[\n\\vec{OB}=\\vec{OA}+\\vec{AB}\n\\]\n\n\\[\n\\vec{OB}=2\\mathbf a+4\\mathbf b-\\mathbf a\n\\]\n\n\\[\n\\vec{OB}=\\mathbf a+4\\mathbf b\n\\]\n\nFor part (a),\n\n\\[\n\\vec{BC}=\\vec{OC}-\\vec{OB}\n\\]\n\n\\[\n\\vec{BC}=(5\\mathbf b-3\\mathbf a)-(\\mathbf a+4\\mathbf b)\n\\]\n\n\\[\n\\vec{BC}=\\mathbf b-4\\mathbf a\n\\]\n\nFor part (b), \\(BD:DC=1:3\\), so\n\n\\[\n\\vec{OD}=\\vec{OB}+\\frac14\\vec{BC}\n\\]\n\n\\[\n\\vec{OD}=\\mathbf a+4\\mathbf b+\\frac14(\\mathbf b-4\\mathbf a)\n\\]\n\n\\[\n\\vec{OD}=\\frac{17}{4}\\mathbf b\n\\]\n\nSince \\(A,B,P\\) are collinear, let\n\n\\[\n\\vec{OP}=\\vec{OA}+s\\vec{AB}\n\\]\n\n\\[\n\\vec{OP}=2\\mathbf a+s(4\\mathbf b-\\mathbf a)\n\\]\n\n\\[\n\\vec{OP}=(2-s)\\mathbf a+4s\\mathbf b\n\\]\n\nBut \\(O,D,P\\) are collinear, and \\(\\vec{OD}\\) has only a \\(\\mathbf b\\) component.\n\nSo\n\n\\[\n2-s=0\n\\]\n\n\\[\ns=2\n\\]\n\nThen\n\n\\[\n\\vec{OP}=8\\mathbf b\n\\]\n\nGiven\n\n\\[\n\\vec{OP}=n\\vec{OD}\n\\]\n\n\\[\n8\\mathbf b=n\\left(\\frac{17}{4}\\mathbf b\\right)\n\\]\n\n\\[\nn=\\frac{32}{17}\n\\]\n\n**Answer:** \\(\\vec{BC}=\\mathbf b-4\\mathbf a,\\quad \\displaystyle n=\\frac{32}{17}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2025_P1H__Q22__p18-18__m03__Combined-and-Conditional-Probability": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThere are 2 pink buttons.\n\nAt least one pink button is still in the box unless both pink buttons are taken.\n\nSo use the complement.\n\nThe probability that both pink buttons are taken is\n\n\\[\n\\frac{\\binom{2}{2}\\binom{13}{1}}{\\binom{15}{3}}\n\\]\n\n\\[\n=\\frac{13}{455}\n\\]\n\n\\[\n=\\frac{1}{35}\n\\]\n\nTherefore,\n\n\\[\nP(\\text{at least one pink is still in the box})\n=1-\\frac{1}{35}\n\\]\n\n\\[\n=\\frac{34}{35}\n\\]\n\n**Answer:** \\(\\frac{34}{35}\\)",
+      "updated": "2026-05-05T20:41:15",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

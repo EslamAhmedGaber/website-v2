@@ -1,0 +1,179 @@
+{
+  "paperSlug": "Jan2022_P1HR",
+  "solutions": {
+    "all::Jan2022_P1HR__Q17__p21-21__m04__Set-Notation-and-Venn-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Set notation and Venn diagrams. The tag is correct.\n\n**Method**\n\nFrom the Venn diagram:\n\n\\[\nA\\text{ only}=6,\\quad A\\cap B=3,\\quad B\\text{ only}=8,\\quad B\\cap C=2,\\quad C\\text{ only}=5,\\quad \\text{outside}=4\n\\]\n\nThere is no region in both \\(A\\) and \\(C\\), and there is no triple intersection.\n\n\\[\nn(A\\cup B)=6+3+8+2=19\n\\]\n\n\\[\nn(A\\cap C)=0\n\\]\n\n\\[\nn(B\\cap C')=3+8=11\n\\]\n\nFor \\(A'\\cup B'\\cup C'\\), use\n\n\\[\nA'\\cup B'\\cup C'=(A\\cap B\\cap C)'\n\\]\n\nSince \\(A\\cap B\\cap C\\) is empty, this includes everyone in the universal set.\n\n\\[\n6+3+8+2+5+4=28\n\\]\n\n**Answer:** (i) \\(19\\), (ii) \\(0\\), (iii) \\(11\\), (iv) \\(28\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q06__p08-08__m04__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\n36=2^2\\times 3^2\n\\]\n\n\\[\n120=2^3\\times 3\\times 5\n\\]\n\nFor the LCM, take the highest power of each prime:\n\n\\[\n\\text{LCM}=2^3\\times 3^2\\times 5=360\n\\]\n\nFor part (b),\n\n\\[\nA=5^2\\times 7^4\\times 11^p\n\\]\n\n\\[\nB=5^m\\times 7^{n-5}\\times 11\n\\]\n\nSince \\(m>2\\), the smaller power of \\(5\\) is \\(5^2\\).\n\nSince \\(n>10\\), \\(n-5>5\\), so the smaller power of \\(7\\) is \\(7^4\\).\n\nSince \\(p>1\\), the smaller power of \\(11\\) is \\(11^1\\).\n\n\\[\n\\text{HCF}=5^2\\times 7^4\\times 11\n\\]\n\n**Answer:** (a) \\(360\\), (b) \\(5^2\\times 7^4\\times 11\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q08__p10-10__m04__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n5\\times 10^4=50000\n\\]\n\n\\[\n0.00006=6\\times 10^{-5}\n\\]\n\nFor part (c),\n\n\\[\n\\frac{4\\times 10^{512}}{1.6\\times 10^{700}}\n=\\frac{4}{1.6}\\times 10^{512-700}\n\\]\n\n\\[\n=2.5\\times 10^{-188}\n\\]\n\n**Answer:** (a) \\(50000\\), (b) \\(6\\times 10^{-5}\\), (c) \\(2.5\\times 10^{-188}\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q22__p27-27__m04__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation & Bounds is correct. The question also uses the sine rule, but the main demand is choosing the correct bounds.\n\n**Method**\n\nFor an upper bound for \\(b\\), use the upper bound of \\(c\\):\n\n\\(c=11.55\\)\n\nUse the lower bounds of \\(x\\) and \\(y\\), because this makes angle \\(B\\) as large as possible and makes \\(\\sin y\\) as small as possible.\n\n\\(x=79.5^\\circ,\\quad y=74.5^\\circ\\)\n\nSo\n\n\\(\\angle B=180^\\circ-79.5^\\circ-74.5^\\circ=26^\\circ\\)\n\nUsing the sine rule,\n\n\\(\\dfrac{b}{\\sin 26^\\circ}=\\dfrac{11.55}{\\sin 74.5^\\circ}\\)\n\n\\(b=\\dfrac{11.55\\sin 26^\\circ}{\\sin 74.5^\\circ}=5.254...\\)\n\n**Answer:** \\(5.25\\) cm to 3 significant figures.",
+      "updated": "2026-05-05T00:12:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q09__p11-11__m05__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is correct.\n\n**Solution**\n\n(a) \\(x^4\\times x^5=x^9\\).\n\n(b) \\((4y^2)^3=64y^6\\).\n\n(c)\n\\[\nn^2-7n+12=(n-3)(n-4)\n\\]\n\n**Answer:** (a) \\(x^9\\), (b) \\(64y^6\\), (c) \\((n-3)(n-4)\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q19__p23-23__m03__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Completing the square. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n\\sqrt[3]{\\frac1x}=x^{-1/3}\n\\]\n\nSo \\(m=-\\frac13\\).\n\n(b)\n\\[\n3x^2+12x+19=3(x^2+4x)+19\n\\]\n\n\\[\n=3\\big((x+2)^2-4\\big)+19\n\\]\n\n\\[\n=3(x+2)^2+7\n\\]\n\n**Answer:** \\(m=-\\frac13\\), and \\(3(x+2)^2+7\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q12__p15-15__m05__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to algebraic fractions. The original tag was expanding brackets, but the algebraic fraction part is larger.\n\n**Solution**\n\n(a)\n\\[\nn(n-4)(3n+5)=n(3n^2-7n-20)=3n^3-7n^2-20n\n\\]\n\n(b)\n\\[\n\\frac3x+\\frac{x+2}{2x}+\\frac14\n\\]\n\nUse denominator \\(4x\\):\n\\[\n\\frac{12}{4x}+\\frac{2(x+2)}{4x}+\\frac{x}{4x}\n=\\frac{12+2x+4+x}{4x}\n\\]\n\n\\[\n=\\frac{3x+16}{4x}\n\\]\n\n**Answer:** (a) \\(3n^3-7n^2-20n\\), (b) \\(\\frac{3x+16}{4x}\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q15__p19-19__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\nLet the three consecutive whole numbers be\n\\[\nn,\\quad n+1,\\quad n+2\n\\]\n\nThe sum of the squares of the smallest and largest is\n\\[\nn^2+(n+2)^2=n^2+n^2+4n+4=2n^2+4n+4\n\\]\n\nTwice the square of the middle number is\n\\[\n2(n+1)^2=2(n^2+2n+1)=2n^2+4n+2\n\\]\n\nSo\n\\[\n2n^2+4n+4=(2n^2+4n+2)+2\n\\]\n\n**Answer:** The sum is always 2 more than twice the square of the middle number.",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q01__p03-03__m03__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Solving inequalities. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n-2\\le n<3\n\\]\n\nSince \\(n\\) is an integer,\n\\[\nn=-2,-1,0,1,2\n\\]\n\n(b) For\n\\[\ny\\le1\n\\]\n\nuse a closed circle at \\(1\\) and shade to the left.\n\n**Answer:** \\(n=-2,-1,0,1,2\\); closed at \\(1\\), shaded left.",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q16__p20-20__m04__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Sequences. The tag is correct.\n\n**Solution**\n\nThe first term is \\(1\\) and the common difference is \\(4\\).\n\nThe 41st term is\n\\[\n1+40(4)=161\n\\]\n\nThe 100th term is\n\\[\n1+99(4)=397\n\\]\n\nThere are\n\\[\n100-41+1=60\n\\]\n\nterms from the 41st to the 100th inclusive.\n\n\\[\nS=\\frac{60}{2}(161+397)\n\\]\n\n\\[\nS=30\\times558=16740\n\\]\n\n**Answer:** \\(16740\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q04__p06-06__m04__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is a table-and-graph question for a quadratic function.\n\n**Solution**\n\n\\[\ny=x^2-4x+3\n\\]\n\nThe completed table is:\n\n\\[\n\\begin{array}{c|rrrrrrr}\nx&-2&-1&0&1&2&3&4\\\\\n\\hline\ny&15&8&3&0&-1&0&3\n\\end{array}\n\\]\n\nPlot the points and join them with a smooth U-shaped curve.\n\n**Answer:** Missing values are \\(15,0,-1,3\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q20__p24-25__m06__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe turning point of \\(y=f(x)\\) is \\((-6,-4)\\).\n\nFor\n\n\\[\ny=f(x)+5\n\\]\n\nthe graph moves 5 units up:\n\n\\[\n(-6,-4)\\to(-6,1)\n\\]\n\nFor\n\n\\[\ny=f(3x)\n\\]\n\nthe \\(x\\)-coordinate is divided by 3:\n\n\\[\n(-6,-4)\\to(-2,-4)\n\\]\n\nFor the sketch of \\(y=2g(x)\\), keep every \\(x\\)-coordinate the same and double every \\(y\\)-coordinate.\n\nUseful points are\n\n\\[\n(-1,3)\\to(-1,6)\n\\]\n\n\\[\n(2,0)\\to(2,0)\n\\]\n\n\\[\n(3,-1)\\to(3,-2)\n\\]\n\n\\[\n(4,0)\\to(4,0)\n\\]\n\n\\[\n(7,3)\\to(7,6)\n\\]\n\nDraw straight line segments through these points for \\(-1\\le x\\le 7\\).\n\nFor part (c), \\(h(x)\\) has roots at \\(x=-1\\) and \\(x=6\\).\n\nFor \\(h(x+a)\\) to pass through \\((2,0)\\),\n\n\\[\n2+a=-1\n\\quad \\text{or} \\quad\n2+a=6\n\\]\n\n\\[\na=-3\n\\quad \\text{or} \\quad\na=4\n\\]\n\n**Answer:** \\((-6,1)\\), \\((-2,-4)\\), sketch through the doubled points, and \\(a=-3\\) or \\(a=4\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q23__p28-29__m06__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Functions to Differentiation.\n\n**Method**\n\nParticle \\(P\\):\n\n\\[\ns=t^3-4t^2+5t\n\\]\n\n\\[\n\\frac{ds}{dt}=3t^2-8t+5\n\\]\n\n\\[\n\\frac{ds}{dt}=(3t-5)(t-1)\n\\]\n\nParticle \\(Q\\):\n\n\\[\nx=t^2-4t+4\n\\]\n\n\\[\n\\frac{dx}{dt}=2t-4=2(t-2)\n\\]\n\nFor \\(t>1\\):\n\n- \\(P\\) moves in the negative direction when \\(1<t<\\frac53\\).\n- \\(P\\) moves in the positive direction when \\(t>\\frac53\\).\n- \\(Q\\) moves in the negative direction when \\(1<t<2\\).\n- \\(Q\\) moves in the positive direction when \\(t>2\\).\n\nSo both particles move in the same direction when both velocities have the same sign.\n\n**Answer:** \\(1<t<\\dfrac53\\) or \\(t>2\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q07__p09-09__m04__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is average speed over a whole journey.\n\n**Solution**\n\nFirst part:\n\\[\n\\text{distance}=245\\text{ km},\n\\qquad\n\\text{time}=2.5\\text{ h}\n\\]\n\nSecond part:\n\\[\n\\text{time}=\\frac{220}{80}=2.75\\text{ h}\n\\]\n\nThird part:\n\\[\n50\\text{ minutes}=\\frac56\\text{ h}\n\\]\n\n\\[\n\\text{distance}=72\\times\\frac56=60\\text{ km}\n\\]\n\nTotal distance:\n\\[\n245+220+60=525\\text{ km}\n\\]\n\nTotal time:\n\\[\n2.5+2.75+\\frac56=6.0833\\ldots\\text{ h}\n\\]\n\nAverage speed:\n\\[\n\\frac{525}{6.0833\\ldots}=86.301\\ldots\n\\]\n\n**Answer:** \\(86.3\\text{ km/h}\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q14__p18-18__m04__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Circle Theorems. The tag is correct.\n\n**Solution**\n\nSince \\(AC\\) is a diameter,\n\\[\n\\angle ABC=90^\\circ\n\\]\n\nIn triangle \\(ABC\\),\n\\[\n\\angle ACB=180^\\circ-90^\\circ-55^\\circ=35^\\circ\n\\]\n\nAngles in the same segment are equal, so\n\\[\n\\angle ADB=\\angle ACB=35^\\circ\n\\]\n\n**Answer:** \\(35^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q11__p14-14__m02__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Circles, Arcs & Sectors. The tag is correct.\n\n**Solution**\n\n\\[\n\\text{area}=\\frac{110}{360}\\times \\pi(7.1)^2\n\\]\n\n\\[\n=48.390\\ldots\n\\]\n\n**Answer:** \\(48.4\\text{ cm}^2\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q10__p12-13__m06__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Volume & Surface Area. The surface area calculation is the main structure of the problem, with a percentage price change at the end.\n\n**Method**\n\nJonty paints the four sides and the top, but not the base.\n\nTop:\n\n\\[\n12\\times 2.5=30\n\\]\n\nTwo long sides:\n\n\\[\n2(12\\times 3)=72\n\\]\n\nTwo short sides:\n\n\\[\n2(2.5\\times 3)=15\n\\]\n\nTotal area:\n\n\\[\n30+72+15=117\\text{ m}^2\n\\]\n\nEach tin covers \\(15\\text{ m}^2\\), so the number of tins needed is\n\n\\[\n\\frac{117}{15}=7.8\n\\]\n\nHe must buy \\(8\\) tins.\n\nAfter the \\(10\\%\\) increase, each tin costs \\(\\pounds 26.95\\). Before the increase:\n\n\\[\n\\frac{26.95}{1.10}=24.50\n\\]\n\nBefore the increase, \\(8\\) tins would cost\n\n\\[\n8\\times 24.50=196\n\\]\n\nSince \\(\\pounds 196<\\pounds 200\\), Jonty is correct.\n\n**Answer:** Jonty is correct; before the increase the paint would have cost \\(\\pounds 196\\).",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q18__p22-22__m04__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Area and Volume of Similar Shapes. The key idea is converting area and volume ratios into length ratios.\n\n**Method**\n\nSurface area ratio \\(A:B=4:9\\), so the length ratio is\n\n\\[\n\\sqrt4:\\sqrt9=2:3\n\\]\n\nVolume ratio \\(B:C=125:343\\), so the length ratio is\n\n\\[\n\\sqrt[3]{125}:\\sqrt[3]{343}=5:7\n\\]\n\nTherefore\n\n\\[\n\\frac{A}{C}=\\frac{2}{3}\\times \\frac{5}{7}=\\frac{10}{21}\n\\]\n\n**Answer:** \\(10:21\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q03__p05-05__m04__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Right-Angled Triangles - Pythagoras & Trigonometry. The tag is correct.\n\n**Solution**\n\nEach triangle has hypotenuse \\(16\\text{ cm}\\) and one side \\(12.8\\text{ cm}\\).\n\nFind the other side:\n\\[\n\\sqrt{16^2-12.8^2}=9.6\\text{ cm}\n\\]\n\nThe exposed short vertical side is\n\\[\n12.8-9.6=3.2\\text{ cm}\n\\]\n\nPerimeter:\n\\[\n3(16)+9.6+9.6+3.2=70.4\n\\]\n\n**Answer:** \\(70.4\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q24__p30-31__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Vectors.\n\n**Method**\n\nTake \\(O\\) as the origin.\n\n\\[\n\\vec{OX}=\\mathbf a,\\qquad \\vec{XY}=\\mathbf b,\\qquad \\vec{OZ}=3\\mathbf b\n\\]\n\nSo\n\n\\[\n\\vec{OY}=\\mathbf a+\\mathbf b\n\\]\n\nSince \\(M\\) is the midpoint of \\(OX\\),\n\n\\[\n\\vec{OM}=\\frac12\\mathbf a\n\\]\n\nGiven \\(ON:OY=\\lambda:1\\),\n\n\\[\n\\vec{ON}=\\lambda(\\mathbf a+\\mathbf b)\n\\]\n\nPoint \\(N\\) also lies on \\(MZ\\), so\n\n\\[\n\\vec{ON}=\\frac12\\mathbf a+t\\left(3\\mathbf b-\\frac12\\mathbf a\\right)\n\\]\n\n\\[\n\\vec{ON}=\\left(\\frac12-\\frac{t}{2}\\right)\\mathbf a+3t\\mathbf b\n\\]\n\nEquate coefficients with \\(\\lambda\\mathbf a+\\lambda\\mathbf b\\):\n\n\\[\n\\lambda=\\frac12-\\frac{t}{2}\n\\]\n\n\\[\n\\lambda=3t\n\\]\n\nSo\n\n\\[\nt=\\frac{\\lambda}{3}\n\\]\n\nSubstitute:\n\n\\[\n\\lambda=\\frac12-\\frac{1}{2}\\left(\\frac{\\lambda}{3}\\right)\n\\]\n\n\\[\n\\lambda=\\frac12-\\frac{\\lambda}{6}\n\\]\n\n\\[\n\\frac76\\lambda=\\frac12\n\\]\n\n\\[\n\\lambda=\\frac37\n\\]\n\n**Answer:** \\(\\displaystyle \\lambda=\\frac37\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q05__p07-07__m04__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe range is \\(16\\). Since the greatest known mark is \\(80\\),\n\n\\[\n80-16=64\n\\]\n\nSo one missing mark is \\(64\\).\n\nThe mode is \\(80\\), so another missing mark is \\(80\\).\n\nNow the marks in order are\n\n\\[\n64,\\ 68,\\ 72,\\ x,\\ 75,\\ 77,\\ 80,\\ 80\n\\]\n\nThe median is \\(74\\), so\n\n\\[\n\\frac{x+75}{2}=74\n\\]\n\n\\[\nx=73\n\\]\n\n**Answers:** \\(64,\\ 73,\\ 80\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q21__p26-26__m03__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor a histogram,\n\n\\[\n\\text{frequency}=\\text{class width}\\times \\text{frequency density}\n\\]\n\nFor \\(8\\leq w<8.5\\), the frequency is 16 and the class width is \\(0.5\\), so\n\n\\[\n\\text{frequency density}=\\frac{16}{0.5}=32\n\\]\n\nUsing this scale from the histogram, the frequency densities are:\n\n\\[\n15,\\ 32,\\ 23,\\ 30,\\ 12\n\\]\n\nThe total frequency is\n\n\\[\n(1)(15)+(0.5)(32)+(1)(23)+(1)(30)+(1.5)(12)\n\\]\n\n\\[\n=15+16+23+30+18\n\\]\n\n\\[\n=102\n\\]\n\n**Answer:** \\(102\\) watermelons",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1HR__Q02__p04-04__m02__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\n\\[\n0.65\\times 300=195\n\\]\n\n**Answer:** \\(195\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Jan2022_P1HR__Q13__p16-17__m07__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nHector's probability of taking one green and one red is\n\n\\[\n2\\times\\frac{7}{12}\\times\\frac{5}{12}=\\frac{35}{72}\n\\]\n\nFor all three counters to be different, Meghan must take a blue counter.\n\nLet the number of blue counters in Meghan's jar be \\(b\\). There are \\(15\\) counters in the jar.\n\n\\[\n\\frac{35}{72}\\times \\frac{b}{15}=\\frac{7}{24}\n\\]\n\n\\[\n\\frac{b}{15}=\\frac35\n\\]\n\n\\[\nb=9\n\\]\n\n**Answer:** \\(9\\) blue counters.",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jan2022_P1HR__Q22__p27-27__m04__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation & Bounds is correct. The question also uses the sine rule, but the main demand is choosing the correct bounds.\n\n**Method**\n\nFor an upper bound for \\(b\\), use the upper bound of \\(c\\):\n\n\\(c=11.55\\)\n\nUse the lower bounds of \\(x\\) and \\(y\\), because this makes angle \\(B\\) as large as possible and makes \\(\\sin y\\) as small as possible.\n\n\\(x=79.5^\\circ,\\quad y=74.5^\\circ\\)\n\nSo\n\n\\(\\angle B=180^\\circ-79.5^\\circ-74.5^\\circ=26^\\circ\\)\n\nUsing the sine rule,\n\n\\(\\dfrac{b}{\\sin 26^\\circ}=\\dfrac{11.55}{\\sin 74.5^\\circ}\\)\n\n\\(b=\\dfrac{11.55\\sin 26^\\circ}{\\sin 74.5^\\circ}=5.254...\\)\n\n**Answer:** \\(5.25\\) cm to 3 significant figures.",
+      "updated": "2026-05-05T00:12:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P1HR__Q20__p24-25__m06__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe turning point of \\(y=f(x)\\) is \\((-6,-4)\\).\n\nFor\n\n\\[\ny=f(x)+5\n\\]\n\nthe graph moves 5 units up:\n\n\\[\n(-6,-4)\\to(-6,1)\n\\]\n\nFor\n\n\\[\ny=f(3x)\n\\]\n\nthe \\(x\\)-coordinate is divided by 3:\n\n\\[\n(-6,-4)\\to(-2,-4)\n\\]\n\nFor the sketch of \\(y=2g(x)\\), keep every \\(x\\)-coordinate the same and double every \\(y\\)-coordinate.\n\nUseful points are\n\n\\[\n(-1,3)\\to(-1,6)\n\\]\n\n\\[\n(2,0)\\to(2,0)\n\\]\n\n\\[\n(3,-1)\\to(3,-2)\n\\]\n\n\\[\n(4,0)\\to(4,0)\n\\]\n\n\\[\n(7,3)\\to(7,6)\n\\]\n\nDraw straight line segments through these points for \\(-1\\le x\\le 7\\).\n\nFor part (c), \\(h(x)\\) has roots at \\(x=-1\\) and \\(x=6\\).\n\nFor \\(h(x+a)\\) to pass through \\((2,0)\\),\n\n\\[\n2+a=-1\n\\quad \\text{or} \\quad\n2+a=6\n\\]\n\n\\[\na=-3\n\\quad \\text{or} \\quad\na=4\n\\]\n\n**Answer:** \\((-6,1)\\), \\((-2,-4)\\), sketch through the doubled points, and \\(a=-3\\) or \\(a=4\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P1HR__Q23__p28-29__m06__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Functions to Differentiation.\n\n**Method**\n\nParticle \\(P\\):\n\n\\[\ns=t^3-4t^2+5t\n\\]\n\n\\[\n\\frac{ds}{dt}=3t^2-8t+5\n\\]\n\n\\[\n\\frac{ds}{dt}=(3t-5)(t-1)\n\\]\n\nParticle \\(Q\\):\n\n\\[\nx=t^2-4t+4\n\\]\n\n\\[\n\\frac{dx}{dt}=2t-4=2(t-2)\n\\]\n\nFor \\(t>1\\):\n\n- \\(P\\) moves in the negative direction when \\(1<t<\\frac53\\).\n- \\(P\\) moves in the positive direction when \\(t>\\frac53\\).\n- \\(Q\\) moves in the negative direction when \\(1<t<2\\).\n- \\(Q\\) moves in the positive direction when \\(t>2\\).\n\nSo both particles move in the same direction when both velocities have the same sign.\n\n**Answer:** \\(1<t<\\dfrac53\\) or \\(t>2\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P1HR__Q24__p30-31__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Vectors.\n\n**Method**\n\nTake \\(O\\) as the origin.\n\n\\[\n\\vec{OX}=\\mathbf a,\\qquad \\vec{XY}=\\mathbf b,\\qquad \\vec{OZ}=3\\mathbf b\n\\]\n\nSo\n\n\\[\n\\vec{OY}=\\mathbf a+\\mathbf b\n\\]\n\nSince \\(M\\) is the midpoint of \\(OX\\),\n\n\\[\n\\vec{OM}=\\frac12\\mathbf a\n\\]\n\nGiven \\(ON:OY=\\lambda:1\\),\n\n\\[\n\\vec{ON}=\\lambda(\\mathbf a+\\mathbf b)\n\\]\n\nPoint \\(N\\) also lies on \\(MZ\\), so\n\n\\[\n\\vec{ON}=\\frac12\\mathbf a+t\\left(3\\mathbf b-\\frac12\\mathbf a\\right)\n\\]\n\n\\[\n\\vec{ON}=\\left(\\frac12-\\frac{t}{2}\\right)\\mathbf a+3t\\mathbf b\n\\]\n\nEquate coefficients with \\(\\lambda\\mathbf a+\\lambda\\mathbf b\\):\n\n\\[\n\\lambda=\\frac12-\\frac{t}{2}\n\\]\n\n\\[\n\\lambda=3t\n\\]\n\nSo\n\n\\[\nt=\\frac{\\lambda}{3}\n\\]\n\nSubstitute:\n\n\\[\n\\lambda=\\frac12-\\frac{1}{2}\\left(\\frac{\\lambda}{3}\\right)\n\\]\n\n\\[\n\\lambda=\\frac12-\\frac{\\lambda}{6}\n\\]\n\n\\[\n\\frac76\\lambda=\\frac12\n\\]\n\n\\[\n\\lambda=\\frac37\n\\]\n\n**Answer:** \\(\\displaystyle \\lambda=\\frac37\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P1HR__Q21__p26-26__m03__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor a histogram,\n\n\\[\n\\text{frequency}=\\text{class width}\\times \\text{frequency density}\n\\]\n\nFor \\(8\\leq w<8.5\\), the frequency is 16 and the class width is \\(0.5\\), so\n\n\\[\n\\text{frequency density}=\\frac{16}{0.5}=32\n\\]\n\nUsing this scale from the histogram, the frequency densities are:\n\n\\[\n15,\\ 32,\\ 23,\\ 30,\\ 12\n\\]\n\nThe total frequency is\n\n\\[\n(1)(15)+(0.5)(32)+(1)(23)+(1)(30)+(1.5)(12)\n\\]\n\n\\[\n=15+16+23+30+18\n\\]\n\n\\[\n=102\n\\]\n\n**Answer:** \\(102\\) watermelons",
+      "updated": "2026-05-05T16:25:30",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

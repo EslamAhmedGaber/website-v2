@@ -1,0 +1,232 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import topicsData from "../data/topics.json";
+import papersData from "../data/papers.json";
+
+const totalQuestions = topicsData.totalQuestions;
+const totalPapers = papersData.length;
+---
+
+<BaseLayout title="Elite IGCSE Mathematics — Choose Your Pathway" hideHeader={true}>
+  <section class="gate" id="pathwayGate">
+    <div class="gate-card royale-frame">
+      <div class="gate-hero">
+        <div class="teacher-photo">
+          <img src="/assets/dr-eslam.jpg" alt="Dr Eslam Ahmed portrait" loading="eager" />
+        </div>
+        <h1 class="teacher-name">Dr Eslam Ahmed</h1>
+        <p class="gate-tagline">
+          Edexcel IGCSE 4MA1 · <strong>{totalQuestions}</strong> classified questions · worked solutions
+        </p>
+      </div>
+
+      <div class="gate-choices" role="group" aria-label="Choose pathway">
+        <button class="gate-choice" type="button" data-pathway="linear">
+          <span class="choice-mark">L</span>
+          <strong>Linear Pathway</strong>
+          <span class="choice-meta">Chapter 1 to Chapter 6</span>
+        </button>
+        <button class="gate-choice gate-choice-gold" type="button" data-pathway="modular">
+          <span class="choice-mark">M</span>
+          <strong>Modular Pathway</strong>
+          <span class="choice-meta">Unit 1 and Unit 2</span>
+        </button>
+      </div>
+
+      <p class="gate-footnote meta">
+        {totalPapers} past papers · Higher Tier · 2020 – 2025 sessions
+      </p>
+    </div>
+  </section>
+
+  <section class="gate gate-unit" id="modularUnitGate" hidden>
+    <div class="gate-card royale-frame">
+      <div class="gate-hero">
+        <div class="teacher-photo small">
+          <img src="/assets/dr-eslam.jpg" alt="" />
+        </div>
+        <h1 class="teacher-name">Modular Pathway</h1>
+        <p class="gate-tagline">Pick the unit you want to practise.</p>
+      </div>
+
+      <div class="gate-choices" role="group" aria-label="Choose unit">
+        <button class="gate-choice" type="button" data-modular-unit="Unit 1">
+          <span class="choice-mark">1</span>
+          <strong>Unit 1</strong>
+          <span class="choice-meta">Number · algebra basics · geometry · probability</span>
+        </button>
+        <button class="gate-choice gate-choice-gold" type="button" data-modular-unit="Unit 2">
+          <span class="choice-mark">2</span>
+          <strong>Unit 2</strong>
+          <span class="choice-meta">Percentages · equations · advanced geometry · stats</span>
+        </button>
+      </div>
+
+      <button class="gate-back btn btn-ghost btn-sm" type="button" id="gateBack">
+        ← Back to pathway choice
+      </button>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .gate {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: var(--space-3);
+    background: var(--ivory);
+  }
+  .gate[hidden] { display: none; }
+
+  .gate-card {
+    width: min(640px, 100%);
+    background: var(--paper);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5) var(--space-4);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .gate-hero {
+    display: grid;
+    justify-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+  }
+  .teacher-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-soft));
+    box-shadow: 0 0 0 1px var(--line-strong), var(--shadow);
+  }
+  .teacher-photo.small { width: 96px; height: 96px; }
+  .teacher-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    background: var(--paper);
+  }
+  .teacher-name {
+    font-size: var(--type-display);
+    letter-spacing: -0.02em;
+    color: var(--navy);
+  }
+  .gate-unit .teacher-name { font-size: var(--type-h1); }
+  .gate-tagline {
+    color: var(--muted);
+    font-size: var(--type-meta);
+    max-width: 40ch;
+  }
+  .gate-tagline strong {
+    color: var(--navy);
+    font-weight: var(--weight-bold);
+  }
+
+  .gate-choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
+  }
+  .gate-choice {
+    display: grid;
+    justify-items: center;
+    gap: 6px;
+    padding: var(--space-4) var(--space-3);
+    background: var(--paper);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    color: var(--navy);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-align: center;
+  }
+  .gate-choice:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+  .gate-choice:hover .choice-mark {
+    background: var(--gold);
+    color: var(--navy);
+  }
+  .gate-choice strong {
+    font-size: 22px;
+    font-weight: var(--weight-bold);
+    color: var(--navy);
+  }
+  .gate-choice-gold strong { color: var(--gold-deep); }
+  .gate-choice .choice-meta {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.4;
+    max-width: 22ch;
+  }
+  .choice-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: var(--gold);
+    font-family: var(--font-mono);
+    font-weight: 600;
+    margin-bottom: var(--space-1);
+    transition: all var(--transition-fast);
+  }
+
+  .gate-footnote { margin-top: var(--space-2); }
+  .gate-back { margin-top: var(--space-3); }
+
+  @media (max-width: 560px) {
+    .gate-card { padding: var(--space-4) var(--space-2); }
+    .teacher-photo { width: 120px; height: 120px; }
+    .teacher-name { font-size: 28px; }
+    .gate-choices { grid-template-columns: 1fr; }
+    .gate-choice { padding: var(--space-3); }
+  }
+</style>
+
+<script>
+  const STORAGE_PATHWAY = "elitePathway";
+  const STORAGE_UNIT = "modularUnit";
+
+  const pathwayGate = document.getElementById("pathwayGate");
+  const unitGate = document.getElementById("modularUnitGate");
+
+  function selectPathway(pathway) {
+    if (pathway === "modular") {
+      localStorage.setItem(STORAGE_PATHWAY, "modular");
+      if (pathwayGate) pathwayGate.hidden = true;
+      if (unitGate) unitGate.hidden = false;
+    } else {
+      localStorage.setItem(STORAGE_PATHWAY, "linear");
+      localStorage.removeItem(STORAGE_UNIT);
+      window.location.href = "/practice";
+    }
+  }
+
+  function selectUnit(unit) {
+    localStorage.setItem(STORAGE_PATHWAY, "modular");
+    localStorage.setItem(STORAGE_UNIT, unit);
+    window.location.href = "/practice";
+  }
+
+  document.querySelectorAll("[data-pathway]").forEach((btn) => {
+    btn.addEventListener("click", () => selectPathway(btn.dataset.pathway || ""));
+  });
+  document.querySelectorAll("[data-modular-unit]").forEach((btn) => {
+    btn.addEventListener("click", () => selectUnit(btn.dataset.modularUnit || ""));
+  });
+  document.getElementById("gateBack")?.addEventListener("click", () => {
+    if (unitGate) unitGate.hidden = true;
+    if (pathwayGate) pathwayGate.hidden = false;
+  });
+</script>

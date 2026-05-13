@@ -1,0 +1,191 @@
+{
+  "paperSlug": "Jun2024_P2H",
+  "solutions": {
+    "all::Jun2024_P2H__Q04__p05-05__m03__Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Fractions. The tag is correct.\n\n**Method**\n\n\\[\n2\\frac47=\\frac{18}{7}\n\\]\n\n\\[\n3\\frac19=\\frac{28}{9}\n\\]\n\nNow multiply:\n\n\\[\n\\frac{18}{7}\\times \\frac{28}{9}\n\\]\n\nCancel first:\n\n\\[\n\\frac{18}{9}\\times \\frac{28}{7}=2\\times 4=8\n\\]\n\n**Answer:** \\(8\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q08__p08-08__m05__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct, with ratio used to split the bulbs first.\n\n**Method**\n\nThe ratio parts are\n\n\\[\n9+4+2=15\n\\]\n\n\\[\n\\text{tulips}=600\\times \\frac{9}{15}=360,\\quad\n\\text{crocuses}=600\\times \\frac{4}{15}=160,\\quad\n\\text{daffodils}=600\\times \\frac{2}{15}=80\n\\]\n\nYellow tulips:\n\n\\[\n45\\%\\times 360=0.45\\times 360=162\n\\]\n\nYellow crocuses:\n\n\\[\n\\frac{5}{8}\\times 160=100\n\\]\n\nAll the daffodil bulbs are yellow, so\n\n\\[\n162+100+80=342\n\\]\n\n**Answer:** \\(342\\) bulbs",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q09__p09-09__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nThe multiplier for \\(2.4\\%\\) compound interest is\n\n\\[\n1.024\n\\]\n\nAfter 4 years,\n\n\\[\n4500(1.024)^4=4947.8023\\ldots\n\\]\n\nCorrect to the nearest koruna,\n\n\\[\n4947.8023\\ldots\\approx 4948\n\\]\n\n**Answer:** \\(4948\\) koruna",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q19__p18-18__m03__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\n\\[\nG=\\frac{c}{2f-3h}\n\\]\n\nFor the lower bound, use the lower bound of \\(c\\) and make the denominator as large as possible.\n\n\\[\nc\\ge 7.5\n\\]\n\n\\[\nf<6.625,\\quad h\\ge 1.15\n\\]\n\n\\[\n(2f-3h)_{\\text{upper}}=2(6.625)-3(1.15)=9.8\n\\]\n\n\\[\nG_{\\text{lower}}=\\frac{7.5}{9.8}=0.765306\\ldots\n\\]\n\n**Answer:** \\(0.765\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q17__p17-17__m03__Direct-and-Inverse-Proportion": {
+      "status": "checked",
+      "source": "**Topic check:** Direct and Inverse Proportion. The tag is correct.\n\n**Method**\n\n\\(Q\\) is directly proportional to \\(\\sqrt{d}\\), so\n\n\\[\nQ=k\\sqrt{d}\n\\]\n\nUse \\(Q=4.5\\) when \\(d=324\\):\n\n\\[\n4.5=k\\sqrt{324}\n\\]\n\n\\[\n4.5=18k\n\\]\n\n\\[\nk=0.25\n\\]\n\nTherefore\n\n\\[\nQ=\\frac{1}{4}\\sqrt{d}\n\\]\n\n**Answer:** \\(Q=\\frac{1}{4}\\sqrt{d}\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q23__p23-23__m03__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic Roots and Indices. The tag is correct.\n\n**Method**\n\n\\[\n\\frac{30\\times 25^{2x+7}}{\\sqrt{180}\\times (\\sqrt5)^{4x+9}}\n\\]\n\nSimplify the number part:\n\n\\[\n\\sqrt{180}=6\\sqrt5\n\\]\n\n\\[\n\\frac{30}{6\\sqrt5}=\\frac{5}{\\sqrt5}=\\sqrt5=5^{1/2}\n\\]\n\nNow write the powers with base 5:\n\n\\[\n25^{2x+7}=(5^2)^{2x+7}=5^{4x+14}\n\\]\n\n\\[\n(\\sqrt5)^{4x+9}=5^{(4x+9)/2}=5^{2x+9/2}\n\\]\n\nSo the full expression is\n\n\\[\n5^{1/2+4x+14-(2x+9/2)}\n\\]\n\n\\[\n=5^{2x+10}\n\\]\n\n**Answer:** \\(5^{2x+10}\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q11__p10-10__m03__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is correct.\n\n**Solution**\n\n\\[\nx^2+9x-22=(x+11)(x-2)\n\\]\n\nSo\n\\[\n(x+11)(x-2)=0\n\\]\n\n**Answer:** \\(x=-11\\) or \\(x=2\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q20__p19-19__m03__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Direct & Inverse Proportion to Algebraic Fractions.\n\n**Method**\n\n\\[\nk=x-y,\\quad x=\\frac{1}{4y}\n\\]\n\nSo\n\n\\[\nk=\\frac{1}{4y}-y=\\frac{1-4y^2}{4y}\n\\]\n\nAlso\n\n\\[\nx+2=\\frac{1}{4y}+2=\\frac{1+8y}{4y}\n\\]\n\nTherefore\n\n\\[\n\\frac{5k}{x+2}\n=\\frac{5\\left(\\frac{1-4y^2}{4y}\\right)}{\\frac{1+8y}{4y}}\n\\]\n\nCancel \\(4y\\):\n\n\\[\n\\frac{5(1-4y^2)}{1+8y}\n\\]\n\n\\[\n=\\frac{5-20y^2}{1+8y}\n\\]\n\n**Answer:** \\(\\dfrac{5-20y^2}{1+8y}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q15__p15-15__m07__Rearranging-Formulas": {
+      "status": "checked",
+      "source": "**Topic check:** Rearranging formulas. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\ne=\\sqrt{\\frac{7g+5}{11+2g}}\n\\]\n\n\\[\ne^2=\\frac{7g+5}{11+2g}\n\\]\n\n\\[\ne^2(11+2g)=7g+5\n\\]\n\n\\[\ng(2e^2-7)=5-11e^2\n\\]\n\n\\[\ng=\\frac{5-11e^2}{2e^2-7}\n\\]\n\n(b)\n\\[\n3y^2+4y-32=(3y-8)(y+4)\n\\]\n\nThe critical values are \\(y=-4\\) and \\(y=\\frac83\\). Since the quadratic is positive outside the roots,\n\\[\ny<-4 \\quad \\text{or} \\quad y>\\frac83\n\\]\n\n**Answer:** (a) \\(g=\\frac{5-11e^2}{2e^2-7}\\), (b) \\(y<-4\\) or \\(y>\\frac83\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q14__p14-14__m07__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n3y(2y+5)(y+7)\n\\]\n\nFirst expand the two brackets:\n\\[\n(2y+5)(y+7)=2y^2+14y+5y+35=2y^2+19y+35\n\\]\n\nNow multiply by \\(3y\\):\n\\[\n3y(2y^2+19y+35)=6y^3+57y^2+105y\n\\]\n\nSo \\(a=6\\), \\(b=57\\), and \\(c=105\\).\n\n(b)\n\\[\n\\frac{2x+3}{5}+\\frac{6x-5}{4}=\\frac{163}{100}\n\\]\n\nMultiply by 100:\n\\[\n20(2x+3)+25(6x-5)=163\n\\]\n\n\\[\n40x+60+150x-125=163\n\\]\n\n\\[\n190x-65=163\n\\]\n\n\\[\n190x=228\n\\]\n\n\\[\nx=\\frac{228}{190}=\\frac65\n\\]\n\n**Answer:** \\(6y^3+57y^2+105y\\), and \\(x=\\frac65\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q10__p10-10__m03__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\n\\[\n6x+4y=1\n\\]\n\n\\[\n3x+5y=8\n\\]\n\nDouble the second equation:\n\\[\n6x+10y=16\n\\]\n\nSubtract the first equation:\n\\[\n6y=15\n\\]\n\n\\[\ny=\\frac52\n\\]\n\nSubstitute into \\(3x+5y=8\\):\n\\[\n3x+5\\left(\\frac52\\right)=8\n\\]\n\n\\[\n3x+\\frac{25}{2}=8\n\\]\n\n\\[\n3x=-\\frac92\n\\]\n\n\\[\nx=-\\frac32\n\\]\n\n**Answer:** \\(x=-\\frac32\\), \\(y=\\frac52\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q22__p22-22__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe line is\n\n\\[\nx+y=5\n\\]\n\nSo\n\n\\[\ny=5-x\n\\]\n\nSubstitute into the curve:\n\n\\[\n2x^2+3y^2=210\n\\]\n\n\\[\n2x^2+3(5-x)^2=210\n\\]\n\n\\[\n2x^2+3(x^2-10x+25)=210\n\\]\n\n\\[\n5x^2-30x+75=210\n\\]\n\n\\[\n5x^2-30x-135=0\n\\]\n\nDivide by 5:\n\n\\[\nx^2-6x-27=0\n\\]\n\nFactorise:\n\n\\[\n(x-9)(x+3)=0\n\\]\n\nSo\n\n\\[\nx=9 \\quad \\text{or} \\quad x=-3\n\\]\n\nUsing \\(y=5-x\\):\n\n\\[\nx=9 \\Rightarrow y=-4\n\\]\n\n\\[\nx=-3 \\Rightarrow y=8\n\\]\n\n**Answer:** \\((9,-4)\\) and \\((-3,8)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q18__p18-18__m02__Linear-Graphs-y-mx-c": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is a perpendicular-gradient question.\n\n**Solution**\n\nThe line is\n\\[\n5y+2x=7\n\\]\n\n\\[\n5y=-2x+7\n\\]\n\n\\[\ny=-\\frac25x+\\frac75\n\\]\n\nSo the gradient of line P is \\(-\\frac25\\).\n\nA line perpendicular to P has gradient\n\\[\n\\frac52\n\\]\n\n**Answer:** \\(\\frac52\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q25__p26-26__m02__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Graphs of Functions.\n\n**Method**\n\n\\[\ny=2\\sin(x+60)^\\circ\n\\]\n\nPoint \\(A\\) is the maximum point.\n\nThe maximum value is\n\n\\[\ny=2\n\\]\n\nThis happens when\n\n\\[\nx+60=90\n\\]\n\n\\[\nx=30\n\\]\n\nSo\n\n\\[\nA=(30,2)\n\\]\n\nPoint \\(B\\) is the positive \\(x\\)-intercept after the minimum.\n\n\\[\n2\\sin(x+60)^\\circ=0\n\\]\n\n\\[\n\\sin(x+60)^\\circ=0\n\\]\n\nFor this point,\n\n\\[\nx+60=360\n\\]\n\n\\[\nx=300\n\\]\n\nSo\n\n\\[\nB=(300,0)\n\\]\n\n**Answer:** \\(A=(30,2),\\ B=(300,0)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q02__p04-04__m04__Graphing-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is drawing and shading inequalities.\n\n**Solution**\n\nDraw the boundary lines:\n\\[\ny=2,\n\\qquad\nx=6,\n\\qquad\ny=x+1\n\\]\n\nThe required region is\n\\[\ny\\geq2\n\\]\n\n\\[\nx\\leq6\n\\]\n\n\\[\ny\\leq x+1\n\\]\n\n**Answer:** Shade \\(y\\geq2\\), \\(x\\leq6\\), \\(y\\leq x+1\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q03__p05-05__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Standard & Compound Units.\n\n**Solution**\n\n\\[\n9\\text{ h }36\\text{ min}=9+\\frac{36}{60}=9.6\\text{ hours}\n\\]\n\n\\[\n\\text{distance}=820\\times 9.6=7872\n\\]\n\n**Answer:** \\(7872\\text{ km}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q06__p06-06__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is converting metres per second to kilometres per hour algebraically.\n\n**Solution**\n\nTo convert m/s to km/h, multiply by \\(3.6\\).\n\n\\[\nw\\text{ m/s}=3.6w\\text{ km/h}\n\\]\n\n\\[\n3.6w=\\frac{18w}{5}\n\\]\n\n**Answer:** \\(\\frac{18w}{5}\\text{ km/h}\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q07__p07-07__m04__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Perimeter. The tag is correct.\n\n**Solution**\n\nThe bottom rectangle has area\n\\[\n21\\times 13=273\n\\]\n\nThe top trapezium has height \\(h-13\\), with parallel sides \\(21\\) and \\(15\\).\n\n\\[\n273+\\frac12(21+15)(h-13)=390\n\\]\n\n\\[\n273+18(h-13)=390\n\\]\n\n\\[\n18h+39=390\n\\]\n\n\\[\nh=19.5\n\\]\n\n**Answer:** \\(19.5\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q21__p20-21__m05__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Circles, Arcs & Sectors.\n\n**Method**\n\nLet the side length of the square be \\(s\\).\n\nThe circle is inscribed in the square, so its radius is\n\n\\[\n\\frac{s}{2}\n\\]\n\nThe shaded area is the area of the square minus the area of the circle:\n\n\\[\ns^2-\\pi\\left(\\frac{s}{2}\\right)^2=80\n\\]\n\n\\[\ns^2-\\frac{\\pi s^2}{4}=80\n\\]\n\n\\[\ns^2\\left(1-\\frac{\\pi}{4}\\right)=80\n\\]\n\n\\[\ns=\\sqrt{\\frac{80}{1-\\frac{\\pi}{4}}}=19.3076\\ldots\n\\]\n\nThe diagonal of the square is\n\n\\[\nAC=s\\sqrt{2}\n\\]\n\n\\[\nAC=19.3076\\ldots\\sqrt{2}=27.3051\\ldots\n\\]\n\n**Answer:** \\(\\boxed{27.3\\text{ cm}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q05__p06-06__m03__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Right-Angled Triangles - Pythagoras & Trigonometry.\n\n**Solution**\n\nThe hypotenuse is \\(6.5\\text{ cm}\\), and \\(x\\) is opposite the \\(34^\\circ\\) angle.\n\n\\[\n\\sin 34^\\circ=\\frac{x}{6.5}\n\\]\n\n\\[\nx=6.5\\sin 34^\\circ=3.634\\ldots\n\\]\n\n**Answer:** \\(3.6\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q24__p24-25__m06__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Vectors.\n\n**Method**\n\n\\[\n\\vec{OA}=4\\mathbf a,\\qquad \\vec{OB}=3\\mathbf b,\\qquad \\vec{BC}=2\\mathbf a+\\mathbf b\n\\]\n\nSo\n\n\\[\n\\vec{OC}=\\vec{OB}+\\vec{BC}\n\\]\n\n\\[\n\\vec{OC}=2\\mathbf a+4\\mathbf b\n\\]\n\nFor part (a),\n\n\\[\n\\vec{AC}=\\vec{OC}-\\vec{OA}\n\\]\n\n\\[\n\\vec{AC}=(2\\mathbf a+4\\mathbf b)-4\\mathbf a\n\\]\n\n\\[\n\\vec{AC}=4\\mathbf b-2\\mathbf a\n\\]\n\nFor part (b), \\(AP:PC=3:2\\), so\n\n\\[\n\\vec{OP}=\\vec{OA}+\\frac35\\vec{AC}\n\\]\n\n\\[\n\\vec{OP}=4\\mathbf a+\\frac35(4\\mathbf b-2\\mathbf a)\n\\]\n\n\\[\n\\vec{OP}=\\frac{14}{5}\\mathbf a+\\frac{12}{5}\\mathbf b\n\\]\n\nSince \\(O,P,Q\\) are collinear,\n\n\\[\n\\vec{OQ}=t\\vec{OP}\n\\]\n\n\\[\n\\vec{OQ}=t\\left(\\frac{14}{5}\\mathbf a+\\frac{12}{5}\\mathbf b\\right)\n\\]\n\nSince \\(B,C,Q\\) are collinear,\n\n\\[\n\\vec{OQ}=\\vec{OB}+s\\vec{BC}\n\\]\n\n\\[\n\\vec{OQ}=3\\mathbf b+s(2\\mathbf a+\\mathbf b)\n\\]\n\n\\[\n\\vec{OQ}=2s\\mathbf a+(3+s)\\mathbf b\n\\]\n\nEquate coefficients:\n\n\\[\n\\frac{14}{5}t=2s\n\\]\n\n\\[\n\\frac{12}{5}t=3+s\n\\]\n\nFrom the first equation,\n\n\\[\ns=\\frac75t\n\\]\n\nSubstitute into the second:\n\n\\[\n\\frac{12}{5}t=3+\\frac75t\n\\]\n\n\\[\nt=3\n\\]\n\nTherefore\n\n\\[\n\\vec{OQ}=3\\vec{OP}\n\\]\n\n\\[\n\\vec{OQ}=\\frac{42}{5}\\mathbf a+\\frac{36}{5}\\mathbf b\n\\]\n\n**Answer:** \\(\\vec{AC}=4\\mathbf b-2\\mathbf a\\), \\(\\displaystyle \\vec{OQ}=\\frac{42}{5}\\mathbf a+\\frac{36}{5}\\mathbf b\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q01__p03-03__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe median is \\(10\\):\n\n\\[\n\\frac{8+j}{2}=10\n\\]\n\n\\[\nj=12\n\\]\n\nThe mode is \\(18\\), so\n\n\\[\nk=18\n\\]\n\nThe range is \\(13\\):\n\n\\[\n18-h=13\n\\]\n\n\\[\nh=5\n\\]\n\n**Answers:** \\(h=5,\\ j=12,\\ k=18\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q12__p11-11__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nTotal for the first 4 days:\n\n\\[\n4 \\times 11800=47200\n\\]\n\nTotal for the next 3 days:\n\n\\[\n3 \\times 13207=39621\n\\]\n\nTotal for all 7 days:\n\n\\[\n47200+39621=86821\n\\]\n\nMean for the 7 days:\n\n\\[\n\\frac{86821}{7}=12403\n\\]\n\n**Answer:** \\(12403\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2H__Q13__p12-13__m07__Cumulative-Frequency-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nThe cumulative frequencies are\n\n\\[\n7,\\ 24,\\ 42,\\ 56,\\ 66,\\ 70\n\\]\n\nPlot these points and join them with a smooth curve:\n\n\\[\n(0,0),(10,7),(20,24),(30,42),(40,56),(50,66),(60,70)\n\\]\n\nFor \\(70\\) teachers,\n\n\\[\nQ_1=17.5,\\qquad Q_3=52.5\n\\]\n\nFrom the graph,\n\n\\[\nQ_1 \\approx 16.2,\\qquad Q_3 \\approx 37.5\n\\]\n\n\\[\n\\text{IQR}\\approx 37.5-16.2=21.3\n\\]\n\nAt \\(46\\) km, the cumulative frequency is about \\(62\\).\n\n\\[\n70-62=8\n\\]\n\n**Answers:** IQR about \\(21\\) km, and about \\(8\\) teachers.",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Jun2024_P2H__Q16__p16-17__m07__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nThe triple intersection is \\(9\\).\n\n\\[\nK\\cap P\\text{ only}=17-9=8\n\\]\n\n\\[\nP\\cap E\\text{ only}=16-9=7\n\\]\n\n\\[\nK\\cap E\\text{ only}=20-9=11\n\\]\n\n\\[\nP\\text{ only}=28-8-7-9=4\n\\]\n\n\\[\nE\\text{ only}=39-11-7-9=12\n\\]\n\nThere are \\(60-2=58\\) students inside the Venn diagram.\n\n\\[\nK\\text{ only}=58-(8+7+11+9+4+12)=7\n\\]\n\n\\[\nP(K\\mid P)=\\frac{17}{28}\n\\]\n\n\\[\nn(P\\cap K')=4+7=11\n\\]\n\n\\[\nn((P\\cup E)\\cap K)=8+11+9=28\n\\]\n\n**Answers:** \\(\\frac{17}{28}\\), \\(11\\), \\(28\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jun2024_P2H__Q23__p23-23__m03__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n\\frac{30\\times 25^{2x+7}}{\\sqrt{180}\\times (\\sqrt{5})^{4x+9}}\n\\]\n\n\\[\n\\frac{30}{\\sqrt{180}}=\\frac{30}{6\\sqrt{5}}=\\sqrt{5}=5^{1/2}\n\\]\n\n\\[\n25^{2x+7}=(5^2)^{2x+7}=5^{4x+14}\n\\]\n\n\\[\n(\\sqrt{5})^{4x+9}=5^{2x+\\frac92}\n\\]\n\nSo\n\n\\[\n5^{1/2}\\times 5^{4x+14}\\div 5^{2x+\\frac92}\n=5^{\\frac12+4x+14-2x-\\frac92}\n\\]\n\n\\[\n=5^{2x+10}\n\\]\n\n**Answer:** \\(5^{2x+10}\\), so \\(w=2x+10\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2024_P2H__Q20__p19-19__m03__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Direct & Inverse Proportion to Algebraic Fractions.\n\n**Method**\n\n\\[\nk=x-y,\\quad x=\\frac{1}{4y}\n\\]\n\nSo\n\n\\[\nk=\\frac{1}{4y}-y=\\frac{1-4y^2}{4y}\n\\]\n\nAlso\n\n\\[\nx+2=\\frac{1}{4y}+2=\\frac{1+8y}{4y}\n\\]\n\nTherefore\n\n\\[\n\\frac{5k}{x+2}\n=\\frac{5\\left(\\frac{1-4y^2}{4y}\\right)}{\\frac{1+8y}{4y}}\n\\]\n\nCancel \\(4y\\):\n\n\\[\n\\frac{5(1-4y^2)}{1+8y}\n\\]\n\n\\[\n=\\frac{5-20y^2}{1+8y}\n\\]\n\n**Answer:** \\(\\dfrac{5-20y^2}{1+8y}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2024_P2H__Q22__p22-22__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe line is\n\n\\[\nx+y=5\n\\]\n\nSo\n\n\\[\ny=5-x\n\\]\n\nSubstitute into the curve:\n\n\\[\n2x^2+3y^2=210\n\\]\n\n\\[\n2x^2+3(5-x)^2=210\n\\]\n\n\\[\n2x^2+3(x^2-10x+25)=210\n\\]\n\n\\[\n5x^2-30x+75=210\n\\]\n\n\\[\n5x^2-30x-135=0\n\\]\n\nDivide by 5:\n\n\\[\nx^2-6x-27=0\n\\]\n\nFactorise:\n\n\\[\n(x-9)(x+3)=0\n\\]\n\nSo\n\n\\[\nx=9 \\quad \\text{or} \\quad x=-3\n\\]\n\nUsing \\(y=5-x\\):\n\n\\[\nx=9 \\Rightarrow y=-4\n\\]\n\n\\[\nx=-3 \\Rightarrow y=8\n\\]\n\n**Answer:** \\((9,-4)\\) and \\((-3,8)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2024_P2H__Q25__p26-26__m02__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Graphs of Functions.\n\n**Method**\n\n\\[\ny=2\\sin(x+60)^\\circ\n\\]\n\nPoint \\(A\\) is the maximum point.\n\nThe maximum value is\n\n\\[\ny=2\n\\]\n\nThis happens when\n\n\\[\nx+60=90\n\\]\n\n\\[\nx=30\n\\]\n\nSo\n\n\\[\nA=(30,2)\n\\]\n\nPoint \\(B\\) is the positive \\(x\\)-intercept after the minimum.\n\n\\[\n2\\sin(x+60)^\\circ=0\n\\]\n\n\\[\n\\sin(x+60)^\\circ=0\n\\]\n\nFor this point,\n\n\\[\nx+60=360\n\\]\n\n\\[\nx=300\n\\]\n\nSo\n\n\\[\nB=(300,0)\n\\]\n\n**Answer:** \\(A=(30,2),\\ B=(300,0)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2024_P2H__Q21__p20-21__m05__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Circles, Arcs & Sectors.\n\n**Method**\n\nLet the side length of the square be \\(s\\).\n\nThe circle is inscribed in the square, so its radius is\n\n\\[\n\\frac{s}{2}\n\\]\n\nThe shaded area is the area of the square minus the area of the circle:\n\n\\[\ns^2-\\pi\\left(\\frac{s}{2}\\right)^2=80\n\\]\n\n\\[\ns^2-\\frac{\\pi s^2}{4}=80\n\\]\n\n\\[\ns^2\\left(1-\\frac{\\pi}{4}\\right)=80\n\\]\n\n\\[\ns=\\sqrt{\\frac{80}{1-\\frac{\\pi}{4}}}=19.3076\\ldots\n\\]\n\nThe diagonal of the square is\n\n\\[\nAC=s\\sqrt{2}\n\\]\n\n\\[\nAC=19.3076\\ldots\\sqrt{2}=27.3051\\ldots\n\\]\n\n**Answer:** \\(\\boxed{27.3\\text{ cm}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2024_P2H__Q24__p24-25__m06__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Vectors.\n\n**Method**\n\n\\[\n\\vec{OA}=4\\mathbf a,\\qquad \\vec{OB}=3\\mathbf b,\\qquad \\vec{BC}=2\\mathbf a+\\mathbf b\n\\]\n\nSo\n\n\\[\n\\vec{OC}=\\vec{OB}+\\vec{BC}\n\\]\n\n\\[\n\\vec{OC}=2\\mathbf a+4\\mathbf b\n\\]\n\nFor part (a),\n\n\\[\n\\vec{AC}=\\vec{OC}-\\vec{OA}\n\\]\n\n\\[\n\\vec{AC}=(2\\mathbf a+4\\mathbf b)-4\\mathbf a\n\\]\n\n\\[\n\\vec{AC}=4\\mathbf b-2\\mathbf a\n\\]\n\nFor part (b), \\(AP:PC=3:2\\), so\n\n\\[\n\\vec{OP}=\\vec{OA}+\\frac35\\vec{AC}\n\\]\n\n\\[\n\\vec{OP}=4\\mathbf a+\\frac35(4\\mathbf b-2\\mathbf a)\n\\]\n\n\\[\n\\vec{OP}=\\frac{14}{5}\\mathbf a+\\frac{12}{5}\\mathbf b\n\\]\n\nSince \\(O,P,Q\\) are collinear,\n\n\\[\n\\vec{OQ}=t\\vec{OP}\n\\]\n\n\\[\n\\vec{OQ}=t\\left(\\frac{14}{5}\\mathbf a+\\frac{12}{5}\\mathbf b\\right)\n\\]\n\nSince \\(B,C,Q\\) are collinear,\n\n\\[\n\\vec{OQ}=\\vec{OB}+s\\vec{BC}\n\\]\n\n\\[\n\\vec{OQ}=3\\mathbf b+s(2\\mathbf a+\\mathbf b)\n\\]\n\n\\[\n\\vec{OQ}=2s\\mathbf a+(3+s)\\mathbf b\n\\]\n\nEquate coefficients:\n\n\\[\n\\frac{14}{5}t=2s\n\\]\n\n\\[\n\\frac{12}{5}t=3+s\n\\]\n\nFrom the first equation,\n\n\\[\ns=\\frac75t\n\\]\n\nSubstitute into the second:\n\n\\[\n\\frac{12}{5}t=3+\\frac75t\n\\]\n\n\\[\nt=3\n\\]\n\nTherefore\n\n\\[\n\\vec{OQ}=3\\vec{OP}\n\\]\n\n\\[\n\\vec{OQ}=\\frac{42}{5}\\mathbf a+\\frac{36}{5}\\mathbf b\n\\]\n\n**Answer:** \\(\\vec{AC}=4\\mathbf b-2\\mathbf a\\), \\(\\displaystyle \\vec{OQ}=\\frac{42}{5}\\mathbf a+\\frac{36}{5}\\mathbf b\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

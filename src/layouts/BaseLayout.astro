@@ -1,0 +1,196 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  hideHeader?: boolean;
+}
+
+const {
+  title = "Elite IGCSE Mathematics — Edexcel 4MA1 Practice Bank",
+  description = "Edexcel IGCSE 4MA1 Higher Tier · 1,343 classified past-paper questions with worked solutions. Linear and Modular pathways. By Dr Eslam Ahmed.",
+  hideHeader = false,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#0B1F3A" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;800&family=JetBrains+Mono:wght@400;600&display=swap"
+    />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eliteigcse.com" />
+  </head>
+  <body>
+    {!hideHeader && (
+      <header class="site-header">
+        <div class="site-header-inner container-wide">
+          <a class="brand" href="/">
+            <span class="brand-mark">IGCSE</span>
+            <span class="brand-text">
+              <strong>Elite IGCSE</strong>
+              <span class="brand-meta">Mathematics · 4MA1</span>
+            </span>
+          </a>
+
+          <nav class="site-nav" aria-label="Primary">
+            <a class="nav-link" href="/practice">Practice</a>
+            <a class="nav-link" href="/exam">Mocks</a>
+            <a class="nav-link" href="/progress">Progress</a>
+            <a class="nav-link" href="/downloads">Books</a>
+          </nav>
+
+          <div class="site-cta">
+            <button class="btn btn-ghost btn-sm" data-cloud-login>
+              Continue with Google
+            </button>
+            <a class="btn btn-primary btn-sm" href="https://wa.me/201120009622" target="_blank" rel="noreferrer">
+              Enroll
+            </a>
+          </div>
+        </div>
+      </header>
+    )}
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container-wide footer-inner">
+        <div>
+          <strong>Dr Eslam Ahmed</strong>
+          <span class="meta">Assistant Lecturer · Cairo University Faculty of Engineering</span>
+        </div>
+        <div class="footer-contact">
+          <a href="tel:01120009622">Call: 01120009622</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://wa.me/201120009622" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+    <style is:global>
+      /* ============================================================
+         Site chrome (header / footer) — kept inside layout so it's
+         scoped to pages using BaseLayout. Tokens come from global.css.
+         ============================================================ */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: var(--z-header);
+        background: rgba(251, 248, 242, 0.92);
+        backdrop-filter: saturate(150%) blur(10px);
+        border-bottom: 1px solid var(--line);
+      }
+      .site-header-inner {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        min-height: var(--header-height);
+        padding-top: var(--space-1);
+        padding-bottom: var(--space-1);
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+        color: var(--navy);
+      }
+      .brand:hover { color: var(--gold-deep); }
+      .brand-mark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 56px;
+        height: 34px;
+        padding: 0 10px;
+        border-radius: var(--radius-sm);
+        background: var(--navy);
+        color: var(--gold);
+        font-family: var(--font-mono);
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+      }
+      .brand-text { display: flex; flex-direction: column; line-height: 1.15; }
+      .brand-text strong { font-weight: var(--weight-bold); font-size: 17px; }
+      .brand-meta { font-size: 11px; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+
+      .site-nav {
+        display: flex;
+        gap: var(--space-3);
+        margin-left: auto;
+      }
+      .nav-link {
+        position: relative;
+        padding: 8px 4px;
+        color: var(--navy);
+        font-size: var(--type-meta);
+        font-weight: var(--weight-bold);
+        letter-spacing: 0.02em;
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background: var(--gold);
+        transition: all var(--transition-fast);
+        transform: translateX(-50%);
+      }
+      .nav-link:hover::after,
+      .nav-link[aria-current="page"]::after { width: 100%; }
+      .nav-link[aria-current="page"] { color: var(--gold-deep); }
+
+      .site-cta {
+        display: flex;
+        align-items: center;
+        gap: var(--space-1);
+      }
+
+      .site-footer {
+        margin-top: var(--space-6);
+        padding: var(--space-4) 0 var(--space-3);
+        border-top: 1px solid var(--line);
+        background: var(--paper);
+        font-size: var(--type-meta);
+      }
+      .footer-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-2);
+      }
+      .footer-inner strong { display: block; font-weight: var(--weight-bold); }
+      .footer-inner .meta { display: block; }
+      .footer-contact { display: flex; align-items: center; gap: var(--space-1); color: var(--muted); }
+      .footer-contact a { color: var(--navy-soft); }
+
+      /* Mobile */
+      @media (max-width: 720px) {
+        .site-header-inner { flex-wrap: wrap; gap: var(--space-1); padding: 10px var(--space-2); }
+        .site-nav { order: 3; width: 100%; justify-content: space-between; gap: var(--space-1); }
+        .site-cta { margin-left: auto; }
+        .brand-text { font-size: 14px; }
+        .brand-meta { display: none; }
+      }
+    </style>
+  </body>
+</html>

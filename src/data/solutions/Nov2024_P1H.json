@@ -1,0 +1,191 @@
+{
+  "paperSlug": "Nov2024_P1H",
+  "solutions": {
+    "all::Nov2024_P1H__Q04__p06-06__m03__Set-Notation-and-Venn-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Set notation and Venn diagrams. The tag is correct.\n\n**Method**\n\nThe members of \\(B\\) are all the numbers inside circle \\(B\\), including the overlap:\n\n\\[\nB=\\{2,3,5,7\\}\n\\]\n\nThe members of \\(A\\cap B\\) are the numbers in both circles:\n\n\\[\nA\\cap B=\\{3,7\\}\n\\]\n\n\\(A'\\) means all the numbers in the universal set that are not in \\(A\\):\n\n\\[\nA'=\\{2,4,5,6,8\\}\n\\]\n\n**Answer:** (a) \\(\\{2,3,5,7\\}\\), (b) \\(\\{3,7\\}\\), (c) \\(\\{2,4,5,6,8\\}\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q06__p08-08__m02__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\nA=2^3\\times 5^4\\times 7\\times 11\n\\]\n\n\\[\nB=2^2\\times 5^2\\times 7^2\n\\]\n\n\\[\nC=2^2\\times 5^3\\times 7^4\n\\]\n\nThe HCF of \\(A\\), \\(B\\), and \\(C\\) uses the smallest power of each prime common to all three.\n\n\\[\n2^2,\\quad 5^2,\\quad 7\n\\]\n\nThe prime \\(11\\) is not in all three numbers, so it is not included.\n\n\\[\n\\text{HCF}=2^2\\times 5^2\\times 7\n\\]\n\n**Answer:** \\(\\displaystyle 2^2\\times 5^2\\times 7\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q09__p11-11__m03__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n8.4\\times 10^{-5}=0.000084\n\\]\n\nFor part (b),\n\n\\[\n(6.5\\times 10^{-40})(8\\times 10^{185})\n=52\\times 10^{145}\n\\]\n\nWrite this in standard form:\n\n\\[\n52\\times 10^{145}=5.2\\times 10^{146}\n\\]\n\n**Answer:** (a) \\(0.000084\\), (b) \\(5.2\\times 10^{146}\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q07__p09-09__m04__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Percentages. This is a percentage discount comparison.\n\n**Method**\n\nShop A discount:\n\n\\[\n16\\% \\text{ of } 475=0.16\\times 475=76\n\\]\n\nShop B: \\(408\\) euros is \\(85\\%\\) of the normal price.\n\n\\[\n\\text{normal price}=408\\div 0.85=480\n\\]\n\nShop B discount:\n\n\\[\n480-408=72\n\\]\n\nSince\n\n\\[\n76>72\n\\]\n\nShop A gives the greater discount.\n\n**Answer:** Shop A gives the greater discount.",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q21__p22-22__m03__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\n\\[\nT=\\frac{x^2+y^2}{w}\n\\]\n\nFor the upper bound, use the upper bounds of \\(x\\) and \\(y\\), and the lower bound of \\(w\\).\n\n\\[\nx<28.45,\\quad y<17.5,\\quad w\\ge 87.5\n\\]\n\n\\[\nT_{\\text{upper}}=\\frac{28.45^2+17.5^2}{87.5}=12.7503\\ldots\n\\]\n\nCorrect to 3 significant figures,\n\n\\[\n12.7503\\ldots\\approx 12.8\n\\]\n\n**Answer:** \\(12.8\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q14__p16-16__m03__Direct-and-Inverse-Proportion": {
+      "status": "checked",
+      "source": "**Topic check:** Direct and Inverse Proportion. The tag is correct.\n\n**Method**\n\n\\(B\\) is inversely proportional to \\(d^2\\), so\n\n\\[\nB=\\frac{k}{d^2}\n\\]\n\nUse \\(B=0.25\\) when \\(d=12\\):\n\n\\[\n0.25=\\frac{k}{12^2}\n\\]\n\n\\[\nk=0.25\\times 144=36\n\\]\n\nTherefore\n\n\\[\nB=\\frac{36}{d^2}\n\\]\n\n**Answer:** \\(B=\\frac{36}{d^2}\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q15__p16-16__m03__Expanding-Brackets": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Expanding Brackets. This is an expansion question, not a surds question.\n\n**Method**\n\n\\[\n3x(2x-1)(5x+4)\n\\]\n\nFirst expand the two brackets:\n\n\\[\n(2x-1)(5x+4)=10x^2+8x-5x-4\n\\]\n\n\\[\n=10x^2+3x-4\n\\]\n\nNow multiply by \\(3x\\):\n\n\\[\n3x(10x^2+3x-4)=30x^3+9x^2-12x\n\\]\n\n**Answer:** \\(30x^3+9x^2-12x\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q08__p10-10__m06__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is acceptable because the quadratic factorising section is a full half of the question.\n\n**Solution**\n\n(a)(i)\n\\[\nx^2+5x-24=(x+8)(x-3)\n\\]\n\n(a)(ii) \\(x=-8\\) or \\(x=3\\).\n\n(b)\n\\[\n3y+5>7y-10\n\\]\n\n\\[\n15>4y\n\\]\n\n\\[\ny<\\frac{15}{4}\n\\]\n\n**Answer:** \\((x+8)(x-3)\\), \\(x=-8\\) or \\(x=3\\), \\(y<\\frac{15}{4}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q17__p18-18__m04__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks for exact-form proof.\n\n**Solution**\n\n(a)\n\\[\n\\sqrt{675}=\\sqrt{25\\times27}=5\\sqrt{27}\n\\]\n\nSo \\(n=5\\).\n\n(b)\n\\[\n\\frac{5-\\sqrt2}{\\sqrt2-1}\\times\\frac{\\sqrt2+1}{\\sqrt2+1}\n=\\frac{(5-\\sqrt2)(\\sqrt2+1)}{2-1}\n\\]\n\n\\[\n=5\\sqrt2+5-2-\\sqrt2\n\\]\n\n\\[\n=3+4\\sqrt2\n\\]\n\n**Answer:** \\(n=5\\), and \\(3+4\\sqrt2\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q03__p05-05__m06__Solving-Linear-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to solving linear equations. The original tag was expanding brackets, but the equation carries the main marks.\n\n**Solution**\n\n(a) \\((p^3)^5=p^{15}\\).\n\n(b)\n\\[\n2n(4n+3)+n(n-4)=8n^2+6n+n^2-4n=9n^2+2n\n\\]\n\n(c)\n\\[\n\\frac{2x+5}{3}=4-x\n\\]\n\n\\[\n2x+5=12-3x\n\\]\n\n\\[\n5x=7\n\\]\n\n**Answer:** (a) \\(p^{15}\\), (b) \\(9n^2+2n\\), (c) \\(x=\\frac75\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q19__p20-20__m05__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Sequences. The tag is correct.\n\n**Solution**\n\nLet the first term be \\(a\\) and the common difference be \\(d\\).\n\n\\[\nS_{30}=4395\n\\]\n\n\\[\n\\frac{30}{2}(2a+29d)=4395\n\\]\n\n\\[\n2a+29d=293\n\\]\n\nThe 8th term plus the 20th term is 284:\n\\[\n(a+7d)+(a+19d)=284\n\\]\n\n\\[\n2a+26d=284\n\\]\n\nSubtract the equations:\n\\[\n3d=9\n\\]\n\n\\[\nd=3\n\\]\n\nThen\n\\[\n2a+26(3)=284\n\\]\n\n\\[\n2a=206\n\\]\n\n\\[\na=103\n\\]\n\nNow find \\(S_{45}\\):\n\\[\nS_{45}=\\frac{45}{2}(2a+44d)\n\\]\n\n\\[\nS_{45}=\\frac{45}{2}(206+132)=7605\n\\]\n\n**Answer:** \\(7605\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q25__p28-28__m04__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nf(x)=2x^2-24x+7\n\\]\n\nComplete the square:\n\n\\[\nf(x)=2(x^2-12x)+7\n\\]\n\n\\[\nf(x)=2[(x-6)^2-36]+7\n\\]\n\n\\[\nf(x)=2(x-6)^2-65\n\\]\n\nLet \\(y=f(x)\\).\n\n\\[\ny=2(x-6)^2-65\n\\]\n\n\\[\ny+65=2(x-6)^2\n\\]\n\n\\[\n\\frac{y+65}{2}=(x-6)^2\n\\]\n\nSince \\(x\\ge 6\\), take the positive square root:\n\n\\[\nx-6=\\sqrt{\\frac{y+65}{2}}\n\\]\n\n\\[\nx=6+\\sqrt{\\frac{y+65}{2}}\n\\]\n\nReplace \\(y\\) by \\(x\\).\n\n**Answer:** \\(\\displaystyle f^{-1}(x)=6+\\sqrt{\\frac{x+65}{2}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q11__p13-13__m04__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is a reciprocal-curve table and graph question.\n\n**Solution**\n\n\\[\ny=2\\left(x+\\frac1x\\right)\n\\]\n\nThe completed table is:\n\n\\[\n\\begin{array}{c|rrrrrrr}\nx&0.5&1&2&3&4&5&6\\\\\n\\hline\ny&5&4&5&6.7&8.5&10.4&12.3\n\\end{array}\n\\]\n\nPlot the points and join them with a smooth curve.\n\n**Answer:** Missing values are \\(5,4,8.5,10.4\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q23__p24-25__m05__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Graphs of Functions.\n\n**Method**\n\nThe curve is\n\n\\[\ny=x^2-8x-9\n\\]\n\nThe line is\n\n\\[\ny=k\n\\]\n\nAt the intersection points,\n\n\\[\nx^2-8x-9=k\n\\]\n\n\\[\nx^2-8x-(9+k)=0\n\\]\n\nThe two roots are \\(p\\) and \\(q\\).\n\nFor this quadratic,\n\n\\[\np+q=8\n\\]\n\nWe are also given\n\n\\[\np-q=14\n\\]\n\nSolve the two equations:\n\n\\[\n2p=22\n\\]\n\n\\[\np=11\n\\]\n\n\\[\nq=-3\n\\]\n\nUse one root in \\(y=x^2-8x-9\\):\n\n\\[\nk=11^2-8(11)-9\n\\]\n\n\\[\nk=121-88-9\n\\]\n\n\\[\nk=24\n\\]\n\n**Answer:** \\(k=24\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q20__p21-21__m04__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Estimating Gradients to Differentiation.\n\n**Method**\n\n\\[\ny=2x^4-64x\n\\]\n\nDifferentiate:\n\n\\[\n\\frac{dy}{dx}=8x^3-64\n\\]\n\nAt the minimum point, the gradient is 0.\n\n\\[\n8x^3-64=0\n\\]\n\n\\[\n8x^3=64\n\\]\n\n\\[\nx^3=8\n\\]\n\n\\[\nx=2\n\\]\n\nFind the \\(y\\)-coordinate:\n\n\\[\ny=2(2)^4-64(2)\n\\]\n\n\\[\ny=32-128=-96\n\\]\n\nThe tangent at a minimum point is horizontal, so its equation is\n\n\\[\ny=-96\n\\]\n\n**Answer:** \\(y=-96\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q02__p04-04__m02__Bearings-Scale-Drawing-and-Constructions": {
+      "status": "checked",
+      "source": "**Topic check:** Bearings, Scale Drawing & Constructions. The tag is correct.\n\n**Construction answer**\n\nTo construct the bisector of angle \\(ABC\\):\n\n1. Draw an arc centred at \\(B\\) cutting both arms of the angle.\n2. From the two cut points, draw equal arcs inside the angle.\n3. Draw the line from \\(B\\) through the intersection of these arcs.\n\n**Answer:** The constructed ray is the angle bisector of \\(ABC\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q16__p17-17__m04__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Circles, Arcs & Sectors.\n\n**Solution**\n\nFor triangle \\(OAB\\),\n\n\\[\n120=\\frac12r^2\\sin50^\\circ\n\\]\n\n\\[\nr^2=\\frac{240}{\\sin50^\\circ}\n\\]\n\nArea of sector \\(OAPB\\):\n\n\\[\n\\frac{50}{360}\\pi r^2\n=\\frac{50}{360}\\pi\\left(\\frac{240}{\\sin50^\\circ}\\right)\n=136.701\\ldots\n\\]\n\n**Answer:** \\(137\\text{ cm}^2\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q05__p07-07__m04__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Volume & Surface Area. The tag is correct.\n\n**Solution**\n\n\\[\nV=\\pi r^2h=\\pi(70)^2(18)\n\\]\n\n\\[\nV=277088.472\\ldots\\text{ cm}^3\n\\]\n\nSince \\(1000\\text{ cm}^3=1\\) litre,\n\\[\n277088.472\\ldots\\text{ cm}^3=277.088\\ldots\\text{ litres}\n\\]\n\n**Answer:** \\(277\\) litres.",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q22__p23-23__m03__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe bowl is a hemispherical shell.\n\nThe volume of the metal is:\n\n\\[\n\\text{outer hemisphere volume}-\\text{inner hemisphere volume}\n\\]\n\nVolume of a hemisphere:\n\n\\[\n\\frac{2}{3}\\pi r^3\n\\]\n\nSo\n\n\\[\n\\text{metal volume}\n=\\frac{2}{3}\\pi(12)^3-\\frac{2}{3}\\pi(9)^3\n\\]\n\n\\[\n=\\frac{2}{3}\\pi(12^3-9^3)\n\\]\n\n\\[\n=\\frac{2}{3}\\pi(1728-729)\n\\]\n\n\\[\n=666\\pi\n\\]\n\n\\[\n=2092.3007\\ldots\n\\]\n\n**Answer:** \\(\\boxed{2092\\text{ cm}^3}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q10__p12-12__m05__Congruence-Similarity-and-Geometrical-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Congruence, Similarity & Geometrical Proof. The tag is correct.\n\n**Solution**\n\nIn the larger triangle,\n\\[\nDE^2=51^2-24^2\n\\]\n\n\\[\nDE=45\n\\]\n\nThe scale factor from the large triangle to the small triangle is\n\\[\n\\frac{7.5}{45}=\\frac16\n\\]\n\nSo\n\\[\nx=24\\times \\frac16=4\n\\]\n\n**Answer:** \\(x=4\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q12__p14-14__m04__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Right-Angled Triangles - Pythagoras & Trigonometry. The tag is correct.\n\n**Solution**\n\nIn triangle \\(ABD\\),\n\n\\[\n\\tan47^\\circ=\\frac{BD}{4250}\n\\]\n\n\\[\nBD=4250\\tan47^\\circ=4557.567\\ldots\n\\]\n\nIn triangle \\(ABC\\),\n\n\\[\n\\tan24^\\circ=\\frac{4250}{BC}\n\\]\n\n\\[\nBC=\\frac{4250}{\\tan24^\\circ}=9545.656\\ldots\n\\]\n\n\\[\nDC=BC-BD=4988.089\\ldots\n\\]\n\n**Answer:** \\(4988\\text{ m}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q24__p26-27__m06__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Vectors.\n\n**Method**\n\n\\[\n\\vec{OA}=10\\mathbf a,\\qquad \\vec{OB}=10\\mathbf b\n\\]\n\nAlso,\n\n\\[\n\\vec{AP}=\\frac14\\vec{AB}\n\\]\n\nand\n\n\\[\n\\vec{OQ}=\\frac15\\vec{OB}\n\\]\n\nFor part (i),\n\n\\[\n\\vec{OQ}=2\\mathbf b\n\\]\n\n\\[\n\\vec{AQ}=\\vec{OQ}-\\vec{OA}\n\\]\n\n\\[\n\\vec{AQ}=2\\mathbf b-10\\mathbf a\n\\]\n\nFor part (ii),\n\n\\[\n\\vec{AB}=10\\mathbf b-10\\mathbf a\n\\]\n\n\\[\n\\vec{AP}=\\frac14(10\\mathbf b-10\\mathbf a)\n\\]\n\n\\[\n\\vec{AP}=\\frac52\\mathbf b-\\frac52\\mathbf a\n\\]\n\n\\[\n\\vec{OP}=\\vec{OA}+\\vec{AP}\n\\]\n\n\\[\n\\vec{OP}=10\\mathbf a-\\frac52\\mathbf a+\\frac52\\mathbf b\n\\]\n\n\\[\n\\vec{OP}=\\frac{15}{2}\\mathbf a+\\frac52\\mathbf b\n\\]\n\nFor part (iii), \\(R\\) lies on \\(OP\\), so\n\n\\[\n\\vec{OR}=t\\vec{OP}\n\\]\n\nIt also lies on \\(AQ\\), so\n\n\\[\n\\vec{OR}=\\vec{OA}+s\\vec{AQ}\n\\]\n\n\\[\n\\vec{OR}=10\\mathbf a+s(2\\mathbf b-10\\mathbf a)\n\\]\n\n\\[\n\\vec{OR}=(10-10s)\\mathbf a+2s\\mathbf b\n\\]\n\nEquate with\n\n\\[\nt\\left(\\frac{15}{2}\\mathbf a+\\frac52\\mathbf b\\right)\n\\]\n\n\\[\n\\frac{15}{2}t=10-10s\n\\]\n\n\\[\n\\frac52t=2s\n\\]\n\nFrom the second equation,\n\n\\[\ns=\\frac54t\n\\]\n\nSubstitute:\n\n\\[\n\\frac{15}{2}t=10-\\frac{25}{2}t\n\\]\n\n\\[\n20t=10\n\\]\n\n\\[\nt=\\frac12\n\\]\n\nSo\n\n\\[\n\\vec{OR}=\\frac12\\vec{OP}\n\\]\n\n\\[\n\\vec{OR}=\\frac{15}{4}\\mathbf a+\\frac54\\mathbf b\n\\]\n\n**Answer:** \\(\\vec{AQ}=2\\mathbf b-10\\mathbf a\\), \\(\\displaystyle \\vec{OP}=\\frac{15}{2}\\mathbf a+\\frac52\\mathbf b\\), \\(\\displaystyle \\vec{OR}=\\frac{15}{4}\\mathbf a+\\frac54\\mathbf b\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q01__p03-03__m05__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe modal class is the class with the greatest frequency:\n\n\\[\n10<p\\le 15\n\\]\n\nUse midpoints \\(12.5,17.5,22.5,27.5,32.5\\).\n\n\\[\n12.5(18)+17.5(16)+22.5(14)+27.5(8)+32.5(4)=1170\n\\]\n\n\\[\n\\text{estimated mean}=\\frac{1170}{60}=19.5\n\\]\n\n**Answer:** modal class \\(10<p\\le 15\\), estimated mean \\(19.5\\) dollars.",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q18__p19-19__m04__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Histograms. The tag is correct.\n\n**Solution**\n\nEstimate the frequencies from each bar:\n\n\\[\n0\\text{ to }10:\\ 10(1.5)=15\n\\]\n\n\\[\n10\\text{ to }25:\\ 15(0.8)=12\n\\]\n\n\\[\n25\\text{ to }30:\\ 5(4)=20\n\\]\n\n\\[\n30\\text{ to }60:\\ 30(2.5)=75\n\\]\n\n\\[\n60\\text{ to }65:\\ 5(4.6)=23\n\\]\n\nTotal frequency:\n\n\\[\n15+12+20+75+23=145\n\\]\n\nBetween \\(20\\) and \\(60\\) minutes:\n\n\\[\n5(0.8)+20+75=99\n\\]\n\n\\[\n\\text{fraction}=\\frac{99}{145}\n\\]\n\n**Answer:** \\(\\frac{99}{145}\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P1H__Q13__p15-15__m04__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\n\\[\nP(\\text{not early on Saturday})=1-0.7=0.3\n\\]\n\n\\[\nP(\\text{early on both days})=0.7\\times 0.9=0.63\n\\]\n\n**Answer:** \\(0.63\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Nov2024_P1H__Q21__p22-22__m03__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation & Bounds is correct.\n\n**Method**\n\n\\[\nT=\\frac{x^2+y^2}{w}\n\\]\n\nFor the upper bound of \\(T\\), use the upper bounds of \\(x\\) and \\(y\\), and the lower bound of \\(w\\).\n\n\\(x=28.45,\\quad y=17.5,\\quad w=87.5\\)\n\n\\[\nT=\\frac{28.45^2+17.5^2}{87.5}\n\\]\n\n\\[\nT=12.7503...\n\\]\n\n**Answer:** \\(12.8\\) to 3 significant figures.",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2024_P1H__Q25__p28-28__m04__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nf(x)=2x^2-24x+7\n\\]\n\nComplete the square:\n\n\\[\nf(x)=2(x^2-12x)+7\n\\]\n\n\\[\nf(x)=2[(x-6)^2-36]+7\n\\]\n\n\\[\nf(x)=2(x-6)^2-65\n\\]\n\nLet \\(y=f(x)\\).\n\n\\[\ny=2(x-6)^2-65\n\\]\n\n\\[\ny+65=2(x-6)^2\n\\]\n\n\\[\n\\frac{y+65}{2}=(x-6)^2\n\\]\n\nSince \\(x\\ge 6\\), take the positive square root:\n\n\\[\nx-6=\\sqrt{\\frac{y+65}{2}}\n\\]\n\n\\[\nx=6+\\sqrt{\\frac{y+65}{2}}\n\\]\n\nReplace \\(y\\) by \\(x\\).\n\n**Answer:** \\(\\displaystyle f^{-1}(x)=6+\\sqrt{\\frac{x+65}{2}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2024_P1H__Q23__p24-25__m05__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Graphs of Functions.\n\n**Method**\n\nThe curve is\n\n\\[\ny=x^2-8x-9\n\\]\n\nThe line is\n\n\\[\ny=k\n\\]\n\nAt the intersection points,\n\n\\[\nx^2-8x-9=k\n\\]\n\n\\[\nx^2-8x-(9+k)=0\n\\]\n\nThe two roots are \\(p\\) and \\(q\\).\n\nFor this quadratic,\n\n\\[\np+q=8\n\\]\n\nWe are also given\n\n\\[\np-q=14\n\\]\n\nSolve the two equations:\n\n\\[\n2p=22\n\\]\n\n\\[\np=11\n\\]\n\n\\[\nq=-3\n\\]\n\nUse one root in \\(y=x^2-8x-9\\):\n\n\\[\nk=11^2-8(11)-9\n\\]\n\n\\[\nk=121-88-9\n\\]\n\n\\[\nk=24\n\\]\n\n**Answer:** \\(k=24\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2024_P1H__Q20__p21-21__m04__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Estimating Gradients to Differentiation.\n\n**Method**\n\n\\[\ny=2x^4-64x\n\\]\n\nDifferentiate:\n\n\\[\n\\frac{dy}{dx}=8x^3-64\n\\]\n\nAt the minimum point, the gradient is 0.\n\n\\[\n8x^3-64=0\n\\]\n\n\\[\n8x^3=64\n\\]\n\n\\[\nx^3=8\n\\]\n\n\\[\nx=2\n\\]\n\nFind the \\(y\\)-coordinate:\n\n\\[\ny=2(2)^4-64(2)\n\\]\n\n\\[\ny=32-128=-96\n\\]\n\nThe tangent at a minimum point is horizontal, so its equation is\n\n\\[\ny=-96\n\\]\n\n**Answer:** \\(y=-96\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2024_P1H__Q22__p23-23__m03__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe bowl is a hemispherical shell.\n\nThe volume of the metal is:\n\n\\[\n\\text{outer hemisphere volume}-\\text{inner hemisphere volume}\n\\]\n\nVolume of a hemisphere:\n\n\\[\n\\frac{2}{3}\\pi r^3\n\\]\n\nSo\n\n\\[\n\\text{metal volume}\n=\\frac{2}{3}\\pi(12)^3-\\frac{2}{3}\\pi(9)^3\n\\]\n\n\\[\n=\\frac{2}{3}\\pi(12^3-9^3)\n\\]\n\n\\[\n=\\frac{2}{3}\\pi(1728-729)\n\\]\n\n\\[\n=666\\pi\n\\]\n\n\\[\n=2092.3007\\ldots\n\\]\n\n**Answer:** \\(\\boxed{2092\\text{ cm}^3}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2024_P1H__Q24__p26-27__m06__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Vectors.\n\n**Method**\n\n\\[\n\\vec{OA}=10\\mathbf a,\\qquad \\vec{OB}=10\\mathbf b\n\\]\n\nAlso,\n\n\\[\n\\vec{AP}=\\frac14\\vec{AB}\n\\]\n\nand\n\n\\[\n\\vec{OQ}=\\frac15\\vec{OB}\n\\]\n\nFor part (i),\n\n\\[\n\\vec{OQ}=2\\mathbf b\n\\]\n\n\\[\n\\vec{AQ}=\\vec{OQ}-\\vec{OA}\n\\]\n\n\\[\n\\vec{AQ}=2\\mathbf b-10\\mathbf a\n\\]\n\nFor part (ii),\n\n\\[\n\\vec{AB}=10\\mathbf b-10\\mathbf a\n\\]\n\n\\[\n\\vec{AP}=\\frac14(10\\mathbf b-10\\mathbf a)\n\\]\n\n\\[\n\\vec{AP}=\\frac52\\mathbf b-\\frac52\\mathbf a\n\\]\n\n\\[\n\\vec{OP}=\\vec{OA}+\\vec{AP}\n\\]\n\n\\[\n\\vec{OP}=10\\mathbf a-\\frac52\\mathbf a+\\frac52\\mathbf b\n\\]\n\n\\[\n\\vec{OP}=\\frac{15}{2}\\mathbf a+\\frac52\\mathbf b\n\\]\n\nFor part (iii), \\(R\\) lies on \\(OP\\), so\n\n\\[\n\\vec{OR}=t\\vec{OP}\n\\]\n\nIt also lies on \\(AQ\\), so\n\n\\[\n\\vec{OR}=\\vec{OA}+s\\vec{AQ}\n\\]\n\n\\[\n\\vec{OR}=10\\mathbf a+s(2\\mathbf b-10\\mathbf a)\n\\]\n\n\\[\n\\vec{OR}=(10-10s)\\mathbf a+2s\\mathbf b\n\\]\n\nEquate with\n\n\\[\nt\\left(\\frac{15}{2}\\mathbf a+\\frac52\\mathbf b\\right)\n\\]\n\n\\[\n\\frac{15}{2}t=10-10s\n\\]\n\n\\[\n\\frac52t=2s\n\\]\n\nFrom the second equation,\n\n\\[\ns=\\frac54t\n\\]\n\nSubstitute:\n\n\\[\n\\frac{15}{2}t=10-\\frac{25}{2}t\n\\]\n\n\\[\n20t=10\n\\]\n\n\\[\nt=\\frac12\n\\]\n\nSo\n\n\\[\n\\vec{OR}=\\frac12\\vec{OP}\n\\]\n\n\\[\n\\vec{OR}=\\frac{15}{4}\\mathbf a+\\frac54\\mathbf b\n\\]\n\n**Answer:** \\(\\vec{AQ}=2\\mathbf b-10\\mathbf a\\), \\(\\displaystyle \\vec{OP}=\\frac{15}{2}\\mathbf a+\\frac52\\mathbf b\\), \\(\\displaystyle \\vec{OR}=\\frac{15}{4}\\mathbf a+\\frac54\\mathbf b\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

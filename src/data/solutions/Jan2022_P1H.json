@@ -1,0 +1,179 @@
+{
+  "paperSlug": "Jan2022_P1H",
+  "solutions": {
+    "all::Jan2022_P1H__Q07__p08-08__m03__Set-Notation-and-Venn-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Set notation and Venn diagrams. The tag is correct.\n\n**Method**\n\n\\[\n\\mathcal{E}=\\{4,5,6,7,8,9,10,11,12,13,14,15\\}\n\\]\n\nWe are given\n\n\\[\nA\\cap B=\\{5,10,15\\}\n\\]\n\nAlso,\n\n\\[\nB'=\\{7,8,9,11,12,13,14\\}\n\\]\n\nso\n\n\\[\nB=\\{4,5,6,10,15\\}\n\\]\n\nAnd\n\n\\[\nA'=\\{4,6,7,8,14\\}\n\\]\n\nso\n\n\\[\nA=\\{5,9,10,11,12,13,15\\}\n\\]\n\nTherefore the Venn diagram regions are:\n\n- \\(A\\cap B:\\ \\{5,10,15\\}\\)\n- \\(A\\) only: \\(\\{9,11,12,13\\}\\)\n- \\(B\\) only: \\(\\{4,6\\}\\)\n- outside both sets: \\(\\{7,8,14\\}\\)\n\n**Answer:** Put \\(\\{5,10,15\\}\\) in the overlap, \\(\\{9,11,12,13\\}\\) in \\(A\\) only, \\(\\{4,6\\}\\) in \\(B\\) only, and \\(\\{7,8,14\\}\\) outside.",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q08__p08-08__m02__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\na=4.2\\times 10^{-24}\n\\]\n\n\\[\nb=3\\times 10^{145}\n\\]\n\nSo\n\n\\[\nab=(4.2\\times 3)\\times 10^{-24+145}\n\\]\n\n\\[\nab=12.6\\times 10^{121}\n\\]\n\nWrite this in standard form:\n\n\\[\n12.6\\times 10^{121}=1.26\\times 10^{122}\n\\]\n\n**Answer:** \\(\\displaystyle 1.26\\times 10^{122}\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q04__p05-05__m05__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nSmall mugs:\n\n\\[\n\\frac25\\times 150=60\n\\]\n\nMedium mugs:\n\n\\[\n32\\%\\times 150=48\n\\]\n\nLarge mugs:\n\n\\[\n150-60-48=42\n\\]\n\nRevenue:\n\n\\[\n60(8.50)+48(11.20)+42(14.20)\n\\]\n\n\\[\n=510+537.60+596.40=1644\n\\]\n\nProfit:\n\n\\[\n1644-1140=504\n\\]\n\nPercentage profit:\n\n\\[\n\\frac{504}{1140}\\times 100=44.21\\ldots\n\\]\n\nCorrect to the nearest whole number:\n\n\\[\n44\\%\n\\]\n\n**Answer:** \\(44\\%\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q11__p11-11__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nThe first-year multiplier is\n\n\\[\n1.018\n\\]\n\nThe second and third years both have multiplier \\(1+\\frac{x}{100}\\), so\n\n\\[\n200000(1.018)\\left(1+\\frac{x}{100}\\right)^2=209754\n\\]\n\n\\[\n\\left(1+\\frac{x}{100}\\right)^2=\\frac{209754}{200000(1.018)}\n\\]\n\n\\[\n1+\\frac{x}{100}=1.015000\\ldots\n\\]\n\n\\[\nx=1.5000\\ldots\n\\]\n\n**Answer:** \\(x=1.5\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q18__p19-19__m03__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\n\\[\nA=w-\\frac{x^2}{y}\n\\]\n\nFor the lower bound, use the lower bound of \\(w\\), and make \\(\\frac{x^2}{y}\\) as large as possible.\n\n\\[\nw\\ge 3.445,\\quad x<1.95,\\quad y\\ge 4.5\n\\]\n\n\\[\nA_{\\text{lower}}=3.445-\\frac{1.95^2}{4.5}\n\\]\n\n\\[\nA_{\\text{lower}}=2.6\n\\]\n\n**Answer:** \\(2.6\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q02__p04-04__m03__Ratio-Problem-Solving": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Ratio Problem Solving. This is a ratio from a difference, not exchange rates.\n\n**Method**\n\nThe ratio is\n\n\\[\n\\text{Danil} : \\text{Gabriel} : \\text{Hadley}=3:5:9\n\\]\n\nThe difference between Gabriel and Hadley is\n\n\\[\n9-5=4 \\text{ parts}\n\\]\n\nThese 4 parts are \\(196\\) euros, so one part is\n\n\\[\n196 \\div 4=49\n\\]\n\nDanil has 3 parts:\n\n\\[\n3\\times 49=147\n\\]\n\n**Answer:** Danil receives \\(147\\) euros.",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q15__p16-16__m03__Direct-and-Inverse-Proportion": {
+      "status": "checked",
+      "source": "**Topic check:** Direct and Inverse Proportion. The tag is correct.\n\n**Method**\n\n\\(A\\) is inversely proportional to \\(C^2\\), so\n\n\\[\nA=\\frac{k}{C^2}\n\\]\n\nUse \\(A=40\\) when \\(C=1.5\\):\n\n\\[\n40=\\frac{k}{1.5^2}\n\\]\n\n\\[\nk=40\\times 1.5^2=90\n\\]\n\nSo\n\n\\[\nA=\\frac{90}{C^2}\n\\]\n\nWhen \\(A=1000\\),\n\n\\[\n1000=\\frac{90}{C^2}\n\\]\n\n\\[\nC^2=0.09\n\\]\n\n\\[\nC=0.3\n\\]\n\n**Answer:** \\(C=0.3\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q01__p03-03__m06__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to algebraic roots and indices. Index laws carry most of the marks.\n\n**Solution**\n\n(a)\n\\[\na^7\\times a^4=a^{11}\n\\]\n\n(b)\n\\[\nw^{15}\\div w^3=w^{12}\n\\]\n\n(c)\n\\[\n(8x^5y^3)^2=64x^{10}y^6\n\\]\n\n(d)\n\\[\nc=t^3-8v\n\\]\n\n\\[\nt^3=c+8v\n\\]\n\n**Answer:** \\(a^{11}\\), \\(w^{12}\\), \\(64x^{10}y^6\\), \\(t=\\sqrt[3]{c+8v}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q13__p14-14__m06__Expanding-Brackets": {
+      "status": "checked",
+      "source": "**Topic check:** Expanding brackets. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n5x(x+2)(3x-4)=5x(3x^2+2x-8)\n\\]\n\n\\[\n=15x^3+10x^2-40x\n\\]\n\n(b)\n\\[\n\\left(\\frac{16w^8}{y^{20}}\\right)^{-3/4}\n=16^{-3/4}w^{-6}y^{15}\n\\]\n\nSince \\(16^{3/4}=8\\),\n\\[\n=\\frac{y^{15}}{8w^6}\n\\]\n\n**Answer:** (a) \\(15x^3+10x^2-40x\\), (b) \\(\\frac{y^{15}}{8w^6}\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q06__p07-07__m05__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n5x-7<2\n\\]\n\n\\[\n5x<9\n\\]\n\n\\[\nx<\\frac95\n\\]\n\n(b)(i)\n\\[\ny^2-2y-35=(y-7)(y+5)\n\\]\n\n(b)(ii) \\(y=7\\) or \\(y=-5\\).\n\n**Answer:** (a) \\(x<\\frac95\\), (b)(i) \\((y-7)(y+5)\\), (b)(ii) \\(y=7\\) or \\(y=-5\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q20__p21-21__m04__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n(a)\n\n\\[\n7+12x-3x^2=-3x^2+12x+7\n\\]\n\n\\[\n=-3(x^2-4x)+7\n\\]\n\n\\[\n=-3\\left((x-2)^2-4\\right)+7\n\\]\n\n\\[\n=19-3(x-2)^2\n\\]\n\nThis is the same as\n\n\\[\n19-3(x+(-2))^2\n\\]\n\n(b) The maximum point is read from the completed square form.\n\n\\[\ny=19-3(x-2)^2\n\\]\n\nThe maximum occurs when \\(x=2\\), giving \\(y=19\\).\n\n**Answer:** (a) \\(19-3(x-2)^2\\), (b) \\(A=(2,19)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q19__p20-20__m05__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\n\\[\n3x^2+y^2-xy=5\n\\]\n\n\\[\ny=2x-3\n\\]\n\nSubstitute \\(y=2x-3\\):\n\\[\n3x^2+(2x-3)^2-x(2x-3)=5\n\\]\n\n\\[\n3x^2+4x^2-12x+9-2x^2+3x=5\n\\]\n\n\\[\n5x^2-9x+9=5\n\\]\n\n\\[\n5x^2-9x+4=0\n\\]\n\nFactorise:\n\\[\n(5x-4)(x-1)=0\n\\]\n\nSo\n\\[\nx=\\frac45 \\quad \\text{or} \\quad x=1\n\\]\n\nIf \\(x=\\frac45\\):\n\\[\ny=2\\left(\\frac45\\right)-3=-\\frac75\n\\]\n\nIf \\(x=1\\):\n\\[\ny=2(1)-3=-1\n\\]\n\n**Answer:** \\((x,y)=\\left(\\frac45,-\\frac75\\right)\\) or \\((1,-1)\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q10__p10-10__m03__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Coordinate geometry. The tag is correct.\n\n**Solution**\n\nThe line is\n\\[\n2y+7x=10\n\\]\n\n\\[\n2y=-7x+10\n\\]\n\n\\[\ny=-\\frac72x+5\n\\]\n\nSo the gradient is\n\\[\n-\\frac72\n\\]\n\nFor the x-axis, \\(y=0\\):\n\\[\n2(0)+7x=10\n\\]\n\n\\[\nx=\\frac{10}{7}\n\\]\n\n**Answer:** Gradient \\(-\\frac72\\), and x-axis intersection \\(\\left(\\frac{10}{7},0\\right)\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q23__p26-26__m02__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe maximum point of \\(y=f(x)\\) is \\((5,7)\\).\n\nFor\n\n\\[\ny=f(x+9)\n\\]\n\nthe graph moves 9 units left:\n\n\\[\n(5,7)\\to(-4,7)\n\\]\n\nFor\n\n\\[\ny=f(x)+3\n\\]\n\nthe graph moves 3 units up:\n\n\\[\n(5,7)\\to(5,10)\n\\]\n\n**Answer:** \\((-4,7)\\) and \\((5,10)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q24__p27-27__m06__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\ny=ax^3+bx^2-12x+6\n\\]\n\nPoint \\(A=(2,-6)\\) lies on the curve:\n\n\\[\n-6=8a+4b-24+6\n\\]\n\n\\[\n8a+4b=12\n\\]\n\n\\[\n2a+b=3\n\\]\n\nDifferentiate:\n\n\\[\n\\frac{dy}{dx}=3ax^2+2bx-12\n\\]\n\nThe gradient at \\(x=2\\) is 16:\n\n\\[\n16=12a+4b-12\n\\]\n\n\\[\n12a+4b=28\n\\]\n\n\\[\n3a+b=7\n\\]\n\nNow solve\n\n\\[\n2a+b=3\n\\]\n\n\\[\n3a+b=7\n\\]\n\nSubtracting gives\n\n\\[\na=4\n\\]\n\nThen\n\n\\[\n2(4)+b=3\n\\]\n\n\\[\nb=-5\n\\]\n\nFor \\(x=3\\),\n\n\\[\ny=4(3)^3-5(3)^2-12(3)+6\n\\]\n\n\\[\ny=108-45-36+6\n\\]\n\n\\[\ny=33\n\\]\n\n**Answer:** \\(y=33\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q16__p17-17__m04__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Circles, Arcs & Sectors. The tag is correct.\n\n**Solution**\n\nThe arc length is \\(5\\text{ cm}\\), and the angle is \\(55^\\circ\\).\n\n\\[\n5=\\frac{55}{360}\\times 2\\pi r\n\\]\n\n\\[\nr=5.208\\ldots\n\\]\n\nArea of the circle:\n\\[\n\\pi r^2=\\pi(5.208\\ldots)^2=85.233\\ldots\n\\]\n\n**Answer:** \\(85.2\\text{ cm}^2\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q17__p18-18__m04__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Volume of Similar Shapes. The tag is correct.\n\n**Solution**\n\nThe linear scale factor from vase \\(A\\) to vase \\(B\\) is\n\\[\n\\frac{15}{10}=1.5\n\\]\n\nSo the volume scale factor is\n\\[\n1.5^3=3.375\n\\]\n\nLet the volume of vase \\(A\\) be \\(V\\).\n\n\\[\n3.375V-V=1197\n\\]\n\n\\[\n2.375V=1197\n\\]\n\n\\[\nV=504\n\\]\n\n**Answer:** \\(504\\text{ cm}^3\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q03__p04-04__m03__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Right-Angled Triangles - Pythagoras & Trigonometry. This is a right-angled trigonometry problem.\n\n**Solution**\n\nSide \\(AB\\) is opposite the \\(65^\\circ\\) angle, and \\(AC=8.4\\text{ cm}\\) is the hypotenuse.\n\n\\[\n\\sin 65^\\circ=\\frac{AB}{8.4}\n\\]\n\n\\[\nAB=8.4\\sin 65^\\circ=7.613\\ldots\n\\]\n\n**Answer:** \\(7.61\\text{ cm}\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q09__p09-09__m04__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Sine, Cosine Rule & Area of Triangles. The tag is correct.\n\n**Solution**\n\nSplit the isosceles triangle into two right-angled triangles.\n\n\\[\n\\frac{BC}{2}=14\n\\]\n\n\\[\nh^2=17.5^2-14^2=110.25\n\\]\n\n\\[\nh=10.5\n\\]\n\n\\[\n\\text{area}=\\frac12\\times 28\\times 10.5=147\n\\]\n\n**Answer:** \\(147\\text{ cm}^2\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q21__p22-23__m05__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to 3D Pythagoras & Trigonometry.\n\n**Method**\n\nLet\n\n\\[\nAE=x\n\\]\n\nSince \\(ABDE\\) is a square,\n\n\\[\nAB=BD=DE=AE=x\n\\]\n\nSince \\(BCD\\) is an equilateral triangle, the height from \\(C\\) to \\(BD\\) is\n\n\\[\n\\frac{\\sqrt3}{2}x\n\\]\n\nTherefore the vertical height from the base to \\(J\\) is\n\n\\[\nJM=x+\\frac{\\sqrt3}{2}x\n\\]\n\n\\[\nJM=\\frac{x(2+\\sqrt3)}{2}\n\\]\n\nAlso,\n\n\\[\nEF=2AE=2x\n\\]\n\nSince \\(M\\) is the midpoint of \\(GF\\), the horizontal distance from \\(A\\) to \\(M\\) is\n\n\\[\nAM=\\sqrt{\\left(\\frac{x}{2}\\right)^2+(2x)^2}\n\\]\n\n\\[\nAM=\\sqrt{\\frac{x^2}{4}+4x^2}\n\\]\n\n\\[\nAM=\\frac{x\\sqrt{17}}{2}\n\\]\n\nIn right triangle \\(AMJ\\),\n\n\\[\n\\tan y^\\circ=\\frac{JM}{AM}\n\\]\n\n\\[\nT=\\frac{\\frac{x(2+\\sqrt3)}{2}}{\\frac{x\\sqrt{17}}{2}}\n\\]\n\n\\[\nT=\\frac{2+\\sqrt3}{\\sqrt{17}}\n\\]\n\nRationalise the denominator:\n\n\\[\nT=\\frac{(2+\\sqrt3)\\sqrt{17}}{17}\n\\]\n\n\\[\nT=\\frac{2\\sqrt{17}+\\sqrt{51}}{17}\n\\]\n\n\\[\nT=\\frac{\\sqrt{68}+\\sqrt{51}}{17}\n\\]\n\n**Answer:** \\(\\displaystyle T=\\frac{\\sqrt{68}+\\sqrt{51}}{17}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q22__p24-25__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Vectors.\n\n**Method**\n\n\\[\n\\vec{OA}=8\\mathbf a,\\qquad \\vec{OB}=6\\mathbf b\n\\]\n\nSince \\(OM:MB=1:2\\),\n\n\\[\n\\vec{OM}=\\frac13\\vec{OB}\n\\]\n\n\\[\n\\vec{OM}=2\\mathbf b\n\\]\n\nSince \\(N\\) is the midpoint of \\(AB\\),\n\n\\[\n\\vec{ON}=\\frac{8\\mathbf a+6\\mathbf b}{2}\n\\]\n\n\\[\n\\vec{ON}=4\\mathbf a+3\\mathbf b\n\\]\n\nPoint \\(P\\) lies on \\(ON\\), so\n\n\\[\n\\vec{OP}=\\lambda(4\\mathbf a+3\\mathbf b)\n\\]\n\nPoint \\(P\\) also lies on \\(AM\\), so\n\n\\[\n\\vec{OP}=8\\mathbf a+\\mu(2\\mathbf b-8\\mathbf a)\n\\]\n\n\\[\n\\vec{OP}=(8-8\\mu)\\mathbf a+2\\mu\\mathbf b\n\\]\n\nEquate coefficients:\n\n\\[\n4\\lambda=8-8\\mu\n\\]\n\n\\[\n3\\lambda=2\\mu\n\\]\n\nFrom \\(3\\lambda=2\\mu\\),\n\n\\[\n\\mu=\\frac32\\lambda\n\\]\n\nSubstitute:\n\n\\[\n4\\lambda=8-8\\left(\\frac32\\lambda\\right)\n\\]\n\n\\[\n4\\lambda=8-12\\lambda\n\\]\n\n\\[\n16\\lambda=8\n\\]\n\n\\[\n\\lambda=\\frac12\n\\]\n\nTherefore\n\n\\[\n\\vec{OP}=\\frac12(4\\mathbf a+3\\mathbf b)\n\\]\n\n\\[\n\\vec{OP}=2\\mathbf a+\\frac32\\mathbf b\n\\]\n\n**Answer:** \\(\\displaystyle \\vec{OP}=2\\mathbf a+\\frac32\\mathbf b\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q05__p06-06__m06__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nOne possible ordered set is\n\n\\[\n5,\\ 8,\\ 8,\\ 20,\\ 21,\\ 24\n\\]\n\nCheck:\n\n\\[\n\\text{median}=\\frac{8+20}{2}=14\n\\]\n\nThe mode is \\(8\\), the smallest number is \\(5\\), and the largest number is \\(24\\).\n\nFor the basketball scores:\n\n\\[\n5 \\times 21=105\n\\]\n\n\\[\n6 \\times 23=138\n\\]\n\n\\[\n138-105=33\n\\]\n\n**Answers:** \\(5,8,8,20,21,24\\) and \\(33\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q12__p12-13__m06__Cumulative-Frequency-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nComplete the cumulative frequencies:\n\n\\[\n7,\\ 33,\\ 57,\\ 71,\\ 78,\\ 80\n\\]\n\nPlot the points\n\n\\[\n(0,0),(10,7),(20,33),(30,57),(40,71),(50,78),(60,80)\n\\]\n\nThe median is at cumulative frequency \\(40\\).\n\nThis is between \\((20,33)\\) and \\((30,57)\\):\n\n\\[\n20+\\frac{40-33}{57-33}\\times 10=22.9\n\\]\n\nSo the median is about \\(23\\) minutes.\n\nAt \\(42\\) minutes:\n\n\\[\n71+\\frac{2}{10}(78-71)=72.4\n\\]\n\nNumber taking more than \\(42\\) minutes:\n\n\\[\n80-72.4=7.6\n\\]\n\n\\[\nP(t>42)\\approx \\frac{7.6}{80}=0.095\n\\]\n\n**Answers:** cumulative frequencies \\(7,33,57,71,78,80\\), median about \\(23\\) minutes, probability about \\(0.095\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P1H__Q14__p15-15__m04__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nPacket A:\n\n\\[\nP(\\text{sunflower})=\\frac{7}{12}\n\\]\n\nPacket B:\n\n\\[\nP(\\text{sunflower})=\\frac{8}{15}\n\\]\n\nSo\n\n\\[\nP(\\text{two sunflower seeds})=\\frac{7}{12}\\times\\frac{8}{15}\n\\]\n\n\\[\n=\\frac{14}{45}\n\\]\n\n**Answer:** \\(\\frac{14}{45}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jan2022_P1H__Q20__p21-21__m04__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n(a)\n\n\\[\n7+12x-3x^2=-3x^2+12x+7\n\\]\n\n\\[\n=-3(x^2-4x)+7\n\\]\n\n\\[\n=-3\\left((x-2)^2-4\\right)+7\n\\]\n\n\\[\n=19-3(x-2)^2\n\\]\n\nThis is the same as\n\n\\[\n19-3(x+(-2))^2\n\\]\n\n(b) The maximum point is read from the completed square form.\n\n\\[\ny=19-3(x-2)^2\n\\]\n\nThe maximum occurs when \\(x=2\\), giving \\(y=19\\).\n\n**Answer:** (a) \\(19-3(x-2)^2\\), (b) \\(A=(2,19)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P1H__Q23__p26-26__m02__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe maximum point of \\(y=f(x)\\) is \\((5,7)\\).\n\nFor\n\n\\[\ny=f(x+9)\n\\]\n\nthe graph moves 9 units left:\n\n\\[\n(5,7)\\to(-4,7)\n\\]\n\nFor\n\n\\[\ny=f(x)+3\n\\]\n\nthe graph moves 3 units up:\n\n\\[\n(5,7)\\to(5,10)\n\\]\n\n**Answer:** \\((-4,7)\\) and \\((5,10)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P1H__Q24__p27-27__m06__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\ny=ax^3+bx^2-12x+6\n\\]\n\nPoint \\(A=(2,-6)\\) lies on the curve:\n\n\\[\n-6=8a+4b-24+6\n\\]\n\n\\[\n8a+4b=12\n\\]\n\n\\[\n2a+b=3\n\\]\n\nDifferentiate:\n\n\\[\n\\frac{dy}{dx}=3ax^2+2bx-12\n\\]\n\nThe gradient at \\(x=2\\) is 16:\n\n\\[\n16=12a+4b-12\n\\]\n\n\\[\n12a+4b=28\n\\]\n\n\\[\n3a+b=7\n\\]\n\nNow solve\n\n\\[\n2a+b=3\n\\]\n\n\\[\n3a+b=7\n\\]\n\nSubtracting gives\n\n\\[\na=4\n\\]\n\nThen\n\n\\[\n2(4)+b=3\n\\]\n\n\\[\nb=-5\n\\]\n\nFor \\(x=3\\),\n\n\\[\ny=4(3)^3-5(3)^2-12(3)+6\n\\]\n\n\\[\ny=108-45-36+6\n\\]\n\n\\[\ny=33\n\\]\n\n**Answer:** \\(y=33\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P1H__Q21__p22-23__m05__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to 3D Pythagoras & Trigonometry.\n\n**Method**\n\nLet\n\n\\[\nAE=x\n\\]\n\nSince \\(ABDE\\) is a square,\n\n\\[\nAB=BD=DE=AE=x\n\\]\n\nSince \\(BCD\\) is an equilateral triangle, the height from \\(C\\) to \\(BD\\) is\n\n\\[\n\\frac{\\sqrt3}{2}x\n\\]\n\nTherefore the vertical height from the base to \\(J\\) is\n\n\\[\nJM=x+\\frac{\\sqrt3}{2}x\n\\]\n\n\\[\nJM=\\frac{x(2+\\sqrt3)}{2}\n\\]\n\nAlso,\n\n\\[\nEF=2AE=2x\n\\]\n\nSince \\(M\\) is the midpoint of \\(GF\\), the horizontal distance from \\(A\\) to \\(M\\) is\n\n\\[\nAM=\\sqrt{\\left(\\frac{x}{2}\\right)^2+(2x)^2}\n\\]\n\n\\[\nAM=\\sqrt{\\frac{x^2}{4}+4x^2}\n\\]\n\n\\[\nAM=\\frac{x\\sqrt{17}}{2}\n\\]\n\nIn right triangle \\(AMJ\\),\n\n\\[\n\\tan y^\\circ=\\frac{JM}{AM}\n\\]\n\n\\[\nT=\\frac{\\frac{x(2+\\sqrt3)}{2}}{\\frac{x\\sqrt{17}}{2}}\n\\]\n\n\\[\nT=\\frac{2+\\sqrt3}{\\sqrt{17}}\n\\]\n\nRationalise the denominator:\n\n\\[\nT=\\frac{(2+\\sqrt3)\\sqrt{17}}{17}\n\\]\n\n\\[\nT=\\frac{2\\sqrt{17}+\\sqrt{51}}{17}\n\\]\n\n\\[\nT=\\frac{\\sqrt{68}+\\sqrt{51}}{17}\n\\]\n\n**Answer:** \\(\\displaystyle T=\\frac{\\sqrt{68}+\\sqrt{51}}{17}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P1H__Q22__p24-25__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Vectors.\n\n**Method**\n\n\\[\n\\vec{OA}=8\\mathbf a,\\qquad \\vec{OB}=6\\mathbf b\n\\]\n\nSince \\(OM:MB=1:2\\),\n\n\\[\n\\vec{OM}=\\frac13\\vec{OB}\n\\]\n\n\\[\n\\vec{OM}=2\\mathbf b\n\\]\n\nSince \\(N\\) is the midpoint of \\(AB\\),\n\n\\[\n\\vec{ON}=\\frac{8\\mathbf a+6\\mathbf b}{2}\n\\]\n\n\\[\n\\vec{ON}=4\\mathbf a+3\\mathbf b\n\\]\n\nPoint \\(P\\) lies on \\(ON\\), so\n\n\\[\n\\vec{OP}=\\lambda(4\\mathbf a+3\\mathbf b)\n\\]\n\nPoint \\(P\\) also lies on \\(AM\\), so\n\n\\[\n\\vec{OP}=8\\mathbf a+\\mu(2\\mathbf b-8\\mathbf a)\n\\]\n\n\\[\n\\vec{OP}=(8-8\\mu)\\mathbf a+2\\mu\\mathbf b\n\\]\n\nEquate coefficients:\n\n\\[\n4\\lambda=8-8\\mu\n\\]\n\n\\[\n3\\lambda=2\\mu\n\\]\n\nFrom \\(3\\lambda=2\\mu\\),\n\n\\[\n\\mu=\\frac32\\lambda\n\\]\n\nSubstitute:\n\n\\[\n4\\lambda=8-8\\left(\\frac32\\lambda\\right)\n\\]\n\n\\[\n4\\lambda=8-12\\lambda\n\\]\n\n\\[\n16\\lambda=8\n\\]\n\n\\[\n\\lambda=\\frac12\n\\]\n\nTherefore\n\n\\[\n\\vec{OP}=\\frac12(4\\mathbf a+3\\mathbf b)\n\\]\n\n\\[\n\\vec{OP}=2\\mathbf a+\\frac32\\mathbf b\n\\]\n\n**Answer:** \\(\\displaystyle \\vec{OP}=2\\mathbf a+\\frac32\\mathbf b\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

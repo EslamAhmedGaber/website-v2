@@ -1,0 +1,191 @@
+{
+  "paperSlug": "May2023_P1HR",
+  "solutions": {
+    "all::May2023_P1HR__Q02__p04-04__m03__Set-Notation-and-Venn-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Set notation and Venn diagrams. The tag is correct.\n\n**Method**\n\nThe numbers inside \\(A\\) are the numbers in the \\(A\\)-only region and the overlap with \\(B\\):\n\n\\[\nA=\\{5,7,11,13\\}\n\\]\n\n\\(B\\cup C\\) means every number inside \\(B\\) or \\(C\\):\n\n\\[\nB\\cup C=\\{5,6,8,10,12,14,15\\}\n\\]\n\nDominic writes \\(9\\notin C\\). This is correct because \\(9\\) is outside circle \\(C\\) in the Venn diagram.\n\n**Answer:** (a)(i) \\(\\{5,7,11,13\\}\\), (a)(ii) \\(\\{5,6,8,10,12,14,15\\}\\). Dominic is correct because \\(9\\) is not in \\(C\\).",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q01__p03-03__m03__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\n2250=225\\times 10\n\\]\n\n\\[\n225=3^2\\times 5^2,\\qquad 10=2\\times 5\n\\]\n\nSo\n\n\\[\n2250=3^2\\times 5^2\\times 2\\times 5\n\\]\n\n\\[\n2250=2\\times 3^2\\times 5^3\n\\]\n\n**Answer:** \\(\\displaystyle 2\\times 3^2\\times 5^3\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q08__p08-08__m03__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n5.6\\times 10^{-3}=0.0056\n\\]\n\nFor part (b), simplify the denominator:\n\n\\[\n2.1\\times 10^{-4}+9\\times 10^{-5}\n=0.00021+0.00009\n\\]\n\n\\[\n=0.00030=3\\times 10^{-4}\n\\]\n\nThen\n\n\\[\n\\frac{6\\times 10^3}{3\\times 10^{-4}}\n=2\\times 10^{3-(-4)}\n\\]\n\n\\[\n=2\\times 10^7\n\\]\n\n**Answer:** (a) \\(0.0056\\), (b) \\(2\\times 10^7\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q09__p09-09__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nA depreciation of \\(12\\%\\) gives multiplier\n\n\\[\n0.88\n\\]\n\nAfter 3 years,\n\n\\[\n700000(0.88)^3=477030.4\n\\]\n\nCorrect to the nearest taka,\n\n\\[\n477030.4\\approx 477030\n\\]\n\n**Answer:** \\(477030\\) taka",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q18__p18-18__m04__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\nThe fence length \\(50\\) m correct to the nearest \\(5\\) m has bounds\n\n\\[\n47.5\\le L<52.5\n\\]\n\nThe panel length \\(1.3\\) m correct to the nearest \\(10\\) cm has bounds\n\n\\[\n1.25\\le p<1.35\n\\]\n\nSmallest possible number of panels:\n\n\\[\n\\left\\lceil \\frac{47.5}{1.35}\\right\\rceil=36\n\\]\n\nGreatest possible number of panels:\n\n\\[\n\\left\\lceil \\frac{52.5}{1.25}\\right\\rceil=42\n\\]\n\nDifference in number of panels:\n\n\\[\n42-36=6\n\\]\n\nGreatest difference in cost:\n\n\\[\n6\\times 8.65=51.90\n\\]\n\n**Answer:** \\(51.90\\) pounds",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q17__p17-17__m04__Direct-and-Inverse-Proportion": {
+      "status": "checked",
+      "source": "**Topic check:** Direct and Inverse Proportion. The tag is correct.\n\n**Method**\n\n\\(F\\) is inversely proportional to \\(r^2\\), so\n\n\\[\nF=\\frac{k}{r^2}\n\\]\n\nUse \\(F=36\\) when \\(r=4\\):\n\n\\[\n36=\\frac{k}{4^2}\n\\]\n\n\\[\nk=36\\times 16=576\n\\]\n\nSo\n\n\\[\nF=\\frac{576}{r^2}\n\\]\n\nWhen \\(r=48\\),\n\n\\[\nF=\\frac{576}{48^2}=\\frac{576}{2304}=0.25\n\\]\n\n**Answer:** \\(F=\\frac{576}{r^2}\\), and \\(F=0.25\\) when \\(r=48\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q06__p07-07__m04__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic roots and indices. The tag is correct.\n\n**Solution**\n\n(a) \\(m^{10}\\div m^3=m^{10-3}=m^7\\).\n\n(b) \\(k^n\\times k^4=k^{n+4}=k^{12}\\), so \\(n+4=12\\) and \\(n=8\\).\n\n(c) \\((3x^6y^8)^2=3^2x^{12}y^{16}=9x^{12}y^{16}\\).\n\n**Answer:** (a) \\(m^7\\), (b) \\(8\\), (c) \\(9x^{12}y^{16}\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q24__p25-25__m05__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic roots and indices. The tag is correct.\n\n**Solution**\n\n\\[\n16^x=2^{4x}, \\qquad 8=2^3\n\\]\n\nSo\n\\[\n2^n=2^{x^2}\\times2^{4x}\\times2^3=2^{x^2+4x+3}\n\\]\n\nHence\n\\[\nn=x^2+4x+3=(x+2)^2-1\n\\]\n\n\\[\n(x+2)^2=n+1\n\\]\n\nSince \\(x>0\\),\n\\[\nx+2=\\sqrt{n+1}\n\\]\n\n\\[\nx=-2+\\sqrt{n+1}\n\\]\n\nFor \\(x>0\\), \\(\\sqrt{n+1}>2\\), so \\(n>3\\).\n\n**Answer:** \\(x=-2+\\sqrt{n+1}\\), \\(n>3\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q07__p08-08__m03__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to factorising. The original tag was expanding brackets, but factorising carries more marks.\n\n**Solution**\n\n(a)\n\\[\n4x(x-5)=4x^2-20x\n\\]\n\n(b)\n\\[\ny^2-9y+20=(y-4)(y-5)\n\\]\n\n**Answer:** (a) \\(4x^2-20x\\), (b) \\((y-4)(y-5)\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q23__p24-24__m04__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Surds to Algebraic Fractions.\n\n**Method**\n\n\\[\n(x^2-4)\\div \\left(\\frac{4x^2-7x-2}{x}\\right)-2x\n\\]\n\nChange division into multiplication by the reciprocal:\n\n\\[\n(x^2-4)\\times \\frac{x}{4x^2-7x-2}-2x\n\\]\n\nFactorise:\n\n\\[\nx^2-4=(x-2)(x+2)\n\\]\n\n\\[\n4x^2-7x-2=(4x+1)(x-2)\n\\]\n\nSo\n\n\\[\n\\frac{x(x-2)(x+2)}{(4x+1)(x-2)}-2x\n=\\frac{x(x+2)}{4x+1}-2x\n\\]\n\n\\[\n\\frac{x(x+2)-2x(4x+1)}{4x+1}\n=\\frac{x^2+2x-8x^2-2x}{4x+1}\n=\\frac{-7x^2}{4x+1}\n\\]\n\n**Answer:** \\(\\dfrac{-7x^2}{4x+1}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q16__p17-17__m02__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\nLet\n\\[\nx=0.1767676\\ldots\n\\]\n\nThen\n\\[\n10x=1.767676\\ldots\n\\]\n\nand\n\\[\n1000x=176.767676\\ldots\n\\]\n\nSubtract:\n\\[\n990x=175\n\\]\n\n\\[\nx=\\frac{175}{990}=\\frac{35}{198}\n\\]\n\n**Answer:** \\(0.1767676\\ldots=\\dfrac{35}{198}\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q20__p20-20__m07__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe maximum point of \\(y=f(x)\\) is \\((3,5)\\).\n\nFor\n\n\\[\ny=2f(x)\n\\]\n\nthe \\(y\\)-coordinate is multiplied by 2:\n\n\\[\n(3,5)\\to(3,10)\n\\]\n\nFor\n\n\\[\ny=f(x)-7\n\\]\n\nthe graph moves 7 units down:\n\n\\[\n(3,5)\\to(3,-2)\n\\]\n\nFor\n\n\\[\ny=f(-x)\n\\]\n\nthe graph reflects in the \\(y\\)-axis:\n\n\\[\n(3,5)\\to(-3,5)\n\\]\n\nFor part (b),\n\n\\[\ny=x^2+7x+20\n\\]\n\nThe translation vector is\n\n\\[\n\\begin{pmatrix}2\\\\0\\end{pmatrix}\n\\]\n\nSo the graph moves 2 units right.\n\nReplace \\(x\\) by \\(x-2\\):\n\n\\[\ny=(x-2)^2+7(x-2)+20\n\\]\n\n\\[\ny=x^2+3x+10\n\\]\n\n**Answer:** \\((3,10)\\), \\((3,-2)\\), \\((-3,5)\\), and \\(y=x^2+3x+10\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q21__p21-21__m06__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Functions to Differentiation.\n\n**Method**\n\n(a)\n\n\\[\ny=x^3-2x^2-9x+15\n\\]\n\n\\[\n\\frac{dy}{dx}=3x^2-4x-9\n\\]\n\n(b) The curve has a positive gradient when\n\n\\[\n3x^2-4x-9>0\n\\]\n\nSolve\n\n\\[\n3x^2-4x-9=0\n\\]\n\n\\[\nx=\\frac{4\\pm\\sqrt{16+108}}{6}\n\\]\n\n\\[\nx=\\frac{2\\pm\\sqrt{31}}{3}\n\\]\n\nTo 3 significant figures, the roots are\n\n\\[\nx=-1.19,\\quad x=2.52\n\\]\n\nSince the quadratic opens upwards, it is positive outside the roots.\n\n**Answer:** (a) \\(\\dfrac{dy}{dx}=3x^2-4x-9\\), (b) \\(x<-1.19\\) or \\(x>2.52\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q11__p11-11__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Standard & Compound Units.\n\n**Solution**\n\n\\[\n\\text{density}=\\frac{\\text{mass}}{\\text{volume}}\n\\]\n\n\\[\n7.8=\\frac{1950}{\\text{volume}}\n\\]\n\n\\[\n\\text{volume}=\\frac{1950}{7.8}=250\\text{ cm}^3\n\\]\n\nFor the cuboid,\n\n\\[\nw\\times 5\\times 4=250\n\\]\n\n\\[\n20w=250\n\\]\n\n\\[\nw=12.5\n\\]\n\n**Answer:** \\(w=12.5\\text{ cm}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q15__p16-16__m04__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Angles in Polygons & Parallel Lines. The tag is correct.\n\n**Solution**\n\nThe sum of the interior angles of a hexagon is\n\\[\n(6-2)\\times 180=720^\\circ\n\\]\n\nThe reflex angle at \\(C\\) in the hexagon is\n\\[\n720^\\circ-(90^\\circ+95^\\circ+149^\\circ+104^\\circ+57^\\circ)=225^\\circ\n\\]\n\nSo the smaller angle \\(BCD\\) is\n\\[\n360^\\circ-225^\\circ=135^\\circ\n\\]\n\nThis is the interior angle of the regular \\(n\\)-sided polygon.\n\nSo the exterior angle is\n\\[\n180^\\circ-135^\\circ=45^\\circ\n\\]\n\n\\[\nn=\\frac{360}{45}=8\n\\]\n\n**Answer:** \\(n=8\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q04__p06-06__m05__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Circles, Arcs & Sectors.\n\n**Solution**\n\n\\[\nAB=\\sqrt{6^2+6^2}=\\sqrt{72}=8.485\\ldots\n\\]\n\nThe perimeter is the sum of three semicircular arcs:\n\n\\[\n\\frac{\\pi}{2}(AB+BC+CA)\n=\\frac{\\pi}{2}(8.485\\ldots+6+6)\n=32.178\\ldots\n\\]\n\n**Answer:** \\(32.2\\text{ cm}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q03__p05-05__m04__Congruence-Similarity-and-Geometrical-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Congruence, Similarity & Geometrical Proof. The tag is correct.\n\n**Solution**\n\nThe scale factor from \\(EFGH\\) to \\(ABCD\\) is\n\\[\n\\frac{9.6}{6}=1.6\n\\]\n\nSince \\(GH\\) corresponds to \\(CD\\),\n\\[\nGH=\\frac{4}{1.6}=2.5\n\\]\n\nSince \\(FG\\) corresponds to \\(BC\\),\n\\[\nBC=5.7\\times 1.6=9.12\n\\]\n\n**Answer:** \\(GH=2.5\\text{ cm}\\), and \\(BC=9.12\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q25__p26-27__m06__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Sine, Cosine Rule & Area of Triangles.\n\n**Method**\n\nThe two sides around the \\(30^\\circ\\) angle are\n\n\\[\n2x-1 \\quad \\text{and} \\quad 2x+1\n\\]\n\nUsing the area formula,\n\n\\[\n\\text{area}=\\frac{1}{2}ab\\sin C\n\\]\n\n\\[\nx^2+x-3.75\n=\\frac{1}{2}(2x-1)(2x+1)\\sin 30^\\circ\n\\]\n\nSince \\(\\sin 30^\\circ=\\frac{1}{2}\\),\n\n\\[\nx^2+x-3.75=\\frac{1}{4}(2x-1)(2x+1)\n\\]\n\n\\[\nx^2+x-3.75=\\frac{1}{4}(4x^2-1)\n\\]\n\n\\[\nx^2+x-3.75=x^2-0.25\n\\]\n\n\\[\nx=3.5\n\\]\n\nSo\n\n\\[\nAB=2x-1=6,\\qquad AC=2x+1=8\n\\]\n\nUse the cosine rule to find \\(BC\\):\n\n\\[\nBC^2=6^2+8^2-2(6)(8)\\cos 30^\\circ\n\\]\n\n\\[\nBC=4.1063\\ldots\n\\]\n\nThe largest side is \\(AC=8\\), so the largest angle is \\(\\angle B\\).\n\nUsing the cosine rule again:\n\n\\[\n\\cos B=\\frac{6^2+BC^2-8^2}{2(6)(BC)}\n\\]\n\n\\[\nB=103.0643\\ldots^\\circ\n\\]\n\n**Answer:** \\(\\boxed{103^\\circ}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q19__p19-19__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Vectors.\n\n**Solution**\n\nPru travels\n\\[\n|AB|+|BC|=\\sqrt{7^2+(-2)^2}+\\sqrt{(-3)^2+5^2}\n\\]\n\n\\[\n=\\sqrt{53}+\\sqrt{34}=13.111\\ldots\n\\]\n\nYang travels from \\(A\\) to \\(C\\).\n\n\\[\n\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{BC}\n=\\begin{pmatrix}7\\\\-2\\end{pmatrix}+\\begin{pmatrix}-3\\\\5\\end{pmatrix}\n=\\begin{pmatrix}4\\\\3\\end{pmatrix}\n\\]\n\n\\[\n|AC|=\\sqrt{4^2+3^2}=5\n\\]\n\nDifference:\n\\[\n13.111\\ldots-5=8.111\\ldots\n\\]\n\n**Answer:** Pru travels \\(8.1\\text{ km}\\) further.",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q10__p10-10__m02__Transformations": {
+      "status": "checked",
+      "source": "**Topic check:** Transformations. The tag is correct.\n\n**Solution**\n\nUse\n\n\\[\n\\text{new point}=(1,7)+\\frac13\\left(\\text{old point}-(1,7)\\right)\n\\]\n\nThe original vertices are\n\n\\[\n(7,4),\\ (13,4),\\ (7,13)\n\\]\n\nThey become\n\n\\[\n(3,6),\\ (5,6),\\ (3,9)\n\\]\n\n**Answer:** draw the triangle with vertices \\((3,6),(5,6),(3,9)\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q22__p22-23__m04__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe scale of the frequency density axis is not needed because the percentage is found from areas.\n\nUsing the bar heights from the histogram, the relative areas are:\n\n\\[\n(5)(277)+(5)(866)+(10)(571)+(10)(329)+(25)(155)\n\\]\n\n\\[\n=1385+4330+5710+3290+3875\n\\]\n\n\\[\n=18590\n\\]\n\nFor ages more than 55, use the part of the last bar from 55 to 75:\n\n\\[\n(20)(155)=3100\n\\]\n\nSo the estimated percentage is\n\n\\[\n\\frac{3100}{18590}\\times100=16.675\\ldots\n\\]\n\n**Answer:** \\(16.7\\%\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1HR__Q14__p14-15__m06__Cumulative-Frequency-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nThe cumulative frequencies are\n\n\\[\n15,\\ 31,\\ 52,\\ 66,\\ 74,\\ 80\n\\]\n\nFor \\(80\\) runners,\n\n\\[\n\\text{median}=40,\\qquad Q_1=20,\\qquad Q_3=60\n\\]\n\n\\[\n\\text{median}=70+\\frac{40-31}{52-31}\\times 10\\approx 74.3\n\\]\n\n\\[\nQ_1=60+\\frac{20-15}{31-15}\\times 10\\approx 63.1\n\\]\n\n\\[\nQ_3=80+\\frac{60-52}{66-52}\\times 10\\approx 85.7\n\\]\n\n\\[\n\\text{IQR}\\approx 85.7-63.1=22.6\n\\]\n\n**Answers:** median about \\(74.3\\) min, IQR about \\(22.6\\) min.",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::May2023_P1HR__Q05__p07-07__m02__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\n\\[\nP(\\text{lose})=1-0.74=0.26\n\\]\n\nExpected losses:\n\n\\[\n300\\times 0.26=78\n\\]\n\n**Answer:** \\(78\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::May2023_P1HR__Q13__p13-13__m03__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nThe missing branch probabilities are\n\n\\[\n0.1,\\quad 0.6\n\\]\n\nNovak wins both games with probability\n\n\\[\n0.7\\times 0.9=0.63\n\\]\n\n**Answer:** \\(0.63\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::May2023_P1HR__Q12__p12-12__m05__Combined-and-Conditional-Probability": {
+      "status": "missing",
+      "source": "**Topic check:** Combined & Conditional Probability. The tag is correct.\n\n**Solution**\n\nThe probabilities add to \\(1\\):\n\n\\[\nx+0.15+0.50+y+0.13+0.03=1\n\\]\n\n\\[\nx+y=0.19\n\\]\n\nGiven\n\n\\[\n3x-y=0.09\n\\]\n\nAdd the two equations:\n\n\\[\n4x=0.28\n\\]\n\n\\[\nx=0.07\n\\]\n\n\\[\ny=0.19-0.07=0.12\n\\]\n\n**Answers:** \\(x=0.07,\\ y=0.12\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::May2023_P1HR__Q24__p25-25__m05__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n2^n=2^{x^2}\\times 16^x\\times 8\n\\]\n\n\\[\n16^x=(2^4)^x=2^{4x}\n\\]\n\n\\[\n8=2^3\n\\]\n\nSo\n\n\\[\n2^n=2^{x^2+4x+3}\n\\]\n\n\\[\nn=x^2+4x+3\n\\]\n\nComplete the square:\n\n\\[\nn=(x+2)^2-1\n\\]\n\n\\[\n(x+2)^2=n+1\n\\]\n\nSince \\(x>0\\), take the positive root:\n\n\\[\nx+2=\\sqrt{n+1}\n\\]\n\n\\[\nx=\\sqrt{n+1}-2\n\\]\n\nFor \\(x>0\\),\n\n\\[\n\\sqrt{n+1}>2\n\\]\n\n\\[\nn>3\n\\]\n\n**Answer:** \\(x=\\sqrt{n+1}-2\\), with \\(n>3\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2023_P1HR__Q23__p24-24__m04__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Surds to Algebraic Fractions.\n\n**Method**\n\n\\[\n(x^2-4)\\div \\left(\\frac{4x^2-7x-2}{x}\\right)-2x\n\\]\n\nChange division into multiplication by the reciprocal:\n\n\\[\n(x^2-4)\\times \\frac{x}{4x^2-7x-2}-2x\n\\]\n\nFactorise:\n\n\\[\nx^2-4=(x-2)(x+2)\n\\]\n\n\\[\n4x^2-7x-2=(4x+1)(x-2)\n\\]\n\nSo\n\n\\[\n\\frac{x(x-2)(x+2)}{(4x+1)(x-2)}-2x\n=\\frac{x(x+2)}{4x+1}-2x\n\\]\n\n\\[\n\\frac{x(x+2)-2x(4x+1)}{4x+1}\n=\\frac{x^2+2x-8x^2-2x}{4x+1}\n=\\frac{-7x^2}{4x+1}\n\\]\n\n**Answer:** \\(\\dfrac{-7x^2}{4x+1}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2023_P1HR__Q20__p20-20__m07__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe maximum point of \\(y=f(x)\\) is \\((3,5)\\).\n\nFor\n\n\\[\ny=2f(x)\n\\]\n\nthe \\(y\\)-coordinate is multiplied by 2:\n\n\\[\n(3,5)\\to(3,10)\n\\]\n\nFor\n\n\\[\ny=f(x)-7\n\\]\n\nthe graph moves 7 units down:\n\n\\[\n(3,5)\\to(3,-2)\n\\]\n\nFor\n\n\\[\ny=f(-x)\n\\]\n\nthe graph reflects in the \\(y\\)-axis:\n\n\\[\n(3,5)\\to(-3,5)\n\\]\n\nFor part (b),\n\n\\[\ny=x^2+7x+20\n\\]\n\nThe translation vector is\n\n\\[\n\\begin{pmatrix}2\\\\0\\end{pmatrix}\n\\]\n\nSo the graph moves 2 units right.\n\nReplace \\(x\\) by \\(x-2\\):\n\n\\[\ny=(x-2)^2+7(x-2)+20\n\\]\n\n\\[\ny=x^2+3x+10\n\\]\n\n**Answer:** \\((3,10)\\), \\((3,-2)\\), \\((-3,5)\\), and \\(y=x^2+3x+10\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2023_P1HR__Q21__p21-21__m06__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Functions to Differentiation.\n\n**Method**\n\n(a)\n\n\\[\ny=x^3-2x^2-9x+15\n\\]\n\n\\[\n\\frac{dy}{dx}=3x^2-4x-9\n\\]\n\n(b) The curve has a positive gradient when\n\n\\[\n3x^2-4x-9>0\n\\]\n\nSolve\n\n\\[\n3x^2-4x-9=0\n\\]\n\n\\[\nx=\\frac{4\\pm\\sqrt{16+108}}{6}\n\\]\n\n\\[\nx=\\frac{2\\pm\\sqrt{31}}{3}\n\\]\n\nTo 3 significant figures, the roots are\n\n\\[\nx=-1.19,\\quad x=2.52\n\\]\n\nSince the quadratic opens upwards, it is positive outside the roots.\n\n**Answer:** (a) \\(\\dfrac{dy}{dx}=3x^2-4x-9\\), (b) \\(x<-1.19\\) or \\(x>2.52\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2023_P1HR__Q25__p26-27__m06__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Sine, Cosine Rule & Area of Triangles.\n\n**Method**\n\nThe two sides around the \\(30^\\circ\\) angle are\n\n\\[\n2x-1 \\quad \\text{and} \\quad 2x+1\n\\]\n\nUsing the area formula,\n\n\\[\n\\text{area}=\\frac{1}{2}ab\\sin C\n\\]\n\n\\[\nx^2+x-3.75\n=\\frac{1}{2}(2x-1)(2x+1)\\sin 30^\\circ\n\\]\n\nSince \\(\\sin 30^\\circ=\\frac{1}{2}\\),\n\n\\[\nx^2+x-3.75=\\frac{1}{4}(2x-1)(2x+1)\n\\]\n\n\\[\nx^2+x-3.75=\\frac{1}{4}(4x^2-1)\n\\]\n\n\\[\nx^2+x-3.75=x^2-0.25\n\\]\n\n\\[\nx=3.5\n\\]\n\nSo\n\n\\[\nAB=2x-1=6,\\qquad AC=2x+1=8\n\\]\n\nUse the cosine rule to find \\(BC\\):\n\n\\[\nBC^2=6^2+8^2-2(6)(8)\\cos 30^\\circ\n\\]\n\n\\[\nBC=4.1063\\ldots\n\\]\n\nThe largest side is \\(AC=8\\), so the largest angle is \\(\\angle B\\).\n\nUsing the cosine rule again:\n\n\\[\n\\cos B=\\frac{6^2+BC^2-8^2}{2(6)(BC)}\n\\]\n\n\\[\nB=103.0643\\ldots^\\circ\n\\]\n\n**Answer:** \\(\\boxed{103^\\circ}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2023_P1HR__Q22__p22-23__m04__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe scale of the frequency density axis is not needed because the percentage is found from areas.\n\nUsing the bar heights from the histogram, the relative areas are:\n\n\\[\n(5)(277)+(5)(866)+(10)(571)+(10)(329)+(25)(155)\n\\]\n\n\\[\n=1385+4330+5710+3290+3875\n\\]\n\n\\[\n=18590\n\\]\n\nFor ages more than 55, use the part of the last bar from 55 to 75:\n\n\\[\n(20)(155)=3100\n\\]\n\nSo the estimated percentage is\n\n\\[\n\\frac{3100}{18590}\\times100=16.675\\ldots\n\\]\n\n**Answer:** \\(16.7\\%\\)",
+      "updated": "2026-05-05T16:25:30",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "paperSlug": "Jun2022_P2HR",
+  "solutions": {
+    "all::Jun2022_P2HR__Q04__p06-06__m05__Set-Notation-and-Venn-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Set notation and Venn diagrams. The tag is correct.\n\n**Method**\n\n\\[\n\\mathcal{E}=\\{9,10,11,12,13,14,15,16,17,18,19,20\\}\n\\]\n\nThe multiples of \\(3\\) in \\(\\mathcal{E}\\) are\n\n\\[\nA=\\{9,12,15,18\\}\n\\]\n\nThe odd numbers in \\(\\mathcal{E}\\) are\n\n\\[\nB=\\{9,11,13,15,17,19\\}\n\\]\n\nSo\n\n\\[\nA\\cap B=\\{9,15\\}\n\\]\n\nand\n\n\\[\nA\\cup B=\\{9,11,12,13,15,17,18,19\\}\n\\]\n\nThe statement \\(24\\in A\\) is false because \\(24\\) is not in the universal set \\(\\mathcal{E}\\).\n\nFor \\(C\\), we need \\(C\\cap B'=\\{10,18\\}\\) and \\(C\\) has \\(4\\) members. One valid choice is\n\n\\[\nC=\\{9,10,11,18\\}\n\\]\n\n**Answer:** (a)(i) \\(\\{9,15\\}\\), (a)(ii) \\(\\{9,11,12,13,15,17,18,19\\}\\), (b) No, (c) one possible set is \\(\\{9,10,11,18\\}\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q02__p04-04__m03__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\n1200=12\\times 100\n\\]\n\n\\[\n1200=(2^2\\times 3)(2^2\\times 5^2)\n\\]\n\n\\[\n1200=2^4\\times 3\\times 5^2\n\\]\n\n**Answer:** \\(\\displaystyle 2^4\\times 3\\times 5^2\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q09__p10-10__m04__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n8.8\\times 10^6=8800000\n\\]\n\nThe least population in the table is Barcelona, with\n\n\\[\n5.5\\times 10^6\n\\]\n\nFor the difference between Tokyo and Ahmedabad:\n\n\\[\n3.7\\times 10^7-7.7\\times 10^6\n\\]\n\n\\[\n37000000-7700000=29300000\n\\]\n\n\\[\n29300000=2.93\\times 10^7\n\\]\n\nCorrect to 2 significant figures:\n\n\\[\n2.9\\times 10^7\n\\]\n\n**Answer:** (a) \\(8800000\\), (b) Barcelona, (c) \\(2.9\\times 10^7\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q08__p09-09__m03__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nAfter a \\(12\\%\\) increase, the ticket price is \\(112\\%\\) of the original price.\n\n\\[\n18.20=1.12\\times \\text{original price}\n\\]\n\n\\[\n\\text{original price}=\\frac{18.20}{1.12}=16.25\n\\]\n\n**Answer:** \\(\\pounds 16.25\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q18__p20-20__m04__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\nTo show Kaidan's average speed could be greater, compare Kaidan's greatest possible speed with Sonja's smallest possible speed.\n\nFor Kaidan:\n\n\\[\nd<82.5,\\quad t\\ge 2.65\n\\]\n\n\\[\n\\text{greatest speed}=\\frac{82.5}{2.65}=31.13\\ldots\\text{ km/h}\n\\]\n\nFor Sonja:\n\n\\[\nd\\ge 32.5,\\quad t<1.05\n\\]\n\n\\[\n\\text{smallest speed}=\\frac{32.5}{1.05}=30.95\\ldots\\text{ km/h}\n\\]\n\nSince\n\n\\[\n31.13\\ldots>30.95\\ldots\n\\]\n\nKaidan's average speed could have been greater.\n\n**Answer:** Kaidan is correct.",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q07__p09-09__m02__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic Roots and Indices. The tag is correct.\n\n**Method**\n\n\\[\n\\frac{2^k}{4^n}=2^x\n\\]\n\nSince \\(4=2^2\\),\n\n\\[\n4^n=(2^2)^n=2^{2n}\n\\]\n\nSo\n\n\\[\n\\frac{2^k}{2^{2n}}=2^{k-2n}\n\\]\n\nTherefore\n\n\\[\nx=k-2n\n\\]\n\n**Answer:** \\(x=k-2n\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q23__p25-25__m03__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Sine/Cosine Rule to Algebraic Fractions.\n\n**Method**\n\n\\[\n\\left(\\frac{20}{x^2-36}-\\frac2{x-6}\\right)\\times\\frac1{4-x}\n\\]\n\nFactor:\n\n\\[\nx^2-36=(x-6)(x+6)\n\\]\n\nSo\n\n\\[\n\\frac{20}{(x-6)(x+6)}-\\frac2{x-6}\n\\]\n\nUse the common denominator \\((x-6)(x+6)\\):\n\n\\[\n\\frac{20-2(x+6)}{(x-6)(x+6)}\n\\]\n\n\\[\n=\\frac{20-2x-12}{(x-6)(x+6)}\n\\]\n\n\\[\n=\\frac{8-2x}{(x-6)(x+6)}\n\\]\n\n\\[\n=\\frac{-2(x-4)}{(x-6)(x+6)}\n\\]\n\nNow multiply by\n\n\\[\n\\frac1{4-x}=-\\frac1{x-4}\n\\]\n\n\\[\n\\frac{-2(x-4)}{(x-6)(x+6)}\\times\\left(-\\frac1{x-4}\\right)\n\\]\n\nCancel \\(x-4\\):\n\n\\[\n\\frac{2}{(x-6)(x+6)}\n\\]\n\n\\[\n=\\frac2{x^2-36}\n\\]\n\n**Answer:** \\(\\displaystyle \\boxed{\\frac2{x^2-36}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q17__p19-19__m02__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\nLet\n\\[\nx=0.3\\dot4\\dot5\n\\]\n\nThen\n\\[\n10x=3.\\dot4\\dot5\n\\]\n\nand\n\\[\n1000x=345.\\dot4\\dot5\n\\]\n\nSubtract:\n\\[\n1000x-10x=345.\\dot4\\dot5-3.\\dot4\\dot5\n\\]\n\n\\[\n990x=342\n\\]\n\n\\[\nx=\\frac{342}{990}=\\frac{19}{55}\n\\]\n\n**Answer:** \\(0.3\\dot4\\dot5=\\dfrac{19}{55}\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q06__p08-08__m08__Solving-Linear-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to solving linear equations. The original tag was factorising, but the linear equation is the largest single part.\n\n**Solution**\n\n(a)\n\\[\np=\\frac{3p-5}{10}\n\\]\n\n\\[\n10p=3p-5\n\\]\n\n\\[\n7p=-5\n\\]\n\n\\[\np=-\\frac57\n\\]\n\n(b) \\(a^0=1\\).\n\n(c)\n\\[\n\\frac{3xy^3}{6x^2y}=\\frac{y^2}{2x}\n\\]\n\n(d)\n\\[\n10c^3d^2+15cd^4=5cd^2(2c^2+3d^2)\n\\]\n\n**Answer:** (a) \\(p=-\\frac57\\), (b) \\(1\\), (c) \\(\\frac{y^2}{2x}\\), (d) \\(5cd^2(2c^2+3d^2)\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q21__p23-23__m05__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nx-2y=3\n\\]\n\nSo\n\n\\[\nx=2y+3\n\\]\n\nSubstitute into\n\n\\[\nx^2-y^2+2x=10\n\\]\n\n\\[\n(2y+3)^2-y^2+2(2y+3)=10\n\\]\n\n\\[\n4y^2+12y+9-y^2+4y+6=10\n\\]\n\n\\[\n3y^2+16y+5=0\n\\]\n\n\\[\n(3y+1)(y+5)=0\n\\]\n\nSo\n\n\\[\ny=-\\frac13 \\quad \\text{or} \\quad y=-5\n\\]\n\nFind \\(x\\):\n\n\\[\ny=-\\frac13 \\Rightarrow x=\\frac73\n\\]\n\n\\[\ny=-5 \\Rightarrow x=-7\n\\]\n\n**Answer:** \\((x,y)=\\left(\\dfrac73,-\\dfrac13\\right)\\) or \\((-7,-5)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q19__p21-21__m04__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Functions. The original tag was solving quadratic equations, but the question is built around composite-function notation.\n\n**Solution**\n\n\\[\nf(x)=x^2-4,\\qquad g(x)=2x+1\n\\]\n\n\\[\nfg(x)=f(g(x))=(2x+1)^2-4\n\\]\n\n\\[\n=4x^2+4x+1-4=4x^2+4x-3\n\\]\n\nSolve\n\\[\n4x^2+4x-3>0\n\\]\n\nFactorise:\n\\[\n(2x+3)(2x-1)>0\n\\]\n\nThe critical values are\n\\[\nx=-\\frac32,\\qquad x=\\frac12\n\\]\n\nThe product is positive outside the roots.\n\n**Answer:** \\(x<-\\frac32\\) or \\(x>\\frac12\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q20__p22-22__m04__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe centre of the circle is\n\n\\[\nO=(4,7)\n\\]\n\nThe point \\(A\\) is\n\n\\[\nA=(6,11)\n\\]\n\nSince \\(AOP\\) is a diameter, \\(O\\) is the midpoint of \\(AP\\).\n\nLet \\(P=(x,y)\\).\n\n\\[\n\\left(\\frac{6+x}{2},\\frac{11+y}{2}\\right)=(4,7)\n\\]\n\n\\[\n6+x=8,\\qquad 11+y=14\n\\]\n\n\\[\nP=(2,3)\n\\]\n\nThe gradient of \\(OP\\) is\n\n\\[\n\\frac{3-7}{2-4}=2\n\\]\n\nThe tangent is perpendicular to the radius, so its gradient is\n\n\\[\n-\\frac12\n\\]\n\nUsing point \\(P=(2,3)\\),\n\n\\[\ny-3=-\\frac12(x-2)\n\\]\n\n\\[\ny=-\\frac12x+4\n\\]\n\n**Answer:** \\(\\displaystyle y=-\\frac12x+4\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q16__p18-19__m03__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Graphs of Functions.\n\n**Solution**\n\n\\[\ny=-2x+3\n\\]\nis a negative straight line with positive \\(y\\)-intercept, so it is **Graph C**.\n\n\\[\ny=\\frac1x\n\\]\nis the reciprocal graph in quadrants I and III, so it is **Graph B**.\n\n\\[\ny=\\tan x\n\\]\nhas repeating branches with vertical asymptotes and passes through the origin, so it is **Graph D**.\n\n\\[\ny=(x+1)(x-1)(x-2)\n\\]\nis a positive cubic with three roots, so it is **Graph H**.\n\n**Answer:** C, B, D, H.",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q22__p24-24__m04__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nPoint \\(A=(-3,2)\\) lies on \\(y=f(x)\\).\n\nFor\n\n\\[\ny=f(x)-3\n\\]\n\nthe graph moves 3 units down:\n\n\\[\n(-3,2)\\to(-3,-1)\n\\]\n\nFor\n\n\\[\ny=f\\left(\\frac{x}{2}\\right)\n\\]\n\nthe \\(x\\)-coordinate is multiplied by 2:\n\n\\[\n(-3,2)\\to(-6,2)\n\\]\n\nFor part (b), point \\(B=(p,q)\\) lies on \\(y=g(x)\\).\n\nFor\n\n\\[\ny=-g(x-c)\n\\]\n\n\\(x-c\\) moves the graph \\(c\\) units right, and the minus sign reflects the graph in the \\(x\\)-axis.\n\nSo\n\n\\[\n(p,q)\\to(p+c,-q)\n\\]\n\n**Answer:** \\((-3,-1)\\), \\((-6,2)\\), and \\((p+c,-q)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q05__p07-07__m04__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Perimeter. The tag is correct.\n\n**Solution**\n\nThe square has area \\(36\\text{ cm}^2\\), so its side length is\n\\[\n\\sqrt{36}=6\\text{ cm}\n\\]\n\nEach semicircle has diameter \\(6\\text{ cm}\\), so radius\n\\[\nr=3\\text{ cm}\n\\]\n\nArea of 4 semicircles:\n\\[\n4\\times \\frac12\\pi(3)^2=18\\pi\n\\]\n\nTotal area:\n\\[\n36+18\\pi=92.548\\ldots\n\\]\n\n**Answer:** \\(92.5\\text{ cm}^2\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q13__p15-15__m03__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Circles, Arcs & Sectors. The tag is correct.\n\n**Solution**\n\nArc length:\n\\[\n\\frac{67}{360}\\times 2\\pi(5.2)=6.080\\ldots\n\\]\n\nPerimeter:\n\\[\n5.2+5.2+6.080\\ldots=16.480\\ldots\n\\]\n\n**Answer:** \\(16.5\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q12__p14-14__m03__Congruence-Similarity-and-Geometrical-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to congruence, similarity and geometrical proof. The solution uses similar triangles.\n\n**Solution**\n\nSince \\(AB\\) is parallel to \\(DE\\), triangles \\(ACB\\) and \\(ECD\\) are similar.\n\nSo corresponding sides are in the same ratio:\n\\[\n\\frac{AC}{CE}=\\frac{BC}{CD}\n\\]\n\nSubstitute the lengths:\n\\[\n\\frac{1.2}{6}=\\frac{2x}{2x+9}\n\\]\n\n\\[\n\\frac15=\\frac{2x}{2x+9}\n\\]\n\n\\[\n2x+9=10x\n\\]\n\n\\[\n8x=9\n\\]\n\n\\[\nx=\\frac98\n\\]\n\n**Answer:** \\(x=\\frac98\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q24__p26-27__m06__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nSmall cone volume:\n\n\\[\nV_s=\\frac13\\pi r^2h\n\\]\n\nThe larger similar cone has radius \\(kr\\) and height \\(kh\\), so its volume is\n\n\\[\nV_L=\\frac13\\pi(kr)^2(kh)=\\frac13\\pi k^3r^2h\n\\]\n\nSo the frustum volume is\n\n\\[\nV_L-V_s=\\frac13\\pi r^2h(k^3-1)\n\\]\n\nThe volume of one hemisphere of radius \\(r\\) is\n\n\\[\n\\frac23\\pi r^3\n\\]\n\nSolid A is the frustum plus one hemisphere:\n\n\\[\nV_A=\\frac13\\pi r^2h(k^3-1)+\\frac23\\pi r^3\n\\]\n\nSolid B is the small cone plus one hemisphere:\n\n\\[\nV_B=\\frac13\\pi r^2h+\\frac23\\pi r^3\n\\]\n\nGiven \\(V_A=6V_B\\):\n\n\\[\n\\frac13\\pi r^2h(k^3-1)+\\frac23\\pi r^3\n=6\\left(\\frac13\\pi r^2h+\\frac23\\pi r^3\\right)\n\\]\n\nDivide by \\(\\frac13\\pi r^2\\):\n\n\\[\nh(k^3-1)+2r=6h+12r\n\\]\n\n\\[\nh(k^3-7)=10r\n\\]\n\n\\[\nh=\\frac{10r}{k^3-7}\n\\]\n\n**Answer:** \\(\\displaystyle h=\\frac{10r}{k^3-7}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q10__p11-11__m05__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Right-Angled Triangles - Pythagoras & Trigonometry. The question needs trigonometry after using the hexagon angle.\n\n**Solution**\n\nA regular hexagon has interior angle\n\\[\n120^\\circ\n\\]\n\nIn right-angled triangle \\(ABP\\),\n\\[\n\\tan(\\angle PAB)=\\frac{BP}{AB}=\\frac{2}{5}\n\\]\n\n\\[\n\\angle PAB=\\tan^{-1}\\left(\\frac25\\right)=21.801\\ldots^\\circ\n\\]\n\nTherefore\n\\[\n\\angle PAF=120^\\circ-21.801\\ldots^\\circ=98.198\\ldots^\\circ\n\\]\n\n**Answer:** \\(98.2^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q15__p17-17__m03__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Sine, Cosine Rule & Area of Triangles. The area uses the sine formula.\n\n**Solution**\n\nA kite can be split into two congruent triangles.\n\nArea of triangle \\(ABC\\):\n\\[\n\\frac12\\times 6\\times 11\\times \\sin 118^\\circ\n\\]\n\nSo the area of the kite is\n\\[\n2\\times \\frac12\\times 6\\times 11\\times \\sin 118^\\circ\n\\]\n\n\\[\n=6\\times 11\\times \\sin 118^\\circ=58.274\\ldots\n\\]\n\n**Answer:** \\(58.3\\text{ cm}^2\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q25__p28-28__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Vectors.\n\n**Method**\n\nLet \\(A\\) be the origin.\n\n\\[\n\\vec{AB}=\\mathbf a,\\qquad \\vec{BC}=\\mathbf b\n\\]\n\nSo\n\n\\[\nB=\\mathbf a,\\qquad D=\\mathbf b,\\qquad C=\\mathbf a+\\mathbf b\n\\]\n\nAlso\n\n\\[\n\\vec{DM}=\\frac12\\mathbf b\n\\]\n\nSo\n\n\\[\nM=\\frac32\\mathbf b\n\\]\n\nPoint \\(K\\) is on \\(AB\\):\n\n\\[\nK=\\lambda\\mathbf a\n\\]\n\nPoint \\(L\\) is on \\(CD\\), and \\(\\vec{CD}=-\\mathbf a\\):\n\n\\[\nL=C+\\mu(D-C)\n\\]\n\n\\[\nL=\\mathbf a+\\mathbf b+\\mu(-\\mathbf a)\n\\]\n\n\\[\nL=(1-\\mu)\\mathbf a+\\mathbf b\n\\]\n\nGiven\n\n\\[\n\\lambda:\\mu=1:2\n\\]\n\n\\[\n\\mu=2\\lambda\n\\]\n\nSince \\(K,L,M\\) are collinear, \\(\\vec{KM}\\) is a multiple of \\(\\vec{KL}\\).\n\n\\[\n\\vec{KM}=-\\lambda\\mathbf a+\\frac32\\mathbf b\n\\]\n\n\\[\n\\vec{KL}=(1-\\mu-\\lambda)\\mathbf a+\\mathbf b\n\\]\n\n\\[\n\\vec{KL}=(1-3\\lambda)\\mathbf a+\\mathbf b\n\\]\n\nCompare coefficients using\n\n\\[\n\\vec{KM}=\\frac32\\vec{KL}\n\\]\n\n\\[\n-\\lambda=\\frac32(1-3\\lambda)\n\\]\n\n\\[\n-2\\lambda=3-9\\lambda\n\\]\n\n\\[\n7\\lambda=3\n\\]\n\n\\[\n\\lambda=\\frac37\n\\]\n\nThen\n\n\\[\n\\mu=2\\lambda=\\frac67\n\\]\n\n**Answer:** \\(\\displaystyle \\lambda=\\frac37,\\quad \\mu=\\frac67\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q01__p03-03__m04__Transformations": {
+      "status": "checked",
+      "source": "**Topic check:** Transformations. The tag is correct.\n\n**Solution**\n\n(a) Triangle \\(A\\) is enlarged to triangle \\(B\\).\n\nThe scale factor is\n\n\\[\n3\n\\]\n\nUsing corresponding vertices gives centre \\((3,0)\\).\n\nSo the transformation is an enlargement, scale factor \\(3\\), centre \\((3,0)\\).\n\n(b) Translating triangle \\(A\\) by\n\n\\[\n\\begin{pmatrix}-4\\\\3\\end{pmatrix}\n\\]\n\ngives vertices\n\n\\[\n(1,4),\\ (2,4),\\ (1,6)\n\\]\n\n**Answer:** (a) enlargement, scale factor \\(3\\), centre \\((3,0)\\); (b) vertices \\((1,4),(2,4),(1,6)\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q03__p05-05__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe median is \\(160\\). Since the ordered heights are\n\n\\[\n\\text{Diana},\\ 158,\\ \\text{Candela},\\ 175\n\\]\n\n\\[\n\\frac{158+\\text{Candela}}{2}=160\n\\]\n\n\\[\n\\text{Candela}=162\n\\]\n\nThe range is \\(21\\):\n\n\\[\n175-\\text{Diana}=21\n\\]\n\n\\[\n\\text{Diana}=154\n\\]\n\n**Answers:** Candela \\(=162\\text{ cm}\\), Diana \\(=154\\text{ cm}\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q11__p12-13__m07__Cumulative-Frequency-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nPlot the points\n\n\\[\n(10,0),(20,13),(30,36),(40,42),(50,47),(60,52),(70,56),(80,60)\n\\]\n\nThe median is at cumulative frequency \\(30\\).\n\nThis is between \\((20,13)\\) and \\((30,36)\\):\n\n\\[\n20+\\frac{30-13}{36-13}\\times 10=27.39\\ldots\n\\]\n\nMedian age is about \\(27.4\\) years.\n\nFor the interquartile range:\n\n\\[\nQ_1 \\text{ is at }15,\\qquad Q_3 \\text{ is at }45\n\\]\n\n\\[\nQ_1\\approx 20+\\frac{15-13}{36-13}\\times 10=20.9\n\\]\n\n\\[\nQ_3\\approx 40+\\frac{45-42}{47-42}\\times 10=46\n\\]\n\n\\[\n\\text{IQR}\\approx 46-20.9=25.1\n\\]\n\nFor people older than \\(55\\):\n\n\\[\nF(55)\\approx 47+\\frac{5}{10}(52-47)=49.5\n\\]\n\n\\[\n60-49.5=10.5\n\\]\n\n**Answers:** median about \\(27.4\\) years, IQR about \\(25.1\\) years, about \\(11\\) people older than \\(55\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2HR__Q14__p16-16__m03__Combined-and-Conditional-Probability": {
+      "status": "missing",
+      "source": "**Topic check:** Combined & Conditional Probability. The tag is correct.\n\n**Solution**\n\nThe complement of \"at least one even number\" is \"both numbers are odd\".\n\n\\[\nP(\\text{odd})=\\frac12\n\\]\n\n\\[\nP(\\text{both odd})=\\frac12\\times\\frac12=\\frac14\n\\]\n\n\\[\nP(\\text{at least one even})=1-\\frac14=\\frac34\n\\]\n\n**Answer:** \\(\\frac34\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jun2022_P2HR__Q23__p25-25__m03__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Sine/Cosine Rule to Algebraic Fractions.\n\n**Method**\n\n\\[\n\\left(\\frac{20}{x^2-36}-\\frac2{x-6}\\right)\\times\\frac1{4-x}\n\\]\n\nFactor:\n\n\\[\nx^2-36=(x-6)(x+6)\n\\]\n\nSo\n\n\\[\n\\frac{20}{(x-6)(x+6)}-\\frac2{x-6}\n\\]\n\nUse the common denominator \\((x-6)(x+6)\\):\n\n\\[\n\\frac{20-2(x+6)}{(x-6)(x+6)}\n\\]\n\n\\[\n=\\frac{20-2x-12}{(x-6)(x+6)}\n\\]\n\n\\[\n=\\frac{8-2x}{(x-6)(x+6)}\n\\]\n\n\\[\n=\\frac{-2(x-4)}{(x-6)(x+6)}\n\\]\n\nNow multiply by\n\n\\[\n\\frac1{4-x}=-\\frac1{x-4}\n\\]\n\n\\[\n\\frac{-2(x-4)}{(x-6)(x+6)}\\times\\left(-\\frac1{x-4}\\right)\n\\]\n\nCancel \\(x-4\\):\n\n\\[\n\\frac{2}{(x-6)(x+6)}\n\\]\n\n\\[\n=\\frac2{x^2-36}\n\\]\n\n**Answer:** \\(\\displaystyle \\boxed{\\frac2{x^2-36}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P2HR__Q21__p23-23__m05__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nx-2y=3\n\\]\n\nSo\n\n\\[\nx=2y+3\n\\]\n\nSubstitute into\n\n\\[\nx^2-y^2+2x=10\n\\]\n\n\\[\n(2y+3)^2-y^2+2(2y+3)=10\n\\]\n\n\\[\n4y^2+12y+9-y^2+4y+6=10\n\\]\n\n\\[\n3y^2+16y+5=0\n\\]\n\n\\[\n(3y+1)(y+5)=0\n\\]\n\nSo\n\n\\[\ny=-\\frac13 \\quad \\text{or} \\quad y=-5\n\\]\n\nFind \\(x\\):\n\n\\[\ny=-\\frac13 \\Rightarrow x=\\frac73\n\\]\n\n\\[\ny=-5 \\Rightarrow x=-7\n\\]\n\n**Answer:** \\((x,y)=\\left(\\dfrac73,-\\dfrac13\\right)\\) or \\((-7,-5)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P2HR__Q20__p22-22__m04__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe centre of the circle is\n\n\\[\nO=(4,7)\n\\]\n\nThe point \\(A\\) is\n\n\\[\nA=(6,11)\n\\]\n\nSince \\(AOP\\) is a diameter, \\(O\\) is the midpoint of \\(AP\\).\n\nLet \\(P=(x,y)\\).\n\n\\[\n\\left(\\frac{6+x}{2},\\frac{11+y}{2}\\right)=(4,7)\n\\]\n\n\\[\n6+x=8,\\qquad 11+y=14\n\\]\n\n\\[\nP=(2,3)\n\\]\n\nThe gradient of \\(OP\\) is\n\n\\[\n\\frac{3-7}{2-4}=2\n\\]\n\nThe tangent is perpendicular to the radius, so its gradient is\n\n\\[\n-\\frac12\n\\]\n\nUsing point \\(P=(2,3)\\),\n\n\\[\ny-3=-\\frac12(x-2)\n\\]\n\n\\[\ny=-\\frac12x+4\n\\]\n\n**Answer:** \\(\\displaystyle y=-\\frac12x+4\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P2HR__Q22__p24-24__m04__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nPoint \\(A=(-3,2)\\) lies on \\(y=f(x)\\).\n\nFor\n\n\\[\ny=f(x)-3\n\\]\n\nthe graph moves 3 units down:\n\n\\[\n(-3,2)\\to(-3,-1)\n\\]\n\nFor\n\n\\[\ny=f\\left(\\frac{x}{2}\\right)\n\\]\n\nthe \\(x\\)-coordinate is multiplied by 2:\n\n\\[\n(-3,2)\\to(-6,2)\n\\]\n\nFor part (b), point \\(B=(p,q)\\) lies on \\(y=g(x)\\).\n\nFor\n\n\\[\ny=-g(x-c)\n\\]\n\n\\(x-c\\) moves the graph \\(c\\) units right, and the minus sign reflects the graph in the \\(x\\)-axis.\n\nSo\n\n\\[\n(p,q)\\to(p+c,-q)\n\\]\n\n**Answer:** \\((-3,-1)\\), \\((-6,2)\\), and \\((p+c,-q)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P2HR__Q24__p26-27__m06__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nSmall cone volume:\n\n\\[\nV_s=\\frac13\\pi r^2h\n\\]\n\nThe larger similar cone has radius \\(kr\\) and height \\(kh\\), so its volume is\n\n\\[\nV_L=\\frac13\\pi(kr)^2(kh)=\\frac13\\pi k^3r^2h\n\\]\n\nSo the frustum volume is\n\n\\[\nV_L-V_s=\\frac13\\pi r^2h(k^3-1)\n\\]\n\nThe volume of one hemisphere of radius \\(r\\) is\n\n\\[\n\\frac23\\pi r^3\n\\]\n\nSolid A is the frustum plus one hemisphere:\n\n\\[\nV_A=\\frac13\\pi r^2h(k^3-1)+\\frac23\\pi r^3\n\\]\n\nSolid B is the small cone plus one hemisphere:\n\n\\[\nV_B=\\frac13\\pi r^2h+\\frac23\\pi r^3\n\\]\n\nGiven \\(V_A=6V_B\\):\n\n\\[\n\\frac13\\pi r^2h(k^3-1)+\\frac23\\pi r^3\n=6\\left(\\frac13\\pi r^2h+\\frac23\\pi r^3\\right)\n\\]\n\nDivide by \\(\\frac13\\pi r^2\\):\n\n\\[\nh(k^3-1)+2r=6h+12r\n\\]\n\n\\[\nh(k^3-7)=10r\n\\]\n\n\\[\nh=\\frac{10r}{k^3-7}\n\\]\n\n**Answer:** \\(\\displaystyle h=\\frac{10r}{k^3-7}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P2HR__Q25__p28-28__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Vectors.\n\n**Method**\n\nLet \\(A\\) be the origin.\n\n\\[\n\\vec{AB}=\\mathbf a,\\qquad \\vec{BC}=\\mathbf b\n\\]\n\nSo\n\n\\[\nB=\\mathbf a,\\qquad D=\\mathbf b,\\qquad C=\\mathbf a+\\mathbf b\n\\]\n\nAlso\n\n\\[\n\\vec{DM}=\\frac12\\mathbf b\n\\]\n\nSo\n\n\\[\nM=\\frac32\\mathbf b\n\\]\n\nPoint \\(K\\) is on \\(AB\\):\n\n\\[\nK=\\lambda\\mathbf a\n\\]\n\nPoint \\(L\\) is on \\(CD\\), and \\(\\vec{CD}=-\\mathbf a\\):\n\n\\[\nL=C+\\mu(D-C)\n\\]\n\n\\[\nL=\\mathbf a+\\mathbf b+\\mu(-\\mathbf a)\n\\]\n\n\\[\nL=(1-\\mu)\\mathbf a+\\mathbf b\n\\]\n\nGiven\n\n\\[\n\\lambda:\\mu=1:2\n\\]\n\n\\[\n\\mu=2\\lambda\n\\]\n\nSince \\(K,L,M\\) are collinear, \\(\\vec{KM}\\) is a multiple of \\(\\vec{KL}\\).\n\n\\[\n\\vec{KM}=-\\lambda\\mathbf a+\\frac32\\mathbf b\n\\]\n\n\\[\n\\vec{KL}=(1-\\mu-\\lambda)\\mathbf a+\\mathbf b\n\\]\n\n\\[\n\\vec{KL}=(1-3\\lambda)\\mathbf a+\\mathbf b\n\\]\n\nCompare coefficients using\n\n\\[\n\\vec{KM}=\\frac32\\vec{KL}\n\\]\n\n\\[\n-\\lambda=\\frac32(1-3\\lambda)\n\\]\n\n\\[\n-2\\lambda=3-9\\lambda\n\\]\n\n\\[\n7\\lambda=3\n\\]\n\n\\[\n\\lambda=\\frac37\n\\]\n\nThen\n\n\\[\n\\mu=2\\lambda=\\frac67\n\\]\n\n**Answer:** \\(\\displaystyle \\lambda=\\frac37,\\quad \\mu=\\frac67\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

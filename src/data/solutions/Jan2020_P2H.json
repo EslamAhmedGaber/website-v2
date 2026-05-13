@@ -1,0 +1,203 @@
+{
+  "paperSlug": "Jan2020_P2H",
+  "solutions": {
+    "all::Jan2020_P2H__Q03__p04-04__m03__Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Fractions. The tag is correct.\n\n**Method**\n\nConvert to improper fractions:\n\n\\[\n4\\frac23=\\frac{14}{3}\n\\]\n\n\\[\n3\\frac45=\\frac{19}{5}\n\\]\n\nUse a common denominator:\n\n\\[\n\\frac{14}{3}+\\frac{19}{5}\n=\\frac{70}{15}+\\frac{57}{15}\n\\]\n\n\\[\n=\\frac{127}{15}=8\\frac{7}{15}\n\\]\n\n**Answer:** \\(8\\frac{7}{15}\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q08__p09-09__m07__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Percentages. The question compares percentage changes and a discount.\n\n**Method**\n\nFrom 2016 to 2017, the increase is\n\n\\[\n545-500=45\n\\]\n\n\\[\n\\frac{45}{500}\\times 100=9\\%\n\\]\n\nFrom 2017 to 2018, the increase is\n\n\\[\n592-545=47\n\\]\n\n\\[\n\\frac{47}{545}\\times 100\\approx 8.62\\%\n\\]\n\nSo Brigitte is not correct because the second percentage increase is smaller.\n\nFor Henri, \\(952\\) is \\(85\\%\\) of the original price because there is a \\(15\\%\\) discount.\n\n\\[\n\\text{original price}=952\\div 0.85=1120\n\\]\n\nThe discount is\n\n\\[\n1120-952=168\n\\]\n\n**Answer:** Brigitte is not correct; the discount is \\(168\\) euros.",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q20__p20-20__m03__Surds": {
+      "status": "checked",
+      "source": "**Topic check:** Surds. The tag is correct.\n\n**Method**\n\n\\[\n\\text{width}=\\frac{18}{\\sqrt7+1}\n\\]\n\nRationalise the denominator:\n\n\\[\n\\frac{18}{\\sqrt7+1}\\times \\frac{\\sqrt7-1}{\\sqrt7-1}\n=\\frac{18(\\sqrt7-1)}{7-1}\n\\]\n\n\\[\n=\\frac{18(\\sqrt7-1)}{6}=3(\\sqrt7-1)\n\\]\n\n\\[\n=3\\sqrt7-3\n\\]\n\n**Answer:** \\(3\\sqrt7-3\\) cm",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q12__p12-12__m04__Exchange-Rates-and-Best-Buys": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Exchange Rates & Best Buys. The question is mainly about comparing value for money using an exchange rate; standard form is secondary.\n\n**Method**\n\nDane Oil costs \\(2500000\\) Krone for\n\n\\[\n4.2\\times 10^5=420000\n\\]\n\nlitres.\n\n\\[\n\\text{Dane cost per litre}=\\frac{2500000}{420000}=5.952\\ldots\n\\]\n\nSo Dane Oil costs about \\(5.95\\) Krone per litre.\n\nArctic Oil costs \\(770000\\) dollars. Convert this to Krone:\n\n\\[\n770000\\times 6.57=5058900\n\\]\n\nArctic Oil gives\n\n\\[\n8.6\\times 10^5=860000\n\\]\n\nlitres.\n\n\\[\n\\text{Arctic cost per litre}=\\frac{5058900}{860000}=5.882\\ldots\n\\]\n\nArctic Oil has the lower cost per litre.\n\n**Answer:** Arctic Oil",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q01__p03-03__m03__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Algebraic Roots & Indices.\n\n**Solution**\n\n(a)\n\\[\n\\frac{x^9}{x^2}=x^{9-2}=x^7\n\\]\n\n(b)\n\\[\n\\frac{7^8\\times 7^4}{7^3}=7^{8+4-3}=7^9\n\\]\n\n**Answer:** (a) \\(x^7\\), (b) \\(7^9\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q24__p24-24__m04__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Sine/Cosine Rule to Algebraic Fractions.\n\n**Method**\n\n\\[\n\\left(\\frac4{2x-5}-\\frac3{2x-3}\\right)\\div\n\\frac{9x-4x^3}{6x^2-17x+5}\n\\]\n\nFirst simplify the bracket:\n\n\\[\n\\frac4{2x-5}-\\frac3{2x-3}\n=\\frac{4(2x-3)-3(2x-5)}{(2x-5)(2x-3)}\n\\]\n\n\\[\n=\\frac{8x-12-6x+15}{(2x-5)(2x-3)}\n\\]\n\n\\[\n=\\frac{2x+3}{(2x-5)(2x-3)}\n\\]\n\nNow factor the second fraction:\n\n\\[\n9x-4x^3=-x(2x-3)(2x+3)\n\\]\n\n\\[\n6x^2-17x+5=(2x-5)(3x-1)\n\\]\n\nDividing by a fraction means multiplying by its reciprocal:\n\n\\[\n\\frac{2x+3}{(2x-5)(2x-3)}\n\\times\n\\frac{(2x-5)(3x-1)}{-x(2x-3)(2x+3)}\n\\]\n\nCancel common factors:\n\n\\[\n=-\\frac{3x-1}{x(2x-3)^2}\n\\]\n\n\\[\n=\\frac{1-3x}{x(2x-3)^2}\n\\]\n\n**Answer:** \\(\\displaystyle \\boxed{\\frac{1-3x}{x(2x-3)^2}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q16__p16-16__m04__Rearranging-Formulas": {
+      "status": "checked",
+      "source": "**Topic check:** Rearranging formulas. The tag is correct.\n\n**Solution**\n\n\\[\ny=\\sqrt{\\frac{x+1}{x-4}}\n\\]\n\nSquare both sides:\n\\[\ny^2=\\frac{x+1}{x-4}\n\\]\n\n\\[\ny^2(x-4)=x+1\n\\]\n\n\\[\ny^2x-4y^2=x+1\n\\]\n\n\\[\nx(y^2-1)=4y^2+1\n\\]\n\n**Answer:** \\(x=\\frac{4y^2+1}{y^2-1}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q17__p17-17__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\nLet the two consecutive square numbers be \\(n^2\\) and \\((n+1)^2\\).\n\n\\[\n(n+1)^2-n^2=n^2+2n+1-n^2=2n+1\n\\]\n\n\\(2n+1\\) is one more than an even number, so it is always odd.\n\n**Answer:** The difference is always odd.",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q07__p08-08__m05__Solving-Quadratic-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to solving quadratic equations. The quadratic equation carries the larger part of the question.\n\n**Solution**\n\n(a)\n\\[\n2x+7>4\n\\]\n\n\\[\n2x>-3\n\\]\n\n\\[\nx>-\\frac32\n\\]\n\n(b)\n\\[\nx^2-3x-40=0\n\\]\n\nFactorise:\n\\[\n(x-8)(x+5)=0\n\\]\n\nSo\n\\[\nx=8 \\quad \\text{or} \\quad x=-5\n\\]\n\n**Answer:** \\(x>-\\frac32\\), and \\(x=8\\) or \\(x=-5\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q25__p25-25__m03__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Right-Angled Triangles to Sequences.\n\n**Method**\n\nMario saves from 2021 up to and including 2070.\n\nNumber of years:\n\n\\[\n2070-2021+1=50\n\\]\n\nThis is an arithmetic sequence.\n\nFirst term:\n\n\\[\n50\n\\]\n\nCommon difference:\n\n\\[\nk\n\\]\n\nLast term:\n\n\\[\n50+49k\n\\]\n\nUse the arithmetic series formula:\n\n\\[\nS_n=\\frac n2(a+l)\n\\]\n\n\\[\n33125=\\frac{50}{2}\\left(50+(50+49k)\\right)\n\\]\n\n\\[\n33125=25(100+49k)\n\\]\n\n\\[\n1325=100+49k\n\\]\n\n\\[\n49k=1225\n\\]\n\n\\[\nk=25\n\\]\n\n**Answer:** \\(\\boxed{k=25}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q19__p19-19__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Coordinate geometry. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\ny=7-4x\n\\]\n\nA parallel line has the same gradient, \\(-4\\). One possible answer is\n\\[\ny=-4x\n\\]\n\n(b) The gradient of line \\(L\\) through \\((-3,1)\\) and \\((2,-2)\\) is\n\\[\n\\frac{-2-1}{2-(-3)}=-\\frac35\n\\]\n\nA perpendicular line has gradient \\(\\frac53\\).\n\nThrough \\((-6,4)\\):\n\\[\ny-4=\\frac53(x+6)\n\\]\n\nMultiply by 3:\n\\[\n3y-12=5x+30\n\\]\n\n\\[\n5x-3y+42=0\n\\]\n\n**Answer:** For example \\(y=-4x\\), and \\(5x-3y+42=0\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q22__p22-22__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe line is\n\n\\[\ny=x+2\n\\]\n\nSubstitute this into the circle equation:\n\n\\[\nx^2+y^2-2y=24\n\\]\n\n\\[\nx^2+(x+2)^2-2(x+2)=24\n\\]\n\n\\[\nx^2+x^2+4x+4-2x-4=24\n\\]\n\n\\[\n2x^2+2x-24=0\n\\]\n\n\\[\nx^2+x-12=0\n\\]\n\n\\[\n(x+4)(x-3)=0\n\\]\n\nSo\n\n\\[\nx=-4 \\quad \\text{or} \\quad x=3\n\\]\n\nUsing \\(y=x+2\\):\n\n\\[\nx=-4 \\Rightarrow y=-2\n\\]\n\n\\[\nx=3 \\Rightarrow y=5\n\\]\n\n**Answer:** \\((-4,-2)\\) and \\((3,5)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q15__p15-15__m03__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is matching equations to graph shapes.\n\n**Solution**\n\nFor\n\\[\ny=-\\frac{2}{x^2}\n\\]\nthe graph is negative on both sides of the \\(y\\)-axis and is symmetrical in the \\(y\\)-axis.\n\nThis is Graph D.\n\nFor\n\\[\ny=-\\frac12x^3\n\\]\nthe graph is a decreasing cubic through the origin.\n\nThis is Graph B.\n\nFor\n\\[\ny=\\frac5x\n\\]\nthe graph is a positive reciprocal graph in quadrants 1 and 3.\n\nThis is Graph A.\n\n**Answer:** D, B, A.",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q21__p21-21__m04__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe maximum point of \\(y=f(x)\\) is \\((4,6)\\).\n\nFor\n\n\\[\ny=f(x+4)\n\\]\n\nthe graph moves 4 units left:\n\n\\[\n(4,6)\\to(0,6)\n\\]\n\nFor\n\n\\[\ny=f(2x)\n\\]\n\nthe \\(x\\)-coordinate is divided by 2:\n\n\\[\n(4,6)\\to(2,6)\n\\]\n\nFor part (b),\n\n\\[\ny=x^2+3x+4\n\\]\n\nThe translation vector is\n\n\\[\n\\begin{pmatrix}4\\\\6\\end{pmatrix}\n\\]\n\nSo the graph moves 4 units right and 6 units up.\n\nReplace \\(x\\) by \\(x-4\\), then add 6:\n\n\\[\ny=(x-4)^2+3(x-4)+4+6\n\\]\n\n\\[\ny=(x-4)^2+3(x-4)+10\n\\]\n\n**Answer:** \\((0,6)\\), \\((2,6)\\), and \\(y=(x-4)^2+3(x-4)+10\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q02__p03-03__m02__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is converting cubic units.\n\n**Solution**\n\n\\[\n1\\text{ m}=100\\text{ cm}\n\\]\n\nSo\n\\[\n1\\text{ m}^3=100^3\\text{ cm}^3=1,000,000\\text{ cm}^3\n\\]\n\n\\[\n32.4\\text{ m}^3=32.4\\times1,000,000\n\\]\n\n\\[\n=32,400,000\\text{ cm}^3\n\\]\n\n**Answer:** \\(32,400,000\\text{ cm}^3\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q09__p10-10__m02__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is a density question.\n\n**Solution**\n\n\\[\n\\text{mass}=\\text{density}\\times\\text{volume}\n\\]\n\n\\[\n\\text{mass}=19.3\\times150\n\\]\n\n\\[\n\\text{mass}=2895\n\\]\n\n**Answer:** \\(2895\\text{ g}\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q10__p10-10__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is converting metres per second to kilometres per hour.\n\n**Solution**\n\nTo convert m/s to km/h, multiply by \\(3.6\\).\n\n\\[\n50\\times3.6=180\n\\]\n\n**Answer:** \\(180\\text{ km/h}\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q04__p05-05__m04__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Angles in Polygons & Parallel Lines. This is a triangle angle-sum question.\n\n**Solution**\n\nAngles in a triangle add to \\(180^\\circ\\):\n\\[\n30+(4x+10)+(x+20)=180\n\\]\n\n\\[\n5x+60=180\n\\]\n\n\\[\n5x=120\n\\]\n\n\\[\nx=24\n\\]\n\n**Answer:** \\(x=24\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q05__p06-06__m02__Bearings-Scale-Drawing-and-Constructions": {
+      "status": "checked",
+      "source": "**Topic check:** Bearings, Scale Drawing & Constructions. The tag is correct.\n\n**Construction answer**\n\nTo construct the bisector of angle \\(BAC\\):\n\n1. Put the compass point at \\(A\\) and draw an arc that cuts \\(AB\\) and \\(AC\\).\n2. From the two points where the arc cuts the arms, draw equal arcs inside the angle.\n3. Draw a straight line from \\(A\\) through the intersection of those two arcs.\n\n**Answer:** The ray from \\(A\\) through the arc intersection is the angle bisector of \\(BAC\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q13__p13-13__m04__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Circle Theorems. The tag is correct.\n\n**Solution**\n\nSince \\(AD\\) is a diameter,\n\\[\n\\angle ABD=90^\\circ\n\\]\n\nGiven\n\\[\n\\angle CBD=28^\\circ\n\\]\n\nSo\n\\[\n\\angle ABC=90^\\circ-28^\\circ=62^\\circ\n\\]\n\nOpposite angles in a cyclic quadrilateral add to \\(180^\\circ\\):\n\\[\n\\angle ADC=180^\\circ-62^\\circ=118^\\circ\n\\]\n\nAt \\(D\\),\n\\[\n\\angle ADC=\\angle BDA+\\angle BDC\n\\]\n\n\\[\n118^\\circ=32^\\circ+\\angle BDC\n\\]\n\n\\[\n\\angle BDC=86^\\circ\n\\]\n\n**Answer:** \\(86^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q11__p11-11__m05__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Perimeter. The tag is correct.\n\n**Solution**\n\nTriangle \\(ACD\\) is right-angled, with\n\\[\nAD=17\\text{ cm},\\qquad CD=15\\text{ cm}\n\\]\n\nUse Pythagoras to find \\(AC\\):\n\\[\nAC^2=17^2-15^2=289-225=64\n\\]\n\n\\[\nAC=8\\text{ cm}\n\\]\n\nSo the semicircle has radius\n\\[\nr=4\\text{ cm}\n\\]\n\nThe arc length of the semicircle is\n\\[\n\\pi r=4\\pi\n\\]\n\nThe perimeter of the shaded shape is\n\\[\nAD+CD+\\text{semicircle arc}=17+15+4\\pi=44.566\\ldots\n\\]\n\n**Answer:** \\(44.6\\text{ cm}\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q26__p26-27__m06__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Volume & Surface Area.\n\n**Method**\n\nLet the radius of the base of the cone be \\(r\\), and let the slant height be \\(l\\).\n\nThe volume of the cone is\n\n\\[\n\\frac{1}{3}\\pi r^2h=1600\n\\]\n\nThe height is \\(25\\) cm, so\n\n\\[\n\\frac{1}{3}\\pi r^2(25)=1600\n\\]\n\n\\[\nr^2=\\frac{4800}{25\\pi}\n\\]\n\n\\[\nr=7.8176\\ldots\n\\]\n\nThe slant height is found using Pythagoras:\n\n\\[\nl^2=r^2+25^2\n\\]\n\n\\[\nl=26.1938\\ldots\n\\]\n\nWhen the sector is joined to form the cone, the arc length of the sector becomes the circumference of the cone base.\n\n\\[\n\\frac{x}{360}\\times 2\\pi l=2\\pi r\n\\]\n\nCancel \\(2\\pi\\):\n\n\\[\n\\frac{x}{360}l=r\n\\]\n\n\\[\nx=\\frac{360r}{l}\n\\]\n\n\\[\nx=\\frac{360(7.8176\\ldots)}{26.1938\\ldots}\n=107.4433\\ldots\n\\]\n\n**Answer:** \\(\\boxed{107^\\circ}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q23__p23-23__m03__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Ratio Toolkit to Vectors.\n\n**Method**\n\nSince \\(M\\) is the midpoint of \\(BC\\),\n\n\\[\n\\overrightarrow{AM}=\\frac{\\overrightarrow{AB}+\\overrightarrow{AC}}{2}\n\\]\n\n\\[\n\\overrightarrow{AM}=\\frac{4a+2b}{2}=2a+b\n\\]\n\nGiven\n\n\\[\n\\overrightarrow{AP}=\\frac32a+\\frac34b\n\\]\n\nFactorise:\n\n\\[\n\\overrightarrow{AP}=\\frac34(2a+b)=\\frac34\\overrightarrow{AM}\n\\]\n\nSo \\(AP\\) is \\(\\frac34\\) of \\(AM\\), leaving \\(PM\\) as \\(\\frac14\\) of \\(AM\\).\n\n**Answer:** \\(AP:PM=3:1\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q18__p18-19__m05__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Histograms. The tag is correct.\n\n**Solution**\n\nTotal frequency:\n\n\\[\n10(0.7)+5(3.4)+9(1)+6(2.5)+15(4.8)=120\n\\]\n\nBetween 17 and 35 minutes:\n\n\\[\n7(1)+6(2.5)+5(4.8)=46\n\\]\n\n\\[\n\\text{proportion}=\\frac{46}{120}=\\frac{23}{60}\n\\]\n\nGiven the customer spent more than 30 minutes, they are in the \\(30\\) to \\(45\\) minute class.\n\nMore than 36 minutes is \\(9\\) minutes out of the \\(15\\)-minute class:\n\n\\[\n\\frac{9}{15}=\\frac35\n\\]\n\n**Answers:** \\(\\frac{23}{60}\\), then \\(\\frac35\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2H__Q06__p07-07__m04__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nLet the probability of red be \\(r\\). Then the probability of green is \\(2r\\).\n\n\\[\nr+0.24+2r+0.31=1\n\\]\n\n\\[\n3r=0.45\n\\]\n\n\\[\nr=0.15\n\\]\n\nExpected number of red counters:\n\n\\[\n180\\times 0.15=27\n\\]\n\n**Answer:** \\(27\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Jan2020_P2H__Q14__p14-14__m04__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nThere are \\(13\\) large glasses and \\(7\\) small glasses.\n\n\\[\nP(\\text{two small})=\\frac{7}{20}\\times\\frac{6}{19}\n\\]\n\n\\[\n=\\frac{21}{190}\n\\]\n\n**Answer:** \\(\\frac{21}{190}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jan2020_P2H__Q20__p20-20__m03__Surds": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Right-Angled Triangles to Surds.\n\n**Method**\n\nArea of rectangle:\n\n\\[\n18\\text{ cm}^2\n\\]\n\nLength:\n\n\\[\n\\sqrt7+1\n\\]\n\nWidth:\n\n\\[\n\\frac{18}{\\sqrt7+1}\n\\]\n\nRationalise the denominator:\n\n\\[\n\\frac{18}{\\sqrt7+1}\\times \\frac{\\sqrt7-1}{\\sqrt7-1}\n\\]\n\n\\[\n=\\frac{18(\\sqrt7-1)}{7-1}\n\\]\n\n\\[\n=\\frac{18(\\sqrt7-1)}{6}\n\\]\n\n\\[\n=3(\\sqrt7-1)\n\\]\n\n\\[\n=3\\sqrt7-3\n\\]\n\n**Answer:** \\(\\boxed{3\\sqrt7-3\\text{ cm}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P2H__Q24__p24-24__m04__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Sine/Cosine Rule to Algebraic Fractions.\n\n**Method**\n\n\\[\n\\left(\\frac4{2x-5}-\\frac3{2x-3}\\right)\\div\n\\frac{9x-4x^3}{6x^2-17x+5}\n\\]\n\nFirst simplify the bracket:\n\n\\[\n\\frac4{2x-5}-\\frac3{2x-3}\n=\\frac{4(2x-3)-3(2x-5)}{(2x-5)(2x-3)}\n\\]\n\n\\[\n=\\frac{8x-12-6x+15}{(2x-5)(2x-3)}\n\\]\n\n\\[\n=\\frac{2x+3}{(2x-5)(2x-3)}\n\\]\n\nNow factor the second fraction:\n\n\\[\n9x-4x^3=-x(2x-3)(2x+3)\n\\]\n\n\\[\n6x^2-17x+5=(2x-5)(3x-1)\n\\]\n\nDividing by a fraction means multiplying by its reciprocal:\n\n\\[\n\\frac{2x+3}{(2x-5)(2x-3)}\n\\times\n\\frac{(2x-5)(3x-1)}{-x(2x-3)(2x+3)}\n\\]\n\nCancel common factors:\n\n\\[\n=-\\frac{3x-1}{x(2x-3)^2}\n\\]\n\n\\[\n=\\frac{1-3x}{x(2x-3)^2}\n\\]\n\n**Answer:** \\(\\displaystyle \\boxed{\\frac{1-3x}{x(2x-3)^2}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P2H__Q25__p25-25__m03__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Right-Angled Triangles to Sequences.\n\n**Method**\n\nMario saves from 2021 up to and including 2070.\n\nNumber of years:\n\n\\[\n2070-2021+1=50\n\\]\n\nThis is an arithmetic sequence.\n\nFirst term:\n\n\\[\n50\n\\]\n\nCommon difference:\n\n\\[\nk\n\\]\n\nLast term:\n\n\\[\n50+49k\n\\]\n\nUse the arithmetic series formula:\n\n\\[\nS_n=\\frac n2(a+l)\n\\]\n\n\\[\n33125=\\frac{50}{2}\\left(50+(50+49k)\\right)\n\\]\n\n\\[\n33125=25(100+49k)\n\\]\n\n\\[\n1325=100+49k\n\\]\n\n\\[\n49k=1225\n\\]\n\n\\[\nk=25\n\\]\n\n**Answer:** \\(\\boxed{k=25}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P2H__Q22__p22-22__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe line is\n\n\\[\ny=x+2\n\\]\n\nSubstitute this into the circle equation:\n\n\\[\nx^2+y^2-2y=24\n\\]\n\n\\[\nx^2+(x+2)^2-2(x+2)=24\n\\]\n\n\\[\nx^2+x^2+4x+4-2x-4=24\n\\]\n\n\\[\n2x^2+2x-24=0\n\\]\n\n\\[\nx^2+x-12=0\n\\]\n\n\\[\n(x+4)(x-3)=0\n\\]\n\nSo\n\n\\[\nx=-4 \\quad \\text{or} \\quad x=3\n\\]\n\nUsing \\(y=x+2\\):\n\n\\[\nx=-4 \\Rightarrow y=-2\n\\]\n\n\\[\nx=3 \\Rightarrow y=5\n\\]\n\n**Answer:** \\((-4,-2)\\) and \\((3,5)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P2H__Q21__p21-21__m04__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe maximum point of \\(y=f(x)\\) is \\((4,6)\\).\n\nFor\n\n\\[\ny=f(x+4)\n\\]\n\nthe graph moves 4 units left:\n\n\\[\n(4,6)\\to(0,6)\n\\]\n\nFor\n\n\\[\ny=f(2x)\n\\]\n\nthe \\(x\\)-coordinate is divided by 2:\n\n\\[\n(4,6)\\to(2,6)\n\\]\n\nFor part (b),\n\n\\[\ny=x^2+3x+4\n\\]\n\nThe translation vector is\n\n\\[\n\\begin{pmatrix}4\\\\6\\end{pmatrix}\n\\]\n\nSo the graph moves 4 units right and 6 units up.\n\nReplace \\(x\\) by \\(x-4\\), then add 6:\n\n\\[\ny=(x-4)^2+3(x-4)+4+6\n\\]\n\n\\[\ny=(x-4)^2+3(x-4)+10\n\\]\n\n**Answer:** \\((0,6)\\), \\((2,6)\\), and \\(y=(x-4)^2+3(x-4)+10\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P2H__Q26__p26-27__m06__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Volume & Surface Area.\n\n**Method**\n\nLet the radius of the base of the cone be \\(r\\), and let the slant height be \\(l\\).\n\nThe volume of the cone is\n\n\\[\n\\frac{1}{3}\\pi r^2h=1600\n\\]\n\nThe height is \\(25\\) cm, so\n\n\\[\n\\frac{1}{3}\\pi r^2(25)=1600\n\\]\n\n\\[\nr^2=\\frac{4800}{25\\pi}\n\\]\n\n\\[\nr=7.8176\\ldots\n\\]\n\nThe slant height is found using Pythagoras:\n\n\\[\nl^2=r^2+25^2\n\\]\n\n\\[\nl=26.1938\\ldots\n\\]\n\nWhen the sector is joined to form the cone, the arc length of the sector becomes the circumference of the cone base.\n\n\\[\n\\frac{x}{360}\\times 2\\pi l=2\\pi r\n\\]\n\nCancel \\(2\\pi\\):\n\n\\[\n\\frac{x}{360}l=r\n\\]\n\n\\[\nx=\\frac{360r}{l}\n\\]\n\n\\[\nx=\\frac{360(7.8176\\ldots)}{26.1938\\ldots}\n=107.4433\\ldots\n\\]\n\n**Answer:** \\(\\boxed{107^\\circ}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P2H__Q23__p23-23__m03__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Ratio Toolkit to Vectors.\n\n**Method**\n\nSince \\(M\\) is the midpoint of \\(BC\\),\n\n\\[\n\\overrightarrow{AM}=\\frac{\\overrightarrow{AB}+\\overrightarrow{AC}}{2}\n\\]\n\n\\[\n\\overrightarrow{AM}=\\frac{4a+2b}{2}=2a+b\n\\]\n\nGiven\n\n\\[\n\\overrightarrow{AP}=\\frac32a+\\frac34b\n\\]\n\nFactorise:\n\n\\[\n\\overrightarrow{AP}=\\frac34(2a+b)=\\frac34\\overrightarrow{AM}\n\\]\n\nSo \\(AP\\) is \\(\\frac34\\) of \\(AM\\), leaving \\(PM\\) as \\(\\frac14\\) of \\(AM\\).\n\n**Answer:** \\(AP:PM=3:1\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

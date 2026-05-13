@@ -1,0 +1,191 @@
+{
+  "paperSlug": "Jun2025_P1H",
+  "solutions": {
+    "all::Jun2025_P1H__Q08__p09-09__m04__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n520\\text{ million}=520000000=5.2\\times 10^8\n\\]\n\n\\[\n8.79\\times 10^{-5}=0.0000879\n\\]\n\nFor part (c),\n\n\\[\n(5\\times 10^{42})(7\\times 10^{-180})\n=35\\times 10^{-138}\n\\]\n\nWrite this in standard form:\n\n\\[\n35\\times 10^{-138}=3.5\\times 10^{-137}\n\\]\n\n**Answer:** (a) \\(5.2\\times 10^8\\), (b) \\(0.0000879\\), (c) \\(3.5\\times 10^{-137}\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q02__p04-04__m06__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Percentages. Most of the marks are for percentage profit; bounds are secondary.\n\n**Method**\n\nNumber of cups:\n\n\\[\n80\\times 4=320\n\\]\n\nCost to make the cups:\n\n\\[\n320\\times 6=1920\n\\]\n\nProfit:\n\n\\[\n2160-1920=240\n\\]\n\nPercentage profit:\n\n\\[\n\\frac{240}{1920}\\times 100=12.5\n\\]\n\nThe height \\(9\\) cm correct to the nearest cm has lower bound\n\n\\[\n8.5\\text{ cm}\n\\]\n\nThe weight \\(120\\) g correct to the nearest \\(10\\) g has upper bound\n\n\\[\n125\\text{ g}\n\\]\n\n**Answer:** (a) \\(12.5\\%\\), (b) \\(8.5\\) cm, (c) \\(125\\) g",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q05__p06-06__m03__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Percentages. This is a reverse percentage sale-price question.\n\n**Method**\n\nThe watch is reduced by \\(28\\%\\), so the sale price is\n\n\\[\n100\\%-28\\%=72\\%\n\\]\n\nof the normal price.\n\n\\[\n0.72\\times \\text{normal price}=198\n\\]\n\n\\[\n\\text{normal price}=198\\div 0.72=275\n\\]\n\n**Answer:** \\(275\\) euros.",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q13__p13-13__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nAfter the first two years, the value is\n\n\\[\n750000(0.96)(0.935)=673200\n\\]\n\nThen the value increases by \\(x\\%\\) to \\(698445\\), so\n\n\\[\n673200\\left(1+\\frac{x}{100}\\right)=698445\n\\]\n\n\\[\n1+\\frac{x}{100}=\\frac{698445}{673200}=1.0375\n\\]\n\n\\[\nx=3.75\n\\]\n\n**Answer:** \\(x=3.75\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q18__p18-18__m04__Direct-and-Inverse-Proportion": {
+      "status": "checked",
+      "source": "**Topic check:** Direct and Inverse Proportion. The tag is correct.\n\n**Method**\n\n\\(y\\) is inversely proportional to \\(x^3\\), so\n\n\\[\ny=\\frac{k}{x^3}\n\\]\n\nUse \\(y=4\\) when \\(x=3\\):\n\n\\[\n4=\\frac{k}{3^3}\n\\]\n\n\\[\nk=4\\times 27=108\n\\]\n\nSo\n\n\\[\ny=\\frac{108}{x^3}\n\\]\n\nWhen \\(y=864\\),\n\n\\[\n864=\\frac{108}{x^3}\n\\]\n\n\\[\nx^3=\\frac{108}{864}=\\frac18\n\\]\n\n\\[\nx=\\frac12\n\\]\n\n**Answer:** \\(x=\\frac12\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q04__p06-06__m04__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic Roots and Indices. The tag is correct.\n\n**Method**\n\nFor part (a),\n\n\\[\nx^5\\times x^7=x^{12}\n\\]\n\nSo \\(m=12\\).\n\nFor part (b),\n\n\\[\ny^8\\div y^3=y^{8-3}=y^5\n\\]\n\nSo \\(n=5\\).\n\nFor part (c),\n\n\\[\n(5a^4r^2)^3=5^3a^{4\\times 3}r^{2\\times 3}\n\\]\n\n\\[\n=125a^{12}r^6\n\\]\n\n**Answer:** (a) \\(m=12\\), (b) \\(n=5\\), (c) \\(125a^{12}r^6\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q06__p07-07__m06__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is acceptable because the factorising and solving-quadratic section is a full half of the question.\n\n**Solution**\n\n(a)\n\\[\nx-4=\\frac{3+2x}{6}\n\\]\n\n\\[\n6x-24=3+2x\n\\]\n\n\\[\n4x=27\n\\]\n\n\\[\nx=\\frac{27}{4}\n\\]\n\n(b)(i)\n\\[\ny^2-11y+30=(y-5)(y-6)\n\\]\n\n(b)(ii)\n\\[\ny=5 \\quad \\text{or} \\quad y=6\n\\]\n\n**Answer:** \\(x=\\frac{27}{4}\\), \\((y-5)(y-6)\\), \\(y=5\\) or \\(y=6\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q12__p12-12__m03__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Algebraic Fractions.\n\n**Solution**\n\n\\[\n\\frac54+\\frac{x-3}{6x}\n\\]\n\nThe common denominator is \\(12x\\):\n\n\\[\n\\frac54=\\frac{15x}{12x}\n\\]\n\n\\[\n\\frac{x-3}{6x}=\\frac{2x-6}{12x}\n\\]\n\n\\[\n\\frac{15x}{12x}+\\frac{2x-6}{12x}\n=\\frac{17x-6}{12x}\n\\]\n\n**Answer:** \\(\\frac{17x-6}{12x}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q15__p15-15__m04__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks for exact-form proof.\n\n**Solution**\n\n(a)\n\\[\n(\\sqrt3)^5=(\\sqrt3)^4\\sqrt3=9\\sqrt3\n\\]\n\nSo \\(k=9\\).\n\n(b)\n\\[\n\\frac{21}{3-\\sqrt2}\\times\\frac{3+\\sqrt2}{3+\\sqrt2}\n=\\frac{21(3+\\sqrt2)}{9-2}\n\\]\n\n\\[\n=3(3+\\sqrt2)=9+3\\sqrt2\n\\]\n\nSince \\(3\\sqrt2=\\sqrt{18}\\),\n\\[\n9+3\\sqrt2=9+\\sqrt{18}\n\\]\n\n**Answer:** \\(k=9\\), and \\(\\dfrac{21}{3-\\sqrt2}=9+\\sqrt{18}\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q22__p21-21__m05__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nx^2+y^2+3y=7\n\\]\n\n\\[\ny=x+2\n\\]\n\nSubstitute:\n\n\\[\nx^2+(x+2)^2+3(x+2)=7\n\\]\n\n\\[\nx^2+x^2+4x+4+3x+6=7\n\\]\n\n\\[\n2x^2+7x+3=0\n\\]\n\n\\[\n(2x+1)(x+3)=0\n\\]\n\nSo\n\n\\[\nx=-\\frac12 \\quad \\text{or} \\quad x=-3\n\\]\n\nFind \\(y\\):\n\n\\[\nx=-\\frac12 \\Rightarrow y=\\frac32\n\\]\n\n\\[\nx=-3 \\Rightarrow y=-1\n\\]\n\n**Answer:** \\((x,y)=\\left(-\\dfrac12,\\dfrac32\\right)\\) or \\((-3,-1)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q24__p24-25__m05__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nu_{20}=a+19d=123\n\\]\n\n\\[\nS_{30}=\\frac{30}{2}(2a+29d)=2880\n\\]\n\n\\[\n2a+29d=192\n\\]\n\nDouble the first equation:\n\n\\[\n2a+38d=246\n\\]\n\nSubtract:\n\n\\[\n9d=54\n\\]\n\n\\[\nd=6\n\\]\n\n\\[\na+19(6)=123\n\\]\n\n\\[\na=9\n\\]\n\n**Answer:** \\(a=9,\\ d=6\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q16__p16-16__m04__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Functions. The original tag was solving quadratic equations, but the question uses function notation and composition.\n\n**Solution**\n\n\\[\nf(x)=9-\\sqrt{x},\\qquad g(x)=4x^2\n\\]\n\n(a)\n\\[\nf(9)=9-\\sqrt9=6\n\\]\n\n(b)\n\\[\nfg(x)=f(g(x))=9-\\sqrt{4x^2}\n\\]\n\n\\[\n=9-2|x|\n\\]\n\nSolve\n\\[\n9-2|x|<0\n\\]\n\n\\[\n2|x|>9\n\\]\n\n\\[\n|x|>\\frac92\n\\]\n\nSo\n\\[\nx<-\\frac92 \\quad \\text{or} \\quad x>\\frac92\n\\]\n\nIf the input is restricted to \\(x\\ge0\\), this becomes \\(x>\\frac92\\).\n\n**Answer:** \\(f(9)=6\\), and \\(x<-\\frac92\\) or \\(x>\\frac92\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q25__p26-26__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nP=(4,7),\\qquad R=(8,-5)\n\\]\n\nThe gradient of diagonal \\(PR\\) is\n\n\\[\n\\frac{-5-7}{8-4}=-3\n\\]\n\nThe other diagonal \\(QS\\) is perpendicular to \\(PR\\), so its gradient is\n\n\\[\n\\frac13\n\\]\n\nThe diagonals of a square bisect each other.\n\nThe midpoint of \\(PR\\) is\n\n\\[\n\\left(\\frac{4+8}{2},\\frac{7+(-5)}{2}\\right)=(6,1)\n\\]\n\nSo \\(QS\\) passes through \\((6,1)\\) with gradient \\(\\frac13\\).\n\n\\[\ny-1=\\frac13(x-6)\n\\]\n\n\\[\ny=\\frac13x-1\n\\]\n\nMultiply by 3:\n\n\\[\n3y=x-3\n\\]\n\n**Answer:** \\(3y=x-3\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q10__p11-11__m03__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is a table-and-graph question for a cubic function.\n\n**Solution**\n\n\\[\ny=x^3+2x+3\n\\]\n\nThe completed table is:\n\n\\[\n\\begin{array}{c|rrrrrrr}\nx&-3&-2&-1&0&1&2&3\\\\\n\\hline\ny&-30&-9&0&3&6&15&36\n\\end{array}\n\\]\n\nPlot the points and join them with a smooth cubic curve.\n\n**Answer:** Missing values are \\(-30,15\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q19__p18-18__m02__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is transforming graph coordinates.\n\n**Solution**\n\nThe minimum point of \\(y=f(x)\\) is\n\\[\n(8,12)\n\\]\n\nFor\n\\[\ny=f(x)+5\n\\]\nthe graph moves up by 5:\n\\[\n(8,12)\\to(8,17)\n\\]\n\nFor\n\\[\ny=f(2x)\n\\]\nthe graph is horizontally compressed by scale factor \\(\\frac12\\), so the \\(x\\)-coordinate is halved:\n\\[\n(8,12)\\to(4,12)\n\\]\n\n**Answer:** (i) \\((8,17)\\) and (ii) \\((4,12)\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q03__p05-05__m04__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Angles in Polygons & Parallel Lines. The tag is correct.\n\n**Solution**\n\nAngles around point \\(B\\) add to \\(360^\\circ\\).\n\nThe interior angle of the regular polygon is\n\\[\n360^\\circ-140^\\circ-50^\\circ=170^\\circ\n\\]\n\nSo the exterior angle is\n\\[\n180^\\circ-170^\\circ=10^\\circ\n\\]\n\nFor a regular polygon,\n\\[\nn=\\frac{360}{10}=36\n\\]\n\n**Answer:** \\(n=36\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q09__p10-10__m05__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Perimeter. The tag is correct.\n\n**Solution**\n\nBecause the trapezium has one line of symmetry, each sloping side makes the same \\(60^\\circ\\) angle with the base.\n\nHeight:\n\\[\n12\\sin 60^\\circ=10.392\\ldots\n\\]\n\nThe top parallel side is\n\\[\n47-2(12\\cos 60^\\circ)=35\n\\]\n\nArea:\n\\[\n\\frac12(47+35)(10.392\\ldots)=426.084\\ldots\n\\]\n\n**Answer:** \\(426\\text{ cm}^2\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q11__p12-12__m02__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Circles, Arcs & Sectors. The tag is correct.\n\n**Solution**\n\n\\[\n\\text{area}=\\frac{140}{360}\\times \\pi(16)^2\n\\]\n\n\\[\n=312.763\\ldots\n\\]\n\n**Answer:** \\(313\\text{ cm}^2\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q07__p08-08__m03__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Volume & Surface Area. The tag is correct.\n\n**Solution**\n\nFor a cylinder,\n\\[\nV=\\pi r^2h\n\\]\n\n\\[\n3892=\\pi(8)^2h\n\\]\n\n\\[\nh=\\frac{3892}{64\\pi}=19.357\\ldots\n\\]\n\n**Answer:** \\(19.4\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q20__p19-19__m05__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Standard & Compound Units to Sine, Cosine Rule & Area of Triangles.\n\n**Method**\n\nFirst use triangle \\(ABD\\).\n\n\\[\nAB=9.4,\\quad AD=12.8,\\quad \\angle BAD=72^\\circ\n\\]\n\nUse the cosine rule to find \\(BD\\):\n\n\\[\nBD^2=9.4^2+12.8^2-2(9.4)(12.8)\\cos72^\\circ\n\\]\n\n\\[\nBD=13.3356\\ldots\n\\]\n\nIn triangle \\(BCD\\),\n\n\\[\n\\angle BDC=39^\\circ,\\quad \\angle BCD=54^\\circ\n\\]\n\nUse the sine rule:\n\n\\[\n\\frac{BC}{\\sin39^\\circ}=\\frac{BD}{\\sin54^\\circ}\n\\]\n\n\\[\nBC=\\frac{13.3356\\ldots\\sin39^\\circ}{\\sin54^\\circ}\n\\]\n\n\\[\nBC=10.3735\\ldots\n\\]\n\nCorrect to 3 significant figures,\n\n\\[\nBC=10.4\n\\]\n\n**Answer:** \\(10.4\\text{ cm}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q23__p22-23__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Vectors.\n\n**Method**\n\nFor part (a),\n\n\\[\n\\vec{OA}=12\\mathbf a,\\qquad \\vec{OB}=8\\mathbf b\n\\]\n\n\\[\n\\vec{AB}=\\vec{OB}-\\vec{OA}\n\\]\n\n\\[\n\\vec{AB}=8\\mathbf b-12\\mathbf a\n\\]\n\nFor part (b), \\(P\\) is the midpoint of \\(OA\\), so\n\n\\[\n\\vec{OP}=6\\mathbf a\n\\]\n\nGiven\n\n\\[\nAB:BR=1:2\n\\]\n\n\\[\n\\vec{BR}=2\\vec{AB}\n\\]\n\n\\[\n\\vec{BR}=16\\mathbf b-24\\mathbf a\n\\]\n\nTherefore\n\n\\[\n\\vec{OR}=\\vec{OB}+\\vec{BR}\n\\]\n\n\\[\n\\vec{OR}=8\\mathbf b+16\\mathbf b-24\\mathbf a\n\\]\n\n\\[\n\\vec{OR}=-24\\mathbf a+24\\mathbf b\n\\]\n\nSince \\(P,Q,R\\) are collinear, write \\(Q\\) on \\(PR\\):\n\n\\[\n\\vec{OQ}=\\vec{OP}+t(\\vec{OR}-\\vec{OP})\n\\]\n\n\\[\n\\vec{OQ}=6\\mathbf a+t(-30\\mathbf a+24\\mathbf b)\n\\]\n\n\\[\n\\vec{OQ}=(6-30t)\\mathbf a+24t\\mathbf b\n\\]\n\nBut \\(Q\\) lies on \\(OB\\), so there is no \\(\\mathbf a\\) component:\n\n\\[\n6-30t=0\n\\]\n\n\\[\nt=\\frac15\n\\]\n\nThen\n\n\\[\n\\vec{OQ}=24\\left(\\frac15\\right)\\mathbf b\n\\]\n\n\\[\n\\vec{OQ}=\\frac{24}{5}\\mathbf b\n\\]\n\nSince \\(\\vec{OQ}=n\\mathbf b\\),\n\n\\[\nn=\\frac{24}{5}\n\\]\n\n**Answer:** \\(\\vec{AB}=8\\mathbf b-12\\mathbf a,\\quad n=\\frac{24}{5}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q01__p03-03__m05__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe modal class is the class with the greatest frequency.\n\n**Modal class:** \\(5<d\\le 10\\).\n\nUse midpoints \\(2.5,7.5,12.5,17.5,22.5\\).\n\n\\[\n2.5(26)+7.5(40)+12.5(16)+17.5(10)+22.5(8)=920\n\\]\n\n\\[\n\\text{estimated mean}=\\frac{920}{100}=9.2\n\\]\n\n**Answer:** modal class \\(5<d\\le 10\\), estimated mean \\(9.2\\text{ km}\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q17__p17-17__m03__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Histograms. The tag is correct.\n\n**Solution**\n\nTotal estimated frequency:\n\n\\[\n10(2.5)+5(4)+15(3.6)+20(0.5)+10(1.7)=126\n\\]\n\nMore than \\(40\\) minutes:\n\n\\[\n10(0.5)+10(1.7)=22\n\\]\n\nSo the proportion is\n\n\\[\n\\frac{22}{126}=\\frac{11}{63}\n\\]\n\n**Answer:** \\(\\frac{11}{63}\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q21__p20-20__m03__Probability-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThere are\n\n\\[\n\\binom{20}{3}=1140\n\\]\n\nways to choose 3 counters.\n\nExactly two counters are the same colour:\n\n\\[\n\\binom{9}{2}(11)+\\binom{7}{2}(13)+\\binom{4}{2}(16)\n\\]\n\n\\[\n=36(11)+21(13)+6(16)\n\\]\n\n\\[\n=396+273+96=765\n\\]\n\nSo the probability is\n\n\\[\n\\frac{765}{1140}=\\frac{51}{76}\n\\]\n\n**Answer:** \\(\\frac{51}{76}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1H__Q14__p14-14__m04__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\n\\[\nP(\\text{loses badminton})=1-0.7=0.3\n\\]\n\n\\[\nP(\\text{loses tennis})=1-0.4=0.6\n\\]\n\n\\[\nP(\\text{loses both})=0.3\\times 0.6=0.18\n\\]\n\n**Answer:** \\(0.18\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jun2025_P1H__Q22__p21-21__m05__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nx^2+y^2+3y=7\n\\]\n\n\\[\ny=x+2\n\\]\n\nSubstitute:\n\n\\[\nx^2+(x+2)^2+3(x+2)=7\n\\]\n\n\\[\nx^2+x^2+4x+4+3x+6=7\n\\]\n\n\\[\n2x^2+7x+3=0\n\\]\n\n\\[\n(2x+1)(x+3)=0\n\\]\n\nSo\n\n\\[\nx=-\\frac12 \\quad \\text{or} \\quad x=-3\n\\]\n\nFind \\(y\\):\n\n\\[\nx=-\\frac12 \\Rightarrow y=\\frac32\n\\]\n\n\\[\nx=-3 \\Rightarrow y=-1\n\\]\n\n**Answer:** \\((x,y)=\\left(-\\dfrac12,\\dfrac32\\right)\\) or \\((-3,-1)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P1H__Q24__p24-25__m05__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nu_{20}=a+19d=123\n\\]\n\n\\[\nS_{30}=\\frac{30}{2}(2a+29d)=2880\n\\]\n\n\\[\n2a+29d=192\n\\]\n\nDouble the first equation:\n\n\\[\n2a+38d=246\n\\]\n\nSubtract:\n\n\\[\n9d=54\n\\]\n\n\\[\nd=6\n\\]\n\n\\[\na+19(6)=123\n\\]\n\n\\[\na=9\n\\]\n\n**Answer:** \\(a=9,\\ d=6\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P1H__Q25__p26-26__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nP=(4,7),\\qquad R=(8,-5)\n\\]\n\nThe gradient of diagonal \\(PR\\) is\n\n\\[\n\\frac{-5-7}{8-4}=-3\n\\]\n\nThe other diagonal \\(QS\\) is perpendicular to \\(PR\\), so its gradient is\n\n\\[\n\\frac13\n\\]\n\nThe diagonals of a square bisect each other.\n\nThe midpoint of \\(PR\\) is\n\n\\[\n\\left(\\frac{4+8}{2},\\frac{7+(-5)}{2}\\right)=(6,1)\n\\]\n\nSo \\(QS\\) passes through \\((6,1)\\) with gradient \\(\\frac13\\).\n\n\\[\ny-1=\\frac13(x-6)\n\\]\n\n\\[\ny=\\frac13x-1\n\\]\n\nMultiply by 3:\n\n\\[\n3y=x-3\n\\]\n\n**Answer:** \\(3y=x-3\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P1H__Q20__p19-19__m05__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Standard & Compound Units to Sine, Cosine Rule & Area of Triangles.\n\n**Method**\n\nFirst use triangle \\(ABD\\).\n\n\\[\nAB=9.4,\\quad AD=12.8,\\quad \\angle BAD=72^\\circ\n\\]\n\nUse the cosine rule to find \\(BD\\):\n\n\\[\nBD^2=9.4^2+12.8^2-2(9.4)(12.8)\\cos72^\\circ\n\\]\n\n\\[\nBD=13.3356\\ldots\n\\]\n\nIn triangle \\(BCD\\),\n\n\\[\n\\angle BDC=39^\\circ,\\quad \\angle BCD=54^\\circ\n\\]\n\nUse the sine rule:\n\n\\[\n\\frac{BC}{\\sin39^\\circ}=\\frac{BD}{\\sin54^\\circ}\n\\]\n\n\\[\nBC=\\frac{13.3356\\ldots\\sin39^\\circ}{\\sin54^\\circ}\n\\]\n\n\\[\nBC=10.3735\\ldots\n\\]\n\nCorrect to 3 significant figures,\n\n\\[\nBC=10.4\n\\]\n\n**Answer:** \\(10.4\\text{ cm}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P1H__Q23__p22-23__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Vectors.\n\n**Method**\n\nFor part (a),\n\n\\[\n\\vec{OA}=12\\mathbf a,\\qquad \\vec{OB}=8\\mathbf b\n\\]\n\n\\[\n\\vec{AB}=\\vec{OB}-\\vec{OA}\n\\]\n\n\\[\n\\vec{AB}=8\\mathbf b-12\\mathbf a\n\\]\n\nFor part (b), \\(P\\) is the midpoint of \\(OA\\), so\n\n\\[\n\\vec{OP}=6\\mathbf a\n\\]\n\nGiven\n\n\\[\nAB:BR=1:2\n\\]\n\n\\[\n\\vec{BR}=2\\vec{AB}\n\\]\n\n\\[\n\\vec{BR}=16\\mathbf b-24\\mathbf a\n\\]\n\nTherefore\n\n\\[\n\\vec{OR}=\\vec{OB}+\\vec{BR}\n\\]\n\n\\[\n\\vec{OR}=8\\mathbf b+16\\mathbf b-24\\mathbf a\n\\]\n\n\\[\n\\vec{OR}=-24\\mathbf a+24\\mathbf b\n\\]\n\nSince \\(P,Q,R\\) are collinear, write \\(Q\\) on \\(PR\\):\n\n\\[\n\\vec{OQ}=\\vec{OP}+t(\\vec{OR}-\\vec{OP})\n\\]\n\n\\[\n\\vec{OQ}=6\\mathbf a+t(-30\\mathbf a+24\\mathbf b)\n\\]\n\n\\[\n\\vec{OQ}=(6-30t)\\mathbf a+24t\\mathbf b\n\\]\n\nBut \\(Q\\) lies on \\(OB\\), so there is no \\(\\mathbf a\\) component:\n\n\\[\n6-30t=0\n\\]\n\n\\[\nt=\\frac15\n\\]\n\nThen\n\n\\[\n\\vec{OQ}=24\\left(\\frac15\\right)\\mathbf b\n\\]\n\n\\[\n\\vec{OQ}=\\frac{24}{5}\\mathbf b\n\\]\n\nSince \\(\\vec{OQ}=n\\mathbf b\\),\n\n\\[\nn=\\frac{24}{5}\n\\]\n\n**Answer:** \\(\\vec{AB}=8\\mathbf b-12\\mathbf a,\\quad n=\\frac{24}{5}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P1H__Q21__p20-20__m03__Probability-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThere are\n\n\\[\n\\binom{20}{3}=1140\n\\]\n\nways to choose 3 counters.\n\nExactly two counters are the same colour:\n\n\\[\n\\binom{9}{2}(11)+\\binom{7}{2}(13)+\\binom{4}{2}(16)\n\\]\n\n\\[\n=36(11)+21(13)+6(16)\n\\]\n\n\\[\n=396+273+96=765\n\\]\n\nSo the probability is\n\n\\[\n\\frac{765}{1140}=\\frac{51}{76}\n\\]\n\n**Answer:** \\(\\frac{51}{76}\\)",
+      "updated": "2026-05-05T16:25:30",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

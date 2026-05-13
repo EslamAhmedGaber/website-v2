@@ -1,0 +1,203 @@
+{
+  "paperSlug": "Jun2025_P2HR",
+  "solutions": {
+    "all::Jun2025_P2HR__Q02__p04-04__m03__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\n1400=14\\times 100\n\\]\n\n\\[\n1400=(2\\times 7)(2^2\\times 5^2)\n\\]\n\n\\[\n1400=2^3\\times 5^2\\times 7\n\\]\n\n**Answer:** \\(\\displaystyle 2^3\\times 5^2\\times 7\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q04__p05-05__m05__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct because the final task is percentage profit.\n\n**Method**\n\nNumber of boxes of tiles:\n\n\\[\n\\frac{45}{1.5}=30\n\\]\n\nCost of tiles:\n\n\\[\n30\\times 64=1920\n\\]\n\nCost of adhesive:\n\n\\[\n5\\times 12=60\n\\]\n\nTotal cost:\n\n\\[\n1920+60=1980\n\\]\n\nProfit:\n\n\\[\n3000-1980=1020\n\\]\n\nPercentage profit:\n\n\\[\n\\frac{1020}{1980}\\times 100=51.515\\ldots\\%\n\\]\n\n**Answer:** \\(51.5\\%\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q09__p10-10__m03__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nA reduction of \\(15\\%\\) means the sale price is \\(85\\%\\) of the normal price.\n\n\\[\n0.85\\times \\text{normal price}=612\n\\]\n\n\\[\n\\text{normal price}=\\frac{612}{0.85}=720\n\\]\n\n**Answer:** \\(720\\) Swiss francs",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q12__p12-12__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nAfter the first 2 years,\n\n\\[\n16000(0.88)^2=12390.40\n\\]\n\nIn the third year, the value becomes \\(11461.12\\), so\n\n\\[\n12390.40\\left(1-\\frac{x}{100}\\right)=11461.12\n\\]\n\n\\[\n1-\\frac{x}{100}=\\frac{11461.12}{12390.40}=0.925\n\\]\n\n\\[\nx=7.5\n\\]\n\n**Answer:** \\(x=7.5\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q06__p08-08__m05__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Algebraic Roots and Indices. This question uses index laws, not proportion.\n\n**Method**\n\n\\[\n5^0=1\n\\]\n\nFor part (b),\n\n\\[\n\\frac{5^9\\times 5^{-3}}{5^{-2}}=5^{9+(-3)-(-2)}=5^8\n\\]\n\nSo\n\n\\[\nk=8\n\\]\n\nFor part (c),\n\n\\[\n(2d^4e^5)^3=2^3d^{4\\times 3}e^{5\\times 3}\n\\]\n\n\\[\n=8d^{12}e^{15}\n\\]\n\n**Answer:** (a) \\(1\\), (b) \\(k=8\\), (c) \\(8d^{12}e^{15}\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q13__p13-13__m05__Expanding-Brackets": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to expanding brackets. The original tag was factorising, but the expansion part carries more marks.\n\n**Solution**\n\n(a)\n\\[\n4x^2-25y^2=(2x-5y)(2x+5y)\n\\]\n\n(b)\n\\[\n4x(x+3)(2x-5)\n\\]\n\nFirst,\n\\[\n(x+3)(2x-5)=2x^2+x-15\n\\]\n\nThen\n\\[\n4x(2x^2+x-15)=8x^3+4x^2-60x\n\\]\n\nSo \\(a=8\\), \\(b=4\\), and \\(c=-60\\).\n\n**Answer:** (a) \\((2x-5y)(2x+5y)\\), (b) \\(8x^3+4x^2-60x\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q17__p17-17__m04__Rearranging-Formulas": {
+      "status": "checked",
+      "source": "**Topic check:** Rearranging formulas. The tag is correct.\n\n**Solution**\n\n\\[\np=\\frac{8k^2+5}{7-3k^2}\n\\]\n\n\\[\np(7-3k^2)=8k^2+5\n\\]\n\n\\[\n7p-5=k^2(3p+8)\n\\]\n\n\\[\nk^2=\\frac{7p-5}{3p+8}\n\\]\n\n**Answer:** \\(k=\\pm\\sqrt{\\frac{7p-5}{3p+8}}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q16__p17-17__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks for exact-form proof.\n\n**Solution**\n\n\\[\n\\frac{4}{3\\sqrt5+7}\\times\\frac{7-3\\sqrt5}{7-3\\sqrt5}\n=\\frac{4(7-3\\sqrt5)}{49-45}\n\\]\n\n\\[\n=7-3\\sqrt5\n\\]\n\nSince \\(3\\sqrt5=\\sqrt{45}\\),\n\\[\n7-3\\sqrt5=7-\\sqrt{45}\n\\]\n\n**Answer:** \\(7-\\sqrt{45}\\), so \\(a=7\\) and \\(b=45\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q01__p03-03__m05__Solving-Linear-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to solving linear equations. The original tag was factorising, but the equation is the larger part.\n\n**Solution**\n\n(a)\n\\[\n18c-45cd=9c(2-5d)\n\\]\n\n(b)\n\\[\n\\frac{5-2x}{6}=3x-4\n\\]\n\n\\[\n5-2x=18x-24\n\\]\n\n\\[\n29=20x\n\\]\n\n\\[\nx=\\frac{29}{20}\n\\]\n\n**Answer:** (a) \\(9c(2-5d)\\), (b) \\(x=\\frac{29}{20}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q21__p21-21__m03__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n2x^2-7x-15>0\n\\]\n\nFactorise:\n\n\\[\n2x^2-7x-15=(2x+3)(x-5)\n\\]\n\nThe critical values are\n\n\\[\nx=-\\frac32 \\quad \\text{and} \\quad x=5\n\\]\n\nThe quadratic is greater than 0 outside the roots.\n\n**Answer:** \\(x<-\\dfrac32\\) or \\(x>5\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q03__p04-04__m03__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\n\\[\n3x+2y=10\n\\]\n\n\\[\n3x-4y=16\n\\]\n\nSubtract the second equation from the first:\n\\[\n6y=-6\n\\]\n\n\\[\ny=-1\n\\]\n\nSubstitute into \\(3x+2y=10\\):\n\\[\n3x+2(-1)=10\n\\]\n\n\\[\n3x=12\n\\]\n\n\\[\nx=4\n\\]\n\n**Answer:** \\(x=4\\), \\(y=-1\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q19__p19-19__m03__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Functions. The tag is correct.\n\n**Solution**\n\n\\[\nf(x)=3x-4,\\qquad g(x)=\\frac{x}{2x+1}\n\\]\n\n(a) The denominator of \\(g\\) cannot be zero:\n\\[\n2x+1=0\n\\]\n\n\\[\nx=-\\frac12\n\\]\n\n(b)\n\\[\ngf(x)=g(f(x))\n\\]\n\n\\[\ngf(x)=\\frac{3x-4}{2(3x-4)+1}\n\\]\n\n\\[\ngf(x)=\\frac{3x-4}{6x-7}\n\\]\n\n**Answer:** Excluded value \\(-\\frac12\\), and \\(gf(x)=\\dfrac{3x-4}{6x-7}\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q24__p24-24__m06__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Coordinate Geometry.\n\n**Method**\n\n\\[\nP=(-5,a), \\qquad Q=(7,3a)\n\\]\n\nThe length of \\(PQ\\) is \\(4\\sqrt{10}\\), so\n\n\\[\n\\sqrt{(7-(-5))^2+(3a-a)^2}=4\\sqrt{10}\n\\]\n\n\\[\n\\sqrt{12^2+(2a)^2}=4\\sqrt{10}\n\\]\n\nSquare both sides:\n\n\\[\n144+4a^2=160\n\\]\n\n\\[\n4a^2=16\n\\]\n\n\\[\na^2=4\n\\]\n\nSince \\(a>0\\),\n\n\\[\na=2\n\\]\n\nSo\n\n\\[\nP=(-5,2), \\qquad Q=(7,6)\n\\]\n\nThe midpoint of \\(PQ\\) is\n\n\\[\n\\left(\\frac{-5+7}{2},\\frac{2+6}{2}\\right)=(1,4)\n\\]\n\nThe gradient of \\(PQ\\) is\n\n\\[\n\\frac{6-2}{7-(-5)}=\\frac{4}{12}=\\frac{1}{3}\n\\]\n\nSo the gradient of the perpendicular bisector is\n\n\\[\n-3\n\\]\n\nUsing point \\((1,4)\\):\n\n\\[\ny-4=-3(x-1)\n\\]\n\n\\[\ny=-3x+7\n\\]\n\n**Answer:** \\(\\boxed{y=-3x+7}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q10__p10-10__m02__Linear-Graphs-y-mx-c": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is a parallel straight-line equation question.\n\n**Solution**\n\nThe line\n\\[\ny=2-5x\n\\]\nhas gradient \\(-5\\).\n\nA parallel line has the same gradient, so line L has form\n\\[\ny=-5x+c\n\\]\n\nLine L passes through \\((0,6)\\), so\n\\[\n6=c\n\\]\n\n**Answer:** \\(y=-5x+6\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q25__p25-25__m03__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFrom the graph,\n\n\\[\n\\text{maximum}=4\n\\]\n\n\\[\n\\text{minimum}=-2\n\\]\n\nThe amplitude is\n\n\\[\na=\\frac{4-(-2)}{2}=3\n\\]\n\nThe centre line is\n\n\\[\nc=\\frac{4+(-2)}{2}=1\n\\]\n\nThe maximum is about \\(45^\\circ\\). For a sine graph, a maximum happens when the angle inside the sine is \\(90^\\circ\\), so\n\n\\[\n45+b=90\n\\]\n\n\\[\nb=45\n\\]\n\n**Answer:** \\(a=3,\\ b=45,\\ c=1\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q22__p22-22__m05__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe cuboid has dimensions\n\n\\[\nx,\\quad x,\\quad 15-4x\n\\]\n\nSo\n\n\\[\nV=x^2(15-4x)\n\\]\n\n\\[\nV=15x^2-4x^3\n\\]\n\nDifferentiate:\n\n\\[\n\\frac{dV}{dx}=30x-12x^2\n\\]\n\nAt a maximum,\n\n\\[\n30x-12x^2=0\n\\]\n\n\\[\n6x(5-2x)=0\n\\]\n\nThe useful value is\n\n\\[\nx=2.5\n\\]\n\nNow substitute into the volume:\n\n\\[\nV=(2.5)^2(15-4(2.5))\n\\]\n\n\\[\nV=6.25\\times 5\n\\]\n\n\\[\nV=31.25\n\\]\n\n**Answer:** \\(31.25\\text{ cm}^3\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q07__p09-09__m02__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Standard & Compound Units. The tag is correct.\n\n**Solution**\n\nUse\n\\[\n\\text{density}=\\frac{\\text{mass}}{\\text{volume}}\n\\]\n\nSo\n\\[\n\\text{volume}=\\frac{\\text{mass}}{\\text{density}}\n=\\frac{48.3}{10.5}=4.6\n\\]\n\n**Answer:** \\(4.6\\text{ cm}^3\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q15__p16-16__m03__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Circle Theorems. The tag is correct.\n\n**Solution**\n\nSince \\(OA=OB\\), triangle \\(AOB\\) is isosceles:\n\\[\n\\angle ABO=36^\\circ\n\\]\n\nSo\n\\[\n\\angle AOB=180^\\circ-36^\\circ-36^\\circ=108^\\circ\n\\]\n\nSince \\(OB=OC\\), triangle \\(BOC\\) is isosceles:\n\\[\n\\angle OBC=21^\\circ\n\\]\n\nSo\n\\[\n\\angle BOC=180^\\circ-21^\\circ-21^\\circ=138^\\circ\n\\]\n\nAngles around \\(O\\) add to \\(360^\\circ\\):\n\\[\n\\angle AOC=360^\\circ-108^\\circ-138^\\circ=114^\\circ\n\\]\n\nSince \\(OA=OC\\),\n\\[\n\\angle ACO=\\frac{180^\\circ-114^\\circ}{2}=33^\\circ\n\\]\n\n**Answer:** \\(33^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q26__p26-27__m05__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe volume of a hemisphere is\n\n\\[\n\\frac{2}{3}\\pi r^3\n\\]\n\nFor the original hemisphere \\(H\\),\n\n\\[\n\\frac{2}{3}\\pi x^3=6174\\pi\n\\]\n\nCancel \\(\\pi\\):\n\n\\[\n\\frac{2}{3}x^3=6174\n\\]\n\n\\[\nx^3=9261\n\\]\n\n\\[\nx=21\n\\]\n\nThe outer radius of the bowl is \\(21\\) cm.\n\nThe thickness is \\(2\\) cm, so the inner radius is\n\n\\[\n21-2=19\n\\]\n\nTotal surface area of the bowl is:\n\n- outer curved hemisphere\n- inner curved hemisphere\n- flat annular rim\n\nOuter curved surface area:\n\n\\[\n2\\pi(21)^2=882\\pi\n\\]\n\nInner curved surface area:\n\n\\[\n2\\pi(19)^2=722\\pi\n\\]\n\nFlat rim area:\n\n\\[\n\\pi(21^2-19^2)=80\\pi\n\\]\n\nTotal:\n\n\\[\n882\\pi+722\\pi+80\\pi=1684\\pi\n\\]\n\n**Answer:** \\(\\boxed{1684\\pi\\text{ cm}^2}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q11__p11-11__m05__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to right-angled triangles. The solution uses Pythagoras twice.\n\n**Solution**\n\nIn right-angled triangle \\(AFD\\),\n\\[\nAD^2=28^2+45^2\n\\]\n\n\\[\nAD^2=2809\n\\]\n\n\\[\nAD=53\n\\]\n\nSince \\(AB=21\\),\n\\[\nBD=53-21=32\n\\]\n\nIn right-angled triangle \\(CBD\\),\n\\[\nCB^2=35^2-32^2\n\\]\n\n\\[\nCB^2=201\n\\]\n\n\\[\nCB=\\sqrt{201}\n\\]\n\nArea of triangle \\(CDB\\) is\n\\[\n\\frac12\\times BD\\times CB\n\\]\n\n\\[\n\\text{Area}=\\frac12\\times32\\times\\sqrt{201}=226.9\\ldots\n\\]\n\n**Answer:** \\(227\\text{ cm}^2\\) to 3 significant figures.",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q23__p23-23__m03__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to 3D Pythagoras & Trigonometry.\n\n**Method**\n\n\\[\nAC=40\n\\]\n\nThe point \\(E\\) is vertically above \\(C\\), so triangle \\(ACE\\) is right-angled at \\(C\\).\n\n\\[\n\\angle CAE=35^\\circ\n\\]\n\n\\[\n\\tan35^\\circ=\\frac{CE}{AC}\n\\]\n\n\\[\nCE=40\\tan35^\\circ\n\\]\n\nSince \\(M\\) is the midpoint of \\(AC\\),\n\n\\[\nCM=20\n\\]\n\nIn right triangle \\(CME\\),\n\n\\[\n\\tan \\angle CME=\\frac{CE}{CM}\n\\]\n\n\\[\n\\tan \\angle CME=\\frac{40\\tan35^\\circ}{20}\n\\]\n\n\\[\n\\tan \\angle CME=2\\tan35^\\circ\n\\]\n\n\\[\n\\angle CME=54.5^\\circ\n\\]\n\n**Answer:** \\(54.5^\\circ\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q18__p18-18__m03__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Vectors.\n\n**Solution**\n\n\\[\n\\overrightarrow{AB}=\\overrightarrow{OB}-\\overrightarrow{OA}=4\\mathbf b-4\\mathbf a\n\\]\n\nSince \\(AP:PB=1:3\\), point \\(P\\) is one quarter of the way from \\(A\\) to \\(B\\).\n\n\\[\n\\overrightarrow{AP}=\\frac14\\overrightarrow{AB}\n=\\frac14(4\\mathbf b-4\\mathbf a)\n=\\mathbf b-\\mathbf a\n\\]\n\n\\[\n\\overrightarrow{OP}=\\overrightarrow{OA}+\\overrightarrow{AP}\n=4\\mathbf a+\\mathbf b-\\mathbf a\n=3\\mathbf a+\\mathbf b\n\\]\n\n**Answer:** \\(\\overrightarrow{AB}=4\\mathbf b-4\\mathbf a\\), and \\(\\overrightarrow{OP}=3\\mathbf a+\\mathbf b\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q05__p06-07__m04__Transformations": {
+      "status": "checked",
+      "source": "**Topic check:** Transformations. The tag is correct.\n\n**Solution**\n\n(a) Reflection in \\(y=x\\) swaps each coordinate:\n\n\\[\n(x,y)\\mapsto(y,x)\n\\]\n\nThe image of \\(A\\) has vertices\n\n\\[\n(2,5),\\ (2,8),\\ (3,7),\\ (3,6)\n\\]\n\n(b) Enlarge \\(B\\) by scale factor \\(2\\) from centre \\((1,1)\\).\n\nThe vertices become\n\n\\[\n(5,3),\\ (9,3),\\ (7,7),\\ (5,7)\n\\]\n\n**Answer:** (a) vertices \\((2,5),(2,8),(3,7),(3,6)\\); (b) vertices \\((5,3),(9,3),(7,7),(5,7)\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q08__p09-09__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe total of the 7 numbers is\n\n\\[\n7 \\times 60=420\n\\]\n\nThe total of the 3 numbers is\n\n\\[\n3 \\times 46=138\n\\]\n\nThe total of the other 4 numbers is\n\n\\[\n420-138=282\n\\]\n\nTheir mean is\n\n\\[\n\\frac{282}{4}=70.5\n\\]\n\n**Answer:** \\(70.5\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q20__p20-20__m04__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor a histogram,\n\n\\[\n\\text{frequency}=\\text{class width}\\times \\text{frequency density}\n\\]\n\nFor books weighing less than 100 g, the frequency is 75 and the class width is 100, so\n\n\\[\n\\text{frequency density}=\\frac{75}{100}=0.75\n\\]\n\nUsing this scale from the histogram, the frequency densities are:\n\n\\[\n0.75,\\ 2.25,\\ 1.0,\\ 2.5,\\ 0.25\n\\]\n\nThe total number of books is\n\n\\[\n(100)(0.75)+(100)(2.25)+(250)(1.0)+(50)(2.5)+(200)(0.25)\n\\]\n\n\\[\n=75+225+250+125+50=725\n\\]\n\nFor weights between 400 g and 600 g:\n\n\\[\n(50)(1.0)+(50)(2.5)+(100)(0.25)\n\\]\n\n\\[\n=50+125+25=200\n\\]\n\nSo the probability is\n\n\\[\n\\frac{200}{725}=\\frac{8}{29}\n\\]\n\n**Answer:** \\(\\frac{8}{29}\\) or \\(0.276\\) to 3 significant figures",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P2HR__Q14__p14-15__m07__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nBag A has \\(5\\) red and \\(4\\) green beads:\n\n\\[\nP(A_R)=\\frac59,\\qquad P(A_G)=\\frac49\n\\]\n\nBag B has \\(7\\) red and \\(3\\) green beads:\n\n\\[\nP(B_R)=\\frac7{10},\\qquad P(B_G)=\\frac3{10}\n\\]\n\nTwo red beads:\n\n\\[\n\\frac59\\times\\frac7{10}=\\frac7{18}\n\\]\n\nFor part (c), the box has\n\n\\[\nP(\\text{green})=\\frac2{11},\\qquad P(\\text{red})=\\frac9{11}\n\\]\n\nMore red than green means at least two red beads:\n\n\\[\nRRR+RRG+RGR+GRR\n\\]\n\n\\[\n\\frac59\\frac7{10}\\frac9{11}\n+\\frac59\\frac7{10}\\frac2{11}\n+\\frac59\\frac3{10}\\frac9{11}\n+\\frac49\\frac7{10}\\frac9{11}\n=\\frac{386}{495}\n\\]\n\n**Answers:** \\(\\frac7{18}\\), \\(\\frac{386}{495}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jun2025_P2HR__Q21__p21-21__m03__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n2x^2-7x-15>0\n\\]\n\nFactorise:\n\n\\[\n2x^2-7x-15=(2x+3)(x-5)\n\\]\n\nThe critical values are\n\n\\[\nx=-\\frac32 \\quad \\text{and} \\quad x=5\n\\]\n\nThe quadratic is greater than 0 outside the roots.\n\n**Answer:** \\(x<-\\dfrac32\\) or \\(x>5\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P2HR__Q24__p24-24__m06__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Coordinate Geometry.\n\n**Method**\n\n\\[\nP=(-5,a), \\qquad Q=(7,3a)\n\\]\n\nThe length of \\(PQ\\) is \\(4\\sqrt{10}\\), so\n\n\\[\n\\sqrt{(7-(-5))^2+(3a-a)^2}=4\\sqrt{10}\n\\]\n\n\\[\n\\sqrt{12^2+(2a)^2}=4\\sqrt{10}\n\\]\n\nSquare both sides:\n\n\\[\n144+4a^2=160\n\\]\n\n\\[\n4a^2=16\n\\]\n\n\\[\na^2=4\n\\]\n\nSince \\(a>0\\),\n\n\\[\na=2\n\\]\n\nSo\n\n\\[\nP=(-5,2), \\qquad Q=(7,6)\n\\]\n\nThe midpoint of \\(PQ\\) is\n\n\\[\n\\left(\\frac{-5+7}{2},\\frac{2+6}{2}\\right)=(1,4)\n\\]\n\nThe gradient of \\(PQ\\) is\n\n\\[\n\\frac{6-2}{7-(-5)}=\\frac{4}{12}=\\frac{1}{3}\n\\]\n\nSo the gradient of the perpendicular bisector is\n\n\\[\n-3\n\\]\n\nUsing point \\((1,4)\\):\n\n\\[\ny-4=-3(x-1)\n\\]\n\n\\[\ny=-3x+7\n\\]\n\n**Answer:** \\(\\boxed{y=-3x+7}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P2HR__Q25__p25-25__m03__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFrom the graph,\n\n\\[\n\\text{maximum}=4\n\\]\n\n\\[\n\\text{minimum}=-2\n\\]\n\nThe amplitude is\n\n\\[\na=\\frac{4-(-2)}{2}=3\n\\]\n\nThe centre line is\n\n\\[\nc=\\frac{4+(-2)}{2}=1\n\\]\n\nThe maximum is about \\(45^\\circ\\). For a sine graph, a maximum happens when the angle inside the sine is \\(90^\\circ\\), so\n\n\\[\n45+b=90\n\\]\n\n\\[\nb=45\n\\]\n\n**Answer:** \\(a=3,\\ b=45,\\ c=1\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P2HR__Q22__p22-22__m05__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe cuboid has dimensions\n\n\\[\nx,\\quad x,\\quad 15-4x\n\\]\n\nSo\n\n\\[\nV=x^2(15-4x)\n\\]\n\n\\[\nV=15x^2-4x^3\n\\]\n\nDifferentiate:\n\n\\[\n\\frac{dV}{dx}=30x-12x^2\n\\]\n\nAt a maximum,\n\n\\[\n30x-12x^2=0\n\\]\n\n\\[\n6x(5-2x)=0\n\\]\n\nThe useful value is\n\n\\[\nx=2.5\n\\]\n\nNow substitute into the volume:\n\n\\[\nV=(2.5)^2(15-4(2.5))\n\\]\n\n\\[\nV=6.25\\times 5\n\\]\n\n\\[\nV=31.25\n\\]\n\n**Answer:** \\(31.25\\text{ cm}^3\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P2HR__Q26__p26-27__m05__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe volume of a hemisphere is\n\n\\[\n\\frac{2}{3}\\pi r^3\n\\]\n\nFor the original hemisphere \\(H\\),\n\n\\[\n\\frac{2}{3}\\pi x^3=6174\\pi\n\\]\n\nCancel \\(\\pi\\):\n\n\\[\n\\frac{2}{3}x^3=6174\n\\]\n\n\\[\nx^3=9261\n\\]\n\n\\[\nx=21\n\\]\n\nThe outer radius of the bowl is \\(21\\) cm.\n\nThe thickness is \\(2\\) cm, so the inner radius is\n\n\\[\n21-2=19\n\\]\n\nTotal surface area of the bowl is:\n\n- outer curved hemisphere\n- inner curved hemisphere\n- flat annular rim\n\nOuter curved surface area:\n\n\\[\n2\\pi(21)^2=882\\pi\n\\]\n\nInner curved surface area:\n\n\\[\n2\\pi(19)^2=722\\pi\n\\]\n\nFlat rim area:\n\n\\[\n\\pi(21^2-19^2)=80\\pi\n\\]\n\nTotal:\n\n\\[\n882\\pi+722\\pi+80\\pi=1684\\pi\n\\]\n\n**Answer:** \\(\\boxed{1684\\pi\\text{ cm}^2}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P2HR__Q23__p23-23__m03__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to 3D Pythagoras & Trigonometry.\n\n**Method**\n\n\\[\nAC=40\n\\]\n\nThe point \\(E\\) is vertically above \\(C\\), so triangle \\(ACE\\) is right-angled at \\(C\\).\n\n\\[\n\\angle CAE=35^\\circ\n\\]\n\n\\[\n\\tan35^\\circ=\\frac{CE}{AC}\n\\]\n\n\\[\nCE=40\\tan35^\\circ\n\\]\n\nSince \\(M\\) is the midpoint of \\(AC\\),\n\n\\[\nCM=20\n\\]\n\nIn right triangle \\(CME\\),\n\n\\[\n\\tan \\angle CME=\\frac{CE}{CM}\n\\]\n\n\\[\n\\tan \\angle CME=\\frac{40\\tan35^\\circ}{20}\n\\]\n\n\\[\n\\tan \\angle CME=2\\tan35^\\circ\n\\]\n\n\\[\n\\angle CME=54.5^\\circ\n\\]\n\n**Answer:** \\(54.5^\\circ\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P2HR__Q20__p20-20__m04__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor a histogram,\n\n\\[\n\\text{frequency}=\\text{class width}\\times \\text{frequency density}\n\\]\n\nFor books weighing less than 100 g, the frequency is 75 and the class width is 100, so\n\n\\[\n\\text{frequency density}=\\frac{75}{100}=0.75\n\\]\n\nUsing this scale from the histogram, the frequency densities are:\n\n\\[\n0.75,\\ 2.25,\\ 1.0,\\ 2.5,\\ 0.25\n\\]\n\nThe total number of books is\n\n\\[\n(100)(0.75)+(100)(2.25)+(250)(1.0)+(50)(2.5)+(200)(0.25)\n\\]\n\n\\[\n=75+225+250+125+50=725\n\\]\n\nFor weights between 400 g and 600 g:\n\n\\[\n(50)(1.0)+(50)(2.5)+(100)(0.25)\n\\]\n\n\\[\n=50+125+25=200\n\\]\n\nSo the probability is\n\n\\[\n\\frac{200}{725}=\\frac{8}{29}\n\\]\n\n**Answer:** \\(\\frac{8}{29}\\) or \\(0.276\\) to 3 significant figures",
+      "updated": "2026-05-05T16:25:30",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

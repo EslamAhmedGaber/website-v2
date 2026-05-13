@@ -1,0 +1,179 @@
+{
+  "paperSlug": "Jun2022_P2H",
+  "solutions": {
+    "all::Jun2022_P2H__Q04__p05-05__m03__Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Fractions. The tag is correct.\n\n**Method**\n\n\\[\n5\\frac13=\\frac{16}{3}\n\\]\n\n\\[\n2\\frac67=\\frac{20}{7}\n\\]\n\nUse a common denominator:\n\n\\[\n\\frac{16}{3}-\\frac{20}{7}\n=\\frac{112}{21}-\\frac{60}{21}\n\\]\n\n\\[\n=\\frac{52}{21}=2\\frac{10}{21}\n\\]\n\n**Answer:** \\(2\\frac{10}{21}\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q08__p08-08__m05__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nThe ratio \\(7:5:3\\) has \\(15\\) parts.\n\nBirthday cards:\n\n\\[\n\\frac7{15}\\times 300=140\n\\]\n\nAnniversary cards:\n\n\\[\n\\frac5{15}\\times 300=100\n\\]\n\nCongratulations cards:\n\n\\[\n\\frac3{15}\\times 300=60\n\\]\n\nBirthday cards with numbers:\n\n\\[\n\\frac25\\times 140=56\n\\]\n\nAnniversary cards with numbers:\n\n\\[\n36\\%\\times 100=36\n\\]\n\nCongratulations cards with numbers:\n\n\\[\n0\n\\]\n\nTotal with numbers:\n\n\\[\n56+36=92\n\\]\n\nFraction of all cards:\n\n\\[\n\\frac{92}{300}=\\frac{23}{75}\n\\]\n\n**Answer:** \\(\\displaystyle \\frac{23}{75}\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q09__p09-09__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nThe multiplier for \\(1.3\\%\\) compound interest is\n\n\\[\n1.013\n\\]\n\nAfter 4 years,\n\n\\[\n50000(1.013)^4=52651.1408\\ldots\n\\]\n\nCorrect to the nearest dollar,\n\n\\[\n52651.1408\\ldots\\approx 52651\n\\]\n\n**Answer:** \\(52651\\) dollars",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q18__p18-18__m03__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\n\\[\nX=\\frac{2a-b}{f}\n\\]\n\nFor the upper bound, make the numerator large and the denominator small.\n\n\\[\na<7.55,\\quad b\\ge 3.415,\\quad f\\ge 1.5\n\\]\n\n\\[\nX_{\\text{upper}}=\\frac{2(7.55)-3.415}{1.5}=7.79\n\\]\n\n**Answer:** \\(7.79\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q17__p17-17__m04__Direct-and-Inverse-Proportion": {
+      "status": "checked",
+      "source": "**Topic check:** Direct and Inverse Proportion. The tag is correct.\n\n**Method**\n\n\\(M\\) varies directly as \\(h^3\\), so\n\n\\[\nM=kh^3\n\\]\n\nUse \\(M=4\\) when \\(h=0.5\\):\n\n\\[\n4=k(0.5)^3\n\\]\n\n\\[\nk=\\frac{4}{0.125}=32\n\\]\n\nSo\n\n\\[\nM=32h^3\n\\]\n\nWhen \\(M=500\\),\n\n\\[\n500=32h^3\n\\]\n\n\\[\nh^3=15.625\n\\]\n\n\\[\nh=2.5\n\\]\n\n**Answer:** \\(h=2.5\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q24__p24-24__m03__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic Roots and Indices. The tag is correct.\n\n**Method**\n\n\\[\n\\frac{18(\\sqrt{27})^{4n+6}}{6\\times 9^{2n+8}}=3^x\n\\]\n\nFirst,\n\n\\[\n\\frac{18}{6}=3=3^1\n\\]\n\nAlso,\n\n\\[\n\\sqrt{27}=\\sqrt{3^3}=3^{3/2}\n\\]\n\nSo\n\n\\[\n(\\sqrt{27})^{4n+6}=3^{\\frac32(4n+6)}=3^{6n+9}\n\\]\n\nAnd\n\n\\[\n9^{2n+8}=(3^2)^{2n+8}=3^{4n+16}\n\\]\n\nTherefore the whole expression is\n\n\\[\n3^{1+6n+9-(4n+16)}=3^{2n-6}\n\\]\n\nSo\n\n\\[\nx=2n-6\n\\]\n\n**Answer:** \\(x=2n-6\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q11__p10-10__m03__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is correct.\n\n**Solution**\n\n\\[\nx^2+5x-24=(x+8)(x-3)\n\\]\n\nSo\n\\[\n(x+8)(x-3)=0\n\\]\n\n**Answer:** \\(x=-8\\) or \\(x=3\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q19__p19-19__m03__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic fractions. The tag is correct.\n\n**Solution**\n\n\\[\na=\\frac{14}{3x-7}, \\qquad x=\\frac{7}{4y-3}\n\\]\n\nSubstitute for \\(x\\):\n\\[\n3x-7=\\frac{21}{4y-3}-7\n\\]\n\n\\[\n=\\frac{21-7(4y-3)}{4y-3}\n=\\frac{42-28y}{4y-3}\n\\]\n\nSo\n\\[\na=\\frac{14}{\\frac{42-28y}{4y-3}}\n=\\frac{4y-3}{3-2y}\n\\]\n\n**Answer:** \\(a=\\frac{4y-3}{3-2y}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q14__p14-14__m07__Rearranging-Formulas": {
+      "status": "checked",
+      "source": "**Topic check:** Rearranging formulas. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n(5-x)(2x+3)(x+4)\n\\]\n\n\\[\n(2x+3)(x+4)=2x^2+11x+12\n\\]\n\n\\[\n(5-x)(2x^2+11x+12)=-2x^3-x^2+43x+60\n\\]\n\n(b)\n\\[\ng=\\frac{c+3}{4+c}-7\n\\]\n\n\\[\ng+7=\\frac{c+3}{c+4}\n\\]\n\n\\[\n(g+7)(c+4)=c+3\n\\]\n\n\\[\nc(g+6)=-4g-25\n\\]\n\n**Answer:** (a) \\(-2x^3-x^2+43x+60\\), (b) \\(c=\\frac{-4g-25}{g+6}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q15__p15-15__m07__Solving-Linear-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to solving linear equations. The four-mark linear equation is the largest part of the question.\n\n**Solution**\n\n(a)\n\\[\n\\frac{4x+5}{3}-\\frac{3-2x}{2}=13\n\\]\n\nMultiply by 6:\n\\[\n2(4x+5)-3(3-2x)=78\n\\]\n\n\\[\n8x+10-9+6x=78\n\\]\n\n\\[\n14x+1=78\n\\]\n\n\\[\n14x=77\n\\]\n\n\\[\nx=\\frac{77}{14}=\\frac{11}{2}\n\\]\n\n(b)\n\\[\n2y^2-7y-30\\le0\n\\]\n\nFactorise:\n\\[\n(2y+5)(y-6)\\le0\n\\]\n\nThe roots are \\(-\\frac52\\) and \\(6\\). The quadratic is \\(\\le0\\) between the roots.\n\n**Answer:** \\(x=\\frac{11}{2}\\), and \\(-\\frac52\\le y\\le6\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q10__p10-10__m03__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\n\\[\n7x+3y=3\n\\]\n\n\\[\n3x-y=7\n\\]\n\nFrom the second equation:\n\\[\ny=3x-7\n\\]\n\nSubstitute into the first equation:\n\\[\n7x+3(3x-7)=3\n\\]\n\n\\[\n7x+9x-21=3\n\\]\n\n\\[\n16x=24\n\\]\n\n\\[\nx=\\frac32\n\\]\n\nThen\n\\[\ny=3\\left(\\frac32\\right)-7=\\frac92-7=-\\frac52\n\\]\n\n**Answer:** \\(x=\\frac32\\), \\(y=-\\frac52\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q22__p22-23__m07__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe midpoint of \\(BD\\) is \\(M=(0,2)\\).\n\nSince \\(A=(-3,4)\\), the gradient of \\(AM\\) is\n\n\\[\n\\frac{2-4}{0-(-3)}=-\\frac23\n\\]\n\nFor the kite, diagonal \\(AC\\) is perpendicular to \\(BD\\), so the gradient of \\(BD\\) is\n\n\\[\n\\frac32\n\\]\n\nUse direction vector \\((2,3)\\) along \\(BD\\).\n\nLet\n\n\\[\nB=(2t,2+3t)\n\\]\n\nand\n\n\\[\nD=(-2t,2-3t)\n\\]\n\nSince \\(AB=6.5\\),\n\n\\[\n(2t-(-3))^2+(2+3t-4)^2=6.5^2\n\\]\n\n\\[\n(2t+3)^2+(3t-2)^2=42.25\n\\]\n\n\\[\n4t^2+12t+9+9t^2-12t+4=42.25\n\\]\n\n\\[\n13t^2+13=42.25\n\\]\n\n\\[\n13t^2=29.25\n\\]\n\n\\[\nt^2=2.25\n\\]\n\n\\[\nt=1.5\n\\]\n\nThe \\(x\\)-coordinate of \\(B\\) is positive, so use \\(t=1.5\\).\n\n\\[\nB=(3,6.5)\n\\]\n\n\\[\nD=(-3,-2.5)\n\\]\n\n**Answer:** \\(B=(3,6.5),\\ D=(-3,-2.5)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q23__p23-23__m02__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Graphs of Functions.\n\n**Method**\n\nThe graph is\n\n\\[\ny=\\cos\\left(\\frac{x}{2}\\right)^\\circ\n\\]\n\nPoint \\(A\\) is the first positive \\(x\\)-intercept, so \\(y=0\\).\n\n\\[\n\\cos\\left(\\frac{x}{2}\\right)=0\n\\]\n\n\\[\n\\frac{x}{2}=90^\\circ\n\\]\n\n\\[\nx=180\n\\]\n\nSo\n\n\\[\nA=(180,0)\n\\]\n\nPoint \\(B\\) is the minimum point.\n\nThe minimum value of cosine is \\(-1\\), which occurs when\n\n\\[\n\\frac{x}{2}=180^\\circ\n\\]\n\n\\[\nx=360\n\\]\n\nSo\n\n\\[\nB=(360,-1)\n\\]\n\n**Answer:** \\(A=(180,0),\\ B=(360,-1)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q02__p04-04__m04__Graphing-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is drawing and shading inequalities.\n\n**Solution**\n\nDraw the boundary lines:\n\\[\ny=1,\n\\qquad\nx=2,\n\\qquad\nx+y=7\n\\]\n\nThe required region is\n\\[\ny\\geq1\n\\]\n\n\\[\nx\\geq2\n\\]\n\n\\[\nx+y\\leq7\n\\]\n\n**Answer:** Shade \\(y\\geq1\\), \\(x\\geq2\\), \\(x+y\\leq7\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q03__p05-05__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Standard & Compound Units.\n\n**Solution**\n\nThe time is\n\\[\n5\\text{ h }24\\text{ min}=5.4\\text{ h}\n\\]\n\nAverage speed:\n\\[\n3980\\div 5.4=737.037\\ldots\n\\]\n\n**Answer:** \\(737\\text{ kilometres per hour}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q07__p07-07__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is converting kilometres per hour to metres per second.\n\n**Solution**\n\nTo convert km/h to m/s, divide by \\(3.6\\).\n\n\\[\n81\\div3.6=22.5\n\\]\n\n**Answer:** \\(22.5\\text{ m/s}\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q05__p06-06__m04__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Perimeter. The tag is correct.\n\n**Solution**\n\nThe lower rectangle has width \\(28\\text{ cm}\\) and height \\(12\\text{ cm}\\):\n\\[\n28\\times 12=336\\text{ cm}^2\n\\]\n\nThe top part is a trapezium of height\n\\[\n20-12=8\\text{ cm}\n\\]\n\nThe lower parallel side of this trapezium is\n\\[\n28-5-5=18\\text{ cm}\n\\]\n\nArea of the trapezium:\n\\[\n434-336=98\\text{ cm}^2\n\\]\n\nUse\n\\[\n\\text{area}=\\frac12(a+b)h\n\\]\n\n\\[\n98=\\frac12(18+CD)(8)\n\\]\n\n\\[\n98=4(18+CD)\n\\]\n\n\\[\n18+CD=24.5\n\\]\n\n\\[\nCD=6.5\n\\]\n\n**Answer:** \\(6.5\\text{ cm}\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q20__p20-20__m04__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Circles, Arcs & Sectors.\n\n**Method**\n\nLet the radius of each circle be \\(r\\).\n\nThere are two circles across the width of the square, so the side length of the square is\n\n\\[\n4r\n\\]\n\nArea of the square:\n\n\\[\n(4r)^2=16r^2\n\\]\n\nArea of the four circles:\n\n\\[\n4\\pi r^2\n\\]\n\nThe shaded area is \\(40\\text{ cm}^2\\), so\n\n\\[\n16r^2-4\\pi r^2=40\n\\]\n\n\\[\nr^2(16-4\\pi)=40\n\\]\n\n\\[\nr=\\sqrt{\\frac{40}{16-4\\pi}}=3.4131\\ldots\n\\]\n\nThe perimeter of the square is\n\n\\[\n4(4r)=16r\n\\]\n\n\\[\n16r=54.6101\\ldots\n\\]\n\n**Answer:** \\(\\boxed{54.6\\text{ cm}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q06__p07-07__m03__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Right-Angled Triangles - Pythagoras & Trigonometry. This is a right-angled trigonometry problem.\n\n**Solution**\n\nIn the right-angled triangle, \\(x\\) is adjacent to the \\(42^\\circ\\) angle and \\(9.5\\text{ cm}\\) is the hypotenuse.\n\n\\[\n\\cos 42^\\circ=\\frac{x}{9.5}\n\\]\n\n\\[\nx=9.5\\cos 42^\\circ=7.059\\ldots\n\\]\n\n**Answer:** \\(7.1\\text{ cm}\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q21__p21-21__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Ratio Toolkit to Vectors.\n\n**Method**\n\n\\[\n\\overrightarrow{OA}=4a,\\quad \\overrightarrow{OB}=6b,\\quad \\overrightarrow{AP}=2a+8b\n\\]\n\nSo\n\n\\[\n\\overrightarrow{OP}=\\overrightarrow{OA}+\\overrightarrow{AP}\n=4a+(2a+8b)=6a+8b\n\\]\n\nSince \\(Q\\) lies on \\(OP\\), let\n\n\\[\n\\overrightarrow{OQ}=\\lambda(6a+8b)\n\\]\n\nSince \\(Q\\) lies on \\(AB\\), let\n\n\\[\n\\overrightarrow{OQ}=\\overrightarrow{OA}+\\mu\\overrightarrow{AB}\n\\]\n\n\\[\n\\overrightarrow{AB}=6b-4a\n\\]\n\nSo\n\n\\[\n\\overrightarrow{OQ}=4a+\\mu(6b-4a)=(4-4\\mu)a+6\\mu b\n\\]\n\nEquating coefficients:\n\n\\[\n6\\lambda=4-4\\mu,\\quad 8\\lambda=6\\mu\n\\]\n\nFrom \\(8\\lambda=6\\mu\\), \\(\\mu=\\frac43\\lambda\\).\n\n\\[\n6\\lambda=4-\\frac{16}{3}\\lambda\n\\]\n\n\\[\n34\\lambda=12,\\quad \\lambda=\\frac6{17}\n\\]\n\n\\[\n\\mu=\\frac{8}{17}\n\\]\n\nSo \\(AQ:QB=\\frac8{17}:\\frac9{17}\\).\n\n**Answer:** \\(AQ:QB=8:9\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q01__p03-03__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe mode is \\(9\\), so\n\n\\[\nd=9\n\\]\n\nThe range is \\(4\\):\n\n\\[\n9-a=4\n\\]\n\n\\[\na=5\n\\]\n\nThe median is \\(8\\), so\n\n\\[\n\\frac{c+d}{2}=8\n\\]\n\n\\[\n\\frac{c+9}{2}=8\n\\]\n\n\\[\nc=7\n\\]\n\nThe integers are in order and \\(a<b<c\\), so\n\n\\[\nb=6\n\\]\n\n**Answers:** \\(a=5,\\ b=6,\\ c=7,\\ d=9\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q12__p11-11__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nTotal mass of the 7 parcels:\n\n\\[\n7 \\times 2.7=18.9\n\\]\n\nTotal mass of the 4 remaining parcels:\n\n\\[\n4 \\times 3.3=13.2\n\\]\n\nTotal mass of the 3 delivered parcels:\n\n\\[\n18.9-13.2=5.7\n\\]\n\nEach delivered parcel has mass \\(W\\):\n\n\\[\n3W=5.7\n\\]\n\n\\[\nW=1.9\n\\]\n\n**Answer:** \\(1.9\\text{ kg}\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q13__p12-13__m07__Cumulative-Frequency-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nComplete the cumulative frequencies:\n\n\\[\n7,\\ 32,\\ 52,\\ 66,\\ 74,\\ 80\n\\]\n\nPlot the points\n\n\\[\n(0,0),(20,7),(30,32),(40,52),(50,66),(60,74),(70,80)\n\\]\n\nThe median is at cumulative frequency \\(40\\).\n\nThis is between \\((30,32)\\) and \\((40,52)\\):\n\n\\[\n30+\\frac{40-32}{52-32}\\times 10=34\n\\]\n\nSo the median age is about \\(34\\) years.\n\nEstimate the number aged between \\(18\\) and \\(65\\):\n\n\\[\nF(18)\\approx \\frac{18}{20}\\times 7=6.3\n\\]\n\n\\[\nF(65)\\approx 74+\\frac{5}{10}(80-74)=77\n\\]\n\n\\[\n77-6.3=70.7\n\\]\n\n60% are going to work:\n\n\\[\n0.6(70.7)=42.42\n\\]\n\n**Answers:** cumulative frequencies \\(7,32,52,66,74,80\\), median about \\(34\\) years, about \\(42\\) people going to work.",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P2H__Q16__p16-17__m08__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nThere are \\(100\\) farmers and \\(20\\) have none of the three animals, so \\(80\\) are in the Venn diagram.\n\nPair-only regions:\n\n\\[\nS\\cap G\\text{ only}=11-6=5\n\\]\n\n\\[\nS\\cap C\\text{ only}=17-6=11\n\\]\n\n\\[\nG\\cap C\\text{ only}=18-6=12\n\\]\n\n\\[\nS\\text{ only}=31-5-11-6=9\n\\]\n\n\\[\nC\\text{ only}=53-11-12-6=24\n\\]\n\nThen\n\n\\[\nG\\text{ only}=80-(9+24+5+11+12+6)=13\n\\]\n\n\\[\nn(G)=13+5+12+6=36\n\\]\n\n\\[\nn((G\\cup S)')=20+24=44\n\\]\n\n\\[\nn(G'\\cap C)=24+11=35\n\\]\n\n\\[\nP(G\\mid C)=\\frac{18}{53}\n\\]\n\n**Answers:** \\(36\\), \\(44\\), \\(35\\), \\(\\frac{18}{53}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jun2022_P2H__Q24__p24-24__m03__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n\\frac{18(\\sqrt{27})^{4n+6}}{6\\times 9^{2n+8}}=3^x\n\\]\n\nUse powers of 3:\n\n\\[\n18\\div 6=3\n\\]\n\n\\[\n\\sqrt{27}=(3^3)^{1/2}=3^{3/2}\n\\]\n\n\\[\n(\\sqrt{27})^{4n+6}=3^{6n+9}\n\\]\n\n\\[\n9^{2n+8}=(3^2)^{2n+8}=3^{4n+16}\n\\]\n\nSo\n\n\\[\n\\frac{3\\cdot 3^{6n+9}}{3^{4n+16}}\n=3^{1+6n+9-4n-16}\n=3^{2n-6}\n\\]\n\nTherefore,\n\n\\[\nx=2n-6\n\\]\n\n**Answer:** \\(x=2n-6\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P2H__Q22__p22-23__m07__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe midpoint of \\(BD\\) is \\(M=(0,2)\\).\n\nSince \\(A=(-3,4)\\), the gradient of \\(AM\\) is\n\n\\[\n\\frac{2-4}{0-(-3)}=-\\frac23\n\\]\n\nFor the kite, diagonal \\(AC\\) is perpendicular to \\(BD\\), so the gradient of \\(BD\\) is\n\n\\[\n\\frac32\n\\]\n\nUse direction vector \\((2,3)\\) along \\(BD\\).\n\nLet\n\n\\[\nB=(2t,2+3t)\n\\]\n\nand\n\n\\[\nD=(-2t,2-3t)\n\\]\n\nSince \\(AB=6.5\\),\n\n\\[\n(2t-(-3))^2+(2+3t-4)^2=6.5^2\n\\]\n\n\\[\n(2t+3)^2+(3t-2)^2=42.25\n\\]\n\n\\[\n4t^2+12t+9+9t^2-12t+4=42.25\n\\]\n\n\\[\n13t^2+13=42.25\n\\]\n\n\\[\n13t^2=29.25\n\\]\n\n\\[\nt^2=2.25\n\\]\n\n\\[\nt=1.5\n\\]\n\nThe \\(x\\)-coordinate of \\(B\\) is positive, so use \\(t=1.5\\).\n\n\\[\nB=(3,6.5)\n\\]\n\n\\[\nD=(-3,-2.5)\n\\]\n\n**Answer:** \\(B=(3,6.5),\\ D=(-3,-2.5)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P2H__Q23__p23-23__m02__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to Graphs of Functions.\n\n**Method**\n\nThe graph is\n\n\\[\ny=\\cos\\left(\\frac{x}{2}\\right)^\\circ\n\\]\n\nPoint \\(A\\) is the first positive \\(x\\)-intercept, so \\(y=0\\).\n\n\\[\n\\cos\\left(\\frac{x}{2}\\right)=0\n\\]\n\n\\[\n\\frac{x}{2}=90^\\circ\n\\]\n\n\\[\nx=180\n\\]\n\nSo\n\n\\[\nA=(180,0)\n\\]\n\nPoint \\(B\\) is the minimum point.\n\nThe minimum value of cosine is \\(-1\\), which occurs when\n\n\\[\n\\frac{x}{2}=180^\\circ\n\\]\n\n\\[\nx=360\n\\]\n\nSo\n\n\\[\nB=(360,-1)\n\\]\n\n**Answer:** \\(A=(180,0),\\ B=(360,-1)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P2H__Q20__p20-20__m04__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Circles, Arcs & Sectors.\n\n**Method**\n\nLet the radius of each circle be \\(r\\).\n\nThere are two circles across the width of the square, so the side length of the square is\n\n\\[\n4r\n\\]\n\nArea of the square:\n\n\\[\n(4r)^2=16r^2\n\\]\n\nArea of the four circles:\n\n\\[\n4\\pi r^2\n\\]\n\nThe shaded area is \\(40\\text{ cm}^2\\), so\n\n\\[\n16r^2-4\\pi r^2=40\n\\]\n\n\\[\nr^2(16-4\\pi)=40\n\\]\n\n\\[\nr=\\sqrt{\\frac{40}{16-4\\pi}}=3.4131\\ldots\n\\]\n\nThe perimeter of the square is\n\n\\[\n4(4r)=16r\n\\]\n\n\\[\n16r=54.6101\\ldots\n\\]\n\n**Answer:** \\(\\boxed{54.6\\text{ cm}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P2H__Q21__p21-21__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Ratio Toolkit to Vectors.\n\n**Method**\n\n\\[\n\\overrightarrow{OA}=4a,\\quad \\overrightarrow{OB}=6b,\\quad \\overrightarrow{AP}=2a+8b\n\\]\n\nSo\n\n\\[\n\\overrightarrow{OP}=\\overrightarrow{OA}+\\overrightarrow{AP}\n=4a+(2a+8b)=6a+8b\n\\]\n\nSince \\(Q\\) lies on \\(OP\\), let\n\n\\[\n\\overrightarrow{OQ}=\\lambda(6a+8b)\n\\]\n\nSince \\(Q\\) lies on \\(AB\\), let\n\n\\[\n\\overrightarrow{OQ}=\\overrightarrow{OA}+\\mu\\overrightarrow{AB}\n\\]\n\n\\[\n\\overrightarrow{AB}=6b-4a\n\\]\n\nSo\n\n\\[\n\\overrightarrow{OQ}=4a+\\mu(6b-4a)=(4-4\\mu)a+6\\mu b\n\\]\n\nEquating coefficients:\n\n\\[\n6\\lambda=4-4\\mu,\\quad 8\\lambda=6\\mu\n\\]\n\nFrom \\(8\\lambda=6\\mu\\), \\(\\mu=\\frac43\\lambda\\).\n\n\\[\n6\\lambda=4-\\frac{16}{3}\\lambda\n\\]\n\n\\[\n34\\lambda=12,\\quad \\lambda=\\frac6{17}\n\\]\n\n\\[\n\\mu=\\frac{8}{17}\n\\]\n\nSo \\(AQ:QB=\\frac8{17}:\\frac9{17}\\).\n\n**Answer:** \\(AQ:QB=8:9\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

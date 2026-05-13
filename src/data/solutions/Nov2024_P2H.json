@@ -1,0 +1,191 @@
+{
+  "paperSlug": "Nov2024_P2H",
+  "solutions": {
+    "all::Nov2024_P2H__Q21__p21-21__m04__Set-Notation-and-Venn-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Set notation and Venn diagrams. The tag is correct.\n\n**Method**\n\nThe complement of \\(A \\cup B\\) contains the regions outside both \\(A\\) and \\(B\\). These are \\(5x\\) and \\(3x+2\\).\n\nSo \\(5x+(3x+2)=26\\), hence \\(8x+2=26\\) and \\(x=3\\).\n\nNow \\(A' \\cap C\\) means inside \\(C\\), but not inside \\(A\\). These are the regions \\(5x\\) and \\(2x\\).\n\nSo \\(n(A' \\cap C)=5x+2x=7x=7(3)=21\\).\n\n**Answer:** \\(21\\)",
+      "updated": "2026-05-05T00:12:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q04__p05-05__m05__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nFor part (a),\n\n\\[\n17\\%\\text{ of }N=357\n\\]\n\n\\[\n0.17N=357\n\\]\n\n\\[\nN=\\frac{357}{0.17}=2100\n\\]\n\nFor part (b), the increase in population is\n\n\\[\n806-650=156\n\\]\n\nPercentage increase:\n\n\\[\n\\frac{156}{650}\\times 100=24\n\\]\n\n**Answer:** (a) \\(N=2100\\), (b) \\(24\\%\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q09__p09-09__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nThe multiplier for \\(3.5\\%\\) compound interest is\n\n\\[\n1.035\n\\]\n\nAfter 3 years,\n\n\\[\n20000(1.035)^3=22174.3575\n\\]\n\nCorrect to the nearest euro,\n\n\\[\n22174.3575\\approx 22174\n\\]\n\n**Answer:** \\(22174\\) euros",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q02__p03-03__m02__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\nThe length is \\(1.4\\) m correct to one decimal place.\n\nHalf of \\(0.1\\) is \\(0.05\\).\n\n\\[\n1.4+0.05=1.45\n\\]\n\n\\[\n1.4-0.05=1.35\n\\]\n\n**Answer:** (a) \\(1.45\\) m, (b) \\(1.35\\) m",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q14__p16-16__m03__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic roots and indices. The tag is correct.\n\n**Solution**\n\n\\[\n\\frac{3^{2n+3}}{3^4}=3^{2n-1}\n\\]\n\n\\[\n3^3\\times3^{1-2n}=3^{4-2n}\n\\]\n\nSo\n\\[\n2n-1=4-2n\n\\]\n\n\\[\n4n=5\n\\]\n\n**Answer:** \\(n=\\frac54\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q12__p13-13__m07__Rearranging-Formulas": {
+      "status": "checked",
+      "source": "**Topic check:** Rearranging formulas. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n\\frac{3x+2}{5}-\\frac{2x+1}{3}=x\n\\]\n\nMultiply by 15:\n\\[\n3(3x+2)-5(2x+1)=15x\n\\]\n\n\\[\n9x+6-10x-5=15x\n\\]\n\n\\[\n1=16x\n\\]\n\n\\[\nx=\\frac{1}{16}\n\\]\n\n(b)\n\\[\nf=\\sqrt{\\frac{a+bc}{c-d}}\n\\]\n\n\\[\nf^2=\\frac{a+bc}{c-d}\n\\]\n\n\\[\nf^2(c-d)=a+bc\n\\]\n\n\\[\nc(f^2-b)=a+df^2\n\\]\n\n**Answer:** (a) \\(x=\\frac{1}{16}\\), (b) \\(c=\\frac{a+df^2}{f^2-b}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q01__p03-03__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks to show the exact result.\n\n**Solution**\n\n\\[\n1\\frac57=\\frac{12}{7},\\qquad 2\\frac3{16}=\\frac{35}{16}\n\\]\n\n\\[\n1\\frac57\\times2\\frac3{16}=\\frac{12}{7}\\times\\frac{35}{16}\n\\]\n\n\\[\n=\\frac{420}{112}=\\frac{15}{4}=3\\frac34\n\\]\n\n**Answer:** \\(3\\frac34\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q15__p16-16__m02__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\nLet\n\\[\nx=0.7636363\\ldots\n\\]\n\nThen\n\\[\n10x=7.636363\\ldots\n\\]\n\nand\n\\[\n1000x=763.636363\\ldots\n\\]\n\nSubtract:\n\\[\n990x=756\n\\]\n\n\\[\nx=\\frac{756}{990}=\\frac{42}{55}\n\\]\n\n**Answer:** \\(0.7636363\\ldots=\\dfrac{42}{55}\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q23__p23-23__m04__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n\\frac{16x^2-36}{x-7}\\div \\frac{2x^2+7x+6}{x^2-5x-14}-(7+8x)\n\\]\n\nFactorise:\n\n\\[\n16x^2-36=4(2x-3)(2x+3)\n\\]\n\n\\[\n2x^2+7x+6=(2x+3)(x+2)\n\\]\n\n\\[\nx^2-5x-14=(x-7)(x+2)\n\\]\n\nSo\n\n\\[\n\\frac{4(2x-3)(2x+3)}{x-7}\n\\div\n\\frac{(2x+3)(x+2)}{(x-7)(x+2)}\n-(7+8x)\n\\]\n\n\\[\n=\\frac{4(2x-3)(2x+3)}{x-7}\n\\times\n\\frac{(x-7)(x+2)}{(2x+3)(x+2)}\n-(7+8x)\n\\]\n\n\\[\n=4(2x-3)-(7+8x)\n\\]\n\n\\[\n=8x-12-7-8x\n\\]\n\n\\[\n=-19\n\\]\n\nSo \\(n=-19\\), which is an integer.\n\n**Answer:** \\(n=-19\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q20__p20-20__m03__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n10x^2+11x-21<0\n\\]\n\nFactorise:\n\n\\[\n10x^2+11x-21=(10x+21)(x-1)\n\\]\n\nThe critical values are\n\n\\[\nx=-\\frac{21}{10} \\quad \\text{and} \\quad x=1\n\\]\n\nThe quadratic is less than 0 between the roots.\n\n**Answer:** \\(-\\dfrac{21}{10}<x<1\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q22__p22-22__m05__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nx^2+y^2+y=3\n\\]\n\n\\[\ny=x+2\n\\]\n\nSubstitute:\n\n\\[\nx^2+(x+2)^2+(x+2)=3\n\\]\n\n\\[\nx^2+x^2+4x+4+x+2=3\n\\]\n\n\\[\n2x^2+5x+3=0\n\\]\n\n\\[\n(2x+3)(x+1)=0\n\\]\n\nSo\n\n\\[\nx=-\\frac32 \\quad \\text{or} \\quad x=-1\n\\]\n\nFind \\(y\\):\n\n\\[\nx=-\\frac32 \\Rightarrow y=\\frac12\n\\]\n\n\\[\nx=-1 \\Rightarrow y=1\n\\]\n\n**Answer:** \\((x,y)=\\left(-\\dfrac32,\\dfrac12\\right)\\) or \\((-1,1)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q18__p19-19__m04__Linear-Graphs-y-mx-c": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to linear graphs. The question asks for the equation of a perpendicular line.\n\n**Solution**\n\nThe given line is\n\\[\n2x+y=9\n\\]\n\n\\[\ny=-2x+9\n\\]\n\nIts gradient is \\(-2\\), so a perpendicular line has gradient \\(\\frac12\\).\n\nLine \\(L\\) passes through \\((8,11)\\):\n\\[\ny-11=\\frac12(x-8)\n\\]\n\n\\[\ny=\\frac12x+7\n\\]\n\n**Answer:** \\(y=\\frac12x+7\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q07__p08-08__m04__Graphing-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is drawing and shading inequalities.\n\n**Solution**\n\nDraw the boundary lines:\n\\[\nx=3,\n\\qquad\ny=1,\n\\qquad\nx+y=7\n\\]\n\nThe required region is\n\\[\nx\\geq3\n\\]\n\n\\[\ny\\geq1\n\\]\n\n\\[\nx+y\\leq7\n\\]\n\n**Answer:** Shade \\(x\\geq3\\), \\(y\\geq1\\), \\(x+y\\leq7\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q19__p20-20__m03__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to transformations of graphs. The question asks for transformed minimum points of \\(y=f(x)\\).\n\n**Solution**\n\nThe minimum point of \\(y=f(x)\\) is\n\\[\n(5,4)\n\\]\n\n(i) For\n\\[\ny=f(x+5)\n\\]\n\nthe graph moves 5 units left, so the minimum point becomes\n\\[\n(0,4)\n\\]\n\n(ii) For\n\\[\ny=3f(x)\n\\]\n\nthe y-coordinate is multiplied by 3, so the minimum point becomes\n\\[\n(5,12)\n\\]\n\n(iii) For\n\\[\ny=f(x)-7\n\\]\n\nthe graph moves 7 units down, so the minimum point becomes\n\\[\n(5,-3)\n\\]\n\n**Answer:** \\((0,4)\\), \\((5,12)\\), and \\((5,-3)\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q11__p12-12__m05__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to angles in polygons.\n\n**Solution**\n\nA regular pentagon has interior angle\n\\[\n108^\\circ\n\\]\n\nA regular hexagon has interior angle\n\\[\n120^\\circ\n\\]\n\nAt \\(E\\), the angle inside triangle \\(AEF\\) is\n\\[\n360^\\circ-108^\\circ-120^\\circ=132^\\circ\n\\]\n\nAlso \\(AE=ED\\) and \\(ED=EF\\), so\n\\[\nAE=EF\n\\]\n\nTriangle \\(AEF\\) is isosceles, so the base angles are equal:\n\\[\n\\angle EAF=\\frac{180^\\circ-132^\\circ}{2}=24^\\circ\n\\]\n\n**Answer:** \\(24^\\circ\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q24__p24-25__m06__Bearings-Scale-Drawing-and-Constructions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nResolve each journey into east and north components.\n\nFrom \\(A\\) to \\(B\\):\n\n\\[\n\\text{east}=8.4\\sin 67^\\circ=7.7322\\ldots\n\\]\n\n\\[\n\\text{north}=8.4\\cos 67^\\circ=3.2821\\ldots\n\\]\n\nFrom \\(B\\) to \\(C\\):\n\n\\[\n\\text{east}=9.2\\sin 129^\\circ=7.1497\\ldots\n\\]\n\n\\[\n\\text{north}=9.2\\cos 129^\\circ=-5.7897\\ldots\n\\]\n\nSo from \\(A\\) to \\(C\\):\n\n\\[\n\\text{east}=14.8820\\ldots\n\\]\n\n\\[\n\\text{north}=-2.5076\\ldots\n\\]\n\nTherefore from \\(C\\) to \\(A\\):\n\n\\[\n\\text{east}=-14.8820\\ldots,\\qquad \\text{north}=2.5076\\ldots\n\\]\n\nThis direction is west of north.\n\n\\[\n\\theta=\\tan^{-1}\\left(\\frac{14.8820\\ldots}{2.5076\\ldots}\\right)\n=80.4355\\ldots^\\circ\n\\]\n\nBearing of \\(A\\) from \\(C\\):\n\n\\[\n360^\\circ-80.4355\\ldots^\\circ=279.5644\\ldots^\\circ\n\\]\n\n**Answer:** \\(\\boxed{280^\\circ}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q16__p17-17__m05__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Circle Theorems. The tag is correct.\n\n**Solution**\n\n(a) The angle at the centre is twice the angle at the circumference standing on the same arc \\(AD\\):\n\\[\n\\angle AOD=2\\times 54^\\circ=108^\\circ\n\\]\n\n(b) Since \\(OC=OD\\), triangle \\(COD\\) is isosceles:\n\\[\n\\angle OCD=\\angle CDO=28^\\circ\n\\]\n\nSo\n\\[\n\\angle COD=180^\\circ-28^\\circ-28^\\circ=124^\\circ\n\\]\n\nAngles around \\(O\\) add to \\(360^\\circ\\):\n\\[\n\\angle AOC=360^\\circ-108^\\circ-124^\\circ=128^\\circ\n\\]\n\nSince \\(OA=OC\\),\n\\[\n\\angle CAO=\\frac{180^\\circ-128^\\circ}{2}=26^\\circ\n\\]\n\n(c) Angle \\(ABC\\) stands on the major arc \\(AC\\), so\n\\[\n\\angle ABC=\\frac{360^\\circ-128^\\circ}{2}=116^\\circ\n\\]\n\n**Answer:** \\(\\angle AOD=108^\\circ\\), \\(\\angle CAO=26^\\circ\\), and \\(\\angle ABC=116^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q25__p26-27__m05__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Circles, Arcs & Sectors.\n\n**Method**\n\nThe circle has radius \\(x\\), so the inradius of the equilateral triangle is \\(x\\).\n\nFor an equilateral triangle with side length \\(a\\),\n\n\\[\n\\text{inradius}=\\frac{a\\sqrt{3}}{6}\n\\]\n\nSo\n\n\\[\nx=\\frac{a\\sqrt{3}}{6}\n\\]\n\n\\[\na=\\frac{6x}{\\sqrt{3}}=2\\sqrt{3}x\n\\]\n\nArea of the triangle:\n\n\\[\n\\frac{\\sqrt{3}}{4}a^2\n=\\frac{\\sqrt{3}}{4}(2\\sqrt{3}x)^2\n\\]\n\n\\[\n=\\frac{\\sqrt{3}}{4}(12x^2)\n=3\\sqrt{3}x^2\n\\]\n\nArea of the circle:\n\n\\[\n\\pi x^2\n\\]\n\nThe shaded area is\n\n\\[\n3\\sqrt{3}x^2-\\pi x^2\n\\]\n\n\\[\n=(3\\sqrt{3}-\\pi)x^2\n\\]\n\nTherefore\n\n\\[\nn=3\\sqrt{3}-\\pi\n\\]\n\n**Answer:** \\(\\boxed{3\\sqrt{3}-\\pi}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q06__p07-07__m03__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Volume & Surface Area. The tag is correct.\n\n**Solution**\n\nThe triangular end is a right triangle with sides \\(6\\), \\(8\\), and \\(10\\).\n\nArea of the two triangular ends:\n\\[\n2\\left(\\frac12\\times 6\\times 8\\right)=48\n\\]\n\nArea of the three rectangles:\n\\[\n15(6+8+10)=360\n\\]\n\nTotal surface area:\n\\[\n48+360=408\n\\]\n\n**Answer:** \\(408\\text{ cm}^2\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q03__p04-04__m03__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Right-Angled Triangles - Pythagoras & Trigonometry.\n\n**Solution**\n\nIn the right-angled triangle, \\(x\\) is adjacent to the \\(43^\\circ\\) angle.\n\n\\[\n\\cos 43^\\circ=\\frac{x}{8.6}\n\\]\n\n\\[\nx=8.6\\cos 43^\\circ=6.289\\ldots\n\\]\n\n**Answer:** \\(6.3\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q17__p18-18__m03__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Vectors. The tag is correct.\n\n**Solution**\n\n\\[\n\\overrightarrow{GF}=-\\overrightarrow{FG}\n=\\begin{pmatrix}5\\\\-2\\end{pmatrix}\n\\]\n\n\\[\n\\overrightarrow{HF}\n=\\overrightarrow{HG}+\\overrightarrow{GF}\n=\\begin{pmatrix}4\\\\14\\end{pmatrix}\n+\\begin{pmatrix}5\\\\-2\\end{pmatrix}\n=\\begin{pmatrix}9\\\\12\\end{pmatrix}\n\\]\n\nMagnitude:\n\n\\[\n|\\overrightarrow{HF}|=\\sqrt{9^2+12^2}=15\n\\]\n\n**Answer:** \\(15\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q08__p09-09__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe total weight of the first 4 bananas is\n\n\\[\n4 \\times 145=580\n\\]\n\nThe total weight of the 5 bananas is\n\n\\[\n5 \\times 142=710\n\\]\n\nWeight of the banana Andy added:\n\n\\[\n710-580=130\n\\]\n\n**Answer:** \\(130\\text{ g}\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q10__p10-11__m05__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nFor year 10, Biology is \\(126^\\circ\\) out of \\(360^\\circ\\).\n\n\\[\n\\frac{126}{360}\\times 300=105\n\\]\n\nFor year 11:\n\n\\[\n(3x+6)+(5x+8)+(7x-9)=320\n\\]\n\n\\[\n15x+5=320\n\\]\n\n\\[\nx=21\n\\]\n\nYear 11 Biology:\n\n\\[\n3(21)+6=69\n\\]\n\nDifference:\n\n\\[\n105-69=36\n\\]\n\n**Answer:** \\(36\\) more students.",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2024_P2H__Q13__p14-15__m06__Cumulative-Frequency-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nThe cumulative frequencies are\n\n\\[\n4,\\ 19,\\ 39,\\ 50,\\ 56,\\ 60\n\\]\n\nThe median is the \\(30\\)th value.\n\n\\[\n2+\\frac{30-19}{39-19}\\times 1=2.55\n\\]\n\nAt \\(3.7\\) kg,\n\n\\[\nF(3.7)\\approx 39+\\frac{0.7}{1}(50-39)=46.7\n\\]\n\nSo the number heavier than \\(3.7\\) kg is\n\n\\[\n60-46.7=13.3\n\\]\n\n**Answers:** median about \\(2.55\\) kg, and about \\(13\\) parcels.",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Nov2024_P2H__Q05__p06-06__m04__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nThe known probabilities add to\n\n\\[\n0.18+0.17+0.23=0.58\n\\]\n\nSo the probabilities for \\(1\\) and \\(4\\) add to\n\n\\[\n1-0.58=0.42\n\\]\n\nThey are equal, so\n\n\\[\nP(4)=0.42\\div 2=0.21\n\\]\n\nExpected number of \\(4\\)s:\n\n\\[\n400\\times 0.21=84\n\\]\n\n**Answer:** \\(84\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Nov2024_P2H__Q21__p21-21__m04__Set-Notation-and-Venn-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Set notation and Venn diagrams. The tag is correct.\n\n**Method**\n\nThe complement of \\(A \\cup B\\) contains the regions outside both \\(A\\) and \\(B\\). These are \\(5x\\) and \\(3x+2\\).\n\nSo \\(5x+(3x+2)=26\\), hence \\(8x+2=26\\) and \\(x=3\\).\n\nNow \\(A' \\cap C\\) means inside \\(C\\), but not inside \\(A\\). These are the regions \\(5x\\) and \\(2x\\).\n\nSo \\(n(A' \\cap C)=5x+2x=7x=7(3)=21\\).\n\n**Answer:** \\(21\\)",
+      "updated": "2026-05-05T00:12:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2024_P2H__Q23__p23-23__m04__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n\\frac{16x^2-36}{x-7}\\div \\frac{2x^2+7x+6}{x^2-5x-14}-(7+8x)\n\\]\n\nFactorise:\n\n\\[\n16x^2-36=4(2x-3)(2x+3)\n\\]\n\n\\[\n2x^2+7x+6=(2x+3)(x+2)\n\\]\n\n\\[\nx^2-5x-14=(x-7)(x+2)\n\\]\n\nSo\n\n\\[\n\\frac{4(2x-3)(2x+3)}{x-7}\n\\div\n\\frac{(2x+3)(x+2)}{(x-7)(x+2)}\n-(7+8x)\n\\]\n\n\\[\n=\\frac{4(2x-3)(2x+3)}{x-7}\n\\times\n\\frac{(x-7)(x+2)}{(2x+3)(x+2)}\n-(7+8x)\n\\]\n\n\\[\n=4(2x-3)-(7+8x)\n\\]\n\n\\[\n=8x-12-7-8x\n\\]\n\n\\[\n=-19\n\\]\n\nSo \\(n=-19\\), which is an integer.\n\n**Answer:** \\(n=-19\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2024_P2H__Q20__p20-20__m03__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n10x^2+11x-21<0\n\\]\n\nFactorise:\n\n\\[\n10x^2+11x-21=(10x+21)(x-1)\n\\]\n\nThe critical values are\n\n\\[\nx=-\\frac{21}{10} \\quad \\text{and} \\quad x=1\n\\]\n\nThe quadratic is less than 0 between the roots.\n\n**Answer:** \\(-\\dfrac{21}{10}<x<1\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2024_P2H__Q22__p22-22__m05__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nx^2+y^2+y=3\n\\]\n\n\\[\ny=x+2\n\\]\n\nSubstitute:\n\n\\[\nx^2+(x+2)^2+(x+2)=3\n\\]\n\n\\[\nx^2+x^2+4x+4+x+2=3\n\\]\n\n\\[\n2x^2+5x+3=0\n\\]\n\n\\[\n(2x+3)(x+1)=0\n\\]\n\nSo\n\n\\[\nx=-\\frac32 \\quad \\text{or} \\quad x=-1\n\\]\n\nFind \\(y\\):\n\n\\[\nx=-\\frac32 \\Rightarrow y=\\frac12\n\\]\n\n\\[\nx=-1 \\Rightarrow y=1\n\\]\n\n**Answer:** \\((x,y)=\\left(-\\dfrac32,\\dfrac12\\right)\\) or \\((-1,1)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2024_P2H__Q24__p24-25__m06__Bearings-Scale-Drawing-and-Constructions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nResolve each journey into east and north components.\n\nFrom \\(A\\) to \\(B\\):\n\n\\[\n\\text{east}=8.4\\sin 67^\\circ=7.7322\\ldots\n\\]\n\n\\[\n\\text{north}=8.4\\cos 67^\\circ=3.2821\\ldots\n\\]\n\nFrom \\(B\\) to \\(C\\):\n\n\\[\n\\text{east}=9.2\\sin 129^\\circ=7.1497\\ldots\n\\]\n\n\\[\n\\text{north}=9.2\\cos 129^\\circ=-5.7897\\ldots\n\\]\n\nSo from \\(A\\) to \\(C\\):\n\n\\[\n\\text{east}=14.8820\\ldots\n\\]\n\n\\[\n\\text{north}=-2.5076\\ldots\n\\]\n\nTherefore from \\(C\\) to \\(A\\):\n\n\\[\n\\text{east}=-14.8820\\ldots,\\qquad \\text{north}=2.5076\\ldots\n\\]\n\nThis direction is west of north.\n\n\\[\n\\theta=\\tan^{-1}\\left(\\frac{14.8820\\ldots}{2.5076\\ldots}\\right)\n=80.4355\\ldots^\\circ\n\\]\n\nBearing of \\(A\\) from \\(C\\):\n\n\\[\n360^\\circ-80.4355\\ldots^\\circ=279.5644\\ldots^\\circ\n\\]\n\n**Answer:** \\(\\boxed{280^\\circ}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2024_P2H__Q25__p26-27__m05__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Circles, Arcs & Sectors.\n\n**Method**\n\nThe circle has radius \\(x\\), so the inradius of the equilateral triangle is \\(x\\).\n\nFor an equilateral triangle with side length \\(a\\),\n\n\\[\n\\text{inradius}=\\frac{a\\sqrt{3}}{6}\n\\]\n\nSo\n\n\\[\nx=\\frac{a\\sqrt{3}}{6}\n\\]\n\n\\[\na=\\frac{6x}{\\sqrt{3}}=2\\sqrt{3}x\n\\]\n\nArea of the triangle:\n\n\\[\n\\frac{\\sqrt{3}}{4}a^2\n=\\frac{\\sqrt{3}}{4}(2\\sqrt{3}x)^2\n\\]\n\n\\[\n=\\frac{\\sqrt{3}}{4}(12x^2)\n=3\\sqrt{3}x^2\n\\]\n\nArea of the circle:\n\n\\[\n\\pi x^2\n\\]\n\nThe shaded area is\n\n\\[\n3\\sqrt{3}x^2-\\pi x^2\n\\]\n\n\\[\n=(3\\sqrt{3}-\\pi)x^2\n\\]\n\nTherefore\n\n\\[\nn=3\\sqrt{3}-\\pi\n\\]\n\n**Answer:** \\(\\boxed{3\\sqrt{3}-\\pi}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

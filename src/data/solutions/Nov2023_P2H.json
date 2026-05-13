@@ -1,0 +1,179 @@
+{
+  "paperSlug": "Nov2023_P2H",
+  "solutions": {
+    "all::Nov2023_P2H__Q07__p08-08__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nA depreciation of \\(8\\%\\) gives multiplier\n\n\\[\n0.92\n\\]\n\nAfter 3 years,\n\n\\[\n26800(0.92)^3=20868.8384\n\\]\n\nCorrect to the nearest dollar,\n\n\\[\n20868.8384\\approx 20869\n\\]\n\n**Answer:** \\(\\$20869\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q17__p15-15__m03__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\n\\[\nP=a(c+y)\n\\]\n\nFor the upper bound, use the upper bounds of all three values.\n\n\\[\na<8.35,\\quad c<2.5,\\quad y<17.5\n\\]\n\n\\[\nP_{\\text{upper}}=8.35(2.5+17.5)=167\n\\]\n\n**Answer:** \\(167\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q05__p07-07__m03__Ratio-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Ratio Toolkit. The tag is correct.\n\n**Method**\n\nButter : sugar \\(=3:2\\).\n\nSugar is \\(120\\) g, so\n\n\\[\n2\\text{ parts}=120\n\\]\n\n\\[\n1\\text{ part}=60\n\\]\n\n\\[\n\\text{butter}=3\\times 60=180\n\\]\n\nFlour : butter \\(=6:5\\).\n\n\\[\n5\\text{ parts}=180\n\\]\n\n\\[\n1\\text{ part}=36\n\\]\n\n\\[\n\\text{flour}=6\\times 36=216\n\\]\n\n**Answer:** \\(216\\) grams",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q04__p06-06__m08__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to algebraic roots and indices. Index laws carry most of the marks.\n\n**Solution**\n\n(a)\n\\[\n\\frac{2x+5}{6}=2x-5\n\\]\n\n\\[\n2x+5=12x-30\n\\]\n\n\\[\n35=10x\n\\]\n\n\\[\nx=\\frac72\n\\]\n\n(b)\n\\[\nh^{15}\\div h^3=h^{15-3}=h^{12}\n\\]\n\n(c)\n\\[\n(2g^3k^5)^4=2^4g^{12}k^{20}=16g^{12}k^{20}\n\\]\n\n(d)\n\\[\n\\frac{y^5\\times y^n}{y^7}=y^{5+n-7}=y^{n-2}\n\\]\n\nGiven that this equals \\(y^{12}\\),\n\\[\nn-2=12\n\\]\n\n\\[\nn=14\n\\]\n\n**Answer:** \\(x=\\frac72\\), \\(h^{12}\\), \\(16g^{12}k^{20}\\), and \\(n=14\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q12__p12-12__m04__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to algebraic roots and indices. Both parts are index-law questions.\n\n**Solution**\n\n(a)\n\\[\n2^7\\times4^5=2^7\\times(2^2)^5=2^{17}\n\\]\n\nAlso\n\\[\n4^x=(2^2)^x=2^{2x}\n\\]\n\nSo\n\\[\n2x=17\n\\]\n\n\\[\nx=\\frac{17}{2}\n\\]\n\n(b)\n\\[\n(125p^6y^{24})^{2/3}=125^{2/3}p^4y^{16}\n\\]\n\n\\[\n=25p^4y^{16}\n\\]\n\n**Answer:** (a) \\(x=\\frac{17}{2}\\), (b) \\(25p^4y^{16}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q16__p15-15__m03__Expanding-Brackets": {
+      "status": "checked",
+      "source": "**Topic check:** Expanding brackets. The tag is correct.\n\n**Solution**\n\n\\[\n(x-5)(x+4)=x^2-x-20\n\\]\n\n\\[\n(2x+3)(x^2-x-20)=2x^3+x^2-43x-60\n\\]\n\n**Answer:** \\(2x^3+x^2-43x-60\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q24__p24-24__m05__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Solving Quadratic Equations to Algebraic Fractions.\n\n**Method**\n\n\\[\n\\frac{45x^3-80x}{3x^2+x-4}\n\\left(\\frac{1}{3x-4}+\\frac{1}{x}\\right)\n=\\frac{4(x+2)}{5x-8}\n\\]\n\nFactorise:\n\n\\[\n45x^3-80x=5x(3x-4)(3x+4)\n\\]\n\n\\[\n3x^2+x-4=(3x+4)(x-1)\n\\]\n\nAlso,\n\n\\[\n\\frac{1}{3x-4}+\\frac{1}{x}\n=\\frac{x+3x-4}{x(3x-4)}\n=\\frac{4(x-1)}{x(3x-4)}\n\\]\n\nSo the left side becomes\n\n\\[\n\\frac{5x(3x-4)(3x+4)}{(3x+4)(x-1)}\n\\times\n\\frac{4(x-1)}{x(3x-4)}\n=20\n\\]\n\nTherefore,\n\n\\[\n20=\\frac{4(x+2)}{5x-8}\n\\]\n\n\\[\n20(5x-8)=4(x+2)\n\\]\n\n\\[\n100x-160=4x+8\n\\]\n\n\\[\n96x=168\n\\]\n\n\\[\nx=\\frac74\n\\]\n\n**Answer:** \\(x=\\dfrac74\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q06__p08-08__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks to show the exact result.\n\n**Solution**\n\n\\[\n3\\frac37=\\frac{24}{7},\\qquad 2\\frac23=\\frac83\n\\]\n\n\\[\n3\\frac37\\div2\\frac23=\\frac{24}{7}\\div\\frac83\n\\]\n\n\\[\n=\\frac{24}{7}\\times\\frac38=\\frac97=1\\frac27\n\\]\n\n**Answer:** \\(1\\frac27\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q15__p14-14__m05__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\n(a) Let\n\\[\nx=0.3727272\\ldots\n\\]\n\nThen\n\\[\n10x=3.727272\\ldots\n\\]\n\nand\n\\[\n1000x=372.727272\\ldots\n\\]\n\nSubtract:\n\\[\n990x=369\n\\]\n\n\\[\nx=\\frac{369}{990}=\\frac{41}{110}\n\\]\n\n(b)\n\\[\n\\frac{\\sqrt{125}+\\sqrt{80}}{\\sqrt3}\n=\\frac{5\\sqrt5+4\\sqrt5}{\\sqrt3}\n\\]\n\n\\[\n=\\frac{9\\sqrt5}{\\sqrt3}\n\\]\n\nRationalise:\n\\[\n\\frac{9\\sqrt5}{\\sqrt3}\\times\\frac{\\sqrt3}{\\sqrt3}=\\frac{9\\sqrt{15}}{3}=3\\sqrt{15}\n\\]\n\n\\[\n3\\sqrt{15}=\\sqrt{135}\n\\]\n\n**Answer:** \\(0.3727272\\ldots=\\dfrac{41}{110}\\), and \\(n=135\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q14__p13-13__m03__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\nThe equations are\n\\[\ny-x-2=0\n\\]\n\n\\[\n2y+x=1\n\\]\n\nFrom the first equation,\n\\[\ny=x+2\n\\]\n\nSubstitute into the second equation:\n\\[\n2(x+2)+x=1\n\\]\n\n\\[\n3x+4=1\n\\]\n\n\\[\n3x=-3\n\\]\n\n\\[\nx=-1\n\\]\n\nThen\n\\[\ny=-1+2=1\n\\]\n\n**Answer:** \\(x=-1\\), \\(y=1\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q19__p17-17__m07__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Functions. The tag is correct.\n\n**Solution**\n\n\\[\nf(x)=5x+7,\\qquad g(x)=\\frac{5}{2x-9}\n\\]\n\n(a) The denominator of \\(g\\) cannot be zero:\n\\[\n2x-9=0\n\\]\n\n\\[\nx=\\frac92\n\\]\n\n(b)\n\\[\ng(4)=\\frac{5}{8-9}=-5\n\\]\n\n\\[\nfg(4)=f(-5)=5(-5)+7=-18\n\\]\n\n(c)\n\\[\nh(x)=3x^2-12x+8,\\qquad x>2\n\\]\n\nComplete the square:\n\\[\nh(x)=3(x-2)^2-4\n\\]\n\nLet\n\\[\ny=3(x-2)^2-4\n\\]\n\n\\[\ny+4=3(x-2)^2\n\\]\n\n\\[\nx-2=\\sqrt{\\frac{y+4}{3}}\n\\]\n\nSince \\(x>2\\), take the positive root:\n\\[\nx=2+\\sqrt{\\frac{y+4}{3}}\n\\]\n\nSo\n\\[\nh^{-1}(x)=2+\\sqrt{\\frac{x+4}{3}}\n\\]\n\n**Answer:** Excluded value \\(\\frac92\\), \\(fg(4)=-18\\), and \\(h^{-1}(x)=2+\\sqrt{\\frac{x+4}{3}}\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q21__p19-19__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe line is\n\n\\[\nx+2y=5\n\\]\n\nSo\n\n\\[\nx=5-2y\n\\]\n\nSubstitute into\n\n\\[\nx^2+3y^2=13\n\\]\n\n\\[\n(5-2y)^2+3y^2=13\n\\]\n\n\\[\n25-20y+4y^2+3y^2=13\n\\]\n\n\\[\n7y^2-20y+12=0\n\\]\n\nFactorise:\n\n\\[\n(7y-6)(y-2)=0\n\\]\n\nSo\n\n\\[\ny=\\frac67 \\quad \\text{or} \\quad y=2\n\\]\n\nUsing \\(x=5-2y\\):\n\n\\[\ny=\\frac67 \\Rightarrow x=\\frac{23}{7}\n\\]\n\n\\[\ny=2 \\Rightarrow x=1\n\\]\n\n**Answer:** \\(\\displaystyle \\left(\\frac{23}{7},\\frac67\\right)\\) and \\((1,2)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q09__p09-09__m02__Linear-Graphs-y-mx-c": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to linear graphs. The question asks for an equation of a straight line through two points.\n\n**Solution**\n\nThe line passes through \\((0,-3)\\) and \\((2,0)\\).\n\nThe gradient is\n\\[\n\\frac{0-(-3)}{2-0}=\\frac32\n\\]\n\nThe y-intercept is \\(-3\\), so\n\\[\ny=\\frac32x-3\n\\]\n\n**Answer:** \\(y=\\frac32x-3\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q18__p16-16__m04__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Differentiation. Acceleration is found from the second derivative of displacement.\n\n**Method**\n\n\\[\ns=2t^3-5t^2+6t-5\n\\]\n\nVelocity is\n\n\\[\n\\frac{ds}{dt}=6t^2-10t+6\n\\]\n\nAcceleration is\n\n\\[\n\\frac{d^2s}{dt^2}=12t-10\n\\]\n\nThe acceleration is \\(5\\), so\n\n\\[\n12t-10=5\n\\]\n\n\\[\n12t=15\n\\]\n\n\\[\nt=\\frac{15}{12}=\\frac54\n\\]\n\n**Answer:** \\(t=\\frac54\\) seconds",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q10__p10-10__m05__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Perimeter. The tag is correct.\n\n**Solution**\n\nThe area of the hexagon can be found from coordinates or by splitting the shape.\n\nIt simplifies to\n\\[\n\\text{area}=25x+98\n\\]\n\nGiven the area is \\(258\\text{ cm}^2\\),\n\\[\n25x+98=258\n\\]\n\n\\[\n25x=160\n\\]\n\n\\[\nx=6.4\n\\]\n\n**Answer:** \\(x=6.4\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q20__p18-18__m04__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Circles, Arcs & Sectors.\n\n**Method**\n\nThe triangle is equilateral with side length \\(10\\) cm.\n\nArea of the triangle:\n\n\\[\n\\frac{\\sqrt{3}}{4}(10)^2=25\\sqrt{3}\n\\]\n\nFor an equilateral triangle, the inradius is\n\n\\[\nr=\\frac{s\\sqrt{3}}{6}\n\\]\n\nSo\n\n\\[\nr=\\frac{10\\sqrt{3}}{6}=\\frac{5\\sqrt{3}}{3}\n\\]\n\nArea of the circle:\n\n\\[\n\\pi r^2=\\pi\\left(\\frac{5\\sqrt{3}}{3}\\right)^2\n=\\frac{25\\pi}{3}\n\\]\n\nThe shaded area is\n\n\\[\n25\\sqrt{3}-\\frac{25\\pi}{3}\n=17.1213\\ldots\n\\]\n\n**Answer:** \\(\\boxed{17.1\\text{ cm}^2}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q23__p22-23__m05__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe large cone has height \\(15\\) cm and radius \\(6\\) cm.\n\nThe small cone has radius \\(x\\). Since the cones are similar,\n\n\\[\n\\frac{\\text{radius}}{\\text{height}}=\\frac6{15}=\\frac25\n\\]\n\nSo for the small cone,\n\n\\[\n\\frac{x}{h}=\\frac25\n\\]\n\n\\[\nh=\\frac52x\n\\]\n\nVolume of the large cone:\n\n\\[\n\\frac13\\pi(6)^2(15)=180\\pi\n\\]\n\nVolume of the small cone:\n\n\\[\n\\frac13\\pi x^2\\left(\\frac52x\\right)=\\frac56\\pi x^3\n\\]\n\nThe frustum volume is\n\n\\[\n\\frac{4212}{25}\\pi\n\\]\n\nSo\n\n\\[\n180\\pi-\\frac56\\pi x^3=\\frac{4212}{25}\\pi\n\\]\n\nCancel \\(\\pi\\):\n\n\\[\n180-\\frac56x^3=\\frac{4212}{25}\n\\]\n\n\\[\n\\frac56x^3=180-\\frac{4212}{25}\n\\]\n\n\\[\n\\frac56x^3=\\frac{288}{25}\n\\]\n\n\\[\nx^3=\\frac{1728}{125}\n\\]\n\n\\[\nx=\\frac{12}{5}=2.4\n\\]\n\n**Answer:** \\(\\boxed{2.4\\text{ cm}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q02__p04-04__m04__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to right-angled triangles.\n\n**Solution**\n\nIn triangle \\(ABC\\),\n\\[\nBC^2=10^2-8^2\n\\]\n\n\\[\nBC^2=36\n\\]\n\n\\[\nBC=6\n\\]\n\nSo\n\\[\nEC=EB+BC=5+6=11\n\\]\n\nIn triangle \\(ECD\\),\n\\[\nw^2=11^2+14^2\n\\]\n\n\\[\nw^2=317\n\\]\n\n\\[\nw=17.804\\ldots\n\\]\n\n**Answer:** \\(w=17.8\\text{ cm}\\) to 1 decimal place.",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q22__p20-21__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Ratio Toolkit to Vectors.\n\n**Method**\n\n\\[\n\\overrightarrow{OA}=3a,\\quad \\overrightarrow{OB}=4b,\\quad \\overrightarrow{BC}=2a-2b\n\\]\n\nPart (a):\n\n\\[\n\\overrightarrow{OC}=\\overrightarrow{OB}+\\overrightarrow{BC}\n=4b+(2a-2b)=2a+2b\n\\]\n\n\\[\n\\overrightarrow{AB}=\\overrightarrow{OB}-\\overrightarrow{OA}\n=4b-3a\n\\]\n\nFor part (b), let \\(P\\) divide \\(AB\\) so that\n\n\\[\n\\overrightarrow{AP}=\\mu\\overrightarrow{AB}\n\\]\n\nThen\n\n\\[\n\\overrightarrow{OP}=3a+\\mu(4b-3a)=(3-3\\mu)a+4\\mu b\n\\]\n\nSince \\(P\\) lies on \\(OC\\), also let\n\n\\[\n\\overrightarrow{OP}=\\lambda(2a+2b)\n\\]\n\nEquating coefficients:\n\n\\[\n3-3\\mu=2\\lambda,\\quad 4\\mu=2\\lambda\n\\]\n\nFrom \\(4\\mu=2\\lambda\\), \\(\\lambda=2\\mu\\).\n\n\\[\n3-3\\mu=4\\mu\n\\]\n\n\\[\n\\mu=\\frac37\n\\]\n\nSo \\(AP:PB=\\frac37:\\frac47\\).\n\n**Answer:** \\(\\overrightarrow{OC}=2a+2b\\), \\(\\overrightarrow{AB}=4b-3a\\), and \\(AP:PB=3:4\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q03__p05-05__m05__Transformations": {
+      "status": "checked",
+      "source": "**Topic check:** Transformations. The tag is correct.\n\n**Solution**\n\n(a) Reflection in \\(y=x\\) swaps the coordinates:\n\n\\[\n(x,y)\\mapsto(y,x)\n\\]\n\nThe reflected T-shape has vertices\n\n\\[\n(6,1),(6,4),(5,4),(5,3),(4,3),(4,2),(5,2),(5,1)\n\\]\n\n(b) Triangle \\(A\\) is mapped to \\(B\\) by an enlargement with scale factor \\(3\\) and centre \\((7,2)\\).\n\n**Answer:** (a) reflected vertices \\((6,1),(6,4),(5,4),(5,3),(4,3),(4,2),(5,2),(5,1)\\); (b) enlargement, scale factor \\(3\\), centre \\((7,2)\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q01__p03-03__m04__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe modal class is the class with the greatest frequency:\n\n\\[\n25<m\\le 30\n\\]\n\nUse midpoints \\(2.5,7.5,12.5,17.5,22.5,27.5\\).\n\n\\[\n2.5(8)+7.5(2)+12.5(6)+17.5(4)+22.5(12)+27.5(18)=945\n\\]\n\n**Answer:** modal class \\(25<m\\le 30\\), estimated total \\(945\\) minutes.",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q08__p09-09__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe total for the first 8 matches is\n\n\\[\n8 \\times 6=48\n\\]\n\nThe total for all 10 matches is\n\n\\[\n10 \\times 7=70\n\\]\n\nSo the last two matches have total\n\n\\[\n70-48=22\n\\]\n\nThe last two scores are \\(k\\) and \\(k+10\\):\n\n\\[\nk+(k+10)=22\n\\]\n\n\\[\n2k+10=22\n\\]\n\n\\[\nk=6\n\\]\n\n**Answer:** \\(k=6\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q13__p12-12__m02__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe results in order are\n\n\\[\n1,\\ 2,\\ 4,\\ 6,\\ 6,\\ 8,\\ 11,\\ 12,\\ 13,\\ 14,\\ 17\n\\]\n\nThere are 11 values.\n\n\\[\nQ_1=4,\\qquad Q_3=13\n\\]\n\n\\[\n\\text{IQR}=13-4=9\n\\]\n\n**Answer:** \\(9\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P2H__Q11__p11-11__m05__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nBox X has \\(5\\) red and \\(11\\) not red crayons.\nBox Y has \\(7\\) red and \\(13\\) not red crayons.\n\nSame colour type means both red or both not red.\n\n\\[\nP(\\text{same})=\\frac5{16}\\times\\frac7{20}\n+\\frac{11}{16}\\times\\frac{13}{20}\n\\]\n\n\\[\n=\\frac{35}{320}+\\frac{143}{320}\n\\]\n\n\\[\n=\\frac{89}{160}\n\\]\n\n**Answer:** \\(\\frac{89}{160}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Nov2023_P2H__Q24__p24-24__m05__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Solving Quadratic Equations to Algebraic Fractions.\n\n**Method**\n\n\\[\n\\frac{45x^3-80x}{3x^2+x-4}\n\\left(\\frac{1}{3x-4}+\\frac{1}{x}\\right)\n=\\frac{4(x+2)}{5x-8}\n\\]\n\nFactorise:\n\n\\[\n45x^3-80x=5x(3x-4)(3x+4)\n\\]\n\n\\[\n3x^2+x-4=(3x+4)(x-1)\n\\]\n\nAlso,\n\n\\[\n\\frac{1}{3x-4}+\\frac{1}{x}\n=\\frac{x+3x-4}{x(3x-4)}\n=\\frac{4(x-1)}{x(3x-4)}\n\\]\n\nSo the left side becomes\n\n\\[\n\\frac{5x(3x-4)(3x+4)}{(3x+4)(x-1)}\n\\times\n\\frac{4(x-1)}{x(3x-4)}\n=20\n\\]\n\nTherefore,\n\n\\[\n20=\\frac{4(x+2)}{5x-8}\n\\]\n\n\\[\n20(5x-8)=4(x+2)\n\\]\n\n\\[\n100x-160=4x+8\n\\]\n\n\\[\n96x=168\n\\]\n\n\\[\nx=\\frac74\n\\]\n\n**Answer:** \\(x=\\dfrac74\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2023_P2H__Q21__p19-19__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe line is\n\n\\[\nx+2y=5\n\\]\n\nSo\n\n\\[\nx=5-2y\n\\]\n\nSubstitute into\n\n\\[\nx^2+3y^2=13\n\\]\n\n\\[\n(5-2y)^2+3y^2=13\n\\]\n\n\\[\n25-20y+4y^2+3y^2=13\n\\]\n\n\\[\n7y^2-20y+12=0\n\\]\n\nFactorise:\n\n\\[\n(7y-6)(y-2)=0\n\\]\n\nSo\n\n\\[\ny=\\frac67 \\quad \\text{or} \\quad y=2\n\\]\n\nUsing \\(x=5-2y\\):\n\n\\[\ny=\\frac67 \\Rightarrow x=\\frac{23}{7}\n\\]\n\n\\[\ny=2 \\Rightarrow x=1\n\\]\n\n**Answer:** \\(\\displaystyle \\left(\\frac{23}{7},\\frac67\\right)\\) and \\((1,2)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2023_P2H__Q20__p18-18__m04__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Circles, Arcs & Sectors.\n\n**Method**\n\nThe triangle is equilateral with side length \\(10\\) cm.\n\nArea of the triangle:\n\n\\[\n\\frac{\\sqrt{3}}{4}(10)^2=25\\sqrt{3}\n\\]\n\nFor an equilateral triangle, the inradius is\n\n\\[\nr=\\frac{s\\sqrt{3}}{6}\n\\]\n\nSo\n\n\\[\nr=\\frac{10\\sqrt{3}}{6}=\\frac{5\\sqrt{3}}{3}\n\\]\n\nArea of the circle:\n\n\\[\n\\pi r^2=\\pi\\left(\\frac{5\\sqrt{3}}{3}\\right)^2\n=\\frac{25\\pi}{3}\n\\]\n\nThe shaded area is\n\n\\[\n25\\sqrt{3}-\\frac{25\\pi}{3}\n=17.1213\\ldots\n\\]\n\n**Answer:** \\(\\boxed{17.1\\text{ cm}^2}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2023_P2H__Q23__p22-23__m05__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe large cone has height \\(15\\) cm and radius \\(6\\) cm.\n\nThe small cone has radius \\(x\\). Since the cones are similar,\n\n\\[\n\\frac{\\text{radius}}{\\text{height}}=\\frac6{15}=\\frac25\n\\]\n\nSo for the small cone,\n\n\\[\n\\frac{x}{h}=\\frac25\n\\]\n\n\\[\nh=\\frac52x\n\\]\n\nVolume of the large cone:\n\n\\[\n\\frac13\\pi(6)^2(15)=180\\pi\n\\]\n\nVolume of the small cone:\n\n\\[\n\\frac13\\pi x^2\\left(\\frac52x\\right)=\\frac56\\pi x^3\n\\]\n\nThe frustum volume is\n\n\\[\n\\frac{4212}{25}\\pi\n\\]\n\nSo\n\n\\[\n180\\pi-\\frac56\\pi x^3=\\frac{4212}{25}\\pi\n\\]\n\nCancel \\(\\pi\\):\n\n\\[\n180-\\frac56x^3=\\frac{4212}{25}\n\\]\n\n\\[\n\\frac56x^3=180-\\frac{4212}{25}\n\\]\n\n\\[\n\\frac56x^3=\\frac{288}{25}\n\\]\n\n\\[\nx^3=\\frac{1728}{125}\n\\]\n\n\\[\nx=\\frac{12}{5}=2.4\n\\]\n\n**Answer:** \\(\\boxed{2.4\\text{ cm}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2023_P2H__Q22__p20-21__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Ratio Toolkit to Vectors.\n\n**Method**\n\n\\[\n\\overrightarrow{OA}=3a,\\quad \\overrightarrow{OB}=4b,\\quad \\overrightarrow{BC}=2a-2b\n\\]\n\nPart (a):\n\n\\[\n\\overrightarrow{OC}=\\overrightarrow{OB}+\\overrightarrow{BC}\n=4b+(2a-2b)=2a+2b\n\\]\n\n\\[\n\\overrightarrow{AB}=\\overrightarrow{OB}-\\overrightarrow{OA}\n=4b-3a\n\\]\n\nFor part (b), let \\(P\\) divide \\(AB\\) so that\n\n\\[\n\\overrightarrow{AP}=\\mu\\overrightarrow{AB}\n\\]\n\nThen\n\n\\[\n\\overrightarrow{OP}=3a+\\mu(4b-3a)=(3-3\\mu)a+4\\mu b\n\\]\n\nSince \\(P\\) lies on \\(OC\\), also let\n\n\\[\n\\overrightarrow{OP}=\\lambda(2a+2b)\n\\]\n\nEquating coefficients:\n\n\\[\n3-3\\mu=2\\lambda,\\quad 4\\mu=2\\lambda\n\\]\n\nFrom \\(4\\mu=2\\lambda\\), \\(\\lambda=2\\mu\\).\n\n\\[\n3-3\\mu=4\\mu\n\\]\n\n\\[\n\\mu=\\frac37\n\\]\n\nSo \\(AP:PB=\\frac37:\\frac47\\).\n\n**Answer:** \\(\\overrightarrow{OC}=2a+2b\\), \\(\\overrightarrow{AB}=4b-3a\\), and \\(AP:PB=3:4\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

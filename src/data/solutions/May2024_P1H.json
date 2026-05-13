@@ -1,0 +1,191 @@
+{
+  "paperSlug": "May2024_P1H",
+  "solutions": {
+    "all::May2024_P1H__Q07__p08-08__m05__Set-Notation-and-Venn-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Set notation and Venn diagrams. The tag is correct.\n\n**Method**\n\n\\[\n\\mathcal{E}=\\{23,24,25,26,27,28,29,30,31,32,33,34\\}\n\\]\n\n\\[\nA=\\{24,26,28,30,32,34\\}\n\\]\n\n\\[\nB=\\{23,29,31\\}\n\\]\n\n\\[\nC=\\{24,27,30,33\\}\n\\]\n\nSo\n\n\\[\nB\\cup C=\\{23,24,27,29,30,31,33\\}\n\\]\n\nAlso \\(A'\\) is the set of odd numbers in \\(\\mathcal{E}\\), so\n\n\\[\nA'\\cap C=\\{27,33\\}\n\\]\n\nThe statement \\(B\\cap C=\\emptyset\\) is true because none of \\(23,29,31\\) is a multiple of \\(3\\).\n\nFor \\(D\\), we need \\(D\\cap(A\\cup C)=\\emptyset\\). So \\(D\\) must contain the four numbers outside \\(A\\cup C\\):\n\n\\[\nD=\\{23,25,29,31\\}\n\\]\n\n**Answer:** (a)(i) \\(\\{23,24,27,29,30,31,33\\}\\), (a)(ii) \\(\\{27,33\\}\\), (b) Yes, (c) \\(\\{23,25,29,31\\}\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q03__p05-05__m02__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\n72=2^3\\times 3^2\n\\]\n\n\\[\n108=2^2\\times 3^3\n\\]\n\nFor the HCF, take the smaller power of each common prime:\n\n\\[\n\\text{HCF}=2^2\\times 3^2\n\\]\n\n\\[\n2^2\\times 3^2=4\\times 9=36\n\\]\n\n**Answer:** \\(36\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q09__p10-10__m03__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n3.5\\times 10^7=35000000\n\\]\n\nArgentina produced\n\n\\[\n8.2\\times 10^5=820000\n\\]\n\ntonnes of rice.\n\nJapan produced \\(6780000\\) more tonnes than Argentina, so\n\n\\[\n820000+6780000=7600000\n\\]\n\nIn standard form,\n\n\\[\n7600000=7.6\\times 10^6\n\\]\n\n**Answer:** (a) \\(35000000\\), (b) \\(7.6\\times 10^6\\) tonnes",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q04__p05-05__m03__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nApril is \\(15\\%\\) more than March, so April is \\(115\\%\\) of March.\n\n\\[\n1.15\\times \\text{March}=943\n\\]\n\n\\[\n\\text{March}=\\frac{943}{1.15}=820\n\\]\n\n**Answer:** \\(820\\) kilometres",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q14__p15-15__m05__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nLet Abel's savings be \\(A\\).\n\nBahira has \\(45\\%\\) more than Abel, so\n\n\\[\nB=1.45A\n\\]\n\nTheir combined savings are\n\n\\[\nA+1.45A=15435\n\\]\n\n\\[\n2.45A=15435\n\\]\n\n\\[\nA=6300\n\\]\n\nSo\n\n\\[\nB=1.45\\times 6300=9135\n\\]\n\nBahira's savings are \\(\\frac{3}{2}\\) times Chanda's savings, so\n\n\\[\n9135=\\frac{3}{2}C\n\\]\n\n\\[\nC=9135\\times \\frac{2}{3}=6090\n\\]\n\n**Answer:** \\(6090\\) dinars",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q10__p11-11__m04__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic roots and indices. The tag is correct.\n\n**Solution**\n\n(a) \\((2p)^0=1\\).\n\n(b) \\(y^9\\times y^{-3}=y^{9-3}=y^6\\), so \\(n=6\\).\n\n(c) \\((5a^4c^2)^3=5^3a^{12}c^6=125a^{12}c^6\\).\n\n**Answer:** (a) \\(1\\), (b) \\(6\\), (c) \\(125a^{12}c^6\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q25__p28-28__m04__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nf(x)=17-3x^2+12x\n\\]\n\n\\[\n=-3x^2+12x+17\n\\]\n\n\\[\n=-3(x^2-4x)+17\n\\]\n\n\\[\n=-3\\left((x-2)^2-4\\right)+17\n\\]\n\n\\[\n=-3(x-2)^2+12+17\n\\]\n\n\\[\n=29-3(x-2)^2\n\\]\n\n**Answer:** \\(f(x)=29-3(x-2)^2\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q12__p13-13__m05__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to algebraic fractions. The fraction simplification is the larger part.\n\n**Solution**\n\n(a)\n\\[\n6y^2-5y-4=(3y-4)(2y+1)\n\\]\n\n(b)\n\\[\n\\frac{2x+1}{4x}+\\frac{7-5x}{3x}\n\\]\n\nUse denominator \\(12x\\):\n\\[\n\\frac{3(2x+1)+4(7-5x)}{12x}\n\\]\n\n\\[\n=\\frac{6x+3+28-20x}{12x}=\\frac{31-14x}{12x}\n\\]\n\n**Answer:** (a) \\((3y-4)(2y+1)\\), (b) \\(\\frac{31-14x}{12x}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q17__p18-18__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks for exact-form proof.\n\n**Solution**\n\n\\[\n\\frac{1+\\sqrt5}{3-\\sqrt5}\\times\\frac{3+\\sqrt5}{3+\\sqrt5}\n=\\frac{(1+\\sqrt5)(3+\\sqrt5)}{9-5}\n\\]\n\n\\[\n=\\frac{3+\\sqrt5+3\\sqrt5+5}{4}\n\\]\n\n\\[\n=\\frac{8+4\\sqrt5}{4}=2+\\sqrt5\n\\]\n\n**Answer:** \\(2+\\sqrt5\\), so \\(a=2\\) and \\(b=5\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q06__p07-07__m05__Solving-Linear-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to solving linear equations. The original tag was expanding brackets, but the linear equation is the larger part.\n\n**Solution**\n\n(a)\n\\[\n(m+5)(m-8)=m^2-3m-40\n\\]\n\n(b)\n\\[\n3n-4=\\frac{5n+6}{3}\n\\]\n\n\\[\n9n-12=5n+6\n\\]\n\n\\[\n4n=18\n\\]\n\n**Answer:** (a) \\(m^2-3m-40\\), (b) \\(n=\\frac92\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q01__p03-03__m03__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Sequences. The tag is correct.\n\n**Solution**\n\nThe sequence is\n\\[\n1,\\ 4,\\ 7,\\ 10\n\\]\n\nThe common difference is \\(3\\).\n\n\\[\n\\text{nth term}=1+3(n-1)=3n-2\n\\]\n\nFor the other sequence,\n\\[\n5n+17\n\\]\n\nThe 12th term is\n\\[\n5(12)+17=77\n\\]\n\n**Answer:** \\(3n-2\\), and \\(77\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q24__p26-27__m06__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe interior angles form an arithmetic sequence with first term \\(84\\) and common difference \\(4\\).\n\nSo the sum of the angles is\n\n\\[\n\\frac n2(2(84)+(n-1)4)\n\\]\n\n\\[\n=\\frac n2(168+4n-4)\n\\]\n\n\\[\n=2n^2+82n\n\\]\n\nThe sum of the interior angles of an \\(n\\)-sided polygon is\n\n\\[\n180(n-2)\n\\]\n\nSo\n\n\\[\n2n^2+82n=180(n-2)\n\\]\n\n\\[\n2n^2-98n+360=0\n\\]\n\n\\[\nn^2-49n+180=0\n\\]\n\n\\[\n(n-45)(n-4)=0\n\\]\n\nSince \\(n>5\\),\n\n\\[\nn=45\n\\]\n\nTherefore the sum of the interior angles is\n\n\\[\n180(45-2)=7740\n\\]\n\n**Answer:** \\(7740\\) degrees",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q15__p16-16__m04__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Functions. The tag is correct.\n\n**Solution**\n\n\\[\nf(x)=\\frac{3x+1}{x-2}\n\\]\n\n(a) The denominator cannot be zero, so\n\\[\nx-2=0\n\\]\n\n\\[\nx=2\n\\]\n\n(b) Let\n\\[\ny=\\frac{3x+1}{x-2}\n\\]\n\n\\[\ny(x-2)=3x+1\n\\]\n\n\\[\nyx-2y=3x+1\n\\]\n\n\\[\nx(y-3)=2y+1\n\\]\n\n\\[\nx=\\frac{2y+1}{y-3}\n\\]\n\nSo\n\\[\nf^{-1}(x)=\\frac{2x+1}{x-3}\n\\]\n\n**Answer:** Excluded value \\(2\\), and \\(f^{-1}(x)=\\dfrac{2x+1}{x-3}\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q21__p22-22__m02__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe minimum point of \\(y=f(x)\\) is \\((5,-4)\\).\n\nFor\n\n\\[\ny=f(x+7)\n\\]\n\nthe graph moves 7 units left:\n\n\\[\n(5,-4)\\to(-2,-4)\n\\]\n\nFor\n\n\\[\ny=f(x)-6\n\\]\n\nthe graph moves 6 units down:\n\n\\[\n(5,-4)\\to(5,-10)\n\\]\n\n**Answer:** \\((-2,-4)\\) and \\((5,-10)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q18__p19-19__m05__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to differentiation. The question asks for points where the derivative has a given value.\n\n**Solution**\n\n\\[\ny=x^3-40x+1\n\\]\n\n\\[\n\\frac{dy}{dx}=3x^2-40\n\\]\n\nThe gradient is \\(8\\), so\n\\[\n3x^2-40=8\n\\]\n\n\\[\n3x^2=48\n\\]\n\n\\[\nx^2=16\n\\]\n\n\\[\nx=4 \\quad \\text{or} \\quad x=-4\n\\]\n\nWhen \\(x=4\\):\n\\[\ny=4^3-40(4)+1=-95\n\\]\n\nWhen \\(x=-4\\):\n\\[\ny=(-4)^3-40(-4)+1=97\n\\]\n\n**Answer:** \\((-4,97)\\) and \\((4,-95)\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q08__p09-09__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Standard & Compound Units. The tag is correct.\n\n**Solution**\n\nThe volume of a cylinder is\n\\[\n\\text{volume}=\\text{area of base}\\times \\text{height}\n\\]\n\nSo the area in contact with the table is\n\\[\n1575\\div 21=75\\text{ cm}^2\n\\]\n\nUse\n\\[\n\\text{pressure}=\\frac{\\text{force}}{\\text{area}}\n\\]\n\n\\[\n\\text{pressure}=\\frac{84}{75}=1.12\n\\]\n\n**Answer:** \\(1.12\\text{ newtons/cm}^2\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q05__p06-06__m04__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Angles in Polygons & Parallel Lines. The tag is correct.\n\n**Solution**\n\nThe interior angle of a regular pentagon is\n\\[\n\\frac{(5-2)\\times 180}{5}=108^\\circ\n\\]\n\nAt \\(E\\), angles around a point add to \\(360^\\circ\\).\n\n\\[\n\\angle FED=360^\\circ-96^\\circ-108^\\circ=156^\\circ\n\\]\n\n**Answer:** \\(156^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q20__p21-21__m04__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nLet the radius of the sector be \\(r\\).\n\nThe shaded segment is\n\n\\[\n\\text{sector area}-\\text{triangle area}\n\\]\n\nThe angle is \\(60^\\circ\\), so\n\n\\[\n38=\\frac{60}{360}\\pi r^2-\\frac{1}{2}r^2\\sin 60^\\circ\n\\]\n\n\\[\n38=r^2\\left(\\frac{\\pi}{6}-\\frac{\\sqrt3}{4}\\right)\n\\]\n\n\\[\nr=20.4815\\ldots\n\\]\n\nThe perimeter of the shaded segment is the arc \\(AC\\) plus the chord \\(AC\\).\n\nArc length:\n\n\\[\n\\frac{60}{360}\\times 2\\pi r=\\frac{\\pi r}{3}\n\\]\n\nChord length:\n\n\\[\n2r\\sin 30^\\circ=r\n\\]\n\nSo the perimeter is\n\n\\[\n\\frac{\\pi r}{3}+r\n\\]\n\n\\[\n=\\frac{\\pi(20.4815\\ldots)}{3}+20.4815\\ldots\n\\]\n\n\\[\n=41.9296\\ldots\n\\]\n\n**Answer:** \\(\\boxed{41.9\\text{ cm}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q23__p24-25__m05__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe cone has radius \\(5x\\) and height \\(6x\\).\n\nVolume of the cone:\n\n\\[\n\\frac{1}{3}\\pi(5x)^2(6x)\n\\]\n\n\\[\n=50\\pi x^3\n\\]\n\nThe removed hemisphere has radius \\(2x\\).\n\nVolume of the hemisphere:\n\n\\[\n\\frac{2}{3}\\pi(2x)^3\n\\]\n\n\\[\n=\\frac{16}{3}\\pi x^3\n\\]\n\nThe remaining solid has volume \\(6948\\pi\\), so\n\n\\[\n50\\pi x^3-\\frac{16}{3}\\pi x^3=6948\\pi\n\\]\n\n\\[\n\\frac{134}{3}\\pi x^3=6948\\pi\n\\]\n\nCancel \\(\\pi\\):\n\n\\[\n\\frac{134}{3}x^3=6948\n\\]\n\n\\[\nx^3=\\frac{10422}{67}\n\\]\n\n\\[\nx=5.3781\\ldots\n\\]\n\nThe solid hemisphere removed has radius \\(2x\\).\n\nTotal surface area of a solid hemisphere is\n\n\\[\n3\\pi r^2\n\\]\n\nSo\n\n\\[\n3\\pi(2x)^2=12\\pi x^2\n\\]\n\n\\[\n12\\pi(5.3781\\ldots)^2=1090.3903\\ldots\n\\]\n\n**Answer:** \\(\\boxed{1090\\text{ cm}^2}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q11__p12-12__m04__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Right-Angled Triangles - Pythagoras and Trigonometry. The missing support length is found using Pythagoras.\n\n**Method**\n\nSince \\(AC=BC\\), the perpendicular support from \\(C\\) meets \\(AB\\) at its midpoint.\n\n\\[\nAM=\\frac{12}{2}=6\n\\]\n\nIn right-angled triangle \\(AMC\\),\n\n\\[\nAC^2=AM^2+MC^2\n\\]\n\n\\[\n9^2=6^2+MC^2\n\\]\n\n\\[\nMC^2=81-36=45\n\\]\n\n\\[\nMC=\\sqrt{45}=6.708\\ldots\n\\]\n\nA whole number of metres must be bought, so buy \\(7\\) m for \\(MC\\).\n\nTotal length needed:\n\n\\[\n12+9+9+7=37\n\\]\n\nCost:\n\n\\[\n37\\times 21.50=795.50\n\\]\n\n**Answer:** \\(795.50\\) euros.",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q19__p20-20__m05__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Sine, Cosine Rule & Area of Triangles. The tag is correct.\n\n**Solution**\n\nIn triangle \\(BCD\\),\n\n\\[\n\\angle DBC=180^\\circ-40^\\circ-62^\\circ=78^\\circ\n\\]\n\nBy the sine rule,\n\n\\[\n\\frac{DB}{\\sin62^\\circ}=\\frac{12.8}{\\sin40^\\circ}\n\\]\n\n\\[\nDB=17.582\\ldots\n\\]\n\nNow use cosine rule in triangle \\(ABD\\):\n\n\\[\n\\cos x=\\frac{15.2^2+13.4^2-17.582\\ldots^2}{2(15.2)(13.4)}\n\\]\n\n\\[\nx=75.577\\ldots^\\circ\n\\]\n\n**Answer:** \\(75.6^\\circ\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q22__p23-23__m03__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor a histogram,\n\n\\[\n\\text{frequency}=\\text{class width}\\times \\text{frequency density}\n\\]\n\nFor \\(15\\leq d<20\\), the frequency is 14 and the class width is 5, so\n\n\\[\n\\text{frequency density}=\\frac{14}{5}=2.8\n\\]\n\nUsing this scale from the histogram:\n\n\\[\n20\\leq d<35 \\quad \\text{has frequency density } 3.4\n\\]\n\n\\[\n35\\leq d\\leq55 \\quad \\text{has frequency density } 0.4\n\\]\n\nSo the known frequencies are\n\n\\[\n14+(15)(3.4)+(20)(0.4)\n\\]\n\n\\[\n=14+51+8=73\n\\]\n\nThere are 100 adults in total, so the missing frequency from 5 km to 15 km is\n\n\\[\n100-73=27\n\\]\n\nThe missing class width is 10, so its frequency density is\n\n\\[\n\\frac{27}{10}=2.7\n\\]\n\n**Answer:** draw the missing bar from \\(5\\) to \\(15\\) with frequency density \\(2.7\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2024_P1H__Q02__p04-04__m04__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nLet the probability of travelling by bus be \\(x\\).\nThen the probability of travelling by car is \\(2x\\).\n\n\\[\n0.20+x+2x+0.26=1\n\\]\n\n\\[\n3x=0.54\n\\]\n\n\\[\nx=0.18\n\\]\n\nSo\n\n\\[\nP(\\text{car})=2x=0.36\n\\]\n\nNumber travelling by car:\n\n\\[\n450\\times 0.36=162\n\\]\n\n**Answer:** \\(162\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::May2024_P1H__Q13__p14-14__m05__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nBag A has \\(3\\) white and \\(7\\) black counters.\nBag B has \\(5\\) white and \\(4\\) black counters.\n\nThe same colour means both white or both black.\n\n\\[\nP(\\text{same})=\\frac3{10}\\times\\frac59+\\frac7{10}\\times\\frac49\n\\]\n\n\\[\n=\\frac16+\\frac{14}{45}\n\\]\n\n\\[\n=\\frac{43}{90}\n\\]\n\n**Answer:** \\(\\frac{43}{90}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::May2024_P1H__Q16__p17-17__m04__Combined-and-Conditional-Probability": {
+      "status": "missing",
+      "source": "**Topic check:** Combined & Conditional Probability. The tag is correct.\n\n**Solution**\n\nAt least one sweet of each colour is the complement of all red or all yellow.\n\n\\[\nP(\\text{all red})=\\frac{15}{20}\\times\\frac{14}{19}\\times\\frac{13}{18}\n\\]\n\n\\[\nP(\\text{all yellow})=\\frac{5}{20}\\times\\frac{4}{19}\\times\\frac{3}{18}\n\\]\n\n\\[\nP(\\text{at least one of each})\n=1-P(\\text{all red})-P(\\text{all yellow})\n\\]\n\n\\[\n=1-\\frac{2730}{6840}-\\frac{60}{6840}\n\\]\n\n\\[\n=\\frac{45}{76}\n\\]\n\n**Answer:** \\(\\frac{45}{76}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::May2024_P1H__Q25__p28-28__m04__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nf(x)=17-3x^2+12x\n\\]\n\n\\[\n=-3x^2+12x+17\n\\]\n\n\\[\n=-3(x^2-4x)+17\n\\]\n\n\\[\n=-3\\left((x-2)^2-4\\right)+17\n\\]\n\n\\[\n=-3(x-2)^2+12+17\n\\]\n\n\\[\n=29-3(x-2)^2\n\\]\n\n**Answer:** \\(f(x)=29-3(x-2)^2\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2024_P1H__Q24__p26-27__m06__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe interior angles form an arithmetic sequence with first term \\(84\\) and common difference \\(4\\).\n\nSo the sum of the angles is\n\n\\[\n\\frac n2(2(84)+(n-1)4)\n\\]\n\n\\[\n=\\frac n2(168+4n-4)\n\\]\n\n\\[\n=2n^2+82n\n\\]\n\nThe sum of the interior angles of an \\(n\\)-sided polygon is\n\n\\[\n180(n-2)\n\\]\n\nSo\n\n\\[\n2n^2+82n=180(n-2)\n\\]\n\n\\[\n2n^2-98n+360=0\n\\]\n\n\\[\nn^2-49n+180=0\n\\]\n\n\\[\n(n-45)(n-4)=0\n\\]\n\nSince \\(n>5\\),\n\n\\[\nn=45\n\\]\n\nTherefore the sum of the interior angles is\n\n\\[\n180(45-2)=7740\n\\]\n\n**Answer:** \\(7740\\) degrees",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2024_P1H__Q21__p22-22__m02__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe minimum point of \\(y=f(x)\\) is \\((5,-4)\\).\n\nFor\n\n\\[\ny=f(x+7)\n\\]\n\nthe graph moves 7 units left:\n\n\\[\n(5,-4)\\to(-2,-4)\n\\]\n\nFor\n\n\\[\ny=f(x)-6\n\\]\n\nthe graph moves 6 units down:\n\n\\[\n(5,-4)\\to(5,-10)\n\\]\n\n**Answer:** \\((-2,-4)\\) and \\((5,-10)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2024_P1H__Q20__p21-21__m04__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nLet the radius of the sector be \\(r\\).\n\nThe shaded segment is\n\n\\[\n\\text{sector area}-\\text{triangle area}\n\\]\n\nThe angle is \\(60^\\circ\\), so\n\n\\[\n38=\\frac{60}{360}\\pi r^2-\\frac{1}{2}r^2\\sin 60^\\circ\n\\]\n\n\\[\n38=r^2\\left(\\frac{\\pi}{6}-\\frac{\\sqrt3}{4}\\right)\n\\]\n\n\\[\nr=20.4815\\ldots\n\\]\n\nThe perimeter of the shaded segment is the arc \\(AC\\) plus the chord \\(AC\\).\n\nArc length:\n\n\\[\n\\frac{60}{360}\\times 2\\pi r=\\frac{\\pi r}{3}\n\\]\n\nChord length:\n\n\\[\n2r\\sin 30^\\circ=r\n\\]\n\nSo the perimeter is\n\n\\[\n\\frac{\\pi r}{3}+r\n\\]\n\n\\[\n=\\frac{\\pi(20.4815\\ldots)}{3}+20.4815\\ldots\n\\]\n\n\\[\n=41.9296\\ldots\n\\]\n\n**Answer:** \\(\\boxed{41.9\\text{ cm}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2024_P1H__Q23__p24-25__m05__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe cone has radius \\(5x\\) and height \\(6x\\).\n\nVolume of the cone:\n\n\\[\n\\frac{1}{3}\\pi(5x)^2(6x)\n\\]\n\n\\[\n=50\\pi x^3\n\\]\n\nThe removed hemisphere has radius \\(2x\\).\n\nVolume of the hemisphere:\n\n\\[\n\\frac{2}{3}\\pi(2x)^3\n\\]\n\n\\[\n=\\frac{16}{3}\\pi x^3\n\\]\n\nThe remaining solid has volume \\(6948\\pi\\), so\n\n\\[\n50\\pi x^3-\\frac{16}{3}\\pi x^3=6948\\pi\n\\]\n\n\\[\n\\frac{134}{3}\\pi x^3=6948\\pi\n\\]\n\nCancel \\(\\pi\\):\n\n\\[\n\\frac{134}{3}x^3=6948\n\\]\n\n\\[\nx^3=\\frac{10422}{67}\n\\]\n\n\\[\nx=5.3781\\ldots\n\\]\n\nThe solid hemisphere removed has radius \\(2x\\).\n\nTotal surface area of a solid hemisphere is\n\n\\[\n3\\pi r^2\n\\]\n\nSo\n\n\\[\n3\\pi(2x)^2=12\\pi x^2\n\\]\n\n\\[\n12\\pi(5.3781\\ldots)^2=1090.3903\\ldots\n\\]\n\n**Answer:** \\(\\boxed{1090\\text{ cm}^2}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2024_P1H__Q22__p23-23__m03__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor a histogram,\n\n\\[\n\\text{frequency}=\\text{class width}\\times \\text{frequency density}\n\\]\n\nFor \\(15\\leq d<20\\), the frequency is 14 and the class width is 5, so\n\n\\[\n\\text{frequency density}=\\frac{14}{5}=2.8\n\\]\n\nUsing this scale from the histogram:\n\n\\[\n20\\leq d<35 \\quad \\text{has frequency density } 3.4\n\\]\n\n\\[\n35\\leq d\\leq55 \\quad \\text{has frequency density } 0.4\n\\]\n\nSo the known frequencies are\n\n\\[\n14+(15)(3.4)+(20)(0.4)\n\\]\n\n\\[\n=14+51+8=73\n\\]\n\nThere are 100 adults in total, so the missing frequency from 5 km to 15 km is\n\n\\[\n100-73=27\n\\]\n\nThe missing class width is 10, so its frequency density is\n\n\\[\n\\frac{27}{10}=2.7\n\\]\n\n**Answer:** draw the missing bar from \\(5\\) to \\(15\\) with frequency density \\(2.7\\)",
+      "updated": "2026-05-05T16:25:30",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "paperSlug": "Jan2020_P1H",
+  "solutions": {
+    "all::Jan2020_P1H__Q02__p04-04__m02__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\nWrite both numbers as products of prime factors:\n\n\\[\n28=2^2\\times 7\n\\]\n\n\\[\n105=3\\times 5\\times 7\n\\]\n\nFor the lowest common multiple, take the highest power of each prime:\n\n\\[\n\\text{LCM}=2^2\\times 3\\times 5\\times 7=420\n\\]\n\n**Answer:** \\(420\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q06__p08-08__m03__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n7.8\\times 10^{-4}=0.00078\n\\]\n\nFor part (b),\n\n\\[\n5.6\\times 10^4+7\\times 10^3=56000+7000=63000\n\\]\n\nThen\n\n\\[\n\\frac{63000}{2.8\\times 10^{-3}}=\\frac{63000}{0.0028}\n\\]\n\n\\[\n=22500000=2.25\\times 10^7\n\\]\n\n**Answer:** (a) \\(0.00078\\), (b) \\(2.25\\times 10^7\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q11__p13-13__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nAfter the first 2 years,\n\n\\[\n6000(1.015)^2=6181.35\n\\]\n\nLet the third-year interest rate be \\(r\\%\\).\n\n\\[\n6181.35\\left(1+\\frac{r}{100}\\right)=6311.16\n\\]\n\n\\[\n1+\\frac{r}{100}=\\frac{6311.16}{6181.35}=1.021000\\ldots\n\\]\n\n\\[\nr=2.1000\\ldots\n\\]\n\n**Answer:** \\(2.1\\%\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q16__p20-20__m03__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\n\\[\nP=\\frac{2a-c}{d}\n\\]\n\nFor the upper bound of \\(P\\), make the numerator as large as possible and the denominator as small as possible.\n\n\\[\na<58.45,\\quad c\\ge 19.5,\\quad d\\ge 3.55\n\\]\n\n\\[\nP_{\\text{upper}}=\\frac{2(58.45)-19.5}{3.55}=27.4366\\ldots\n\\]\n\n**Answer:** \\(27.44\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q05__p07-07__m06__Ratio-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Ratio Toolkit. The tag is correct.\n\n**Method**\n\nGirls : boys \\(=3:5\\), so there are \\(8\\) parts.\n\n\\[\n\\text{girls}=120\\times \\frac38=45\n\\]\n\n\\[\n\\text{boys}=120\\times \\frac58=75\n\\]\n\nBoys climbing:\n\n\\[\n\\frac{16}{25}\\times 75=48\n\\]\n\nBoys sailing:\n\n\\[\n75-48=27\n\\]\n\nFor the girls, twice as many go sailing as climbing, so the girls are split in the ratio\n\n\\[\n\\text{sailing}:\\text{climbing}=2:1\n\\]\n\nGirls sailing:\n\n\\[\n\\frac23\\times 45=30\n\\]\n\nTotal sailing:\n\n\\[\n27+30=57\n\\]\n\n**Answer:** \\(57\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q17__p21-21__m06__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Algebraic Roots & Indices. The question includes surds and fractional indices; the algebraic-index part is the stronger topic signal.\n\n**Method**\n\nFirst,\n\n\\[\n\\sqrt{12}=2\\sqrt3\n\\]\n\nSo\n\n\\[\n6+2\\sqrt{12}=6+4\\sqrt3\n\\]\n\nNow square:\n\n\\[\n(6+4\\sqrt3)^2=36+48\\sqrt3+48\n\\]\n\n\\[\n=84+48\\sqrt3\n\\]\n\nFactor out \\(12\\):\n\n\\[\n84+48\\sqrt3=12(7+4\\sqrt3)\n\\]\n\nFor part (b),\n\n\\[\n\\left(\\frac{27a^{12}}{t^{15}}\\right)^{-\\frac23}\n=\\left(\\frac{t^{15}}{27a^{12}}\\right)^{\\frac23}\n\\]\n\n\\[\n=\\frac{t^{10}}{9a^8}\n\\]\n\n**Answer:** (a) shown, (b) \\(\\displaystyle \\frac{t^{10}}{9a^8}\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q07__p08-09__m09__Solving-Linear-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to solving linear equations. The original tag was expanding brackets, but the largest single part is the equation.\n\n**Solution**\n\n(a) \\((m-8)(m+5)=m^2-3m-40\\).\n\n(b) \\(5y+20y^2=5y(1+4y)\\).\n\n(c) \\((p^2+3)^0=1\\).\n\n(d)\n\\[\n3(2x-5)=\\frac{9-x}{2}\n\\]\n\n\\[\n12x-30=9-x\n\\]\n\n\\[\n13x=39\n\\]\n\n**Answer:** (a) \\(m^2-3m-40\\), (b) \\(5y(1+4y)\\), (c) \\(1\\), (d) \\(x=3\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q21__p25-25__m05__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nf(x)=x^2-2x\n\\]\n\n\\[\ng(x)=x+3\n\\]\n\n\\[\nh(x)=fg(x)=f(g(x))\n\\]\n\n\\[\nh(x)=(x+3)^2-2(x+3)\n\\]\n\n\\[\nh(x)=x^2+4x+3\n\\]\n\n\\[\nh(x)=(x+2)^2-1\n\\]\n\nLet\n\n\\[\ny=(x+2)^2-1\n\\]\n\nSince the domain is \\(x\\ge -2\\), take the positive square root:\n\n\\[\nx+2=\\sqrt{y+1}\n\\]\n\n\\[\nx=\\sqrt{y+1}-2\n\\]\n\n**Answer:** \\(h^{-1}(x)=\\sqrt{x+1}-2\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q01__p03-03__m04__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Coordinate geometry. The tag is correct.\n\n**Solution**\n\n(a) The midpoint of \\(A(5,-4)\\) and \\(B(13,1)\\) is\n\\[\n\\left(\\frac{5+13}{2},\\frac{-4+1}{2}\\right)\n\\]\n\n\\[\n=(9,-1.5)\n\\]\n\n(b)\n\\[\ny=2-3x\n\\]\n\nThe gradient is \\(-3\\).\n\n(c) For \\(x=100\\),\n\\[\ny=2-3(100)=-298\n\\]\n\nThe point has \\(y=-302\\), not \\(-298\\), so it does not lie on the line.\n\n**Answer:** \\((9,-1.5)\\), gradient \\(-3\\), and no.",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q22__p26-27__m06__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nSince \\(M\\) is the midpoint of \\(JK\\),\n\n\\[\nM=\\left(\\frac{j+6}{2},\\frac{15+k}{2}\\right)\n\\]\n\nThe gradient of \\(HM\\) is 2, and \\(H=(-4,1)\\).\n\n\\[\n\\frac{\\frac{15+k}{2}-1}{\\frac{j+6}{2}+4}=2\n\\]\n\n\\[\n\\frac{k+13}{j+14}=2\n\\]\n\n\\[\nk=2j+15\n\\]\n\nAlso,\n\n\\[\nJK=\\sqrt{80}\n\\]\n\nSo\n\n\\[\n(6-j)^2+(k-15)^2=80\n\\]\n\nSubstitute \\(k=2j+15\\):\n\n\\[\n(6-j)^2+(2j)^2=80\n\\]\n\n\\[\nj^2-12j+36+4j^2=80\n\\]\n\n\\[\n5j^2-12j-44=0\n\\]\n\n\\[\n(5j+10)(j-4.4)=0\n\\]\n\nSince \\(j<0\\),\n\n\\[\nj=-2\n\\]\n\nThen\n\n\\[\nk=2(-2)+15=11\n\\]\n\n**Answer:** \\(j=-2,\\ k=11\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q20__p24-24__m04__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\ny=4(x-1)^2-a\n\\]\n\nThe turning point is read directly from the completed square form:\n\n\\[\n(1,-a)\n\\]\n\nFor the \\(y\\)-intercept, put \\(x=0\\):\n\n\\[\ny=4(0-1)^2-a\n\\]\n\n\\[\ny=4-a\n\\]\n\nSo the \\(y\\)-intercept is\n\n\\[\n(0,4-a)\n\\]\n\nFor the \\(x\\)-intercepts, put \\(y=0\\):\n\n\\[\n4(x-1)^2-a=0\n\\]\n\n\\[\n4(x-1)^2=a\n\\]\n\n\\[\n(x-1)^2=\\frac{a}{4}\n\\]\n\n\\[\nx-1=\\pm \\frac{\\sqrt a}{2}\n\\]\n\n\\[\nx=1\\pm \\frac{\\sqrt a}{2}\n\\]\n\nSo the \\(x\\)-intercepts are\n\n\\[\n\\left(1-\\frac{\\sqrt a}{2},0\\right)\n\\quad \\text{and} \\quad\n\\left(1+\\frac{\\sqrt a}{2},0\\right)\n\\]\n\nSince \\(a>4\\), the turning point is below the \\(x\\)-axis and the curve crosses the \\(x\\)-axis twice.\n\n**Answer:** turning point \\((1,-a)\\), \\(y\\)-intercept \\((0,4-a)\\), \\(x\\)-intercepts \\(\\left(1-\\frac{\\sqrt a}{2},0\\right)\\) and \\(\\left(1+\\frac{\\sqrt a}{2},0\\right)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q10__p12-12__m03__Graphing-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is identifying inequalities from a shaded region.\n\n**Solution**\n\nThe shaded region is left of the \\(y\\)-axis:\n\\[\nx\\leq0\n\\]\n\nIt is below the line through \\((0,4)\\) and \\((4,0)\\):\n\\[\ny\\leq -x+4\n\\]\n\nIt is above the line\n\\[\ny=\\frac13x-2\n\\]\n\nSo\n\\[\ny\\geq \\frac13x-2\n\\]\n\n**Answer:** \\(x\\leq0\\), \\(y\\leq -x+4\\), \\(y\\geq \\frac13x-2\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q15__p18-19__m08__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is optimisation using differentiation.\n\n**Solution**\n\nThe volume is\n\\[\nV=(2x+5)(x+1)(3-x)\n\\]\n\nFirst expand:\n\\[\n(2x+5)(x+1)=2x^2+7x+5\n\\]\n\n\\[\nV=(2x^2+7x+5)(3-x)\n\\]\n\n\\[\nV=15+16x-x^2-2x^3\n\\]\n\nFor the maximum volume,\n\\[\n\\frac{dV}{dx}=0\n\\]\n\n\\[\n\\frac{dV}{dx}=16-2x-6x^2\n\\]\n\n\\[\n16-2x-6x^2=0\n\\]\n\n\\[\n3x^2+x-8=0\n\\]\n\nUsing the quadratic formula,\n\\[\nx=\\frac{-1\\pm\\sqrt{97}}{6}\n\\]\n\nThe valid positive value is\n\\[\nx=1.4748\\ldots\n\\]\n\n**Answer:** \\(x=1.47\\) to 3 significant figures.",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q13__p16-16__m04__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is a pressure and volume question.\n\n**Solution**\n\n\\[\n\\text{pressure}=\\frac{\\text{force}}{\\text{area}}\n\\]\n\n\\[\n0.14=\\frac{56}{\\text{area}}\n\\]\n\n\\[\n\\text{area}=\\frac{56}{0.14}=400\\text{ cm}^2\n\\]\n\nThe cube rests on one square face, so\n\\[\nw^2=400\n\\]\n\n\\[\nw=20\n\\]\n\nVolume of the cube is\n\\[\n20^3=8000\n\\]\n\n**Answer:** \\(8000\\text{ cm}^3\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q03__p05-05__m04__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Perimeter. The tag is correct.\n\n**Solution**\n\nSplit the shape into two rectangles.\n\nThe left rectangle has area\n\\[\n12\\times 9=108\\text{ cm}^2\n\\]\n\nThe right rectangle has height\n\\[\n9-6=3\\text{ cm}\n\\]\n\nSo its area is\n\\[\n3x\n\\]\n\nTotal area:\n\\[\n108+3x=129\n\\]\n\n\\[\n3x=21\n\\]\n\n\\[\nx=7\n\\]\n\n**Answer:** \\(7\\text{ cm}\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q09__p11-11__m03__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Right-Angled Triangles - Pythagoras & Trigonometry. The tag is correct.\n\n**Solution**\n\n\\[\n\\cos 63^\\circ=\\frac{24.3}{PQ}\n\\]\n\n\\[\nPQ=\\frac{24.3}{\\cos 63^\\circ}=53.525\\ldots\n\\]\n\n**Answer:** \\(53.5\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q14__p17-17__m05__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Sine, Cosine Rule & Area of Triangles. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n\\text{area}=9.3\\times 14.7\\times\\sin106^\\circ\n=131.414\\ldots\n\\]\n\n**Answer:** \\(131\\text{ cm}^2\\).\n\n(b) In triangle \\(EFG\\),\n\n\\[\nEG^2=9.3^2+14.7^2-2(9.3)(14.7)\\cos106^\\circ\n\\]\n\n\\[\nEG=19.440\\ldots\n\\]\n\n**Answer:** \\(19.4\\text{ cm}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q19__p23-23__m04__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** 3D Pythagoras & Trigonometry. The tag is correct.\n\n**Solution**\n\nThe projection of \\(AH\\) onto the base plane is the diagonal of the base rectangle:\n\n\\[\n\\sqrt{9^2+5^2}=\\sqrt{106}\n\\]\n\nThe vertical height is \\(6\\text{ cm}\\), so\n\n\\[\n\\tan\\theta=\\frac{6}{\\sqrt{106}}\n\\]\n\n\\[\n\\theta=30.232\\ldots^\\circ\n\\]\n\n**Answer:** \\(30.2^\\circ\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q08__p10-10__m02__Transformations": {
+      "status": "checked",
+      "source": "**Topic check:** Transformations. The tag is correct.\n\n**Solution**\n\nUse\n\n\\[\n\\text{new point}=(1,2)+\\frac12\\left(\\text{old point}-(1,2)\\right)\n\\]\n\nThe vertices\n\n\\[\n(7,10),\\ (15,10),\\ (15,4),\\ (11,4)\n\\]\n\nbecome\n\n\\[\n(4,6),\\ (8,6),\\ (8,3),\\ (6,3)\n\\]\n\n**Answer:** draw the enlarged shape with vertices \\((4,6),(8,6),(8,3),(6,3)\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q04__p06-06__m07__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\n(a) The greatest frequency is \\(16\\), so the modal class is\n\n\\[\n3<w\\le 4\n\\]\n\n(b) Use class midpoints:\n\n\\[\n\\frac{2.5(12)+3.5(16)+4.5(9)+5.5(2)+6.5(1)}{40}\n=3.6\n\\]\n\n(c) Weights greater than \\(4\\) kg:\n\n\\[\n9+2+1=12\n\\]\n\n\\[\nP(w>4)=\\frac{12}{40}=\\frac{3}{10}\n\\]\n\n**Answer:** (a) \\(3<w\\le4\\), (b) \\(3.6\\text{ kg}\\), (c) \\(\\frac{3}{10}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q12__p14-15__m05__Cumulative-Frequency-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nThere are \\(80\\) people.\n\nFor the interquartile range:\n\n\\[\nQ_1 \\text{ is at cumulative frequency }20\n\\]\n\n\\[\nQ_3 \\text{ is at cumulative frequency }60\n\\]\n\nFrom the graph,\n\n\\[\nQ_1\\approx 38,\\qquad Q_3\\approx 56\n\\]\n\n\\[\n\\text{IQR}\\approx 56-38=18\n\\]\n\nAt \\(50\\) minutes, the cumulative frequency is about \\(42\\).\n\nNo women took \\(50\\) minutes or less, so these \\(42\\) people are men.\n\n\\[\n0.6 \\times \\text{number of men}=42\n\\]\n\n\\[\n\\text{number of men}=\\frac{42}{0.6}=70\n\\]\n\n**Answers:** IQR about \\(18\\) minutes, and about \\(70\\) men.",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P1H__Q18__p22-22__m04__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nThere are \\(16\\) sweets and \\(5\\) are lemon, so \\(11\\) are not lemon.\n\n\\[\nP(\\text{no lemon})=\\frac{11}{16}\\times\\frac{10}{15}\\times\\frac{9}{14}\n\\]\n\n\\[\n=\\frac{33}{112}\n\\]\n\n**Answer:** \\(\\frac{33}{112}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jan2020_P1H__Q21__p25-25__m05__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nf(x)=x^2-2x\n\\]\n\n\\[\ng(x)=x+3\n\\]\n\n\\[\nh(x)=fg(x)=f(g(x))\n\\]\n\n\\[\nh(x)=(x+3)^2-2(x+3)\n\\]\n\n\\[\nh(x)=x^2+4x+3\n\\]\n\n\\[\nh(x)=(x+2)^2-1\n\\]\n\nLet\n\n\\[\ny=(x+2)^2-1\n\\]\n\nSince the domain is \\(x\\ge -2\\), take the positive square root:\n\n\\[\nx+2=\\sqrt{y+1}\n\\]\n\n\\[\nx=\\sqrt{y+1}-2\n\\]\n\n**Answer:** \\(h^{-1}(x)=\\sqrt{x+1}-2\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P1H__Q22__p26-27__m06__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nSince \\(M\\) is the midpoint of \\(JK\\),\n\n\\[\nM=\\left(\\frac{j+6}{2},\\frac{15+k}{2}\\right)\n\\]\n\nThe gradient of \\(HM\\) is 2, and \\(H=(-4,1)\\).\n\n\\[\n\\frac{\\frac{15+k}{2}-1}{\\frac{j+6}{2}+4}=2\n\\]\n\n\\[\n\\frac{k+13}{j+14}=2\n\\]\n\n\\[\nk=2j+15\n\\]\n\nAlso,\n\n\\[\nJK=\\sqrt{80}\n\\]\n\nSo\n\n\\[\n(6-j)^2+(k-15)^2=80\n\\]\n\nSubstitute \\(k=2j+15\\):\n\n\\[\n(6-j)^2+(2j)^2=80\n\\]\n\n\\[\nj^2-12j+36+4j^2=80\n\\]\n\n\\[\n5j^2-12j-44=0\n\\]\n\n\\[\n(5j+10)(j-4.4)=0\n\\]\n\nSince \\(j<0\\),\n\n\\[\nj=-2\n\\]\n\nThen\n\n\\[\nk=2(-2)+15=11\n\\]\n\n**Answer:** \\(j=-2,\\ k=11\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P1H__Q20__p24-24__m04__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\ny=4(x-1)^2-a\n\\]\n\nThe turning point is read directly from the completed square form:\n\n\\[\n(1,-a)\n\\]\n\nFor the \\(y\\)-intercept, put \\(x=0\\):\n\n\\[\ny=4(0-1)^2-a\n\\]\n\n\\[\ny=4-a\n\\]\n\nSo the \\(y\\)-intercept is\n\n\\[\n(0,4-a)\n\\]\n\nFor the \\(x\\)-intercepts, put \\(y=0\\):\n\n\\[\n4(x-1)^2-a=0\n\\]\n\n\\[\n4(x-1)^2=a\n\\]\n\n\\[\n(x-1)^2=\\frac{a}{4}\n\\]\n\n\\[\nx-1=\\pm \\frac{\\sqrt a}{2}\n\\]\n\n\\[\nx=1\\pm \\frac{\\sqrt a}{2}\n\\]\n\nSo the \\(x\\)-intercepts are\n\n\\[\n\\left(1-\\frac{\\sqrt a}{2},0\\right)\n\\quad \\text{and} \\quad\n\\left(1+\\frac{\\sqrt a}{2},0\\right)\n\\]\n\nSince \\(a>4\\), the turning point is below the \\(x\\)-axis and the curve crosses the \\(x\\)-axis twice.\n\n**Answer:** turning point \\((1,-a)\\), \\(y\\)-intercept \\((0,4-a)\\), \\(x\\)-intercepts \\(\\left(1-\\frac{\\sqrt a}{2},0\\right)\\) and \\(\\left(1+\\frac{\\sqrt a}{2},0\\right)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

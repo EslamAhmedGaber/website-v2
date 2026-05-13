@@ -1,0 +1,203 @@
+{
+  "paperSlug": "Jan2020_P2HR",
+  "solutions": {
+    "all::Jan2020_P2HR__Q17__p18-19__m06__Set-Notation-and-Venn-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Set notation and Venn diagrams. The tag is correct.\n\n**Method**\n\nLet the sets be \\(D\\) for dogs, \\(C\\) for cats, and \\(R\\) for rabbits.\n\nThe number in all three sets is \\(6\\).\n\n\\[\nD\\cap R \\text{ only}=9-6=3\n\\]\n\n\\[\nC\\cap R \\text{ only}=8-6=2\n\\]\n\n\\[\nD\\cap C \\text{ only}=x-6\n\\]\n\nSo the remaining one-set regions are\n\n\\[\nD \\text{ only}=25-x,\\quad C \\text{ only}=16-x,\\quad R \\text{ only}=9\n\\]\n\nThere are \\(5\\) students outside all three sets. The total number of students is \\(50\\), so\n\n\\[\n(25-x)+(16-x)+9+(x-6)+3+2+6+5=50\n\\]\n\n\\[\n60-x=50\n\\]\n\n\\[\nx=10\n\\]\n\nFor \\(C' \\cap D'\\), we need students who are not in \\(C\\) and not in \\(D\\). These are the rabbit-only students and the students outside all three sets.\n\n\\[\n9+5=14\n\\]\n\n**Answer:** \\(x=10\\) and \\(n(C'\\cap D')=14\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q01__p03-03__m03__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\nUse the index law \\(a^m\\times a^n=a^{m+n}\\):\n\n\\[\n5^{17}\\times 5^2=5^{19}\n\\]\n\nNow write \\(800\\) as a product of prime factors:\n\n\\[\n800=8\\times 100\n\\]\n\n\\[\n800=2^3\\times 2^2\\times 5^2\n\\]\n\n\\[\n800=2^5\\times 5^2\n\\]\n\n**Answer:** (a) \\(5^{19}\\), (b) \\(2^5\\times 5^2\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q10__p10-10__m03__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\nAtlantic surface area:\n\n\\[\n1.06\\times 10^8=106000000\n\\]\n\nIndian surface area:\n\n\\[\n6.86\\times 10^7=68600000\n\\]\n\nDifference:\n\n\\[\n106000000-68600000=37400000\n\\]\n\n\\[\n37400000=3.74\\times 10^7\n\\]\n\nFor part (b),\n\n\\[\nk=\\frac{1.56\\times 10^8}{1.41\\times 10^7}\n\\]\n\n\\[\nk=11.063\\ldots\n\\]\n\nTo the nearest whole number,\n\n\\[\nk=11\n\\]\n\n**Answer:** (a) \\(3.74\\times 10^7\\), (b) \\(11\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q08__p08-08__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nA depreciation of \\(19\\%\\) gives a multiplier of\n\n\\[\n1-0.19=0.81\n\\]\n\nAfter 3 years,\n\n\\[\n20000(0.81)^3=10628.82\n\\]\n\nCorrect to the nearest dollar,\n\n\\[\n10628.82\\approx 10629\n\\]\n\n**Answer:** \\(\\$10629\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q21__p22-22__m07__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic Roots and Indices. The tag is acceptable because the index-law part carries the larger share of marks.\n\n**Method**\n\nFor part (a), factorise the numerator and denominator:\n\n\\[\n10x^2+23x+12=(5x+4)(2x+3)\n\\]\n\n\\[\n4x^2-9=(2x-3)(2x+3)\n\\]\n\nSo\n\n\\[\n\\frac{10x^2+23x+12}{4x^2-9}=\\frac{(5x+4)(2x+3)}{(2x-3)(2x+3)}\n\\]\n\n\\[\n=\\frac{5x+4}{2x-3}\n\\]\n\nFor part (b),\n\n\\[\n2^{2y}\\times 2^{3y+2}=2^{5y+2}\n\\]\n\nAlso,\n\n\\[\n\\frac{8^{5y}}{4^n}=\\frac{(2^3)^{5y}}{(2^2)^n}=2^{15y-2n}\n\\]\n\nEquate powers of 2:\n\n\\[\n5y+2=15y-2n\n\\]\n\n\\[\n2n=10y-2\n\\]\n\n\\[\nn=5y-1\n\\]\n\n**Answer:** (a) \\(\\frac{5x+4}{2x-3}\\), (b) \\(n=5y-1\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q23__p23-23__m03__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n7-12x-2x^2=-2x^2-12x+7\n\\]\n\n\\[\n=-2(x^2+6x)+7\n\\]\n\n\\[\n=-2\\left((x+3)^2-9\\right)+7\n\\]\n\n\\[\n=-2(x+3)^2+18+7\n\\]\n\n\\[\n=25-2(x+3)^2\n\\]\n\n**Answer:** \\(25-2(x+3)^2\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q25__p25-25__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Right-Angled Triangles to Algebraic Proof.\n\n**Method**\n\nSince \\(N\\) is a multiple of 5, let\n\n\\[\nN=5k\n\\]\n\nwhere \\(k\\) is an integer.\n\nGiven\n\n\\[\nA=N+1,\\qquad B=N-1\n\\]\n\nSo\n\n\\[\nA^2-B^2=(N+1)^2-(N-1)^2\n\\]\n\nExpand:\n\n\\[\n(N+1)^2=N^2+2N+1\n\\]\n\n\\[\n(N-1)^2=N^2-2N+1\n\\]\n\nTherefore\n\n\\[\nA^2-B^2=(N^2+2N+1)-(N^2-2N+1)\n\\]\n\n\\[\n=4N\n\\]\n\nSubstitute \\(N=5k\\):\n\n\\[\n4N=4(5k)=20k\n\\]\n\nSince \\(k\\) is an integer, \\(20k\\) is a multiple of 20.\n\n**Answer:** \\(A^2-B^2\\) is always a multiple of \\(20\\).",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q19__p20-20__m06__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Solving inequalities. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n\\frac{4-3x}{5}-\\frac{3x-5}{2}=-3\n\\]\n\nMultiply by 10:\n\\[\n2(4-3x)-5(3x-5)=-30\n\\]\n\n\\[\n8-6x-15x+25=-30\n\\]\n\n\\[\n33-21x=-30\n\\]\n\n\\[\n-21x=-63\n\\]\n\n\\[\nx=3\n\\]\n\n(b)\n\\[\n5y^2-17y\\le40\n\\]\n\n\\[\n5y^2-17y-40\\le0\n\\]\n\nFactorise:\n\\[\n(5y+8)(y-5)\\le0\n\\]\n\nThe roots are \\(-\\frac85\\) and \\(5\\). The quadratic is \\(\\le0\\) between the roots.\n\n**Answer:** \\(x=3\\), and \\(-\\frac85\\le y\\le5\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q07__p08-08__m03__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\n\\[\n3x+5y=6\n\\]\n\n\\[\n7x-5y=-11\n\\]\n\nAdd the equations:\n\\[\n10x=-5\n\\]\n\n\\[\nx=-\\frac12\n\\]\n\nSubstitute into \\(3x+5y=6\\):\n\\[\n3\\left(-\\frac12\\right)+5y=6\n\\]\n\n\\[\n-\\frac32+5y=6\n\\]\n\n\\[\n5y=\\frac{15}{2}\n\\]\n\n\\[\ny=\\frac32\n\\]\n\n**Answer:** \\(x=-\\frac12\\), \\(y=\\frac32\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q03__p05-05__m04__Forming-and-Solving-Equations": {
+      "status": "draft",
+      "source": "**Topic check:** Corrected to Forming & Solving Equations.\n\n**Why it moved:** The question asks us to form and solve an equation for the numbers of buttons in three tins. There is no probability event.\n\n**Solution**\n\nLet the number of buttons in tin A be \\(x\\).\n\nThen tin B has \\(4x\\) buttons and tin C has \\(x-7\\) buttons.\n\n\\[\nx+4x+(x-7)=137\n\\]\n\n\\[\n6x-7=137\n\\]\n\n\\[\n6x=144\n\\]\n\n\\[\nx=24\n\\]\n\nTin C has\n\n\\[\n24-7=17\n\\]\n\n**Answer:** \\(17\\) buttons.",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Jan2020_P2HR__Q22__p23-23__m04__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFirst term:\n\n\\[\na=-6\n\\]\n\n\\[\nS_{30}=2865\n\\]\n\nUse\n\n\\[\nS_n=\\frac n2(2a+(n-1)d)\n\\]\n\n\\[\n2865=\\frac{30}{2}(2(-6)+29d)\n\\]\n\n\\[\n2865=15(-12+29d)\n\\]\n\n\\[\n191=-12+29d\n\\]\n\n\\[\n29d=203\n\\]\n\n\\[\nd=7\n\\]\n\nThe 9th term is\n\n\\[\nu_9=a+8d\n\\]\n\n\\[\nu_9=-6+8(7)=50\n\\]\n\n**Answer:** \\(50\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q24__p24-24__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor \\(L_1\\),\n\n\\[\n5x+10y=8\n\\]\n\n\\[\n10y=-5x+8\n\\]\n\n\\[\ny=-\\frac12x+\\frac45\n\\]\n\nSo the gradient of \\(L_1\\) is \\(-\\frac12\\).\n\nSince \\(L_2\\) is perpendicular to \\(L_1\\), the gradient of \\(L_2\\) is \\(2\\).\n\nUsing the point \\((8,6)\\):\n\n\\[\ny-6=2(x-8)\n\\]\n\n\\[\ny=2x-10\n\\]\n\nAt \\(A\\), the line crosses the \\(x\\)-axis, so \\(y=0\\):\n\n\\[\n0=2x-10\n\\]\n\n\\[\nx=5\n\\]\n\nSo \\(A=(5,0)\\).\n\nAt \\(B\\), \\(x=-3\\):\n\n\\[\ny=2(-3)-10=-16\n\\]\n\nSo \\(B=(-3,-16)\\).\n\nTriangle \\(AOB\\) has base \\(OA=5\\) and perpendicular height \\(16\\).\n\n\\[\n\\text{Area}=\\frac12 \\times 5 \\times 16=40\n\\]\n\n**Answer:** \\(40\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q15__p15-15__m04__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is a table-and-graph question for a quadratic function.\n\n**Solution**\n\n\\[\ny=x^2-\\frac{x}{2}-3\n\\]\n\nThe completed table is:\n\n\\[\n\\begin{array}{c|rrrrrrr}\nx&-3&-2&-1&0&1&2&3\\\\\n\\hline\ny&7.5&2&-1.5&-3&-2.5&0&4.5\n\\end{array}\n\\]\n\nPlot these points and join them with a smooth U-shaped curve.\n\n**Answer:** Missing values are \\(2,-1.5,-3,0\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q11__p11-11__m04__Graphing-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This combines integer inequalities and a shaded region.\n\n**Solution**\n\nFor part (a),\n\\[\n2<x\\leq4\n\\]\n\nThe integer values are\n\\[\n3,4\n\\]\n\nFor the region \\(R\\), the boundaries are\n\\[\ny=x-3,\n\\qquad\nx+y=5,\n\\qquad\ny=6\n\\]\n\nThe shaded region is above the two sloping lines and below the horizontal line:\n\\[\ny\\geq x-3\n\\]\n\n\\[\nx+y\\geq5\n\\]\n\n\\[\ny\\leq6\n\\]\n\n**Answer:** (a) \\(3,4\\). (b) \\(y\\geq x-3\\), \\(x+y\\geq5\\), \\(y\\leq6\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q05__p06-06__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Standard & Compound Units.\n\n**Solution**\n\nThe time is\n\\[\n3\\text{ h }36\\text{ min}=3.6\\text{ h}\n\\]\n\nAverage speed:\n\\[\n2470\\div 3.6=686.111\\ldots\n\\]\n\n**Answer:** \\(686\\text{ km/h}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q09__p09-09__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Standard & Compound Units.\n\n**Solution**\n\n\\[\n\\text{pressure}=\\frac{\\text{force}}{\\text{area}}\n\\]\n\n\\[\n30=\\frac{27}{\\text{area}}\n\\]\n\n\\[\n\\text{area}=\\frac{27}{30}=0.9\\text{ m}^2\n\\]\n\nThe base area is\n\n\\[\n1.2x=0.9\n\\]\n\n\\[\nx=\\frac{0.9}{1.2}=0.75\n\\]\n\n**Answer:** \\(x=0.75\\text{ m}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q06__p07-07__m02__Bearings-Scale-Drawing-and-Constructions": {
+      "status": "checked",
+      "source": "**Topic check:** Bearings, Scale Drawing & Constructions. The tag is correct.\n\n**Construction answer**\n\nTo construct the perpendicular bisector of \\(AB\\):\n\n1. Set the compass radius to more than half of \\(AB\\).\n2. With centre \\(A\\), draw arcs above and below the line.\n3. With the same radius and centre \\(B\\), draw arcs crossing the first pair.\n4. Draw the straight line through the two arc intersections.\n\n**Answer:** This line is the perpendicular bisector of \\(AB\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q18__p19-19__m02__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Circle Theorems. The tag is correct.\n\n**Solution**\n\nUse the intersecting chords theorem:\n\\[\nAP\\times PB=CP\\times PD\n\\]\n\nSubstitute the values:\n\\[\n9\\times 6=8\\times PD\n\\]\n\n\\[\n54=8PD\n\\]\n\n\\[\nPD=6.75\n\\]\n\n**Answer:** \\(6.75\\text{ cm}\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q13__p13-13__m03__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Volume & Surface Area.\n\n**Solution**\n\nArea of the trapezium cross-section:\n\\[\n\\frac12(7+12)h=9.5h\n\\]\n\nVolume of the prism:\n\\[\n9.5h\\times 10=608\n\\]\n\n\\[\n95h=608\n\\]\n\n\\[\nh=6.4\n\\]\n\n**Answer:** \\(h=6.4\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q12__p12-12__m03__Congruence-Similarity-and-Geometrical-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Congruence, Similarity & Geometrical Proof. The tag is correct.\n\n**Solution**\n\nEach congruent isosceles triangle has two angles of \\(66^\\circ\\).\n\nSo the angle at the point between the two polygons is\n\\[\n180^\\circ-66^\\circ-66^\\circ=48^\\circ\n\\]\n\nThe two regular polygons have equal interior angles. Around the point:\n\\[\n48^\\circ+I+I=360^\\circ\n\\]\n\n\\[\n2I=312^\\circ\n\\]\n\n\\[\nI=156^\\circ\n\\]\n\nThe exterior angle is\n\\[\n180^\\circ-156^\\circ=24^\\circ\n\\]\n\n\\[\nn=\\frac{360}{24}=15\n\\]\n\n**Answer:** \\(n=15\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q20__p21-21__m04__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe two vases are similar.\n\nTheir heights are in the ratio\n\n\\[\n9:13\n\\]\n\nSo their surface areas are in the ratio\n\n\\[\n9^2:13^2=81:169\n\\]\n\nThe total surface area is \\(1800\\text{ cm}^2\\), so there are\n\n\\[\n81+169=250\n\\]\n\nparts altogether.\n\nSurface area of vase A:\n\n\\[\n1800\\times \\frac{81}{250}=583.2\n\\]\n\n**Answer:** \\(\\boxed{583.2\\text{ cm}^2}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q04__p06-06__m03__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Right-Angled Triangles - Pythagoras & Trigonometry.\n\n**Solution**\n\n\\[\nd^2=8.5^2+5.6^2\n\\]\n\n\\[\nd=\\sqrt{103.61}=10.178\\ldots\n\\]\n\n**Answer:** \\(10.2\\text{ cm}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q26__p26-26__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Vectors.\n\n**Method**\n\n\\[\n\\vec{OA}=3\\mathbf a,\\qquad \\vec{OB}=6\\mathbf b,\\qquad \\vec{AC}=4\\mathbf b\n\\]\n\nSo\n\n\\[\n\\vec{OC}=3\\mathbf a+4\\mathbf b\n\\]\n\nPoint \\(N\\) lies on \\(OC\\), so\n\n\\[\n\\vec{ON}=t(3\\mathbf a+4\\mathbf b)\n\\]\n\nPoint \\(N\\) also lies on \\(AB\\), so\n\n\\[\n\\vec{ON}=3\\mathbf a+s(6\\mathbf b-3\\mathbf a)\n\\]\n\n\\[\n\\vec{ON}=(3-3s)\\mathbf a+6s\\mathbf b\n\\]\n\nEquate coefficients:\n\n\\[\n3t=3-3s\n\\]\n\n\\[\n4t=6s\n\\]\n\nSo\n\n\\[\nt=1-s\n\\]\n\nand\n\n\\[\nt=\\frac32s\n\\]\n\n\\[\n\\frac32s=1-s\n\\]\n\n\\[\n5s=2\n\\]\n\n\\[\ns=\\frac25\n\\]\n\nThen\n\n\\[\nt=\\frac35\n\\]\n\nTherefore\n\n\\[\n\\vec{ON}=\\frac35(3\\mathbf a+4\\mathbf b)\n\\]\n\n\\[\n\\vec{ON}=\\frac95\\mathbf a+\\frac{12}{5}\\mathbf b\n\\]\n\n**Answer:** \\(\\displaystyle \\vec{ON}=\\frac95\\mathbf a+\\frac{12}{5}\\mathbf b\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q02__p04-04__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nUse midpoints \\(10,30,50,70,90\\).\n\n\\[\n10(5)+30(11)+50(8)+70(19)+90(9)\n\\]\n\n\\[\n=50+330+400+1330+810\n=2920\n\\]\n\n**Answer:** \\(\\pounds2920\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q14__p14-14__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nPut the marks in order:\n\n\\[\n5,\\ 7,\\ 11,\\ 12,\\ 13,\\ 14,\\ 15,\\ 16,\\ 17,\\ 18,\\ 18\n\\]\n\n\\[\nQ_1=11,\\qquad Q_3=17\n\\]\n\n\\[\n\\text{IQR}=17-11=6\n\\]\n\n**Answer:** \\(6\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2020_P2HR__Q16__p16-17__m08__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nFor Cody:\n\n\\[\nP(A\\text{ odd})=\\frac{7}{10},\\qquad P(A\\text{ even})=\\frac{3}{10}\n\\]\n\n\\[\nP(B\\text{ odd})=\\frac{7}{12},\\qquad P(B\\text{ even})=\\frac{5}{12}\n\\]\n\nAn odd total comes from odd + even or even + odd:\n\n\\[\n\\frac{7}{10}\\times\\frac{5}{12}+\\frac{3}{10}\\times\\frac{7}{12}\n=\\frac{7}{15}\n\\]\n\nCody takes two even counters with probability\n\n\\[\n\\frac{3}{10}\\times\\frac{5}{12}=\\frac18\n\\]\n\nGiven Cody and Harriet both take two even counters:\n\n\\[\n\\frac18\\times P(H\\text{ even})=\\frac{3}{100}\n\\]\n\n\\[\nP(H\\text{ even})=\\frac{6}{25}\n\\]\n\nSo Harriet's bag must have at least \\(25\\) counters.\n\n**Answers:** \\(\\frac{7}{15}\\), and \\(25\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jan2020_P2HR__Q21__p22-22__m07__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n(a)\n\n\\[\n\\frac{10x^2+23x+12}{4x^2-9}\n=\\frac{(5x+4)(2x+3)}{(2x-3)(2x+3)}\n\\]\n\n\\[\n=\\frac{5x+4}{2x-3}\n\\]\n\n(b)\n\n\\[\n2^{2y}\\times 2^{3y+2}=2^{5y+2}\n\\]\n\nAlso,\n\n\\[\n\\frac{8^{5y}}{4^n}\n=\\frac{(2^3)^{5y}}{(2^2)^n}\n=2^{15y-2n}\n\\]\n\nEquate powers:\n\n\\[\n5y+2=15y-2n\n\\]\n\n\\[\n2n=10y-2\n\\]\n\n\\[\nn=5y-1\n\\]\n\n**Answer:** (a) \\(\\dfrac{5x+4}{2x-3}\\), (b) \\(n=5y-1\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P2HR__Q23__p23-23__m03__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n7-12x-2x^2=-2x^2-12x+7\n\\]\n\n\\[\n=-2(x^2+6x)+7\n\\]\n\n\\[\n=-2\\left((x+3)^2-9\\right)+7\n\\]\n\n\\[\n=-2(x+3)^2+18+7\n\\]\n\n\\[\n=25-2(x+3)^2\n\\]\n\n**Answer:** \\(25-2(x+3)^2\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P2HR__Q25__p25-25__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Right-Angled Triangles to Algebraic Proof.\n\n**Method**\n\nSince \\(N\\) is a multiple of 5, let\n\n\\[\nN=5k\n\\]\n\nwhere \\(k\\) is an integer.\n\nGiven\n\n\\[\nA=N+1,\\qquad B=N-1\n\\]\n\nSo\n\n\\[\nA^2-B^2=(N+1)^2-(N-1)^2\n\\]\n\nExpand:\n\n\\[\n(N+1)^2=N^2+2N+1\n\\]\n\n\\[\n(N-1)^2=N^2-2N+1\n\\]\n\nTherefore\n\n\\[\nA^2-B^2=(N^2+2N+1)-(N^2-2N+1)\n\\]\n\n\\[\n=4N\n\\]\n\nSubstitute \\(N=5k\\):\n\n\\[\n4N=4(5k)=20k\n\\]\n\nSince \\(k\\) is an integer, \\(20k\\) is a multiple of 20.\n\n**Answer:** \\(A^2-B^2\\) is always a multiple of \\(20\\).",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P2HR__Q22__p23-23__m04__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFirst term:\n\n\\[\na=-6\n\\]\n\n\\[\nS_{30}=2865\n\\]\n\nUse\n\n\\[\nS_n=\\frac n2(2a+(n-1)d)\n\\]\n\n\\[\n2865=\\frac{30}{2}(2(-6)+29d)\n\\]\n\n\\[\n2865=15(-12+29d)\n\\]\n\n\\[\n191=-12+29d\n\\]\n\n\\[\n29d=203\n\\]\n\n\\[\nd=7\n\\]\n\nThe 9th term is\n\n\\[\nu_9=a+8d\n\\]\n\n\\[\nu_9=-6+8(7)=50\n\\]\n\n**Answer:** \\(50\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P2HR__Q24__p24-24__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor \\(L_1\\),\n\n\\[\n5x+10y=8\n\\]\n\n\\[\n10y=-5x+8\n\\]\n\n\\[\ny=-\\frac12x+\\frac45\n\\]\n\nSo the gradient of \\(L_1\\) is \\(-\\frac12\\).\n\nSince \\(L_2\\) is perpendicular to \\(L_1\\), the gradient of \\(L_2\\) is \\(2\\).\n\nUsing the point \\((8,6)\\):\n\n\\[\ny-6=2(x-8)\n\\]\n\n\\[\ny=2x-10\n\\]\n\nAt \\(A\\), the line crosses the \\(x\\)-axis, so \\(y=0\\):\n\n\\[\n0=2x-10\n\\]\n\n\\[\nx=5\n\\]\n\nSo \\(A=(5,0)\\).\n\nAt \\(B\\), \\(x=-3\\):\n\n\\[\ny=2(-3)-10=-16\n\\]\n\nSo \\(B=(-3,-16)\\).\n\nTriangle \\(AOB\\) has base \\(OA=5\\) and perpendicular height \\(16\\).\n\n\\[\n\\text{Area}=\\frac12 \\times 5 \\times 16=40\n\\]\n\n**Answer:** \\(40\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P2HR__Q20__p21-21__m04__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe two vases are similar.\n\nTheir heights are in the ratio\n\n\\[\n9:13\n\\]\n\nSo their surface areas are in the ratio\n\n\\[\n9^2:13^2=81:169\n\\]\n\nThe total surface area is \\(1800\\text{ cm}^2\\), so there are\n\n\\[\n81+169=250\n\\]\n\nparts altogether.\n\nSurface area of vase A:\n\n\\[\n1800\\times \\frac{81}{250}=583.2\n\\]\n\n**Answer:** \\(\\boxed{583.2\\text{ cm}^2}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2020_P2HR__Q26__p26-26__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Vectors.\n\n**Method**\n\n\\[\n\\vec{OA}=3\\mathbf a,\\qquad \\vec{OB}=6\\mathbf b,\\qquad \\vec{AC}=4\\mathbf b\n\\]\n\nSo\n\n\\[\n\\vec{OC}=3\\mathbf a+4\\mathbf b\n\\]\n\nPoint \\(N\\) lies on \\(OC\\), so\n\n\\[\n\\vec{ON}=t(3\\mathbf a+4\\mathbf b)\n\\]\n\nPoint \\(N\\) also lies on \\(AB\\), so\n\n\\[\n\\vec{ON}=3\\mathbf a+s(6\\mathbf b-3\\mathbf a)\n\\]\n\n\\[\n\\vec{ON}=(3-3s)\\mathbf a+6s\\mathbf b\n\\]\n\nEquate coefficients:\n\n\\[\n3t=3-3s\n\\]\n\n\\[\n4t=6s\n\\]\n\nSo\n\n\\[\nt=1-s\n\\]\n\nand\n\n\\[\nt=\\frac32s\n\\]\n\n\\[\n\\frac32s=1-s\n\\]\n\n\\[\n5s=2\n\\]\n\n\\[\ns=\\frac25\n\\]\n\nThen\n\n\\[\nt=\\frac35\n\\]\n\nTherefore\n\n\\[\n\\vec{ON}=\\frac35(3\\mathbf a+4\\mathbf b)\n\\]\n\n\\[\n\\vec{ON}=\\frac95\\mathbf a+\\frac{12}{5}\\mathbf b\n\\]\n\n**Answer:** \\(\\displaystyle \\vec{ON}=\\frac95\\mathbf a+\\frac{12}{5}\\mathbf b\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

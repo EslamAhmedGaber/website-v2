@@ -1,0 +1,203 @@
+{
+  "paperSlug": "Jun2024_P2HR",
+  "solutions": {
+    "all::Jun2024_P2HR__Q04__p06-06__m05__Set-Notation-and-Venn-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Set notation and Venn diagrams. The tag is correct.\n\n**Method**\n\n\\[\n\\mathcal{E}=\\{1,2,3,4,5,6,7,8,9,10\\}\n\\]\n\n\\[\nA=\\{1,2,3,6\\}\n\\]\n\n\\[\nB=\\{2,3,5,7\\}\n\\]\n\nSo\n\n\\[\nA\\cup B=\\{1,2,3,5,6,7\\}\n\\]\n\nand\n\n\\[\nA'=\\{4,5,7,8,9,10\\}\n\\]\n\nHarpreet is not correct because \\(2\\) and \\(3\\) are in both \\(A\\) and \\(B\\).\n\n\\[\nA\\cap B=\\{2,3\\}\n\\]\n\nFor \\(C\\), it has \\(4\\) members, \\(n(A\\cap C)=2\\), \\(n(B\\cap C)=2\\), and no member is in both of those overlaps. So choose the two elements of \\(A\\) only and the two elements of \\(B\\) only:\n\n\\[\nC=\\{1,5,6,7\\}\n\\]\n\n**Answer:** (a)(i) \\(\\{1,2,3,5,6,7\\}\\), (a)(ii) \\(\\{4,5,7,8,9,10\\}\\), (b) Harpreet is incorrect, (c) \\(C=\\{1,5,6,7\\}\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q01__p03-03__m03__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\n1400=14\\times 100\n\\]\n\n\\[\n1400=(2\\times 7)(2^2\\times 5^2)\n\\]\n\n\\[\n1400=2^3\\times 5^2\\times 7\n\\]\n\n**Answer:** \\(\\displaystyle 2^3\\times 5^2\\times 7\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q09__p10-10__m04__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n6.04\\times 10^5=604000\n\\]\n\n\\[\n0.00007=7\\times 10^{-5}\n\\]\n\nFor part (c), first simplify the denominator:\n\n\\[\n4\\times 10^5-2\\times 10^4=400000-20000=380000\n\\]\n\n\\[\n380000=3.8\\times 10^5\n\\]\n\nThen\n\n\\[\n\\frac{7.6\\times 10^{10}}{3.8\\times 10^5}\n=2\\times 10^5\n\\]\n\n**Answer:** (a) \\(604000\\), (b) \\(7\\times 10^{-5}\\), (c) \\(2\\times 10^5\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q08__p09-09__m03__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nA reduction of \\(17\\%\\) means the sale price is \\(83\\%\\) of the normal price.\n\n\\[\n0.83\\times \\text{normal price}=6225\n\\]\n\n\\[\n\\text{normal price}=\\frac{6225}{0.83}=7500\n\\]\n\n**Answer:** \\(7500\\) rupees",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q19__p21-21__m03__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\nDistance is found using\n\n\\[\n\\text{distance}=\\text{speed}\\times \\text{time}\n\\]\n\nFor the upper bound,\n\n\\[\n\\text{speed}<19.5,\\quad \\text{time}<1.55\n\\]\n\n\\[\n\\text{distance}_{\\text{upper}}=19.5\\times 1.55=30.225\n\\]\n\nCorrect to 3 significant figures,\n\n\\[\n30.225\\approx 30.2\n\\]\n\n**Answer:** \\(30.2\\) km",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q07__p09-09__m02__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic Roots and Indices. The tag is correct.\n\n**Method**\n\n\\[\n\\frac{3^{-2}\\times 3^5}{3^{10}}=3^n\n\\]\n\nUse index laws:\n\n\\[\n\\frac{3^{-2+5}}{3^{10}}=3^{3-10}=3^{-7}\n\\]\n\nSo\n\n\\[\nn=-7\n\\]\n\n**Answer:** \\(n=-7\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q26__p30-30__m04__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Sine/Cosine Rule to Algebraic Fractions.\n\n**Method**\n\n\\[\n4-\\left[(3x-5)\\div\\frac{3x^2+x-10}{4x-1}\\right]\n\\]\n\nFactor the quadratic:\n\n\\[\n3x^2+x-10=(3x-5)(x+2)\n\\]\n\nSo the expression inside the square brackets is\n\n\\[\n(3x-5)\\div\\frac{(3x-5)(x+2)}{4x-1}\n\\]\n\nDividing by a fraction means multiplying by its reciprocal:\n\n\\[\n(3x-5)\\times \\frac{4x-1}{(3x-5)(x+2)}\n\\]\n\nCancel \\(3x-5\\):\n\n\\[\n\\frac{4x-1}{x+2}\n\\]\n\nTherefore the full expression is\n\n\\[\n4-\\frac{4x-1}{x+2}\n\\]\n\nUse the common denominator \\(x+2\\):\n\n\\[\n\\frac{4(x+2)-(4x-1)}{x+2}\n\\]\n\n\\[\n=\\frac{4x+8-4x+1}{x+2}\n\\]\n\n\\[\n=\\frac9{x+2}\n\\]\n\n**Answer:** \\(\\displaystyle \\boxed{\\frac9{x+2}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q18__p20-20__m02__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\nLet\n\\[\nx=0.\\dot3\\dot0\\dot6\n\\]\n\nThen\n\\[\n1000x=306.\\dot3\\dot0\\dot6\n\\]\n\nSubtract:\n\\[\n1000x-x=306\n\\]\n\n\\[\n999x=306\n\\]\n\n\\[\nx=\\frac{306}{999}=\\frac{34}{111}\n\\]\n\n**Answer:** \\(0.\\dot3\\dot0\\dot6=\\dfrac{34}{111}\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q06__p08-08__m08__Solving-Linear-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to solving linear equations. The original tag was factorising, but the equation is the largest single part.\n\n**Solution**\n\n(a)\n\\[\n\\frac{2f}{3}=4f-17\n\\]\n\n\\[\n2f=12f-51\n\\]\n\n\\[\n10f=51\n\\]\n\n\\[\nf=\\frac{51}{10}\n\\]\n\n(b) \\((e+12)^0=1\\).\n\n(c)\n\\[\n\\frac{12a^4h^6}{4ah^2}=3a^3h^4\n\\]\n\n(d)\n\\[\n20x^5y+12x^3y^4=4x^3y(5x^2+3y^3)\n\\]\n\n**Answer:** \\(f=\\frac{51}{10}\\), \\(1\\), \\(3a^3h^4\\), \\(4x^3y(5x^2+3y^3)\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q20__p22-22__m04__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Solving Quadratic Equations to Solving Inequalities.\n\n**Method**\n\n\\[\n6x^2-7x-20>0\n\\]\n\nFactorise:\n\n\\[\n6x^2-7x-20=(3x+4)(2x-5)\n\\]\n\nThe critical values are\n\n\\[\nx=-\\frac43 \\quad \\text{and} \\quad x=\\frac52\n\\]\n\nSince the coefficient of \\(x^2\\) is positive, the quadratic is greater than 0 outside the roots.\n\n**Answer:** \\(x<-\\dfrac43\\) or \\(x>\\dfrac52\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q22__p24-24__m05__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nx^2+y^2=y+11\n\\]\n\n\\[\ny=3x-1\n\\]\n\nSubstitute:\n\n\\[\nx^2+(3x-1)^2=3x-1+11\n\\]\n\n\\[\nx^2+9x^2-6x+1=3x+10\n\\]\n\n\\[\n10x^2-9x-9=0\n\\]\n\n\\[\n(5x+3)(2x-3)=0\n\\]\n\nSo\n\n\\[\nx=-\\frac35 \\quad \\text{or} \\quad x=\\frac32\n\\]\n\nFind \\(y\\):\n\n\\[\nx=-\\frac35 \\Rightarrow y=-\\frac{14}{5}\n\\]\n\n\\[\nx=\\frac32 \\Rightarrow y=\\frac72\n\\]\n\n**Answer:** \\((x,y)=\\left(-\\dfrac35,-\\dfrac{14}{5}\\right)\\) or \\(\\left(\\dfrac32,\\dfrac72\\right)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q17__p19-19__m03__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Functions. The tag is correct.\n\n**Solution**\n\n\\[\nf(x)=\\frac{k}{2x-4},\\qquad g(x)=3x+1\n\\]\n\nGiven\n\\[\nfg(k)=2\n\\]\n\nThis means\n\\[\nf(g(k))=2\n\\]\n\nNow\n\\[\ng(k)=3k+1\n\\]\n\nSo\n\\[\nf(g(k))=\\frac{k}{2(3k+1)-4}=\\frac{k}{6k-2}\n\\]\n\n\\[\n\\frac{k}{6k-2}=2\n\\]\n\n\\[\nk=12k-4\n\\]\n\n\\[\n11k=4\n\\]\n\n\\[\nk=\\frac{4}{11}\n\\]\n\n**Answer:** \\(k=\\frac{4}{11}\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q21__p23-23__m04__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nA=(-5,2),\\qquad B=(3,5)\n\\]\n\nThe gradient of \\(AB\\) is\n\n\\[\n\\frac{5-2}{3-(-5)}=\\frac38\n\\]\n\nSince \\(ABCD\\) is a square, \\(BC\\) is perpendicular to \\(AB\\).\n\nSo the gradient of \\(BC\\) is\n\n\\[\n-\\frac83\n\\]\n\nThe line through \\(B=(3,5)\\) is\n\n\\[\ny-5=-\\frac83(x-3)\n\\]\n\nMultiply by 3:\n\n\\[\n3y-15=-8x+24\n\\]\n\n\\[\n8x+3y-39=0\n\\]\n\n**Answer:** \\(8x+3y-39=0\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q16__p18-18__m02__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Graphs of Functions.\n\n**Solution**\n\n(i)\n\\[\ny=-\\frac1x\n\\]\nhas branches in quadrants II and IV, so it is **Graph E**.\n\n(ii)\n\\[\ny=\\sin x^\\circ\n\\]\nis the sine-shaped graph through the origin, so it is **Graph A**.\n\n**Answer:** (i) \\(E\\), (ii) \\(A\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q23__p25-25__m02__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe minimum point of \\(y=f(x)\\) is \\((6,-3)\\).\n\nFor\n\n\\[\ny=f(x)+10\n\\]\n\nthe graph moves 10 units up:\n\n\\[\n(6,-3)\\to(6,7)\n\\]\n\nFor\n\n\\[\ny=f(3x)\n\\]\n\nthe \\(x\\)-coordinate is divided by 3:\n\n\\[\n(6,-3)\\to(2,-3)\n\\]\n\n**Answer:** \\((6,7)\\) and \\((2,-3)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q10__p11-11__m05__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Perimeter. The tag is correct.\n\n**Solution**\n\nThe rectangle \\(EDCF\\) has area\n\\[\n23\\times 4.7=108.1\n\\]\n\nThe height of the top trapezium is\n\\[\n5\\sin 30^\\circ=2.5\n\\]\n\nArea of the top trapezium:\n\\[\n\\frac12(11+23)\\times 2.5=42.5\n\\]\n\nTotal area:\n\\[\n108.1+42.5=150.6\n\\]\n\n**Answer:** \\(150.6\\text{ cm}^2\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q05__p07-07__m04__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Circles, Arcs & Sectors.\n\n**Solution**\n\nThe square has area \\(81\\text{ cm}^2\\), so its side length is\n\n\\[\n\\sqrt{81}=9\\text{ cm}\n\\]\n\nPerimeter of the square:\n\n\\[\n4\\times 9=36\n\\]\n\nThe circle has diameter \\(9\\text{ cm}\\), so its circumference is\n\n\\[\n\\pi d=9\\pi\n\\]\n\nTotal wire length:\n\n\\[\n36+9\\pi=64.274\\ldots\n\\]\n\n**Answer:** \\(64.3\\text{ cm}\\) to 3 significant figures.",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q13__p15-15__m03__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Circles, Arcs & Sectors. The tag is correct.\n\n**Solution**\n\nThe arc length is\n\\[\n\\frac{60}{360}\\times 2\\pi r=\\frac{\\pi r}{3}\n\\]\n\nThe perimeter is two radii plus the arc:\n\\[\nP=2r+\\frac{\\pi r}{3}\n\\]\n\n\\[\nP=r\\left(\\frac{\\pi}{3}+2\\right)\n\\]\n\n**Answer:** \\(P=r\\left(\\frac13\\pi+2\\right)\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q12__p14-14__m04__Congruence-Similarity-and-Geometrical-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to congruence/similarity. The parallel line gives similar triangles.\n\n**Solution**\n\nSince \\(BE\\parallel CD\\), triangles \\(ABE\\) and \\(ACD\\) are similar.\n\nAlso\n\\[\nCD=1.5BE\n\\]\nso\n\\[\n\\frac{BE}{CD}=\\frac{1}{1.5}=\\frac23\n\\]\n\nTherefore\n\\[\n\\frac{AE}{AD}=\\frac23\n\\]\n\nGiven \\(AE=10\\),\n\\[\n\\frac{10}{AD}=\\frac23\n\\]\n\n\\[\nAD=15\n\\]\n\nSo\n\\[\nED=AD-AE=15-10=5\n\\]\n\nFor part (b),\n\\[\nAB=2x+5,\n\\qquad\nBC=3x-5\n\\]\n\n\\[\nAC=AB+BC=5x\n\\]\n\nUsing similarity,\n\\[\n\\frac{AB}{AC}=\\frac23\n\\]\n\n\\[\n\\frac{2x+5}{5x}=\\frac23\n\\]\n\n\\[\n3(2x+5)=10x\n\\]\n\n\\[\n6x+15=10x\n\\]\n\n\\[\nx=3.75\n\\]\n\n**Answer:** (a) \\(ED=5\\text{ cm}\\), (b) \\(x=3.75\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q24__p26-27__m05__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe hemisphere has radius \\(x\\), so its height is \\(x\\).\n\nThe total height of solid S is \\(4x\\), so the cone height is\n\n\\[\n4x-x=3x\n\\]\n\nVolume of the cone:\n\n\\[\n\\frac13\\pi x^2(3x)=\\pi x^3\n\\]\n\nVolume of the hemisphere:\n\n\\[\n\\frac23\\pi x^3\n\\]\n\nSo the volume of solid S is\n\n\\[\n\\pi x^3+\\frac23\\pi x^3=\\frac53\\pi x^3\n\\]\n\nThe sphere has radius \\(kx\\), so its volume is\n\n\\[\n\\frac43\\pi(kx)^3=\\frac43\\pi k^3x^3\n\\]\n\nThis is \\(12.5\\) times the volume of S:\n\n\\[\n\\frac43\\pi k^3x^3=12.5\\left(\\frac53\\pi x^3\\right)\n\\]\n\nCancel \\(\\frac13\\pi x^3\\):\n\n\\[\n4k^3=62.5\n\\]\n\n\\[\nk^3=15.625=\\frac{125}{8}\n\\]\n\n\\[\nk=2.5\n\\]\n\nFor solid T, the volume scale factor is \\(512\\).\n\n\\[\n512=8^3\n\\]\n\nSo the linear scale factor is \\(8\\), and the surface area scale factor is\n\n\\[\n8^2=64\n\\]\n\n**Answer:** \\(\\boxed{k=2.5,\\ d=64}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q15__p17-17__m03__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to sine/cosine rule and area of triangles. The key step is the included angle in triangle \\(CDE\\).\n\n**Solution**\n\nA regular pentagon has interior angle\n\\[\n\\frac{(5-2)\\times180}{5}=108^\\circ\n\\]\n\nSince \\(BCE\\) is a straight line,\n\\[\n\\angle DCE=180^\\circ-108^\\circ=72^\\circ\n\\]\n\nArea of triangle \\(CDE\\) is\n\\[\n\\frac12ab\\sin C\n\\]\n\n\\[\n\\text{Area}=\\frac12(6.5)(3)\\sin72^\\circ\n\\]\n\n\\[\n\\text{Area}=9.27\\ldots\n\\]\n\n**Answer:** \\(9.27\\text{ cm}^2\\) to 3 significant figures.",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q25__p28-29__m06__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n\\overrightarrow{OP}=2a,\\qquad \\overrightarrow{OR}=3b\n\\]\n\nSo\n\n\\[\n\\overrightarrow{OQ}=2a+3b\n\\]\n\nSince \\(PM:PQ=1:4\\),\n\n\\[\n\\overrightarrow{PM}=\\frac14\\overrightarrow{PQ}\n\\]\n\n\\[\n\\overrightarrow{PM}=\\frac14(3b)=\\frac34b\n\\]\n\n\\[\n\\overrightarrow{OM}=2a+\\frac34b\n\\]\n\nSince \\(RN:RQ=4:5\\),\n\n\\[\n\\overrightarrow{RN}=\\frac45\\overrightarrow{RQ}\n\\]\n\n\\[\n\\overrightarrow{RN}=\\frac45(2a)=\\frac85a\n\\]\n\n\\[\n\\overrightarrow{ON}=3b+\\frac85a\n\\]\n\nSo\n\n\\[\n\\overrightarrow{MR}=\\overrightarrow{OR}-\\overrightarrow{OM}\n\\]\n\n\\[\n\\overrightarrow{MR}=3b-\\left(2a+\\frac34b\\right)\n\\]\n\n\\[\n\\overrightarrow{MR}=-2a+\\frac94b\n\\]\n\nLet \\(Y\\) be on \\(ON\\), so\n\n\\[\n\\overrightarrow{OY}=k\\overrightarrow{ON}\n=k\\left(\\frac85a+3b\\right)\n\\]\n\nAlso \\(Y\\) is on \\(MR\\), so\n\n\\[\n\\overrightarrow{OY}=\\overrightarrow{OM}+t\\overrightarrow{MR}\n\\]\n\n\\[\n\\overrightarrow{OY}=2a+\\frac34b+t\\left(-2a+\\frac94b\\right)\n\\]\n\nCompare coefficients of \\(a\\) and \\(b\\):\n\n\\[\n\\frac85k=2-2t\n\\]\n\n\\[\n3k=\\frac34+\\frac94t\n\\]\n\nFrom the first equation,\n\n\\[\nt=1-\\frac45k\n\\]\n\nSubstitute into the second equation:\n\n\\[\n3k=\\frac34+\\frac94\\left(1-\\frac45k\\right)\n\\]\n\n\\[\n3k=3-\\frac95k\n\\]\n\n\\[\n\\frac{24}{5}k=3\n\\]\n\n\\[\nk=\\frac58\n\\]\n\n**Answer:** \\(\\overrightarrow{ON}=\\frac85a+3b\\), \\(\\overrightarrow{MR}=-2a+\\frac94b\\), and \\(k=\\frac58\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q02__p04-04__m04__Transformations": {
+      "status": "checked",
+      "source": "**Topic check:** Transformations. The tag is correct.\n\n**Solution**\n\n(a) Shape \\(A\\) moves to shape \\(B\\) by the vector\n\n\\[\n\\begin{pmatrix}3\\\\-5\\end{pmatrix}\n\\]\n\nSo the transformation is a translation by \\(\\begin{pmatrix}3\\\\-5\\end{pmatrix}\\).\n\n(b) For a \\(180^\\circ\\) rotation about \\((-1,0)\\),\n\n\\[\n(x,y)\\mapsto(-2-x,\\ -y)\n\\]\n\nThe image has vertices\n\n\\[\n(-4,-1),\\ (-6,-1),\\ (-5,-2),\\ (-4,-2)\n\\]\n\n**Answer:** (a) translation by \\(\\begin{pmatrix}3\\\\-5\\end{pmatrix}\\); (b) vertices \\((-4,-1),(-6,-1),(-5,-2),(-4,-2)\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q03__p05-05__m02__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe range is \\(4\\):\n\n\\[\n15-x=4\n\\]\n\n\\[\nx=11\n\\]\n\nThe median is \\(12.5\\):\n\n\\[\n\\frac{x+y}{2}=12.5\n\\]\n\n\\[\nx+y=25\n\\]\n\n\\[\ny=25-11=14\n\\]\n\n**Answers:** \\(x=11,\\ y=14\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2024_P2HR__Q11__p12-13__m07__Cumulative-Frequency-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nThe cumulative frequencies are\n\n\\[\n6,\\ 17,\\ 27,\\ 42,\\ 53,\\ 60\n\\]\n\nPlot\n\n\\[\n(0,0),(5,6),(10,17),(15,27),(20,42),(25,53),(30,60)\n\\]\n\nFor \\(60\\) workers,\n\n\\[\nQ_1=15,\\qquad Q_3=45\n\\]\n\nFrom the graph,\n\n\\[\nQ_1\\approx 9.1,\\qquad Q_3\\approx 21.4\n\\]\n\n\\[\n\\text{IQR}\\approx 21.4-9.1=12.3\n\\]\n\nIf \\(25\\) workers did more than \\(W\\) hours, then \\(35\\) workers did \\(W\\) hours or less.\nFrom the graph, \\(W\\approx 17.7\\).\n\n\\[\nP(5<H\\leq 10)=\\frac{17-6}{60}=\\frac{11}{60}\n\\]\n\n**Answers:** IQR about \\(12.3\\), \\(W\\approx 17.7\\), and \\(\\frac{11}{60}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Jun2024_P2HR__Q14__p16-16__m03__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\n\\[\nP(H)=0.8\n\\]\n\nGiven\n\n\\[\nP(\\text{6 and H})=0.24\n\\]\n\n\\[\nP(6)=0.24\\div 0.8=0.3\n\\]\n\nAlso\n\n\\[\nP(T)=1-0.8=0.2\n\\]\n\n\\[\nP(\\text{6 and T})=0.3\\times 0.2=0.06\n\\]\n\n**Answer:** \\(0.06\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jun2024_P2HR__Q26__p30-30__m04__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Sine/Cosine Rule to Algebraic Fractions.\n\n**Method**\n\n\\[\n4-\\left[(3x-5)\\div\\frac{3x^2+x-10}{4x-1}\\right]\n\\]\n\nFactor the quadratic:\n\n\\[\n3x^2+x-10=(3x-5)(x+2)\n\\]\n\nSo the expression inside the square brackets is\n\n\\[\n(3x-5)\\div\\frac{(3x-5)(x+2)}{4x-1}\n\\]\n\nDividing by a fraction means multiplying by its reciprocal:\n\n\\[\n(3x-5)\\times \\frac{4x-1}{(3x-5)(x+2)}\n\\]\n\nCancel \\(3x-5\\):\n\n\\[\n\\frac{4x-1}{x+2}\n\\]\n\nTherefore the full expression is\n\n\\[\n4-\\frac{4x-1}{x+2}\n\\]\n\nUse the common denominator \\(x+2\\):\n\n\\[\n\\frac{4(x+2)-(4x-1)}{x+2}\n\\]\n\n\\[\n=\\frac{4x+8-4x+1}{x+2}\n\\]\n\n\\[\n=\\frac9{x+2}\n\\]\n\n**Answer:** \\(\\displaystyle \\boxed{\\frac9{x+2}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2024_P2HR__Q20__p22-22__m04__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Solving Quadratic Equations to Solving Inequalities.\n\n**Method**\n\n\\[\n6x^2-7x-20>0\n\\]\n\nFactorise:\n\n\\[\n6x^2-7x-20=(3x+4)(2x-5)\n\\]\n\nThe critical values are\n\n\\[\nx=-\\frac43 \\quad \\text{and} \\quad x=\\frac52\n\\]\n\nSince the coefficient of \\(x^2\\) is positive, the quadratic is greater than 0 outside the roots.\n\n**Answer:** \\(x<-\\dfrac43\\) or \\(x>\\dfrac52\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2024_P2HR__Q22__p24-24__m05__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nx^2+y^2=y+11\n\\]\n\n\\[\ny=3x-1\n\\]\n\nSubstitute:\n\n\\[\nx^2+(3x-1)^2=3x-1+11\n\\]\n\n\\[\nx^2+9x^2-6x+1=3x+10\n\\]\n\n\\[\n10x^2-9x-9=0\n\\]\n\n\\[\n(5x+3)(2x-3)=0\n\\]\n\nSo\n\n\\[\nx=-\\frac35 \\quad \\text{or} \\quad x=\\frac32\n\\]\n\nFind \\(y\\):\n\n\\[\nx=-\\frac35 \\Rightarrow y=-\\frac{14}{5}\n\\]\n\n\\[\nx=\\frac32 \\Rightarrow y=\\frac72\n\\]\n\n**Answer:** \\((x,y)=\\left(-\\dfrac35,-\\dfrac{14}{5}\\right)\\) or \\(\\left(\\dfrac32,\\dfrac72\\right)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2024_P2HR__Q21__p23-23__m04__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nA=(-5,2),\\qquad B=(3,5)\n\\]\n\nThe gradient of \\(AB\\) is\n\n\\[\n\\frac{5-2}{3-(-5)}=\\frac38\n\\]\n\nSince \\(ABCD\\) is a square, \\(BC\\) is perpendicular to \\(AB\\).\n\nSo the gradient of \\(BC\\) is\n\n\\[\n-\\frac83\n\\]\n\nThe line through \\(B=(3,5)\\) is\n\n\\[\ny-5=-\\frac83(x-3)\n\\]\n\nMultiply by 3:\n\n\\[\n3y-15=-8x+24\n\\]\n\n\\[\n8x+3y-39=0\n\\]\n\n**Answer:** \\(8x+3y-39=0\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2024_P2HR__Q23__p25-25__m02__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe minimum point of \\(y=f(x)\\) is \\((6,-3)\\).\n\nFor\n\n\\[\ny=f(x)+10\n\\]\n\nthe graph moves 10 units up:\n\n\\[\n(6,-3)\\to(6,7)\n\\]\n\nFor\n\n\\[\ny=f(3x)\n\\]\n\nthe \\(x\\)-coordinate is divided by 3:\n\n\\[\n(6,-3)\\to(2,-3)\n\\]\n\n**Answer:** \\((6,7)\\) and \\((2,-3)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2024_P2HR__Q24__p26-27__m05__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe hemisphere has radius \\(x\\), so its height is \\(x\\).\n\nThe total height of solid S is \\(4x\\), so the cone height is\n\n\\[\n4x-x=3x\n\\]\n\nVolume of the cone:\n\n\\[\n\\frac13\\pi x^2(3x)=\\pi x^3\n\\]\n\nVolume of the hemisphere:\n\n\\[\n\\frac23\\pi x^3\n\\]\n\nSo the volume of solid S is\n\n\\[\n\\pi x^3+\\frac23\\pi x^3=\\frac53\\pi x^3\n\\]\n\nThe sphere has radius \\(kx\\), so its volume is\n\n\\[\n\\frac43\\pi(kx)^3=\\frac43\\pi k^3x^3\n\\]\n\nThis is \\(12.5\\) times the volume of S:\n\n\\[\n\\frac43\\pi k^3x^3=12.5\\left(\\frac53\\pi x^3\\right)\n\\]\n\nCancel \\(\\frac13\\pi x^3\\):\n\n\\[\n4k^3=62.5\n\\]\n\n\\[\nk^3=15.625=\\frac{125}{8}\n\\]\n\n\\[\nk=2.5\n\\]\n\nFor solid T, the volume scale factor is \\(512\\).\n\n\\[\n512=8^3\n\\]\n\nSo the linear scale factor is \\(8\\), and the surface area scale factor is\n\n\\[\n8^2=64\n\\]\n\n**Answer:** \\(\\boxed{k=2.5,\\ d=64}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2024_P2HR__Q25__p28-29__m06__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\n\\overrightarrow{OP}=2a,\\qquad \\overrightarrow{OR}=3b\n\\]\n\nSo\n\n\\[\n\\overrightarrow{OQ}=2a+3b\n\\]\n\nSince \\(PM:PQ=1:4\\),\n\n\\[\n\\overrightarrow{PM}=\\frac14\\overrightarrow{PQ}\n\\]\n\n\\[\n\\overrightarrow{PM}=\\frac14(3b)=\\frac34b\n\\]\n\n\\[\n\\overrightarrow{OM}=2a+\\frac34b\n\\]\n\nSince \\(RN:RQ=4:5\\),\n\n\\[\n\\overrightarrow{RN}=\\frac45\\overrightarrow{RQ}\n\\]\n\n\\[\n\\overrightarrow{RN}=\\frac45(2a)=\\frac85a\n\\]\n\n\\[\n\\overrightarrow{ON}=3b+\\frac85a\n\\]\n\nSo\n\n\\[\n\\overrightarrow{MR}=\\overrightarrow{OR}-\\overrightarrow{OM}\n\\]\n\n\\[\n\\overrightarrow{MR}=3b-\\left(2a+\\frac34b\\right)\n\\]\n\n\\[\n\\overrightarrow{MR}=-2a+\\frac94b\n\\]\n\nLet \\(Y\\) be on \\(ON\\), so\n\n\\[\n\\overrightarrow{OY}=k\\overrightarrow{ON}\n=k\\left(\\frac85a+3b\\right)\n\\]\n\nAlso \\(Y\\) is on \\(MR\\), so\n\n\\[\n\\overrightarrow{OY}=\\overrightarrow{OM}+t\\overrightarrow{MR}\n\\]\n\n\\[\n\\overrightarrow{OY}=2a+\\frac34b+t\\left(-2a+\\frac94b\\right)\n\\]\n\nCompare coefficients of \\(a\\) and \\(b\\):\n\n\\[\n\\frac85k=2-2t\n\\]\n\n\\[\n3k=\\frac34+\\frac94t\n\\]\n\nFrom the first equation,\n\n\\[\nt=1-\\frac45k\n\\]\n\nSubstitute into the second equation:\n\n\\[\n3k=\\frac34+\\frac94\\left(1-\\frac45k\\right)\n\\]\n\n\\[\n3k=3-\\frac95k\n\\]\n\n\\[\n\\frac{24}{5}k=3\n\\]\n\n\\[\nk=\\frac58\n\\]\n\n**Answer:** \\(\\overrightarrow{ON}=\\frac85a+3b\\), \\(\\overrightarrow{MR}=-2a+\\frac94b\\), and \\(k=\\frac58\\)",
+      "updated": "2026-05-05T16:25:30",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

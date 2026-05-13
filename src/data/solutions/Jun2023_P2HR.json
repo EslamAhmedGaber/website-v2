@@ -1,0 +1,203 @@
+{
+  "paperSlug": "Jun2023_P2HR",
+  "solutions": {
+    "all::Jun2023_P2HR__Q02__p04-04__m04__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Prime Factors, HCF & LCM.\n\n**Solution**\n\nPens come in packs of 9 and pencils come in boxes of 12.\n\nThe smallest equal number of pens and pencils is\n\n\\[\n\\operatorname{LCM}(9,12)=36\n\\]\n\nSo Sandeep buys\n\n\\[\n4\\text{ packs of pens}\n\\]\n\nand\n\n\\[\n3\\text{ boxes of pencils}\n\\]\n\nCost:\n\n\\[\n4(7.60)+3(4.80)=30.40+14.40=44.80\n\\]\n\n**Answer:** \\(\\pounds44.80\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q06__p07-07__m07__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Percentages. The question is about percentage increase and reverse percentage decrease.\n\n**Method**\n\nPierre's old weekly pay is \\(400\\) euros.\n\nHis new weekly pay is\n\n\\[\n14\\times 7\\times 5=490\n\\]\n\nThe increase is\n\n\\[\n490-400=90\n\\]\n\nPercentage increase:\n\n\\[\n\\frac{90}{400}\\times 100=22.5\\%\n\\]\n\nMarie's new salary is after a \\(6\\%\\) decrease, so it is \\(94\\%\\) of her old salary.\n\n\\[\n0.94\\times \\text{old salary}=23030\n\\]\n\n\\[\n\\text{old salary}=23030\\div 0.94=24500\n\\]\n\n**Answer:** Pierre's pay increased by \\(22.5\\%\\). Marie's old salary was \\(24500\\) euros.",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q13__p14-14__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nThe final value is\n\n\\[\n80000+6151.25=86151.25\n\\]\n\nLet the annual compound interest rate be \\(x\\%\\).\n\n\\[\n80000\\left(1+\\frac{x}{100}\\right)^3=86151.25\n\\]\n\n\\[\n1+\\frac{x}{100}=\\sqrt[3]{\\frac{86151.25}{80000}}=1.025\n\\]\n\n\\[\nx=2.5\n\\]\n\n**Answer:** \\(x=2.5\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q07__p08-08__m02__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic Roots and Indices. The tag is correct.\n\n**Method**\n\nAny non-zero expression to the power 0 is 1:\n\n\\[\n(4^{-2})^0=1\n\\]\n\nFor part (b),\n\n\\[\n3^{-14}\\times 3^8=3^{-14+8}=3^{-6}\n\\]\n\nSo\n\n\\[\nm=-6\n\\]\n\n**Answer:** (a) \\(1\\), (b) \\(m=-6\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q11__p12-12__m02__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Algebraic Roots & Indices. This is an algebraic fractional-index question, not a standard form question.\n\n**Method**\n\n\\[\n\\left(\\frac{m^6k^{10}}{25}\\right)^{\\frac32}\n=\\frac{(m^6)^{\\frac32}(k^{10})^{\\frac32}}{25^{\\frac32}}\n\\]\n\n\\[\n(m^6)^{\\frac32}=m^9\n\\]\n\n\\[\n(k^{10})^{\\frac32}=k^{15}\n\\]\n\nAlso,\n\n\\[\n25^{\\frac32}=(\\sqrt{25})^3=5^3=125\n\\]\n\nSo\n\n\\[\n\\left(\\frac{m^6k^{10}}{25}\\right)^{\\frac32}\n=\\frac{m^9k^{15}}{125}\n\\]\n\n**Answer:** \\(\\displaystyle \\frac{m^9k^{15}}{125}\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q01__p03-03__m04__Expanding-Brackets": {
+      "status": "checked",
+      "source": "**Topic check:** Expanding brackets. The tag is correct.\n\n**Solution**\n\n\\[\nP=m^2-4c=(-5)^2-4(3)=25-12=13\n\\]\n\n\\[\n(x+5)(x-7)=x^2-7x+5x-35=x^2-2x-35\n\\]\n\n**Answer:** \\(P=13\\), and \\(x^2-2x-35\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q17__p17-17__m04__Rearranging-Formulas": {
+      "status": "checked",
+      "source": "**Topic check:** Rearranging formulas. The tag is correct.\n\n**Solution**\n\n\\[\ny=\\sqrt[3]{\\frac{6+5x}{x+4}}\n\\]\n\n\\[\ny^3=\\frac{6+5x}{x+4}\n\\]\n\n\\[\ny^3(x+4)=6+5x\n\\]\n\n\\[\nx(y^3-5)=6-4y^3\n\\]\n\n**Answer:** \\(x=\\frac{6-4y^3}{y^3-5}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q16__p17-17__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks for exact-form proof.\n\n**Solution**\n\n\\[\n\\frac{2\\sqrt3}{\\sqrt3-1}\\times\\frac{\\sqrt3+1}{\\sqrt3+1}\n=\\frac{2\\sqrt3(\\sqrt3+1)}{3-1}\n\\]\n\n\\[\n=\\frac{6+2\\sqrt3}{2}=3+\\sqrt3\n\\]\n\nThis is in the form \\(a+\\sqrt a\\), where \\(a=3\\).\n\n**Answer:** \\(3+\\sqrt3\\), so \\(a=3\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q04__p05-05__m02__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Sequences. The tag is correct.\n\n**Solution**\n\nThe sequence is\n\\[\n38,\\ 31,\\ 24,\\ 17\n\\]\n\nThe common difference is \\(-7\\).\n\n\\[\n\\text{nth term}=38+(n-1)(-7)\n\\]\n\n\\[\n=38-7n+7=45-7n\n\\]\n\n**Answer:** \\(45-7n\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q23__p24-24__m05__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe first three terms are\n\n\\[\n8p,\\quad 7p-3,\\quad 4p+2\n\\]\n\nFor an arithmetic sequence, consecutive differences are equal:\n\n\\[\n(7p-3)-8p=(4p+2)-(7p-3)\n\\]\n\n\\[\n-p-3=-3p+5\n\\]\n\n\\[\n2p=8\n\\]\n\n\\[\np=4\n\\]\n\nSo the first term is\n\n\\[\n8p=32\n\\]\n\nand the common difference is\n\n\\[\n(7p-3)-8p=25-32=-7\n\\]\n\nThe sum of the first \\(n\\) terms is\n\n\\[\nS_n=\\frac n2(2a+(n-1)d)\n\\]\n\n\\[\n-1914=\\frac n2(64-7(n-1))\n\\]\n\n\\[\n-1914=\\frac n2(71-7n)\n\\]\n\n\\[\n-3828=n(71-7n)\n\\]\n\n\\[\n7n^2-71n-3828=0\n\\]\n\n\\[\nn=\\frac{71\\pm 335}{14}\n\\]\n\nOnly the positive value is possible:\n\n\\[\nn=29\n\\]\n\n**Answer:** \\(n=29\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q21__p21-21__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe line is\n\n\\[\ny-2x=1\n\\]\n\nSo\n\n\\[\ny=2x+1\n\\]\n\nSubstitute into\n\n\\[\ny^2+xy=7\n\\]\n\n\\[\n(2x+1)^2+x(2x+1)=7\n\\]\n\n\\[\n4x^2+4x+1+2x^2+x=7\n\\]\n\n\\[\n6x^2+5x-6=0\n\\]\n\nFactorise:\n\n\\[\n(3x-2)(2x+3)=0\n\\]\n\nSo\n\n\\[\nx=\\frac23 \\quad \\text{or} \\quad x=-\\frac32\n\\]\n\nUsing \\(y=2x+1\\):\n\n\\[\nx=\\frac23 \\Rightarrow y=\\frac73\n\\]\n\n\\[\nx=-\\frac32 \\Rightarrow y=-2\n\\]\n\n**Answer:** \\(\\displaystyle \\left(\\frac23,\\frac73\\right)\\) and \\(\\displaystyle \\left(-\\frac32,-2\\right)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q25__p26-27__m06__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Coordinate Geometry.\n\n**Method**\n\nThe perpendicular bisector is\n\n\\[\ny-2x=7\n\\]\n\nso\n\n\\[\ny=2x+7\n\\]\n\nThe gradient of the perpendicular bisector is \\(2\\), so the gradient of \\(AB\\) is\n\n\\[\n-\\frac{1}{2}\n\\]\n\nSince \\(A=(j,7)\\) and \\(B=(6,k)\\),\n\n\\[\n\\frac{k-7}{6-j}=-\\frac{1}{2}\n\\]\n\n\\[\n2(k-7)=-(6-j)\n\\]\n\n\\[\nj=2k-8\n\\]\n\nThe midpoint of \\(AB\\) is\n\n\\[\n\\left(\\frac{j+6}{2},\\frac{7+k}{2}\\right)\n\\]\n\nSubstitute \\(j=2k-8\\):\n\n\\[\n\\left(k-1,\\frac{k+7}{2}\\right)\n\\]\n\nThe midpoint lies on \\(y=2x+7\\), so\n\n\\[\n\\frac{k+7}{2}=2(k-1)+7\n\\]\n\n\\[\nk+7=4k+10\n\\]\n\n\\[\nk=-1\n\\]\n\nThen\n\n\\[\nj=2(-1)-8=-10\n\\]\n\nTherefore the midpoint is\n\n\\[\n\\left(\\frac{-10+6}{2},\\frac{7+(-1)}{2}\\right)=(-2,3)\n\\]\n\n**Answer:** \\(\\boxed{(-2,3)}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q12__p13-13__m03__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to graphs of functions. This is matching equations to graph shapes.\n\n**Solution**\n\nFor\n\\[\ny=\\frac{10}{x^2}\n\\]\nthe graph is positive on both sides and symmetrical in the \\(y\\)-axis.\n\nThis is Graph D.\n\nFor\n\\[\ny=x-3+3x^2-x^3\n\\]\nthe leading term is \\(-x^3\\), so it is a cubic falling to the right with two turning points.\n\nThis is Graph C.\n\nFor\n\\[\ny=-\\frac3x\n\\]\nthe graph is a negative reciprocal graph in quadrants 2 and 4.\n\nThis is Graph B.\n\n**Answer:** D, C, B.",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q26__p28-28__m03__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Sine/Cosine Rule to Graphs of Functions.\n\n**Method**\n\nThe curve is\n\n\\[\ny=a\\cos bx^\\circ+c\n\\]\n\nFrom the graph, the maximum value is\n\n\\[\n3\n\\]\n\nand the minimum value is\n\n\\[\n-1\n\\]\n\nThe amplitude is half the difference:\n\n\\[\na=\\frac{3-(-1)}2=2\n\\]\n\nThe midline is the average:\n\n\\[\nc=\\frac{3+(-1)}2=1\n\\]\n\nThe distance between consecutive maxima is \\(120^\\circ\\), so the period is\n\n\\[\n120^\\circ\n\\]\n\nFor \\(y=a\\cos bx^\\circ+c\\), the period is\n\n\\[\n\\frac{360^\\circ}{b}\n\\]\n\nSo\n\n\\[\n\\frac{360}{b}=120\n\\]\n\n\\[\nb=3\n\\]\n\n**Answer:** \\(\\boxed{a=2,\\ b=3,\\ c=1}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q08__p09-09__m05__Graphing-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This combines solving and graphing inequalities.\n\n**Solution**\n\nFor part (a),\n\\[\n9-4x>17\n\\]\n\n\\[\n-4x>8\n\\]\n\n\\[\nx<-2\n\\]\n\nFor part (b), the region is above \\(y=2\\), left of \\(x=6\\), and below \\(y=x\\):\n\\[\ny\\geq2\n\\]\n\n\\[\nx\\leq6\n\\]\n\n\\[\ny\\leq x\n\\]\n\n**Answer:** (a) \\(x<-2\\). (b) \\(y\\geq2\\), \\(x\\leq6\\), \\(y\\leq x\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q03__p05-05__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Standard & Compound Units.\n\n**Solution**\n\nTime \\(=3\\) hours \\(18\\) minutes:\n\n\\[\n3+\\frac{18}{60}=3.3\\text{ hours}\n\\]\n\n\\[\n\\text{average speed}=\\frac{515}{3.3}=156.06\\ldots\n\\]\n\n**Answer:** \\(156\\text{ km/h}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q18__p18-18__m03__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to circle theorems. The question uses the intersecting secants theorem.\n\n**Solution**\n\nFrom the external point \\(P\\), two secants meet the circle.\n\nFor the upper secant,\n\\[\nPB=14,\\qquad PA=14+16=30\n\\]\n\nFor the lower secant,\n\\[\nPC=12,\\qquad PD=12+DC\n\\]\n\nUsing the secant theorem:\n\\[\nPB\\times PA=PC\\times PD\n\\]\n\n\\[\n14\\times30=12(12+DC)\n\\]\n\n\\[\n420=144+12DC\n\\]\n\n\\[\n276=12DC\n\\]\n\n\\[\nDC=23\n\\]\n\n**Answer:** \\(DC=23\\text{ cm}\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q20__p20-20__m02__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe angle between the tangent \\(CN\\) and the chord \\(CB\\) is \\(78^\\circ\\).\n\nBy the alternate segment theorem,\n\n\\[\n\\angle BAC=78^\\circ\n\\]\n\nAlso,\n\n\\[\nAB=CB\n\\]\n\nso triangle \\(ABC\\) is isosceles and the base angles are equal:\n\n\\[\n\\angle BAC=\\angle ACB=78^\\circ\n\\]\n\nUsing the angle sum of a triangle:\n\n\\[\n\\angle ABC=180^\\circ-78^\\circ-78^\\circ\n\\]\n\n\\[\n\\angle ABC=24^\\circ\n\\]\n\n**Answer:** \\(\\boxed{24^\\circ}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q05__p06-06__m04__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Perimeter. The tag is correct.\n\n**Solution**\n\n\\[\n\\text{area}=\\frac12(170+330)\\times 240=60000\\text{ m}^2\n\\]\n\n\\[\n60000\\text{ m}^2=6\\text{ hectares}\n\\]\n\n\\[\n\\text{price per hectare}=49650\\div 6=8275\n\\]\n\n**Answer:** \\(\\$8275\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q09__p10-11__m06__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Volume & Surface Area.\n\n**Solution**\n\nIn triangle \\(DBC\\),\n\n\\[\nDC=50\\cos32^\\circ=42.402\\ldots,\\qquad BC=50\\sin32^\\circ=26.496\\ldots\n\\]\n\nThe circumference of the cylinder is \\(DC\\), so\n\n\\[\n2\\pi r=DC\n\\]\n\n\\[\nr=\\frac{42.402\\ldots}{2\\pi}\n\\]\n\nVolume:\n\n\\[\nV=\\pi r^2h\n=\\pi\\left(\\frac{42.402\\ldots}{2\\pi}\\right)^2(26.496\\ldots)\n=3790.974\\ldots\n\\]\n\n**Answer:** \\(3.79\\times10^3\\text{ cm}^3\\) to 3 significant figures.",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q24__p25-25__m05__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nLet the radius of the smaller sphere be \\(r\\).\n\nLet the radius of the larger sphere be \\(R\\).\n\nSurface area of a sphere is\n\n\\[\n4\\pi r^2\n\\]\n\nThe surface area of sphere \\(A\\) is nine times the surface area of sphere \\(B\\), so\n\n\\[\n4\\pi R^2=9(4\\pi r^2)\n\\]\n\n\\[\nR^2=9r^2\n\\]\n\n\\[\nR=3r\n\\]\n\nThe difference between the volumes is \\(117\\pi\\):\n\n\\[\n\\frac{4}{3}\\pi(3r)^3-\\frac{4}{3}\\pi r^3=117\\pi\n\\]\n\n\\[\n\\frac{4}{3}\\pi(27r^3-r^3)=117\\pi\n\\]\n\n\\[\n\\frac{104}{3}\\pi r^3=117\\pi\n\\]\n\nCancel \\(\\pi\\):\n\n\\[\n\\frac{104}{3}r^3=117\n\\]\n\n\\[\nr^3=\\frac{117\\times 3}{104}\n\\]\n\n\\[\nr^3=\\frac{27}{8}\n\\]\n\n\\[\nr=\\frac{3}{2}\n\\]\n\n**Answer:** \\(\\boxed{1.5\\text{ cm}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q22__p22-23__m05__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to 3D Pythagoras & Trigonometry.\n\n**Method**\n\nFor part (a), \\(BE\\) is the space diagonal using the three perpendicular lengths:\n\n\\[\nAB=15,\\qquad BC=4,\\qquad CF=9\n\\]\n\n\\[\nBE^2=15^2+4^2+9^2\n\\]\n\n\\[\nBE^2=225+16+81=322\n\\]\n\n\\[\nBE=\\sqrt{322}=17.9\\text{ cm}\n\\]\n\nFor part (b), the projection of \\(PU\\) onto the plane \\(PQRS\\) is \\(PR\\).\n\n\\[\nPR=42\n\\]\n\nThe angle between \\(PU\\) and the plane is \\(30^\\circ\\), so\n\n\\[\n\\tan 30^\\circ=\\frac{RU}{PR}\n\\]\n\n\\[\nRU=42\\tan30^\\circ\n\\]\n\nSince \\(M\\) is the midpoint of \\(PR\\),\n\n\\[\nMR=21\n\\]\n\nIn right triangle \\(MRU\\),\n\n\\[\n\\tan \\angle UMR=\\frac{RU}{MR}\n\\]\n\n\\[\n\\tan \\angle UMR=\\frac{42\\tan30^\\circ}{21}\n\\]\n\n\\[\n\\tan \\angle UMR=2\\tan30^\\circ\n\\]\n\n\\[\n\\angle UMR=49.1^\\circ\n\\]\n\n**Answer:** \\(BE=17.9\\text{ cm}\\), \\(\\angle UMR=49.1^\\circ\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q10__p12-12__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nTotal for Monday to Friday:\n\n\\[\n5 \\times 104=520\n\\]\n\nTotal for Monday to Sunday:\n\n\\[\n7 \\times 127=889\n\\]\n\nSo the total for Saturday and Sunday is\n\n\\[\n889-520=369\n\\]\n\nSaturday was \\(132\\text{ km}\\), so\n\n\\[\n369-132=237\n\\]\n\n**Answer:** \\(237\\text{ km}\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q14__p15-15__m04__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nAkari's scores in order are\n\n\\[\n20,\\ 20,\\ 22,\\ 23,\\ 25,\\ 26,\\ 26,\\ 27,\\ 28,\\ 29,\\ 29\n\\]\n\n\\[\nQ_1=22,\\qquad Q_3=28\n\\]\n\n\\[\n\\text{IQR}=28-22=6\n\\]\n\nMachi's interquartile range is \\(9\\).\n\nAkari is more consistent because her interquartile range is smaller.\n\n**Answers:** Akari's IQR is \\(6\\), and Akari is more consistent.",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2023_P2HR__Q15__p16-16__m03__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\n\\[\nP(\\text{three heads})=\\frac{27}{64}\n\\]\n\nSo\n\n\\[\nP(H)^3=\\frac{27}{64}\n\\]\n\n\\[\nP(H)=\\frac{3}{4}\n\\]\n\nTherefore\n\n\\[\nP(T)=\\frac{1}{4}\n\\]\n\n\\[\nP(\\text{three tails})=\\left(\\frac14\\right)^3=\\frac{1}{64}\n\\]\n\n**Answer:** \\(\\frac{1}{64}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Jun2023_P2HR__Q19__p19-19__m04__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nThere are \\(30\\) adults.\n\n\\[\nn(B)=19,\\quad n(D)=15,\\quad n(\\text{neither})=4\n\\]\n\nSo\n\n\\[\nn(B\\cup D)=30-4=26\n\\]\n\n\\[\nn(B\\cap D)=19+15-26=8\n\\]\n\nThe probability that two adults both had breakfast and dinner is\n\n\\[\n\\frac{8}{30}\\times\\frac{7}{29}=\\frac{28}{435}\n\\]\n\n**Answer:** \\(\\frac{28}{435}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jun2023_P2HR__Q23__p24-24__m05__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe first three terms are\n\n\\[\n8p,\\quad 7p-3,\\quad 4p+2\n\\]\n\nFor an arithmetic sequence, consecutive differences are equal:\n\n\\[\n(7p-3)-8p=(4p+2)-(7p-3)\n\\]\n\n\\[\n-p-3=-3p+5\n\\]\n\n\\[\n2p=8\n\\]\n\n\\[\np=4\n\\]\n\nSo the first term is\n\n\\[\n8p=32\n\\]\n\nand the common difference is\n\n\\[\n(7p-3)-8p=25-32=-7\n\\]\n\nThe sum of the first \\(n\\) terms is\n\n\\[\nS_n=\\frac n2(2a+(n-1)d)\n\\]\n\n\\[\n-1914=\\frac n2(64-7(n-1))\n\\]\n\n\\[\n-1914=\\frac n2(71-7n)\n\\]\n\n\\[\n-3828=n(71-7n)\n\\]\n\n\\[\n7n^2-71n-3828=0\n\\]\n\n\\[\nn=\\frac{71\\pm 335}{14}\n\\]\n\nOnly the positive value is possible:\n\n\\[\nn=29\n\\]\n\n**Answer:** \\(n=29\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2023_P2HR__Q21__p21-21__m05__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe line is\n\n\\[\ny-2x=1\n\\]\n\nSo\n\n\\[\ny=2x+1\n\\]\n\nSubstitute into\n\n\\[\ny^2+xy=7\n\\]\n\n\\[\n(2x+1)^2+x(2x+1)=7\n\\]\n\n\\[\n4x^2+4x+1+2x^2+x=7\n\\]\n\n\\[\n6x^2+5x-6=0\n\\]\n\nFactorise:\n\n\\[\n(3x-2)(2x+3)=0\n\\]\n\nSo\n\n\\[\nx=\\frac23 \\quad \\text{or} \\quad x=-\\frac32\n\\]\n\nUsing \\(y=2x+1\\):\n\n\\[\nx=\\frac23 \\Rightarrow y=\\frac73\n\\]\n\n\\[\nx=-\\frac32 \\Rightarrow y=-2\n\\]\n\n**Answer:** \\(\\displaystyle \\left(\\frac23,\\frac73\\right)\\) and \\(\\displaystyle \\left(-\\frac32,-2\\right)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2023_P2HR__Q25__p26-27__m06__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Coordinate Geometry.\n\n**Method**\n\nThe perpendicular bisector is\n\n\\[\ny-2x=7\n\\]\n\nso\n\n\\[\ny=2x+7\n\\]\n\nThe gradient of the perpendicular bisector is \\(2\\), so the gradient of \\(AB\\) is\n\n\\[\n-\\frac{1}{2}\n\\]\n\nSince \\(A=(j,7)\\) and \\(B=(6,k)\\),\n\n\\[\n\\frac{k-7}{6-j}=-\\frac{1}{2}\n\\]\n\n\\[\n2(k-7)=-(6-j)\n\\]\n\n\\[\nj=2k-8\n\\]\n\nThe midpoint of \\(AB\\) is\n\n\\[\n\\left(\\frac{j+6}{2},\\frac{7+k}{2}\\right)\n\\]\n\nSubstitute \\(j=2k-8\\):\n\n\\[\n\\left(k-1,\\frac{k+7}{2}\\right)\n\\]\n\nThe midpoint lies on \\(y=2x+7\\), so\n\n\\[\n\\frac{k+7}{2}=2(k-1)+7\n\\]\n\n\\[\nk+7=4k+10\n\\]\n\n\\[\nk=-1\n\\]\n\nThen\n\n\\[\nj=2(-1)-8=-10\n\\]\n\nTherefore the midpoint is\n\n\\[\n\\left(\\frac{-10+6}{2},\\frac{7+(-1)}{2}\\right)=(-2,3)\n\\]\n\n**Answer:** \\(\\boxed{(-2,3)}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2023_P2HR__Q26__p28-28__m03__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Sine/Cosine Rule to Graphs of Functions.\n\n**Method**\n\nThe curve is\n\n\\[\ny=a\\cos bx^\\circ+c\n\\]\n\nFrom the graph, the maximum value is\n\n\\[\n3\n\\]\n\nand the minimum value is\n\n\\[\n-1\n\\]\n\nThe amplitude is half the difference:\n\n\\[\na=\\frac{3-(-1)}2=2\n\\]\n\nThe midline is the average:\n\n\\[\nc=\\frac{3+(-1)}2=1\n\\]\n\nThe distance between consecutive maxima is \\(120^\\circ\\), so the period is\n\n\\[\n120^\\circ\n\\]\n\nFor \\(y=a\\cos bx^\\circ+c\\), the period is\n\n\\[\n\\frac{360^\\circ}{b}\n\\]\n\nSo\n\n\\[\n\\frac{360}{b}=120\n\\]\n\n\\[\nb=3\n\\]\n\n**Answer:** \\(\\boxed{a=2,\\ b=3,\\ c=1}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2023_P2HR__Q20__p20-20__m02__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe angle between the tangent \\(CN\\) and the chord \\(CB\\) is \\(78^\\circ\\).\n\nBy the alternate segment theorem,\n\n\\[\n\\angle BAC=78^\\circ\n\\]\n\nAlso,\n\n\\[\nAB=CB\n\\]\n\nso triangle \\(ABC\\) is isosceles and the base angles are equal:\n\n\\[\n\\angle BAC=\\angle ACB=78^\\circ\n\\]\n\nUsing the angle sum of a triangle:\n\n\\[\n\\angle ABC=180^\\circ-78^\\circ-78^\\circ\n\\]\n\n\\[\n\\angle ABC=24^\\circ\n\\]\n\n**Answer:** \\(\\boxed{24^\\circ}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2023_P2HR__Q24__p25-25__m05__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nLet the radius of the smaller sphere be \\(r\\).\n\nLet the radius of the larger sphere be \\(R\\).\n\nSurface area of a sphere is\n\n\\[\n4\\pi r^2\n\\]\n\nThe surface area of sphere \\(A\\) is nine times the surface area of sphere \\(B\\), so\n\n\\[\n4\\pi R^2=9(4\\pi r^2)\n\\]\n\n\\[\nR^2=9r^2\n\\]\n\n\\[\nR=3r\n\\]\n\nThe difference between the volumes is \\(117\\pi\\):\n\n\\[\n\\frac{4}{3}\\pi(3r)^3-\\frac{4}{3}\\pi r^3=117\\pi\n\\]\n\n\\[\n\\frac{4}{3}\\pi(27r^3-r^3)=117\\pi\n\\]\n\n\\[\n\\frac{104}{3}\\pi r^3=117\\pi\n\\]\n\nCancel \\(\\pi\\):\n\n\\[\n\\frac{104}{3}r^3=117\n\\]\n\n\\[\nr^3=\\frac{117\\times 3}{104}\n\\]\n\n\\[\nr^3=\\frac{27}{8}\n\\]\n\n\\[\nr=\\frac{3}{2}\n\\]\n\n**Answer:** \\(\\boxed{1.5\\text{ cm}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2023_P2HR__Q22__p22-23__m05__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Coordinate Geometry to 3D Pythagoras & Trigonometry.\n\n**Method**\n\nFor part (a), \\(BE\\) is the space diagonal using the three perpendicular lengths:\n\n\\[\nAB=15,\\qquad BC=4,\\qquad CF=9\n\\]\n\n\\[\nBE^2=15^2+4^2+9^2\n\\]\n\n\\[\nBE^2=225+16+81=322\n\\]\n\n\\[\nBE=\\sqrt{322}=17.9\\text{ cm}\n\\]\n\nFor part (b), the projection of \\(PU\\) onto the plane \\(PQRS\\) is \\(PR\\).\n\n\\[\nPR=42\n\\]\n\nThe angle between \\(PU\\) and the plane is \\(30^\\circ\\), so\n\n\\[\n\\tan 30^\\circ=\\frac{RU}{PR}\n\\]\n\n\\[\nRU=42\\tan30^\\circ\n\\]\n\nSince \\(M\\) is the midpoint of \\(PR\\),\n\n\\[\nMR=21\n\\]\n\nIn right triangle \\(MRU\\),\n\n\\[\n\\tan \\angle UMR=\\frac{RU}{MR}\n\\]\n\n\\[\n\\tan \\angle UMR=\\frac{42\\tan30^\\circ}{21}\n\\]\n\n\\[\n\\tan \\angle UMR=2\\tan30^\\circ\n\\]\n\n\\[\n\\angle UMR=49.1^\\circ\n\\]\n\n**Answer:** \\(BE=17.9\\text{ cm}\\), \\(\\angle UMR=49.1^\\circ\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

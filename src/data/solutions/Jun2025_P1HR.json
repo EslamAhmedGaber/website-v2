@@ -1,0 +1,203 @@
+{
+  "paperSlug": "Jun2025_P1HR",
+  "solutions": {
+    "all::Jun2025_P1HR__Q05__p06-06__m04__Set-Notation-and-Venn-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Set notation and Venn diagrams. The tag is correct.\n\n**Method**\n\n\\[\n\\mathcal{E}=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}\n\\]\n\n\\[\nA=\\{2,4,6,8,10,12\\}\n\\]\n\n\\[\nB=\\{3,6,9,12\\}\n\\]\n\n\\[\nC=\\{1,3,5,7,9,11\\}\n\\]\n\nTherefore\n\n\\[\nA\\cup B=\\{2,3,4,6,8,9,10,12\\}\n\\]\n\nand\n\n\\[\nB'=\\{1,2,4,5,7,8,10,11\\}\n\\]\n\nNo number is both even and odd, so\n\n\\[\nA\\cap C=\\emptyset\n\\]\n\nAlso \\(13\\notin \\mathcal{E}\\) because \\(13\\) is not in the universal set.\n\n**Answer:** (a)(i) \\(\\{2,3,4,6,8,9,10,12\\}\\), (a)(ii) \\(\\{1,2,4,5,7,8,10,11\\}\\), (b)(i) \\(\\emptyset\\), (b)(ii) \\(13\\notin\\mathcal{E}\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q01__p03-03__m02__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\n45=3^2\\times 5\n\\]\n\n\\[\n70=2\\times 5\\times 7\n\\]\n\nFor the LCM, take the highest power of each prime:\n\n\\[\n\\text{LCM}=2\\times 3^2\\times 5\\times 7=630\n\\]\n\n**Answer:** \\(630\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q14__p14-14__m02__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n6.7\\times 10^{135}+3\\times 10^{134}\n\\]\n\nWrite both terms using \\(10^{135}\\):\n\n\\[\n3\\times 10^{134}=0.3\\times 10^{135}\n\\]\n\nSo\n\n\\[\n6.7\\times 10^{135}+0.3\\times 10^{135}=7.0\\times 10^{135}\n\\]\n\n\\[\n=7\\times 10^{135}\n\\]\n\n**Answer:** \\(\\displaystyle 7\\times 10^{135}\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q11__p11-11__m05__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct, with a ratio used for Bank A.\n\n**Method**\n\nFor Bank A,\n\n\\[\n\\text{amount invested}:\\text{interest}=20:3\n\\]\n\nSo the interest from Bank A is\n\n\\[\n2500\\times \\frac{3}{20}=375\n\\]\n\nFor Bank B, the compound interest after 2 years is\n\n\\[\n3000(1.04)^2-3000\n\\]\n\n\\[\n=3000(1.0816)-3000=244.80\n\\]\n\nDifference:\n\n\\[\n375-244.80=130.20\n\\]\n\n**Answer:** \\(\\$130.20\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q02__p04-04__m02__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\nThe length is \\(142.8\\) m correct to 1 decimal place.\n\nHalf of \\(0.1\\) is \\(0.05\\).\n\n\\[\n142.8-0.05=142.75\n\\]\n\n\\[\n142.8+0.05=142.85\n\\]\n\n**Answer:** (i) \\(142.75\\) m, (ii) \\(142.85\\) m",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q18__p18-18__m05__Direct-and-Inverse-Proportion": {
+      "status": "checked",
+      "source": "**Topic check:** Direct and Inverse Proportion. The tag is correct.\n\n**Method**\n\n\\(F\\) is inversely proportional to \\(r^3\\), so\n\n\\[\nF=\\frac{k}{r^3}\n\\]\n\nUse \\(F=6\\) when \\(r=2\\):\n\n\\[\n6=\\frac{k}{2^3}\n\\]\n\n\\[\nk=48\n\\]\n\nSo\n\n\\[\nF=\\frac{48}{r^3}\n\\]\n\nWhen \\(F=3072\\),\n\n\\[\n3072=\\frac{48}{r^3}\n\\]\n\n\\[\nr^3=\\frac{48}{3072}=\\frac{1}{64}\n\\]\n\n\\[\nr=\\frac14\n\\]\n\n**Answer:** \\(F=\\frac{48}{r^3}\\), and \\(r=\\frac14\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q08__p08-08__m05__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is correct.\n\n**Solution**\n\n(a) \\(a^6\\times a^{10}=a^{16}\\).\n\n(b) \\(c^{30}\\div c^{12}=c^{18}\\).\n\n(c)(i)\n\\[\ny^2-10y+21=(y-3)(y-7)\n\\]\n\n(c)(ii)\n\\[\ny=3 \\quad \\text{or} \\quad y=7\n\\]\n\n**Answer:** \\(a^{16}\\), \\(c^{18}\\), \\((y-3)(y-7)\\), \\(y=3\\) or \\(y=7\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q03__p04-04__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks to show the exact result.\n\n**Solution**\n\n\\[\n2\\frac14=\\frac94,\\qquad 1\\frac57=\\frac{12}{7}\n\\]\n\n\\[\n2\\frac14\\times1\\frac57=\\frac94\\times\\frac{12}{7}\n\\]\n\n\\[\n=\\frac{108}{28}=\\frac{27}{7}=3\\frac67\n\\]\n\n**Answer:** \\(3\\frac67\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q16__p16-16__m02__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\nLet\n\\[\nx=0.6121212\\ldots\n\\]\n\nThen\n\\[\n10x=6.121212\\ldots\n\\]\n\nand\n\\[\n1000x=612.121212\\ldots\n\\]\n\nSubtract:\n\\[\n1000x-10x=612.121212\\ldots-6.121212\\ldots\n\\]\n\n\\[\n990x=606\n\\]\n\n\\[\nx=\\frac{606}{990}=\\frac{101}{165}\n\\]\n\n**Answer:** \\(0.6121212\\ldots=\\dfrac{101}{165}\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q17__p17-17__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\nLet the three consecutive multiples of 4 be\n\\[\n4n,\\quad 4n+4,\\quad 4n+8\n\\]\n\nThe difference between the square of the largest and the square of the smallest is\n\\[\n(4n+8)^2-(4n)^2\n\\]\n\n\\[\n=16n^2+64n+64-16n^2\n\\]\n\n\\[\n=64n+64=64(n+1)\n\\]\n\nThis is always a multiple of 64.\n\n**Answer:** The difference is always a multiple of 64.",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q15__p15-15__m06__Solving-Linear-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Solving Linear Equations. The equation is the main part of the question; the index form is secondary.\n\n**Method**\n\nFor part (a),\n\n\\[\n\\frac{5a+8}{3}-\\frac{2a+5}{4}=23\n\\]\n\nMultiply by \\(12\\):\n\n\\[\n4(5a+8)-3(2a+5)=276\n\\]\n\n\\[\n20a+32-6a-15=276\n\\]\n\n\\[\n14a+17=276\n\\]\n\n\\[\n14a=259\n\\]\n\n\\[\na=\\frac{259}{14}=\\frac{37}{2}\n\\]\n\nFor part (b),\n\n\\[\n\\left(\\frac{\\sqrt y}{3}\\right)^{-1}=\\frac{3}{\\sqrt y}\n\\]\n\n\\[\n=3y^{-1/2}\n\\]\n\n**Answer:** (a) \\(a=\\frac{37}{2}\\), (b) \\(3y^{-1/2}\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q06__p07-07__m04__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Solving inequalities. The tag is correct.\n\n**Solution**\n\n(a) The number line has an open circle at \\(-2\\), a closed circle at \\(1\\), and shading between them.\n\n\\[\n-2<x\\le1\n\\]\n\n(b)\n\\[\n7a-5\\le3a+28\n\\]\n\n\\[\n4a\\le33\n\\]\n\n\\[\na\\le\\frac{33}{4}\n\\]\n\n**Answer:** \\(-2<x\\le1\\), and \\(a\\le\\frac{33}{4}\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q22__p22-22__m05__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nx^2+y^2=41\n\\]\n\n\\[\n2x+y=3\n\\]\n\nSo\n\n\\[\ny=3-2x\n\\]\n\nSubstitute:\n\n\\[\nx^2+(3-2x)^2=41\n\\]\n\n\\[\nx^2+9-12x+4x^2=41\n\\]\n\n\\[\n5x^2-12x-32=0\n\\]\n\n\\[\n(5x+8)(x-4)=0\n\\]\n\nSo\n\n\\[\nx=-\\frac85 \\quad \\text{or} \\quad x=4\n\\]\n\nFind \\(y\\):\n\n\\[\nx=-\\frac85 \\Rightarrow y=\\frac{31}{5}\n\\]\n\n\\[\nx=4 \\Rightarrow y=-5\n\\]\n\n**Answer:** \\((x,y)=\\left(-\\dfrac85,\\dfrac{31}{5}\\right)\\) or \\((4,-5)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q24__p24-25__m06__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe first 3 terms are\n\n\\[\n2x+5,\\quad 3y-4,\\quad 4x-2\n\\]\n\nEqual differences give\n\n\\[\n(3y-4)-(2x+5)=(4x-2)-(3y-4)\n\\]\n\n\\[\n6y-6x=11\n\\]\n\nFor an arithmetic series,\n\n\\[\nS_9=9(a+4d)\n\\]\n\nHere\n\n\\[\na=2x+5\n\\]\n\n\\[\nd=(3y-4)-(2x+5)=3y-2x-9\n\\]\n\nGiven \\(S_9=216\\):\n\n\\[\n9[(2x+5)+4(3y-2x-9)]=216\n\\]\n\n\\[\n12y-6x=55\n\\]\n\nNow solve\n\n\\[\n6y-6x=11\n\\]\n\n\\[\n12y-6x=55\n\\]\n\nSubtracting gives\n\n\\[\n6y=44\n\\]\n\n\\[\ny=\\frac{22}{3}\n\\]\n\nThen\n\n\\[\n6\\left(\\frac{22}{3}\\right)-6x=11\n\\]\n\n\\[\nx=\\frac{11}{2}\n\\]\n\n**Answer:** \\(x=\\dfrac{11}{2},\\ y=\\dfrac{22}{3}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q21__p21-21__m03__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe turning point of \\(y=f(x)\\) is \\((-6,9)\\).\n\nFor\n\n\\[\ny=f(3x)\n\\]\n\nthe \\(x\\)-coordinate is divided by 3:\n\n\\[\n(-6,9)\\to(-2,9)\n\\]\n\nFor part (b), a point \\((4,-5)\\) on \\(y=g(x)\\) maps to \\((1,-16)\\) on\n\n\\[\ny=g(x+a)+b\n\\]\n\nFor the \\(x\\)-coordinate:\n\n\\[\n1+a=4\n\\]\n\n\\[\na=3\n\\]\n\nFor the \\(y\\)-coordinate:\n\n\\[\n-5+b=-16\n\\]\n\n\\[\nb=-11\n\\]\n\n**Answer:** \\((-2,9)\\), \\(a=3,\\ b=-11\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q07__p07-07__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is converting metres per second to kilometres per hour algebraically.\n\n**Solution**\n\nTo convert m/s to km/h, multiply by \\(3.6\\).\n\n\\[\n50x\\times3.6=180x\n\\]\n\n**Answer:** \\(180x\\text{ km/h}\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q23__p23-23__m05__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor two intersecting chords in a circle,\n\n\\[\nPT\\times TR=QT\\times TS\n\\]\n\nSubstitute the given lengths:\n\n\\[\n(3y-5)(4x)=(y+3)(x+2)\n\\]\n\nExpand:\n\n\\[\n12xy-20x=xy+2y+3x+6\n\\]\n\nCollect the \\(y\\) terms on one side:\n\n\\[\n12xy-xy-2y=20x+3x+6\n\\]\n\n\\[\n11xy-2y=23x+6\n\\]\n\nFactorise:\n\n\\[\ny(11x-2)=23x+6\n\\]\n\n\\[\ny=\\frac{23x+6}{11x-2}\n\\]\n\n**Answer:** \\(\\boxed{y=\\frac{23x+6}{11x-2}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q25__p26-27__m06__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nLet the radius of sector \\(BAC\\) be \\(R\\).\n\nThe shaded segment is the segment cut off by chord \\(BC\\) in the sector with centre \\(A\\).\n\nIts area is\n\n\\[\n\\text{sector area}-\\text{triangle area}\n\\]\n\n\\[\n28=\\frac{40}{360}\\pi R^2-\\frac{1}{2}R^2\\sin 40^\\circ\n\\]\n\n\\[\n28=R^2\\left(\\frac{\\pi}{9}-\\frac{1}{2}\\sin 40^\\circ\\right)\n\\]\n\n\\[\nR=31.8096\\ldots\n\\]\n\nNow find the chord \\(BC\\):\n\n\\[\nBC=2R\\sin 20^\\circ\n\\]\n\n\\[\nBC=2(31.8096\\ldots)\\sin 20^\\circ\n=21.7591\\ldots\n\\]\n\nIn sector \\(BCD\\), the centre is \\(C\\), so the radius is\n\n\\[\nCB=CD=21.7591\\ldots\n\\]\n\nThe arc \\(BD\\) has angle \\(130^\\circ\\), so\n\n\\[\n\\text{arc }BD\n=\\frac{130}{360}\\times 2\\pi(21.7591\\ldots)\n\\]\n\n\\[\n=49.3697\\ldots\n\\]\n\n**Answer:** \\(\\boxed{49.4\\text{ cm}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q10__p10-10__m03__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Volume & Surface Area. The tag is correct.\n\n**Solution**\n\nCapacity of the cuboid:\n\\[\n35\\times 28\\times 20=19600\\text{ cm}^3\n\\]\n\nWater already in the cuboid:\n\\[\n35\\times 28\\times 9=8820\\text{ cm}^3\n\\]\n\nVolume of the full cylinder:\n\\[\n\\pi(10)^2(33)=10367.255\\ldots\\text{ cm}^3\n\\]\n\nTotal water after pouring:\n\\[\n8820+10367.255\\ldots=19187.255\\ldots\n\\]\n\nSince\n\\[\n19187.255\\ldots<19600\n\\]\n\nthe cuboid will not be completely full.\n\n**Answer:** The cuboid will not be completely full.",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q26__p28-28__m04__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Percentages to Area & Volume of Similar Shapes, because the solution uses volume and surface area scale factors for similar shapes.\n\n**Method**\n\nThe volume of vase \\(S\\) is \\(72.8\\%\\) more than vase \\(R\\), so\n\n\\(\\dfrac{V_S}{V_R}=1.728\\)\n\nFor similar solids, volume scale factor is the cube of the linear scale factor:\n\n\\(\\text{linear scale factor from }R\\text{ to }S=\\sqrt[3]{1.728}=1.2\\)\n\nThe height of vase \\(T\\) is \\(6h\\), so the linear scale factor from \\(R\\) to \\(T\\) is \\(6\\).\n\nTherefore the linear scale factor from \\(S\\) to \\(T\\) is\n\n\\(\\dfrac{6}{1.2}=5\\)\n\nSurface area scale factor is the square of the linear scale factor:\n\n\\(k=5^2=25\\)\n\n**Answer:** \\(k=25\\)",
+      "updated": "2026-05-05T00:12:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q09__p09-09__m03__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Right-Angled Triangles - Pythagoras & Trigonometry.\n\n**Solution**\n\n\\[\n\\tan 24^\\circ=\\frac{6.5}{QR}\n\\]\n\n\\[\nQR=\\frac{6.5}{\\tan 24^\\circ}=14.599\\ldots\n\\]\n\n**Answer:** \\(14.6\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q20__p20-20__m03__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nIn the rectangle \\(ABCF\\), use Pythagoras with the diagonal \\(FC\\):\n\n\\[\nAC^2=FC^2-AF^2\n\\]\n\n\\[\nAC^2=18^2-7^2=324-49=275\n\\]\n\nNow use Pythagoras in triangle \\(ABC\\):\n\n\\[\nBC^2=AC^2-AB^2\n\\]\n\n\\[\nBC^2=275-9^2=275-81=194\n\\]\n\n\\[\nBC=\\sqrt{194}=13.928\\ldots\n\\]\n\n**Answer:** \\(13.9\\text{ cm}\\) to 3 significant figures",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q13__p14-14__m02__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nPut the numbers in order:\n\n\\[\n9,\\ 10,\\ 12,\\ 15,\\ 17,\\ 18,\\ 19,\\ 19,\\ 20,\\ 25,\\ 26\n\\]\n\n\\[\nQ_1=12,\\qquad Q_3=20\n\\]\n\n\\[\n\\text{IQR}=20-12=8\n\\]\n\n**Answer:** \\(8\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2025_P1HR__Q12__p12-13__m06__Cumulative-Frequency-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nThe cumulative frequencies are\n\n\\[\n12,\\ 27,\\ 47,\\ 65,\\ 74,\\ 80\n\\]\n\nPlot\n\n\\[\n(10,0),(20,12),(30,27),(40,47),(50,65),(60,74),(70,80)\n\\]\n\nAt \\(46\\) years,\n\n\\[\nF(46)\\approx 47+\\frac{6}{10}(65-47)=57.8\n\\]\n\nSo the number older than \\(46\\) is\n\n\\[\n80-57.8=22.2\n\\]\n\n\\[\n\\frac{22.2}{80}\\times 100\\approx 27.75\\%\n\\]\n\n**Answer:** about \\(28\\%\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Jun2025_P1HR__Q04__p05-05__m05__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nLet the yellow probability be \\(x\\). Then the red probability is \\(4x\\).\n\n\\[\n0.12+0.20+0.30+4x+x=1\n\\]\n\n\\[\n5x=0.38\n\\]\n\n\\[\nx=0.076\n\\]\n\nSo\n\n\\[\nP(\\text{red})=4x=0.304\n\\]\n\n\\[\nP(\\text{blue, green or purple})=0.12+0.20+0.30=0.62\n\\]\n\nExpected red:\n\n\\[\n350\\times 0.304=106.4\n\\]\n\n**Answers:** \\(0.62\\), and about \\(106\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Jun2025_P1HR__Q19__p19-19__m03__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nThe counters are\n\n\\[\n1,\\ 1,\\ 2,\\ 3,\\ 3,\\ 3,\\ 5,\\ 6,\\ 6\n\\]\n\nThere are\n\n\\[\n\\binom{9}{2}=36\n\\]\n\nways to choose two counters.\n\nFor a sum less than \\(5\\), the pairs are:\n\n\\[\n(1,1),\\quad (1,2),\\quad (1,3)\n\\]\n\nCounting the repeated counters gives\n\n\\[\n1+2+6=9\n\\]\n\nSo\n\n\\[\nP(\\text{sum}<5)=\\frac{9}{36}=\\frac14\n\\]\n\n**Answer:** \\(\\frac14\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Jun2025_P1HR__Q22__p22-22__m05__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nx^2+y^2=41\n\\]\n\n\\[\n2x+y=3\n\\]\n\nSo\n\n\\[\ny=3-2x\n\\]\n\nSubstitute:\n\n\\[\nx^2+(3-2x)^2=41\n\\]\n\n\\[\nx^2+9-12x+4x^2=41\n\\]\n\n\\[\n5x^2-12x-32=0\n\\]\n\n\\[\n(5x+8)(x-4)=0\n\\]\n\nSo\n\n\\[\nx=-\\frac85 \\quad \\text{or} \\quad x=4\n\\]\n\nFind \\(y\\):\n\n\\[\nx=-\\frac85 \\Rightarrow y=\\frac{31}{5}\n\\]\n\n\\[\nx=4 \\Rightarrow y=-5\n\\]\n\n**Answer:** \\((x,y)=\\left(-\\dfrac85,\\dfrac{31}{5}\\right)\\) or \\((4,-5)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P1HR__Q24__p24-25__m06__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe first 3 terms are\n\n\\[\n2x+5,\\quad 3y-4,\\quad 4x-2\n\\]\n\nEqual differences give\n\n\\[\n(3y-4)-(2x+5)=(4x-2)-(3y-4)\n\\]\n\n\\[\n6y-6x=11\n\\]\n\nFor an arithmetic series,\n\n\\[\nS_9=9(a+4d)\n\\]\n\nHere\n\n\\[\na=2x+5\n\\]\n\n\\[\nd=(3y-4)-(2x+5)=3y-2x-9\n\\]\n\nGiven \\(S_9=216\\):\n\n\\[\n9[(2x+5)+4(3y-2x-9)]=216\n\\]\n\n\\[\n12y-6x=55\n\\]\n\nNow solve\n\n\\[\n6y-6x=11\n\\]\n\n\\[\n12y-6x=55\n\\]\n\nSubtracting gives\n\n\\[\n6y=44\n\\]\n\n\\[\ny=\\frac{22}{3}\n\\]\n\nThen\n\n\\[\n6\\left(\\frac{22}{3}\\right)-6x=11\n\\]\n\n\\[\nx=\\frac{11}{2}\n\\]\n\n**Answer:** \\(x=\\dfrac{11}{2},\\ y=\\dfrac{22}{3}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P1HR__Q21__p21-21__m03__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe turning point of \\(y=f(x)\\) is \\((-6,9)\\).\n\nFor\n\n\\[\ny=f(3x)\n\\]\n\nthe \\(x\\)-coordinate is divided by 3:\n\n\\[\n(-6,9)\\to(-2,9)\n\\]\n\nFor part (b), a point \\((4,-5)\\) on \\(y=g(x)\\) maps to \\((1,-16)\\) on\n\n\\[\ny=g(x+a)+b\n\\]\n\nFor the \\(x\\)-coordinate:\n\n\\[\n1+a=4\n\\]\n\n\\[\na=3\n\\]\n\nFor the \\(y\\)-coordinate:\n\n\\[\n-5+b=-16\n\\]\n\n\\[\nb=-11\n\\]\n\n**Answer:** \\((-2,9)\\), \\(a=3,\\ b=-11\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P1HR__Q23__p23-23__m05__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor two intersecting chords in a circle,\n\n\\[\nPT\\times TR=QT\\times TS\n\\]\n\nSubstitute the given lengths:\n\n\\[\n(3y-5)(4x)=(y+3)(x+2)\n\\]\n\nExpand:\n\n\\[\n12xy-20x=xy+2y+3x+6\n\\]\n\nCollect the \\(y\\) terms on one side:\n\n\\[\n12xy-xy-2y=20x+3x+6\n\\]\n\n\\[\n11xy-2y=23x+6\n\\]\n\nFactorise:\n\n\\[\ny(11x-2)=23x+6\n\\]\n\n\\[\ny=\\frac{23x+6}{11x-2}\n\\]\n\n**Answer:** \\(\\boxed{y=\\frac{23x+6}{11x-2}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P1HR__Q25__p26-27__m06__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nLet the radius of sector \\(BAC\\) be \\(R\\).\n\nThe shaded segment is the segment cut off by chord \\(BC\\) in the sector with centre \\(A\\).\n\nIts area is\n\n\\[\n\\text{sector area}-\\text{triangle area}\n\\]\n\n\\[\n28=\\frac{40}{360}\\pi R^2-\\frac{1}{2}R^2\\sin 40^\\circ\n\\]\n\n\\[\n28=R^2\\left(\\frac{\\pi}{9}-\\frac{1}{2}\\sin 40^\\circ\\right)\n\\]\n\n\\[\nR=31.8096\\ldots\n\\]\n\nNow find the chord \\(BC\\):\n\n\\[\nBC=2R\\sin 20^\\circ\n\\]\n\n\\[\nBC=2(31.8096\\ldots)\\sin 20^\\circ\n=21.7591\\ldots\n\\]\n\nIn sector \\(BCD\\), the centre is \\(C\\), so the radius is\n\n\\[\nCB=CD=21.7591\\ldots\n\\]\n\nThe arc \\(BD\\) has angle \\(130^\\circ\\), so\n\n\\[\n\\text{arc }BD\n=\\frac{130}{360}\\times 2\\pi(21.7591\\ldots)\n\\]\n\n\\[\n=49.3697\\ldots\n\\]\n\n**Answer:** \\(\\boxed{49.4\\text{ cm}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P1HR__Q26__p28-28__m04__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Percentages to Area & Volume of Similar Shapes, because the solution uses volume and surface area scale factors for similar shapes.\n\n**Method**\n\nThe volume of vase \\(S\\) is \\(72.8\\%\\) more than vase \\(R\\), so\n\n\\(\\dfrac{V_S}{V_R}=1.728\\)\n\nFor similar solids, volume scale factor is the cube of the linear scale factor:\n\n\\(\\text{linear scale factor from }R\\text{ to }S=\\sqrt[3]{1.728}=1.2\\)\n\nThe height of vase \\(T\\) is \\(6h\\), so the linear scale factor from \\(R\\) to \\(T\\) is \\(6\\).\n\nTherefore the linear scale factor from \\(S\\) to \\(T\\) is\n\n\\(\\dfrac{6}{1.2}=5\\)\n\nSurface area scale factor is the square of the linear scale factor:\n\n\\(k=5^2=25\\)\n\n**Answer:** \\(k=25\\)",
+      "updated": "2026-05-05T00:12:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2025_P1HR__Q20__p20-20__m03__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nIn the rectangle \\(ABCF\\), use Pythagoras with the diagonal \\(FC\\):\n\n\\[\nAC^2=FC^2-AF^2\n\\]\n\n\\[\nAC^2=18^2-7^2=324-49=275\n\\]\n\nNow use Pythagoras in triangle \\(ABC\\):\n\n\\[\nBC^2=AC^2-AB^2\n\\]\n\n\\[\nBC^2=275-9^2=275-81=194\n\\]\n\n\\[\nBC=\\sqrt{194}=13.928\\ldots\n\\]\n\n**Answer:** \\(13.9\\text{ cm}\\) to 3 significant figures",
+      "updated": "2026-05-05T16:25:30",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

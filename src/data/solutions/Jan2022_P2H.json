@@ -1,0 +1,203 @@
+{
+  "paperSlug": "Jan2022_P2H",
+  "solutions": {
+    "all::Jan2022_P2H__Q07__p09-09__m03__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\n28=2^2\\times 7\n\\]\n\n\\[\n42=2\\times 3\\times 7\n\\]\n\n\\[\n63=3^2\\times 7\n\\]\n\nFor the LCM, take the highest power of each prime:\n\n\\[\n\\text{LCM}=2^2\\times 3^2\\times 7=252\n\\]\n\n**Answer:** \\(252\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q12__p14-14__m03__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\na=6\\times 10^{40}\n\\]\n\n\\[\na^3=(6\\times 10^{40})^3\n\\]\n\n\\[\na^3=6^3\\times 10^{120}\n\\]\n\n\\[\na^3=216\\times 10^{120}\n\\]\n\nWrite this in standard form:\n\n\\[\n216\\times 10^{120}=2.16\\times 10^{122}\n\\]\n\n**Answer:** \\(\\displaystyle 2.16\\times 10^{122}\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q02__p04-04__m03__Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Fractions. The tag is correct.\n\n**Method**\n\nConvert to improper fractions:\n\n\\[\n6\\frac34=\\frac{27}{4}\n\\]\n\n\\[\n2\\frac47=\\frac{18}{7}\n\\]\n\nDivide by multiplying by the reciprocal:\n\n\\[\n\\frac{27}{4}\\div \\frac{18}{7}\n=\\frac{27}{4}\\times \\frac{7}{18}\n\\]\n\n\\[\n=\\frac{21}{8}=2\\frac58\n\\]\n\n**Answer:** \\(2\\frac58\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q08__p10-10__m05__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nIncrease from 2018 to 2019:\n\n\\[\n231776-228314=3462\n\\]\n\nPercentage increase:\n\n\\[\n\\frac{3462}{228314}\\times 100=1.516\\ldots\n\\]\n\nCorrect to one decimal place:\n\n\\[\n1.5\\%\n\\]\n\nFor part (b), the 2019 price was \\(7.7\\%\\) greater than the 2017 price.\n\n\\[\n231776=1.077\\times \\text{2017 price}\n\\]\n\n\\[\n\\text{2017 price}=\\frac{231776}{1.077}=215205.19\\ldots\n\\]\n\nCorrect to 3 significant figures:\n\n\\[\n215000\n\\]\n\n**Answer:** (a) \\(1.5\\%\\), (b) \\(\\pounds 215000\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q04__p06-06__m02__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct.\n\n**Method**\n\nThe side length is \\(18\\) mm correct to the nearest \\(0.5\\) mm.\n\nHalf of \\(0.5\\) mm is \\(0.25\\) mm.\n\n\\[\n18-0.25=17.75\n\\]\n\n\\[\n18+0.25=18.25\n\\]\n\n**Answer:** (a) \\(17.75\\) mm, (b) \\(18.25\\) mm",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q01__p03-03__m04__Expanding-Brackets": {
+      "status": "checked",
+      "source": "**Topic check:** Expanding brackets. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n(y+4)(2-y)=2y-y^2+8-4y=-y^2-2y+8\n\\]\n\n(b)\n\\[\n15b^5c-35b^3c^9=5b^3c(3b^2-7c^8)\n\\]\n\n**Answer:** (a) \\(-y^2-2y+8\\), (b) \\(5b^3c(3b^2-7c^8)\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q17__p19-19__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks for an exact-form proof.\n\n**Solution**\n\n\\[\n\\frac{\\sqrt{12}}{\\sqrt3+2}=\\frac{2\\sqrt3}{\\sqrt3+2}\n\\]\n\nMultiply by the conjugate:\n\\[\n\\frac{2\\sqrt3}{\\sqrt3+2}\\times \\frac{2-\\sqrt3}{2-\\sqrt3}\n=\\frac{2\\sqrt3(2-\\sqrt3)}{4-3}\n\\]\n\n\\[\n=4\\sqrt3-6\n\\]\n\nSince \\(4\\sqrt3=\\sqrt{48}\\),\n\\[\n4\\sqrt3-6=-6+\\sqrt{48}\n\\]\n\n**Answer:** \\(-6+\\sqrt{48}\\), so \\(a=-6\\) and \\(b=48\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q18__p20-20__m03__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is correct.\n\n**Solution**\n\nLet the two consecutive odd numbers be\n\\[\n2n+1 \\quad \\text{and} \\quad 2n+3\n\\]\n\nThe sum of their squares is\n\\[\n(2n+1)^2+(2n+3)^2\n\\]\n\n\\[\n=4n^2+4n+1+4n^2+12n+9\n\\]\n\n\\[\n=8n^2+16n+10\n\\]\n\n\\[\n=8(n^2+2n+1)+2=8(n+1)^2+2\n\\]\n\nThis is a multiple of 8 plus 2, so the remainder is always 2.\n\n**Answer:** The remainder is always 2.",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q22__p24-24__m05__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Functions to Solving Inequalities.\n\n**Method**\n\nThe rectangle has side lengths\n\n\\[\n2x+3\n\\]\n\nand\n\n\\[\nx-1\n\\]\n\nFor the side lengths to be possible,\n\n\\[\nx>1\n\\]\n\nThe area is less than \\(75\\):\n\n\\[\n(2x+3)(x-1)<75\n\\]\n\n\\[\n2x^2+x-3<75\n\\]\n\n\\[\n2x^2+x-78<0\n\\]\n\nFactorise:\n\n\\[\n2x^2+x-78=(2x+13)(x-6)\n\\]\n\nSo\n\n\\[\n-\\frac{13}{2}<x<6\n\\]\n\nCombining with \\(x>1\\):\n\n\\[\n1<x<6\n\\]\n\n**Answer:** \\(1<x<6\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q10__p12-12__m03__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\n\\[\n3x+5y=3.1\n\\]\n\n\\[\n6x+3y=3.75\n\\]\n\nDouble the first equation:\n\\[\n6x+10y=6.2\n\\]\n\nSubtract the second equation:\n\\[\n7y=2.45\n\\]\n\n\\[\ny=0.35\n\\]\n\nSubstitute into \\(3x+5y=3.1\\):\n\\[\n3x+5(0.35)=3.1\n\\]\n\n\\[\n3x+1.75=3.1\n\\]\n\n\\[\n3x=1.35\n\\]\n\n\\[\nx=0.45\n\\]\n\n**Answer:** \\(x=0.45\\), \\(y=0.35\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q26__p28-28__m05__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nS_m=39\n\\]\n\n\\[\nS_{2m}=320\n\\]\n\nUse\n\n\\[\nS_n=\\frac n2(2a+(n-1)d)\n\\]\n\nThen\n\n\\[\n2S_m=m(2a+(m-1)d)=78\n\\]\n\nand\n\n\\[\nS_{2m}=m(2a+(2m-1)d)=320\n\\]\n\nSubtract:\n\n\\[\nS_{2m}-2S_m=m[(2m-1)d-(m-1)d]\n\\]\n\n\\[\n320-78=m(md)\n\\]\n\n\\[\n242=m^2d\n\\]\n\n\\[\n242=2\\times 11^2\n\\]\n\nSince \\(d\\) is prime and \\(m^2\\) is a square factor,\n\n\\[\nd=2,\\quad m^2=121\n\\]\n\n\\[\nm=11\n\\]\n\n**Answer:** \\(d=2,\\ m=11\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q25__p27-27__m05__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\ng(x)=5+6x-x^2\n\\]\n\nComplete the square:\n\n\\[\ng(x)=14-(x-3)^2\n\\]\n\nLet\n\n\\[\ny=14-(x-3)^2\n\\]\n\n\\[\n(x-3)^2=14-y\n\\]\n\nThe domain of \\(g\\) is \\(x\\ge 3\\), so take the positive square root:\n\n\\[\nx-3=\\sqrt{14-y}\n\\]\n\n\\[\nx=3+\\sqrt{14-y}\n\\]\n\nTherefore\n\n\\[\ng^{-1}:x\\mapsto 3+\\sqrt{14-x}\n\\]\n\nThe range of \\(g\\) is \\(x\\le 14\\), so this is the domain of \\(g^{-1}\\).\n\n**Answer:** (a) \\(g^{-1}:x\\mapsto 3+\\sqrt{14-x}\\), (b) domain \\(x\\le 14\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q21__p23-23__m05__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Graphs of Functions.\n\n**Method**\n\nFor part (a), solve\n\n\\[\n2x^2-4x-1=0\n\\]\n\nUsing the graph gives approximately\n\n\\[\nx=-0.2,\\quad x=2.2\n\\]\n\nFor part (b), we need to solve\n\n\\[\nx^2-x-1=0\n\\]\n\nMultiply by 2:\n\n\\[\n2x^2-2x-2=0\n\\]\n\nThe given graph is\n\n\\[\ny=2x^2-4x-1\n\\]\n\nNow\n\n\\[\n2x^2-2x-2=(2x^2-4x-1)+2x-1\n\\]\n\nSo draw the straight line\n\n\\[\ny=1-2x\n\\]\n\nThe intersections of this line with the curve give approximately\n\n\\[\nx=-0.6,\\quad x=1.6\n\\]\n\n**Answer:** (a) \\(-0.2,\\ 2.2\\); (b) draw \\(y=1-2x\\), giving \\(-0.6,\\ 1.6\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q13__p15-15__m03__Graphing-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is identifying inequalities from a shaded region.\n\n**Solution**\n\nThe region is to the right of the \\(y\\)-axis:\n\\[\nx\\geq0\n\\]\n\nIt is above the line \\(y=x\\):\n\\[\ny\\geq x\n\\]\n\nIt is below the line\n\\[\nx+2y=8\n\\]\nso\n\\[\nx+2y\\leq8\n\\]\n\n**Answer:** \\(x\\geq0\\), \\(y\\geq x\\), \\(x+2y\\leq8\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q24__p26-26__m05__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Ratio Toolkit to Differentiation.\n\n**Method**\n\n\\[\nx=4t^3-27t+8\n\\]\n\nVelocity is\n\n\\[\n\\frac{dx}{dt}=12t^2-27\n\\]\n\nThe direction of motion reverses when velocity is zero:\n\n\\[\n12t^2-27=0\n\\]\n\n\\[\n12t^2=27\n\\]\n\n\\[\nt^2=\\frac94\n\\]\n\nSince \\(t\\geq 0\\), \\(t=\\frac32\\).\n\nAcceleration is\n\n\\[\n\\frac{d^2x}{dt^2}=24t\n\\]\n\nAt \\(t=\\frac32\\),\n\n\\[\na=24\\left(\\frac32\\right)=36\n\\]\n\n**Answer:** \\(a=36\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q11__p13-13__m04__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Angles in Polygons & Parallel Lines. The tag is correct.\n\n**Solution**\n\nA regular 10-sided polygon can be divided into 10 equal arcs around its circumcircle.\n\nThe angle \\(x\\) subtends the arc from \\(J\\) to \\(G\\), which covers 3 equal sides of the decagon.\n\nThe angle \\(y\\) subtends the arc from \\(G\\) to \\(D\\), which also covers 3 equal sides of the decagon.\n\nEqual arcs subtend equal angles at the circumference, so\n\\[\nx=y\n\\]\n\n**Answer:** \\(x=y\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q05__p07-07__m04__Bearings-Scale-Drawing-and-Constructions": {
+      "status": "checked",
+      "source": "**Topic check:** Bearings, Scale Drawing & Constructions. The tag is correct.\n\n**Solution**\n\nThe distance from \\(A\\) to \\(C\\) is \\(700\\text{ m}\\).\n\nThe scale is\n\\[\n1\\text{ cm represents }200\\text{ m}\n\\]\n\nSo the map distance is\n\\[\n700\\div 200=3.5\\text{ cm}\n\\]\n\nPart (a): from \\(A\\), draw a bearing of \\(110^\\circ\\) and mark \\(C\\) at \\(3.5\\text{ cm}\\) from \\(A\\).\n\nFor part (b),\n\\[\n200\\text{ m}=20000\\text{ cm}\n\\]\n\nSo the scale is\n\\[\n1:20000\n\\]\n\n**Answer:** Draw \\(C\\) 3.5 cm from \\(A\\) on a bearing of \\(110^\\circ\\), and the scale is \\(1:20000\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q16__p18-18__m04__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Circle Theorems. The tag is correct.\n\n**Solution**\n\nSince \\(EOG\\) is a diameter,\n\\[\n\\angle EDG=90^\\circ\n\\]\n\nIn triangle \\(EDG\\),\n\\[\n\\angle DEG=180^\\circ-90^\\circ-42^\\circ=48^\\circ\n\\]\n\nAngles \\(DEG\\) and \\(DFG\\) stand on the same chord \\(DG\\), so they are equal.\n\n\\[\n\\angle DFG=48^\\circ\n\\]\n\n**Answer:** \\(48^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q19__p21-21__m03__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Circle Theorems. The tag is correct.\n\n**Solution**\n\nUse the intersecting chords theorem:\n\\[\nPT\\times TQ=ST\\times TR\n\\]\n\n\\[\nPT\\times 3=4\\times 12\n\\]\n\n\\[\nPT=16\n\\]\n\nSince \\(PTQ\\) is a diameter,\n\\[\nPQ=PT+TQ=16+3=19\n\\]\n\nSo the radius is\n\\[\n19\\div 2=9.5\n\\]\n\n**Answer:** \\(9.5\\text{ cm}\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q03__p05-05__m03__Congruence-Similarity-and-Geometrical-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Congruence, Similarity & Geometrical Proof. The tag is correct.\n\n**Solution**\n\nThe scale factor from triangle \\(ABC\\) to triangle \\(PQR\\) is\n\\[\n\\frac{PQ}{AB}=\\frac{12}{4}=3\n\\]\n\nSo\n\\[\nBC=\\frac{RQ}{3}=\\frac{16.5}{3}=5.5\n\\]\n\nAlso \\(PR\\) corresponds to \\(AC\\), so\n\\[\ny=3x\n\\]\n\n**Answer:** \\(BC=5.5\\text{ cm}\\), and \\(y=3x\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q14__p16-16__m03__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Right-Angled Triangles - Pythagoras & Trigonometry. The tag is correct.\n\n**Solution**\n\nThe horizontal distance is \\(12\\text{ m}\\) and the zip wire is \\(13\\text{ m}\\).\n\nVertical difference:\n\\[\n\\sqrt{13^2-12^2}=5\n\\]\n\nSince the shorter post is \\(2.6\\text{ m}\\),\n\\[\nAB=2.6+5=7.6\n\\]\n\n**Answer:** \\(7.60\\text{ m}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q23__p25-25__m06__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nIn triangle \\(PQR\\),\n\n\\[\nPQ=1.6,\\qquad PR=4.2,\\qquad \\angle PRQ=18^\\circ\n\\]\n\nUse the sine rule:\n\n\\[\n\\frac{\\sin Q}{PR}=\\frac{\\sin R}{PQ}\n\\]\n\n\\[\n\\frac{\\sin Q}{4.2}=\\frac{\\sin18^\\circ}{1.6}\n\\]\n\n\\[\n\\sin Q=\\frac{4.2\\sin18^\\circ}{1.6}\n\\]\n\n\\[\n\\sin Q=0.811169\\ldots\n\\]\n\nSince angle \\(PQR\\) is obtuse,\n\n\\[\nQ=180^\\circ-\\sin^{-1}(0.811169\\ldots)\n\\]\n\n\\[\nQ=125.7896\\ldots^\\circ\n\\]\n\nNow find angle \\(P\\):\n\n\\[\nP=180^\\circ-18^\\circ-125.7896\\ldots^\\circ\n\\]\n\n\\[\nP=36.2103\\ldots^\\circ\n\\]\n\nArea of triangle \\(PQR\\):\n\n\\[\n\\frac12(PQ)(PR)\\sin P\n\\]\n\n\\[\n=\\frac12(1.6)(4.2)\\sin(36.2103\\ldots^\\circ)\n\\]\n\n\\[\n=1.984925\\ldots\n\\]\n\nCorrect to 3 significant figures:\n\n\\[\n1.98\n\\]\n\n**Answer:** \\(\\boxed{1.98\\text{ cm}^2}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q09__p11-11__m04__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe total number of points is\n\n\\[\n0(13)+1(17)+2(8)+3x+4(11)=77+3x\n\\]\n\nThe total frequency is\n\n\\[\n13+17+8+x+11=49+x\n\\]\n\nThe mean is \\(2\\), so\n\n\\[\n\\frac{77+3x}{49+x}=2\n\\]\n\n\\[\n77+3x=98+2x\n\\]\n\n\\[\nx=21\n\\]\n\n**Answer:** \\(x=21\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q15__p17-17__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nPut the distances in order:\n\n\\[\n5,\\ 5,\\ 7,\\ 8,\\ 10,\\ 12,\\ 13,\\ 14,\\ 16,\\ 21,\\ 23\n\\]\n\nThere are 11 values, so the median is the 6th value.\n\nThe lower half is\n\n\\[\n5,\\ 5,\\ 7,\\ 8,\\ 10\n\\]\n\nso\n\n\\[\nQ_1=7\n\\]\n\nThe upper half is\n\n\\[\n13,\\ 14,\\ 16,\\ 21,\\ 23\n\\]\n\nso\n\n\\[\nQ_3=16\n\\]\n\n\\[\n\\text{IQR}=16-7=9\n\\]\n\n**Answer:** \\(9\\text{ km}\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q20__p22-22__m04__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor a histogram,\n\n\\[\n\\text{frequency}=\\text{class width}\\times \\text{frequency density}\n\\]\n\nFor \\(75<h\\leq85\\), the frequency is 12 and the class width is 10, so\n\n\\[\n\\text{frequency density}=\\frac{12}{10}=1.2\n\\]\n\nUsing this scale from the histogram, the frequency densities are:\n\n\\[\n0.6,\\ 0.8,\\ 1.0,\\ 1.2,\\ 0.4\n\\]\n\nThe total number of tomato plants is\n\n\\[\n(5)(0.6)+(10)(0.8)+(5)(1.0)+(10)(1.2)+(5)(0.4)\n\\]\n\n\\[\n=3+8+5+12+2=30\n\\]\n\nFor \\(h>82.5\\):\n\n\\[\n(2.5)(1.2)+(5)(0.4)=3+2=5\n\\]\n\nSo the probability is\n\n\\[\n\\frac{5}{30}=\\frac16\n\\]\n\n**Answer:** \\(\\frac16\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jan2022_P2H__Q06__p08-08__m05__Probability-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Probability Toolkit. The ratio is used, but the main structure is a probability table.\n\n**Method**\n\nThe probabilities for green and red are\n\n\\[\n0.20+0.35=0.55\n\\]\n\nSo\n\n\\[\nP(\\text{pink or white})=1-0.55=0.45\n\\]\n\nPink : white \\(=2:1\\), so white is \\(\\frac13\\) of \\(0.45\\).\n\n\\[\nP(\\text{white})=\\frac13\\times 0.45=0.15\n\\]\n\nThe red probability is \\(0.35\\), and there are \\(28\\) red sweets.\n\n\\[\n\\text{total sweets}=\\frac{28}{0.35}=80\n\\]\n\nNumber of white sweets:\n\n\\[\n0.15\\times 80=12\n\\]\n\n**Answer:** \\(12\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P2H__Q22__p24-24__m05__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Functions to Solving Inequalities.\n\n**Method**\n\nThe rectangle has side lengths\n\n\\[\n2x+3\n\\]\n\nand\n\n\\[\nx-1\n\\]\n\nFor the side lengths to be possible,\n\n\\[\nx>1\n\\]\n\nThe area is less than \\(75\\):\n\n\\[\n(2x+3)(x-1)<75\n\\]\n\n\\[\n2x^2+x-3<75\n\\]\n\n\\[\n2x^2+x-78<0\n\\]\n\nFactorise:\n\n\\[\n2x^2+x-78=(2x+13)(x-6)\n\\]\n\nSo\n\n\\[\n-\\frac{13}{2}<x<6\n\\]\n\nCombining with \\(x>1\\):\n\n\\[\n1<x<6\n\\]\n\n**Answer:** \\(1<x<6\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P2H__Q26__p28-28__m05__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nS_m=39\n\\]\n\n\\[\nS_{2m}=320\n\\]\n\nUse\n\n\\[\nS_n=\\frac n2(2a+(n-1)d)\n\\]\n\nThen\n\n\\[\n2S_m=m(2a+(m-1)d)=78\n\\]\n\nand\n\n\\[\nS_{2m}=m(2a+(2m-1)d)=320\n\\]\n\nSubtract:\n\n\\[\nS_{2m}-2S_m=m[(2m-1)d-(m-1)d]\n\\]\n\n\\[\n320-78=m(md)\n\\]\n\n\\[\n242=m^2d\n\\]\n\n\\[\n242=2\\times 11^2\n\\]\n\nSince \\(d\\) is prime and \\(m^2\\) is a square factor,\n\n\\[\nd=2,\\quad m^2=121\n\\]\n\n\\[\nm=11\n\\]\n\n**Answer:** \\(d=2,\\ m=11\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P2H__Q25__p27-27__m05__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\ng(x)=5+6x-x^2\n\\]\n\nComplete the square:\n\n\\[\ng(x)=14-(x-3)^2\n\\]\n\nLet\n\n\\[\ny=14-(x-3)^2\n\\]\n\n\\[\n(x-3)^2=14-y\n\\]\n\nThe domain of \\(g\\) is \\(x\\ge 3\\), so take the positive square root:\n\n\\[\nx-3=\\sqrt{14-y}\n\\]\n\n\\[\nx=3+\\sqrt{14-y}\n\\]\n\nTherefore\n\n\\[\ng^{-1}:x\\mapsto 3+\\sqrt{14-x}\n\\]\n\nThe range of \\(g\\) is \\(x\\le 14\\), so this is the domain of \\(g^{-1}\\).\n\n**Answer:** (a) \\(g^{-1}:x\\mapsto 3+\\sqrt{14-x}\\), (b) domain \\(x\\le 14\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P2H__Q21__p23-23__m05__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Linear Graphs to Graphs of Functions.\n\n**Method**\n\nFor part (a), solve\n\n\\[\n2x^2-4x-1=0\n\\]\n\nUsing the graph gives approximately\n\n\\[\nx=-0.2,\\quad x=2.2\n\\]\n\nFor part (b), we need to solve\n\n\\[\nx^2-x-1=0\n\\]\n\nMultiply by 2:\n\n\\[\n2x^2-2x-2=0\n\\]\n\nThe given graph is\n\n\\[\ny=2x^2-4x-1\n\\]\n\nNow\n\n\\[\n2x^2-2x-2=(2x^2-4x-1)+2x-1\n\\]\n\nSo draw the straight line\n\n\\[\ny=1-2x\n\\]\n\nThe intersections of this line with the curve give approximately\n\n\\[\nx=-0.6,\\quad x=1.6\n\\]\n\n**Answer:** (a) \\(-0.2,\\ 2.2\\); (b) draw \\(y=1-2x\\), giving \\(-0.6,\\ 1.6\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P2H__Q24__p26-26__m05__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Ratio Toolkit to Differentiation.\n\n**Method**\n\n\\[\nx=4t^3-27t+8\n\\]\n\nVelocity is\n\n\\[\n\\frac{dx}{dt}=12t^2-27\n\\]\n\nThe direction of motion reverses when velocity is zero:\n\n\\[\n12t^2-27=0\n\\]\n\n\\[\n12t^2=27\n\\]\n\n\\[\nt^2=\\frac94\n\\]\n\nSince \\(t\\geq 0\\), \\(t=\\frac32\\).\n\nAcceleration is\n\n\\[\n\\frac{d^2x}{dt^2}=24t\n\\]\n\nAt \\(t=\\frac32\\),\n\n\\[\na=24\\left(\\frac32\\right)=36\n\\]\n\n**Answer:** \\(a=36\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P2H__Q23__p25-25__m06__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nIn triangle \\(PQR\\),\n\n\\[\nPQ=1.6,\\qquad PR=4.2,\\qquad \\angle PRQ=18^\\circ\n\\]\n\nUse the sine rule:\n\n\\[\n\\frac{\\sin Q}{PR}=\\frac{\\sin R}{PQ}\n\\]\n\n\\[\n\\frac{\\sin Q}{4.2}=\\frac{\\sin18^\\circ}{1.6}\n\\]\n\n\\[\n\\sin Q=\\frac{4.2\\sin18^\\circ}{1.6}\n\\]\n\n\\[\n\\sin Q=0.811169\\ldots\n\\]\n\nSince angle \\(PQR\\) is obtuse,\n\n\\[\nQ=180^\\circ-\\sin^{-1}(0.811169\\ldots)\n\\]\n\n\\[\nQ=125.7896\\ldots^\\circ\n\\]\n\nNow find angle \\(P\\):\n\n\\[\nP=180^\\circ-18^\\circ-125.7896\\ldots^\\circ\n\\]\n\n\\[\nP=36.2103\\ldots^\\circ\n\\]\n\nArea of triangle \\(PQR\\):\n\n\\[\n\\frac12(PQ)(PR)\\sin P\n\\]\n\n\\[\n=\\frac12(1.6)(4.2)\\sin(36.2103\\ldots^\\circ)\n\\]\n\n\\[\n=1.984925\\ldots\n\\]\n\nCorrect to 3 significant figures:\n\n\\[\n1.98\n\\]\n\n**Answer:** \\(\\boxed{1.98\\text{ cm}^2}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jan2022_P2H__Q20__p22-22__m04__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor a histogram,\n\n\\[\n\\text{frequency}=\\text{class width}\\times \\text{frequency density}\n\\]\n\nFor \\(75<h\\leq85\\), the frequency is 12 and the class width is 10, so\n\n\\[\n\\text{frequency density}=\\frac{12}{10}=1.2\n\\]\n\nUsing this scale from the histogram, the frequency densities are:\n\n\\[\n0.6,\\ 0.8,\\ 1.0,\\ 1.2,\\ 0.4\n\\]\n\nThe total number of tomato plants is\n\n\\[\n(5)(0.6)+(10)(0.8)+(5)(1.0)+(10)(1.2)+(5)(0.4)\n\\]\n\n\\[\n=3+8+5+12+2=30\n\\]\n\nFor \\(h>82.5\\):\n\n\\[\n(2.5)(1.2)+(5)(0.4)=3+2=5\n\\]\n\nSo the probability is\n\n\\[\n\\frac{5}{30}=\\frac16\n\\]\n\n**Answer:** \\(\\frac16\\)",
+      "updated": "2026-05-05T16:25:30",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

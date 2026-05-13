@@ -1,0 +1,27 @@
+/* =================================================================
+   Global stylesheet — imports tokens, reset, components, page styles
+   Imported once by BaseLayout.astro
+   ================================================================= */
+
+@import "./tokens.css";
+@import "./reset.css";
+@import "./components.css";
+
+/* Subtle ivory paper texture using two CSS gradients (no image asset) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(201, 162, 75, 0.04), transparent 60%),
+    radial-gradient(ellipse at 80% 100%, rgba(11, 31, 58, 0.03), transparent 60%);
+}
+
+/* Page fade-in (respects reduced motion via reset) */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: none; }
+}
+main { animation: fadeIn var(--transition) both; }

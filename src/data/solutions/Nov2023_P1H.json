@@ -1,0 +1,179 @@
+{
+  "paperSlug": "Nov2023_P1H",
+  "solutions": {
+    "all::Nov2023_P1H__Q01__p03-03__m03__Set-Notation-and-Venn-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Set notation and Venn diagrams. The tag is correct.\n\n**Method**\n\nThe members of \\(A\\) are all the numbers inside circle \\(A\\), including the overlap:\n\n\\[\nA=\\{5,7,9,11,13,15\\}\n\\]\n\nThe members of \\(A\\cap B\\) are the numbers in both circles:\n\n\\[\nA\\cap B=\\{5,15\\}\n\\]\n\n\\((A\\cup B)'\\) means outside both circles:\n\n\\[\n(A\\cup B)'=\\{6,8,12,14,16\\}\n\\]\n\n**Answer:** (a) \\(\\{5,7,9,11,13,15\\}\\), (b) \\(\\{5,15\\}\\), (c) \\(\\{6,8,12,14,16\\}\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q07__p09-09__m02__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\nA=5^3\\times 7^3\\times 11^6\n\\]\n\n\\[\nB=5^6\\times 7^2\\times 11^4\n\\]\n\nThe HCF takes the smaller power of each common prime:\n\n\\[\n\\text{HCF}=5^3\\times 7^2\\times 11^4\n\\]\n\n**Answer:** \\(\\displaystyle 5^3\\times 7^2\\times 11^4\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q09__p11-11__m04__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n5.87\\times 10^{-4}=0.000587\n\\]\n\n\\[\n84000000=8.4\\times 10^7\n\\]\n\nFor part (c),\n\n\\[\nK=\\frac{8.5\\times 10^{10}}{1.47\\times 10^9}\n\\]\n\n\\[\nK=\\frac{8.5}{1.47}\\times 10\n\\]\n\n\\[\nK=57.823\\ldots\n\\]\n\nCorrect to one decimal place,\n\n\\[\nK=57.8\n\\]\n\n**Answer:** (a) \\(0.000587\\), (b) \\(8.4\\times 10^7\\), (c) \\(57.8\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q03__p05-05__m04__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nNina pays\n\n\\[\n1500+36(450)=1500+16200=17700\n\\]\n\nJoshua's profit is\n\n\\[\n17700-12500=5200\n\\]\n\nPercentage profit:\n\n\\[\n\\frac{5200}{12500}\\times 100=41.6\n\\]\n\n**Answer:** \\(41.6\\%\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q06__p08-08__m04__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Percentages. This is a reverse percentage discount comparison.\n\n**Method**\n\nTicket A is sold for \\(\\frac{5}{6}\\) of its normal price.\n\n\\[\n\\text{normal price of A}=140\\times \\frac{6}{5}=168\n\\]\n\nTicket B has a \\(20\\%\\) discount, so its sale price is \\(80\\%\\) of the normal price.\n\n\\[\n\\text{normal price of B}=136\\div 0.80=170\n\\]\n\nThe difference is\n\n\\[\n170-168=2\n\\]\n\n**Answer:** The difference in normal prices is \\(2\\) euros.",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q11__p13-13__m03__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Algebraic Fractions.\n\n**Solution**\n\n\\[\n\\frac34+\\frac{5-x}{6x}\n\\]\n\nThe common denominator is \\(12x\\):\n\n\\[\n\\frac34=\\frac{9x}{12x}\n\\]\n\n\\[\n\\frac{5-x}{6x}=\\frac{10-2x}{12x}\n\\]\n\n\\[\n\\frac{9x+10-2x}{12x}\n=\\frac{7x+10}{12x}\n\\]\n\n**Answer:** \\(\\frac{7x+10}{12x}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q15__p18-18__m03__Rearranging-Formulas": {
+      "status": "checked",
+      "source": "**Topic check:** Rearranging formulas. The tag is correct.\n\n**Solution**\n\n\\[\nx=\\frac{3p+n}{3n-4}\n\\]\n\n\\[\nx(3n-4)=3p+n\n\\]\n\n\\[\n3xn-4x=3p+n\n\\]\n\n\\[\nn(3x-1)=3p+4x\n\\]\n\n**Answer:** \\(n=\\frac{3p+4x}{3x-1}\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q02__p04-04__m06__Forming-and-Solving-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to forming and solving equations. The contextual equation carries the main marks.\n\n**Solution**\n\n(a)\n\\[\n12pq-18p=6p(2q-3)\n\\]\n\n(b) The total number of bars is 56, so\n\\[\ny+(3y+7)+(2y-5)=56\n\\]\n\n\\[\n6y+2=56\n\\]\n\n\\[\ny=9\n\\]\n\nThe number of zinc bars is\n\\[\n2y-5=2(9)-5=13\n\\]\n\n**Answer:** (a) \\(6p(2q-3)\\), (b) \\(13\\) zinc bars",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q19__p22-22__m06__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Sequences. The tag is correct.\n\n**Solution**\n\nThe sequence is\n\\[\n3,\\ 7,\\ 11,\\ 15\n\\]\n\nThe common difference is \\(4\\), so the nth term is\n\\[\n4n-1\n\\]\n\nThe last term is \\(x\\), so\n\\[\nx=4n-1\n\\]\n\n\\[\nn=\\frac{x+1}{4}\n\\]\n\nThe sum is 7260:\n\\[\n\\frac{n}{2}(3+x)=7260\n\\]\n\nSubstitute \\(n=\\dfrac{x+1}{4}\\):\n\\[\n\\frac{x+1}{8}(x+3)=7260\n\\]\n\n\\[\n(x+1)(x+3)=58080\n\\]\n\n\\[\nx^2+4x-58077=0\n\\]\n\nFactorise:\n\\[\n(x-239)(x+243)=0\n\\]\n\nThe last term is positive, so\n\\[\nx=239\n\\]\n\n**Answer:** \\(x=239\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q22__p25-25__m06__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe centre of the circle is \\((0,0)\\), and\n\n\\[\nP=(8,-10)\n\\]\n\nThe gradient of \\(OP\\) is\n\n\\[\n\\frac{-10}{8}=-\\frac54\n\\]\n\nSo the gradient of the tangent is\n\n\\[\n\\frac45\n\\]\n\nThe tangent through \\(P\\) is\n\n\\[\ny+10=\\frac45(x-8)\n\\]\n\n\\[\ny=\\frac45x-\\frac{82}{5}\n\\]\n\nAt the \\(x\\)-axis, \\(y=0\\):\n\n\\[\n0=\\frac45x-\\frac{82}{5}\n\\]\n\n\\[\nx=\\frac{41}{2}\n\\]\n\nSo\n\n\\[\nQ=\\left(\\frac{41}{2},0\\right)\n\\]\n\nAt the \\(y\\)-axis, \\(x=0\\):\n\n\\[\nR=\\left(0,-\\frac{82}{5}\\right)\n\\]\n\nTherefore\n\n\\[\nRQ=\\sqrt{\\left(\\frac{41}{2}\\right)^2+\\left(\\frac{82}{5}\\right)^2}\n\\]\n\n\\[\nRQ=26.252...\n\\]\n\n**Answer:** \\(26.3\\text{ cm}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q12__p14-15__m05__Graphs-of-Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is a table-and-graph question for a cubic function.\n\n**Solution**\n\n\\[\ny=x^3-3x+1\n\\]\n\nThe completed table is:\n\n\\[\n\\begin{array}{c|rrrrr}\nx&-2&-1&0&1&2\\\\\n\\hline\ny&-1&3&1&-1&3\n\\end{array}\n\\]\n\nThe graph of\n\\[\ny=-\\frac1{x^2}\n\\]\nis below the \\(x\\)-axis on both sides and is symmetrical in the \\(y\\)-axis.\n\n**Answer:** The graph letter is D.",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q08__p10-10__m05__Graphing-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This combines solving and identifying inequalities.\n\n**Solution**\n\nFor part (a),\n\\[\n8x-4\\geq3x-10\n\\]\n\n\\[\n5x\\geq-6\n\\]\n\n\\[\nx\\geq-\\frac65\n\\]\n\nFor part (b), the region is above \\(y=2\\), left of \\(x=7\\), and below \\(y=x\\):\n\\[\ny\\geq2\n\\]\n\n\\[\nx\\leq7\n\\]\n\n\\[\ny\\leq x\n\\]\n\n**Answer:** (a) \\(x\\geq-\\frac65\\). (b) \\(y\\geq2\\), \\(x\\leq7\\), \\(y\\leq x\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q24__p28-28__m04__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Functions to Transformations of Graphs.\n\n**Method**\n\nFor part (a),\n\n\\[\nf(x)=5x^2+9x+2\n\\]\n\n\\[\ng(x)=5(x+4)^2+9(x+4)+8\n\\]\n\nSince\n\n\\[\nf(x+4)=5(x+4)^2+9(x+4)+2\n\\]\n\n\\[\ng(x)=f(x+4)+6\n\\]\n\nSo the graph has moved 4 units left and 6 units up.\n\n\\[\n\\begin{pmatrix}a\\\\b\\end{pmatrix}\n=\n\\begin{pmatrix}-4\\\\6\\end{pmatrix}\n\\]\n\nFor part (b), the graph has maximum value \\(3\\) and minimum value \\(-3\\), so\n\n\\[\np=3\n\\]\n\nThe minimum occurs when\n\n\\[\nx+q=180\n\\]\n\nFrom the graph, the minimum is at \\(x=135\\), so\n\n\\[\n135+q=180\n\\]\n\n\\[\nq=45\n\\]\n\n**Answer:** \\(a=-4,\\ b=6,\\ p=3,\\ q=45\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q16__p19-19__m04__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to differentiation. The question asks where a curve has a given gradient.\n\n**Solution**\n\n\\[\ny=4x^3-8x+5\n\\]\n\n\\[\n\\frac{dy}{dx}=12x^2-8\n\\]\n\nThe gradient is \\(\\frac13\\), so\n\\[\n12x^2-8=\\frac13\n\\]\n\n\\[\n12x^2=\\frac{25}{3}\n\\]\n\n\\[\nx^2=\\frac{25}{36}\n\\]\n\n\\[\nx=\\frac56 \\quad \\text{or} \\quad x=-\\frac56\n\\]\n\n**Answer:** \\(x=\\frac56\\) or \\(x=-\\frac56\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q18__p21-21__m05__Bearings-Scale-Drawing-and-Constructions": {
+      "status": "checked",
+      "source": "**Topic check:** Bearings, Scale Drawing & Constructions. The tag is correct.\n\n**Solution**\n\nThe bearing of \\(B\\) from \\(A\\) is \\(054^\\circ\\), so the bearing of \\(A\\) from \\(B\\) is\n\\[\n054^\\circ+180^\\circ=234^\\circ\n\\]\n\nThe bearing of \\(C\\) from \\(B\\) is \\(132^\\circ\\).\n\nSo\n\\[\n\\angle ABC=234^\\circ-132^\\circ=102^\\circ\n\\]\n\nUse the cosine rule to find \\(AC\\):\n\\[\nAC^2=3.6^2+8.4^2-2(3.6)(8.4)\\cos 102^\\circ\n\\]\n\n\\[\nAC=9.8028\\ldots\\text{ km}\n\\]\n\nTotal distance walked:\n\\[\n3.6+8.4+9.8028\\ldots=21.8028\\ldots\\text{ km}\n\\]\n\nAt \\(6\\text{ km/h}\\), time is\n\\[\n21.8028\\ldots\\div 6=3.6338\\ldots\\text{ hours}\n\\]\n\n\\[\n0.6338\\ldots\\times 60=38.0\\ldots\\text{ minutes}\n\\]\n\n**Answer:** \\(3\\) hours \\(38\\) minutes.",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q14__p17-17__m03__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Circle Theorems. The tag is correct.\n\n**Solution**\n\nSince \\(OA=OC\\), triangle \\(AOC\\) is isosceles.\n\n\\[\n\\angle ACO=\\angle OAC=52^\\circ\n\\]\n\nSo\n\\[\n\\angle AOC=180^\\circ-52^\\circ-52^\\circ=76^\\circ\n\\]\n\nThe angle at the circumference is half the angle at the centre standing on the same arc:\n\\[\n\\angle ABC=\\frac{76^\\circ}{2}=38^\\circ\n\\]\n\n**Answer:** \\(38^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q05__p07-07__m03__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to circles, arcs and sectors.\n\n**Solution**\n\nEach semicircle has diameter \\(20\\text{ cm}\\), so each has radius \\(10\\text{ cm}\\).\n\nThe total curved perimeter is three semicircles:\n\\[\n3\\times \\pi r = 3\\times10\\pi=30\\pi\n\\]\n\nThe two exposed straight parts are\n\\[\nAB=10,\n\\qquad\nDE=10\n\\]\n\nSo the perimeter is\n\\[\n30\\pi+20=114.2\\ldots\n\\]\n\n**Answer:** \\(114\\text{ cm}\\) to the nearest whole number.",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q21__p24-24__m05__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe triangular cross-section is triangle \\(DEF\\).\n\nIt is right-angled at \\(E\\), with\n\n\\[\nDF=28\n\\]\n\nand\n\n\\[\n\\angle FDE=30^\\circ\n\\]\n\nSo\n\n\\[\nFE=28\\sin 30^\\circ=14\n\\]\n\nand\n\n\\[\nDE=28\\cos 30^\\circ=14\\sqrt3\n\\]\n\nArea of triangle \\(DEF\\):\n\n\\[\n\\frac{1}{2}(14)(14\\sqrt3)=98\\sqrt3\n\\]\n\nThe length of the prism is\n\n\\[\nAD=53\n\\]\n\nVolume of the prism:\n\n\\[\n98\\sqrt3\\times 53\n\\]\n\n\\[\n=5194\\sqrt3\n\\]\n\n\\[\n=8996.2719\\ldots\n\\]\n\n**Answer:** \\(\\boxed{8996\\text{ cm}^3}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q23__p26-27__m05__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe area ratio of solid A to solid B is\n\n\\[\n7776:486=16:1\n\\]\n\nSo the linear ratio A:B is\n\n\\[\n\\sqrt{16}:1=4:1\n\\]\n\nTherefore the volume ratio A:B is\n\n\\[\n4^3:1^3=64:1\n\\]\n\nThe volumes are \\(8^x\\) and \\(2^{x+4}\\), so\n\n\\[\n\\frac{8^x}{2^{x+4}}=64\n\\]\n\nWrite \\(8^x\\) as a power of 2:\n\n\\[\n8^x=(2^3)^x=2^{3x}\n\\]\n\nSo\n\n\\[\n\\frac{2^{3x}}{2^{x+4}}=2^6\n\\]\n\n\\[\n2^{3x-(x+4)}=2^6\n\\]\n\n\\[\n2x-4=6\n\\]\n\n\\[\nx=5\n\\]\n\nThe height of solid A is\n\n\\[\n3^x=3^5=243\n\\]\n\nSince the linear ratio A:B is \\(4:1\\), the height of solid B is\n\n\\[\n\\frac{243}{4}=60.75\n\\]\n\n**Answer:** \\(\\boxed{60.75\\text{ cm}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q10__p12-12__m05__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Right-Angled Triangles - Pythagoras & Trigonometry.\n\n**Solution**\n\nLet the perpendicular from \\(C\\) meet \\(AB\\) at \\(F\\).\n\n\\[\nAF=\\frac{8}{\\tan 40^\\circ}=9.534\\ldots\n\\]\n\n\\[\nFB=22-9.534\\ldots=12.465\\ldots\n\\]\n\nIn right-angled triangle \\(CFB\\),\n\\[\n\\tan x=\\frac{8}{12.465\\ldots}\n\\]\n\n\\[\nx=32.7^\\circ\n\\]\n\n**Answer:** \\(32.7^\\circ\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q17__p20-20__m03__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Histograms. The tag is correct.\n\n**Solution**\n\nThe \\(0\\) to \\(20\\) gram class has frequency \\(24\\), so its density is\n\n\\[\n\\frac{24}{20}=1.2\n\\]\n\nFrom the histogram scale, the density for \\(30<w\\le 50\\) is about \\(2.2\\), and the density for \\(50<w\\le 65\\) is about \\(1.8\\).\n\nMedium oranges weigh between \\(35\\) g and \\(55\\) g:\n\n\\[\n15(2.2)+5(1.8)=33+9=42\n\\]\n\n**Answer:** about \\(42\\) medium oranges.",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2023_P1H__Q13__p16-16__m04__Cumulative-Frequency-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nThere are \\(80\\) adults, so the median is the \\(40\\)th value.\n\nFrom the graph,\n\n\\[\n\\text{median}\\approx 25\\text{ seconds}\n\\]\n\nAt \\(50\\) seconds, the cumulative frequency is about \\(75\\).\n\n\\[\n80-75=5\n\\]\n\n\\[\n\\frac{5}{80}\\times 100=6.25\\%\n\\]\n\n**Answers:** median about \\(25\\) seconds, and about \\(6\\%\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Nov2023_P1H__Q04__p06-06__m04__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\nLet the probability of white be \\(x\\). Then the probability of orange is \\(2x\\).\n\n\\[\n0.38+2x+x=1\n\\]\n\n\\[\n3x=0.62\n\\]\n\n\\[\nx\\approx 0.207\n\\]\n\nExpected blue sweets:\n\n\\[\n250\\times 0.38=95\n\\]\n\n**Answers:** \\(0.207\\), and \\(95\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Nov2023_P1H__Q20__p23-23__m04__Probability-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Probability Toolkit.\n\n**Method**\n\nLet the probability of taking a 10 cent coin be \\(p\\).\n\nThe mean is 10 cents only when both coins are 10 cent coins.\n\n\\[\np^2=\\frac{49}{121}\n\\]\n\n\\[\np=\\frac{7}{11}\n\\]\n\nSo the probability of taking a 20 cent coin is\n\n\\[\n1-\\frac{7}{11}=\\frac{4}{11}\n\\]\n\nThe mean is 15 cents when one coin is 10 cents and the other is 20 cents.\n\nThere are two possible orders:\n\n\\[\nP(10,20)+P(20,10)\n\\]\n\n\\[\n=\\frac{7}{11}\\cdot\\frac{4}{11}+\\frac{4}{11}\\cdot\\frac{7}{11}\n\\]\n\n\\[\n=\\frac{56}{121}\n\\]\n\n**Answer:** \\(\\frac{56}{121}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2023_P1H__Q22__p25-25__m06__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe centre of the circle is \\((0,0)\\), and\n\n\\[\nP=(8,-10)\n\\]\n\nThe gradient of \\(OP\\) is\n\n\\[\n\\frac{-10}{8}=-\\frac54\n\\]\n\nSo the gradient of the tangent is\n\n\\[\n\\frac45\n\\]\n\nThe tangent through \\(P\\) is\n\n\\[\ny+10=\\frac45(x-8)\n\\]\n\n\\[\ny=\\frac45x-\\frac{82}{5}\n\\]\n\nAt the \\(x\\)-axis, \\(y=0\\):\n\n\\[\n0=\\frac45x-\\frac{82}{5}\n\\]\n\n\\[\nx=\\frac{41}{2}\n\\]\n\nSo\n\n\\[\nQ=\\left(\\frac{41}{2},0\\right)\n\\]\n\nAt the \\(y\\)-axis, \\(x=0\\):\n\n\\[\nR=\\left(0,-\\frac{82}{5}\\right)\n\\]\n\nTherefore\n\n\\[\nRQ=\\sqrt{\\left(\\frac{41}{2}\\right)^2+\\left(\\frac{82}{5}\\right)^2}\n\\]\n\n\\[\nRQ=26.252...\n\\]\n\n**Answer:** \\(26.3\\text{ cm}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2023_P1H__Q24__p28-28__m04__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Functions to Transformations of Graphs.\n\n**Method**\n\nFor part (a),\n\n\\[\nf(x)=5x^2+9x+2\n\\]\n\n\\[\ng(x)=5(x+4)^2+9(x+4)+8\n\\]\n\nSince\n\n\\[\nf(x+4)=5(x+4)^2+9(x+4)+2\n\\]\n\n\\[\ng(x)=f(x+4)+6\n\\]\n\nSo the graph has moved 4 units left and 6 units up.\n\n\\[\n\\begin{pmatrix}a\\\\b\\end{pmatrix}\n=\n\\begin{pmatrix}-4\\\\6\\end{pmatrix}\n\\]\n\nFor part (b), the graph has maximum value \\(3\\) and minimum value \\(-3\\), so\n\n\\[\np=3\n\\]\n\nThe minimum occurs when\n\n\\[\nx+q=180\n\\]\n\nFrom the graph, the minimum is at \\(x=135\\), so\n\n\\[\n135+q=180\n\\]\n\n\\[\nq=45\n\\]\n\n**Answer:** \\(a=-4,\\ b=6,\\ p=3,\\ q=45\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2023_P1H__Q21__p24-24__m05__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe triangular cross-section is triangle \\(DEF\\).\n\nIt is right-angled at \\(E\\), with\n\n\\[\nDF=28\n\\]\n\nand\n\n\\[\n\\angle FDE=30^\\circ\n\\]\n\nSo\n\n\\[\nFE=28\\sin 30^\\circ=14\n\\]\n\nand\n\n\\[\nDE=28\\cos 30^\\circ=14\\sqrt3\n\\]\n\nArea of triangle \\(DEF\\):\n\n\\[\n\\frac{1}{2}(14)(14\\sqrt3)=98\\sqrt3\n\\]\n\nThe length of the prism is\n\n\\[\nAD=53\n\\]\n\nVolume of the prism:\n\n\\[\n98\\sqrt3\\times 53\n\\]\n\n\\[\n=5194\\sqrt3\n\\]\n\n\\[\n=8996.2719\\ldots\n\\]\n\n**Answer:** \\(\\boxed{8996\\text{ cm}^3}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2023_P1H__Q23__p26-27__m05__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe area ratio of solid A to solid B is\n\n\\[\n7776:486=16:1\n\\]\n\nSo the linear ratio A:B is\n\n\\[\n\\sqrt{16}:1=4:1\n\\]\n\nTherefore the volume ratio A:B is\n\n\\[\n4^3:1^3=64:1\n\\]\n\nThe volumes are \\(8^x\\) and \\(2^{x+4}\\), so\n\n\\[\n\\frac{8^x}{2^{x+4}}=64\n\\]\n\nWrite \\(8^x\\) as a power of 2:\n\n\\[\n8^x=(2^3)^x=2^{3x}\n\\]\n\nSo\n\n\\[\n\\frac{2^{3x}}{2^{x+4}}=2^6\n\\]\n\n\\[\n2^{3x-(x+4)}=2^6\n\\]\n\n\\[\n2x-4=6\n\\]\n\n\\[\nx=5\n\\]\n\nThe height of solid A is\n\n\\[\n3^x=3^5=243\n\\]\n\nSince the linear ratio A:B is \\(4:1\\), the height of solid B is\n\n\\[\n\\frac{243}{4}=60.75\n\\]\n\n**Answer:** \\(\\boxed{60.75\\text{ cm}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2023_P1H__Q20__p23-23__m04__Probability-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Probability Toolkit.\n\n**Method**\n\nLet the probability of taking a 10 cent coin be \\(p\\).\n\nThe mean is 10 cents only when both coins are 10 cent coins.\n\n\\[\np^2=\\frac{49}{121}\n\\]\n\n\\[\np=\\frac{7}{11}\n\\]\n\nSo the probability of taking a 20 cent coin is\n\n\\[\n1-\\frac{7}{11}=\\frac{4}{11}\n\\]\n\nThe mean is 15 cents when one coin is 10 cents and the other is 20 cents.\n\nThere are two possible orders:\n\n\\[\nP(10,20)+P(20,10)\n\\]\n\n\\[\n=\\frac{7}{11}\\cdot\\frac{4}{11}+\\frac{4}{11}\\cdot\\frac{7}{11}\n\\]\n\n\\[\n=\\frac{56}{121}\n\\]\n\n**Answer:** \\(\\frac{56}{121}\\)",
+      "updated": "2026-05-05T16:25:30",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "paperSlug": "Jun2022_P1HR",
+  "solutions": {
+    "all::Jun2022_P1HR__Q12__p14-14__m03__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\nP=3^3\\times 5^2\\times 7\n\\]\n\n\\[\nQ=3^2\\times 5\\times 7^2\n\\]\n\nFor the HCF, take the smaller power of each common prime:\n\n\\[\n\\text{HCF}=3^2\\times 5\\times 7\n\\]\n\nFor \\(P^3\\times Q\\):\n\n\\[\nP^3=(3^3\\times 5^2\\times 7)^3=3^9\\times 5^6\\times 7^3\n\\]\n\nNow multiply by \\(Q\\):\n\n\\[\nP^3\\times Q=(3^9\\times 5^6\\times 7^3)(3^2\\times 5\\times 7^2)\n\\]\n\n\\[\nP^3\\times Q=3^{11}\\times 5^7\\times 7^5\n\\]\n\n**Answer:** (a) \\(3^2\\times 5\\times 7\\), (b) \\(3^{11}\\times 5^7\\times 7^5\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q06__p08-08__m03__Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Fractions. The tag is correct.\n\n**Method**\n\n\\[\n2\\frac23=\\frac83\n\\]\n\n\\[\n3\\frac34=\\frac{15}{4}\n\\]\n\nUse a common denominator:\n\n\\[\n\\frac83+\\frac{15}{4}\n=\\frac{32}{12}+\\frac{45}{12}\n\\]\n\n\\[\n=\\frac{77}{12}=6\\frac5{12}\n\\]\n\n**Answer:** \\(6\\frac5{12}\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q04__p06-06__m04__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nTotal students:\n\n\\[\n180\n\\]\n\nFrench:\n\n\\[\n15\n\\]\n\nGerman:\n\n\\[\n45\\%\\times 180=81\n\\]\n\nFrench or German:\n\n\\[\n15+81=96\n\\]\n\nItalian or Spanish:\n\n\\[\n180-96=84\n\\]\n\nWrite \\(84\\) as a percentage of \\(96\\):\n\n\\[\n\\frac{84}{96}\\times 100=87.5\n\\]\n\n**Answer:** \\(87.5\\%\\)",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q08__p10-10__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nA depreciation of \\(15\\%\\) gives multiplier\n\n\\[\n0.85\n\\]\n\nAfter 4 years,\n\n\\[\n18000(0.85)^4=9396.1125\n\\]\n\nCorrect to the nearest dollar,\n\n\\[\n9396.1125\\approx 9396\n\\]\n\n**Answer:** \\(\\$9396\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q21__p23-23__m04__Surds": {
+      "status": "checked",
+      "source": "**Topic check:** Surds. The tag is correct.\n\n**Method**\n\n\\[\n\\frac{3+\\sqrt8}{(\\sqrt2-1)^2}\n\\]\n\nSince \\(\\sqrt8=2\\sqrt2\\),\n\n\\[\n\\frac{3+2\\sqrt2}{(\\sqrt2-1)^2}\n\\]\n\nAlso\n\n\\[\n(\\sqrt2-1)^2=3-2\\sqrt2\n\\]\n\nSo\n\n\\[\n\\frac{3+2\\sqrt2}{3-2\\sqrt2}\\times \\frac{3+2\\sqrt2}{3+2\\sqrt2}\n=\\frac{(3+2\\sqrt2)^2}{9-8}\n\\]\n\n\\[\n=(3+2\\sqrt2)^2=9+12\\sqrt2+8\n\\]\n\n\\[\n=17+12\\sqrt2=17+\\sqrt{288}\n\\]\n\n**Answer:** \\(17+\\sqrt{288}\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q16__p18-18__m06__Expanding-Brackets": {
+      "status": "checked",
+      "source": "**Topic check:** Expanding brackets. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n(3x-1)(x+2)(3x+1)=(9x^2-1)(x+2)\n\\]\n\n\\[\n=9x^3+18x^2-x-2\n\\]\n\n(b)\n\\[\n\\left(\\frac{2x^5}{8xy^2}\\right)^{-2}\n=\\left(\\frac{x^4}{4y^2}\\right)^{-2}\n\\]\n\n\\[\n=\\left(\\frac{4y^2}{x^4}\\right)^2=\\frac{16y^4}{x^8}\n\\]\n\n**Answer:** (a) \\(9x^3+18x^2-x-2\\), (b) \\(\\frac{16y^4}{x^8}\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q05__p07-07__m05__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to factorising. The original tag was expanding brackets, but the quadratic factorising part is larger.\n\n**Solution**\n\n(a) \\(3c^3(c+4)=3c^4+12c^3\\).\n\n(b)(i)\n\\[\nx^2+8x-9=(x+9)(x-1)\n\\]\n\n(b)(ii)\n\\[\n(x+9)(x-1)=0\n\\]\n\n**Answer:** (a) \\(3c^4+12c^3\\), (b)(i) \\((x+9)(x-1)\\), (b)(ii) \\(x=-9\\) or \\(x=1\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q23__p26-26__m05__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n(a)\n\n\\[\n2x^2-12x+3=2(x^2-6x)+3\n\\]\n\n\\[\n=2\\left((x-3)^2-9\\right)+3\n\\]\n\n\\[\n=2(x-3)^2-18+3\n\\]\n\n\\[\n=2(x-3)^2-15\n\\]\n\n(b)\n\n\\[\ny=2(x+4)^2-12(x+4)+3\n\\]\n\nLet \\(u=x+4\\). From part (a),\n\n\\[\n2u^2-12u+3=2(u-3)^2-15\n\\]\n\nSo\n\n\\[\ny=2((x+4)-3)^2-15\n\\]\n\n\\[\ny=2(x+1)^2-15\n\\]\n\nThe minimum point is when \\(x=-1\\), giving \\(y=-15\\).\n\n**Answer:** (a) \\(2(x-3)^2-15\\), (b) \\(M=(-1,-15)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q09__p10-10__m02__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Solving inequalities. The tag is correct.\n\n**Solution**\n\n\\[\n3-4x\\le11\n\\]\n\n\\[\n-4x\\le8\n\\]\n\nDivide by \\(-4\\), reversing the inequality:\n\\[\nx\\ge-2\n\\]\n\n**Answer:** \\(x\\ge-2\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q14__p16-16__m04__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\n\\[\n3x-5y=25\n\\]\n\n\\[\n4x+3y=14\n\\]\n\nMultiply the first equation by 3:\n\\[\n9x-15y=75\n\\]\n\nMultiply the second equation by 5:\n\\[\n20x+15y=70\n\\]\n\nAdd:\n\\[\n29x=145\n\\]\n\n\\[\nx=5\n\\]\n\nSubstitute into \\(3x-5y=25\\):\n\\[\n15-5y=25\n\\]\n\n\\[\n-5y=10\n\\]\n\n\\[\ny=-2\n\\]\n\n**Answer:** \\(x=5\\), \\(y=-2\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q02__p04-04__m04__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Sequences. The tag is correct.\n\n**Solution**\n\nFor a shelving unit with 6 type R shelves, there are 5 type S shelves.\n\n\\[\n6(2.4)+5(3.5)=14.4+17.5=31.9\n\\]\n\nFor \\(n\\) type R shelves, there are \\(n-1\\) type S shelves.\n\n\\[\nW=2.4n+3.5(n-1)\n\\]\n\n\\[\nW=2.4n+3.5n-3.5=5.9n-3.5\n\\]\n\n**Answer:** \\(31.9\\text{ m}\\), and \\(W=5.9n-3.5\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q25__p28-28__m05__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nS_{10}=4S_5\n\\]\n\nUse\n\n\\[\nS_n=\\frac n2(2a+(n-1)d)\n\\]\n\n\\[\nS_{10}=5(2a+9d)\n\\]\n\n\\[\nS_5=\\frac52(2a+4d)=5(a+2d)\n\\]\n\nSo\n\n\\[\n5(2a+9d)=4\\cdot 5(a+2d)\n\\]\n\n\\[\n2a+9d=4a+8d\n\\]\n\n\\[\nd=2a\n\\]\n\nThe 8th term is 45:\n\n\\[\nu_8=a+7d=45\n\\]\n\n\\[\na+7(2a)=45\n\\]\n\n\\[\n15a=45\n\\]\n\n\\[\na=3\n\\]\n\n**Answer:** The first term is \\(3\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q10__p11-11__m03__Linear-Graphs-y-mx-c": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to linear graphs. The question asks for an equation of a line from its graph.\n\n**Solution**\n\nFrom the graph, the line crosses the y-axis at \\(-1\\), so\n\\[\nc=-1\n\\]\n\nUsing two points on the line, for example \\((0,-1)\\) and \\((2,2)\\), the gradient is\n\\[\n\\frac{2-(-1)}{2-0}=\\frac32\n\\]\n\nSo the equation is\n\\[\ny=\\frac32x-1\n\\]\n\n**Answer:** \\(y=\\frac32x-1\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q22__p24-25__m07__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Estimating Gradients to Differentiation.\n\n**Method**\n\nFor part (a),\n\n\\[\ny=x^2-\\frac{p}{x}\n\\]\n\n\\[\n\\frac{dy}{dx}=2x+\\frac{p}{x^2}\n\\]\n\nAt the minimum point, \\(x=-3\\) and the gradient is 0.\n\n\\[\n2(-3)+\\frac{p}{(-3)^2}=0\n\\]\n\n\\[\n-6+\\frac{p}{9}=0\n\\]\n\n\\[\np=54\n\\]\n\nFor part (b),\n\n\\[\ny=x^2-\\frac{16}{x}\n\\]\n\n\\[\n\\frac{dy}{dx}=2x+\\frac{16}{x^2}\n\\]\n\nAt a horizontal tangent,\n\n\\[\n2x+\\frac{16}{x^2}=0\n\\]\n\n\\[\n2x^3+16=0\n\\]\n\n\\[\nx^3=-8\n\\]\n\n\\[\nx=-2\n\\]\n\nNow substitute \\(x=-2\\) into the curve:\n\n\\[\nk=(-2)^2-\\frac{16}{-2}\n\\]\n\n\\[\nk=4+8=12\n\\]\n\n**Answer:** \\(p=54,\\ k=12\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q07__p09-09__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is density using a cylinder volume.\n\n**Solution**\n\nRadius of the cylinder is\n\\[\n\\frac{18}{2}=9\\text{ cm}\n\\]\n\nVolume is\n\\[\n\\pi r^2h=\\pi(9^2)(3.5)=283.5\\pi\n\\]\n\n\\[\n=890.64\\ldots\\text{ cm}^3\n\\]\n\nMass is\n\\[\n7.04\\text{ kg}=7040\\text{ g}\n\\]\n\nDensity is\n\\[\n\\frac{7040}{890.64\\ldots}=7.904\\ldots\n\\]\n\n**Answer:** \\(7.9\\text{ g/cm}^3\\) to 2 significant figures.",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q15__p17-17__m03__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Circle Theorems. The tag is correct.\n\n**Solution**\n\nOpposite angles in a cyclic quadrilateral add to \\(180^\\circ\\):\n\\[\n\\angle PSR=180^\\circ-136^\\circ=44^\\circ\n\\]\n\nSince \\(PS\\) is a diameter,\n\\[\n\\angle PRS=90^\\circ\n\\]\n\nIn triangle \\(PRS\\),\n\\[\n\\angle RPS=180^\\circ-90^\\circ-44^\\circ=46^\\circ\n\\]\n\n**Answer:** \\(46^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q11__p12-13__m06__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Perimeter. The tag is correct.\n\n**Solution**\n\nIn right-angled triangle \\(ABC\\),\n\\[\nAB^2+BC^2=AC^2\n\\]\n\n\\[\nAB^2+6^2=7.5^2\n\\]\n\n\\[\nAB^2=56.25-36=20.25\n\\]\n\n\\[\nAB=4.5\\text{ cm}\n\\]\n\nArea of triangle \\(ABC\\):\n\\[\n\\frac12\\times 6\\times 4.5=13.5\\text{ cm}^2\n\\]\n\nArea of triangle \\(ADC\\):\n\\[\n31.5-13.5=18\\text{ cm}^2\n\\]\n\nTriangle \\(ADC\\) is right-angled, so\n\\[\n\\frac12\\times AD\\times 7.5=18\n\\]\n\n\\[\nAD=\\frac{36}{7.5}=4.8\n\\]\n\n**Answer:** \\(4.8\\text{ cm}\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q20__p22-22__m04__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Percentages to Area & Volume of Similar Shapes, because the key idea is the relationship between volume scale factor and surface area scale factor for similar solids.\n\n**Method**\n\nThe volume of statue \\(B\\) is \\(20\\%\\) less than statue \\(A\\), so the volume scale factor is \\(0.8\\).\n\nFor similar solids, the linear scale factor is the cube root of the volume scale factor:\n\n\\(\\text{linear scale factor}=\\sqrt[3]{0.8}\\)\n\nSurface area scale factor is the square of the linear scale factor:\n\n\\(\\text{surface area scale factor}=(\\sqrt[3]{0.8})^2=0.8^{2/3}=0.861773...\\)\n\nSo statue \\(B\\) has \\(86.1773...\\%\\) of the surface area of statue \\(A\\).\n\n\\(k=100-86.1773...=13.8226...\\)\n\n**Answer:** \\(k=13.8\\) to 3 significant figures.",
+      "updated": "2026-05-05T00:12:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q17__p19-19__m05__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Sine, Cosine Rule & Area of Triangles. The tag is acceptable because the diagonal is found after triangle geometry.\n\n**Solution**\n\nHeight of the parallelogram:\n\n\\[\nh=\\frac{18}{6.1}=2.9508\\ldots\n\\]\n\nThe horizontal offset from \\(P\\) to \\(S\\) is\n\n\\[\n\\sqrt{3.8^2-h^2}\n=\\sqrt{3.8^2-2.9508\\ldots^2}\n=2.394\\ldots\n\\]\n\nSo the horizontal distance from \\(S\\) to \\(Q\\) is\n\n\\[\n6.1-2.394\\ldots=3.705\\ldots\n\\]\n\n\\[\nQS=\\sqrt{3.705\\ldots^2+2.9508\\ldots^2}\n=4.737\\ldots\n\\]\n\n**Answer:** \\(4.74\\text{ cm}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q18__p20-20__m04__3D-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to 3D Pythagoras and trigonometry. The question asks for a 3D distance through a cube.\n\n**Solution**\n\nThe cube has side length \\(6\\) cm.\n\nLet \\(T\\) be the midpoint of \\(AB\\) and \\(V\\) be the midpoint of \\(CH\\).\n\nThe changes in the three perpendicular directions from \\(T\\) to \\(V\\) are\n\\[\n3,\\quad 3,\\quad 6\n\\]\n\nSo by 3D Pythagoras,\n\\[\nTV=\\sqrt{3^2+3^2+6^2}\n\\]\n\n\\[\nTV=\\sqrt{9+9+36}=\\sqrt{54}\n\\]\n\n**Answer:** \\(\\sqrt{54}\\text{ cm}\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q03__p05-05__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe mean of the five cards is \\(12\\), so the total is\n\n\\[\n5 \\times 12=60\n\\]\n\nThe known total is\n\n\\[\n15+7-2+23=43\n\\]\n\n\\[\nx=60-43=17\n\\]\n\n**Answer:** \\(x=17\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q13__p15-15__m02__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe runs are already in order:\n\n\\[\n0,\\ 1,\\ 1,\\ 3,\\ 5,\\ 6,\\ 7,\\ 7,\\ 8,\\ 9,\\ 9,\\ 12,\\ 12,\\ 15,\\ 16\n\\]\n\nThere are 15 values, so ignore the median when finding the quartiles.\n\n\\[\nQ_1=3,\\qquad Q_3=12\n\\]\n\n\\[\n\\text{IQR}=12-3=9\n\\]\n\n**Answer:** \\(9\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q19__p21-21__m03__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Histograms. The tag is correct.\n\n**Solution**\n\nUse relative densities from the histogram:\n\n\\[\n10,\\ 8,\\ 6,\\ 15,\\ 5,\\ 1\n\\]\n\nThe number of trees with \\(300<h\\le 400\\) is\n\n\\[\n100(6s)=600s\n\\]\n\nThe number of trees with \\(400<h\\le 500\\) is\n\n\\[\n50(15s)+50(5s)=1000s\n\\]\n\nThe difference is \\(8\\):\n\n\\[\n1000s-600s=8\n\\]\n\n\\[\n400s=8\n\\]\n\n\\[\ns=0.02\n\\]\n\nFor height greater than \\(500\\):\n\n\\[\n100(5s)+200(1s)=700s\n\\]\n\n\\[\n700(0.02)=14\n\\]\n\n**Answer:** \\(14\\) trees.",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Jun2022_P1HR__Q01__p03-03__m04__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\n\\[\nP(\\text{red or yellow})=0.25+0.20=0.45\n\\]\n\nThe purple probability is\n\n\\[\n1-0.25-0.20-0.20=0.35\n\\]\n\nExpected purple spins:\n\n\\[\n300\\times 0.35=105\n\\]\n\n**Answers:** \\(0.45\\), \\(0.35\\), \\(105\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Jun2022_P1HR__Q24__p27-27__m05__Probability-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThere are \\(x\\) counters. Initially 5 show red, so \\(x-5\\) show green.\n\nAfter two turns, there are still 5 red faces if:\n\n- the same counter is picked twice, or\n- one red counter and one green counter are picked.\n\nThe probability of picking the same counter twice is\n\n\\[\n\\frac{1}{x}\n\\]\n\nThe probability of picking one red and one green in either order is\n\n\\[\n\\frac{5}{x}\\cdot\\frac{x-5}{x}+\\frac{x-5}{x}\\cdot\\frac{5}{x}\n\\]\n\n\\[\n=\\frac{10(x-5)}{x^2}\n\\]\n\nSo\n\n\\[\n\\frac{1}{x}+\\frac{10(x-5)}{x^2}=\\frac{19}{32}\n\\]\n\n\\[\n\\frac{11x-50}{x^2}=\\frac{19}{32}\n\\]\n\n\\[\n32(11x-50)=19x^2\n\\]\n\n\\[\n19x^2-352x+1600=0\n\\]\n\n\\[\n(x-8)(19x-200)=0\n\\]\n\nSince \\(x\\) must be a whole number,\n\n\\[\nx=8\n\\]\n\n**Answer:** \\(x=8\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P1HR__Q21__p23-23__m04__Surds": {
+      "status": "checked",
+      "source": "**Topic check:** Surds is correct.\n\n**Method**\n\n\\[\n\\frac{3+\\sqrt{8}}{(\\sqrt{2}-1)^2}\n\\]\n\nFirst simplify:\n\n\\[\n\\sqrt{8}=2\\sqrt{2}\n\\]\n\nand\n\n\\[\n(\\sqrt{2}-1)^2=2-2\\sqrt{2}+1=3-2\\sqrt{2}\n\\]\n\nSo\n\n\\[\n\\frac{3+2\\sqrt{2}}{3-2\\sqrt{2}}\n\\]\n\nRationalise the denominator:\n\n\\[\n\\frac{3+2\\sqrt{2}}{3-2\\sqrt{2}}\\times \\frac{3+2\\sqrt{2}}{3+2\\sqrt{2}}\n=\\frac{(3+2\\sqrt{2})^2}{9-8}\n\\]\n\n\\[\n(3+2\\sqrt{2})^2=9+12\\sqrt{2}+8=17+12\\sqrt{2}\n\\]\n\n**Answer:** \\(17+12\\sqrt{2}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P1HR__Q23__p26-26__m05__Completing-the-Square": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n(a)\n\n\\[\n2x^2-12x+3=2(x^2-6x)+3\n\\]\n\n\\[\n=2\\left((x-3)^2-9\\right)+3\n\\]\n\n\\[\n=2(x-3)^2-18+3\n\\]\n\n\\[\n=2(x-3)^2-15\n\\]\n\n(b)\n\n\\[\ny=2(x+4)^2-12(x+4)+3\n\\]\n\nLet \\(u=x+4\\). From part (a),\n\n\\[\n2u^2-12u+3=2(u-3)^2-15\n\\]\n\nSo\n\n\\[\ny=2((x+4)-3)^2-15\n\\]\n\n\\[\ny=2(x+1)^2-15\n\\]\n\nThe minimum point is when \\(x=-1\\), giving \\(y=-15\\).\n\n**Answer:** (a) \\(2(x-3)^2-15\\), (b) \\(M=(-1,-15)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P1HR__Q25__p28-28__m05__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nS_{10}=4S_5\n\\]\n\nUse\n\n\\[\nS_n=\\frac n2(2a+(n-1)d)\n\\]\n\n\\[\nS_{10}=5(2a+9d)\n\\]\n\n\\[\nS_5=\\frac52(2a+4d)=5(a+2d)\n\\]\n\nSo\n\n\\[\n5(2a+9d)=4\\cdot 5(a+2d)\n\\]\n\n\\[\n2a+9d=4a+8d\n\\]\n\n\\[\nd=2a\n\\]\n\nThe 8th term is 45:\n\n\\[\nu_8=a+7d=45\n\\]\n\n\\[\na+7(2a)=45\n\\]\n\n\\[\n15a=45\n\\]\n\n\\[\na=3\n\\]\n\n**Answer:** The first term is \\(3\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P1HR__Q22__p24-25__m07__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Moved from Estimating Gradients to Differentiation.\n\n**Method**\n\nFor part (a),\n\n\\[\ny=x^2-\\frac{p}{x}\n\\]\n\n\\[\n\\frac{dy}{dx}=2x+\\frac{p}{x^2}\n\\]\n\nAt the minimum point, \\(x=-3\\) and the gradient is 0.\n\n\\[\n2(-3)+\\frac{p}{(-3)^2}=0\n\\]\n\n\\[\n-6+\\frac{p}{9}=0\n\\]\n\n\\[\np=54\n\\]\n\nFor part (b),\n\n\\[\ny=x^2-\\frac{16}{x}\n\\]\n\n\\[\n\\frac{dy}{dx}=2x+\\frac{16}{x^2}\n\\]\n\nAt a horizontal tangent,\n\n\\[\n2x+\\frac{16}{x^2}=0\n\\]\n\n\\[\n2x^3+16=0\n\\]\n\n\\[\nx^3=-8\n\\]\n\n\\[\nx=-2\n\\]\n\nNow substitute \\(x=-2\\) into the curve:\n\n\\[\nk=(-2)^2-\\frac{16}{-2}\n\\]\n\n\\[\nk=4+8=12\n\\]\n\n**Answer:** \\(p=54,\\ k=12\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P1HR__Q20__p22-22__m04__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Percentages to Area & Volume of Similar Shapes, because the key idea is the relationship between volume scale factor and surface area scale factor for similar solids.\n\n**Method**\n\nThe volume of statue \\(B\\) is \\(20\\%\\) less than statue \\(A\\), so the volume scale factor is \\(0.8\\).\n\nFor similar solids, the linear scale factor is the cube root of the volume scale factor:\n\n\\(\\text{linear scale factor}=\\sqrt[3]{0.8}\\)\n\nSurface area scale factor is the square of the linear scale factor:\n\n\\(\\text{surface area scale factor}=(\\sqrt[3]{0.8})^2=0.8^{2/3}=0.861773...\\)\n\nSo statue \\(B\\) has \\(86.1773...\\%\\) of the surface area of statue \\(A\\).\n\n\\(k=100-86.1773...=13.8226...\\)\n\n**Answer:** \\(k=13.8\\) to 3 significant figures.",
+      "updated": "2026-05-05T00:12:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Jun2022_P1HR__Q24__p27-27__m05__Probability-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThere are \\(x\\) counters. Initially 5 show red, so \\(x-5\\) show green.\n\nAfter two turns, there are still 5 red faces if:\n\n- the same counter is picked twice, or\n- one red counter and one green counter are picked.\n\nThe probability of picking the same counter twice is\n\n\\[\n\\frac{1}{x}\n\\]\n\nThe probability of picking one red and one green in either order is\n\n\\[\n\\frac{5}{x}\\cdot\\frac{x-5}{x}+\\frac{x-5}{x}\\cdot\\frac{5}{x}\n\\]\n\n\\[\n=\\frac{10(x-5)}{x^2}\n\\]\n\nSo\n\n\\[\n\\frac{1}{x}+\\frac{10(x-5)}{x^2}=\\frac{19}{32}\n\\]\n\n\\[\n\\frac{11x-50}{x^2}=\\frac{19}{32}\n\\]\n\n\\[\n32(11x-50)=19x^2\n\\]\n\n\\[\n19x^2-352x+1600=0\n\\]\n\n\\[\n(x-8)(19x-200)=0\n\\]\n\nSince \\(x\\) must be a whole number,\n\n\\[\nx=8\n\\]\n\n**Answer:** \\(x=8\\)",
+      "updated": "2026-05-05T16:25:30",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

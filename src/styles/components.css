@@ -1,0 +1,195 @@
+/* =================================================================
+   Shared component classes — keep light, lean on tokens
+   ================================================================= */
+
+/* --- Container --- */
+.container       { max-width: var(--container);        margin: 0 auto; padding: 0 var(--space-3); }
+.container-wide  { max-width: var(--container-wide);   margin: 0 auto; padding: 0 var(--space-3); }
+.container-narrow{ max-width: var(--container-narrow); margin: 0 auto; padding: 0 var(--space-3); }
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  min-height: 44px;
+  padding: 10px var(--space-3);
+  border: 1px solid var(--navy);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--navy);
+  font-weight: var(--weight-bold);
+  font-size: var(--type-meta);
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn:hover {
+  background: var(--navy);
+  color: var(--paper);
+}
+.btn:active { transform: translateY(1px); }
+.btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.btn-primary {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--navy);
+}
+.btn-primary:hover {
+  background: var(--gold-deep);
+  border-color: var(--gold-deep);
+  color: var(--paper);
+}
+
+.btn-ghost {
+  border-color: transparent;
+  background: transparent;
+}
+.btn-ghost:hover {
+  background: var(--gold-soft);
+  border-color: var(--gold-soft);
+  color: var(--navy);
+}
+
+.btn-icon {
+  min-height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: var(--radius-full);
+}
+
+.btn-sm {
+  min-height: 36px;
+  padding: 6px var(--space-2);
+  font-size: 13px;
+}
+
+.btn-lg {
+  min-height: 56px;
+  padding: 14px var(--space-4);
+  font-size: var(--type-body);
+}
+
+/* --- Card --- */
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-bordered {
+  border: 1px solid var(--line-strong);
+  box-shadow: 0 0 0 1px var(--gold-soft) inset;
+}
+
+/* --- Badge / chip --- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: var(--gold-soft);
+  color: var(--navy);
+  font-size: 12px;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.badge-muted { background: var(--line); color: var(--muted); }
+.badge-navy  { background: var(--navy);  color: var(--paper); }
+.badge-gold  { background: var(--gold);  color: var(--navy);  }
+
+/* --- Pill (filter pills) --- */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-full);
+  background: var(--paper);
+  color: var(--navy);
+  font-size: var(--type-meta);
+  font-weight: var(--weight-bold);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.pill:hover { border-color: var(--navy); }
+.pill[aria-pressed="true"], .pill.is-active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--paper);
+}
+
+/* --- Form inputs --- */
+.input, .select, .textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--navy);
+  font-size: var(--type-body);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.input:focus, .select:focus, .textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px var(--gold-soft);
+}
+.label {
+  display: block;
+  margin-bottom: var(--space-1);
+  font-size: var(--type-meta);
+  font-weight: var(--weight-bold);
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* --- Meta text (paper codes etc.) --- */
+.meta {
+  font-family: var(--font-mono);
+  font-size: var(--type-mono);
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+/* --- Divider --- */
+.divider {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: var(--space-3) 0;
+}
+
+/* --- Section spacing --- */
+.section { padding: var(--space-5) 0; }
+@media (max-width: 720px) {
+  .section { padding: var(--space-4) 0; }
+}
+
+/* --- Stack utility --- */
+.stack > * + * { margin-top: var(--space-2); }
+.stack-lg > * + * { margin-top: var(--space-3); }
+.stack-xl > * + * { margin-top: var(--space-4); }
+
+/* --- Visually hidden --- */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important; height: 1px !important;
+  padding: 0 !important; margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}

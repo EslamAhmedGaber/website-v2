@@ -1,0 +1,155 @@
+{
+  "paperSlug": "Nov2021_P2H",
+  "solutions": {
+    "all::Nov2021_P2H__Q09__p11-11__m05__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\nFor part (a), divide the number of bacteria by the number of raindrops:\n\n\\[\n\\frac{1.75\\times 10^6}{2.4\\times 10^7}\n=\\frac{1.75}{2.4}\\times 10^{-1}\n\\]\n\n\\[\n=0.072916\\ldots\n\\]\n\nCorrect to 2 significant figures:\n\n\\[\n7.3\\times 10^{-2}\n\\]\n\nFor part (b), one drop contains \\(5.01\\times 10^{21}\\) atoms.\n\nThe number of molecules in one drop is\n\n\\[\n\\frac{5.01\\times 10^{21}}{3}=1.67\\times 10^{21}\n\\]\n\nThere are \\(2.4\\times 10^7\\) drops, so the number of molecules in the tank is\n\n\\[\n(1.67\\times 10^{21})(2.4\\times 10^7)\n=4.008\\times 10^{28}\n\\]\n\nCorrect to one significant figure:\n\n\\[\n4\\times 10^{28}\n\\]\n\n**Answer:** (a) \\(7.3\\times 10^{-2}\\), (b) \\(4\\times 10^{28}\\) molecules",
+      "updated": "2026-05-05T21:44:08",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q06__p08-08__m03__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nTotal selling price:\n\n\\[\n12\\times 2.45=29.40\n\\]\n\nProfit:\n\n\\[\n29.40-21=8.40\n\\]\n\nPercentage profit:\n\n\\[\n\\frac{8.40}{21}\\times 100=40\n\\]\n\n**Answer:** \\(40\\%\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q07__p09-09__m04__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nAli's interest from Cyclone Bank is\n\n\\[\n25000(1.045)^3-25000=3529.153\\ldots\n\\]\n\nBadia's interest from Tornado Bank is\n\n\\[\n1150\\times 3=3450\n\\]\n\nDifference:\n\n\\[\n3529.153\\ldots-3450=79.153\\ldots\n\\]\n\nCorrect to the nearest dollar,\n\n\\[\n79.153\\ldots\\approx 79\n\\]\n\n**Answer:** \\(\\$79\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q17__p20-20__m03__Surds": {
+      "status": "checked",
+      "source": "**Topic check:** Surds. The tag is correct.\n\n**Method**\n\n\\[\n\\frac{8}{\\sqrt5-1}\n\\]\n\nRationalise the denominator:\n\n\\[\n\\frac{8}{\\sqrt5-1}\\times \\frac{\\sqrt5+1}{\\sqrt5+1}\n=\\frac{8(\\sqrt5+1)}{5-1}\n\\]\n\n\\[\n=2(\\sqrt5+1)=2\\sqrt5+2\n\\]\n\nIn the form \\(\\sqrt a+b\\),\n\n\\[\n2\\sqrt5+2=\\sqrt{20}+2\n\\]\n\n**Answer:** \\(\\sqrt{20}+2\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q01__p03-03__m04__Algebraic-Roots-and-Indices": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic roots and indices. The tag is correct.\n\n**Solution**\n\n(a) \\(3^4\\times3^5=3^9\\), so \\(m=9\\).\n\n(b) \\((5^3)^7=5^{21}\\), so \\(n=21\\).\n\n(c)\n\\[\n\\frac{7^8\\times7^2}{7^p}=7^{10-p}=7^6\n\\]\n\nSo \\(10-p=6\\), hence \\(p=4\\).\n\n**Answer:** \\(m=9\\), \\(n=21\\), \\(p=4\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q12__p14-15__m07__Expanding-Brackets": {
+      "status": "checked",
+      "source": "**Topic check:** Expanding brackets. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n(64p^9q^{12})^{2/3}=16p^6q^8\n\\]\n\n(b)\n\\[\n\\frac{2}{3x}+\\frac{4}{5x}-\\frac{9}{10x}\n=\\frac{20+24-27}{30x}=\\frac{17}{30x}\n\\]\n\n(c)\n\\[\n4x(x-5)(2x+3)=4x(2x^2-7x-15)\n\\]\n\n\\[\n=8x^3-28x^2-60x\n\\]\n\n**Answer:** (a) \\(16p^6q^8\\), (b) \\(\\frac{17}{30x}\\), (c) \\(8x^3-28x^2-60x\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q08__p10-10__m04__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is correct.\n\n**Solution**\n\n(a) \\((3x^2y)^0=1\\).\n\n(b)(i)\n\\[\nx^2-5x-36=(x-9)(x+4)\n\\]\n\n(b)(ii) \\(x=9\\) or \\(x=-4\\).\n\n**Answer:** \\(1\\), \\((x-9)(x+4)\\), \\(x=9\\) or \\(x=-4\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q02__p04-04__m04__Forming-and-Solving-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Forming & Solving Equations.\n\n**Solution**\n\nArea of rectangle A:\n\n\\[\n4(5-x)\n\\]\n\nArea of rectangle B:\n\n\\[\n5(2x-1)\n\\]\n\nRectangle B has twice the area of rectangle A:\n\n\\[\n5(2x-1)=2\\cdot 4(5-x)\n\\]\n\n\\[\n10x-5=40-8x\n\\]\n\n\\[\n18x=45\n\\]\n\n\\[\nx=2.5\n\\]\n\n**Answer:** \\(x=2.5\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q20__p23-23__m05__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe first four terms are\n\n\\[\nk,\\quad \\frac{3k}{4},\\quad \\frac{k}{2},\\quad \\frac{k}{4}\n\\]\n\nThe common difference is\n\n\\[\nd=-\\frac{k}{4}\n\\]\n\nThe 15th term is\n\n\\[\nu_{15}=k+14\\left(-\\frac{k}{4}\\right)\n\\]\n\n\\[\nu_{15}=k-\\frac{7k}{2}=-\\frac{5k}{2}\n\\]\n\nGiven\n\n\\[\n-\\frac{5k}{2}=90+2k\n\\]\n\n\\[\n-5k=180+4k\n\\]\n\n\\[\nk=-20\n\\]\n\nSo\n\n\\[\na=-20,\\quad d=5\n\\]\n\n\\[\nS_{30}=\\frac{30}{2}(2(-20)+29(5))\n\\]\n\n\\[\nS_{30}=15(105)=1575\n\\]\n\n**Answer:** \\(1575\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q15__p18-18__m06__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Functions. The tag is correct.\n\n**Solution**\n\n\\[\nf(x)=2x-3,\\qquad g(x)=\\frac{x}{3x+1}\n\\]\n\n(a) The denominator of \\(g\\) cannot be zero:\n\\[\n3x+1=0\n\\]\n\n\\[\nx=-\\frac13\n\\]\n\n(b)\n\\[\ngf(x)=g(f(x))\n\\]\n\n\\[\ngf(x)=\\frac{2x-3}{3(2x-3)+1}\n\\]\n\n\\[\ngf(x)=\\frac{2x-3}{6x-8}\n\\]\n\n(c) Let\n\\[\ny=\\frac{x}{3x+1}\n\\]\n\n\\[\ny(3x+1)=x\n\\]\n\n\\[\n3xy+y=x\n\\]\n\n\\[\nx(3y-1)=-y\n\\]\n\n\\[\nx=\\frac{y}{1-3y}\n\\]\n\nSo\n\\[\ng^{-1}(x)=\\frac{x}{1-3x}\n\\]\n\n**Answer:** Excluded value \\(-\\frac13\\), \\(gf(x)=\\dfrac{2x-3}{6x-8}\\), and \\(g^{-1}(x)=\\dfrac{x}{1-3x}\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q19__p22-22__m06__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Coordinate geometry. The tag is correct.\n\n**Solution**\n\nLine \\(L\\) is\n\\[\nx-y=3\n\\]\n\nSo\n\\[\ny=x-3\n\\]\n\nThe curve is\n\\[\n3x-y+y^2=9\n\\]\n\nSubstitute \\(y=x-3\\):\n\\[\n3x-(x-3)+(x-3)^2=9\n\\]\n\n\\[\n2x+3+x^2-6x+9=9\n\\]\n\n\\[\nx^2-4x+3=0\n\\]\n\n\\[\n(x-1)(x-3)=0\n\\]\n\nSo \\(x=1\\) or \\(x=3\\).\n\nIf \\(x=1\\), then \\(y=-2\\). If \\(x=3\\), then \\(y=0\\).\n\nThe midpoint of \\((1,-2)\\) and \\((3,0)\\) is\n\\[\n\\left(\\frac{1+3}{2},\\frac{-2+0}{2}\\right)=(2,-1)\n\\]\n\n**Answer:** \\((2,-1)\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q13__p16-16__m03__Graphing-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is identifying inequalities from a shaded region.\n\n**Solution**\n\nThe bottom boundary is\n\\[\ny=-3\n\\]\nso\n\\[\ny\\geq-3\n\\]\n\nThe rising boundary is\n\\[\ny=2x+2\n\\]\nso the region has\n\\[\ny\\leq2x+2\n\\]\n\nThe falling boundary goes through \\((0,1)\\) and \\((1,0)\\), so\n\\[\nx+y=1\n\\]\n\nThe region is below this line:\n\\[\nx+y\\leq1\n\\]\n\n**Answer:** \\(y\\geq-3\\), \\(y\\leq2x+2\\), \\(x+y\\leq1\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q21__p24-25__m06__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nf(x)=9-3(x+2)^2\n\\]\n\nThis is in completed square form, so the maximum point is\n\n\\[\n(-2,9)\n\\]\n\nFor the translation\n\n\\[\n\\begin{pmatrix}4\\\\0\\end{pmatrix}\n\\]\n\nthe graph moves 4 units right. Replace \\(x\\) by \\(x-4\\):\n\n\\[\ny=9-3((x-4)+2)^2\n\\]\n\n\\[\ny=9-3(x-2)^2\n\\]\n\nThe curve \\(T\\) has equation\n\n\\[\ny=3(x+2)^2-9\n\\]\n\nThis is\n\n\\[\ny=-\\left(9-3(x+2)^2\\right)\n\\]\n\nSo \\(C\\) is reflected in the \\(x\\)-axis.\n\nFor the cosine graph, the maximum is 5 and the minimum is \\(-1\\).\n\n\\[\na=\\frac{5-(-1)}{2}=3\n\\]\n\n\\[\nc=\\frac{5+(-1)}{2}=2\n\\]\n\nFor\n\n\\[\ny=a\\cos(x-b)^\\circ+c\n\\]\n\na maximum occurs when \\(x-b=0\\). The graph has a maximum at \\(x=270^\\circ\\), so\n\n\\[\nb=270\n\\]\n\n**Answer:** \\(A=(-2,9)\\), \\(y=9-3(x-2)^2\\), reflection in the \\(x\\)-axis, \\(a=3,\\ b=270,\\ c=2\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q05__p07-07__m05__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Angles in Polygons & Parallel Lines. The tag is correct.\n\n**Solution**\n\nFor pentagon \\(DEFGH\\), the interior angle sum is\n\\[\n(5-2)\\times 180=540^\\circ\n\\]\n\nLet\n\\[\n\\angle GHD=\\angle FGH=a\n\\]\n\nThen\n\\[\n112+102+96+a+a=540\n\\]\n\n\\[\n2a=230\n\\]\n\n\\[\na=115^\\circ\n\\]\n\nA regular octagon has interior angle\n\\[\n\\frac{(8-2)\\times 180}{8}=135^\\circ\n\\]\n\nAt \\(H\\), angles around a point add to \\(360^\\circ\\):\n\\[\nx=360^\\circ-135^\\circ-115^\\circ=110^\\circ\n\\]\n\n**Answer:** \\(110^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q11__p13-13__m03__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to circle theorems.\n\n**Solution**\n\nThe tangent at \\(B\\) is perpendicular to the radius \\(OB\\), so\n\\[\n\\angle OBC=90^\\circ\n\\]\n\nIn triangle \\(OBC\\),\n\\[\n\\angle BOC=180^\\circ-90^\\circ-48^\\circ=42^\\circ\n\\]\n\nSince \\(O,D,C\\) are on a straight line,\n\\[\n\\angle BOD=42^\\circ\n\\]\n\n\\(BOK\\) is a diameter, so \\(BOE\\) is a straight line and\n\\[\n\\angle DOE=180^\\circ-42^\\circ=138^\\circ\n\\]\n\nThe angle at the circumference is half the angle at the centre:\n\\[\n\\angle DFE=\\frac{138^\\circ}{2}=69^\\circ\n\\]\n\n**Answer:** \\(69^\\circ\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q10__p12-12__m04__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Perimeter. The tag is correct.\n\n**Solution**\n\nIn right-angled triangle \\(ABN\\),\n\\[\n\\cos 38^\\circ=\\frac{9.3}{AB}\n\\]\n\n\\[\nAB=\\frac{9.3}{\\cos 38^\\circ}=11.802\\ldots\n\\]\n\nSince \\(ABC\\) is isosceles,\n\\[\nBC=AB\n\\]\n\nAlso,\n\\[\nAC=2\\times 9.3=18.6\n\\]\n\nPerimeter:\n\\[\n11.802\\ldots+11.802\\ldots+18.6=42.204\\ldots\n\\]\n\n**Answer:** \\(42.2\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q22__p26-27__m06__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Right-Angled Triangles to Volume & Surface Area.\n\n**Method**\n\nThe sphere has diameter \\(x\\), so its radius is\n\n\\[\n\\frac x2\n\\]\n\nThe volume of the sphere is \\(288\\pi\\text{ cm}^3\\):\n\n\\[\n\\frac43\\pi\\left(\\frac x2\\right)^3=288\\pi\n\\]\n\n\\[\n\\frac{\\pi x^3}{6}=288\\pi\n\\]\n\n\\[\nx^3=1728\n\\]\n\n\\[\nx=12\n\\]\n\nThe rectangular base of the pyramid has dimensions \\(x\\) and \\(2x\\), so its area is\n\n\\[\nx(2x)=2x^2\n\\]\n\nFor the two faces with base \\(x\\), the slant height is\n\n\\[\n\\sqrt{(5x)^2+x^2}=x\\sqrt{26}\n\\]\n\nTheir total area is\n\n\\[\n2\\left(\\frac12 x\\cdot x\\sqrt{26}\\right)=x^2\\sqrt{26}\n\\]\n\nFor the two faces with base \\(2x\\), the slant height is\n\n\\[\n\\sqrt{(5x)^2+\\left(\\frac x2\\right)^2}\n=\\frac{x\\sqrt{101}}2\n\\]\n\nTheir total area is\n\n\\[\n2\\left(\\frac12(2x)\\cdot\\frac{x\\sqrt{101}}2\\right)=x^2\\sqrt{101}\n\\]\n\nTotal surface area:\n\n\\[\n2x^2+x^2\\sqrt{26}+x^2\\sqrt{101}\n\\]\n\nSubstitute \\(x=12\\):\n\n\\[\n144(2+\\sqrt{26}+\\sqrt{101})=2469.440\\ldots\n\\]\n\nCorrect to the nearest \\(\\text{cm}^2\\):\n\n\\[\n2469\n\\]\n\n**Answer:** \\(\\boxed{2469\\text{ cm}^2}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q04__p06-06__m04__Congruence-Similarity-and-Geometrical-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Congruence, Similarity & Geometrical Proof. The tag is correct.\n\n**Solution**\n\nThe scale factor from triangle \\(DEF\\) to triangle \\(ABC\\) is\n\\[\n\\frac{AC}{DF}=\\frac{45}{20}=2.25\n\\]\n\n\\[\nAB=DE\\times 2.25=36\\times 2.25=81\n\\]\n\nGiven \\(BC=54\\),\n\\[\nEF=\\frac{54}{2.25}=24\n\\]\n\n**Answer:** \\(AB=81\\text{ cm}\\), and \\(EF=24\\text{ cm}\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q18__p21-21__m05__Sine-Cosine-Rule-and-Area-of-Triangles": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Sine, Cosine Rule & Area of Triangles.\n\n**Solution**\n\nArea of triangle \\(ABC\\):\n\\[\n\\frac12(9)(12)\\sin 60^\\circ=46.765\\ldots\n\\]\n\nFind \\(AC\\) using the cosine rule:\n\\[\nAC^2=9^2+12^2-2(9)(12)\\cos 60^\\circ\n\\]\n\n\\[\nAC=10.816\\ldots\n\\]\n\nArea of triangle \\(ACD\\):\n\\[\n\\frac12(10.816\\ldots)(7)\\sin 84^\\circ=37.642\\ldots\n\\]\n\nTotal area:\n\\[\n46.765\\ldots+37.642\\ldots=84.407\\ldots\n\\]\n\n**Answer:** \\(84.4\\text{ cm}^2\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q03__p05-05__m05__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nMore than \\(24\\) euros:\n\n\\[\n25+6=31\n\\]\n\nTotal frequency:\n\n\\[\n6+14+19+25+6=70\n\\]\n\n\\[\nP(S>24)=\\frac{31}{70}\n\\]\n\nUse midpoints \\(4,12,20,28,36\\).\n\n\\[\n4(6)+12(14)+20(19)+28(25)+36(6)=1488\n\\]\n\n\\[\n\\text{estimated mean}=\\frac{1488}{70}=21.257\\ldots\n\\]\n\n**Answer:** \\(\\frac{31}{70}\\), estimated mean \\(21.3\\) euros.",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q14__p17-17__m05__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Histograms. The tag is correct.\n\n**Solution**\n\nThe histogram densities are\n\n\\[\n0<L\\le 10:\\frac{8}{10}=0.8\n\\]\n\n\\[\n10<L\\le 15:\\frac{13}{5}=2.6\n\\]\n\n\\[\n15<L\\le 25:\\frac{19}{10}=1.9\n\\]\n\n\\[\n25<L\\le 40:\\frac{24}{15}=1.6\n\\]\n\n\\[\n40<L\\le 60:\\frac{6}{20}=0.3\n\\]\n\nGiven \\(L\\le 25\\), the total frequency is\n\n\\[\n8+13+19=40\n\\]\n\nFor \\(L\\le 5\\), estimate half of the first class:\n\n\\[\n5(0.8)=4\n\\]\n\n\\[\nP(L\\le 5\\mid L\\le 25)=\\frac{4}{40}=\\frac{1}{10}\n\\]\n\n**Answer:** histogram densities \\(0.8,2.6,1.9,1.6,0.3\\), and probability \\(\\frac{1}{10}\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P2H__Q16__p19-19__m03__Combined-and-Conditional-Probability": {
+      "status": "missing",
+      "source": "**Topic check:** Combined & Conditional Probability. The tag is correct.\n\n**Solution**\n\nThere are \\(4\\) red, \\(5\\) green and \\(6\\) yellow counters.\n\nThe first counter is replaced, so the probabilities are the same for Niklas and Sasha.\n\n\\[\nP(\\text{same colour})=\n\\left(\\frac4{15}\\right)^2+\n\\left(\\frac5{15}\\right)^2+\n\\left(\\frac6{15}\\right)^2\n\\]\n\n\\[\n=\\frac{16+25+36}{225}\n\\]\n\n\\[\n=\\frac{77}{225}\n\\]\n\n**Answer:** \\(\\frac{77}{225}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Nov2021_P2H__Q20__p23-23__m05__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe first four terms are\n\n\\[\nk,\\quad \\frac{3k}{4},\\quad \\frac{k}{2},\\quad \\frac{k}{4}\n\\]\n\nThe common difference is\n\n\\[\nd=-\\frac{k}{4}\n\\]\n\nThe 15th term is\n\n\\[\nu_{15}=k+14\\left(-\\frac{k}{4}\\right)\n\\]\n\n\\[\nu_{15}=k-\\frac{7k}{2}=-\\frac{5k}{2}\n\\]\n\nGiven\n\n\\[\n-\\frac{5k}{2}=90+2k\n\\]\n\n\\[\n-5k=180+4k\n\\]\n\n\\[\nk=-20\n\\]\n\nSo\n\n\\[\na=-20,\\quad d=5\n\\]\n\n\\[\nS_{30}=\\frac{30}{2}(2(-20)+29(5))\n\\]\n\n\\[\nS_{30}=15(105)=1575\n\\]\n\n**Answer:** \\(1575\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2021_P2H__Q21__p24-25__m06__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nf(x)=9-3(x+2)^2\n\\]\n\nThis is in completed square form, so the maximum point is\n\n\\[\n(-2,9)\n\\]\n\nFor the translation\n\n\\[\n\\begin{pmatrix}4\\\\0\\end{pmatrix}\n\\]\n\nthe graph moves 4 units right. Replace \\(x\\) by \\(x-4\\):\n\n\\[\ny=9-3((x-4)+2)^2\n\\]\n\n\\[\ny=9-3(x-2)^2\n\\]\n\nThe curve \\(T\\) has equation\n\n\\[\ny=3(x+2)^2-9\n\\]\n\nThis is\n\n\\[\ny=-\\left(9-3(x+2)^2\\right)\n\\]\n\nSo \\(C\\) is reflected in the \\(x\\)-axis.\n\nFor the cosine graph, the maximum is 5 and the minimum is \\(-1\\).\n\n\\[\na=\\frac{5-(-1)}{2}=3\n\\]\n\n\\[\nc=\\frac{5+(-1)}{2}=2\n\\]\n\nFor\n\n\\[\ny=a\\cos(x-b)^\\circ+c\n\\]\n\na maximum occurs when \\(x-b=0\\). The graph has a maximum at \\(x=270^\\circ\\), so\n\n\\[\nb=270\n\\]\n\n**Answer:** \\(A=(-2,9)\\), \\(y=9-3(x-2)^2\\), reflection in the \\(x\\)-axis, \\(a=3,\\ b=270,\\ c=2\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::Nov2021_P2H__Q22__p26-27__m06__Volume-and-Surface-Area": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Right-Angled Triangles to Volume & Surface Area.\n\n**Method**\n\nThe sphere has diameter \\(x\\), so its radius is\n\n\\[\n\\frac x2\n\\]\n\nThe volume of the sphere is \\(288\\pi\\text{ cm}^3\\):\n\n\\[\n\\frac43\\pi\\left(\\frac x2\\right)^3=288\\pi\n\\]\n\n\\[\n\\frac{\\pi x^3}{6}=288\\pi\n\\]\n\n\\[\nx^3=1728\n\\]\n\n\\[\nx=12\n\\]\n\nThe rectangular base of the pyramid has dimensions \\(x\\) and \\(2x\\), so its area is\n\n\\[\nx(2x)=2x^2\n\\]\n\nFor the two faces with base \\(x\\), the slant height is\n\n\\[\n\\sqrt{(5x)^2+x^2}=x\\sqrt{26}\n\\]\n\nTheir total area is\n\n\\[\n2\\left(\\frac12 x\\cdot x\\sqrt{26}\\right)=x^2\\sqrt{26}\n\\]\n\nFor the two faces with base \\(2x\\), the slant height is\n\n\\[\n\\sqrt{(5x)^2+\\left(\\frac x2\\right)^2}\n=\\frac{x\\sqrt{101}}2\n\\]\n\nTheir total area is\n\n\\[\n2\\left(\\frac12(2x)\\cdot\\frac{x\\sqrt{101}}2\\right)=x^2\\sqrt{101}\n\\]\n\nTotal surface area:\n\n\\[\n2x^2+x^2\\sqrt{26}+x^2\\sqrt{101}\n\\]\n\nSubstitute \\(x=12\\):\n\n\\[\n144(2+\\sqrt{26}+\\sqrt{101})=2469.440\\ldots\n\\]\n\nCorrect to the nearest \\(\\text{cm}^2\\):\n\n\\[\n2469\n\\]\n\n**Answer:** \\(\\boxed{2469\\text{ cm}^2}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

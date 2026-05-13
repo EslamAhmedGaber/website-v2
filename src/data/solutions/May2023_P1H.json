@@ -1,0 +1,167 @@
+{
+  "paperSlug": "May2023_P1H",
+  "solutions": {
+    "all::May2023_P1H__Q16__p17-17__m03__Set-Notation-and-Venn-Diagrams": {
+      "status": "checked",
+      "source": "**Topic check:** Set notation and Venn diagrams. The tag is correct.\n\n**Method**\n\nThe regions inside \\(A\\cup B\\) are\n\n\\[\n9+x+12+5+3+7\n\\]\n\nWe are told that\n\n\\[\nn(A\\cup B)=42\n\\]\n\nSo\n\n\\[\n36+x=42\n\\]\n\n\\[\nx=6\n\\]\n\nFor \\(A'\\), add every region not inside \\(A\\):\n\n\\[\n12+7+10+7=36\n\\]\n\nFor \\(B'\\cap C\\), add the regions that are in \\(C\\) but not in \\(B\\):\n\n\\[\n5+10=15\n\\]\n\n**Answer:** (a) \\(x=6\\), (b) \\(36\\), (c) \\(15\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q08__p11-11__m04__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\nFirst write \\(300\\) as a product of prime factors:\n\n\\[\n300=3\\times 100=3\\times 2^2\\times 5^2\n\\]\n\n\\[\n300=2^2\\times 3\\times 5^2\n\\]\n\nNow\n\n\\[\nA=2^3\\times 3^2\\times 5\n\\]\n\nand\n\n\\[\nB=2^2\\times 3^3\\times 5\n\\]\n\nSo\n\n\\[\n5A=2^3\\times 3^2\\times 5^2\n\\]\n\nand\n\n\\[\n7B=2^2\\times 3^3\\times 5\\times 7\n\\]\n\nFor the LCM of \\(5A\\) and \\(7B\\), take the highest power of every prime:\n\n\\[\n\\text{LCM}=2^3\\times 3^3\\times 5^2\\times 7\n\\]\n\n**Answer:** (a) \\(2^2\\times 3\\times 5^2\\), (b) \\(2^3\\times 3^3\\times 5^2\\times 7\\)",
+      "updated": "2026-05-05T21:03:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q15__p16-16__m06__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n\\sqrt{2}=2^{\\frac12}\n\\]\n\n\\[\n8^3=(2^3)^3=2^9\n\\]\n\n\\[\n16^{\\frac32}=(2^4)^{\\frac32}=2^6\n\\]\n\nSo\n\n\\[\n\\frac{8^3}{16^{\\frac32}}=\\frac{2^9}{2^6}=2^3\n\\]\n\nTherefore\n\n\\[\n\\sqrt{2}\\div \\frac{8^3}{16^{\\frac32}}\n=2^{\\frac12}\\div 2^3\n\\]\n\n\\[\n=2^{\\frac12-3}=2^{-\\frac52}\n\\]\n\nSo\n\n\\[\nn=-\\frac52\n\\]\n\nFor part (b),\n\n\\[\n4\\%=0.04=4\\times 10^{-2}\n\\]\n\n\\[\n0.04(4.5\\times 10^{157})=18\\times 10^{155}\n\\]\n\n\\[\n=1.8\\times 10^{156}\n\\]\n\n**Answer:** (a) \\(n=-\\frac52\\), (b) \\(1.8\\times 10^{156}\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q03__p05-05__m04__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nNumber sold for 22 dirhams:\n\n\\[\n70\\%\\times 60=42\n\\]\n\nNumber remaining:\n\n\\[\n60-42=18\n\\]\n\nTotal selling price:\n\n\\[\n42\\times 22+18\\times 19=924+342=1266\n\\]\n\nProfit:\n\n\\[\n1266-780=486\n\\]\n\nPercentage profit:\n\n\\[\n\\frac{486}{780}\\times 100=62.307\\ldots\\%\n\\]\n\n**Answer:** \\(62.3\\%\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q01__p03-03__m03__Ratio-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Ratio Toolkit. The tag is correct.\n\n**Method**\n\nThe ratio is\n\n\\[\n\\text{Arjun}:\\text{Simon}:\\text{Kath}=2:5:8\n\\]\n\nSimon scored \\(12\\) more than Arjun.\n\n\\[\n5-2=3\\text{ parts}\n\\]\n\n\\[\n3\\text{ parts}=12\n\\]\n\n\\[\n1\\text{ part}=4\n\\]\n\nKath scored\n\n\\[\n8\\times 4=32\n\\]\n\n**Answer:** \\(32\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q06__p09-09__m08__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n(2c^4d^7)^3=8c^{12}d^{21}\n\\]\n\n(b) \\(5y^0=5\\), since \\(y^0=1\\).\n\n(c)\n\\[\n16a^2b^3+20a^3b=4a^2b(4b^2+5a)\n\\]\n\n(d)(i)\n\\[\nx^2+9x-22=(x+11)(x-2)\n\\]\n\n(d)(ii) \\(x=-11\\) or \\(x=2\\).\n\n**Answer:** \\(8c^{12}d^{21}\\), \\(5\\), \\(4a^2b(4b^2+5a)\\), \\((x+11)(x-2)\\), \\(x=-11\\) or \\(x=2\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q14__p15-15__m03__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is correct.\n\n**Solution**\n\n\\[\n50g^2-18=2(25g^2-9)\n\\]\n\n\\[\n=2(5g-3)(5g+3)\n\\]\n\n**Answer:** \\(2(5g-3)(5g+3)\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q09__p12-12__m03__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\n\\[\n2x+9y=14.5\n\\]\n\n\\[\n7x+3y=8\n\\]\n\nMultiply the second equation by 3:\n\\[\n21x+9y=24\n\\]\n\nSubtract the first equation:\n\\[\n19x=9.5\n\\]\n\n\\[\nx=0.5\n\\]\n\nSubstitute into \\(7x+3y=8\\):\n\\[\n7(0.5)+3y=8\n\\]\n\n\\[\n3.5+3y=8\n\\]\n\n\\[\ny=1.5\n\\]\n\n**Answer:** \\(x=0.5\\), \\(y=1.5\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q20__p22-23__m06__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nS_{80}=470\n\\]\n\n\\[\n40(2a+79d)=470\n\\]\n\n\\[\n2a+79d=\\frac{47}{4}\n\\]\n\nThe 75th term is\n\n\\[\na+74d=14.5=\\frac{29}{2}\n\\]\n\nDouble it:\n\n\\[\n2a+148d=29\n\\]\n\nSubtract:\n\n\\[\n69d=29-\\frac{47}{4}=\\frac{69}{4}\n\\]\n\n\\[\nd=\\frac14\n\\]\n\n\\[\na+74\\left(\\frac14\\right)=\\frac{29}{2}\n\\]\n\n\\[\na=-4\n\\]\n\nNow\n\n\\[\nS_X=171\n\\]\n\n\\[\n171=\\frac X2\\left(2(-4)+(X-1)\\frac14\\right)\n\\]\n\n\\[\n171=\\frac{X(X-33)}{8}\n\\]\n\n\\[\nX^2-33X-1368=0\n\\]\n\n\\[\nX=\\frac{33+81}{2}=57\n\\]\n\n**Answer:** \\(X=57\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q17__p18-18__m04__Functions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Functions. The question tests domain and composite functions.\n\n**Solution**\n\n\\[\ng(x)=\\frac{11}{2x-5},\\qquad h(x)=x^2+4,\\quad x\\ge0\n\\]\n\n(a) The denominator of \\(g(x)\\) cannot be zero.\n\n\\[\n2x-5=0\n\\]\n\n\\[\nx=\\frac52\n\\]\n\nSo \\(x=\\frac52\\) must be excluded.\n\n(b)\n\\[\ngh(x)=g(h(x))=\\frac{11}{2(x^2+4)-5}\n\\]\n\n\\[\n=\\frac{11}{2x^2+3}\n\\]\n\nSolve\n\\[\n\\frac{11}{2x^2+3}=1\n\\]\n\n\\[\n2x^2+3=11\n\\]\n\n\\[\n2x^2=8\n\\]\n\n\\[\nx^2=4\n\\]\n\nSince \\(x\\ge0\\),\n\\[\nx=2\n\\]\n\n**Answer:** Exclude \\(x=\\frac52\\), and \\(x=2\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q13__p15-15__m03__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Coordinate geometry. The tag is correct.\n\n**Solution**\n\n\\[\nA=(-5,12),\\qquad B=(19,-48)\n\\]\n\nThe gradient is\n\\[\n\\frac{-48-12}{19-(-5)}=\\frac{-60}{24}=-\\frac52\n\\]\n\nUsing point \\((-5,12)\\):\n\\[\ny-12=-\\frac52(x+5)\n\\]\n\nMultiply by 2:\n\\[\n2y-24=-5x-25\n\\]\n\n\\[\n5x+2y+1=0\n\\]\n\n**Answer:** \\(5x+2y+1=0\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q07__p10-10__m04__Graphing-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Correct. This is identifying inequalities from a shaded region.\n\n**Solution**\n\nThe vertical boundary is\n\\[\nx=1\n\\]\nso the region has\n\\[\nx\\leq1\n\\]\n\nThe horizontal boundary is\n\\[\ny=-2\n\\]\nso\n\\[\ny\\geq-2\n\\]\n\nThe sloping line passes through \\((0,4)\\) and has gradient \\(2\\), so\n\\[\ny=2x+4\n\\]\n\nThe shaded region is below this line:\n\\[\ny\\leq2x+4\n\\]\n\n**Answer:** \\(x\\leq1\\), \\(y\\geq-2\\), \\(y\\leq2x+4\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q21__p23-23__m02__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe turning point of \\(y=f(x)\\) is \\((6,5)\\).\n\nFor\n\n\\[\ny=f(x-4)\n\\]\n\nthe graph moves 4 units right:\n\n\\[\n(6,5)\\to(10,5)\n\\]\n\nFor\n\n\\[\ny=f(3x)\n\\]\n\nthe \\(x\\)-coordinate is divided by 3:\n\n\\[\n(6,5)\\to(2,5)\n\\]\n\n**Answer:** \\((10,5)\\) and \\((2,5)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q11__p13-13__m06__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to differentiation. The question is about derivatives and gradients of a curve.\n\n**Solution**\n\n\\[\ny=4x^3+x^2-20x\n\\]\n\n(a)\n\\[\n\\frac{dy}{dx}=12x^2+2x-20\n\\]\n\n(b) The gradient is \\(4\\), so\n\\[\n12x^2+2x-20=4\n\\]\n\n\\[\n12x^2+2x-24=0\n\\]\n\n\\[\n6x^2+x-12=0\n\\]\n\nFactorise:\n\\[\n(3x-4)(2x+3)=0\n\\]\n\nSo\n\\[\nx=\\frac43 \\quad \\text{or} \\quad x=-\\frac32\n\\]\n\n**Answer:** \\(\\frac{dy}{dx}=12x^2+2x-20\\), and \\(x=\\frac43\\) or \\(x=-\\frac32\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q22__p24-25__m06__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Circles, Arcs & Sectors.\n\n**Method**\n\nThe regular pentagon has side length \\(8\\) cm.\n\nFor a regular pentagon,\n\n\\[\nR=\\frac{s}{2\\sin 36^\\circ}\n\\]\n\nwhere \\(R\\) is the radius of the larger circle.\n\n\\[\nR=\\frac{8}{2\\sin 36^\\circ}=6.8052\\ldots\n\\]\n\nArea of the larger circle:\n\n\\[\n\\pi R^2=145.4898\\ldots\n\\]\n\nArea of the regular pentagon:\n\n\\[\n\\frac{5s^2}{4\\tan 36^\\circ}\n=\\frac{5(8)^2}{4\\tan 36^\\circ}\n=110.1106\\ldots\n\\]\n\nLet the radius of the smaller circle be \\(r\\).\n\nThe shaded area is:\n\n\\[\n\\text{larger circle area}-\\text{pentagon area}+\\pi r^2\n\\]\n\nThe unshaded area is:\n\n\\[\n\\text{pentagon area}-\\pi r^2\n\\]\n\nThese are equal, so\n\n\\[\n145.4898-110.1106+\\pi r^2=110.1106-\\pi r^2\n\\]\n\n\\[\n2\\pi r^2=2(110.1106)-145.4898\n\\]\n\n\\[\n\\pi r^2=37.3657\\ldots\n\\]\n\n\\[\nr=\\sqrt{\\frac{37.3657\\ldots}{\\pi}}=3.4487\\ldots\n\\]\n\n**Answer:** \\(\\boxed{3.45\\text{ cm}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q23__p26-27__m05__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe small and large square-based pyramids are similar.\n\nTheir heights are\n\n\\[\n15:45=1:3\n\\]\n\nSo the side length of the top square of the frustum is\n\n\\[\n\\frac{39}{3}=13\\text{ cm}\n\\]\n\nThe vertical height of the frustum is\n\n\\[\n45-15=30\\text{ cm}\n\\]\n\nFor one trapezium face, the difference between the half-side lengths is\n\n\\[\n\\frac{39-13}{2}=13\\text{ cm}\n\\]\n\nSo the slant height of the trapezium face is\n\n\\[\n\\sqrt{30^2+13^2}=\\sqrt{1069}\n\\]\n\nArea of one trapezium face:\n\n\\[\n\\frac12(39+13)\\sqrt{1069}=26\\sqrt{1069}\n\\]\n\nArea of four trapezium faces:\n\n\\[\n4(26\\sqrt{1069})=104\\sqrt{1069}\n\\]\n\nAdd the top and bottom square faces:\n\n\\[\n13^2+39^2=169+1521=1690\n\\]\n\nTotal surface area:\n\n\\[\n1690+104\\sqrt{1069}=5090.338\\ldots\n\\]\n\nCorrect to the nearest whole number:\n\n\\[\n5090\n\\]\n\n**Answer:** \\(\\boxed{5090\\text{ cm}^2}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q05__p08-08__m04__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Right-Angled Triangles - Pythagoras & Trigonometry. The tag is correct.\n\n**Solution**\n\nTriangle \\(AEB\\) is right-angled:\n\n\\[\nAB^2=7.2^2+5.4^2=81\n\\]\n\n\\[\nAB=9\n\\]\n\nFor rectangle \\(ABCD\\),\n\n\\[\nDC=9,\\qquad AD=BC=6\n\\]\n\nPerimeter of the shaded shape:\n\n\\[\n7.2+5.4+6+9+6=33.6\n\\]\n\n**Answer:** \\(33.6\\text{ cm}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q19__p20-21__m05__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Vectors. The ratio is found using a vector method.\n\n**Method**\n\nSince \\(M\\) is the midpoint of \\(OA\\),\n\n\\[\n\\overrightarrow{OA}=2a\n\\]\n\nAlso,\n\n\\[\n\\overrightarrow{ON}=b\n\\]\n\nSo\n\n\\[\n\\overrightarrow{AN}=\\overrightarrow{ON}-\\overrightarrow{OA}=b-2a\n\\]\n\nLet\n\n\\[\n\\overrightarrow{AP}=\\lambda\\overrightarrow{AN}\n\\]\n\nThen\n\n\\[\n\\overrightarrow{OP}=2a+\\lambda(b-2a)=(2-2\\lambda)a+\\lambda b\n\\]\n\nSince \\(ON:NB=1:5\\),\n\n\\[\n\\overrightarrow{OB}=6b\n\\]\n\nPoint \\(P\\) is also on \\(MB\\), so\n\n\\[\n\\overrightarrow{OP}=a+\\mu(6b-a)=(1-\\mu)a+6\\mu b\n\\]\n\nCompare coefficients:\n\n\\[\n2-2\\lambda=1-\\mu\n\\]\n\n\\[\n\\lambda=6\\mu\n\\]\n\nFrom \\(\\mu=2\\lambda-1\\),\n\n\\[\n\\lambda=6(2\\lambda-1)\n\\]\n\n\\[\n11\\lambda=6\n\\]\n\n\\[\n\\lambda=\\frac6{11}\n\\]\n\nSo\n\n\\[\nAP:PN=\\frac6{11}:\\frac5{11}=6:5\n\\]\n\n**Answer:** (a) \\(b-2a\\), (b) \\(6:5\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q04__p06-07__m08__Transformations": {
+      "status": "checked",
+      "source": "**Topic check:** Transformations. The tag is correct.\n\n**Solution**\n\n(a) The translation from \\((-7,2)\\) to \\((6,12)\\) is\n\n\\[\n\\begin{pmatrix}13\\\\10\\end{pmatrix}\n\\]\n\nSo\n\n\\[\n(-11,-5)\\mapsto(2,5)\n\\]\n\nand\n\n\\[\n(f,-3)\\mapsto(9,7)\n\\]\n\nTherefore\n\n\\[\nd=5,\\qquad e=7,\\qquad f=-4\n\\]\n\n(b) Shape \\(P\\) maps to \\(Q\\) by an enlargement with scale factor \\(3\\) and centre \\((0,2)\\).\n\n(c) Rotate \\(P\\) \\(90^\\circ\\) clockwise about \\((3,5)\\). The image has vertices\n\n\\[\n(3,6),\\ (1,6),\\ (0,5),\\ (1,5)\n\\]\n\n**Answer:** (a) \\(d=5,\\ e=7,\\ f=-4\\); (b) enlargement, scale factor \\(3\\), centre \\((0,2)\\); (c) vertices \\((3,6),(1,6),(0,5),(1,5)\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q02__p04-04__m03__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nUse midpoints \\(15,45,75,105,135\\).\n\n\\[\n15(5)+45(6)+75(8)+105(9)+135(2)=2160\n\\]\n\n**Answer:** \\(2160\\) minutes.",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q10__p12-12__m02__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe marks in order are\n\n\\[\n7,\\ 10,\\ 14,\\ 15,\\ 16,\\ 17,\\ 18,\\ 19,\\ 20,\\ 20,\\ 23,\\ 25,\\ 30,\\ 39,\\ 40\n\\]\n\n\\[\nQ_1=15,\\qquad Q_3=25\n\\]\n\n\\[\n\\text{IQR}=25-15=10\n\\]\n\n**Answer:** \\(10\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q18__p19-19__m04__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Histograms. The tag is correct.\n\n**Solution**\n\nThe total frequency is \\(140\\).\n\nThe known frequencies are\n\n\\[\n23+18+14=55\n\\]\n\nSo the two missing frequencies have total\n\n\\[\n140-55=85\n\\]\n\nFrom the histogram, the missing frequencies are\n\n\\[\n5<t\\le 15:\\ 25,\\qquad 15<t\\le 30:\\ 60\n\\]\n\nThe missing histogram densities are\n\n\\[\n0<t\\le 5:\\frac{23}{5}=4.6\n\\]\n\n\\[\n30<t\\le 40:\\frac{18}{10}=1.8\n\\]\n\n\\[\n40<t\\le 60:\\frac{14}{20}=0.7\n\\]\n\n**Answer:** missing frequencies \\(25,60\\), and missing densities \\(4.6,1.8,0.7\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::May2023_P1H__Q12__p14-14__m04__Cumulative-Frequency-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nThere are \\(50\\) plants, so the median is the \\(25\\)th value.\n\nFrom the cumulative frequency graph,\n\n\\[\n\\text{median}\\approx 27\\text{ cm}\n\\]\n\nFor the interval \\(30<h\\leq 40\\),\n\n\\[\nF(40)-F(30)\\approx 44-31=13\n\\]\n\nFor plants taller than \\(35\\) cm,\n\n\\[\n50-F(35)\\approx 50-37=13\n\\]\n\n**Answers:** median about \\(27\\) cm, about \\(13\\) plants, about \\(13\\) plants.",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::May2023_P1H__Q20__p22-23__m06__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nS_{80}=470\n\\]\n\n\\[\n40(2a+79d)=470\n\\]\n\n\\[\n2a+79d=\\frac{47}{4}\n\\]\n\nThe 75th term is\n\n\\[\na+74d=14.5=\\frac{29}{2}\n\\]\n\nDouble it:\n\n\\[\n2a+148d=29\n\\]\n\nSubtract:\n\n\\[\n69d=29-\\frac{47}{4}=\\frac{69}{4}\n\\]\n\n\\[\nd=\\frac14\n\\]\n\n\\[\na+74\\left(\\frac14\\right)=\\frac{29}{2}\n\\]\n\n\\[\na=-4\n\\]\n\nNow\n\n\\[\nS_X=171\n\\]\n\n\\[\n171=\\frac X2\\left(2(-4)+(X-1)\\frac14\\right)\n\\]\n\n\\[\n171=\\frac{X(X-33)}{8}\n\\]\n\n\\[\nX^2-33X-1368=0\n\\]\n\n\\[\nX=\\frac{33+81}{2}=57\n\\]\n\n**Answer:** \\(X=57\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2023_P1H__Q21__p23-23__m02__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe turning point of \\(y=f(x)\\) is \\((6,5)\\).\n\nFor\n\n\\[\ny=f(x-4)\n\\]\n\nthe graph moves 4 units right:\n\n\\[\n(6,5)\\to(10,5)\n\\]\n\nFor\n\n\\[\ny=f(3x)\n\\]\n\nthe \\(x\\)-coordinate is divided by 3:\n\n\\[\n(6,5)\\to(2,5)\n\\]\n\n**Answer:** \\((10,5)\\) and \\((2,5)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2023_P1H__Q22__p24-25__m06__Circles-Arcs-and-Sectors": {
+      "status": "checked",
+      "source": "**Topic check:** Moved to Circles, Arcs & Sectors.\n\n**Method**\n\nThe regular pentagon has side length \\(8\\) cm.\n\nFor a regular pentagon,\n\n\\[\nR=\\frac{s}{2\\sin 36^\\circ}\n\\]\n\nwhere \\(R\\) is the radius of the larger circle.\n\n\\[\nR=\\frac{8}{2\\sin 36^\\circ}=6.8052\\ldots\n\\]\n\nArea of the larger circle:\n\n\\[\n\\pi R^2=145.4898\\ldots\n\\]\n\nArea of the regular pentagon:\n\n\\[\n\\frac{5s^2}{4\\tan 36^\\circ}\n=\\frac{5(8)^2}{4\\tan 36^\\circ}\n=110.1106\\ldots\n\\]\n\nLet the radius of the smaller circle be \\(r\\).\n\nThe shaded area is:\n\n\\[\n\\text{larger circle area}-\\text{pentagon area}+\\pi r^2\n\\]\n\nThe unshaded area is:\n\n\\[\n\\text{pentagon area}-\\pi r^2\n\\]\n\nThese are equal, so\n\n\\[\n145.4898-110.1106+\\pi r^2=110.1106-\\pi r^2\n\\]\n\n\\[\n2\\pi r^2=2(110.1106)-145.4898\n\\]\n\n\\[\n\\pi r^2=37.3657\\ldots\n\\]\n\n\\[\nr=\\sqrt{\\frac{37.3657\\ldots}{\\pi}}=3.4487\\ldots\n\\]\n\n**Answer:** \\(\\boxed{3.45\\text{ cm}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::May2023_P1H__Q23__p26-27__m05__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe small and large square-based pyramids are similar.\n\nTheir heights are\n\n\\[\n15:45=1:3\n\\]\n\nSo the side length of the top square of the frustum is\n\n\\[\n\\frac{39}{3}=13\\text{ cm}\n\\]\n\nThe vertical height of the frustum is\n\n\\[\n45-15=30\\text{ cm}\n\\]\n\nFor one trapezium face, the difference between the half-side lengths is\n\n\\[\n\\frac{39-13}{2}=13\\text{ cm}\n\\]\n\nSo the slant height of the trapezium face is\n\n\\[\n\\sqrt{30^2+13^2}=\\sqrt{1069}\n\\]\n\nArea of one trapezium face:\n\n\\[\n\\frac12(39+13)\\sqrt{1069}=26\\sqrt{1069}\n\\]\n\nArea of four trapezium faces:\n\n\\[\n4(26\\sqrt{1069})=104\\sqrt{1069}\n\\]\n\nAdd the top and bottom square faces:\n\n\\[\n13^2+39^2=169+1521=1690\n\\]\n\nTotal surface area:\n\n\\[\n1690+104\\sqrt{1069}=5090.338\\ldots\n\\]\n\nCorrect to the nearest whole number:\n\n\\[\n5090\n\\]\n\n**Answer:** \\(\\boxed{5090\\text{ cm}^2}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

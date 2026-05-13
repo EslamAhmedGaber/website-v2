@@ -1,0 +1,131 @@
+{
+  "paperSlug": "Nov2021_P1H",
+  "solutions": {
+    "all::Nov2021_P1H__Q07__p07-07__m03__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\n3.6\\times 10^3=3600\n\\]\n\n\\[\n3600=36\\times 100\n\\]\n\n\\[\n36=2^2\\times 3^2,\\qquad 100=2^2\\times 5^2\n\\]\n\nSo\n\n\\[\n3600=2^4\\times 3^2\\times 5^2\n\\]\n\n**Answer:** \\(\\displaystyle 2^4\\times 3^2\\times 5^2\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q08__p08-08__m03__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nSydney's population was \\(22\\%\\) of Australia's total population.\n\n\\[\n0.22\\times \\text{total}=5.48\n\\]\n\n\\[\n\\text{total}=\\frac{5.48}{0.22}=24.909\\ldots\n\\]\n\nCorrect to 3 significant figures,\n\n\\[\n24.909\\ldots\\approx 24.9\n\\]\n\n**Answer:** \\(24.9\\) million",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q18__p21-21__m03__Fractions-Decimals-and-Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Fractions, Decimals and Percentages. The tag is correct.\n\n**Method**\n\nLet\n\n\\[\ny=0.4\\dot{x}\n\\]\n\nSo\n\n\\[\ny=0.4xxx\\ldots\n\\]\n\nMultiply by \\(10\\) and \\(100\\):\n\n\\[\n10y=4.xxx\\ldots\n\\]\n\n\\[\n100y=4x.xxx\\ldots\n\\]\n\nSubtract:\n\n\\[\n100y-10y=(4x.xxx\\ldots)-(4.xxx\\ldots)\n\\]\n\n\\[\n90y=x+36\n\\]\n\nTherefore\n\n\\[\ny=\\frac{x+36}{90}\n\\]\n\n**Answer:** \\(\\frac{x+36}{90}\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q13__p13-13__m03__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Rounding, Estimation and Bounds. The tag is correct; sine rule is used inside the bounds calculation.\n\n**Method**\n\nUsing the sine rule,\n\n\\[\n\\frac{YZ}{\\sin X}=\\frac{XZ}{\\sin Y}\n\\]\n\nFor the upper bound of \\(YZ\\):\n\n\\[\nXZ<16.5,\\quad X<25.5^\\circ,\\quad Y<135^\\circ\n\\]\n\n\\[\nYZ_{\\text{upper}}=\\frac{16.5\\sin 25.5^\\circ}{\\sin 135^\\circ}=10.0457\\ldots\n\\]\n\nCorrect to one decimal place,\n\n\\[\n10.0457\\ldots\\approx 10.0\n\\]\n\n**Answer:** \\(10.0\\) cm",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q01__p03-03__m03__Expanding-Brackets": {
+      "status": "checked",
+      "source": "**Topic check:** Expanding brackets. The tag is correct.\n\n**Solution**\n\n(a) \\(e^8\\div e^2=e^6\\).\n\n(b) \\((x-3)(x+1)=x^2-2x-3\\).\n\n**Answer:** (a) \\(e^6\\), (b) \\(x^2-2x-3\\)",
+      "updated": "2026-05-06T02:49:46",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q17__p20-20__m08__Rearranging-Formulas": {
+      "status": "checked",
+      "source": "**Topic check:** Rearranging formulas. The tag is acceptable because rearranging is one of the main parts.\n\n**Solution**\n\n(a)\n\\[\n6y^2-y-5=(6y+5)(y-1)\n\\]\n\n(b)\n\\[\nw=\\frac{2f+3}{8-f}\n\\]\n\n\\[\nw(8-f)=2f+3\n\\]\n\n\\[\n8w-3=f(w+2)\n\\]\n\n\\[\nf=\\frac{8w-3}{w+2}\n\\]\n\n(c)\n\\[\n4x^2-8x+7=4(x^2-2x)+7\n\\]\n\n\\[\n=4\\big((x-1)^2-1\\big)+7\n\\]\n\n\\[\n=4(x-1)^2+3\n\\]\n\n**Answer:** \\((6y+5)(y-1)\\), \\(f=\\frac{8w-3}{w+2}\\), \\(4(x-1)^2+3\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q19__p22-23__m06__Algebraic-Proof": {
+      "status": "checked",
+      "source": "**Topic check:** Algebraic proof. The tag is acceptable because the question asks to prove the formula before using it.\n\n**Solution**\n\nThe perimeter is made from three sides of length \\(x\\) and two sides of length \\(y\\):\n\\[\n3x+2y=100\n\\]\n\nSo\n\\[\ny=\\frac{100-3x}{2}\n\\]\n\nThe area is the area of the rectangle plus the area of the equilateral triangle:\n\\[\nR=xy+\\frac{\\sqrt3}{4}x^2\n\\]\n\nSubstitute \\(y=\\dfrac{100-3x}{2}\\):\n\\[\nR=x\\left(\\frac{100-3x}{2}\\right)+\\frac{\\sqrt3}{4}x^2\n\\]\n\n\\[\nR=50x-\\frac32x^2+\\frac{\\sqrt3}{4}x^2\n\\]\n\n\\[\nR=\\frac{x}{4}\\left(200-(6-\\sqrt3)x\\right)\n\\]\n\nFor the maximum, write\n\\[\nR=-\\frac{6-\\sqrt3}{4}x^2+50x\n\\]\n\nThe maximum occurs at\n\\[\nx=\\frac{-b}{2a}=\\frac{-50}{2\\left(-\\frac{6-\\sqrt3}{4}\\right)}\n\\]\n\n\\[\nx=\\frac{100}{6-\\sqrt3}\n\\]\n\nThe coefficient of \\(x^2\\) is negative, so the quadratic graph opens downwards and this vertex gives a maximum.\n\n**Answer:** \\(R=\\dfrac{x}{4}\\left(200-(6-\\sqrt3)x\\right)\\), and \\(x=\\dfrac{100}{6-\\sqrt3}\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q09__p08-08__m05__Solving-Inequalities": {
+      "status": "checked",
+      "source": "**Topic check:** Solving inequalities. The tag is correct.\n\n**Solution**\n\n\\[\n-7\\le2x-3<5\n\\]\n\nAdd 3 to each part:\n\\[\n-4\\le2x<8\n\\]\n\nDivide by 2:\n\\[\n-2\\le x<4\n\\]\n\nOn the number line, use a closed circle at \\(-2\\), an open circle at \\(4\\), and shade between them.\n\n**Answer:** \\(-2\\le x<4\\).",
+      "updated": "2026-05-06T07:35:26",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q06__p07-07__m05__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Simultaneous Equations.\n\n**Solution**\n\nLet \\(a\\) be the cost of one apple and \\(p\\) be the cost of one pear.\n\n\\[\n5a+3p=1.96\n\\]\n\n\\[\n3a+2p=1.22\n\\]\n\nMultiply the first equation by 2:\n\n\\[\n10a+6p=3.92\n\\]\n\nMultiply the second equation by 3:\n\n\\[\n9a+6p=3.66\n\\]\n\nSubtract:\n\n\\[\na=0.26\n\\]\n\nThen\n\n\\[\n3(0.26)+2p=1.22\n\\]\n\n\\[\n2p=0.44\n\\]\n\n\\[\np=0.22\n\\]\n\nMichael buys 10 apples and 10 pears:\n\n\\[\n10(0.26)+10(0.22)=4.80\n\\]\n\n**Answer:** \\(\\$4.80\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q05__p06-06__m05__Forming-and-Solving-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Forming & Solving Equations.\n\n**Solution**\n\nThe top row has 5 tile widths and the bottom row has 4 tile lengths, so\n\n\\[\n5W=4L\n\\]\n\n\\[\nL=\\frac54W\n\\]\n\nThe rectangle has width \\(5W\\) and height \\(L+W\\):\n\n\\[\n5W(L+W)=1620\n\\]\n\nSubstitute \\(L=\\frac54W\\):\n\n\\[\n5W\\left(\\frac54W+W\\right)=1620\n\\]\n\n\\[\n5W\\left(\\frac94W\\right)=1620\n\\]\n\n\\[\n\\frac{45}{4}W^2=1620\n\\]\n\n\\[\nW^2=144\n\\]\n\n\\[\nW=12,\\qquad L=\\frac54(12)=15\n\\]\n\n**Answer:** \\(L=15\\text{ cm}\\), \\(W=12\\text{ cm}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q20__p24-24__m07__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nA=(-6,2),\\qquad B=(5,3)\n\\]\n\nThe midpoint of \\(AB\\) is\n\n\\[\n\\left(\\frac{-6+5}{2},\\frac{2+3}{2}\\right)\n=\n\\left(-\\frac12,\\frac52\\right)\n\\]\n\nThe gradient of \\(AB\\) is\n\n\\[\n\\frac{3-2}{5-(-6)}=\\frac1{11}\n\\]\n\nSo the perpendicular gradient is\n\n\\[\n-11\n\\]\n\nLine \\(M\\) passes through \\(\\left(-\\frac12,\\frac52\\right)\\), so\n\n\\[\ny-\\frac52=-11\\left(x+\\frac12\\right)\n\\]\n\nAt point \\(C\\), \\(x=-1\\):\n\n\\[\ny-\\frac52=-11\\left(-\\frac12\\right)\n\\]\n\n\\[\ny-\\frac52=\\frac{11}{2}\n\\]\n\n\\[\ny=8\n\\]\n\nSo\n\n\\[\nC=(-1,8)\n\\]\n\nNow use vectors from \\(A\\):\n\n\\[\n\\vec{AB}=(11,1),\\qquad \\vec{AC}=(5,6)\n\\]\n\nArea of triangle \\(ABC\\) is\n\n\\[\n\\frac12 |11(6)-1(5)|\n\\]\n\n\\[\n=\\frac12(61)\n\\]\n\n\\[\n=30.5\n\\]\n\n**Answer:** \\(30.5\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q10__p09-09__m05__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Standard & Compound Units. The tag is correct.\n\n**Solution**\n\nThe mass is \\(5.4\\text{ kg}\\), and the density is \\(0.0027\\text{ kg/cm}^3\\).\n\n\\[\n\\text{volume}=\\frac{\\text{mass}}{\\text{density}}\n=\\frac{5.4}{0.0027}=2000\\text{ cm}^3\n\\]\n\nFor the cylinder,\n\\[\nV=\\pi r^2h\n\\]\n\n\\[\n2000=\\pi(10)^2h\n\\]\n\n\\[\nh=\\frac{2000}{100\\pi}=6.366\\ldots\n\\]\n\n**Answer:** \\(6.4\\text{ cm}\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q04__p05-05__m05__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Area & Perimeter. The question is about shaded area and coverage.\n\n**Solution**\n\nArea of the rectangular door:\n\\[\n0.75\\times 2=1.5\\text{ m}^2\n\\]\n\nThe semicircular window has diameter \\(0.5\\text{ m}\\), so\n\\[\nr=0.25\\text{ m}\n\\]\n\nArea of the semicircular window:\n\\[\n\\frac12\\pi(0.25)^2=0.098174\\ldots\\text{ m}^2\n\\]\n\nShaded area for one coat:\n\\[\n1.5-0.098174\\ldots=1.401825\\ldots\\text{ m}^2\n\\]\n\nFor 2 coats:\n\\[\n2\\times 1.401825\\ldots=2.80365\\ldots\\text{ m}^2\n\\]\n\nSince 250 ml covers \\(4\\text{ m}^2\\), varnish needed is\n\\[\n\\frac{2.80365\\ldots}{4}\\times 250=175.22\\ldots\n\\]\n\n**Answer:** \\(175\\) millilitres.",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q02__p03-03__m03__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Right-Angled Triangles - Pythagoras & Trigonometry. The tag is correct.\n\n**Solution**\n\n\\[\nh^2+30^2=52^2\n\\]\n\n\\[\nh^2=52^2-30^2=1804\n\\]\n\n\\[\nh=\\sqrt{1804}=42.473\\ldots\n\\]\n\n**Answer:** \\(42.5\\text{ cm}\\) to 3 significant figures.",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q12__p12-12__m06__Right-Angled-Triangles-Pythagoras-and-Trigonometry": {
+      "status": "checked",
+      "source": "**Topic check:** Right-Angled Triangles - Pythagoras & Trigonometry. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n\\tan20^\\circ=\\frac{100}{d}\n\\]\n\n\\[\nd=\\frac{100}{\\tan20^\\circ}=274.747\\ldots\n\\]\n\nSo\n\n\\[\nd=275\\text{ m}\n\\]\n\n(b) The angle of elevation to the top of the radio mast is \\(25^\\circ\\).\n\n\\[\n\\tan25^\\circ=\\frac{100+h}{274.747\\ldots}\n\\]\n\n\\[\n100+h=274.747\\ldots\\tan25^\\circ=128.116\\ldots\n\\]\n\n\\[\nh=28.116\\ldots\n\\]\n\n**Answer:** (a) \\(275\\text{ m}\\), (b) \\(28.1\\text{ m}\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q14__p14-15__m08__Vectors": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Vectors.\n\n**Solution**\n\n\\[\n\\overrightarrow{OA}=\\mathbf a,\\qquad \\overrightarrow{OB}=\\mathbf b\n\\]\n\n(a)(i)\n\n\\[\n\\overrightarrow{AB}=\\overrightarrow{OB}-\\overrightarrow{OA}\n=\\mathbf b-\\mathbf a\n\\]\n\nFor a regular hexagon,\n\n\\[\n\\overrightarrow{OC}=\\mathbf b-\\mathbf a,\\quad\n\\overrightarrow{OD}=-\\mathbf a,\\quad\n\\overrightarrow{OE}=-\\mathbf b,\\quad\n\\overrightarrow{OF}=\\mathbf a-\\mathbf b\n\\]\n\nThe outer hexagon has scale factor \\(2\\), so\n\n\\[\n\\overrightarrow{OI}=2(\\mathbf b-\\mathbf a),\\quad\n\\overrightarrow{OK}=-2\\mathbf b,\\quad\n\\overrightarrow{OL}=2(\\mathbf a-\\mathbf b)\n\\]\n\n(ii)\n\n\\[\n\\overrightarrow{KI}\n=\\overrightarrow{OI}-\\overrightarrow{OK}\n=2(\\mathbf b-\\mathbf a)-(-2\\mathbf b)\n=4\\mathbf b-2\\mathbf a\n\\]\n\n(iii)\n\n\\[\n\\overrightarrow{LD}\n=\\overrightarrow{OD}-\\overrightarrow{OL}\n=-\\mathbf a-2(\\mathbf a-\\mathbf b)\n=2\\mathbf b-3\\mathbf a\n\\]\n\n(b) The inner hexagon is made from 6 equal triangles like \\(OAB\\):\n\n\\[\n\\text{inner area}=6\\times 5=30\n\\]\n\nThe outer hexagon is an enlargement with scale factor \\(2\\), so area scale factor is \\(2^2=4\\):\n\n\\[\n\\text{outer area}=4\\times 30=120\n\\]\n\n\\[\n\\text{shaded area}=120-30=90\n\\]\n\n**Answer:** (i) \\(\\mathbf b-\\mathbf a\\), (ii) \\(4\\mathbf b-2\\mathbf a\\), (iii) \\(2\\mathbf b-3\\mathbf a\\), (b) \\(90\\text{ cm}^2\\).",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q11__p10-11__m05__Cumulative-Frequency-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Cumulative Frequency Diagrams. The tag is correct.\n\n**Solution**\n\nThe cumulative frequencies are\n\n\\[\n12,\\ 36,\\ 64,\\ 76,\\ 86,\\ 90\n\\]\n\nFor \\(42<T\\leq 52\\),\n\n\\[\nF(52)\\approx 36+\\frac{7}{10}(64-36)=55.6\n\\]\n\n\\[\nF(42)\\approx 12+\\frac{7}{10}(36-12)=28.8\n\\]\n\n\\[\n55.6-28.8=26.8\n\\]\n\n**Answer:** about \\(27\\) runners.",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Nov2021_P1H__Q03__p04-04__m04__Probability-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Probability Toolkit.\n\n**Solution**\n\n(a) Let the number of white fish be \\(w\\).\n\n\\[\n\\frac{w}{54}=\\frac49\n\\]\n\n\\[\nw=54\\times\\frac49=24\n\\]\n\n(b) There are still 54 fish, and now\n\n\\[\n\\frac{\\text{white fish}}{54}=\\frac12\n\\]\n\n\\[\n\\text{white fish}=27\n\\]\n\nJeevan added\n\n\\[\n27-24=3\n\\]\n\n**Answer:** (a) \\(24\\) white fish, (b) \\(3\\) white fish.",
+      "updated": "2026-05-06T17:15:57",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::Nov2021_P1H__Q15__p16-17__m08__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nFor each chess game:\n\n\\[\nP(M\\text{ wins})=\\frac29,\\quad P(\\text{draw})=\\frac49,\\quad P(M\\text{ loses})=\\frac13\n\\]\n\nAfter two games, equal points happens if both games are drawn or Magnus wins one and loses one.\n\n\\[\n\\left(\\frac49\\right)^2+2\\left(\\frac29\\right)\\left(\\frac13\\right)\n\\]\n\n\\[\n=\\frac{16}{81}+\\frac{12}{81}=\\frac{28}{81}\n\\]\n\nAfter three games, equal points means Magnus scores \\(3\\) points in total.\n\nThis happens with three draws, or with one win, one draw and one loss.\n\n\\[\n\\left(\\frac49\\right)^3+6\\left(\\frac29\\right)\\left(\\frac49\\right)\\left(\\frac13\\right)\n\\]\n\n\\[\n=\\frac{64}{729}+\\frac{144}{729}=\\frac{208}{729}\n\\]\n\n**Answers:** \\(\\frac{28}{81}\\), \\(\\frac{208}{729}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::Nov2021_P1H__Q16__p18-19__m05__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nUse the Maths circle.\n\n\\[\nM\\text{ only}=3\n\\]\n\n\\[\nM\\cap E\\text{ only}=18-x\n\\]\n\n\\[\nM\\cap F\\text{ only}=11-x\n\\]\n\nThe total in \\(M\\) is \\(25\\):\n\n\\[\n3+(18-x)+(11-x)+x=25\n\\]\n\n\\[\n32-x=25\n\\]\n\n\\[\nx=7\n\\]\n\nSo:\n\n\\[\nM\\cap E\\text{ only}=11,\\quad M\\cap F\\text{ only}=4,\\quad E\\cap F\\text{ only}=2\n\\]\n\n\\[\nE\\text{ only}=20-11-2-7=0\n\\]\n\n\\[\nF\\text{ only}=14-4-2-7=1\n\\]\n\nFor a student who passed Maths, failed French means \\(M\\) but not \\(F\\):\n\n\\[\n\\frac{3+11}{25}=\\frac{14}{25}\n\\]\n\n**Answers:** \\(x=7\\), and \\(\\frac{14}{25}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::Nov2021_P1H__Q20__p24-24__m07__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\n\\[\nA=(-6,2),\\qquad B=(5,3)\n\\]\n\nThe midpoint of \\(AB\\) is\n\n\\[\n\\left(\\frac{-6+5}{2},\\frac{2+3}{2}\\right)\n=\n\\left(-\\frac12,\\frac52\\right)\n\\]\n\nThe gradient of \\(AB\\) is\n\n\\[\n\\frac{3-2}{5-(-6)}=\\frac1{11}\n\\]\n\nSo the perpendicular gradient is\n\n\\[\n-11\n\\]\n\nLine \\(M\\) passes through \\(\\left(-\\frac12,\\frac52\\right)\\), so\n\n\\[\ny-\\frac52=-11\\left(x+\\frac12\\right)\n\\]\n\nAt point \\(C\\), \\(x=-1\\):\n\n\\[\ny-\\frac52=-11\\left(-\\frac12\\right)\n\\]\n\n\\[\ny-\\frac52=\\frac{11}{2}\n\\]\n\n\\[\ny=8\n\\]\n\nSo\n\n\\[\nC=(-1,8)\n\\]\n\nNow use vectors from \\(A\\):\n\n\\[\n\\vec{AB}=(11,1),\\qquad \\vec{AC}=(5,6)\n\\]\n\nArea of triangle \\(ABC\\) is\n\n\\[\n\\frac12 |11(6)-1(5)|\n\\]\n\n\\[\n=\\frac12(61)\n\\]\n\n\\[\n=30.5\n\\]\n\n**Answer:** \\(30.5\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}

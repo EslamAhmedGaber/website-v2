@@ -1,0 +1,191 @@
+{
+  "paperSlug": "MayNov2020_P1H",
+  "solutions": {
+    "all::MayNov2020_P1H__Q10__p11-11__m03__Prime-Factors-HCF-and-LCM": {
+      "status": "checked",
+      "source": "**Topic check:** Prime factors, HCF and LCM. The tag is correct.\n\n**Method**\n\n\\[\nA=2\\times 3^{43}\n\\]\n\n\\[\nB=16\\times 3^{37}=2^4\\times 3^{37}\n\\]\n\nFor the HCF, take the smaller powers:\n\n\\[\n\\text{HCF}=2\\times 3^{37}\n\\]\n\nFor \\(A\\times B\\),\n\n\\[\nA\\times B=(2\\times 3^{43})(2^4\\times 3^{37})\n\\]\n\n\\[\nA\\times B=2^5\\times 3^{80}\n\\]\n\n**Answer:** (a) \\(2\\times 3^{37}\\), (b) \\(2^5\\times 3^{80}\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q05__p07-07__m04__Powers-Roots-and-Standard-Form": {
+      "status": "checked",
+      "source": "**Topic check:** Powers, roots and standard form. The tag is correct.\n\n**Method**\n\n\\[\n5.7\\times 10^{-3}=0.0057\n\\]\n\n\\[\n800000=8\\times 10^5\n\\]\n\nFor part (c), first simplify the numerator:\n\n\\[\n3\\times 10^5-2.7\\times 10^4=300000-27000=273000\n\\]\n\nThen\n\n\\[\n\\frac{273000}{6\\times 10^{-2}}=\\frac{273000}{0.06}=4550000\n\\]\n\n\\[\n4550000=4.55\\times 10^6\n\\]\n\n**Answer:** (a) \\(0.0057\\), (b) \\(8\\times 10^5\\), (c) \\(4.55\\times 10^6\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q09__p10-10__m03__Percentages": {
+      "status": "checked",
+      "source": "**Topic check:** Percentages. The tag is correct.\n\n**Method**\n\nA reduction of \\(20\\%\\) means the sale price is \\(80\\%\\) of the normal price.\n\n\\[\n0.80\\times \\text{normal price}=1080\n\\]\n\n\\[\n\\text{normal price}=\\frac{1080}{0.80}=1350\n\\]\n\n**Answer:** \\(1350\\) rupees",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q13__p14-14__m03__Compound-Interest-and-Depreciation": {
+      "status": "checked",
+      "source": "**Topic check:** Compound Interest and Depreciation. The tag is correct.\n\n**Method**\n\nLet the compound interest rate be \\(x\\%\\).\n\n\\[\n8000\\left(1+\\frac{x}{100}\\right)^6=8877.62\n\\]\n\n\\[\n1+\\frac{x}{100}=\\sqrt[6]{\\frac{8877.62}{8000}}=1.017500\\ldots\n\\]\n\n\\[\nx=1.7500\\ldots\n\\]\n\nCorrect to 2 decimal places,\n\n\\[\nx=1.75\n\\]\n\n**Answer:** \\(x=1.75\\)",
+      "updated": "2026-05-06T01:41:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q17__p19-19__m04__Rounding-Estimation-and-Bounds": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to Rounding, Estimation & Bounds. The question is mainly about using upper and lower bounds to find the upper bound for density.\n\n**Method**\n\nDensity is\n\n\\[\n\\text{density}=\\frac{\\text{mass}}{\\text{volume}}\n\\]\n\nTo get the upper bound for density, use the upper bound for mass and the lower bound for volume.\n\nThe mass is \\(5\\) kg correct to the nearest \\(50\\) g.\n\n\\[\n50\\text{ g}=0.05\\text{ kg}\n\\]\n\nHalf of this is \\(0.025\\) kg, so\n\n\\[\n\\text{upper bound for mass}=5+0.025=5.025\n\\]\n\nThe volume is \\(1.84\\times 10^{-3}=0.00184\\) m\\(^3\\), correct to 3 significant figures.\n\nThe lower bound is\n\n\\[\n0.00184-0.000005=0.001835\n\\]\n\nSo the upper bound for the density is\n\n\\[\n\\frac{5.025}{0.001835}=2738.419\\ldots\n\\]\n\nCorrect to 1 decimal place,\n\n\\[\n2738.4\n\\]\n\n**Answer:** \\(2738.4\\text{ kg/m}^3\\)",
+      "updated": "2026-05-05T21:24:27",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q19__p21-21__m03__Surds": {
+      "status": "checked",
+      "source": "**Topic check:** Surds. The tag is correct.\n\n**Method**\n\n\\[\n\\frac{6}{3-\\sqrt7}\n\\]\n\nRationalise the denominator:\n\n\\[\n\\frac{6}{3-\\sqrt7}\\times \\frac{3+\\sqrt7}{3+\\sqrt7}\n=\\frac{6(3+\\sqrt7)}{9-7}\n\\]\n\n\\[\n=\\frac{6(3+\\sqrt7)}{2}=3(3+\\sqrt7)\n\\]\n\n\\[\n=9+3\\sqrt7\n\\]\n\n**Answer:** \\(9+3\\sqrt7\\)",
+      "updated": "2026-05-06T01:57:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q14__p15-15__m03__Direct-and-Inverse-Proportion": {
+      "status": "checked",
+      "source": "**Topic check:** Direct and Inverse Proportion. The tag is correct.\n\n**Method**\n\n\\(F\\) is inversely proportional to \\(v^2\\), so\n\n\\[\nF=\\frac{k}{v^2}\n\\]\n\nUse \\(F=6.5\\) when \\(v=4\\):\n\n\\[\n6.5=\\frac{k}{4^2}\n\\]\n\n\\[\nk=6.5\\times 16=104\n\\]\n\nTherefore\n\n\\[\nF=\\frac{104}{v^2}\n\\]\n\n**Answer:** \\(F=\\frac{104}{v^2}\\).",
+      "updated": "2026-05-06T02:18:37",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q07__p08-08__m08__Factorising": {
+      "status": "checked",
+      "source": "**Topic check:** Factorising. The tag is correct.\n\n**Solution**\n\n(a)\n\\[\n5(4-x)=7-3x\n\\]\n\n\\[\n20-5x=7-3x\n\\]\n\n\\[\n13=2x\n\\]\n\n\\[\nx=\\frac{13}{2}\n\\]\n\n(b)\n\\[\n16m^3g^3+24m^2g^5=8m^2g^3(2m+3g^2)\n\\]\n\n(c)(i)\n\\[\ny^2-2y-48=(y-8)(y+6)\n\\]\n\n(c)(ii) \\(y=8\\) or \\(y=-6\\).\n\n**Answer:** \\(x=\\frac{13}{2}\\), \\(8m^2g^3(2m+3g^2)\\), \\((y-8)(y+6)\\), \\(y=8\\) or \\(y=-6\\)",
+      "updated": "2026-05-06T07:19:17",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q21__p23-23__m05__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Sine/Cosine Rule to Algebraic Fractions.\n\n**Method**\n\n\\[\n\\frac1{3x-2}\\times\\frac{9x^2-4}{3x^2-13x-10}\n-\\frac7{x-1}\n\\]\n\nFactor:\n\n\\[\n9x^2-4=(3x-2)(3x+2)\n\\]\n\n\\[\n3x^2-13x-10=(3x+2)(x-5)\n\\]\n\nSo the first product becomes\n\n\\[\n\\frac1{3x-2}\\times\n\\frac{(3x-2)(3x+2)}{(3x+2)(x-5)}\n\\]\n\nCancel common factors:\n\n\\[\n\\frac1{x-5}\n\\]\n\nNow subtract:\n\n\\[\n\\frac1{x-5}-\\frac7{x-1}\n\\]\n\nUse the common denominator \\((x-5)(x-1)\\):\n\n\\[\n\\frac{x-1-7(x-5)}{(x-5)(x-1)}\n\\]\n\n\\[\n=\\frac{x-1-7x+35}{(x-5)(x-1)}\n\\]\n\n\\[\n=\\frac{34-6x}{(x-5)(x-1)}\n\\]\n\n**Answer:** \\(\\displaystyle \\boxed{\\frac{34-6x}{(x-5)(x-1)}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q12__p13-13__m04__Simultaneous-Equations": {
+      "status": "checked",
+      "source": "**Topic check:** Simultaneous equations. The tag is correct.\n\n**Solution**\n\n\\[\n7x-2y=34\n\\]\n\n\\[\n3x+5y=-3\n\\]\n\nMultiply the first equation by 5:\n\\[\n35x-10y=170\n\\]\n\nMultiply the second equation by 2:\n\\[\n6x+10y=-6\n\\]\n\nAdd:\n\\[\n41x=164\n\\]\n\n\\[\nx=4\n\\]\n\nSubstitute into \\(3x+5y=-3\\):\n\\[\n12+5y=-3\n\\]\n\n\\[\ny=-3\n\\]\n\n**Answer:** \\(x=4\\), \\(y=-3\\).",
+      "updated": "2026-05-06T07:57:33",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q24__p26-26__m04__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe arithmetic sequence is\n\n\\[\n8,\\ 15,\\ 22,\\ 29,\\ 36,\\ldots\n\\]\n\nSo\n\n\\[\na=8,\\quad d=7\n\\]\n\nThe \\(n\\)th term is\n\n\\[\nu_n=8+7(n-1)=7n+1\n\\]\n\n\\[\nu_{50}=7(50)+1=351\n\\]\n\n\\[\nu_{100}=7(100)+1=701\n\\]\n\nThere are\n\n\\[\n100-50+1=51\n\\]\n\nterms from the 50th to the 100th inclusive.\n\n\\[\n\\text{sum}=\\frac{51}{2}(351+701)\n\\]\n\n\\[\n=26826\n\\]\n\n**Answer:** \\(26826\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q22__p24-24__m04__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nIn a rhombus, the diagonals are perpendicular and bisect each other.\n\nThe diagonal \\(AC\\) lies on\n\n\\[\n2y+7x=20\n\\]\n\n\\[\n2y=-7x+20\n\\]\n\n\\[\ny=-\\frac72x+10\n\\]\n\nSo the gradient of \\(AC\\) is\n\n\\[\n-\\frac72\n\\]\n\nTherefore the gradient of \\(BD\\) is\n\n\\[\n\\frac27\n\\]\n\nThe line \\(BD\\) passes through\n\n\\[\nM=(6,-11)\n\\]\n\nSo\n\n\\[\ny+11=\\frac27(x-6)\n\\]\n\nTo find where this line intersects the \\(y\\)-axis, put \\(x=0\\):\n\n\\[\ny+11=\\frac27(0-6)\n\\]\n\n\\[\ny+11=-\\frac{12}{7}\n\\]\n\n\\[\ny=-11-\\frac{12}{7}\n\\]\n\n\\[\ny=-\\frac{89}{7}\n\\]\n\n**Answer:** \\(\\displaystyle \\left(0,-\\frac{89}{7}\\right)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q03__p05-05__m03__Linear-Graphs-y-mx-c": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected to linear graphs. The function is a straight line.\n\n**Solution**\n\n\\[\ny=7-4x\n\\]\n\nUseful points are:\n\\[\n(-2,15),\\quad (0,7),\\quad (1,3),\\quad (2,-1),\\quad (3,-5)\n\\]\n\nPlot these points and join them with a straight line.\n\n**Answer:** The graph is the straight line \\(y=7-4x\\).",
+      "updated": "2026-05-06T12:16:55",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q25__p27-27__m03__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor part (a),\n\n\\[\ny=g(x)\\to y=-g(x)\n\\]\n\nThe \\(x\\)-coordinates stay the same and the \\(y\\)-coordinates change sign.\n\nSo the transformation is a reflection in the \\(x\\)-axis.\n\nFor part (b),\n\n\\[\ny=2f(x-1)\n\\]\n\nFirst, \\(x-1\\) moves the graph 1 unit right. Then the factor 2 stretches the graph vertically by scale factor 2.\n\nUse points from the original graph:\n\n\\[\n(1,3)\\to(2,6)\n\\]\n\n\\[\n(2,0)\\to(3,0)\n\\]\n\n\\[\n(4,-3)\\to(5,-6)\n\\]\n\n\\[\n(6,0)\\to(7,0)\n\\]\n\n\\[\n(7,3)\\to(8,6)\n\\]\n\nDraw the transformed parabola through these points.\n\n**Answer:** reflection in the \\(x\\)-axis; transformed graph through \\((2,6)\\), \\((3,0)\\), \\((5,-6)\\), \\((7,0)\\), \\((8,6)\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q23__p25-25__m04__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Functions to Differentiation.\n\n**Method**\n\n\\[\ny=px^3-mx\n\\]\n\nDifferentiate:\n\n\\[\n\\frac{dy}{dx}=3px^2-m\n\\]\n\nThe gradient is negative when\n\n\\[\n3px^2-m<0\n\\]\n\n\\[\n3px^2<m\n\\]\n\n\\[\nx^2<\\frac{m}{3p}\n\\]\n\nSo\n\n\\[\n-\\sqrt{\\frac{m}{3p}}<x<\\sqrt{\\frac{m}{3p}}\n\\]\n\n**Answer:** \\(-\\sqrt{\\dfrac{m}{3p}}<x<\\sqrt{\\dfrac{m}{3p}}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q06__p07-07__m03__Standard-and-Compound-Units": {
+      "status": "checked",
+      "source": "**Topic check:** Standard & Compound Units. The tag is correct.\n\n**Solution**\n\nUse\n\\[\n\\text{time}=\\frac{\\text{distance}}{\\text{speed}}\n\\]\n\n\\[\n\\text{time}=\\frac{100}{28440}\\text{ hours}\n\\]\n\nConvert hours to seconds:\n\\[\n\\frac{100}{28440}\\times 3600=12.658\\ldots\n\\]\n\nTo the nearest second,\n\\[\n12.658\\ldots \\approx 13\n\\]\n\n**Answer:** \\(13\\) seconds.",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q08__p09-09__m04__Angles-in-Polygons-and-Parallel-Lines": {
+      "status": "checked",
+      "source": "**Topic check:** Angles in Polygons & Parallel Lines. The tag is correct.\n\n**Solution**\n\nThe sum of the interior angles of a 10-sided polygon is\n\\[\n(10-2)\\times 180=1440^\\circ\n\\]\n\nThe sum of the 9 given interior angles is\n\\[\n150+168+134+125+125+134+168+150+148=1302^\\circ\n\\]\n\nSo the missing interior angle is\n\\[\n1440^\\circ-1302^\\circ=138^\\circ\n\\]\n\nThe angle \\(x\\) is the reflex angle outside the polygon at this vertex:\n\\[\nx=360^\\circ-138^\\circ=222^\\circ\n\\]\n\n**Answer:** \\(222^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q16__p18-18__m04__Circle-Theorems": {
+      "status": "checked",
+      "source": "**Topic check:** Circle Theorems. The tag is correct.\n\n**Solution**\n\n(a) Opposite angles in cyclic quadrilateral \\(MNPL\\) add to \\(180^\\circ\\):\n\\[\n\\angle MLP=180^\\circ-58^\\circ=122^\\circ\n\\]\n\n(b) The angle at the centre is twice the angle at the circumference standing on the same arc \\(MP\\):\n\\[\n\\angle MOP=2\\times 58^\\circ=116^\\circ\n\\]\n\nThe reflex angle is\n\\[\n360^\\circ-116^\\circ=244^\\circ\n\\]\n\n**Answer:** \\(\\angle MLP=122^\\circ\\), and reflex \\(\\angle MOP=244^\\circ\\).",
+      "updated": "2026-05-06T12:59:49",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q11__p12-12__m06__Area-and-Perimeter": {
+      "status": "checked",
+      "source": "**Topic check:** Area & Perimeter. The tag is correct.\n\n**Solution**\n\nThe average of the parallel sides is\n\\[\n\\frac{8.4+17.6}{2}=13\n\\]\n\nSo the perpendicular height is\n\\[\n179.4\\div 13=13.8\n\\]\n\nThe horizontal offset on each side is\n\\[\n\\frac{17.6-8.4}{2}=4.6\n\\]\n\nThe acute angle between \\(AB\\) and the horizontal is\n\\[\n\\tan^{-1}\\left(\\frac{13.8}{4.6}\\right)=71.565\\ldots^\\circ\n\\]\n\nSo the interior angle \\(ABC\\) is\n\\[\n180^\\circ-71.565\\ldots^\\circ=108.434\\ldots^\\circ\n\\]\n\n**Answer:** \\(108.4^\\circ\\).",
+      "updated": "2026-05-06T13:35:18",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q20__p22-22__m03__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nShape R has surface area \\(108\\text{ cm}^2\\) and volume \\(135\\text{ cm}^3\\).\n\nShape S has surface area \\(300\\text{ cm}^2\\).\n\nSurface area ratio S:R:\n\n\\[\n300:108=25:9\n\\]\n\nSo the linear ratio S:R is\n\n\\[\n5:3\n\\]\n\nTherefore the volume ratio S:R is\n\n\\[\n5^3:3^3=125:27\n\\]\n\nVolume of S:\n\n\\[\n135\\times \\frac{125}{27}=625\n\\]\n\n**Answer:** \\(\\boxed{625\\text{ cm}^3}\\)",
+      "updated": "2026-05-06T07:04:07",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q04__p06-06__m04__Statistics-Toolkit": {
+      "status": "checked",
+      "source": "**Topic check:** Statistics Toolkit. The tag is correct.\n\n**Solution**\n\nThe median is \\(9\\):\n\n\\[\n\\frac{x+10}{2}=9\n\\]\n\n\\[\nx=8\n\\]\n\nThe mean is \\(11\\), so the total is\n\n\\[\n6 \\times 11=66\n\\]\n\n\\[\n4+7+8+10+y+y=66\n\\]\n\n\\[\n29+2y=66\n\\]\n\n\\[\n2y=37\n\\]\n\n\\[\ny=18.5\n\\]\n\n**Answers:** \\(x=8,\\ y=18.5\\).",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q18__p20-21__m05__Histograms": {
+      "status": "checked",
+      "source": "**Topic check:** Histograms. The tag is correct.\n\n**Solution**\n\nThe histogram densities are\n\n\\[\n\\frac{35}{10}=3.5,\\quad\n\\frac{45}{15}=3,\\quad\n\\frac{75}{15}=5,\\quad\n\\frac{40}{20}=2,\\quad\n\\frac{8}{10}=0.8\n\\]\n\nFor plants taller than \\(40\\text{ cm}\\):\n\nFrom \\(40<h\\le 50\\):\n\n\\[\n10(5)=50\n\\]\n\nFrom \\(50<h\\le 70\\):\n\n\\[\n40\n\\]\n\nFrom \\(70<h\\le 80\\):\n\n\\[\n8\n\\]\n\n\\[\n50+40+8=98\n\\]\n\n**Answer:** draw bars with densities \\(3.5,3,5,2,0.8\\), and \\(98\\) plants.",
+      "updated": "2026-05-06T18:13:48",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "all::MayNov2020_P1H__Q02__p04-04__m04__Probability-Toolkit": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Toolkit. The tag is correct.\n\n**Solution**\n\n\\[\n15\\text{ hours}=15\\times 60\\times 60=54000\\text{ seconds}\n\\]\n\nThe machine makes \\(5\\) cars every \\(12\\) seconds, so it makes\n\n\\[\n\\frac{54000}{12}\\times 5=22500\n\\]\n\ncars.\n\nExpected faulty cars:\n\n\\[\n22500\\times 0.002=45\n\\]\n\n**Answer:** \\(45\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::MayNov2020_P1H__Q01__p03-03__m04__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nFrom the Venn diagram,\n\n\\[\nA\\cap B=\\{2,4,6,12\\}\n\\]\n\nThe values not in \\(B\\) are\n\n\\[\nB'=\\{5,7,8,9,10,11,13,14\\}\n\\]\n\nThe values in \\(A\\) but not in \\(B\\) are\n\n\\[\n\\{8,10,14\\}\n\\]\n\nSo\n\n\\[\nP(A\\cap B')=\\frac{3}{14}\n\\]\n\n**Answers:** \\(\\{2,4,6,12\\}\\), \\(\\{5,7,8,9,10,11,13,14\\}\\), \\(\\frac{3}{14}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "all::MayNov2020_P1H__Q15__p16-17__m05__Probability-Diagrams-Venn-and-Tree-Diagrams": {
+      "status": "missing",
+      "source": "**Topic check:** Probability Diagrams - Venn & Tree Diagrams. The tag is correct.\n\n**Solution**\n\nSpinner A has \\(2\\) red sectors and \\(3\\) green sectors:\n\n\\[\nP(A_R)=\\frac25,\\qquad P(A_G)=\\frac35\n\\]\n\nSpinner B has \\(4\\) red sectors and \\(1\\) green sector:\n\n\\[\nP(B_R)=\\frac45,\\qquad P(B_G)=\\frac15\n\\]\n\nAt least one green is the complement of both red.\n\n\\[\nP(\\text{at least one green})=1-\\frac25\\times\\frac45\n\\]\n\n\\[\n=1-\\frac{8}{25}=\\frac{17}{25}\n\\]\n\n**Answer:** \\(\\frac{17}{25}\\).",
+      "updated": "2026-05-06T18:49:24",
+      "checked_by": ""
+    },
+    "expertise::MayNov2020_P1H__Q21__p23-23__m05__Algebraic-Fractions": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Sine/Cosine Rule to Algebraic Fractions.\n\n**Method**\n\n\\[\n\\frac1{3x-2}\\times\\frac{9x^2-4}{3x^2-13x-10}\n-\\frac7{x-1}\n\\]\n\nFactor:\n\n\\[\n9x^2-4=(3x-2)(3x+2)\n\\]\n\n\\[\n3x^2-13x-10=(3x+2)(x-5)\n\\]\n\nSo the first product becomes\n\n\\[\n\\frac1{3x-2}\\times\n\\frac{(3x-2)(3x+2)}{(3x+2)(x-5)}\n\\]\n\nCancel common factors:\n\n\\[\n\\frac1{x-5}\n\\]\n\nNow subtract:\n\n\\[\n\\frac1{x-5}-\\frac7{x-1}\n\\]\n\nUse the common denominator \\((x-5)(x-1)\\):\n\n\\[\n\\frac{x-1-7(x-5)}{(x-5)(x-1)}\n\\]\n\n\\[\n=\\frac{x-1-7x+35}{(x-5)(x-1)}\n\\]\n\n\\[\n=\\frac{34-6x}{(x-5)(x-1)}\n\\]\n\n**Answer:** \\(\\displaystyle \\boxed{\\frac{34-6x}{(x-5)(x-1)}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::MayNov2020_P1H__Q24__p26-26__m04__Sequences": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nThe arithmetic sequence is\n\n\\[\n8,\\ 15,\\ 22,\\ 29,\\ 36,\\ldots\n\\]\n\nSo\n\n\\[\na=8,\\quad d=7\n\\]\n\nThe \\(n\\)th term is\n\n\\[\nu_n=8+7(n-1)=7n+1\n\\]\n\n\\[\nu_{50}=7(50)+1=351\n\\]\n\n\\[\nu_{100}=7(100)+1=701\n\\]\n\nThere are\n\n\\[\n100-50+1=51\n\\]\n\nterms from the 50th to the 100th inclusive.\n\n\\[\n\\text{sum}=\\frac{51}{2}(351+701)\n\\]\n\n\\[\n=26826\n\\]\n\n**Answer:** \\(26826\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::MayNov2020_P1H__Q22__p24-24__m04__Coordinate-Geometry": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nIn a rhombus, the diagonals are perpendicular and bisect each other.\n\nThe diagonal \\(AC\\) lies on\n\n\\[\n2y+7x=20\n\\]\n\n\\[\n2y=-7x+20\n\\]\n\n\\[\ny=-\\frac72x+10\n\\]\n\nSo the gradient of \\(AC\\) is\n\n\\[\n-\\frac72\n\\]\n\nTherefore the gradient of \\(BD\\) is\n\n\\[\n\\frac27\n\\]\n\nThe line \\(BD\\) passes through\n\n\\[\nM=(6,-11)\n\\]\n\nSo\n\n\\[\ny+11=\\frac27(x-6)\n\\]\n\nTo find where this line intersects the \\(y\\)-axis, put \\(x=0\\):\n\n\\[\ny+11=\\frac27(0-6)\n\\]\n\n\\[\ny+11=-\\frac{12}{7}\n\\]\n\n\\[\ny=-11-\\frac{12}{7}\n\\]\n\n\\[\ny=-\\frac{89}{7}\n\\]\n\n**Answer:** \\(\\displaystyle \\left(0,-\\frac{89}{7}\\right)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::MayNov2020_P1H__Q25__p27-27__m03__Transformations-of-Graphs": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nFor part (a),\n\n\\[\ny=g(x)\\to y=-g(x)\n\\]\n\nThe \\(x\\)-coordinates stay the same and the \\(y\\)-coordinates change sign.\n\nSo the transformation is a reflection in the \\(x\\)-axis.\n\nFor part (b),\n\n\\[\ny=2f(x-1)\n\\]\n\nFirst, \\(x-1\\) moves the graph 1 unit right. Then the factor 2 stretches the graph vertically by scale factor 2.\n\nUse points from the original graph:\n\n\\[\n(1,3)\\to(2,6)\n\\]\n\n\\[\n(2,0)\\to(3,0)\n\\]\n\n\\[\n(4,-3)\\to(5,-6)\n\\]\n\n\\[\n(6,0)\\to(7,0)\n\\]\n\n\\[\n(7,3)\\to(8,6)\n\\]\n\nDraw the transformed parabola through these points.\n\n**Answer:** reflection in the \\(x\\)-axis; transformed graph through \\((2,6)\\), \\((3,0)\\), \\((5,-6)\\), \\((7,0)\\), \\((8,6)\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::MayNov2020_P1H__Q23__p25-25__m04__Differentiation": {
+      "status": "checked",
+      "source": "**Topic check:** Corrected from Functions to Differentiation.\n\n**Method**\n\n\\[\ny=px^3-mx\n\\]\n\nDifferentiate:\n\n\\[\n\\frac{dy}{dx}=3px^2-m\n\\]\n\nThe gradient is negative when\n\n\\[\n3px^2-m<0\n\\]\n\n\\[\n3px^2<m\n\\]\n\n\\[\nx^2<\\frac{m}{3p}\n\\]\n\nSo\n\n\\[\n-\\sqrt{\\frac{m}{3p}}<x<\\sqrt{\\frac{m}{3p}}\n\\]\n\n**Answer:** \\(-\\sqrt{\\dfrac{m}{3p}}<x<\\sqrt{\\dfrac{m}{3p}}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    },
+    "expertise::MayNov2020_P1H__Q20__p22-22__m03__Area-and-Volume-of-Similar-Shapes": {
+      "status": "checked",
+      "source": "**Topic check:** Correct.\n\n**Method**\n\nShape R has surface area \\(108\\text{ cm}^2\\) and volume \\(135\\text{ cm}^3\\).\n\nShape S has surface area \\(300\\text{ cm}^2\\).\n\nSurface area ratio S:R:\n\n\\[\n300:108=25:9\n\\]\n\nSo the linear ratio S:R is\n\n\\[\n5:3\n\\]\n\nTherefore the volume ratio S:R is\n\n\\[\n5^3:3^3=125:27\n\\]\n\nVolume of S:\n\n\\[\n135\\times \\frac{125}{27}=625\n\\]\n\n**Answer:** \\(\\boxed{625\\text{ cm}^3}\\)",
+      "updated": "2026-05-05",
+      "checked_by": "Dr Eslam Ahmed + Codex"
+    }
+  }
+}
