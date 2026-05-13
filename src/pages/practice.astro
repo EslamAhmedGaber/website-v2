@@ -1,18 +1,471 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { questions, solutions, siteMeta, banks } from "../lib/dataset.js";
+
+// We inline the dataset as a single script. Topic-normalizer.js then
+// rewrites question.topic / question.unit based on the active pathway
+// at runtime. The total payload is comparable to v1's monolithic
+// questions-data.js, and we'll split per-page later if needed.
+const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
 ---
 
 <BaseLayout title="Practice — Elite IGCSE Mathematics">
-  <div class="container section">
-    <div class="card royale-frame stack-lg" style="text-align: center;">
-      <h1>Practice page — coming in Phase 2</h1>
-      <p class="meta">
-        The interactive question bank is being rebuilt with the new royale design.
-        Phase 1 (foundation + data migration) is complete; Phase 2 ships next.
-      </p>
-      <p>
-        <a class="btn btn-primary" href="/">← Back to pathway gate</a>
-      </p>
+  <!-- Resume banner: small one-line bar telling the user the active pathway -->
+  <div class="resume-bar" data-resume-banner>
+    <span class="resume-text" data-resume-text>Practising…</span>
+    <button class="resume-change" type="button" data-resume-change>Change pathway</button>
+  </div>
+
+  <div class="container-wide section">
+    <!-- ============ Command bar (replaces the giant hero) ============ -->
+    <section class="cmd-bar card royale-frame" aria-label="Practice overview">
+      <div class="cmd-titles">
+        <div class="meta cmd-eyebrow">
+          <span data-pathway-badge>Linear</span>
+          <span aria-hidden="true">·</span>
+          <span data-unit-badge>All chapters</span>
+          <span aria-hidden="true">·</span>
+          <span data-count-badge>0 of 0</span>
+        </div>
+        <h1 class="cmd-title">Question Bank</h1>
+        <p class="cmd-sub meta">
+          <strong data-solved-badge>0</strong> solved &nbsp;·&nbsp;
+          <strong data-selected-badge>0</strong> in your set
+        </p>
+      </div>
+
+      <div class="cmd-banks" role="group" aria-label="Question bank">
+        <button class="pill" type="button" data-bank="all">
+          All <span class="meta">({banks.all.count})</span>
+        </button>
+        <button class="pill" type="button" data-bank="expertise">
+          Expertise Q20+ <span class="meta">({banks.expertise.count})</span>
+        </button>
+      </div>
+
+      <div class="cmd-filters" role="group" aria-label="View filter">
+        <button class="pill" type="button" data-view-pill="all">All</button>
+        <button class="pill" type="button" data-view-pill="unsolved">Unsolved</button>
+        <button class="pill" type="button" data-view-pill="solved">Solved</button>
+        <button class="pill" type="button" data-view-pill="selected">My set</button>
+        <button class="pill" type="button" data-view-pill="mistakes">Mistakes</button>
+      </div>
+    </section>
+
+    <!-- ============ Layout: sidebar + grid ============ -->
+    <div class="practice-layout">
+      <aside class="side">
+        <details class="side-section" open>
+          <summary>Find a question</summary>
+          <div class="side-body stack">
+            <label class="label" for="searchInput">Search</label>
+            <input class="input" id="searchInput" type="search" placeholder="topic, paper, keyword" data-search />
+            <label class="label" for="topicFilter">Topic</label>
+            <select class="select" id="topicFilter" data-topic-filter></select>
+            <label class="label" for="paperFilter">Paper</label>
+            <select class="select" id="paperFilter" data-paper-filter></select>
+            <label class="label" for="viewFilter">View</label>
+            <select class="select" id="viewFilter" data-view-filter>
+              <option value="">All</option>
+              <option value="unsolved">Unsolved only</option>
+              <option value="solved">Solved only</option>
+              <option value="selected">My set</option>
+              <option value="mistakes">Mistake Box</option>
+            </select>
+            <label class="label" for="minMarks">Minimum marks</label>
+            <input class="input" id="minMarks" type="number" min="0" max="20" step="1" data-min-marks />
+            <button class="btn btn-ghost btn-sm" type="button" data-reset-filters>Reset all filters</button>
+          </div>
+        </details>
+
+        <details class="side-section">
+          <summary>Layout</summary>
+          <div class="side-body">
+            <div class="layout-toggle" role="group" aria-label="Layout">
+              <button class="pill is-active" type="button" data-layout="grid">Grid</button>
+              <button class="pill" type="button" data-layout="list">List</button>
+            </div>
+          </div>
+        </details>
+
+        <details class="side-section">
+          <summary>Study timer</summary>
+          <div class="side-body">
+            <p class="meta">Coming with the rest of the sidebar tools in the next pass.</p>
+          </div>
+        </details>
+
+        <details class="side-section">
+          <summary>Topic mastery</summary>
+          <div class="side-body">
+            <p class="meta">Coming with the rest of the sidebar tools in the next pass.</p>
+          </div>
+        </details>
+
+        <details class="side-section">
+          <summary>Mistake Box</summary>
+          <div class="side-body">
+            <p class="meta">Coming with the rest of the sidebar tools in the next pass.</p>
+          </div>
+        </details>
+      </aside>
+
+      <section class="main-col">
+        <div class="grid-empty" data-empty-state hidden>
+          <h2>No questions match these filters</h2>
+          <p class="meta">Try clearing the search or hitting <strong>Reset all filters</strong>.</p>
+        </div>
+        <div class="q-grid" data-question-grid data-layout="grid"></div>
+      </section>
     </div>
   </div>
+
+  <!-- ============ Dialogs ============ -->
+  <dialog id="viewerDialog" class="q-dialog">
+    <header class="q-dialog-head">
+      <h2 id="viewerTitle">Question</h2>
+      <button class="btn btn-ghost btn-sm" type="button" data-viewer-close>Close ✕</button>
+    </header>
+    <p class="meta" id="viewerMeta"></p>
+    <img id="viewerImage" class="q-dialog-image" alt="" />
+  </dialog>
+
+  <dialog id="solutionDialog" class="q-dialog">
+    <header class="q-dialog-head">
+      <h2 id="solutionTitle">Worked Solution</h2>
+      <button class="btn btn-ghost btn-sm" type="button" data-solution-close>Close ✕</button>
+    </header>
+    <p class="meta" id="solutionMeta"></p>
+    <div id="solutionBody" class="q-dialog-body"></div>
+  </dialog>
+
+  <!-- MathJax (lazy) -->
+  <script is:inline>
+    window.MathJax = {
+      tex: { inlineMath: [["\\(", "\\)"], ["$", "$"]], displayMath: [["\\[", "\\]"]] },
+      svg: { fontCache: "global" }
+    };
+  </script>
+  <script is:inline defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <!-- Dataset payload (inline) -->
+  <script is:inline define:vars={{ dataPayload }}>
+    const __payload = JSON.parse(dataPayload);
+    window.QUESTION_DATA = __payload.questions;
+    window.SOLUTION_DATA = __payload.solutions;
+    window.SITE_META = __payload.siteMeta;
+    window.BANK_META = __payload.banks;
+  </script>
+
+  <!-- Pathway + normaliser (rewrites question.unit / topic for active mode) -->
+  <script is:inline>
+    (function () {
+      const mode = localStorage.getItem("elitePathway") || "linear";
+      window.ELITE_PATHWAY = {
+        mode,
+        isModular: mode === "modular",
+        label: (kind) => (mode === "modular"
+          ? { unit: "Unit", unitLowerPlural: "units" }[kind] || "Unit"
+          : { unit: "Chapter", unitLowerPlural: "chapters" }[kind] || "Chapter"),
+      };
+    })();
+  </script>
+  <script is:inline src="/scripts/topic-normalizer.js"></script>
+
+  <!-- App controller -->
+  <script is:inline defer src="/scripts/practice-app.js"></script>
 </BaseLayout>
+
+<style>
+  /* ============ Resume banner ============ */
+  .resume-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-1);
+    padding: 6px var(--space-2);
+    background: var(--gold-soft);
+    border-bottom: 1px solid var(--line);
+    font-size: 13px;
+    font-weight: var(--weight-bold);
+    color: var(--navy);
+  }
+  .resume-change {
+    background: transparent;
+    border: 0;
+    color: var(--gold-deep);
+    font-weight: var(--weight-bold);
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 2px 8px;
+  }
+  .resume-change:hover { color: var(--navy); }
+
+  /* ============ Command bar ============ */
+  .cmd-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-3);
+    align-items: end;
+    padding: var(--space-3) var(--space-4);
+    background: var(--paper);
+    border-radius: var(--radius-lg);
+  }
+  .cmd-titles { min-width: 0; }
+  .cmd-eyebrow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+  .cmd-title { font-size: var(--type-h1); }
+  .cmd-sub { margin-top: var(--space-1); }
+  .cmd-sub strong { color: var(--navy); font-weight: var(--weight-bold); }
+
+  .cmd-banks, .cmd-filters {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: var(--space-2);
+  }
+  .cmd-filters {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--line);
+    padding-top: var(--space-2);
+  }
+  .cmd-banks {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+  }
+
+  /* ============ Layout ============ */
+  .practice-layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+  }
+  @media (max-width: 960px) {
+    .practice-layout { grid-template-columns: 1fr; }
+  }
+
+  /* ============ Sidebar ============ */
+  .side {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .side-section {
+    background: var(--paper);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .side-section summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-2);
+    font-weight: var(--weight-bold);
+    color: var(--navy);
+    cursor: pointer;
+    list-style: none;
+  }
+  .side-section summary::-webkit-details-marker { display: none; }
+  .side-section summary::after {
+    content: "+";
+    font-family: var(--font-mono);
+    color: var(--muted);
+    margin-left: var(--space-2);
+  }
+  .side-section[open] summary::after { content: "−"; }
+  .side-body {
+    padding: 0 var(--space-2) var(--space-2);
+    border-top: 1px solid var(--line);
+    padding-top: var(--space-2);
+  }
+  .layout-toggle { display: flex; gap: 6px; }
+
+  /* ============ Grid & cards ============ */
+  .q-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-2);
+  }
+  .q-grid[data-layout="list"] {
+    grid-template-columns: 1fr;
+  }
+  .q-grid[data-layout="list"] .q-card {
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
+
+  .q-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: var(--paper);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+  }
+  .q-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    border-color: var(--gold);
+  }
+  .q-card.is-selected { border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold) inset, var(--shadow); }
+  .q-card.is-solved   { border-color: var(--success); }
+
+  .q-thumb {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: var(--ivory);
+    overflow: hidden;
+    cursor: zoom-in;
+    border: 0;
+    padding: 0;
+  }
+  .q-thumb img {
+    width: 100%; height: 100%;
+    object-fit: contain;
+    background: var(--paper);
+  }
+  .q-grid[data-layout="list"] .q-thumb {
+    aspect-ratio: auto;
+    height: 100%;
+    min-height: 140px;
+  }
+
+  .q-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-2);
+  }
+  .q-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-1);
+  }
+  .q-topic { font-size: 15px; font-weight: var(--weight-bold); line-height: 1.25; }
+  .q-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;
+  }
+  .q-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--space-1);
+  }
+  .q-more {
+    position: relative;
+  }
+  .q-more summary {
+    list-style: none;
+    cursor: pointer;
+  }
+  .q-more summary::-webkit-details-marker { display: none; }
+  .q-more-menu {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 4px);
+    display: grid;
+    gap: 2px;
+    padding: 6px;
+    min-width: 200px;
+    background: var(--paper);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    z-index: 5;
+  }
+  .q-more-menu button {
+    text-align: left;
+    padding: 6px 10px;
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--navy);
+    font-weight: var(--weight-regular);
+    font-size: var(--type-meta);
+  }
+  .q-more-menu button:hover { background: var(--gold-soft); }
+
+  /* ============ Empty state ============ */
+  .grid-empty {
+    padding: var(--space-5) var(--space-3);
+    text-align: center;
+    color: var(--muted);
+    border: 1px dashed var(--line-strong);
+    border-radius: var(--radius-lg);
+    background: var(--paper);
+  }
+
+  /* ============ Bank button active state ============ */
+  .pill.is-active {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: var(--paper);
+  }
+  .pill.is-active .meta { color: var(--gold-soft); }
+
+  /* ============ Dialogs ============ */
+  .q-dialog {
+    width: min(900px, 96vw);
+    max-height: 92vh;
+    border: 0;
+    border-radius: var(--radius-lg);
+    padding: var(--space-3);
+    background: var(--paper);
+    box-shadow: var(--shadow-lg);
+  }
+  .q-dialog::backdrop { background: rgba(11, 31, 58, 0.6); }
+  .q-dialog-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    margin-bottom: var(--space-1);
+  }
+  .q-dialog-image {
+    width: 100%;
+    height: auto;
+    max-height: 75vh;
+    object-fit: contain;
+    background: var(--ivory);
+    border-radius: var(--radius);
+    margin-top: var(--space-2);
+  }
+  .q-dialog-body {
+    margin-top: var(--space-2);
+    max-height: 70vh;
+    overflow: auto;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .q-dialog-body p + p { margin-top: var(--space-2); }
+  .q-dialog-body strong { font-weight: var(--weight-bold); }
+  .q-dialog-body code {
+    font-family: var(--font-mono);
+    background: var(--gold-soft);
+    padding: 0 4px;
+    border-radius: 3px;
+  }
+
+  /* ============ Mobile ============ */
+  @media (max-width: 720px) {
+    .cmd-bar { grid-template-columns: 1fr; padding: var(--space-2); }
+    .cmd-banks { grid-column: 1; grid-row: auto; }
+    .cmd-filters { grid-column: 1; }
+    .cmd-title { font-size: 24px; }
+  }
+</style>
