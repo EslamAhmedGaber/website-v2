@@ -15,6 +15,8 @@
   const STORAGE_SOLVED = "elitePracticeSolved";
   const STORAGE_MISTAKES = "elitePracticeMistakes";
   const STORAGE_LAYOUT = "elitePracticeLayout";
+  const STORAGE_CORRECTIONS = "eliteTopicCorrections";
+  const ADMIN_EMAIL_PATTERN = /eslam/i;
 
   const allQuestions = window.QUESTION_DATA || [];
   const solutionData = window.SOLUTION_DATA || {};
@@ -88,7 +90,48 @@
     mockDialog: q("#mockDialog"),
     mockUnitButtons: qa("[data-mock-unit]"),
     mockClose: q("[data-mock-close]"),
+    fixDialog: q("#fixTopicDialog"),
+    fixTitle: q("#fixTopicTitle"),
+    fixCurrentTopic: q("[data-fix-current-topic]"),
+    fixSelect: q("[data-fix-topic-select]"),
+    fixSave: q("[data-fix-save]"),
+    fixClear: q("[data-fix-clear]"),
+    fixClose: q("[data-fix-close]"),
+    fixImage: q("[data-fix-image]"),
   };
+
+  // ---- ADMIN CORRECTIONS -------------------------------------------
+  function loadCorrections() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_CORRECTIONS) || "{}"); } catch (_) { return {}; }
+  }
+  function saveCorrections(map) {
+    localStorage.setItem(STORAGE_CORRECTIONS, JSON.stringify(map));
+  }
+  function isAdmin() {
+    const email = window.CLOUD_SYNC?.state?.user?.email || "";
+    return ADMIN_EMAIL_PATTERN.test(email);
+  }
+  let corrections = loadCorrections();
+  // Apply corrections to in-memory questions on load.
+  function applyCorrections() {
+    let touched = 0;
+    for (const qq of allQuestions) {
+      const fix = corrections[qq.id];
+      if (!fix) continue;
+      // Stash original once
+      if (qq._origTopic === undefined) qq._origTopic = qq.topic;
+      if (qq._origUnit === undefined) qq._origUnit = qq.unit;
+      qq.topic = fix.topic || qq._origTopic;
+      qq.original_topic = qq._origTopic;
+      // Tag for the normalizer to honour
+      qq.corrected = true;
+      // If correction also forces modular unit, propagate
+      if (fix.modularUnit) qq.modular_force_unit = fix.modularUnit;
+      touched++;
+    }
+    return touched;
+  }
+  applyCorrections();
 
   // ---- TIMER --------------------------------------------------------
   const timer = {
@@ -204,12 +247,15 @@
     const isSolved = state.solved.has(qq.id);
     const isMistake = state.mistakes.has(qq.id);
     const hasSolution = Boolean(solutionData[qq.id]?.source);
+    const corrected = Boolean(corrections[qq.id]);
+    const admin = isAdmin();
 
     const cls = [
       "q-card",
       isSelected ? "is-selected" : "",
       isSolved ? "is-solved" : "",
       isMistake ? "is-mistake" : "",
+      corrected ? "is-corrected" : "",
     ].filter(Boolean).join(" ");
 
     return `<article class="${cls}" data-id="${escapeHtml(qq.id)}">
@@ -221,7 +267,7 @@
           <span class="meta">${escapeHtml(qq.paper)} · Q${qq.question}</span>
           <span class="badge">${qq.marks}m</span>
         </div>
-        <h3 class="q-topic">${escapeHtml(qq.topic)}</h3>
+        <h3 class="q-topic">${escapeHtml(qq.topic)}${corrected ? ' <span class="badge badge-gold" title="Topic corrected">edited</span>' : ""}</h3>
         <div class="q-tags">
           <span class="meta">${escapeHtml(qq.unit)}</span>
           ${isSolved ? '<span class="badge badge-navy">Solved</span>' : ""}
@@ -237,6 +283,7 @@
               <button type="button" data-action="solve">${isSolved ? "Mark unsolved" : "Mark solved"}</button>
               <button type="button" data-action="mistake">${isMistake ? "Remove from Mistake Box" : "Add to Mistake Box"}</button>
               ${hasSolution ? '<button type="button" data-action="solution">Show solution</button>' : ""}
+              ${admin ? '<button type="button" data-action="fix-topic">Fix topic</button>' : ""}
             </div>
           </details>
         </div>
@@ -412,6 +459,7 @@
       else if (action === "select") toggleSelected(id);
       else if (action === "mistake") toggleMistake(id);
       else if (action === "solution") openSolution(id);
+      else if (action === "fix-topic") openFixTopic(id);
     });
 
     els.viewerClose?.addEventListener("click", () => els.viewerDialog?.close());
@@ -439,6 +487,11 @@
     els.mockOpenBtn?.addEventListener("click", openMockDialog);
     els.mockUnitButtons.forEach((b) => b.addEventListener("click", () => buildMock(b.dataset.mockUnit)));
     els.mockClose?.addEventListener("click", () => els.mockDialog?.close());
+
+    // Fix Topic
+    els.fixSave?.addEventListener("click", saveFixTopic);
+    els.fixClear?.addEventListener("click", clearFixTopic);
+    els.fixClose?.addEventListener("click", () => els.fixDialog?.close());
   }
 
   function openMockDialog() {
@@ -457,6 +510,50 @@
       b.hidden = !units.includes(label);
     });
     els.mockDialog.showModal();
+  }
+
+  // ---- FIX TOPIC ADMIN ---------------------------------------------
+  let fixActiveId = null;
+  function openFixTopic(id) {
+    const qq = questionById(id);
+    if (!qq || !els.fixDialog) return;
+    fixActiveId = id;
+    if (els.fixTitle) els.fixTitle.textContent = `${qq.paper} · Q${qq.question}`;
+    if (els.fixCurrentTopic) els.fixCurrentTopic.textContent = qq._origTopic || qq.topic;
+    if (els.fixImage) {
+      els.fixImage.src = qq.image;
+      els.fixImage.alt = `${qq.paper} Q${qq.question}`;
+    }
+    // Populate select with the full topic catalog
+    if (els.fixSelect) {
+      const topics = (meta.topics || []).slice();
+      const current = corrections[id]?.topic || qq.topic;
+      els.fixSelect.innerHTML = topics.map((t) => `<option value="${escapeHtml(t)}"${t === current ? " selected" : ""}>${escapeHtml(t)}</option>`).join("");
+    }
+    els.fixDialog.showModal();
+  }
+  function saveFixTopic() {
+    if (!fixActiveId || !els.fixSelect) return;
+    const newTopic = els.fixSelect.value;
+    if (!newTopic) return;
+    corrections[fixActiveId] = { topic: newTopic, savedAt: new Date().toISOString() };
+    saveCorrections(corrections);
+    applyCorrections();
+    els.fixDialog?.close();
+    render();
+  }
+  function clearFixTopic() {
+    if (!fixActiveId) return;
+    delete corrections[fixActiveId];
+    saveCorrections(corrections);
+    // Restore from stash
+    const qq = questionById(fixActiveId);
+    if (qq && qq._origTopic !== undefined) {
+      qq.topic = qq._origTopic;
+      qq.corrected = false;
+    }
+    els.fixDialog?.close();
+    render();
   }
 
   function buildMock(unitLabel) {

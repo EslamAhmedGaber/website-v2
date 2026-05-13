@@ -159,6 +159,31 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     <div id="solutionBody" class="q-dialog-body"></div>
   </dialog>
 
+  <dialog id="fixTopicDialog" class="q-dialog">
+    <header class="q-dialog-head">
+      <h2 id="fixTopicTitle">Fix topic</h2>
+      <button class="btn btn-ghost btn-sm" type="button" data-fix-close>Close ✕</button>
+    </header>
+    <p class="meta">Admin tool · the correction is stored locally and overrides the auto-classified topic for this question.</p>
+    <div class="fix-grid">
+      <img class="fix-image" data-fix-image src="" alt="" />
+      <div class="fix-form stack">
+        <div>
+          <span class="label">Current topic</span>
+          <strong data-fix-current-topic>—</strong>
+        </div>
+        <div>
+          <label class="label" for="fixTopicSelect">Correct topic</label>
+          <select class="select" id="fixTopicSelect" data-fix-topic-select></select>
+        </div>
+        <div class="fix-actions">
+          <button class="btn btn-primary" type="button" data-fix-save>Save correction</button>
+          <button class="btn btn-ghost btn-sm" type="button" data-fix-clear>Reset to auto</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
   <dialog id="mockDialog" class="q-dialog">
     <header class="q-dialog-head">
       <h2>Start a mock exam</h2>
@@ -586,6 +611,36 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     background: var(--ivory);
     border-radius: var(--radius-sm);
     font-size: 13px;
+  }
+
+  /* ============ Fix topic dialog ============ */
+  .fix-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: var(--space-3);
+    margin-top: var(--space-2);
+  }
+  .fix-image {
+    width: 100%;
+    max-height: 65vh;
+    object-fit: contain;
+    background: var(--ivory);
+    border-radius: var(--radius);
+  }
+  .fix-actions {
+    display: flex;
+    gap: var(--space-1);
+    align-items: center;
+  }
+  @media (max-width: 720px) {
+    .fix-grid { grid-template-columns: 1fr; }
+  }
+
+  /* edited badge */
+  .q-topic .badge {
+    font-size: 10px;
+    margin-left: 6px;
+    vertical-align: middle;
   }
 
   /* ============ Mock dialog ============ */
