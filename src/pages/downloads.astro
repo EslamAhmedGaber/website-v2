@@ -1,8 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-// Curated download catalogue. Once the v2 book builder is fully wired,
-// this list should be generated from the same data as the practice page.
+// Curated download catalogue backed by tools/build_books.py outputs.
 const books = {
   "Linear (4MA1) - Full Classified Bank": [
     {
@@ -17,6 +16,22 @@ const books = {
       title: "Classified Expertise (Q20+)",
       subtitle: "Harder questions starting from question 20.",
       size: "Medium PDF",
+      public: true,
+    },
+  ],
+  "Modular Unit Books (4WM1 / 4WM2)": [
+    {
+      file: "/downloads/Classified_4WM1.pdf",
+      title: "Classified Unit 1 (4WM1)",
+      subtitle: "Unit 1 topics from the linear bank. Clean 4WM1 papers will join this book when they are added.",
+      size: "Large PDF",
+      public: true,
+    },
+    {
+      file: "/downloads/Classified_4WM2.pdf",
+      title: "Classified Unit 2 (4WM2)",
+      subtitle: "Unit 2 topics from the linear bank. Clean 4WM2 papers will join this book when they are added.",
+      size: "Large PDF",
       public: true,
     },
   ],
@@ -35,6 +50,20 @@ const books = {
       size: "Private output",
       public: false,
     },
+    {
+      file: null,
+      title: "Classified Unit 1 with Answers",
+      subtitle: "Unit 1 classified book with worked solutions.",
+      size: "Private output",
+      public: false,
+    },
+    {
+      file: null,
+      title: "Classified Unit 2 with Answers",
+      subtitle: "Unit 2 classified book with worked solutions.",
+      size: "Private output",
+      public: false,
+    },
   ],
 };
 ---
@@ -46,7 +75,7 @@ const books = {
       <h1>Books & Downloads</h1>
       <p class="page-sub">
         Classified-question books drawn from the same data that powers the practice page.
-        The 4WM modular books are paused until those papers are recropped cleanly.
+        Unit books include the right linear topics now and will absorb clean modular papers later.
       </p>
     </header>
 

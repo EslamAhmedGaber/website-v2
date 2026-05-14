@@ -31,6 +31,7 @@ npm run ingest:paper
 npm run books:dry-run
 npm run books:public
 npm run books:private
+npm run books:all
 npm run verify:pipeline
 npm run build
 npm run check
@@ -55,3 +56,9 @@ Read [PIPELINE_CONTRACT.md](./PIPELINE_CONTRACT.md) before changing the paper pi
 Solutions are visible on the website only through `Show solution`.
 
 Answer books, mark schemes, and private solution exports must stay out of `public/`, `public/downloads/`, and `dist/`.
+
+## Book Routing Rule
+
+- Linear questions go into the complete classified book and into exactly one unit book by topic.
+- 4WM1 questions go into Unit 1 and the complete classified book.
+- 4WM2 questions go into Unit 2 and the complete classified book.

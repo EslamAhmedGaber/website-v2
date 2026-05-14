@@ -113,6 +113,13 @@ PUBLIC_LEAK_RE = re.compile(
     re.IGNORECASE,
 )
 
+REQUIRED_PUBLIC_BOOKS = {
+    "classified_problems.pdf",
+    "Classified_Expertise.pdf",
+    "Classified_4WM1.pdf",
+    "Classified_4WM2.pdf",
+}
+
 
 class Report:
     def __init__(self) -> None:
@@ -157,6 +164,11 @@ def verify_guardrails(report: Report) -> None:
         for file in DOWNLOADS_DIR.rglob("*"):
             if file.is_file() and PUBLIC_LEAK_RE.search(file.name):
                 report.error(f"Potential private answer/solution file in public downloads: {rel(file)}")
+        for filename in sorted(REQUIRED_PUBLIC_BOOKS):
+            if not (DOWNLOADS_DIR / filename).is_file():
+                report.error(f"Required public classified book is missing: public/downloads/{filename}")
+    else:
+        report.error("public/downloads/ is missing; public classified books need a deploy folder.")
 
 
 def verify_questions(report: Report) -> tuple[dict[str, dict[str, Any]], set[str], set[str]]:

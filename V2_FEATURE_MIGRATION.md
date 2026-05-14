@@ -16,6 +16,7 @@ Done in v2:
 - Pipeline verifier for data/assets/solutions/privacy guardrails
 - Public classified book builder from v2 data
 - Private answer book builder into `private_output/`
+- Unit 1 and Unit 2 classified book routing for linear and modular papers
 - Linear and Modular pathway gate
 - Practice filters
 - Grid/list question cards
@@ -63,4 +64,4 @@ Answer books stay private in `private_output/`.
 
 ## 4WM Modular Status
 
-The May/Nov 2025 `4WM1` and `4WM2` imports were removed because the crops were not clean enough to publish or solve reliably. Re-ingest those papers later from better crops before adding modular books back to downloads.
+The May/Nov 2025 `4WM1` and `4WM2` imports were removed because the crops were not clean enough to publish or solve reliably. The Unit 1 and Unit 2 classified books remain active from the linear bank. Clean 4WM1 papers should join Unit 1 and the complete classified book; clean 4WM2 papers should join Unit 2 and the complete classified book.

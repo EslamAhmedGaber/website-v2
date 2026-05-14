@@ -64,6 +64,19 @@ Public classified question books can be published under `public/downloads/`.
 
 Private answer books must be generated under `private_output/`, then shared manually outside the public deploy when needed.
 
+There are three routing cases:
+
+- Linear papers go into the complete classified book and into Unit 1 or Unit 2 by topic.
+- 4WM1 papers go into Unit 1 and the complete classified book.
+- 4WM2 papers go into Unit 2 and the complete classified book.
+
+Required public books:
+
+- `classified_problems.pdf`
+- `Classified_Expertise.pdf`
+- `Classified_4WM1.pdf`
+- `Classified_4WM2.pdf`
+
 Book commands:
 
 - `npm run books:dry-run`: count rows and catch missing images/solutions before writing PDFs.

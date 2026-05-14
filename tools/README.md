@@ -11,6 +11,7 @@ npm run ingest:paper
 npm run books:dry-run
 npm run books:public
 npm run books:private
+npm run books:all
 npm run verify:pipeline
 npm run build
 ```
@@ -57,7 +58,14 @@ tools/
 - reads website solution text from `src/data/solutions/`,
 - writes public question-only PDFs to `public/downloads/`,
 - writes private answer PDFs to `private_output/`,
-- supports `--dry-run` and `--limit` for safe checks before full generation.
+- supports `--dry-run`, `--limit`, and repeated `--book <filename>` for safe checks before full generation.
+
+Book routing:
+
+- Complete books include linear questions and any clean modular questions.
+- `Classified_4WM1.pdf` includes Unit 1 topics from linear papers plus clean 4WM1 papers.
+- `Classified_4WM2.pdf` includes Unit 2 topics from linear papers plus clean 4WM2 papers.
+- Private Unit 1 and Unit 2 answer books are generated in `private_output/`.
 
 ## Classification Fixes
 

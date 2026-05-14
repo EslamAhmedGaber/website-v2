@@ -40,15 +40,76 @@ class BookSpec:
     filename: str
     title: str
     bank: str
+    scope: str
     include_solutions: bool
     private: bool
 
+
+UNIT_1_TOPICS = {
+    "3D Pythagoras & Trigonometry",
+    "Algebraic Fractions",
+    "Algebraic Roots & Indices",
+    "Area & Perimeter",
+    "Circles, Arcs & Sectors",
+    "Combined & Conditional Probability",
+    "Completing the Square",
+    "Coordinate Geometry",
+    "Estimating Gradients",
+    "Expanding Brackets",
+    "Factorising",
+    "Fractions",
+    "Fractions, Decimals & Percentages",
+    "Graphs of Functions",
+    "Histograms",
+    "Linear Graphs (y = mx + c)",
+    "Probability Diagrams - Venn & Tree Diagrams",
+    "Probability Toolkit",
+    "Right-Angled Triangles - Pythagoras & Trigonometry",
+    "Rounding, Estimation & Bounds",
+    "Set Notation & Venn Diagrams",
+    "Sine, Cosine Rule & Area of Triangles",
+    "Solving Linear Equations",
+    "Solving Quadratic Equations",
+    "Standard & Compound Units",
+    "Surds",
+}
+
+UNIT_2_TOPICS = {
+    "Algebraic Proof",
+    "Angles in Polygons & Parallel Lines",
+    "Area & Volume of Similar Shapes",
+    "Bearings, Scale Drawing & Constructions",
+    "Circle Theorems",
+    "Compound Interest & Depreciation",
+    "Congruence, Similarity & Geometrical Proof",
+    "Cumulative Frequency Diagrams",
+    "Differentiation",
+    "Direct & Inverse Proportion",
+    "Exchange Rates & Best Buys",
+    "Forming & Solving Equations",
+    "Functions",
+    "Graphing Inequalities",
+    "Percentages",
+    "Prime Factors, HCF & LCM",
+    "Ratio Problem Solving",
+    "Ratio Toolkit",
+    "Rearranging Formulas",
+    "Sequences",
+    "Simultaneous Equations",
+    "Solving Inequalities",
+    "Statistics Toolkit",
+    "Transformations",
+    "Transformations of Graphs",
+    "Vectors",
+    "Volume & Surface Area",
+}
 
 PUBLIC_BOOKS = (
     BookSpec(
         filename="classified_problems.pdf",
         title="Elite IGCSE Classified Problems",
         bank="all",
+        scope="complete",
         include_solutions=False,
         private=False,
     ),
@@ -56,6 +117,23 @@ PUBLIC_BOOKS = (
         filename="Classified_Expertise.pdf",
         title="Elite IGCSE Classified Expertise",
         bank="expertise",
+        scope="complete",
+        include_solutions=False,
+        private=False,
+    ),
+    BookSpec(
+        filename="Classified_4WM1.pdf",
+        title="Elite IGCSE Classified Unit 1 (4WM1)",
+        bank="all",
+        scope="unit1",
+        include_solutions=False,
+        private=False,
+    ),
+    BookSpec(
+        filename="Classified_4WM2.pdf",
+        title="Elite IGCSE Classified Unit 2 (4WM2)",
+        bank="all",
+        scope="unit2",
         include_solutions=False,
         private=False,
     ),
@@ -66,6 +144,7 @@ PRIVATE_BOOKS = (
         filename="classified_answers.pdf",
         title="Elite IGCSE Classified Answers",
         bank="all",
+        scope="complete",
         include_solutions=True,
         private=True,
     ),
@@ -73,6 +152,23 @@ PRIVATE_BOOKS = (
         filename="Classified_Expertise_Answers.pdf",
         title="Elite IGCSE Classified Expertise Answers",
         bank="expertise",
+        scope="complete",
+        include_solutions=True,
+        private=True,
+    ),
+    BookSpec(
+        filename="Classified_4WM1_Answers.pdf",
+        title="Elite IGCSE Classified Unit 1 Answers (4WM1)",
+        bank="all",
+        scope="unit1",
+        include_solutions=True,
+        private=True,
+    ),
+    BookSpec(
+        filename="Classified_4WM2_Answers.pdf",
+        title="Elite IGCSE Classified Unit 2 Answers (4WM2)",
+        bank="all",
+        scope="unit2",
         include_solutions=True,
         private=True,
     ),
@@ -176,8 +272,49 @@ def sort_key(row: dict[str, Any]) -> tuple[int, str, str, int, str]:
     )
 
 
-def group_rows(rows: list[dict[str, Any]], bank: str, limit: int | None = None) -> list[dict[str, Any]]:
-    filtered = [row for row in rows if row.get("bank") == bank]
+def has_standard_form_signal(row: dict[str, Any]) -> bool:
+    text = str(row.get("text") or "").lower()
+    return bool(
+        re.search(
+            r"standard form|scientific notation|[×x]\s*10|times\s*10|population|surface area|coastline",
+            text,
+        )
+    )
+
+
+def modular_unit_for_row(row: dict[str, Any]) -> str | None:
+    forced = row.get("modularForceUnit") or row.get("modularUnit")
+    if forced in {"Unit 1", "Unit 2"}:
+        return str(forced)
+
+    code = str(row.get("code") or "").upper()
+    if code.startswith("4WM1"):
+        return "Unit 1"
+    if code.startswith("4WM2"):
+        return "Unit 2"
+
+    topic = str(row.get("topic") or "")
+    if topic == "Powers, Roots & Standard Form":
+        return "Unit 2" if has_standard_form_signal(row) else "Unit 1"
+    if topic in UNIT_1_TOPICS:
+        return "Unit 1"
+    if topic in UNIT_2_TOPICS:
+        return "Unit 2"
+    return None
+
+
+def matches_scope(row: dict[str, Any], scope: str) -> bool:
+    if scope == "complete":
+        return True
+    if scope == "unit1":
+        return modular_unit_for_row(row) == "Unit 1"
+    if scope == "unit2":
+        return modular_unit_for_row(row) == "Unit 2"
+    raise ValueError(f"Unknown book scope: {scope}")
+
+
+def group_rows(rows: list[dict[str, Any]], spec: BookSpec, limit: int | None = None) -> list[dict[str, Any]]:
+    filtered = [row for row in rows if row.get("bank") == spec.bank and matches_scope(row, spec.scope)]
     filtered.sort(key=sort_key)
     if limit is not None:
         return filtered[:limit]
@@ -411,15 +548,20 @@ def collect_issues(rows: list[dict[str, Any]], solutions: dict[str, dict[str, An
     return missing_images, missing_solutions
 
 
-def print_plan(rows: list[dict[str, Any]], solutions: dict[str, dict[str, Any]], limit: int | None) -> int:
+def print_plan(
+    rows: list[dict[str, Any]],
+    solutions: dict[str, dict[str, Any]],
+    specs: list[BookSpec],
+    limit: int | None,
+) -> int:
     exit_code = 0
     print("Elite IGCSE v2 book build plan")
     print(f"Question rows loaded: {len(rows)}")
     print(f"Website solutions loaded: {len(solutions)}")
     if limit is not None:
         print(f"Limit per book: {limit}")
-    for spec in (*PUBLIC_BOOKS, *PRIVATE_BOOKS):
-        book_rows = group_rows(rows, spec.bank, limit)
+    for spec in specs:
+        book_rows = group_rows(rows, spec, limit)
         missing_images, missing_solutions = collect_issues(book_rows, solutions)
         target_dir = PRIVATE_BOOK_DIR if spec.private else PUBLIC_BOOK_DIR
         print(f"- {spec.filename}: {len(book_rows)} questions -> {rel(target_dir / spec.filename)}")
@@ -442,30 +584,53 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--public", action="store_true", help="Write public question-only books.")
     parser.add_argument("--private", action="store_true", help="Write private answer books.")
     parser.add_argument("--all", action="store_true", help="Write both public and private books.")
+    parser.add_argument("--book", action="append", default=[], help="Build one filename only; repeat for multiple books.")
     parser.add_argument("--limit", type=int, default=None, help="Limit questions per book for a smoke build.")
     parser.add_argument("--public-dir", type=Path, default=PUBLIC_BOOK_DIR, help="Output directory for public books.")
     parser.add_argument("--private-dir", type=Path, default=PRIVATE_BOOK_DIR, help="Output directory for private books.")
     return parser.parse_args()
 
 
+def select_specs(args: argparse.Namespace) -> list[BookSpec]:
+    selected: list[BookSpec] = []
+    if args.all or not (args.public or args.private):
+        selected.extend(PUBLIC_BOOKS)
+        selected.extend(PRIVATE_BOOKS)
+    else:
+        if args.public:
+            selected.extend(PUBLIC_BOOKS)
+        if args.private:
+            selected.extend(PRIVATE_BOOKS)
+
+    requested = {str(item).lower() for item in args.book}
+    if requested:
+        selected = [spec for spec in selected if spec.filename.lower() in requested]
+        found = {spec.filename.lower() for spec in selected}
+        missing = sorted(requested - found)
+        if missing:
+            names = ", ".join(missing)
+            available = ", ".join(spec.filename for spec in (*PUBLIC_BOOKS, *PRIVATE_BOOKS))
+            raise ValueError(f"Unknown book filename(s): {names}. Available: {available}")
+    return selected
+
+
 def main() -> int:
     args = parse_args()
     rows = load_questions()
     solutions = load_solutions()
+    try:
+        selected = select_specs(args)
+    except ValueError as exc:
+        print(str(exc), file=sys.stderr)
+        return 2
 
     if args.dry_run or not (args.public or args.private or args.all):
-        return print_plan(rows, solutions, args.limit)
-
-    selected: list[BookSpec] = []
-    if args.public or args.all:
-        selected.extend(PUBLIC_BOOKS)
-    if args.private or args.all:
-        selected.extend(PRIVATE_BOOKS)
+        return print_plan(rows, solutions, selected, args.limit)
 
     for spec in selected:
         output_dir = args.private_dir if spec.private else args.public_dir
         output_path = output_dir / spec.filename
-        book_rows = group_rows(rows, spec.bank, args.limit)
+        book_rows = group_rows(rows, spec, args.limit)
         missing_images, missing_solutions = collect_issues(book_rows, solutions)
         if missing_images:
             print(f"{spec.filename}: cannot build; {len(missing_images)} images are missing.", file=sys.stderr)
