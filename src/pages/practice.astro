@@ -71,6 +71,8 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
               <option value="solved">Solved only</option>
               <option value="selected">My set</option>
               <option value="mistakes">Mistake Box</option>
+              <option value="mistakes-due">Mistakes due today</option>
+              <option value="mistakes-mastered">Mastered mistakes</option>
             </select>
             <label class="label" for="minMarks">Minimum marks</label>
             <input class="input" id="minMarks" type="number" min="0" max="20" step="1" data-min-marks />
@@ -117,7 +119,36 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
           <summary>Mistake Box</summary>
           <div class="side-body stack">
             <div data-mistake-summary></div>
-            <button class="btn btn-ghost btn-sm" type="button" data-mistake-review>Review my mistakes</button>
+            <div class="mistake-actions">
+              <button class="btn btn-primary btn-sm" type="button" data-mistake-review>Review due</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-mistake-all>All mistakes</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-mistake-mastered>Mastered</button>
+            </div>
+          </div>
+        </details>
+
+        <details class="side-section">
+          <summary>Worksheet</summary>
+          <div class="side-body stack">
+            <p class="meta">Build a printable worksheet from the current filters or a focused topic.</p>
+            <label class="label" for="worksheetTopic">Topic</label>
+            <select class="select" id="worksheetTopic" data-worksheet-topic></select>
+            <label class="label" for="worksheetCount">Question count</label>
+            <input class="input" id="worksheetCount" type="number" min="1" max="40" step="1" value="12" data-worksheet-count />
+            <label class="label" for="worksheetMode">Challenge</label>
+            <select class="select" id="worksheetMode" data-worksheet-mode>
+              <option value="current">Use current filters</option>
+              <option value="quick">Quick wins</option>
+              <option value="standard">Standard practice</option>
+              <option value="long">Long problems</option>
+              <option value="q20">Q20+ only</option>
+            </select>
+            <div class="worksheet-actions">
+              <button class="btn btn-primary btn-sm" type="button" data-worksheet-build>Build</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-worksheet-print>Build & print</button>
+            </div>
+            <button class="btn btn-ghost btn-sm" type="button" data-print-selected>Print my set</button>
+            <p class="meta" data-worksheet-status></p>
           </div>
         </details>
 
@@ -125,6 +156,7 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
           <summary>Mock exam</summary>
           <div class="side-body stack">
             <p class="meta">Build a 25-question worksheet from the current pathway / unit.</p>
+            <button class="btn btn-ghost btn-sm" type="button" data-random-visible>Random 10 from this view</button>
             <button class="btn btn-primary btn-sm" type="button" data-mock-open>Start mock</button>
           </div>
         </details>
@@ -225,6 +257,8 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
       </button>
     </div>
   </dialog>
+
+  <div class="print-area" data-print-area aria-hidden="true"></div>
 
   <!-- MathJax (lazy) -->
   <script is:inline>
@@ -606,6 +640,32 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
   }
 
   /* ============ Mistake list ============ */
+  .review-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+  .review-stats span {
+    display: grid;
+    gap: 2px;
+    padding: 8px;
+    background: var(--ivory);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+  }
+  .review-stats strong {
+    color: var(--navy);
+    font-size: 18px;
+    line-height: 1;
+  }
+  .mistake-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+  }
   .mistake-list {
     display: grid;
     gap: 4px;
@@ -668,6 +728,65 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
   .mock-card strong {
     font-size: 18px;
     color: var(--navy);
+  }
+
+  /* ============ Worksheet printout ============ */
+  .worksheet-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+  }
+  .print-area { display: none; }
+  @media print {
+    @page { size: A4; margin: 12mm; }
+    body * { visibility: hidden !important; }
+    .print-area,
+    .print-area * {
+      visibility: visible !important;
+    }
+    .print-area {
+      display: block;
+      position: absolute;
+      inset: 0;
+      background: white;
+      color: #111;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .print-question {
+      break-after: page;
+      display: grid;
+      gap: 10mm;
+      min-height: 270mm;
+      padding: 0;
+    }
+    .print-question:last-child { break-after: auto; }
+    .print-paper-brand,
+    .print-paper-footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 8mm;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3mm;
+      font-size: 10pt;
+    }
+    .print-paper-footer {
+      border-top: 1px solid #ccc;
+      border-bottom: 0;
+      padding-top: 3mm;
+      padding-bottom: 0;
+      align-self: end;
+    }
+    .print-question h2 {
+      color: #111;
+      font-size: 14pt;
+      line-height: 1.3;
+    }
+    .print-question img {
+      width: 100%;
+      max-height: 210mm;
+      object-fit: contain;
+      align-self: start;
+    }
   }
 
   /* ============ Mobile ============ */

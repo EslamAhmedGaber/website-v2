@@ -16,11 +16,17 @@
   const STORAGE_MISTAKES = "elitePracticeMistakes";
   const STORAGE_LAYOUT = "elitePracticeLayout";
   const STORAGE_CORRECTIONS = "eliteTopicCorrections";
+  const REVIEW_INTERVALS = [1, 3, 7, 14];
+  const DAY_MS = 24 * 60 * 60 * 1000;
   const ADMIN_EMAIL_PATTERN = /eslam/i;
 
   const allQuestions = window.QUESTION_DATA || [];
   const solutionData = window.SOLUTION_DATA || {};
   const meta = window.SITE_META || {};
+  let cloudUser = null;
+  let hasRendered = false;
+  let lastPool = [];
+  let lastVisible = [];
 
   const state = {
     pathway: localStorage.getItem(STORAGE_PATHWAY) || "linear",
@@ -32,19 +38,75 @@
     paperFilter: "",
     viewFilter: "",
     minMarks: 0,
-    selected: new Set(parseJSON(STORAGE_SELECTED) || []),
-    solved: new Set(parseJSON(STORAGE_SOLVED) || []),
-    mistakes: new Set(parseJSON(STORAGE_MISTAKES) || []),
+    selected: readIdSet(STORAGE_SELECTED),
+    solved: readIdSet(STORAGE_SOLVED),
+    mistakes: readMistakeItems(),
   };
 
-  function parseJSON(key) {
-    try { return JSON.parse(localStorage.getItem(key) || "[]"); } catch (_) { return []; }
+  function parseJSON(key, fallback = []) {
+    try {
+      const value = JSON.parse(localStorage.getItem(key) || "null");
+      return value ?? fallback;
+    } catch (_) {
+      return fallback;
+    }
+  }
+
+  function readIdSet(key) {
+    const value = parseJSON(key, []);
+    if (Array.isArray(value)) return new Set(value.filter(Boolean));
+    if (value && typeof value === "object") return new Set(Object.keys(value));
+    return new Set();
+  }
+
+  function dateNumber(value, fallback) {
+    const numeric = Number(value);
+    if (Number.isFinite(numeric) && numeric > 0) return numeric;
+    const parsed = Date.parse(value || "");
+    return Number.isFinite(parsed) ? parsed : fallback;
+  }
+
+  function normalizeMistakeItems(value) {
+    const now = Date.now();
+    const normalized = {};
+    const add = (id, raw = {}) => {
+      if (!id) return;
+      const key = String(id);
+      const level = Math.max(0, Math.min(3, Number(raw.level || 0)));
+      const updatedAt = dateNumber(raw.updatedAt, now);
+      const addedAt = dateNumber(raw.addedAt, updatedAt);
+      const dueAt = dateNumber(raw.dueAt, now);
+      normalized[key] = {
+        id: key,
+        reason: typeof raw.reason === "string" ? raw.reason : "manual",
+        level,
+        attempts: Math.max(1, Number(raw.attempts || 1)),
+        addedAt,
+        updatedAt,
+        dueAt,
+        masteredAt: raw.masteredAt ? dateNumber(raw.masteredAt, updatedAt) : null,
+      };
+    };
+
+    if (Array.isArray(value)) {
+      value.forEach((id) => add(id));
+    } else if (value && typeof value === "object") {
+      Object.entries(value).forEach(([id, raw]) => {
+        const source = raw && typeof raw === "object" ? raw : {};
+        add(source.id || id, source);
+      });
+    }
+    return normalized;
+  }
+
+  function readMistakeItems() {
+    return normalizeMistakeItems(parseJSON(STORAGE_MISTAKES, {}));
   }
 
   function saveSets() {
     localStorage.setItem(STORAGE_SELECTED, JSON.stringify([...state.selected]));
     localStorage.setItem(STORAGE_SOLVED, JSON.stringify([...state.solved]));
-    localStorage.setItem(STORAGE_MISTAKES, JSON.stringify([...state.mistakes]));
+    localStorage.setItem(STORAGE_MISTAKES, JSON.stringify(state.mistakes));
   }
 
   // ---- ELEMENT REFS -------------------------------------------------
@@ -86,6 +148,17 @@
     masteryList: q("[data-mastery-list]"),
     mistakeSummary: q("[data-mistake-summary]"),
     mistakeReviewBtn: q("[data-mistake-review]"),
+    mistakeAllBtn: q("[data-mistake-all]"),
+    mistakeMasteredBtn: q("[data-mistake-mastered]"),
+    worksheetTopic: q("[data-worksheet-topic]"),
+    worksheetCount: q("[data-worksheet-count]"),
+    worksheetMode: q("[data-worksheet-mode]"),
+    worksheetBuild: q("[data-worksheet-build]"),
+    worksheetPrint: q("[data-worksheet-print]"),
+    worksheetStatus: q("[data-worksheet-status]"),
+    printSelectedBtn: q("[data-print-selected]"),
+    randomVisibleBtn: q("[data-random-visible]"),
+    printArea: q("[data-print-area]"),
     mockOpenBtn: q("[data-mock-open]"),
     mockDialog: q("#mockDialog"),
     mockUnitButtons: qa("[data-mock-unit]"),
@@ -108,7 +181,8 @@
     localStorage.setItem(STORAGE_CORRECTIONS, JSON.stringify(map));
   }
   function isAdmin() {
-    const email = window.CLOUD_SYNC?.state?.user?.email || "";
+    const cloudState = window.EliteCloud?.state?.() || window.CLOUD_SYNC?.state || {};
+    const email = cloudUser?.email || cloudState.user?.email || "";
     return ADMIN_EMAIL_PATTERN.test(email);
   }
   let corrections = loadCorrections();
@@ -116,6 +190,16 @@
   function applyCorrections() {
     let touched = 0;
     for (const qq of allQuestions) {
+      if (qq._origTopic !== undefined) {
+        qq.topic = qq._origTopic;
+        qq.original_topic = qq._origTopic;
+        qq.corrected = false;
+      }
+      if (qq._origUnit !== undefined) {
+        qq.unit = qq._origUnit;
+      }
+      delete qq.modular_force_unit;
+
       const fix = corrections[qq.id];
       if (!fix) continue;
       // Stash original once
@@ -127,11 +211,25 @@
       qq.corrected = true;
       // If correction also forces modular unit, propagate
       if (fix.modularUnit) qq.modular_force_unit = fix.modularUnit;
+      if (typeof window.normalizeEliteQuestion === "function") window.normalizeEliteQuestion(qq);
       touched++;
     }
     return touched;
   }
   applyCorrections();
+
+  function refreshCloudUser() {
+    const cloudState = window.EliteCloud?.state?.() || window.CLOUD_SYNC?.state || {};
+    cloudUser = cloudState.user || null;
+  }
+
+  function refreshProgressFromStorage() {
+    state.selected = readIdSet(STORAGE_SELECTED);
+    state.solved = readIdSet(STORAGE_SOLVED);
+    state.mistakes = readMistakeItems();
+    corrections = loadCorrections();
+    applyCorrections();
+  }
 
   // ---- TIMER --------------------------------------------------------
   const timer = {
@@ -221,6 +319,58 @@
     return pool;
   }
 
+  // ---- MISTAKE REVIEW ---------------------------------------------
+  function mistakeState(id) {
+    return state.mistakes[id] || null;
+  }
+
+  function isMistakeDue(id) {
+    const item = mistakeState(id);
+    return Boolean(item && !item.masteredAt && Number(item.dueAt || 0) <= Date.now());
+  }
+
+  function isMistakeMastered(id) {
+    return Boolean(mistakeState(id)?.masteredAt);
+  }
+
+  function mistakeLabel(id) {
+    const item = mistakeState(id);
+    if (!item) return "";
+    if (item.masteredAt) return "Mastered";
+    if (Number(item.dueAt || 0) <= Date.now()) return "Due today";
+    const due = new Date(Number(item.dueAt || Date.now()));
+    return `Due ${due.toLocaleDateString([], { month: "short", day: "numeric" })}`;
+  }
+
+  function addMistake(id, reason = "manual") {
+    const now = Date.now();
+    const current = mistakeState(id);
+    state.mistakes[id] = {
+      id,
+      reason,
+      level: 0,
+      attempts: Number(current?.attempts || 0) + 1,
+      addedAt: Number(current?.addedAt || now),
+      updatedAt: now,
+      dueAt: now,
+      masteredAt: null,
+    };
+  }
+
+  function advanceMistake(id) {
+    const item = mistakeState(id);
+    if (!item) return;
+    const level = Math.min(3, Number(item.level || 0) + 1);
+    const now = Date.now();
+    state.mistakes[id] = {
+      ...item,
+      level,
+      updatedAt: now,
+      masteredAt: level >= 3 ? now : null,
+      dueAt: level >= 3 ? now + 365 * DAY_MS : now + REVIEW_INTERVALS[level] * DAY_MS,
+    };
+  }
+
   // ---- FILTERS -----------------------------------------------------
   function applyFilters(pool) {
     const search = state.search.trim().toLowerCase();
@@ -231,7 +381,9 @@
       if (state.viewFilter === "selected" && !state.selected.has(qq.id)) return false;
       if (state.viewFilter === "solved" && !state.solved.has(qq.id)) return false;
       if (state.viewFilter === "unsolved" && state.solved.has(qq.id)) return false;
-      if (state.viewFilter === "mistakes" && !state.mistakes.has(qq.id)) return false;
+      if (state.viewFilter === "mistakes" && !mistakeState(qq.id)) return false;
+      if (state.viewFilter === "mistakes-due" && !isMistakeDue(qq.id)) return false;
+      if (state.viewFilter === "mistakes-mastered" && !isMistakeMastered(qq.id)) return false;
       if (minMarks && Number(qq.marks) < minMarks) return false;
       if (search) {
         const blob = `${qq.paper} ${qq.topic} ${qq.unit} ${qq.question_text}`.toLowerCase();
@@ -245,7 +397,9 @@
   function renderCard(qq) {
     const isSelected = state.selected.has(qq.id);
     const isSolved = state.solved.has(qq.id);
-    const isMistake = state.mistakes.has(qq.id);
+    const review = mistakeState(qq.id);
+    const isMistake = Boolean(review);
+    const reviewText = mistakeLabel(qq.id);
     const hasSolution = Boolean(solutionData[qq.id]?.source);
     const corrected = Boolean(corrections[qq.id]);
     const admin = isAdmin();
@@ -272,7 +426,7 @@
           <span class="meta">${escapeHtml(qq.unit)}</span>
           ${isSolved ? '<span class="badge badge-navy">Solved</span>' : ""}
           ${isSelected ? '<span class="badge badge-gold">Selected</span>' : ""}
-          ${isMistake ? '<span class="badge badge-muted">In Mistake Box</span>' : ""}
+          ${isMistake ? `<span class="badge badge-muted">${escapeHtml(reviewText)}</span>` : ""}
         </div>
         <div class="q-actions">
           <button class="btn btn-primary btn-sm" type="button" data-action="zoom">Practice</button>
@@ -282,6 +436,7 @@
               <button type="button" data-action="select">${isSelected ? "Unselect" : "Add to set"}</button>
               <button type="button" data-action="solve">${isSolved ? "Mark unsolved" : "Mark solved"}</button>
               <button type="button" data-action="mistake">${isMistake ? "Remove from Mistake Box" : "Add to Mistake Box"}</button>
+              ${isMistake ? '<button type="button" data-action="mistake-done">Review done</button>' : ""}
               ${hasSolution ? '<button type="button" data-action="solution">Show solution</button>' : ""}
               ${admin ? '<button type="button" data-action="fix-topic">Fix topic</button>' : ""}
             </div>
@@ -292,9 +447,12 @@
   }
 
   function render() {
+    hasRendered = true;
     setPathwayInWindow();
     const pool = scopedQuestions();
     const visible = applyFilters(pool);
+    lastPool = pool;
+    lastVisible = visible;
 
     // badges
     if (els.pathwayBadge) els.pathwayBadge.textContent = state.pathway === "modular" ? "Modular" : "Linear";
@@ -309,7 +467,8 @@
     els.bankButtons.forEach((b) => b.classList.toggle("is-active", b.dataset.bank === state.activeBank));
 
     // pill buttons
-    els.pillButtons.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.viewPill === (state.viewFilter || "all"))));
+    const activePill = state.viewFilter.startsWith("mistakes") ? "mistakes" : (state.viewFilter || "all");
+    els.pillButtons.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.viewPill === activePill)));
 
     // dropdowns
     populateDropdowns(pool);
@@ -351,6 +510,12 @@
       els.paperSelect.innerHTML = `<option value="">All papers</option>` +
         papers.map((p) => `<option value="${escapeHtml(p)}"${p === cur ? " selected" : ""}>${escapeHtml(p)}</option>`).join("");
     }
+    if (els.worksheetTopic) {
+      const cur = els.worksheetTopic.value;
+      const topics = uniqueSorted(pool.map((qq) => qq.topic));
+      els.worksheetTopic.innerHTML = `<option value="">Use current filters</option>` +
+        topics.map((t) => `<option value="${escapeHtml(t)}"${t === cur ? " selected" : ""}>${escapeHtml(t)}</option>`).join("");
+    }
   }
 
   function renderMastery(pool) {
@@ -381,16 +546,19 @@
   function renderMistakeSummary(pool) {
     if (!els.mistakeSummary) return;
     const poolIds = new Set(pool.map((qq) => qq.id));
-    const mine = [...state.mistakes].filter((id) => poolIds.has(id));
+    const mine = Object.values(state.mistakes).filter((item) => poolIds.has(item.id));
+    const due = mine.filter((item) => isMistakeDue(item.id));
+    const mastered = mine.filter((item) => item.masteredAt);
+    if (els.mistakeReviewBtn) els.mistakeReviewBtn.disabled = due.length === 0;
+    if (els.mistakeAllBtn) els.mistakeAllBtn.disabled = mine.length === 0;
+    if (els.mistakeMasteredBtn) els.mistakeMasteredBtn.disabled = mastered.length === 0;
     if (mine.length === 0) {
       els.mistakeSummary.innerHTML = '<p class="meta">No mistakes saved yet. Use the kebab menu on a question to add it.</p>';
-      if (els.mistakeReviewBtn) els.mistakeReviewBtn.disabled = true;
       return;
     }
-    if (els.mistakeReviewBtn) els.mistakeReviewBtn.disabled = false;
     const byTopic = new Map();
-    for (const id of mine) {
-      const qq = allQuestions.find((x) => x.id === id);
+    for (const item of mine) {
+      const qq = allQuestions.find((x) => x.id === item.id);
       if (!qq) continue;
       byTopic.set(qq.topic, (byTopic.get(qq.topic) || 0) + 1);
     }
@@ -398,7 +566,12 @@
       .sort((a, b) => b[1] - a[1])
       .slice(0, 5);
     els.mistakeSummary.innerHTML = `
-      <p class="meta">${mine.length} question${mine.length === 1 ? "" : "s"} in this view.</p>
+      <div class="review-stats">
+        <span><strong>${due.length}</strong> due</span>
+        <span><strong>${mine.length}</strong> saved</span>
+        <span><strong>${mastered.length}</strong> mastered</span>
+      </div>
+      <p class="meta">${due.length ? "Start with the due questions today." : "Nothing due right now; the box is up to date."}</p>
       <ul class="mistake-list">
         ${rows.map(([t, n]) => `<li><span>${escapeHtml(t)}</span><span class="badge badge-muted">${n}</span></li>`).join("")}
       </ul>`;
@@ -414,11 +587,17 @@
   }
 
   // ---- HANDLERS ----------------------------------------------------
+  function setViewFilter(value) {
+    state.viewFilter = value || "";
+    if (els.viewSelect) els.viewSelect.value = state.viewFilter;
+    render();
+  }
+
   function bind() {
     els.searchInput?.addEventListener("input", (e) => { state.search = e.target.value; render(); });
     els.topicSelect?.addEventListener("change", (e) => { state.topicFilter = e.target.value; render(); });
     els.paperSelect?.addEventListener("change", (e) => { state.paperFilter = e.target.value; render(); });
-    els.viewSelect?.addEventListener("change", (e) => { state.viewFilter = e.target.value; render(); });
+    els.viewSelect?.addEventListener("change", (e) => setViewFilter(e.target.value));
     els.minMarksInput?.addEventListener("input", (e) => { state.minMarks = e.target.value; render(); });
 
     els.resetBtn?.addEventListener("click", () => {
@@ -436,9 +615,7 @@
 
     els.pillButtons.forEach((b) => b.addEventListener("click", () => {
       const v = b.dataset.viewPill;
-      state.viewFilter = v === "all" ? "" : v;
-      if (els.viewSelect) els.viewSelect.value = state.viewFilter;
-      render();
+      setViewFilter(v === "all" ? "" : v);
     }));
 
     els.layoutButtons.forEach((b) => b.addEventListener("click", () => {
@@ -458,6 +635,7 @@
       else if (action === "solve") toggleSolved(id);
       else if (action === "select") toggleSelected(id);
       else if (action === "mistake") toggleMistake(id);
+      else if (action === "mistake-done") completeMistakeReview(id);
       else if (action === "solution") openSolution(id);
       else if (action === "fix-topic") openFixTopic(id);
     });
@@ -477,11 +655,15 @@
     els.timerPresetButtons.forEach((b) => b.addEventListener("click", () => setTimerMinutes(b.dataset.timerPreset)));
 
     // Mistake review
-    els.mistakeReviewBtn?.addEventListener("click", () => {
-      state.viewFilter = "mistakes";
-      if (els.viewSelect) els.viewSelect.value = "mistakes";
-      render();
-    });
+    els.mistakeReviewBtn?.addEventListener("click", () => setViewFilter("mistakes-due"));
+    els.mistakeAllBtn?.addEventListener("click", () => setViewFilter("mistakes"));
+    els.mistakeMasteredBtn?.addEventListener("click", () => setViewFilter("mistakes-mastered"));
+
+    // Worksheet builder
+    els.worksheetBuild?.addEventListener("click", () => buildWorksheet());
+    els.worksheetPrint?.addEventListener("click", () => buildWorksheet({ printAfter: true }));
+    els.printSelectedBtn?.addEventListener("click", printSelected);
+    els.randomVisibleBtn?.addEventListener("click", () => randomVisible(10));
 
     // Mock exam
     els.mockOpenBtn?.addEventListener("click", openMockDialog);
@@ -546,12 +728,7 @@
     if (!fixActiveId) return;
     delete corrections[fixActiveId];
     saveCorrections(corrections);
-    // Restore from stash
-    const qq = questionById(fixActiveId);
-    if (qq && qq._origTopic !== undefined) {
-      qq.topic = qq._origTopic;
-      qq.corrected = false;
-    }
+    applyCorrections();
     els.fixDialog?.close();
     render();
   }
@@ -573,16 +750,125 @@
     render();
   }
 
+  function shuffled(items) {
+    const pool = [...items];
+    for (let i = pool.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+    return pool;
+  }
+
+  function matchesWorksheetMode(question, mode) {
+    if (mode === "quick") return Number(question.marks) <= 3;
+    if (mode === "standard") return Number(question.marks) >= 4 && Number(question.marks) <= 6;
+    if (mode === "long") return Number(question.marks) >= 7;
+    if (mode === "q20") return Number(question.question) >= 20;
+    return true;
+  }
+
+  function setWorksheetStatus(text) {
+    if (els.worksheetStatus) els.worksheetStatus.textContent = text || "";
+  }
+
+  function buildWorksheet({ printAfter = false } = {}) {
+    const topic = els.worksheetTopic?.value || "";
+    const mode = els.worksheetMode?.value || "current";
+    const count = Math.max(1, Math.min(40, Number(els.worksheetCount?.value || 12)));
+    const basePool = mode === "current" ? lastVisible : lastPool;
+    const pool = basePool.filter((question) => {
+      if (topic && question.topic !== topic) return false;
+      return matchesWorksheetMode(question, mode);
+    });
+
+    if (!pool.length) {
+      setWorksheetStatus("No questions found. Relax the filters or choose another topic.");
+      return;
+    }
+
+    for (const question of lastPool) state.selected.delete(question.id);
+    const picked = shuffled(pool).slice(0, Math.min(count, pool.length));
+    for (const question of picked) state.selected.add(question.id);
+
+    state.viewFilter = "selected";
+    if (els.viewSelect) els.viewSelect.value = "selected";
+    if (topic && els.topicSelect && [...els.topicSelect.options].some((option) => option.value === topic)) {
+      state.topicFilter = topic;
+      els.topicSelect.value = topic;
+    }
+
+    saveSets();
+    setWorksheetStatus(`Built ${picked.length} question${picked.length === 1 ? "" : "s"} in My set.`);
+    render();
+    if (printAfter) setTimeout(printSelected, 60);
+  }
+
+  function randomVisible(count = 10) {
+    const pool = lastVisible.length ? lastVisible : applyFilters(scopedQuestions());
+    if (!pool.length) {
+      setWorksheetStatus("No visible questions to pick from.");
+      return;
+    }
+    for (const question of lastPool) state.selected.delete(question.id);
+    const picked = shuffled(pool).slice(0, Math.min(count, pool.length));
+    for (const question of picked) state.selected.add(question.id);
+    state.viewFilter = "selected";
+    if (els.viewSelect) els.viewSelect.value = "selected";
+    saveSets();
+    setWorksheetStatus(`Random ${picked.length} added to My set.`);
+    render();
+  }
+
+  function printSelected() {
+    if (!els.printArea) return;
+    const inScope = new Set(lastPool.map((question) => question.id));
+    const selectedItems = [...state.selected]
+      .filter((id) => inScope.has(id))
+      .map(questionById)
+      .filter(Boolean);
+    const printable = selectedItems.length ? selectedItems : lastVisible;
+    if (!printable.length) {
+      setWorksheetStatus("Nothing to print yet.");
+      return;
+    }
+
+    els.printArea.innerHTML = printable.map((question, index) => `<section class="print-question">
+      <div class="print-paper-brand">
+        <strong>Elite IGCSE Mathematics - Dr Eslam Ahmed</strong>
+        <span>WhatsApp: 01120009622 | eliteigcse.com</span>
+      </div>
+      <h2>${index + 1}. ${escapeHtml(question.paper)} Q${question.question} | ${escapeHtml(question.topic)} | ${question.marks} marks</h2>
+      <img src="${escapeHtml(question.image)}" alt="${escapeHtml(question.paper)} Q${question.question}" />
+      <div class="print-paper-footer">Prepared by Dr Eslam Ahmed | Assistant Lecturer, Cairo University Faculty of Engineering | 01120009622</div>
+    </section>`).join("");
+    window.print();
+  }
+
   function toggleSelected(id) {
     state.selected.has(id) ? state.selected.delete(id) : state.selected.add(id);
     saveSets(); render();
   }
   function toggleSolved(id) {
-    state.solved.has(id) ? state.solved.delete(id) : state.solved.add(id);
+    if (state.solved.has(id)) {
+      state.solved.delete(id);
+    } else {
+      state.solved.add(id);
+      advanceMistake(id);
+    }
     saveSets(); render();
   }
   function toggleMistake(id) {
-    state.mistakes.has(id) ? state.mistakes.delete(id) : state.mistakes.add(id);
+    if (mistakeState(id)) {
+      delete state.mistakes[id];
+    } else {
+      addMistake(id);
+    }
+    saveSets(); render();
+  }
+  function completeMistakeReview(id) {
+    if (!mistakeState(id)) addMistake(id);
+    state.solved.add(id);
+    advanceMistake(id);
     saveSets(); render();
   }
 
@@ -634,9 +920,20 @@
   // ---- INIT --------------------------------------------------------
   function init() {
     if (!els.grid) return;
+    refreshCloudUser();
     bind();
     render();
   }
+
+  window.addEventListener("elite-cloud-state", (event) => {
+    cloudUser = event.detail?.user || null;
+    if (hasRendered) render();
+  });
+
+  window.addEventListener("elite-cloud-local-updated", () => {
+    refreshProgressFromStorage();
+    if (hasRendered) render();
+  });
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);

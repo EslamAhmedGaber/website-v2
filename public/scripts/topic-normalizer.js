@@ -433,6 +433,9 @@
     };
   }
 
+  window.normalizeEliteQuestion = normalizeQuestion;
+  window.normalizeEliteMeta = normalizeMeta;
+
   if (Array.isArray(window.QUESTION_DATA)) {
     window.QUESTION_DATA.forEach(normalizeQuestion);
   }

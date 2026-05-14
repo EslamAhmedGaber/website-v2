@@ -16,6 +16,28 @@ const totalExpertise = questions.filter((q) => q.bank === "expertise").length;
       </p>
     </header>
 
+    <section class="cloud-panel card" id="cloudSyncPanel" aria-label="Google progress sync">
+      <div>
+        <h2>Google sync</h2>
+        <p class="meta" id="cloudStatus">Checking Google sync...</p>
+        <p class="meta" id="cloudUser">Not signed in yet.</p>
+      </div>
+      <div class="cloud-panel-actions">
+        <button class="btn btn-primary btn-sm" type="button" id="googleLoginBtn" data-cloud-login>
+          Continue with Google
+        </button>
+        <button class="btn btn-ghost btn-sm" type="button" id="googleLogoutBtn" data-cloud-logout hidden>
+          Sign out
+        </button>
+        <button class="btn btn-ghost btn-sm" type="button" id="syncCloudBtn" data-cloud-sync disabled>
+          Sync now
+        </button>
+        <button class="btn btn-ghost btn-sm" type="button" id="restoreCloudBtn" disabled>
+          Restore from cloud
+        </button>
+      </div>
+    </section>
+
     <div class="progress-grid">
       <div class="card stat-card">
         <span class="meta">Solved</span>
@@ -30,7 +52,7 @@ const totalExpertise = questions.filter((q) => q.bank === "expertise").length;
       <div class="card stat-card">
         <span class="meta">Mistake Box</span>
         <strong data-stat-mistakes>0</strong>
-        <span class="meta">flagged for review</span>
+        <span class="meta" data-stat-mistakes-note>flagged for review</span>
       </div>
       <div class="card stat-card stat-card-wide">
         <span class="meta">Total bank</span>
@@ -49,28 +71,68 @@ const totalExpertise = questions.filter((q) => q.bank === "expertise").length;
     </section>
   </div>
 
-  <script is:inline>
+  <script is:inline define:vars={{ totalQuestions: siteMeta.questionCount }}>
     (function () {
       function getSet(key) {
         try { return new Set(JSON.parse(localStorage.getItem(key) || "[]")); } catch (_) { return new Set(); }
       }
-      const solved = getSet("elitePracticeSolved");
-      const selected = getSet("elitePracticeSelected");
-      const mistakes = getSet("elitePracticeMistakes");
-      const total = {totalQuestions};
-      document.querySelector("[data-stat-solved]").textContent = solved.size;
-      document.querySelector("[data-stat-selected]").textContent = selected.size;
-      document.querySelector("[data-stat-mistakes]").textContent = mistakes.size;
-      const pct = total ? Math.round((solved.size / total) * 100) : 0;
-      document.querySelector("[data-stat-solved-pct]").textContent = `${pct}% of ${total}`;
+      function getMistakes() {
+        try {
+          const value = JSON.parse(localStorage.getItem("elitePracticeMistakes") || "{}");
+          if (Array.isArray(value)) {
+            const now = Date.now();
+            return value.map((id) => ({ id, dueAt: now, masteredAt: null }));
+          }
+          if (value && typeof value === "object") return Object.values(value);
+        } catch (_) {}
+        return [];
+      }
+      function renderStats() {
+        const solved = getSet("elitePracticeSolved");
+        const selected = getSet("elitePracticeSelected");
+        const mistakes = getMistakes();
+        const due = mistakes.filter((item) => !item.masteredAt && Number(item.dueAt || 0) <= Date.now()).length;
+        const mastered = mistakes.filter((item) => item.masteredAt).length;
+        const total = totalQuestions;
+        document.querySelector("[data-stat-solved]").textContent = solved.size;
+        document.querySelector("[data-stat-selected]").textContent = selected.size;
+        document.querySelector("[data-stat-mistakes]").textContent = mistakes.length;
+        document.querySelector("[data-stat-mistakes-note]").textContent = due ? `${due} due today` : `${mastered} mastered`;
+        const pct = total ? Math.round((solved.size / total) * 100) : 0;
+        document.querySelector("[data-stat-solved-pct]").textContent = `${pct}% of ${total}`;
+      }
+      renderStats();
+      window.addEventListener("elite-cloud-local-updated", renderStats);
     })();
   </script>
 </BaseLayout>
 
-<style define:vars={{ totalQuestions: siteMeta.questionCount }}>
+<style>
   .page-header { margin-bottom: var(--space-5); }
   .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; display: block; margin-bottom: var(--space-1); }
   .page-sub { color: var(--muted); margin-top: var(--space-2); max-width: 60ch; }
+
+  .cloud-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+  .cloud-panel h2 {
+    font-size: var(--type-h2);
+    margin-bottom: 4px;
+  }
+  .cloud-panel-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: var(--space-1);
+  }
+  @media (max-width: 720px) {
+    .cloud-panel { align-items: flex-start; flex-direction: column; }
+    .cloud-panel-actions { justify-content: flex-start; }
+  }
 
   .progress-grid {
     display: grid;
