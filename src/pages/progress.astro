@@ -4,6 +4,25 @@ import { questions, siteMeta } from "../lib/dataset.js";
 
 const totalAll = questions.filter((q) => q.bank === "all").length;
 const totalExpertise = questions.filter((q) => q.bank === "expertise").length;
+const progressQuestions = questions
+  .filter((q) => q.bank === "all")
+  .map((q) => ({
+    id: q.id,
+    topic: q.topic,
+    unit: q.unit,
+    topic_order: q.topic_order,
+    paper: q.paper,
+    question: q.question,
+    marks: q.marks,
+  }));
+const progressPayload = JSON.stringify({
+  questions: progressQuestions,
+  siteMeta: {
+    questionCount: siteMeta.questionCount,
+    allCount: totalAll,
+    expertiseCount: totalExpertise,
+  },
+});
 ---
 
 <BaseLayout title="Progress — Elite IGCSE Mathematics">
@@ -69,28 +88,316 @@ const totalExpertise = questions.filter((q) => q.bank === "expertise").length;
         <a class="btn btn-ghost btn-sm" href="/pastpapers/">Browse past papers</a>
       </div>
     </section>
+
+    <section class="dashboard-grid">
+      <article class="card profile-card">
+        <div class="panel-head">
+          <div>
+            <span class="meta eyebrow">Student</span>
+            <h2>Profile</h2>
+          </div>
+          <span class="meta" data-profile-status>Saved locally</span>
+        </div>
+        <div class="profile-form">
+          <label>
+            <span class="label">Name</span>
+            <input class="input" type="text" data-profile-field="name" placeholder="Student name" />
+          </label>
+          <label>
+            <span class="label">Target grade</span>
+            <input class="input" type="text" data-profile-field="targetGrade" placeholder="9" />
+          </label>
+          <label>
+            <span class="label">Exam session</span>
+            <input class="input" type="text" data-profile-field="examSession" placeholder="June 2026" />
+          </label>
+          <label>
+            <span class="label">Weekly target</span>
+            <input class="input" type="number" min="1" max="200" data-profile-field="weeklyTarget" />
+          </label>
+        </div>
+      </article>
+
+      <article class="card backup-card">
+        <div class="panel-head">
+          <div>
+            <span class="meta eyebrow">Backup</span>
+            <h2>Export & Share</h2>
+          </div>
+          <span class="meta" data-backup-status>Ready</span>
+        </div>
+        <div class="backup-actions">
+          <button class="btn btn-primary btn-sm" type="button" data-export-backup>Export backup</button>
+          <button class="btn btn-ghost btn-sm" type="button" data-import-backup>Import backup</button>
+          <button class="btn btn-ghost btn-sm" type="button" data-export-topic-csv>Topic sheet CSV</button>
+          <button class="btn btn-ghost btn-sm" type="button" data-copy-summary>Copy summary</button>
+          <button class="btn btn-primary btn-sm" type="button" data-whatsapp-summary>WhatsApp summary</button>
+          <input type="file" accept="application/json" data-import-file hidden />
+        </div>
+        <textarea class="summary-box" data-summary-text readonly aria-label="Progress summary"></textarea>
+      </article>
+    </section>
+
+    <section class="topic-sheet card">
+      <div class="panel-head">
+        <div>
+          <span class="meta eyebrow">Topic Sheet</span>
+          <h2>Topic progress</h2>
+        </div>
+        <div class="topic-tools">
+          <button class="pill is-active" type="button" data-topic-view="all">All</button>
+          <button class="pill" type="button" data-topic-view="priority">Priority</button>
+          <button class="pill" type="button" data-topic-view="strong">Strong</button>
+        </div>
+      </div>
+      <div class="topic-table-wrap">
+        <table class="topic-table">
+          <thead>
+            <tr>
+              <th>Topic</th>
+              <th>Unit</th>
+              <th>Solved</th>
+              <th>Mistakes</th>
+              <th>My set</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody data-topic-table></tbody>
+        </table>
+      </div>
+    </section>
   </div>
 
-  <script is:inline define:vars={{ totalQuestions: siteMeta.questionCount }}>
+  <script is:inline define:vars={{ totalQuestions: siteMeta.questionCount, payload: progressPayload }}>
     (function () {
+      const DATA = JSON.parse(payload);
+      const QUESTIONS = DATA.questions || [];
+      const STORAGE = {
+        profile: "eliteStudentProfileV2",
+        pathway: "elitePathway",
+        modularUnit: "modularUnit",
+        activeBank: "activeQuestionBank",
+        layout: "elitePracticeLayout",
+        solved: "elitePracticeSolved",
+        selected: "elitePracticeSelected",
+        mistakes: "elitePracticeMistakes",
+        corrections: "eliteTopicCorrections",
+      };
+      let topicView = "all";
+
+      const els = {
+        profileStatus: document.querySelector("[data-profile-status]"),
+        backupStatus: document.querySelector("[data-backup-status]"),
+        summaryText: document.querySelector("[data-summary-text]"),
+        topicTable: document.querySelector("[data-topic-table]"),
+        importFile: document.querySelector("[data-import-file]"),
+        topicButtons: [...document.querySelectorAll("[data-topic-view]")],
+      };
+
+      function readJSON(key, fallback) {
+        try {
+          const value = JSON.parse(localStorage.getItem(key) || "null");
+          return value ?? fallback;
+        } catch (_) {
+          return fallback;
+        }
+      }
+      function writeJSON(key, value) {
+        localStorage.setItem(key, JSON.stringify(value));
+      }
       function getSet(key) {
-        try { return new Set(JSON.parse(localStorage.getItem(key) || "[]")); } catch (_) { return new Set(); }
+        const value = readJSON(key, []);
+        if (Array.isArray(value)) return new Set(value.filter(Boolean));
+        if (value && typeof value === "object") return new Set(Object.keys(value));
+        return new Set();
       }
       function getMistakes() {
-        try {
-          const value = JSON.parse(localStorage.getItem("elitePracticeMistakes") || "{}");
-          if (Array.isArray(value)) {
-            const now = Date.now();
-            return value.map((id) => ({ id, dueAt: now, masteredAt: null }));
-          }
-          if (value && typeof value === "object") return Object.values(value);
-        } catch (_) {}
+        const value = readJSON(STORAGE.mistakes, {});
+        const now = Date.now();
+        if (Array.isArray(value)) return value.map((id) => ({ id, dueAt: now, masteredAt: null }));
+        if (value && typeof value === "object") return Object.values(value);
         return [];
       }
-      function renderStats() {
-        const solved = getSet("elitePracticeSolved");
-        const selected = getSet("elitePracticeSelected");
+      function profile() {
+        return readJSON(STORAGE.profile, {});
+      }
+      function topicFor(question, corrections) {
+        const fix = corrections[question.id];
+        return fix && fix.topic ? fix.topic : question.topic;
+      }
+      function unitFor(question) {
+        return question.unit || "General";
+      }
+      function progressSnapshot() {
+        const solved = getSet(STORAGE.solved);
+        const selected = getSet(STORAGE.selected);
         const mistakes = getMistakes();
+        const mistakeById = new Map(mistakes.map((item) => [item.id, item]));
+        const corrections = readJSON(STORAGE.corrections, {});
+        const topicMap = new Map();
+
+        for (const question of QUESTIONS) {
+          const topic = topicFor(question, corrections) || "Unclassified";
+          if (!topicMap.has(topic)) {
+            topicMap.set(topic, {
+              topic,
+              unit: unitFor(question),
+              order: Number(question.topic_order || 9999),
+              total: 0,
+              solved: 0,
+              selected: 0,
+              mistakes: 0,
+            });
+          }
+          const row = topicMap.get(topic);
+          row.total += 1;
+          if (solved.has(question.id)) row.solved += 1;
+          if (selected.has(question.id)) row.selected += 1;
+          const mistake = mistakeById.get(question.id);
+          if (mistake && !mistake.masteredAt) row.mistakes += 1;
+        }
+
+        const topics = [...topicMap.values()]
+          .map((row) => ({
+            ...row,
+            pct: row.total ? Math.round((row.solved / row.total) * 100) : 0,
+          }))
+          .sort((a, b) => a.order - b.order || a.topic.localeCompare(b.topic));
+
+        return { solved, selected, mistakes, topics };
+      }
+      function topicStatus(row) {
+        if (row.mistakes > 0) return "Review";
+        if (row.pct >= 80) return "Strong";
+        if (row.pct >= 40) return "Building";
+        return "Priority";
+      }
+      function filteredTopics(topics) {
+        if (topicView === "priority") return topics.filter((row) => row.mistakes > 0 || row.pct < 40);
+        if (topicView === "strong") return topics.filter((row) => row.pct >= 80 && row.mistakes === 0);
+        return topics;
+      }
+      function buildSummary(snapshot) {
+        const p = profile();
+        const total = totalQuestions;
+        const pct = total ? Math.round((snapshot.solved.size / total) * 100) : 0;
+        const due = snapshot.mistakes.filter((item) => !item.masteredAt && Number(item.dueAt || 0) <= Date.now()).length;
+        const priority = snapshot.topics
+          .filter((row) => row.mistakes > 0 || row.pct < 40)
+          .sort((a, b) => b.mistakes - a.mistakes || a.pct - b.pct || a.order - b.order)
+          .slice(0, 5);
+        const lines = [
+          `Elite IGCSE progress${p.name ? ` - ${p.name}` : ""}`,
+          `Solved: ${snapshot.solved.size}/${total} (${pct}%)`,
+          `My set: ${snapshot.selected.size}`,
+          `Mistake Box: ${snapshot.mistakes.length}${due ? `, ${due} due` : ""}`,
+        ];
+        if (p.targetGrade) lines.push(`Target grade: ${p.targetGrade}`);
+        if (p.examSession) lines.push(`Exam session: ${p.examSession}`);
+        if (priority.length) {
+          lines.push("Priority topics:");
+          priority.forEach((row, index) => {
+            lines.push(`${index + 1}. ${row.topic} - ${row.solved}/${row.total}, mistakes ${row.mistakes}`);
+          });
+        } else {
+          lines.push("Priority topics: none currently flagged.");
+        }
+        return lines.join("\n");
+      }
+      function downloadFile(filename, text, type) {
+        const blob = new Blob([text], { type });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = filename;
+        document.body.append(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(url);
+      }
+      function buildBackup() {
+        return {
+          version: 2,
+          exportedAt: new Date().toISOString(),
+          source: "eliteigcse-progress",
+          profile: profile(),
+          progress: {
+            solved: [...getSet(STORAGE.solved)],
+            selected: [...getSet(STORAGE.selected)],
+            mistakes: readJSON(STORAGE.mistakes, {}),
+            topicCorrections: readJSON(STORAGE.corrections, {}),
+          },
+          preferences: {
+            pathway: localStorage.getItem(STORAGE.pathway) || "linear",
+            modularUnit: localStorage.getItem(STORAGE.modularUnit) || "",
+            activeBank: localStorage.getItem(STORAGE.activeBank) || "all",
+            layout: localStorage.getItem(STORAGE.layout) || "grid",
+          },
+        };
+      }
+      function applyBackup(data) {
+        if (!data || typeof data !== "object") throw new Error("This is not an Elite progress backup.");
+        const progress = data.progress || {};
+        const preferences = data.preferences || {};
+        writeJSON(STORAGE.profile, data.profile || data.student || {});
+        writeJSON(STORAGE.solved, Array.isArray(progress.solved) ? progress.solved : []);
+        writeJSON(STORAGE.selected, Array.isArray(progress.selected) ? progress.selected : []);
+        writeJSON(STORAGE.mistakes, progress.mistakes || {});
+        writeJSON(STORAGE.corrections, progress.topicCorrections || {});
+        if (preferences.pathway) localStorage.setItem(STORAGE.pathway, preferences.pathway);
+        if (preferences.modularUnit) localStorage.setItem(STORAGE.modularUnit, preferences.modularUnit);
+        if (preferences.activeBank) localStorage.setItem(STORAGE.activeBank, preferences.activeBank);
+        if (preferences.layout) localStorage.setItem(STORAGE.layout, preferences.layout);
+        window.dispatchEvent(new CustomEvent("elite-cloud-local-updated", { detail: { reason: "backup-import" } }));
+      }
+      function exportTopicCsv(snapshot) {
+        const rows = [["Topic", "Unit", "Solved", "Total", "Percent", "Mistakes", "My set", "Status"]];
+        snapshot.topics.forEach((row) => {
+          rows.push([row.topic, row.unit, row.solved, row.total, `${row.pct}%`, row.mistakes, row.selected, topicStatus(row)]);
+        });
+        const csv = rows
+          .map((row) => row.map((value) => `"${String(value).replaceAll('"', '""')}"`).join(","))
+          .join("\n");
+        downloadFile("elite-topic-progress.csv", csv, "text/csv;charset=utf-8");
+      }
+      function renderProfile() {
+        const data = profile();
+        document.querySelectorAll("[data-profile-field]").forEach((field) => {
+          const key = field.dataset.profileField;
+          field.value = key === "weeklyTarget" ? data[key] || 30 : data[key] || "";
+        });
+      }
+      function escapeHtml(value) {
+        return String(value).replace(/[&<>"']/g, (char) => ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;",
+        }[char]));
+      }
+      function renderTopicSheet(snapshot) {
+        if (!els.topicTable) return;
+        const rows = filteredTopics(snapshot.topics);
+        els.topicTable.innerHTML = rows.map((row) => `
+          <tr>
+            <td><strong>${escapeHtml(row.topic)}</strong></td>
+            <td>${escapeHtml(row.unit)}</td>
+            <td>
+              <span class="progress-meter" style="--pct:${row.pct}%"><span></span></span>
+              <span class="meta">${row.solved}/${row.total} (${row.pct}%)</span>
+            </td>
+            <td>${row.mistakes}</td>
+            <td>${row.selected}</td>
+            <td><span class="status-chip ${topicStatus(row).toLowerCase()}">${topicStatus(row)}</span></td>
+          </tr>
+        `).join("");
+      }
+      function renderStats() {
+        const snapshot = progressSnapshot();
+        const solved = snapshot.solved;
+        const selected = snapshot.selected;
+        const mistakes = snapshot.mistakes;
         const due = mistakes.filter((item) => !item.masteredAt && Number(item.dueAt || 0) <= Date.now()).length;
         const mastered = mistakes.filter((item) => item.masteredAt).length;
         const total = totalQuestions;
@@ -100,7 +407,69 @@ const totalExpertise = questions.filter((q) => q.bank === "expertise").length;
         document.querySelector("[data-stat-mistakes-note]").textContent = due ? `${due} due today` : `${mastered} mastered`;
         const pct = total ? Math.round((solved.size / total) * 100) : 0;
         document.querySelector("[data-stat-solved-pct]").textContent = `${pct}% of ${total}`;
+        renderTopicSheet(snapshot);
+        if (els.summaryText) els.summaryText.value = buildSummary(snapshot);
+        return snapshot;
       }
+      function wireProfile() {
+        document.querySelectorAll("[data-profile-field]").forEach((field) => {
+          field.addEventListener("input", () => {
+            const data = profile();
+            data[field.dataset.profileField] = field.type === "number" ? Number(field.value || 0) : field.value;
+            writeJSON(STORAGE.profile, data);
+            if (els.profileStatus) els.profileStatus.textContent = "Saved";
+            window.EliteCloud?.queueSync?.();
+          });
+        });
+      }
+      function wireActions() {
+        document.querySelector("[data-export-backup]")?.addEventListener("click", () => {
+          const backup = buildBackup();
+          downloadFile(`elite-progress-${new Date().toISOString().slice(0, 10)}.json`, JSON.stringify(backup, null, 2), "application/json");
+          if (els.backupStatus) els.backupStatus.textContent = "Backup exported";
+        });
+        document.querySelector("[data-import-backup]")?.addEventListener("click", () => els.importFile?.click());
+        els.importFile?.addEventListener("change", async () => {
+          const file = els.importFile.files?.[0];
+          if (!file) return;
+          try {
+            const data = JSON.parse(await file.text());
+            if (!window.confirm("Import this progress backup and replace the progress on this browser?")) return;
+            applyBackup(data);
+            renderProfile();
+            renderStats();
+            if (els.backupStatus) els.backupStatus.textContent = "Backup imported";
+          } catch (err) {
+            if (els.backupStatus) els.backupStatus.textContent = err.message || "Import failed";
+          } finally {
+            els.importFile.value = "";
+          }
+        });
+        document.querySelector("[data-export-topic-csv]")?.addEventListener("click", () => exportTopicCsv(renderStats()));
+        document.querySelector("[data-copy-summary]")?.addEventListener("click", async () => {
+          const text = els.summaryText?.value || buildSummary(renderStats());
+          try {
+            await navigator.clipboard.writeText(text);
+            if (els.backupStatus) els.backupStatus.textContent = "Summary copied";
+          } catch (_) {
+            if (els.backupStatus) els.backupStatus.textContent = "Copy unavailable";
+          }
+        });
+        document.querySelector("[data-whatsapp-summary]")?.addEventListener("click", () => {
+          const text = els.summaryText?.value || buildSummary(renderStats());
+          window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+        });
+        els.topicButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            topicView = button.dataset.topicView || "all";
+            els.topicButtons.forEach((btn) => btn.classList.toggle("is-active", btn === button));
+            renderStats();
+          });
+        });
+      }
+      renderProfile();
+      wireProfile();
+      wireActions();
       renderStats();
       window.addEventListener("elite-cloud-local-updated", renderStats);
     })();
@@ -157,7 +526,116 @@ const totalExpertise = questions.filter((q) => q.bank === "expertise").length;
   .progress-actions {
     display: grid;
     gap: var(--space-2);
+    margin-bottom: var(--space-4);
   }
   .progress-actions h2 { font-size: var(--type-h2); }
   .actions-row { display: flex; gap: var(--space-1); flex-wrap: wrap; margin-top: var(--space-1); }
+
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+  }
+  .panel-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+  .panel-head h2 { font-size: var(--type-h2); }
+  .profile-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2);
+  }
+  .backup-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin-bottom: var(--space-2);
+  }
+  .summary-box {
+    width: 100%;
+    min-height: 170px;
+    resize: vertical;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    background: var(--ivory);
+    padding: var(--space-2);
+    color: var(--navy);
+    font: 13px/1.55 var(--font-mono);
+  }
+  .topic-sheet { overflow: hidden; }
+  .topic-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    justify-content: flex-end;
+  }
+  .topic-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .topic-table {
+    width: 100%;
+    min-width: 780px;
+    border-collapse: collapse;
+    background: var(--paper);
+  }
+  .topic-table th,
+  .topic-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    vertical-align: middle;
+  }
+  .topic-table th {
+    background: var(--ivory);
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .topic-table tr:last-child td { border-bottom: 0; }
+  .progress-meter {
+    display: inline-block;
+    width: 120px;
+    height: 8px;
+    margin-right: 8px;
+    border-radius: var(--radius-full);
+    background: var(--line);
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  .progress-meter span {
+    display: block;
+    width: var(--pct);
+    height: 100%;
+    background: var(--gold);
+  }
+  .status-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 78px;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    background: var(--gold-soft);
+    color: var(--navy);
+    font-size: 12px;
+    font-weight: var(--weight-bold);
+  }
+  .status-chip.review { background: var(--danger-soft); color: var(--danger); }
+  .status-chip.strong { background: var(--success-soft); color: var(--success); }
+  .status-chip.priority { background: var(--line); color: var(--navy); }
+  .status-chip.building { background: var(--gold-soft); color: var(--gold-deep); }
+  @media (max-width: 860px) {
+    .dashboard-grid { grid-template-columns: 1fr; }
+    .profile-form { grid-template-columns: 1fr; }
+    .panel-head { flex-direction: column; }
+    .topic-tools { justify-content: flex-start; }
+  }
 </style>

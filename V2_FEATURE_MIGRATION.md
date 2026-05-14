@@ -31,9 +31,9 @@ Done in v2:
 - Google progress sync wiring
 - Worksheet builder and print selected questions
 - Spaced-repetition Mistake Box with due, saved, and mastered views
+- Full progress dashboard: topic sheet, backup export/import, WhatsApp summary
 
 Next:
-- Full progress dashboard: topic sheet, backup export/import, WhatsApp summary
 - Exam page with timed self-marking and score history
 - Topic roadmap page
 - Readiness check page
