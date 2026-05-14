@@ -8,6 +8,10 @@
   "scripts": {
     "dev": "astro dev",
     "ingest:paper": "python tools/ingest_paper.py",
+    "books:dry-run": "python tools/build_books.py --dry-run",
+    "books:public": "python tools/build_books.py --public",
+    "books:private": "python tools/build_books.py --private",
+    "books:all": "python tools/build_books.py --all",
     "verify:pipeline": "python tools/verify_pipeline.py",
     "check": "npm run verify:pipeline && npm run build",
     "build": "astro build",

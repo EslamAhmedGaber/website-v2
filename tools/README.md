@@ -8,6 +8,9 @@ Run from the repo root:
 
 ```powershell
 npm run ingest:paper
+npm run books:dry-run
+npm run books:public
+npm run books:private
 npm run verify:pipeline
 npm run build
 ```
@@ -19,6 +22,7 @@ tools/
   inbox/              Drop new paper PDFs here
   processed/          Processed source PDFs move here
   ingest_paper.py     Split/crop/classify new papers
+  build_books.py      Build public classified books and private answer books
   verify_pipeline.py  Check data, assets, solutions, books, and privacy guardrails
   migrate_from_v1.py  One-time migration helper from the old site
 ```
@@ -29,10 +33,11 @@ tools/
 2. Run `npm run ingest:paper`.
 3. Review `src/data/questions/<paper-slug>.json`.
 4. Add solutions in `src/data/solutions/<paper-slug>.json`.
-5. Regenerate public classified books into `public/downloads/`.
-6. Regenerate private answer books into `private_output/`.
-7. Run `npm run verify:pipeline`.
-8. Run `npm run build`.
+5. Run `npm run books:dry-run`.
+6. Regenerate public classified books into `public/downloads/` with `npm run books:public`.
+7. Regenerate private answer books into `private_output/` with `npm run books:private`.
+8. Run `npm run verify:pipeline`.
+9. Run `npm run build`.
 
 ## Current Ingest Behavior
 
@@ -45,6 +50,14 @@ tools/
 - saves cropped images to `public/assets/questions/`,
 - refreshes `src/data/papers.json`,
 - moves the source PDF to `tools/processed/`.
+
+`build_books.py`:
+
+- reads question rows from `src/data/questions/`,
+- reads website solution text from `src/data/solutions/`,
+- writes public question-only PDFs to `public/downloads/`,
+- writes private answer PDFs to `private_output/`,
+- supports `--dry-run` and `--limit` for safe checks before full generation.
 
 ## Classification Fixes
 

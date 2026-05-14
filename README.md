@@ -28,6 +28,9 @@ Do not copy their old structure into v2.
 ```powershell
 npm run dev
 npm run ingest:paper
+npm run books:dry-run
+npm run books:public
+npm run books:private
 npm run verify:pipeline
 npm run build
 npm run check
@@ -39,10 +42,11 @@ npm run check
 2. Run `npm run ingest:paper`.
 3. Review classifications in `src/data/questions/`.
 4. Add website-only worked solutions in `src/data/solutions/`.
-5. Regenerate public classified books in `public/downloads/`.
-6. Regenerate private answer books in `private_output/`.
-7. Run `npm run check`.
-8. Commit and push.
+5. Run `npm run books:dry-run`.
+6. Regenerate public classified books with `npm run books:public`.
+7. Regenerate private answer books with `npm run books:private`.
+8. Run `npm run check`.
+9. Commit and push.
 
 Read [PIPELINE_CONTRACT.md](./PIPELINE_CONTRACT.md) before changing the paper pipeline.
 

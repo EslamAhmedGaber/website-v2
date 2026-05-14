@@ -23,11 +23,12 @@ When Dr Eslam gives a new paper:
 2. Run `npm run ingest:paper`.
 3. Review the classified output in `src/data/questions/`.
 4. Add or generate worked website solutions in `src/data/solutions/`.
-5. Build/update public classified books in `public/downloads/`.
-6. Build/update private answer books in `private_output/`.
-7. Run `npm run verify:pipeline`.
-8. Run `npm run build`.
-9. Commit and push only after verification passes.
+5. Run `npm run books:dry-run`.
+6. Build/update public classified books in `public/downloads/` with `npm run books:public`.
+7. Build/update private answer books in `private_output/` with `npm run books:private`.
+8. Run `npm run verify:pipeline`.
+9. Run `npm run build`.
+10. Commit and push only after verification passes.
 
 ## Classification Requirements
 
@@ -63,6 +64,13 @@ Public classified question books can be published under `public/downloads/`.
 
 Private answer books must be generated under `private_output/`, then shared manually outside the public deploy when needed.
 
+Book commands:
+
+- `npm run books:dry-run`: count rows and catch missing images/solutions before writing PDFs.
+- `npm run books:public`: write question-only public books.
+- `npm run books:private`: write answer books under `private_output/`.
+- `npm run books:all`: write both public and private books.
+
 ## Verification Gate
 
 `npm run verify:pipeline` checks:
@@ -77,4 +85,3 @@ Private answer books must be generated under `private_output/`, then shared manu
 - private output guardrails
 
 This command should run before every commit that changes question data, solutions, or books.
-
