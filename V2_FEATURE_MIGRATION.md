@@ -12,6 +12,8 @@ Decision: keep building `website-v2`. Do not return to editing the old static si
 ## Old Features To Port
 
 Done in v2:
+- Scalable paper pipeline contract
+- Pipeline verifier for data/assets/solutions/privacy guardrails
 - Linear and Modular pathway gate
 - Practice filters
 - Grid/list question cards
@@ -28,6 +30,8 @@ Done in v2:
 - Spaced-repetition Mistake Box with due, saved, and mastered views
 
 Next:
+- Port public classified book builder from `New project 5`
+- Port private answer book builder into `private_output/`
 - Full progress dashboard: topic sheet, backup export/import, WhatsApp summary
 - Exam page with timed self-marking and score history
 - Topic roadmap page
@@ -47,3 +51,16 @@ Port behavior, not clutter. Every old feature should become either:
 - or a tool under `tools/`.
 
 Do not add a second source of truth for question metadata.
+
+## New Paper Rule
+
+When a new paper arrives, v2 must support the full chain:
+
+`ingest -> classify -> save -> solve -> update website -> update public classified books -> update private answer books -> verify -> publish`.
+
+Website solutions stay in `src/data/solutions/` and appear only through `Show solution`.
+Answer books stay private in `private_output/`.
+
+## 4WM Modular Status
+
+The May/Nov 2025 `4WM1` and `4WM2` imports were removed because the crops were not clean enough to publish or solve reliably. Re-ingest those papers later from better crops before adding modular books back to downloads.

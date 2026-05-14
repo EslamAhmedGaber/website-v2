@@ -1,43 +1,53 @@
-# Astro Starter Kit: Minimal
+# Elite IGCSE Mathematics v2
 
-```sh
-npm create astro@latest -- --template minimal
+Scalable Astro rebuild for Dr Eslam Ahmed's Elite IGCSE Mathematics website.
+
+The project goal is simple:
+
+`new paper -> classify questions -> add website solutions -> update public classified books -> update private answer books -> verify -> publish`
+
+## Important Folders
+
+- `src/data/questions/`: per-paper classified question data
+- `src/data/solutions/`: worked website solutions for `Show solution`
+- `public/assets/questions/`: cropped question images
+- `public/downloads/`: public classified question books
+- `private_output/`: private answer books and private solution exports
+- `tools/inbox/`: drop new paper PDFs here
+- `tools/processed/`: processed source PDFs
+
+Old projects are feature references only:
+
+- `C:\Users\Eslam\Documents\New project 5\classified_exam_problems`
+- `C:\Users\Eslam\Documents\Elite IGCSE v2\website`
+
+Do not copy their old structure into v2.
+
+## Commands
+
+```powershell
+npm run dev
+npm run ingest:paper
+npm run verify:pipeline
+npm run build
+npm run check
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Adding A New Paper
 
-## 🚀 Project Structure
+1. Put the paper PDF in `tools/inbox/`.
+2. Run `npm run ingest:paper`.
+3. Review classifications in `src/data/questions/`.
+4. Add website-only worked solutions in `src/data/solutions/`.
+5. Regenerate public classified books in `public/downloads/`.
+6. Regenerate private answer books in `private_output/`.
+7. Run `npm run check`.
+8. Commit and push.
 
-Inside of your Astro project, you'll see the following folders and files:
+Read [PIPELINE_CONTRACT.md](./PIPELINE_CONTRACT.md) before changing the paper pipeline.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Privacy Rule
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Solutions are visible on the website only through `Show solution`.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Answer books, mark schemes, and private solution exports must stay out of `public/`, `public/downloads/`, and `dist/`.

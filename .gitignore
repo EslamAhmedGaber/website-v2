@@ -1,10 +1,18 @@
 # build output
 dist/
+
+# private generated answer books and private solution exports
+private_output/*
+!private_output/.gitkeep
 # generated types
 .astro/
 
 # dependencies
 node_modules/
+
+# python cache
+__pycache__/
+*.pyc
 
 # logs
 npm-debug.log*

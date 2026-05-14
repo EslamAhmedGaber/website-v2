@@ -300,46 +300,6 @@
     "hasSolutions": true
   },
   {
-    "paperSlug": "May2025_4WM1H",
-    "paper": "May 2025 4WM1H",
-    "session": "May 2025",
-    "code": "4WM1H",
-    "isModular": true,
-    "modularUnit": "Unit 1",
-    "questionCount": 25,
-    "hasSolutions": true
-  },
-  {
-    "paperSlug": "May2025_4WM1HR",
-    "paper": "May 2025 4WM1HR",
-    "session": "May 2025",
-    "code": "4WM1HR",
-    "isModular": true,
-    "modularUnit": "Unit 1",
-    "questionCount": 24,
-    "hasSolutions": false
-  },
-  {
-    "paperSlug": "May2025_4WM2H",
-    "paper": "May 2025 4WM2H",
-    "session": "May 2025",
-    "code": "4WM2H",
-    "isModular": true,
-    "modularUnit": "Unit 2",
-    "questionCount": 27,
-    "hasSolutions": false
-  },
-  {
-    "paperSlug": "May2025_4WM2HR",
-    "paper": "May 2025 4WM2HR",
-    "session": "May 2025",
-    "code": "4WM2HR",
-    "isModular": true,
-    "modularUnit": "Unit 2",
-    "questionCount": 25,
-    "hasSolutions": false
-  },
-  {
     "paperSlug": "MayNov2020_P1H",
     "paper": "May-Nov 2020 P1H",
     "session": "MayNov 2020",
@@ -418,26 +378,6 @@
     "modularUnit": null,
     "questionCount": 31,
     "hasSolutions": true
-  },
-  {
-    "paperSlug": "Nov2025_4WM1H",
-    "paper": "Nov 2025 4WM1H",
-    "session": "Nov 2025",
-    "code": "4WM1H",
-    "isModular": true,
-    "modularUnit": "Unit 1",
-    "questionCount": 28,
-    "hasSolutions": false
-  },
-  {
-    "paperSlug": "Nov2025_4WM2H",
-    "paper": "Nov 2025 4WM2H",
-    "session": "Nov 2025",
-    "code": "4WM2H",
-    "isModular": true,
-    "modularUnit": "Unit 2",
-    "questionCount": 26,
-    "hasSolutions": false
   },
   {
     "paperSlug": "Nov2025_P1H",

@@ -1,69 +1,52 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-// Curated download catalogue. Once Phase 4 wires the book builder
-// directly into this page, this list will be generated. For now it's
-// hand-edited and matches what's in public/downloads/.
+// Curated download catalogue. Once the v2 book builder is fully wired,
+// this list should be generated from the same data as the practice page.
 const books = {
-  "Linear (4MA1) — Full Classified Bank": [
+  "Linear (4MA1) - Full Classified Bank": [
     {
       file: "/downloads/classified_problems.pdf",
       title: "Classified Problems",
-      subtitle: "All 974 classified questions, one per page, grouped by topic.",
+      subtitle: "All active linear classified questions, one per page, grouped by topic.",
       size: "Large PDF",
       public: true,
     },
     {
       file: "/downloads/Classified_Expertise.pdf",
       title: "Classified Expertise (Q20+)",
-      subtitle: "Harder questions starting from question 20 — 214 problems.",
+      subtitle: "Harder questions starting from question 20.",
       size: "Medium PDF",
       public: true,
     },
   ],
-  "Modular (4WM1H / 4WM2H)": [
-    {
-      file: "/downloads/Classified_4WM1.pdf",
-      title: "Modular Unit 1 — Classified",
-      subtitle: "Number, algebra basics, geometry, probability questions only.",
-      size: "Large PDF",
-      public: true,
-    },
-    {
-      file: "/downloads/Classified_4WM2.pdf",
-      title: "Modular Unit 2 — Classified",
-      subtitle: "Percentages, equations, advanced geometry, statistics.",
-      size: "Large PDF",
-      public: true,
-    },
-  ],
-  "With Answers — Private (sign-in required)": [
+  "With Answers - Private": [
     {
       file: null,
       title: "Classified with Answers",
       subtitle: "Same as the full classified book, with every worked solution attached.",
-      size: "Sign-in required",
+      size: "Private output",
       public: false,
     },
     {
       file: null,
       title: "Classified Expertise with Answers",
       subtitle: "Q20+ with worked solutions.",
-      size: "Sign-in required",
+      size: "Private output",
       public: false,
     },
   ],
 };
 ---
 
-<BaseLayout title="Books & Downloads — Elite IGCSE Mathematics">
+<BaseLayout title="Books & Downloads - Elite IGCSE Mathematics">
   <div class="container section">
     <header class="page-header">
       <span class="meta eyebrow">PDF Library</span>
       <h1>Books & Downloads</h1>
       <p class="page-sub">
-        Six classified-question books drawn from the same data that powers the practice page.
-        Public books are free; the with-answers variants stay private until you sign in.
+        Classified-question books drawn from the same data that powers the practice page.
+        The 4WM modular books are paused until those papers are recropped cleanly.
       </p>
     </header>
 
@@ -88,7 +71,7 @@ const books = {
                     </a>
                   ) : (
                     <button class="btn btn-ghost btn-sm" type="button" disabled>
-                      🔒 Sign in
+                      Private
                     </button>
                   )}
                 </div>

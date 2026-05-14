@@ -1,98 +1,59 @@
-# Pipeline tools
+# Pipeline Tools
 
-The canonical ingestion chain for Elite IGCSE v2. Drop a PDF here,
-run one command, push the build.
+These tools keep paper updates repeatable.
 
-## What lives here
+## Main Commands
 
+Run from the repo root:
+
+```powershell
+npm run ingest:paper
+npm run verify:pipeline
+npm run build
 ```
+
+## Folder Map
+
+```text
 tools/
-├── inbox/              ← drop new past-paper PDFs here
-├── processed/          ← script moves PDFs here once done
-├── migrate_from_v1.py  ← one-time migration script (Phase 1, already run)
-├── ingest_paper.py     ← canonical ingest pipeline (Phase 4)
-└── README.md           ← this file
+  inbox/              Drop new paper PDFs here
+  processed/          Processed source PDFs move here
+  ingest_paper.py     Split/crop/classify new papers
+  verify_pipeline.py  Check data, assets, solutions, books, and privacy guardrails
+  migrate_from_v1.py  One-time migration helper from the old site
 ```
 
-## Adding a new past paper — full workflow
+## New Paper Workflow
 
 1. Drop the question-paper PDF into `tools/inbox/`.
-   Naming: any filename works as long as the Edexcel paper code is in
-   the filename or on the cover page. Auto-detected codes:
-     - `4WM1H`  → Modular Unit 1
-     - `4WM1HR` → Modular Unit 1 (Resit)
-     - `4WM2H`  → Modular Unit 2
-     - `4WM2HR` → Modular Unit 2 (Resit)
-     - `P1H` / `P2H` / `P1HR` / `P2HR` → Linear (4MA1) papers
+2. Run `npm run ingest:paper`.
+3. Review `src/data/questions/<paper-slug>.json`.
+4. Add solutions in `src/data/solutions/<paper-slug>.json`.
+5. Regenerate public classified books into `public/downloads/`.
+6. Regenerate private answer books into `private_output/`.
+7. Run `npm run verify:pipeline`.
+8. Run `npm run build`.
 
-2. From the repo root, run:
-   ```powershell
-   python tools/ingest_paper.py
-   ```
-   This will:
-   - detect paper code + session from the filename
-   - crop every question (multi-page aware, via the "Total for
-     Question N is M marks" footer markers)
-   - run the heuristic topic classifier
-   - write `src/data/questions/<paper-slug>.json`
-   - copy each PNG into `public/assets/questions/`
-   - refresh `src/data/papers.json` (the catalogue)
-   - move the source PDF to `tools/processed/`
+## Current Ingest Behavior
 
-3. (Optional) write worked solutions for the new questions at
-   `src/data/solutions/<paper-slug>.json`. Format:
-   ```json
-   {
-     "paperSlug": "May2025_4WM1H",
-     "solutions": {
-       "all::May2025_4WM1H__Q01__...": { "source": "**Topic check:** ...\n\n**Solution**\n\n..." }
-     }
-   }
-   ```
-   (Phase 4.2 will add a helper that converts loose markdown files
-   into this JSON.)
+`ingest_paper.py`:
 
-4. Rebuild and deploy:
-   ```powershell
-   npm run build
-   git add -A
-   git commit -m "Add <Session> <Code> past paper"
-   git push
-   ```
-   GitHub Pages picks up the new build automatically (Phase 5 wires
-   the Actions workflow that runs `npm ci && npm run build` on push).
+- detects Edexcel paper code and session,
+- crops every question using "Total for Question N is M marks" footer markers,
+- runs the heuristic topic classifier,
+- writes `src/data/questions/<paper-slug>.json`,
+- saves cropped images to `public/assets/questions/`,
+- refreshes `src/data/papers.json`,
+- moves the source PDF to `tools/processed/`.
 
-## How classification works
+## Classification Fixes
 
-The classifier in `ingest_paper.py` is a fast heuristic — it tags
-every question with one of the 54 raw topics in the v1 taxonomy.
-Mistags happen; that's by design. The fix workflow is one click:
+Mistags should be fixed first through the website admin `Fix topic` flow. Stable repeated fixes should then be promoted into the classifier/normalizer so the next paper improves automatically.
 
-1. Sign in on the live site as an `eslam*@*` Google account.
-2. On any misclassified question card, open the kebab menu and pick
-   **Fix topic**.
-3. Choose the correct topic from the dropdown. Save.
+## Privacy
 
-The correction stores in localStorage right now. Phase 4.2 will
-promote it to Firestore and emit a `src/data/corrections.json` file
-that the build picks up so corrections survive across devices and
-deployments.
+Public classified question books can be published from `public/downloads/`.
 
-## When something goes wrong
+Generated answer books and private solution exports must stay in `private_output/`.
 
-- **Paper code not detected**: rename the PDF to include the code
-  in the filename (e.g. `Jun2024_4MA1_P1H.pdf`) and re-run.
-- **Questions missing**: PDF probably has unusual "Total for
-  Question" wording. Inspect with `python -c "import fitz; print(fitz.open('path').load_page(0).get_text())"`.
-- **Image crop too large/small**: tune the `+ 4` / `+ 6` padding
-  in `locate_blocks()`.
-
-## What stays out of this pipeline
-
-- The PDF book builder (`build_modular_books.py` etc.) is a separate
-  generator that reads from the same `src/data/questions/*.json`
-  files. Phase 4.2 will port it from `New project 5\classified_exam_problems\`
-  into `website-v2/tools/build_books.py`.
-- Solution generation: still manual / LLM-assisted. The next
-  assistant will write worked solutions into `src/data/solutions/`
-  (see `SOLUTION_HANDOVER.md` in the parent folder).
+Never put answer books, mark schemes, or private worked-solution books into `public/` or `dist/`.
