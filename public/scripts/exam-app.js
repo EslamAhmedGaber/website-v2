@@ -328,16 +328,23 @@
       return;
     }
     const canMark = state.status !== "running";
-    els.paper.innerHTML = state.ids.map((id, index) => {
+    const brand = window.ElitePrintBrand || {};
+    const durationMinutes = Math.round(Number(state.durationSeconds || Number(els.duration?.value || 90) * 60) / 60);
+    const cover = `<section class="print-exam-cover">
+      ${brand.masthead ? brand.masthead("Mock Exam") : ""}
+      <div class="print-exam-meta">
+        <span><strong>${state.ids.length}</strong>questions</span>
+        <span><strong>${totalMarks()}</strong>marks</span>
+        <span><strong>${durationMinutes}</strong>minutes</span>
+        <span><strong>${escapeHtml(state.scope || (pathway === "modular" ? "Both units" : "All chapters"))}</strong>scope</span>
+      </div>
+    </section>`;
+    els.paper.innerHTML = cover + state.ids.map((id, index) => {
       const question = questionById(id);
       if (!question) return "";
       const score = state.scores?.[id] ?? "";
       const solution = solutions[id]?.source || "";
       return `<article class="exam-question">
-        <div class="print-paper-brand">
-          <strong>Elite IGCSE Mathematics - Dr Eslam Ahmed</strong>
-          <span>WhatsApp: 01120009622 | eliteigcse.com</span>
-        </div>
         <header>
           <div>
             <span class="meta">Question ${index + 1}</span>
@@ -351,9 +358,9 @@
           ${canMark ? `<label><span class="label">Score</span><input class="input score-input" type="number" min="0" max="${question.marks}" value="${score}" data-score-id="${escapeHtml(id)}" /></label>` : "<span class=\"meta\">Solutions hidden until finish</span>"}
         </footer>
         ${canMark ? `<details class="exam-solution"><summary>Show worked solution</summary>${renderMarkdown(solution)}</details>` : ""}
-        <div class="print-paper-footer">Prepared by Dr Eslam Ahmed | Assistant Lecturer, Cairo University Faculty of Engineering | 01120009622</div>
       </article>`;
     }).join("");
+    if (brand.footer) els.paper.insertAdjacentHTML("beforeend", brand.footer());
     if (window.MathJax?.typesetPromise && canMark) {
       window.MathJax.typesetPromise([els.paper]).catch(() => {});
     }

@@ -165,6 +165,65 @@
   letter-spacing: 0.02em;
 }
 
+/* --- Shared print identity --- */
+.print-brand,
+.print-brand-footer {
+  display: none;
+}
+
+@media print {
+  .print-brand {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) minmax(220px, auto);
+    gap: 5mm;
+    align-items: center;
+    border-bottom: 0.5mm solid #d8cfba;
+    padding-bottom: 4mm;
+    margin-bottom: 5mm;
+    color: #0b1f3a;
+  }
+  .print-brand-mark {
+    display: inline-grid;
+    place-items: center;
+    min-width: 18mm;
+    min-height: 11mm;
+    padding: 0 3mm;
+    border-radius: 2mm;
+    background: #0b1f3a;
+    color: #c9a24b;
+    font: 700 9pt Arial, Helvetica, sans-serif;
+    letter-spacing: 0.8pt;
+  }
+  .print-brand-copy,
+  .print-brand-contact {
+    display: grid;
+    gap: 0.8mm;
+  }
+  .print-brand-copy strong {
+    font: 700 13pt Arial, Helvetica, sans-serif;
+  }
+  .print-brand-copy span,
+  .print-brand-contact span {
+    font: 8.5pt Arial, Helvetica, sans-serif;
+    color: #50586a;
+  }
+  .print-brand-contact {
+    text-align: right;
+  }
+  .print-brand-contact strong {
+    font: 700 9pt Arial, Helvetica, sans-serif;
+  }
+  .print-brand-footer {
+    display: block;
+    border-top: 0.3mm solid #d8cfba;
+    padding-top: 2.5mm;
+    margin-top: 4mm;
+    color: #50586a;
+    font: 8pt Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+}
+
 /* --- Divider --- */
 .divider {
   border: 0;

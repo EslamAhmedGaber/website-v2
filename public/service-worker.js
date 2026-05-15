@@ -1,4 +1,4 @@
-const CACHE_VERSION = "elite-igcse-v2-shell-1";
+const CACHE_VERSION = "elite-igcse-v2-shell-2";
 const RUNTIME_CACHE = "elite-igcse-v2-runtime-1";
 const APP_SHELL = [
   "/",
@@ -18,6 +18,7 @@ const APP_SHELL = [
   "/scripts/firebase-config.js",
   "/scripts/cloud-progress.js",
   "/scripts/lead-app.js",
+  "/scripts/print-brand.js",
   "/scripts/topic-normalizer.js",
   "/scripts/practice-app.js",
   "/scripts/exam-app.js",

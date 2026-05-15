@@ -118,6 +118,7 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     })();
   </script>
   <script is:inline src="/scripts/topic-normalizer.js"></script>
+  <script is:inline src="/scripts/print-brand.js"></script>
   <script is:inline defer src="/scripts/exam-app.js"></script>
 </BaseLayout>
 
@@ -284,8 +285,7 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     font-weight: var(--weight-bold);
   }
   .exam-solution p + p { margin-top: var(--space-1); }
-  .print-paper-brand,
-  .print-paper-footer {
+  .print-exam-cover {
     display: none;
   }
   @media (max-width: 960px) {
@@ -329,37 +329,45 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
       box-shadow: none;
       padding: 0;
     }
+    .print-exam-cover {
+      display: grid;
+      gap: 4mm;
+      margin-bottom: 7mm;
+    }
+    .print-exam-meta {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 3mm;
+    }
+    .print-exam-meta span {
+      display: grid;
+      gap: 0.8mm;
+      padding: 2.5mm;
+      border: 0.3mm solid #ddd3bd;
+      color: #50586a;
+      font: 8.5pt Arial, Helvetica, sans-serif;
+    }
+    .print-exam-meta strong {
+      color: #0b1f3a;
+      font-size: 10pt;
+    }
     .exam-question {
-      break-after: page;
-      min-height: 270mm;
+      break-inside: avoid-page;
       border: 0;
       border-radius: 0;
-      padding: 0;
-      gap: 10mm;
+      padding: 0 0 7mm;
+      gap: 4mm;
     }
-    .exam-question:last-child { break-after: auto; }
+    .exam-question + .exam-question {
+      border-top: 0.3mm solid #ddd3bd;
+      padding-top: 6mm;
+    }
     .exam-question footer,
     .exam-solution {
       display: none !important;
     }
-    .print-paper-brand,
-    .print-paper-footer {
-      display: flex;
-      justify-content: space-between;
-      gap: 8mm;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 3mm;
-      font-size: 10pt;
-    }
-    .print-paper-footer {
-      border-top: 1px solid #ccc;
-      border-bottom: 0;
-      padding-top: 3mm;
-      padding-bottom: 0;
-      align-self: end;
-    }
     .exam-question img {
-      max-height: 210mm;
+      max-height: 150mm;
     }
   }
 </style>

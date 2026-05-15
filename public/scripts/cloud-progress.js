@@ -376,6 +376,15 @@
     }
   }
 
+  function readableCloudError(err, fallback) {
+    const code = String(err?.code || "").toLowerCase();
+    const message = String(err?.message || "");
+    if (code.includes("permission-denied") || /missing or insufficient permissions/i.test(message)) {
+      return "Cloud save is blocked by Firebase rules. Local progress is still saved on this device.";
+    }
+    return message || fallback;
+  }
+
   async function loadModules() {
     if (state.modules) return state.modules;
     const [app, auth, firestore] = await Promise.all([
@@ -429,7 +438,7 @@
       }
       queueSync();
     } catch (err) {
-      state.error = err.message || "Cloud restore failed.";
+      state.error = readableCloudError(err, "Cloud restore failed.");
       updateUi(state.error);
       emitState();
     }
@@ -449,7 +458,7 @@
         await state.modules.auth.signInWithRedirect(state.auth, provider);
         return;
       }
-      state.error = err.message || "Google login failed.";
+      state.error = readableCloudError(err, "Google login failed.");
       updateUi(state.error);
       emitState();
     }
@@ -511,7 +520,7 @@
       emitState();
       return true;
     } catch (err) {
-      state.error = err.message || "Cloud save failed.";
+      state.error = readableCloudError(err, "Cloud save failed.");
       updateUi(state.error);
       emitState();
       return false;
@@ -538,7 +547,7 @@
       setTimeout(() => window.location.reload(), 700);
       return true;
     } catch (err) {
-      state.error = err.message || "Cloud restore failed.";
+      state.error = readableCloudError(err, "Cloud restore failed.");
       updateUi(state.error);
       emitState();
       return false;

@@ -168,6 +168,7 @@
     worksheetMode: q("[data-worksheet-mode]"),
     worksheetBuild: q("[data-worksheet-build]"),
     worksheetPrint: q("[data-worksheet-print]"),
+    selectVisibleBtn: q("[data-select-visible]"),
     clearSelectedBtn: q("[data-clear-selected]"),
     worksheetStatus: q("[data-worksheet-status]"),
     printScope: q("[data-print-scope]"),
@@ -464,6 +465,7 @@
           <div class="q-primary-actions">
             <button class="btn btn-primary btn-sm" type="button" data-action="zoom">Practice</button>
             ${hasSolution ? '<button class="btn btn-ghost btn-sm" type="button" data-action="solution">Show solution</button>' : ""}
+            <button class="btn btn-ghost btn-sm" type="button" data-action="select">${isSelected ? "Selected" : "Select"}</button>
           </div>
           <details class="q-more">
             <summary class="btn btn-ghost btn-sm" aria-label="More actions">⋯</summary>
@@ -710,7 +712,7 @@
       return;
     }
     if (mode === "print") {
-      els.printScope?.focus();
+      quickPrint();
     }
   }
 
@@ -823,6 +825,7 @@
     // Worksheet builder
     els.worksheetBuild?.addEventListener("click", () => buildWorksheet());
     els.worksheetPrint?.addEventListener("click", () => buildWorksheet({ printAfter: true }));
+    els.selectVisibleBtn?.addEventListener("click", selectAllVisible);
     els.clearSelectedBtn?.addEventListener("click", clearSelected);
     els.printBuildBtn?.addEventListener("click", () => printByScope(els.printScope?.value || "selected"));
     els.randomVisibleBtn?.addEventListener("click", () => randomVisible(10));
@@ -948,6 +951,17 @@
     render();
   }
 
+  function selectAllVisible() {
+    if (!lastVisible.length) {
+      setWorksheetStatus("No visible questions to select.");
+      return;
+    }
+    for (const question of lastVisible) state.selected.add(question.id);
+    saveSets();
+    setWorksheetStatus(`Selected ${lastVisible.length} visible question${lastVisible.length === 1 ? "" : "s"}.`);
+    render();
+  }
+
   function printableForScope(scope) {
     if (scope === "visible") return lastVisible;
     if (scope === "topic") {
@@ -979,17 +993,28 @@
       return;
     }
 
-    els.printArea.innerHTML = printable.map((question, index) => `<section class="print-question">
-      <div class="print-paper-brand">
-        <strong>Elite IGCSE Mathematics - Dr Eslam Ahmed</strong>
-        <span>WhatsApp: 01120009622 | eliteigcse.com</span>
-      </div>
+    const brand = window.ElitePrintBrand || {};
+    els.printArea.innerHTML = `${brand.masthead ? brand.masthead("Classified Worksheet") : ""}` +
+      printable.map((question, index) => `<section class="print-question">
       <h2>${index + 1}. ${escapeHtml(question.paper)} Q${question.question} | ${escapeHtml(question.topic)} | ${question.marks} marks</h2>
       <img src="${escapeHtml(question.image)}" alt="${escapeHtml(question.paper)} Q${question.question}" />
-      <div class="print-paper-footer">Prepared by Dr Eslam Ahmed | Assistant Lecturer, Cairo University Faculty of Engineering | 01120009622</div>
-    </section>`).join("");
+    </section>`).join("") +
+      `${brand.footer ? brand.footer() : ""}`;
     setWorksheetStatus(`Prepared ${printable.length} question${printable.length === 1 ? "" : "s"} for print / Save as PDF.`);
     window.print();
+  }
+
+  function quickPrint() {
+    const selectedInScope = [...state.selected].filter((id) => lastPool.some((question) => question.id === id));
+    if (selectedInScope.length) {
+      printByScope("selected");
+      return;
+    }
+    if (state.topicFilter) {
+      printByScope("topic");
+      return;
+    }
+    printByScope("visible");
   }
 
   function toggleSelected(id) {

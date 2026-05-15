@@ -14,7 +14,7 @@ const {
 } = Astro.props;
 const path = Astro.url.pathname;
 const isActive = (href: string) => path === href || path === `${href}/`;
-const studyRoots = ["/topics", "/checkup", "/planner", "/notes", "/pastpapers", "/about"];
+const studyRoots = ["/topics", "/checkup", "/planner", "/notes", "/about"];
 const isStudyActive = studyRoots.some((href) => path === href || path === `${href}/` || path.startsWith(`${href}/`));
 ---
 
@@ -52,7 +52,9 @@ const isStudyActive = studyRoots.some((href) => path === href || path === `${hre
           </a>
 
           <nav class="site-nav" aria-label="Primary">
-            <a class="nav-link" href="/practice" aria-current={isActive("/practice") ? "page" : undefined}>Practice</a>
+            <a class="nav-link" href="/practice" aria-current={isActive("/practice") ? "page" : undefined}>Classified</a>
+            <a class="nav-link" href="/pastpapers/" aria-current={path.startsWith("/pastpapers") ? "page" : undefined}>Papers</a>
+            <a class="nav-link" href="/downloads" aria-current={isActive("/downloads") ? "page" : undefined}>Books</a>
             <a class="nav-link" href="/exam" aria-current={isActive("/exam") ? "page" : undefined}>Mocks</a>
             <a class="nav-link" href="/progress" aria-current={isActive("/progress") ? "page" : undefined}>Progress</a>
             <details class="nav-more">
@@ -62,11 +64,9 @@ const isStudyActive = studyRoots.some((href) => path === href || path === `${hre
                 <a href="/checkup" aria-current={isActive("/checkup") ? "page" : undefined}>Check</a>
                 <a href="/planner" aria-current={isActive("/planner") ? "page" : undefined}>Plan</a>
                 <a href="/notes" aria-current={isActive("/notes") ? "page" : undefined}>Notes</a>
-                <a href="/pastpapers/" aria-current={path.startsWith("/pastpapers") ? "page" : undefined}>Papers</a>
                 <a href="/about" aria-current={isActive("/about") ? "page" : undefined}>About</a>
               </div>
             </details>
-            <a class="nav-link" href="/downloads" aria-current={isActive("/downloads") ? "page" : undefined}>Books</a>
           </nav>
 
           <div class="site-cta">
@@ -279,7 +279,15 @@ const isStudyActive = studyRoots.some((href) => path === href || path === `${hre
       }
       @media (max-width: 720px) {
         .site-header-inner { flex-wrap: wrap; gap: var(--space-1); padding: 10px var(--space-2); }
-        .site-nav { order: 3; width: 100%; justify-content: space-between; gap: var(--space-1); }
+        .site-nav {
+          order: 3;
+          width: 100%;
+          justify-content: flex-start;
+          gap: var(--space-2);
+          overflow-x: auto;
+          scrollbar-width: thin;
+        }
+        .site-nav > * { flex: 0 0 auto; }
         .site-cta { margin-left: auto; }
         .brand-meta { display: none; }
         .nav-more { position: static; }

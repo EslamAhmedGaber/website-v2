@@ -60,7 +60,7 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
       <button class="pill" type="button" data-practice-mode="weak">Weak topics</button>
       <button class="pill" type="button" data-practice-mode="mistakes">Mistakes</button>
       <a class="pill" href="/exam">Mock exam</a>
-      <button class="pill" type="button" data-practice-mode="print">Print</button>
+      <button class="pill" type="button" data-practice-mode="print">Print now</button>
     </nav>
 
     <!-- ============ Layout: sidebar + grid ============ -->
@@ -181,6 +181,7 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
             <div class="worksheet-actions">
               <button class="btn btn-primary btn-sm" type="button" data-worksheet-build>Build</button>
               <button class="btn btn-ghost btn-sm" type="button" data-worksheet-print>Build & print</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-select-visible>Select all visible</button>
               <button class="btn btn-ghost btn-sm" type="button" data-clear-selected>Clear set</button>
             </div>
             <label class="label" for="printScope">Print scope</label>
@@ -294,6 +295,7 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     })();
   </script>
   <script is:inline src="/scripts/topic-normalizer.js"></script>
+  <script is:inline src="/scripts/print-brand.js"></script>
 
   <!-- App controller -->
   <script is:inline defer src="/scripts/practice-app.js"></script>
@@ -436,13 +438,16 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
   .q-grid[data-layout="list"] .q-card {
     grid-template-columns: 200px minmax(0, 1fr);
     grid-template-rows: auto;
+    height: auto;
   }
 
   .q-card {
     --q-preview-height: 245px;
+    --q-card-height: 430px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: var(--q-preview-height) auto;
+    grid-template-rows: var(--q-preview-height) minmax(0, 1fr);
+    height: var(--q-card-height);
     background: var(--paper);
     border: 1px solid var(--line-strong);
     border-radius: var(--radius-lg);
@@ -484,13 +489,17 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     border-bottom: 0;
   }
   @media (max-width: 560px) {
-    .q-card { --q-preview-height: 210px; }
+    .q-card {
+      --q-preview-height: 210px;
+      --q-card-height: 398px;
+    }
   }
 
   .q-body {
     display: flex;
     flex-direction: column;
     gap: var(--space-1);
+    min-height: 0;
     padding: var(--space-2);
   }
   .q-meta {
@@ -499,10 +508,20 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     justify-content: space-between;
     gap: var(--space-1);
   }
-  .q-topic { font-size: 15px; font-weight: var(--weight-bold); line-height: 1.25; }
+  .q-topic {
+    display: -webkit-box;
+    min-height: 38px;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: var(--weight-bold);
+    line-height: 1.25;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
   .q-tags {
     display: flex;
     flex-wrap: wrap;
+    min-height: 22px;
     gap: 4px;
     align-items: center;
   }
@@ -511,7 +530,7 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     align-items: center;
     justify-content: space-between;
     gap: var(--space-1);
-    margin-top: var(--space-1);
+    margin-top: auto;
   }
   .q-primary-actions {
     display: flex;
@@ -756,37 +775,23 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
       font-family: Arial, Helvetica, sans-serif;
     }
     .print-question {
-      break-after: page;
+      break-inside: avoid-page;
       display: grid;
-      gap: 10mm;
-      min-height: 270mm;
-      padding: 0;
+      gap: 5mm;
+      padding: 0 0 7mm;
     }
-    .print-question:last-child { break-after: auto; }
-    .print-paper-brand,
-    .print-paper-footer {
-      display: flex;
-      justify-content: space-between;
-      gap: 8mm;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 3mm;
-      font-size: 10pt;
-    }
-    .print-paper-footer {
-      border-top: 1px solid #ccc;
-      border-bottom: 0;
-      padding-top: 3mm;
-      padding-bottom: 0;
-      align-self: end;
+    .print-question + .print-question {
+      border-top: 0.3mm solid #ddd3bd;
+      padding-top: 6mm;
     }
     .print-question h2 {
       color: #111;
-      font-size: 14pt;
+      font-size: 12pt;
       line-height: 1.3;
     }
     .print-question img {
       width: 100%;
-      max-height: 210mm;
+      max-height: 150mm;
       object-fit: contain;
       align-self: start;
     }
