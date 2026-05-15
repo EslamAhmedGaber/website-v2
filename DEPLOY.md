@@ -3,6 +3,25 @@
 The new site at `website-v2/` is ready to take over from the legacy
 `website/` folder. Here's the safe switch-over procedure.
 
+## Current same-domain publish path
+
+Until the custom domain is moved to the v2 GitHub repository, keep
+`website-v2/` as the source of truth and use the legacy `website/`
+repository only as the live deploy mirror:
+
+```powershell
+npm run check
+python tools/publish_live_site.py --apply
+cd "..\website"
+git add -A
+git commit -m "Publish v2 site"
+git push
+```
+
+`tools/publish_live_site.py` mirrors `dist/` into the live repository,
+keeps the domain marker, and writes `.nojekyll` so GitHub Pages serves
+Astro's `_astro/` assets correctly.
+
 ## Before the switch
 
 - [ ] Test `npm run build` finishes clean.

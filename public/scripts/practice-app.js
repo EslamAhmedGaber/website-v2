@@ -429,7 +429,10 @@
           ${isMistake ? `<span class="badge badge-muted">${escapeHtml(reviewText)}</span>` : ""}
         </div>
         <div class="q-actions">
-          <button class="btn btn-primary btn-sm" type="button" data-action="zoom">Practice</button>
+          <div class="q-primary-actions">
+            <button class="btn btn-primary btn-sm" type="button" data-action="zoom">Practice</button>
+            ${hasSolution ? '<button class="btn btn-ghost btn-sm" type="button" data-action="solution">Show solution</button>' : ""}
+          </div>
           <details class="q-more">
             <summary class="btn btn-ghost btn-sm" aria-label="More actions">⋯</summary>
             <div class="q-more-menu">
@@ -437,7 +440,6 @@
               <button type="button" data-action="solve">${isSolved ? "Mark unsolved" : "Mark solved"}</button>
               <button type="button" data-action="mistake">${isMistake ? "Remove from Mistake Box" : "Add to Mistake Box"}</button>
               ${isMistake ? '<button type="button" data-action="mistake-done">Review done</button>' : ""}
-              ${hasSolution ? '<button type="button" data-action="solution">Show solution</button>' : ""}
               ${admin ? '<button type="button" data-action="fix-topic">Fix topic</button>' : ""}
             </div>
           </details>
