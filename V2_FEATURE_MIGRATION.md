@@ -23,18 +23,18 @@ Done in v2:
 - Solved, selected, and mistake tracking
 - Study timer
 - Topic mastery summary
-- Mock exam builder
+- Full mock exam builder with timed self-marking, history, printable papers, and weak-topic return links
 - Worked solution dialog
 - Fix Topic admin flow
 - Past-paper catalogue and per-paper pages
 - Downloads page
 - Google progress sync wiring
 - Worksheet builder and print selected questions
+- Multi-scope print center for selected, filtered, topic, chapter/unit, and whole-bank output
 - Spaced-repetition Mistake Box with due, saved, and mastered views
 - Full progress dashboard: topic sheet, backup export/import, WhatsApp summary
 
 Next:
-- Exam page with timed self-marking and score history
 - Topic roadmap page
 - Readiness check page
 - Study plan generator

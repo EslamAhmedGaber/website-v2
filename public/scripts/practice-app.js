@@ -35,9 +35,15 @@
     layout: localStorage.getItem(STORAGE_LAYOUT) || "grid",
     search: "",
     topicFilter: "",
+    unitFilter: "",
     paperFilter: "",
     viewFilter: "",
+    difficultyFilter: "",
     minMarks: 0,
+    maxMarks: 0,
+    minQuestion: 0,
+    maxQuestion: 0,
+    sortMode: "topic",
     selected: readIdSet(STORAGE_SELECTED),
     solved: readIdSet(STORAGE_SOLVED),
     mistakes: readMistakeItems(),
@@ -120,12 +126,19 @@
     emptyState: q("[data-empty-state]"),
     searchInput: q("[data-search]"),
     topicSelect: q("[data-topic-filter]"),
+    unitSelect: q("[data-unit-filter]"),
     paperSelect: q("[data-paper-filter]"),
     viewSelect: q("[data-view-filter]"),
+    difficultySelect: q("[data-difficulty-filter]"),
     minMarksInput: q("[data-min-marks]"),
+    maxMarksInput: q("[data-max-marks]"),
+    minQuestionInput: q("[data-min-question]"),
+    maxQuestionInput: q("[data-max-question]"),
+    sortSelect: q("[data-sort-mode]"),
     resetBtn: q("[data-reset-filters]"),
     bankButtons: qa("[data-bank]"),
     pillButtons: qa("[data-view-pill]"),
+    quickButtons: qa("[data-practice-mode]"),
     layoutButtons: qa("[data-layout]"),
     resumeBanner: q("[data-resume-banner]"),
     resumeText: q("[data-resume-text]"),
@@ -155,14 +168,12 @@
     worksheetMode: q("[data-worksheet-mode]"),
     worksheetBuild: q("[data-worksheet-build]"),
     worksheetPrint: q("[data-worksheet-print]"),
+    clearSelectedBtn: q("[data-clear-selected]"),
     worksheetStatus: q("[data-worksheet-status]"),
-    printSelectedBtn: q("[data-print-selected]"),
+    printScope: q("[data-print-scope]"),
+    printBuildBtn: q("[data-print-build]"),
     randomVisibleBtn: q("[data-random-visible]"),
     printArea: q("[data-print-area]"),
-    mockOpenBtn: q("[data-mock-open]"),
-    mockDialog: q("#mockDialog"),
-    mockUnitButtons: qa("[data-mock-unit]"),
-    mockClose: q("[data-mock-close]"),
     fixDialog: q("#fixTopicDialog"),
     fixTitle: q("#fixTopicTitle"),
     fixCurrentTopic: q("[data-fix-current-topic]"),
@@ -375,8 +386,12 @@
   function applyFilters(pool) {
     const search = state.search.trim().toLowerCase();
     const minMarks = Number(state.minMarks) || 0;
+    const maxMarks = Number(state.maxMarks) || 0;
+    const minQuestion = Number(state.minQuestion) || 0;
+    const maxQuestion = Number(state.maxQuestion) || 0;
     return pool.filter((qq) => {
       if (state.topicFilter && qq.topic !== state.topicFilter) return false;
+      if (state.unitFilter && qq.unit !== state.unitFilter) return false;
       if (state.paperFilter && qq.paper !== state.paperFilter) return false;
       if (state.viewFilter === "selected" && !state.selected.has(qq.id)) return false;
       if (state.viewFilter === "solved" && !state.solved.has(qq.id)) return false;
@@ -384,12 +399,29 @@
       if (state.viewFilter === "mistakes" && !mistakeState(qq.id)) return false;
       if (state.viewFilter === "mistakes-due" && !isMistakeDue(qq.id)) return false;
       if (state.viewFilter === "mistakes-mastered" && !isMistakeMastered(qq.id)) return false;
+      if (state.difficultyFilter === "quick" && Number(qq.marks) > 3) return false;
+      if (state.difficultyFilter === "standard" && (Number(qq.marks) < 4 || Number(qq.marks) > 6)) return false;
+      if (state.difficultyFilter === "long" && Number(qq.marks) < 7) return false;
+      if (state.difficultyFilter === "q20" && Number(qq.question) < 20) return false;
       if (minMarks && Number(qq.marks) < minMarks) return false;
+      if (maxMarks && Number(qq.marks) > maxMarks) return false;
+      if (minQuestion && Number(qq.question) < minQuestion) return false;
+      if (maxQuestion && Number(qq.question) > maxQuestion) return false;
       if (search) {
         const blob = `${qq.paper} ${qq.topic} ${qq.unit} ${qq.question_text}`.toLowerCase();
         if (!blob.includes(search)) return false;
       }
       return true;
+    });
+  }
+
+  function sortQuestions(items) {
+    return [...items].sort((a, b) => {
+      if (state.sortMode === "paper") return a.paper.localeCompare(b.paper) || Number(a.question) - Number(b.question);
+      if (state.sortMode === "marks_desc") return Number(b.marks) - Number(a.marks) || Number(a.topic_order) - Number(b.topic_order);
+      if (state.sortMode === "marks_asc") return Number(a.marks) - Number(b.marks) || Number(a.topic_order) - Number(b.topic_order);
+      if (state.sortMode === "question_desc") return Number(b.question) - Number(a.question) || Number(b.marks) - Number(a.marks);
+      return Number(a.topic_order) - Number(b.topic_order) || a.paper.localeCompare(b.paper) || Number(a.question) - Number(b.question);
     });
   }
 
@@ -452,7 +484,7 @@
     hasRendered = true;
     setPathwayInWindow();
     const pool = scopedQuestions();
-    const visible = applyFilters(pool);
+    const visible = sortQuestions(applyFilters(pool));
     lastPool = pool;
     lastVisible = visible;
 
@@ -505,6 +537,12 @@
       const topics = uniqueSorted(pool.map((qq) => qq.topic));
       els.topicSelect.innerHTML = `<option value="">All topics</option>` +
         topics.map((t) => `<option value="${escapeHtml(t)}"${t === cur ? " selected" : ""}>${escapeHtml(t)}</option>`).join("");
+    }
+    if (els.unitSelect) {
+      const cur = state.unitFilter;
+      const units = uniqueSorted(pool.map((qq) => qq.unit));
+      els.unitSelect.innerHTML = `<option value="">All chapters / units</option>` +
+        units.map((unit) => `<option value="${escapeHtml(unit)}"${unit === cur ? " selected" : ""}>${escapeHtml(unit)}</option>`).join("");
     }
     if (els.paperSelect) {
       const cur = state.paperFilter;
@@ -595,17 +633,136 @@
     render();
   }
 
+  function setQuickMode(mode) {
+    els.quickButtons.forEach((button) => button.classList.toggle("is-active", button.dataset.practiceMode === mode));
+  }
+
+  function resetFilterState() {
+    state.search = "";
+    state.topicFilter = "";
+    state.unitFilter = "";
+    state.paperFilter = "";
+    state.viewFilter = "";
+    state.difficultyFilter = "";
+    state.minMarks = 0;
+    state.maxMarks = 0;
+    state.minQuestion = 0;
+    state.maxQuestion = 0;
+    state.sortMode = "topic";
+    if (els.searchInput) els.searchInput.value = "";
+    if (els.topicSelect) els.topicSelect.value = "";
+    if (els.unitSelect) els.unitSelect.value = "";
+    if (els.paperSelect) els.paperSelect.value = "";
+    if (els.viewSelect) els.viewSelect.value = "";
+    if (els.difficultySelect) els.difficultySelect.value = "";
+    if (els.minMarksInput) els.minMarksInput.value = "";
+    if (els.maxMarksInput) els.maxMarksInput.value = "";
+    if (els.minQuestionInput) els.minQuestionInput.value = "";
+    if (els.maxQuestionInput) els.maxQuestionInput.value = "";
+    if (els.sortSelect) els.sortSelect.value = "topic";
+  }
+
+  function chooseWeakTopic() {
+    const byTopic = new Map();
+    for (const question of scopedQuestions()) {
+      const row = byTopic.get(question.topic) || { topic: question.topic, total: 0, solved: 0 };
+      row.total += 1;
+      if (state.solved.has(question.id)) row.solved += 1;
+      byTopic.set(question.topic, row);
+    }
+    return [...byTopic.values()]
+      .filter((row) => row.solved < row.total)
+      .sort((a, b) => (a.solved / a.total) - (b.solved / b.total) || b.total - a.total)[0]?.topic || "";
+  }
+
+  function runQuickMode(mode) {
+    setQuickMode(mode);
+    if (mode === "all") {
+      resetFilterState();
+      render();
+      return;
+    }
+    if (mode === "topic") {
+      els.topicSelect?.focus();
+      return;
+    }
+    if (mode === "mixed") {
+      randomVisible(10);
+      return;
+    }
+    if (mode === "unsolved") {
+      setViewFilter("unsolved");
+      return;
+    }
+    if (mode === "weak") {
+      const topic = chooseWeakTopic();
+      if (topic) {
+        state.topicFilter = topic;
+        state.viewFilter = "unsolved";
+        if (els.topicSelect) els.topicSelect.value = topic;
+        if (els.viewSelect) els.viewSelect.value = "unsolved";
+        render();
+      }
+      return;
+    }
+    if (mode === "mistakes") {
+      setViewFilter("mistakes-due");
+      return;
+    }
+    if (mode === "print") {
+      els.printScope?.focus();
+    }
+  }
+
+  function applyInitialParams() {
+    const params = new URLSearchParams(window.location.search);
+    const bank = params.get("bank");
+    const unit = params.get("unit");
+    const topic = params.get("topic");
+    const view = params.get("view");
+    const difficulty = params.get("difficulty");
+    const mode = params.get("mode");
+
+    if (bank && window.BANK_META?.[bank]) {
+      state.activeBank = bank;
+      localStorage.setItem(STORAGE_BANK, bank);
+    }
+    if (unit) {
+      state.unitFilter = unit;
+      if (state.pathway === "modular" && /^Unit\s+[12]$/i.test(unit)) {
+        state.modularUnit = unit;
+        localStorage.setItem(STORAGE_UNIT, unit);
+      }
+    }
+    if (topic) state.topicFilter = topic;
+    if (view) state.viewFilter = view;
+    if (difficulty) state.difficultyFilter = difficulty;
+
+    if (mode === "weak") {
+      state.viewFilter = "unsolved";
+      setQuickMode("weak");
+    } else if (mode === "review") {
+      state.viewFilter = "mistakes-due";
+      setQuickMode("mistakes");
+    }
+  }
+
   function bind() {
     els.searchInput?.addEventListener("input", (e) => { state.search = e.target.value; render(); });
     els.topicSelect?.addEventListener("change", (e) => { state.topicFilter = e.target.value; render(); });
+    els.unitSelect?.addEventListener("change", (e) => { state.unitFilter = e.target.value; render(); });
     els.paperSelect?.addEventListener("change", (e) => { state.paperFilter = e.target.value; render(); });
     els.viewSelect?.addEventListener("change", (e) => setViewFilter(e.target.value));
+    els.difficultySelect?.addEventListener("change", (e) => { state.difficultyFilter = e.target.value; render(); });
     els.minMarksInput?.addEventListener("input", (e) => { state.minMarks = e.target.value; render(); });
+    els.maxMarksInput?.addEventListener("input", (e) => { state.maxMarks = e.target.value; render(); });
+    els.minQuestionInput?.addEventListener("input", (e) => { state.minQuestion = e.target.value; render(); });
+    els.maxQuestionInput?.addEventListener("input", (e) => { state.maxQuestion = e.target.value; render(); });
+    els.sortSelect?.addEventListener("change", (e) => { state.sortMode = e.target.value; render(); });
 
     els.resetBtn?.addEventListener("click", () => {
-      state.search = ""; state.topicFilter = ""; state.paperFilter = ""; state.viewFilter = ""; state.minMarks = 0;
-      if (els.searchInput) els.searchInput.value = "";
-      if (els.minMarksInput) els.minMarksInput.value = "";
+      resetFilterState();
+      setQuickMode("all");
       render();
     });
 
@@ -626,6 +783,8 @@
       els.layoutButtons.forEach((x) => x.classList.toggle("is-active", x.dataset.layout === state.layout));
       render();
     }));
+
+    els.quickButtons.forEach((button) => button.addEventListener("click", () => runQuickMode(button.dataset.practiceMode)));
 
     els.grid?.addEventListener("click", (e) => {
       const action = e.target.closest("[data-action]")?.dataset.action;
@@ -664,36 +823,14 @@
     // Worksheet builder
     els.worksheetBuild?.addEventListener("click", () => buildWorksheet());
     els.worksheetPrint?.addEventListener("click", () => buildWorksheet({ printAfter: true }));
-    els.printSelectedBtn?.addEventListener("click", printSelected);
+    els.clearSelectedBtn?.addEventListener("click", clearSelected);
+    els.printBuildBtn?.addEventListener("click", () => printByScope(els.printScope?.value || "selected"));
     els.randomVisibleBtn?.addEventListener("click", () => randomVisible(10));
-
-    // Mock exam
-    els.mockOpenBtn?.addEventListener("click", openMockDialog);
-    els.mockUnitButtons.forEach((b) => b.addEventListener("click", () => buildMock(b.dataset.mockUnit)));
-    els.mockClose?.addEventListener("click", () => els.mockDialog?.close());
 
     // Fix Topic
     els.fixSave?.addEventListener("click", saveFixTopic);
     els.fixClear?.addEventListener("click", clearFixTopic);
     els.fixClose?.addEventListener("click", () => els.fixDialog?.close());
-  }
-
-  function openMockDialog() {
-    if (!els.mockDialog) return;
-    // Refresh counts inside the dialog from current pool
-    const pool = scopedQuestions();
-    const units = state.pathway === "modular"
-      ? ["Unit 1", "Unit 2"]
-      : ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6"];
-    els.mockUnitButtons = qa("[data-mock-unit]");
-    els.mockUnitButtons.forEach((b) => {
-      const label = b.dataset.mockUnit;
-      const count = pool.filter((qq) => qq.unit === label).length;
-      const countEl = b.querySelector(".mock-count");
-      if (countEl) countEl.textContent = `${count} questions`;
-      b.hidden = !units.includes(label);
-    });
-    els.mockDialog.showModal();
   }
 
   // ---- FIX TOPIC ADMIN ---------------------------------------------
@@ -732,23 +869,6 @@
     saveCorrections(corrections);
     applyCorrections();
     els.fixDialog?.close();
-    render();
-  }
-
-  function buildMock(unitLabel) {
-    const pool = scopedQuestions().filter((qq) => qq.unit === unitLabel);
-    if (pool.length === 0) {
-      els.mockDialog?.close();
-      return;
-    }
-    const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, Math.min(25, pool.length));
-    // Clear set in scope, add new mock
-    for (const qq of pool) state.selected.delete(qq.id);
-    for (const qq of shuffled) state.selected.add(qq.id);
-    state.viewFilter = "selected";
-    if (els.viewSelect) els.viewSelect.value = "selected";
-    saveSets();
-    els.mockDialog?.close();
     render();
   }
 
@@ -802,7 +922,7 @@
     saveSets();
     setWorksheetStatus(`Built ${picked.length} question${picked.length === 1 ? "" : "s"} in My set.`);
     render();
-    if (printAfter) setTimeout(printSelected, 60);
+    if (printAfter) setTimeout(() => printByScope("selected"), 60);
   }
 
   function randomVisible(count = 10) {
@@ -821,16 +941,41 @@
     render();
   }
 
-  function printSelected() {
-    if (!els.printArea) return;
+  function clearSelected() {
+    for (const question of lastPool) state.selected.delete(question.id);
+    saveSets();
+    setWorksheetStatus("My set cleared.");
+    render();
+  }
+
+  function printableForScope(scope) {
+    if (scope === "visible") return lastVisible;
+    if (scope === "topic") {
+      return state.topicFilter
+        ? lastPool.filter((question) => question.topic === state.topicFilter)
+        : [];
+    }
+    if (scope === "unit") {
+      return state.unitFilter
+        ? lastPool.filter((question) => question.unit === state.unitFilter)
+        : [];
+    }
+    if (scope === "pool") return lastPool;
+
     const inScope = new Set(lastPool.map((question) => question.id));
-    const selectedItems = [...state.selected]
+    return [...state.selected]
       .filter((id) => inScope.has(id))
       .map(questionById)
       .filter(Boolean);
-    const printable = selectedItems.length ? selectedItems : lastVisible;
+  }
+
+  function printByScope(scope = "selected") {
+    if (!els.printArea) return;
+    const printable = printableForScope(scope);
     if (!printable.length) {
-      setWorksheetStatus("Nothing to print yet.");
+      if (scope === "topic") setWorksheetStatus("Choose a topic before printing that scope.");
+      else if (scope === "unit") setWorksheetStatus("Choose a chapter or unit before printing that scope.");
+      else setWorksheetStatus("Nothing to print yet.");
       return;
     }
 
@@ -843,6 +988,7 @@
       <img src="${escapeHtml(question.image)}" alt="${escapeHtml(question.paper)} Q${question.question}" />
       <div class="print-paper-footer">Prepared by Dr Eslam Ahmed | Assistant Lecturer, Cairo University Faculty of Engineering | 01120009622</div>
     </section>`).join("");
+    setWorksheetStatus(`Prepared ${printable.length} question${printable.length === 1 ? "" : "s"} for print / Save as PDF.`);
     window.print();
   }
 
@@ -923,6 +1069,9 @@
   function init() {
     if (!els.grid) return;
     refreshCloudUser();
+    applyInitialParams();
+    if (els.viewSelect) els.viewSelect.value = state.viewFilter;
+    if (els.difficultySelect) els.difficultySelect.value = state.difficultyFilter;
     bind();
     render();
   }

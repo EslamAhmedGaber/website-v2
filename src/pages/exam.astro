@@ -1,33 +1,365 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { questions, solutions, siteMeta, banks } from "../lib/dataset.js";
+
+const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
 ---
 
-<BaseLayout title="Mock Exam — Elite IGCSE Mathematics">
-  <div class="container section">
-    <header class="page-header">
-      <span class="meta eyebrow">Timed Practice</span>
-      <h1>Mock Exam</h1>
-      <p class="page-sub">
-        Start a 25-question mock from your active pathway. Once you've built the set, work through
-        it in the practice bank with the study timer running.
-      </p>
+<BaseLayout title="Mock Exams — Elite IGCSE Mathematics">
+  <div class="container section exam-page">
+    <header class="exam-hero card royale-frame">
+      <div>
+        <span class="meta eyebrow">Mock exam builder</span>
+        <h1>Generate a real paper from your classified bank.</h1>
+        <p>
+          Choose the bank, pathway scope, number of questions, time limit, and mix.
+          Finish the paper, enter your marks, and push weak questions back into the Mistake Box.
+        </p>
+      </div>
+      <div class="timer-panel">
+        <span class="meta">Timer</span>
+        <strong data-exam-timer>90:00</strong>
+        <small data-exam-timer-label>Ready to start</small>
+      </div>
     </header>
 
-    <div class="exam-card card royale-frame">
-      <p>The mock dialog now lives inside the practice page itself — open the practice bank and tap
-      <strong>Start mock</strong> from the sidebar to choose a Unit or Chapter and build your set.</p>
-      <div class="actions-row">
-        <a class="btn btn-primary" href="/practice">Open practice bank</a>
-        <a class="btn btn-ghost btn-sm" href="/">Change pathway</a>
+    <section class="exam-builder card">
+      <div class="panel-head">
+        <div>
+          <span class="meta eyebrow">Build paper</span>
+          <h2>Mock settings</h2>
+        </div>
+        <span class="meta" data-exam-pathway>Linear pathway</span>
       </div>
-    </div>
+
+      <div class="exam-controls">
+        <label>
+          <span class="label">Question bank</span>
+          <select class="select" data-exam-bank>
+            <option value="all">Full classified bank</option>
+            <option value="expertise">Q20+ expertise only</option>
+          </select>
+        </label>
+        <label>
+          <span class="label">Scope</span>
+          <select class="select" data-exam-scope></select>
+        </label>
+        <label>
+          <span class="label">Question count</span>
+          <input class="input" type="number" min="5" max="40" step="1" value="25" data-exam-count />
+        </label>
+        <label>
+          <span class="label">Time limit</span>
+          <input class="input" type="number" min="15" max="180" step="5" value="90" data-exam-duration />
+        </label>
+        <label>
+          <span class="label">Question mix</span>
+          <select class="select" data-exam-mix>
+            <option value="balanced">Balanced paper</option>
+            <option value="random">Pure random</option>
+            <option value="quick">Quick practice</option>
+            <option value="standard">Standard practice</option>
+            <option value="long">Long-question focus</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="exam-actions">
+        <button class="btn btn-primary" type="button" data-exam-start>Generate & start</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-exam-finish>Finish exam</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-exam-save>Save marks</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-exam-reset>New paper</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-exam-print>Print / save PDF</button>
+      </div>
+    </section>
+
+    <section class="exam-summary-grid">
+      <article class="card result-card" data-exam-result></article>
+      <article class="card history-card">
+        <div class="panel-head">
+          <div>
+            <span class="meta eyebrow">History</span>
+            <h2>Recent mocks</h2>
+          </div>
+        </div>
+        <div data-exam-history></div>
+      </article>
+    </section>
+
+    <section class="weakness-grid" data-exam-weakness></section>
+    <section class="exam-paper card" data-exam-paper aria-label="Mock exam questions"></section>
   </div>
+
+  <script is:inline>
+    window.MathJax = {
+      tex: { inlineMath: [["\\(", "\\)"], ["$", "$"]], displayMath: [["\\[", "\\]"]] },
+      svg: { fontCache: "global" }
+    };
+  </script>
+  <script is:inline defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <script is:inline define:vars={{ dataPayload }}>
+    const __payload = JSON.parse(dataPayload);
+    window.QUESTION_DATA = __payload.questions;
+    window.SOLUTION_DATA = __payload.solutions;
+    window.SITE_META = __payload.siteMeta;
+    window.BANK_META = __payload.banks;
+  </script>
+  <script is:inline>
+    (function () {
+      const mode = localStorage.getItem("elitePathway") || "linear";
+      window.ELITE_PATHWAY = {
+        mode,
+        isModular: mode === "modular",
+        label: (kind) => (mode === "modular"
+          ? { unit: "Unit", unitLowerPlural: "units" }[kind] || "Unit"
+          : { unit: "Chapter", unitLowerPlural: "chapters" }[kind] || "Chapter"),
+      };
+    })();
+  </script>
+  <script is:inline src="/scripts/topic-normalizer.js"></script>
+  <script is:inline defer src="/scripts/exam-app.js"></script>
 </BaseLayout>
 
 <style>
-  .page-header { margin-bottom: var(--space-4); }
-  .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; display: block; margin-bottom: var(--space-1); }
-  .page-sub { color: var(--muted); margin-top: var(--space-2); max-width: 60ch; }
-  .exam-card { padding: var(--space-4); display: grid; gap: var(--space-2); }
-  .actions-row { display: flex; gap: var(--space-1); flex-wrap: wrap; margin-top: var(--space-1); }
+  .exam-page {
+    display: grid;
+    gap: var(--space-3);
+  }
+  .eyebrow {
+    display: block;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+  .exam-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: var(--space-3);
+    align-items: center;
+    padding: var(--space-4);
+  }
+  .exam-hero h1 {
+    max-width: 18ch;
+    margin-bottom: var(--space-1);
+  }
+  .exam-hero p {
+    max-width: 70ch;
+    color: var(--muted);
+  }
+  .timer-panel {
+    display: grid;
+    gap: 4px;
+    justify-items: center;
+    padding: var(--space-3);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--ivory);
+  }
+  .timer-panel strong {
+    font-family: var(--font-mono);
+    font-size: 38px;
+    color: var(--navy);
+  }
+  .timer-panel small {
+    color: var(--muted);
+  }
+  .exam-builder {
+    display: grid;
+    gap: var(--space-3);
+  }
+  .panel-head {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: var(--space-2);
+  }
+  .exam-controls {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--space-2);
+  }
+  .exam-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+  }
+  .exam-summary-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: var(--space-2);
+  }
+  .result-card {
+    min-height: 160px;
+    display: grid;
+    gap: var(--space-2);
+    align-content: center;
+  }
+  .result-main {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .score-ring {
+    --score: 0%;
+    width: 120px;
+    height: 120px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    background: conic-gradient(var(--gold) var(--score), var(--line) 0);
+  }
+  .score-ring strong {
+    font-size: 26px;
+    text-align: center;
+  }
+  .score-ring span {
+    font-family: var(--font-mono);
+    color: var(--muted);
+    text-align: center;
+  }
+  .history-list {
+    display: grid;
+    gap: 8px;
+  }
+  .history-row {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-1);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: var(--type-meta);
+  }
+  .history-row:last-child { border-bottom: 0; }
+  .weakness-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-2);
+  }
+  .weakness-card {
+    display: grid;
+    gap: var(--space-1);
+    padding: var(--space-2);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    background: var(--paper);
+  }
+  .exam-paper {
+    display: grid;
+    gap: var(--space-2);
+  }
+  .exam-empty {
+    color: var(--muted);
+  }
+  .exam-question {
+    display: grid;
+    gap: var(--space-2);
+    padding: var(--space-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .exam-question header,
+  .exam-question footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-1);
+  }
+  .exam-question img {
+    width: 100%;
+    max-height: 640px;
+    object-fit: contain;
+    background: var(--ivory);
+  }
+  .score-input {
+    width: 88px;
+  }
+  .exam-solution {
+    border-top: 1px solid var(--line);
+    padding-top: var(--space-2);
+  }
+  .exam-solution summary {
+    cursor: pointer;
+    color: var(--gold-deep);
+    font-weight: var(--weight-bold);
+  }
+  .exam-solution p + p { margin-top: var(--space-1); }
+  .print-paper-brand,
+  .print-paper-footer {
+    display: none;
+  }
+  @media (max-width: 960px) {
+    .exam-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .exam-summary-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 720px) {
+    .exam-hero,
+    .exam-controls {
+      grid-template-columns: 1fr;
+    }
+    .exam-hero {
+      padding: var(--space-3);
+    }
+    .result-main {
+      align-items: start;
+      flex-direction: column;
+    }
+    .exam-question header,
+    .exam-question footer {
+      align-items: start;
+      flex-direction: column;
+    }
+  }
+  @media print {
+    @page { size: A4; margin: 12mm; }
+    body * { visibility: hidden !important; }
+    .exam-paper,
+    .exam-paper * {
+      visibility: visible !important;
+    }
+    .exam-paper {
+      display: block;
+      position: absolute;
+      inset: 0;
+      border: 0;
+      box-shadow: none;
+      padding: 0;
+    }
+    .exam-question {
+      break-after: page;
+      min-height: 270mm;
+      border: 0;
+      border-radius: 0;
+      padding: 0;
+      gap: 10mm;
+    }
+    .exam-question:last-child { break-after: auto; }
+    .exam-question footer,
+    .exam-solution {
+      display: none !important;
+    }
+    .print-paper-brand,
+    .print-paper-footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 8mm;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3mm;
+      font-size: 10pt;
+    }
+    .print-paper-footer {
+      border-top: 1px solid #ccc;
+      border-bottom: 0;
+      padding-top: 3mm;
+      padding-bottom: 0;
+      align-self: end;
+    }
+    .exam-question img {
+      max-height: 210mm;
+    }
+  }
 </style>

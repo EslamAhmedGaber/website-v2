@@ -52,6 +52,17 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
       </div>
     </section>
 
+    <nav class="quick-actions card" aria-label="Practice shortcuts">
+      <button class="pill is-active" type="button" data-practice-mode="all">Bank</button>
+      <button class="pill" type="button" data-practice-mode="topic">Topic</button>
+      <button class="pill" type="button" data-practice-mode="mixed">Random 10</button>
+      <button class="pill" type="button" data-practice-mode="unsolved">Unsolved</button>
+      <button class="pill" type="button" data-practice-mode="weak">Weak topics</button>
+      <button class="pill" type="button" data-practice-mode="mistakes">Mistakes</button>
+      <a class="pill" href="/exam">Mock exam</a>
+      <button class="pill" type="button" data-practice-mode="print">Print</button>
+    </nav>
+
     <!-- ============ Layout: sidebar + grid ============ -->
     <div class="practice-layout">
       <aside class="side">
@@ -62,6 +73,8 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
             <input class="input" id="searchInput" type="search" placeholder="topic, paper, keyword" data-search />
             <label class="label" for="topicFilter">Topic</label>
             <select class="select" id="topicFilter" data-topic-filter></select>
+            <label class="label" for="unitFilter">Chapter / unit</label>
+            <select class="select" id="unitFilter" data-unit-filter></select>
             <label class="label" for="paperFilter">Paper</label>
             <select class="select" id="paperFilter" data-paper-filter></select>
             <label class="label" for="viewFilter">View</label>
@@ -74,8 +87,30 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
               <option value="mistakes-due">Mistakes due today</option>
               <option value="mistakes-mastered">Mastered mistakes</option>
             </select>
+            <label class="label" for="difficultyFilter">Difficulty</label>
+            <select class="select" id="difficultyFilter" data-difficulty-filter>
+              <option value="">All difficulties</option>
+              <option value="quick">Quick wins (1-3 marks)</option>
+              <option value="standard">Standard (4-6 marks)</option>
+              <option value="long">Long problems (7+ marks)</option>
+              <option value="q20">Q20+ exam finishers</option>
+            </select>
             <label class="label" for="minMarks">Minimum marks</label>
             <input class="input" id="minMarks" type="number" min="0" max="20" step="1" data-min-marks />
+            <label class="label" for="maxMarks">Maximum marks</label>
+            <input class="input" id="maxMarks" type="number" min="0" max="20" step="1" data-max-marks />
+            <label class="label" for="minQuestion">Question from</label>
+            <input class="input" id="minQuestion" type="number" min="1" max="40" step="1" data-min-question />
+            <label class="label" for="maxQuestion">Question to</label>
+            <input class="input" id="maxQuestion" type="number" min="1" max="40" step="1" data-max-question />
+            <label class="label" for="sortMode">Sort</label>
+            <select class="select" id="sortMode" data-sort-mode>
+              <option value="topic">Topic order</option>
+              <option value="paper">Paper</option>
+              <option value="marks_desc">Marks high to low</option>
+              <option value="marks_asc">Marks low to high</option>
+              <option value="question_desc">Question number high to low</option>
+            </select>
             <button class="btn btn-ghost btn-sm" type="button" data-reset-filters>Reset all filters</button>
           </div>
         </details>
@@ -128,7 +163,7 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
         </details>
 
         <details class="side-section">
-          <summary>Worksheet</summary>
+          <summary>Print & worksheet</summary>
           <div class="side-body stack">
             <p class="meta">Build a printable worksheet from the current filters or a focused topic.</p>
             <label class="label" for="worksheetTopic">Topic</label>
@@ -146,8 +181,17 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
             <div class="worksheet-actions">
               <button class="btn btn-primary btn-sm" type="button" data-worksheet-build>Build</button>
               <button class="btn btn-ghost btn-sm" type="button" data-worksheet-print>Build & print</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-clear-selected>Clear set</button>
             </div>
-            <button class="btn btn-ghost btn-sm" type="button" data-print-selected>Print my set</button>
+            <label class="label" for="printScope">Print scope</label>
+            <select class="select" id="printScope" data-print-scope>
+              <option value="selected">My set</option>
+              <option value="visible">Current filtered view</option>
+              <option value="topic">Current topic</option>
+              <option value="unit">Current chapter / unit</option>
+              <option value="pool">Whole active bank</option>
+            </select>
+            <button class="btn btn-ghost btn-sm" type="button" data-print-build>Print / save PDF</button>
             <p class="meta" data-worksheet-status></p>
           </div>
         </details>
@@ -155,9 +199,9 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
         <details class="side-section">
           <summary>Mock exam</summary>
           <div class="side-body stack">
-            <p class="meta">Build a 25-question worksheet from the current pathway / unit.</p>
+            <p class="meta">Use the full mock builder for time, question count, scoring, and weak-topic review.</p>
             <button class="btn btn-ghost btn-sm" type="button" data-random-visible>Random 10 from this view</button>
-            <button class="btn btn-primary btn-sm" type="button" data-mock-open>Start mock</button>
+            <a class="btn btn-primary btn-sm" href="/exam">Open mock builder</a>
           </div>
         </details>
       </aside>
@@ -213,48 +257,6 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
           <button class="btn btn-ghost btn-sm" type="button" data-fix-clear>Reset to auto</button>
         </div>
       </div>
-    </div>
-  </dialog>
-
-  <dialog id="mockDialog" class="q-dialog">
-    <header class="q-dialog-head">
-      <h2>Start a mock exam</h2>
-      <button class="btn btn-ghost btn-sm" type="button" data-mock-close>Close ✕</button>
-    </header>
-    <p class="meta">Pick a unit to draw 25 random questions from. They'll land in your "My set" filter.</p>
-    <div class="mock-grid">
-      <button class="mock-card pill" type="button" data-mock-unit="Unit 1">
-        <strong>Unit 1</strong>
-        <span class="meta mock-count">0 questions</span>
-      </button>
-      <button class="mock-card pill" type="button" data-mock-unit="Unit 2">
-        <strong>Unit 2</strong>
-        <span class="meta mock-count">0 questions</span>
-      </button>
-      <button class="mock-card pill" type="button" data-mock-unit="Chapter 1" hidden>
-        <strong>Chapter 1</strong>
-        <span class="meta mock-count">0 questions</span>
-      </button>
-      <button class="mock-card pill" type="button" data-mock-unit="Chapter 2" hidden>
-        <strong>Chapter 2</strong>
-        <span class="meta mock-count">0 questions</span>
-      </button>
-      <button class="mock-card pill" type="button" data-mock-unit="Chapter 3" hidden>
-        <strong>Chapter 3</strong>
-        <span class="meta mock-count">0 questions</span>
-      </button>
-      <button class="mock-card pill" type="button" data-mock-unit="Chapter 4" hidden>
-        <strong>Chapter 4</strong>
-        <span class="meta mock-count">0 questions</span>
-      </button>
-      <button class="mock-card pill" type="button" data-mock-unit="Chapter 5" hidden>
-        <strong>Chapter 5</strong>
-        <span class="meta mock-count">0 questions</span>
-      </button>
-      <button class="mock-card pill" type="button" data-mock-unit="Chapter 6" hidden>
-        <strong>Chapter 6</strong>
-        <span class="meta mock-count">0 questions</span>
-      </button>
     </div>
   </dialog>
 
@@ -411,13 +413,20 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     padding-top: var(--space-2);
   }
   .layout-toggle { display: flex; gap: 6px; }
+  .quick-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin-top: var(--space-2);
+    padding: var(--space-2);
+  }
 
   /* ============ Grid & cards ============ */
   .q-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    grid-auto-rows: 1fr;
-    align-items: stretch;
+    grid-auto-rows: auto;
+    align-items: start;
     gap: var(--space-2);
   }
   .q-grid[data-layout="list"] {
@@ -433,7 +442,7 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     --q-preview-height: 245px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: var(--q-preview-height) auto;
     background: var(--paper);
     border: 1px solid var(--line-strong);
     border-radius: var(--radius-lg);
@@ -453,7 +462,8 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     place-items: center;
     width: 100%;
     height: var(--q-preview-height);
-    min-height: 0;
+    min-height: var(--q-preview-height);
+    max-height: var(--q-preview-height);
     background: var(--ivory);
     overflow: hidden;
     cursor: zoom-in;
@@ -464,7 +474,8 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
   .q-thumb img {
     width: 100%; height: 100%;
     object-fit: contain;
-    background: var(--paper);
+    object-position: top center;
+    background: var(--ivory);
   }
   .q-grid[data-layout="list"] .q-thumb {
     height: 100%;
@@ -720,26 +731,6 @@ const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks });
     font-size: 10px;
     margin-left: 6px;
     vertical-align: middle;
-  }
-
-  /* ============ Mock dialog ============ */
-  .mock-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: var(--space-1);
-    margin-top: var(--space-2);
-  }
-  .mock-card {
-    display: grid;
-    place-items: center;
-    gap: 4px;
-    padding: var(--space-3) var(--space-2);
-    min-height: 100px;
-    text-align: center;
-  }
-  .mock-card strong {
-    font-size: 18px;
-    color: var(--navy);
   }
 
   /* ============ Worksheet printout ============ */
