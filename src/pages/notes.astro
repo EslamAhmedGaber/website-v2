@@ -1,0 +1,87 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import notesData from "../data/notes.json";
+---
+
+<BaseLayout title="Visual Notes - Elite IGCSE Mathematics">
+  <div class="container section notes-page">
+    <header class="hero card royale-frame">
+      <div>
+        <span class="meta eyebrow">Visual Notes Library</span>
+        <h1>Read the idea, then solve the exact exam questions.</h1>
+        <p>The useful loop is simple: open the notes, learn the strategy, practise the matching topic, then check the worked solution.</p>
+      </div>
+    </header>
+
+    <section class="study-modes">
+      <article class="card"><strong>15 min refresh</strong><p>Read one section, then solve three linked questions.</p></article>
+      <article class="card"><strong>45 min rebuild</strong><p>Choose one weak topic, build a focused worksheet, review carefully.</p></article>
+      <article class="card"><strong>Exam week sprint</strong><p>Use Q20+ questions after the notes to train pressure.</p></article>
+    </section>
+
+    <section class="note-grid">
+      {notesData.ready.map((note) => (
+        <article class="note-card card">
+          <span class="badge badge-gold">Ready</span>
+          <h2>{note.title}</h2>
+          <p>{note.description}</p>
+          <div class="actions">
+            <a class="btn btn-primary btn-sm" href={note.file} target="_blank" rel="noreferrer">Read notes</a>
+            <a class="btn btn-ghost btn-sm" href={`/practice?topic=${encodeURIComponent(note.practiceTopic)}`}>Practice topic</a>
+          </div>
+        </article>
+      ))}
+    </section>
+
+    <section class="coming card">
+      <div>
+        <span class="meta eyebrow">Coming next</span>
+        <h2>The library is ready for the next chapters.</h2>
+      </div>
+      <div class="coming-grid">
+        {notesData.coming.map((note) => (
+          <article>
+            <strong>{note.title}</strong>
+            <p>{note.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .notes-page { display: grid; gap: var(--space-3); }
+  .hero h1 { margin-bottom: var(--space-1); }
+  .hero p { max-width: 68ch; color: var(--muted); }
+  .eyebrow { display: block; margin-bottom: 6px; text-transform: uppercase; font-size: 11px; }
+  .study-modes,
+  .note-grid,
+  .coming-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-2);
+  }
+  .study-modes p,
+  .note-card p,
+  .coming p { margin-top: 6px; color: var(--muted); }
+  .note-card {
+    display: grid;
+    gap: var(--space-1);
+  }
+  .note-card h2 { font-size: var(--type-h3); }
+  .actions { display: flex; flex-wrap: wrap; gap: var(--space-1); margin-top: var(--space-1); }
+  .coming {
+    display: grid;
+    gap: var(--space-2);
+  }
+  .coming-grid article {
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--line);
+  }
+  @media (max-width: 860px) {
+    .study-modes,
+    .note-grid,
+    .coming-grid { grid-template-columns: 1fr; }
+  }
+</style>

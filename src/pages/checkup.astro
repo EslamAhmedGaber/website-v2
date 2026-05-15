@@ -1,0 +1,164 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { questions, solutions, siteMeta, banks } from "../lib/dataset.js";
+import notesData from "../data/notes.json";
+const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks, notes: notesData.ready });
+---
+
+<BaseLayout title="Readiness Check - Elite IGCSE Mathematics">
+  <div class="container section checkup-page">
+    <header class="hero card royale-frame">
+      <div>
+        <span class="meta eyebrow">Exam Readiness Check</span>
+        <h1>Find your next best move in two minutes.</h1>
+        <p>Use your target, recent mock, confidence, weekly time, and weakest areas to get a practical revision route.</p>
+      </div>
+      <div class="hero-list">
+        <strong>Output</strong>
+        <span>Readiness score</span>
+        <span>Weak-topic route</span>
+        <span>Notes recommendation</span>
+        <span>Printable next steps</span>
+      </div>
+    </header>
+
+    <section class="builder card">
+      <div class="form-grid">
+        <label><span class="label">Target grade</span><select class="select" data-check-target>
+          <option value="9">Grade 9 / A*</option>
+          <option value="8">Grade 8</option>
+          <option value="7">Grade 7</option>
+          <option value="6">Grade 6</option>
+        </select></label>
+        <label><span class="label">Recent mock score</span><select class="select" data-check-mock>
+          <option value="unknown">I do not know yet</option>
+          <option value="90">90% or more</option>
+          <option value="75">75% - 89%</option>
+          <option value="60">60% - 74%</option>
+          <option value="45">45% - 59%</option>
+          <option value="30">Below 45%</option>
+        </select></label>
+        <label><span class="label">Confidence</span><select class="select" data-check-confidence>
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select></label>
+        <label><span class="label">Weekly time</span><select class="select" data-check-time>
+          <option value="2">2 hours or less</option>
+          <option value="5" selected>3-5 hours</option>
+          <option value="8">6-8 hours</option>
+          <option value="12">9+ hours</option>
+        </select></label>
+      </div>
+      <div class="weak-block">
+        <span class="label">Weakest chapters or units</span>
+        <div class="weak-grid" data-weak-units></div>
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" type="button" data-run-check>Show my readiness</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-save-check>Save result</button>
+      </div>
+    </section>
+
+    <section class="results">
+      <article class="readiness-card card" data-readiness-card></article>
+      <div class="recommendation-grid" data-recommendations></div>
+    </section>
+  </div>
+
+  <script is:inline define:vars={{ dataPayload }}>
+    const payload = JSON.parse(dataPayload);
+    window.QUESTION_DATA = payload.questions;
+    window.SOLUTION_DATA = payload.solutions;
+    window.SITE_META = payload.siteMeta;
+    window.BANK_META = payload.banks;
+    window.NOTE_DATA = payload.notes;
+  </script>
+  <script is:inline>
+    (function () {
+      const mode = localStorage.getItem("elitePathway") || "linear";
+      window.ELITE_PATHWAY = { mode, isModular: mode === "modular" };
+    })();
+  </script>
+  <script is:inline src="/scripts/topic-normalizer.js"></script>
+  <script is:inline defer src="/scripts/checkup-app.js"></script>
+</BaseLayout>
+
+<style>
+  .checkup-page { display: grid; gap: var(--space-3); }
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 240px;
+    gap: var(--space-3);
+    align-items: center;
+  }
+  .hero h1 { margin-bottom: var(--space-1); }
+  .hero p { color: var(--muted); max-width: 62ch; }
+  .eyebrow { display: block; margin-bottom: 6px; text-transform: uppercase; font-size: 11px; }
+  .hero-list {
+    display: grid;
+    gap: 6px;
+    padding: var(--space-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--ivory);
+  }
+  .hero-list span { color: var(--muted); }
+  .builder { display: grid; gap: var(--space-3); }
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-2);
+  }
+  .weak-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+  }
+  .check-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-full);
+    background: var(--paper);
+  }
+  .actions { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+  .results {
+    display: grid;
+    gap: var(--space-2);
+  }
+  .readiness-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+  .readiness-score {
+    --score: 0%;
+    width: 120px;
+    height: 120px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    background: conic-gradient(var(--gold) var(--score), var(--line) 0);
+  }
+  .readiness-score strong { font-size: 30px; text-align: center; }
+  .readiness-score span { color: var(--muted); text-align: center; }
+  .recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-2);
+  }
+  .recommendation-card {
+    display: grid;
+    gap: var(--space-1);
+  }
+  .recommendation-card h3 { font-size: var(--type-h3); }
+  .recommendation-card p { color: var(--muted); }
+  @media (max-width: 860px) {
+    .hero,
+    .form-grid { grid-template-columns: 1fr; }
+    .readiness-card { align-items: start; flex-direction: column; }
+  }
+</style>

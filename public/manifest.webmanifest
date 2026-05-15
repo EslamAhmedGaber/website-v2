@@ -1,0 +1,25 @@
+{
+  "name": "Elite IGCSE Mathematics",
+  "short_name": "Elite IGCSE",
+  "description": "Classified Edexcel IGCSE 4MA1 Mathematics practice, mock exams, visual notes, and study tools by Dr Eslam Ahmed.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FBF8F2",
+  "theme_color": "#0B1F3A",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Practice", "short_name": "Practice", "url": "/practice", "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }] },
+    { "name": "Mocks", "short_name": "Mocks", "url": "/exam", "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }] },
+    { "name": "Roadmap", "short_name": "Roadmap", "url": "/topics", "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }] },
+    { "name": "Progress", "short_name": "Progress", "url": "/progress", "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }] }
+  ]
+}

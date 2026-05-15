@@ -33,15 +33,18 @@ Done in v2:
 - Multi-scope print center for selected, filtered, topic, chapter/unit, and whole-bank output
 - Spaced-repetition Mistake Box with due, saved, and mastered views
 - Full progress dashboard: topic sheet, backup export/import, WhatsApp summary
-
-Next:
 - Topic roadmap page
 - Readiness check page
 - Study plan generator
-- Notes library page
-- Lead/enrollment dialog and parent-facing pages
-- PWA/offline shell
-- PDF book builder port or mirror into the old book workspace
+- Notes library page with restored visual notes
+- Lead/enrollment dialog
+- PWA manifest, offline page, and service worker
+
+Next:
+- Optional marketing / parent-facing polish if wanted
+- Add new visual notes chapters when the material is ready
+
+No core old student workflow is still missing from v2.
 
 ## Rule
 

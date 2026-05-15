@@ -3,6 +3,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 // Curated download catalogue backed by tools/build_books.py outputs.
 const books = {
+  "Visual Notes": [
+    {
+      file: "/downloads/notes/chapter-2-algebra-notes.pdf",
+      title: "Chapter 2 Algebra Notes",
+      subtitle: "Visual notes for equations, formulae, identities, and the wider algebra toolkit.",
+      size: "PDF notes",
+      public: true,
+    },
+    {
+      file: "/downloads/notes/chapter-3-functions-graphs-notes.pdf",
+      title: "Chapter 3 Functions & Graphs Notes",
+      subtitle: "Visual notes for sequences, functions, graphs, gradients, and differentiation.",
+      size: "PDF notes",
+      public: true,
+    },
+  ],
   "Linear (4MA1) - Full Classified Bank": [
     {
       file: "/downloads/classified_problems.pdf",
@@ -74,7 +90,7 @@ const books = {
       <span class="meta eyebrow">PDF Library</span>
       <h1>Books & Downloads</h1>
       <p class="page-sub">
-        Classified-question books drawn from the same data that powers the practice page.
+        Notes and classified-question books drawn from the same system that powers the practice page.
         Unit books include the right linear topics now and will absorb clean modular papers later.
       </p>
     </header>

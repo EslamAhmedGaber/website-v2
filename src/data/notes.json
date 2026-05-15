@@ -1,0 +1,36 @@
+{
+  "ready": [
+    {
+      "unit": "Chapter 2: Equations, Formulae & Identities",
+      "title": "Chapter 2: Equations, Formulae & Identities",
+      "description": "Algebra toolkit, indices, brackets, factorising, completing the square, algebraic fractions, formula rearrangement, proof, equations, inequalities, and simultaneous equations.",
+      "file": "/downloads/notes/chapter-2-algebra-notes.pdf",
+      "practiceTopic": "Algebraic Proof"
+    },
+    {
+      "unit": "Chapter 3: Sequences, Functions & Graphs",
+      "title": "Chapter 3: Sequences, Functions & Graphs",
+      "description": "Sequences, linear graphs, functions, estimating gradients, graph inequalities, transformations of graphs, and differentiation.",
+      "file": "/downloads/notes/chapter-3-functions-graphs-notes.pdf",
+      "practiceTopic": "Graphs of Functions"
+    }
+  ],
+  "coming": [
+    {
+      "title": "Chapter 1",
+      "description": "Numbers, ratio, percentages, bounds, surds, and proportion."
+    },
+    {
+      "title": "Chapter 4",
+      "description": "Geometry, trigonometry, area, volume, circle theorems, and 3D problems."
+    },
+    {
+      "title": "Chapter 5",
+      "description": "Vectors and transformations with exam diagrams and strategy boxes."
+    },
+    {
+      "title": "Chapter 6",
+      "description": "Statistics and probability with diagrams, trees, Venn diagrams, and exam traps."
+    }
+  ]
+}

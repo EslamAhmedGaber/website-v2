@@ -8,10 +8,14 @@ interface Props {
 }
 
 const {
-  title = "Elite IGCSE Mathematics — Edexcel 4MA1 Practice Bank",
+  title = "Elite IGCSE Mathematics - Edexcel 4MA1 Practice Bank",
   description = "Edexcel IGCSE 4MA1 Higher Tier - 1,188 classified past-paper questions with worked solutions. Linear and Modular pathways. By Dr Eslam Ahmed.",
   hideHeader = false,
 } = Astro.props;
+const path = Astro.url.pathname;
+const isActive = (href: string) => path === href || path === `${href}/`;
+const studyRoots = ["/topics", "/checkup", "/planner", "/notes", "/pastpapers", "/about"];
+const isStudyActive = studyRoots.some((href) => path === href || path === `${href}/` || path.startsWith(`${href}/`));
 ---
 
 <!doctype html>
@@ -23,6 +27,7 @@ const {
     <meta name="description" content={description} />
     <meta name="theme-color" content="#0B1F3A" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,15 +47,26 @@ const {
             <span class="brand-mark">IGCSE</span>
             <span class="brand-text">
               <strong>Elite IGCSE</strong>
-              <span class="brand-meta">Mathematics · 4MA1</span>
+              <span class="brand-meta">Mathematics - 4MA1</span>
             </span>
           </a>
 
           <nav class="site-nav" aria-label="Primary">
-            <a class="nav-link" href="/practice">Practice</a>
-            <a class="nav-link" href="/exam">Mocks</a>
-            <a class="nav-link" href="/progress">Progress</a>
-            <a class="nav-link" href="/downloads">Books</a>
+            <a class="nav-link" href="/practice" aria-current={isActive("/practice") ? "page" : undefined}>Practice</a>
+            <a class="nav-link" href="/exam" aria-current={isActive("/exam") ? "page" : undefined}>Mocks</a>
+            <a class="nav-link" href="/progress" aria-current={isActive("/progress") ? "page" : undefined}>Progress</a>
+            <details class="nav-more">
+              <summary class:list={["nav-link", { "is-active": isStudyActive }]}>Study</summary>
+              <div class="nav-menu">
+                <a href="/topics" aria-current={isActive("/topics") ? "page" : undefined}>Roadmap</a>
+                <a href="/checkup" aria-current={isActive("/checkup") ? "page" : undefined}>Check</a>
+                <a href="/planner" aria-current={isActive("/planner") ? "page" : undefined}>Plan</a>
+                <a href="/notes" aria-current={isActive("/notes") ? "page" : undefined}>Notes</a>
+                <a href="/pastpapers/" aria-current={path.startsWith("/pastpapers") ? "page" : undefined}>Papers</a>
+                <a href="/about" aria-current={isActive("/about") ? "page" : undefined}>About</a>
+              </div>
+            </details>
+            <a class="nav-link" href="/downloads" aria-current={isActive("/downloads") ? "page" : undefined}>Books</a>
           </nav>
 
           <div class="site-cta">
@@ -60,7 +76,7 @@ const {
             <button class="btn btn-ghost btn-sm" data-cloud-login>
               Continue with Google
             </button>
-            <a class="btn btn-primary btn-sm" href="https://wa.me/201120009622" target="_blank" rel="noreferrer">
+            <a class="btn btn-primary btn-sm" href="https://wa.me/201120009622" data-lead-trigger>
               Enroll
             </a>
           </div>
@@ -76,21 +92,17 @@ const {
       <div class="container-wide footer-inner">
         <div>
           <strong>Dr Eslam Ahmed</strong>
-          <span class="meta">Assistant Lecturer · Cairo University Faculty of Engineering</span>
+          <span class="meta">Assistant Lecturer - Cairo University Faculty of Engineering</span>
         </div>
         <div class="footer-contact">
           <a href="tel:01120009622">Call: 01120009622</a>
-          <span aria-hidden="true">·</span>
-          <a href="https://wa.me/201120009622" target="_blank" rel="noreferrer">WhatsApp</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://wa.me/201120009622" data-lead-trigger>WhatsApp</a>
         </div>
       </div>
     </footer>
 
     <style is:global>
-      /* ============================================================
-         Site chrome (header / footer) — kept inside layout so it's
-         scoped to pages using BaseLayout. Tokens come from global.css.
-         ============================================================ */
       .site-header {
         position: sticky;
         top: 0;
@@ -132,9 +144,9 @@ const {
       .brand-text { display: flex; flex-direction: column; line-height: 1.15; }
       .brand-text strong { font-weight: var(--weight-bold); font-size: 17px; }
       .brand-meta { font-size: 11px; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
-
       .site-nav {
         display: flex;
+        align-items: center;
         gap: var(--space-3);
         margin-left: auto;
       }
@@ -144,7 +156,6 @@ const {
         color: var(--navy);
         font-size: var(--type-meta);
         font-weight: var(--weight-bold);
-        letter-spacing: 0.02em;
       }
       .nav-link::after {
         content: "";
@@ -158,15 +169,45 @@ const {
         transform: translateX(-50%);
       }
       .nav-link:hover::after,
-      .nav-link[aria-current="page"]::after { width: 100%; }
-      .nav-link[aria-current="page"] { color: var(--gold-deep); }
-
+      .nav-link[aria-current="page"]::after,
+      .nav-link.is-active::after { width: 100%; }
+      .nav-link[aria-current="page"],
+      .nav-link.is-active { color: var(--gold-deep); }
+      .nav-more { position: relative; }
+      .nav-more summary {
+        list-style: none;
+        cursor: pointer;
+      }
+      .nav-more summary::-webkit-details-marker { display: none; }
+      .nav-menu {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 50%;
+        z-index: var(--z-header);
+        display: grid;
+        min-width: 170px;
+        padding: 8px;
+        border: 1px solid var(--line-strong);
+        border-radius: var(--radius);
+        background: var(--paper);
+        box-shadow: var(--shadow);
+        transform: translateX(-50%);
+      }
+      .nav-more:not([open]) .nav-menu { display: none; }
+      .nav-menu a {
+        padding: 8px 10px;
+        border-radius: var(--radius-sm);
+        color: var(--navy);
+        font-size: var(--type-meta);
+        font-weight: var(--weight-bold);
+      }
+      .nav-menu a:hover,
+      .nav-menu a[aria-current="page"] { background: var(--gold-soft); }
       .site-cta {
         display: flex;
         align-items: center;
         gap: var(--space-1);
       }
-
       .site-footer {
         margin-top: var(--space-6);
         padding: var(--space-4) 0 var(--space-3);
@@ -185,17 +226,72 @@ const {
       .footer-inner .meta { display: block; }
       .footer-contact { display: flex; align-items: center; gap: var(--space-1); color: var(--muted); }
       .footer-contact a { color: var(--navy-soft); }
-
-      /* Mobile */
+      .lead-dialog {
+        width: min(520px, calc(100vw - 24px));
+        border: 0;
+        border-radius: var(--radius-lg);
+        padding: 0;
+        background: var(--paper);
+        box-shadow: var(--shadow-lg);
+      }
+      .lead-dialog::backdrop { background: rgba(11, 31, 58, 0.58); }
+      .lead-dialog form {
+        display: grid;
+        gap: var(--space-2);
+        padding: var(--space-3);
+      }
+      .lead-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-2);
+      }
+      .lead-head strong { font-size: var(--type-h2); }
+      .lead-head button {
+        width: 36px;
+        min-height: 36px;
+        border-radius: var(--radius-full);
+        background: transparent;
+        color: var(--navy);
+      }
+      .lead-sub,
+      .lead-privacy { color: var(--muted); }
+      .lead-dialog label {
+        display: grid;
+        gap: 6px;
+        color: var(--muted);
+        font-size: var(--type-meta);
+        font-weight: var(--weight-bold);
+      }
+      .lead-dialog input,
+      .lead-dialog select {
+        width: 100%;
+        min-height: 44px;
+        border: 1px solid var(--line-strong);
+        border-radius: var(--radius);
+        padding: 10px 14px;
+        background: var(--paper);
+      }
+      .lead-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-1);
+      }
       @media (max-width: 720px) {
         .site-header-inner { flex-wrap: wrap; gap: var(--space-1); padding: 10px var(--space-2); }
         .site-nav { order: 3; width: 100%; justify-content: space-between; gap: var(--space-1); }
         .site-cta { margin-left: auto; }
-        .brand-text { font-size: 14px; }
         .brand-meta { display: none; }
+        .nav-more { position: static; }
+        .nav-menu {
+          left: auto;
+          right: var(--space-2);
+          transform: none;
+        }
       }
     </style>
     <script src="/scripts/firebase-config.js" defer></script>
     <script src="/scripts/cloud-progress.js" defer></script>
+    <script src="/scripts/lead-app.js" defer></script>
   </body>
 </html>

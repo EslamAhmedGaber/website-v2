@@ -1,0 +1,113 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="About Dr Eslam Ahmed - Elite IGCSE Mathematics">
+  <div class="container section about-page">
+    <section class="hero card royale-frame">
+      <img src="/assets/dr-eslam.jpg" alt="Dr Eslam Ahmed" />
+      <div>
+        <span class="meta eyebrow">About</span>
+        <h1>Dr Eslam Ahmed</h1>
+        <p class="lede">Assistant Lecturer - Cairo University Faculty of Engineering</p>
+        <p>Dr Eslam teaches Edexcel IGCSE 4MA1 Higher Mathematics online, with the same classified bank, mock tools, worked solutions, and study routes used across this site.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/201120009622" data-lead-trigger>Book free first class</a>
+          <a class="btn btn-ghost btn-sm" href="/practice">Open practice bank</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-grid">
+      <article class="card"><strong>Specialty</strong><p>Edexcel IGCSE 4MA1 Higher Mathematics</p></article>
+      <article class="card"><strong>Teaching style</strong><p>Mixed English and Arabic when helpful</p></article>
+      <article class="card"><strong>Format</strong><p>Live online sessions with recorded review</p></article>
+      <article class="card"><strong>Support</strong><p>Structured topic practice plus direct guidance</p></article>
+    </section>
+
+    <section class="packages card">
+      <div>
+        <span class="meta eyebrow">Course packages</span>
+        <h2>Choose the level of support that fits the student.</h2>
+      </div>
+      <div class="package-grid">
+        <article>
+          <strong>Group Course</strong>
+          <p>Small-group revision with weekly practice and mocks.</p>
+          <button class="btn btn-ghost btn-sm" type="button" data-package="group">Ask about group</button>
+        </article>
+        <article>
+          <strong>Private 1-to-1</strong>
+          <p>Personal route for the student's exact weak topics.</p>
+          <button class="btn btn-primary btn-sm" type="button" data-package="private">Ask about private</button>
+        </article>
+        <article>
+          <strong>Intensive Sprint</strong>
+          <p>Short focused run before the exam session.</p>
+          <button class="btn btn-ghost btn-sm" type="button" data-package="intensive">Ask about sprint</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq card">
+      <span class="meta eyebrow">FAQ</span>
+      <details open><summary>Is the website free for students?</summary><p>Yes. Practice, solutions, roadmap, notes, downloads, and study tools are open to use.</p></details>
+      <details><summary>Are lessons online?</summary><p>Yes. Sessions are online and recorded for later review.</p></details>
+      <details><summary>Can parents see progress?</summary><p>Students can track solved work, export summaries, and share progress from the dashboard.</p></details>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-page { display: grid; gap: var(--space-3); }
+  .hero {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: var(--space-3);
+    align-items: center;
+  }
+  .hero img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--gold);
+  }
+  .hero h1 { margin-bottom: 4px; }
+  .lede { color: var(--gold-deep); font-weight: var(--weight-bold); }
+  .hero p + p { margin-top: var(--space-1); color: var(--muted); }
+  .eyebrow { display: block; margin-bottom: 6px; text-transform: uppercase; font-size: 11px; }
+  .actions { display: flex; flex-wrap: wrap; gap: var(--space-1); margin-top: var(--space-2); }
+  .trust-grid,
+  .package-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-2);
+  }
+  .trust-grid p,
+  .package-grid p,
+  .faq p { margin-top: 6px; color: var(--muted); }
+  .packages { display: grid; gap: var(--space-2); }
+  .package-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .package-grid article {
+    display: grid;
+    gap: var(--space-1);
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--line);
+  }
+  .faq { display: grid; gap: var(--space-2); }
+  .faq summary {
+    cursor: pointer;
+    color: var(--navy);
+    font-weight: var(--weight-bold);
+  }
+  @media (max-width: 860px) {
+    .hero,
+    .trust-grid,
+    .package-grid { grid-template-columns: 1fr; }
+    .hero img {
+      width: 180px;
+      height: 180px;
+    }
+  }
+</style>

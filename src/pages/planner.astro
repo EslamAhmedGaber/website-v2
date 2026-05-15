@@ -1,0 +1,127 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { questions, solutions, siteMeta, banks } from "../lib/dataset.js";
+import notesData from "../data/notes.json";
+const dataPayload = JSON.stringify({ questions, solutions, siteMeta, banks, notes: notesData.ready });
+---
+
+<BaseLayout title="Study Plan - Elite IGCSE Mathematics">
+  <div class="container section planner-page">
+    <header class="hero card royale-frame">
+      <div>
+        <span class="meta eyebrow">Personal Study Plan</span>
+        <h1>Turn the syllabus into this week's checklist.</h1>
+        <p>Choose your exam date, target, time, and weakest area. The site builds a printable weekly route with notes, practice, and Q20+ training.</p>
+      </div>
+    </header>
+
+    <section class="builder card">
+      <div class="form-grid">
+        <label><span class="label">Exam date</span><input class="input" type="date" data-plan-exam-date /></label>
+        <label><span class="label">Target grade</span><select class="select" data-plan-target>
+          <option value="9">Grade 9 / A*</option>
+          <option value="8">Grade 8</option>
+          <option value="7">Grade 7</option>
+          <option value="6">Grade 6</option>
+        </select></label>
+        <label><span class="label">Hours per week</span><select class="select" data-plan-hours>
+          <option value="3">3 hours</option>
+          <option value="5" selected>5 hours</option>
+          <option value="8">8 hours</option>
+          <option value="12">12 hours</option>
+        </select></label>
+        <label><span class="label">Weakest area</span><select class="select" data-plan-focus>
+          <option value="">Balance everything</option>
+        </select></label>
+        <label><span class="label">Plan length</span><select class="select" data-plan-length>
+          <option value="auto">Automatic until exam</option>
+          <option value="4">4 weeks</option>
+          <option value="6">6 weeks</option>
+          <option value="8">8 weeks</option>
+          <option value="12">12 weeks</option>
+        </select></label>
+        <label><span class="label">Confidence today</span><select class="select" data-plan-confidence>
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select></label>
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" type="button" data-build-plan>Build study plan</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-print-plan>Print plan</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-reset-plan>Reset</button>
+      </div>
+    </section>
+
+    <section class="output">
+      <article class="plan-summary card" data-plan-summary></article>
+      <div class="plan-weeks" data-plan-weeks></div>
+    </section>
+  </div>
+
+  <script is:inline define:vars={{ dataPayload }}>
+    const payload = JSON.parse(dataPayload);
+    window.QUESTION_DATA = payload.questions;
+    window.SOLUTION_DATA = payload.solutions;
+    window.SITE_META = payload.siteMeta;
+    window.BANK_META = payload.banks;
+    window.NOTE_DATA = payload.notes;
+  </script>
+  <script is:inline>
+    (function () {
+      const mode = localStorage.getItem("elitePathway") || "linear";
+      window.ELITE_PATHWAY = { mode, isModular: mode === "modular" };
+    })();
+  </script>
+  <script is:inline src="/scripts/topic-normalizer.js"></script>
+  <script is:inline defer src="/scripts/planner-app.js"></script>
+</BaseLayout>
+
+<style>
+  .planner-page { display: grid; gap: var(--space-3); }
+  .hero h1 { margin-bottom: var(--space-1); }
+  .hero p { color: var(--muted); max-width: 68ch; }
+  .eyebrow { display: block; margin-bottom: 6px; text-transform: uppercase; font-size: 11px; }
+  .builder { display: grid; gap: var(--space-3); }
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-2);
+  }
+  .actions { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+  .output { display: grid; gap: var(--space-2); }
+  .plan-summary p { margin-top: 6px; color: var(--muted); }
+  .plan-weeks {
+    display: grid;
+    gap: var(--space-2);
+  }
+  .plan-week {
+    display: grid;
+    gap: var(--space-2);
+  }
+  .plan-week header h2 { margin-top: 4px; font-size: var(--type-h3); }
+  .plan-week ul {
+    display: grid;
+    gap: 10px;
+  }
+  .plan-week li {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-2);
+    border-top: 1px solid var(--line);
+    padding-top: 10px;
+  }
+  .plan-week a { color: var(--gold-deep); font-weight: var(--weight-bold); }
+  @media print {
+    .site-header,
+    .site-footer,
+    .builder,
+    .hero { display: none !important; }
+    .section { padding: 0; }
+    .plan-week { break-inside: avoid; }
+  }
+  @media (max-width: 860px) {
+    .form-grid { grid-template-columns: 1fr; }
+    .plan-week li { flex-direction: column; }
+  }
+</style>
